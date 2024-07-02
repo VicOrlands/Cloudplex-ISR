@@ -1,0 +1,359 @@
+/* reviewContainer */
+.reviewContainer {
+    position: relative;
+    height: auto;
+    padding: 50px 0;
+    padding-bottom: 0;
+}
+
+/* reviewVideo */
+.reviewVideo {
+    padding: 30px 300px 50px 300px;
+}
+
+.videoWrap {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.imageWrap {
+    padding: 0;
+}
+
+.contentWrap {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 5px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: var(--font-inter);
+    padding: 10px 20px;
+    padding-bottom: 40px;
+}
+
+.contentWrap .logoImage {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.contentWrap h6 {
+    font-family: var(--font-inter);
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+}
+
+.contentWrap .quote {
+    color: #344054;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    margin: 0;
+}
+
+.contentWrap .quoteSpeaker {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+    margin: 0;
+}
+
+.contentWrap a {
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    color: #344054;
+    font-size: 14px;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    margin-bottom: 20px;
+    padding: 10px 16px;
+    width: fit-content;
+}
+
+.contentWrap a:hover {
+    border: 1px solid #93969c;
+    color: #344054;
+}
+
+.contentWrap .controls {
+    display: flex;
+}
+
+.contentWrap button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.contentWrap button:first-child {
+    margin-right: 20px;
+}
+
+/* wordsReview */
+.wordsReview {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wordsReview {
+    margin-top: 30px;
+    padding: 60px;
+    color: white;
+}
+
+.reviewsCarouselContainer {
+    background-size: cover;
+    height: auto;
+    padding: 0 250px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.reviewBox {
+    padding: 20px 80px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.reviewBox .quote1 {
+    position: absolute;
+    bottom: 54px;
+    right: 68px;
+}
+
+.reviewBox .quote2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arrow {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.left {
+    left: -40px;
+}
+
+.right {
+    right: -40px;
+}
+
+.arrow:hover {
+    color: #ccc;
+}
+
+
+.reviewsHeader {
+    color: #fff;
+    text-align: center;
+    font-family: var(--font-montserrat);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-top: 12px;
+}
+
+.reviewsPara {
+    color: #fff;
+    text-align: center;
+    font-family: var(--font-montserrat);
+    font-size: 30px;
+    font-style: normal;
+    line-height: 46px;
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* reviewContainer */
+    .reviewContainer {
+        padding: 30px 0;
+    }
+
+    /* reviewVideo */
+    .reviewVideo {
+        padding: 30px 60px 0;
+    }
+
+    .videoWrap {
+        grid-template-columns: 1fr;
+    }
+
+    .contentWrap {
+        box-shadow: none;
+        height: fit-content;
+    }
+
+    .contentWrap .logoImage {
+        width: 120px;
+    }
+
+    .contentWrap h6,
+    .contentWrap .quoteSpeaker {
+        margin-bottom: 20px;
+    }
+
+    .contentWrap .quote {
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+
+    /* wordsReview */
+    .wordsReview {
+        padding: 30px;
+        padding-bottom: 0;
+    }
+
+    .reviewsCarouselContainer {
+        padding: 0 20px;
+    }
+
+    .reviewBox {
+        margin: 0;
+    }
+
+    .reviewBox .quote1,
+    .reviewBox .quote2 {
+        height: 24px;
+        width: auto;
+    }
+
+    .reviewBox .quote2 {
+        top: 20px;
+        left: 50px;
+    }
+
+    .reviewBox .quote1 {
+        bottom: 90px;
+    }
+
+    .left {
+        left: 0;
+    }
+
+    .right {
+        right: 0;
+    }
+
+    .reviewsHeader {
+        font-size: 30px;
+        margin-top: 12px;
+    }
+
+    .reviewsPara {
+        font-size: 20px;
+    }
+}
+
+/* mobile screen */
+@media (max-width: 768px) {
+
+    /* reviewContainer */
+    .reviewContainer {
+        padding: 30px 0;
+    }
+
+    /* reviewVideo */
+    .reviewVideo {
+        padding: 30px 20px;
+        padding-bottom: 0;
+    }
+
+    .videoWrap {
+        grid-template-columns: 1fr;
+    }
+
+    .contentWrap {
+        box-shadow: none;
+        height: fit-content;
+    }
+
+    .contentWrap .logoImage {
+        margin-bottom: 0;
+    }
+
+    .contentWrap h6 {
+        margin-top: 10px;
+    }
+
+    .contentWrap h6,
+    .contentWrap .quoteSpeaker {
+        margin-bottom: 20px;
+    }
+
+    .contentWrap .quote {
+        margin-bottom: 10px;
+        line-height: 26px;
+    }
+
+    /* wordsReview */
+    .wordsReview {
+        padding: 30px 0;
+        padding-bottom: 0;
+    }
+
+    .reviewsCarouselContainer {
+        padding: 0;
+    }
+
+    .reviewBox {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .reviewBox .quote1,
+    .reviewBox .quote2 {
+        height: 20px;
+        width: auto;
+    }
+
+    .reviewBox .quote2 {
+        top: 0;
+        left: 20px;
+    }
+
+    .reviewBox .quote1 {
+        right: 20px;
+        bottom: 60px;
+    }
+
+    .arrow {
+        top: 90%;
+        transform: translateY(-90%);
+    }
+
+    .left {
+        left: 20px;
+    }
+
+    .right {
+        right: 20px;
+    }
+
+    .reviewsHeader {
+        font-size: 24px;
+        margin-top: 12px;
+    }
+
+    .reviewsPara {
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+    }
+}

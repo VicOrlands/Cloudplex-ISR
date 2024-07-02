@@ -1,8 +1,35 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import clsx from "clsx";
+import { Inter, Poppins, Montserrat, Rubik, Nunito } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: '--font-inter',
+  display: "swap",
+});
+const rubik = Rubik({
+  subsets: ["latin"],
+  variable: '--font-rubik',
+  display: "swap",
+});
+const nunito = Nunito({
+  subsets: ["latin"],
+  variable: '--font-nunito',
+  display: "swap",
+});
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: '--font-montserrat',
+  display: "swap",
+});
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: '--font-poppins',
+  display: "swap",
+  weight: "100"
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +42,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={clsx(inter.variable, rubik.variable, nunito.variable, poppins.variable, montserrat.variable)}>
+      <body>
+        <Header />
+        {children}
+        {/* <Header /> */}
+      </body>
     </html>
   );
 }
