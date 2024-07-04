@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import logo from "@/assets/landing/gtco.webp";
 
 import HeroSection from "@/app/landing/hero/Hero";
-import Partners from "@/app/landing/Partners";
+import Partners from "@/components/partners/Partners";
 import Service from "@/app/landing/Service";
 import Badges from "@/app/landing/Badges";
 import Event from "@/app/landing/event/Event";

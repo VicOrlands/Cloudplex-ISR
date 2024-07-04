@@ -85,7 +85,7 @@ const secondImages = [
 const Partners = () => {
     return (
         <div className={styles.partnersSection}>
-            <h2>Our Trusted Partners & Clients</h2>
+            <h2 className={styles["center-h2"]}>Our Trusted Partners & Clients</h2>
 
             <Marquee direction="right" speed={100} delay={5}>
                 {images.map((img, index) => (

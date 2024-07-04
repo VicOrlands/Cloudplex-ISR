@@ -59,7 +59,7 @@ const DesktopNav = () => {
                     </li>
 
                     <li className="dropdown-container">
-                        <Link className="nav-link" href="/aws-partnership">
+                        <Link className="nav-link" href="/awsPartnership">
                             AWS Partnership
                         </Link>
                     </li>
@@ -241,7 +241,7 @@ export default function Header() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="nav-link" href="/aws-partnership">
+                                    <Link className="nav-link" href="/awsPartnership">
                                         AWS Partnership
                                     </Link>
                                 </li>
