@@ -59,7 +59,7 @@ export default function Fintech() {
             <EventsSuccess />
 
             <LazyBackgroundImage src={BgImg2} className={styles["email-section"]} >
-                <section className={styles["fintech-email"]} id={styles["email-notification"]}>
+                <section className={styles["fintech-email"]} id="email-notification">
                     <ButtonTranparentLink link="/events" title="Go to events" className={styles['go-to-events-button']} />
 
                     <h2>When we get the scoop, you'll get the news.</h2>

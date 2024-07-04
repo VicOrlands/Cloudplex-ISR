@@ -1,0 +1,125 @@
+.awslambda-page {
+    font-family: var(--font-montserrat);
+}
+
+.awslambda-page .hero {
+    color: #344054;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    width: 60%;
+    margin: auto;
+}
+
+.awslambda-page .hero h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+
+.awslambda-page .hero p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.awslambda-page .grid-column {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    padding: 30px 300px;
+}
+
+.awslambda-page .grid-column h2 {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: .5rem;
+}
+
+.awslambda-page .grid-column p {
+    color: #344054;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.reviewSection {
+    padding-bottom: 50px;
+}
+
+.reviewSection h2 {
+    color: var(--color-h2);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-h2);
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    .awslambda-page .hero {
+        padding: 0 20px;
+        margin: 0;
+        height: 40vh;
+        width: 100%;
+    }
+
+    .awslambda-page .hero h1 {
+        font-size: 28px;
+    }
+
+    .awslambda-page .hero p {
+        font-size: 16px;
+    }
+
+    .awslambda-page .grid-column {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .awslambda-page .grid-column h2 {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: .5rem;
+    }
+
+    .awslambda-page .grid-column p {
+        color: #344054;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    .awslambda-page .grid-column div {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .awslambda-page .grid-column img {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-img-bottom div:nth-child(2) {
+        grid-area: 1;
+    }
+
+    .reviewSection {
+        padding-bottom: 0;
+    }
+
+    .reviewSection h2 {
+        font-size: var(--font-size-h2-sm);
+    }
+}

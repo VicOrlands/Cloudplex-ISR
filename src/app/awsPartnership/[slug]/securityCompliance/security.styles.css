@@ -1,0 +1,165 @@
+.security-compliance-page {
+  padding: 0 150px;
+  font-display: swap;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+
+.security-compliance-hero-section {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 0 30px;
+  align-items: center;
+  padding-top: 8%;
+}
+
+.security-compliance-hero-section div h1 {
+  color: #344054;
+  font-size: 2.8rem !important;
+  font-weight: 800;
+}
+
+.security-compliance-hero-section div p {
+  color: #344054;
+  font-size: 1.4rem !important;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.security-compliance-hero-section div a {
+  background-color: #3e54ac;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #d0d5dd;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 1rem !important;
+  font-weight: 600;
+}
+
+.security-compliance-hero-img {
+  display: flex;
+  justify-content: center;
+}
+
+.security-compliance-hero-img img {
+  width: 80%;
+}
+
+/* aws-dynmano-services */
+.security-compliance-services {
+  padding: 60px 0;
+}
+
+.security-compliance-services h3,
+.security-compliance-client-stories h3 {
+  color: #667085;
+  font-size: 1.2rem !important;
+  font-weight: 400;
+}
+
+.security-compliance-services h2,
+.security-compliance-client-stories h2 {
+  color: #344054;
+  font-size: 2rem !important;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.security-compliance-services-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.security-compliance-services-column ul li {
+  color: #667085;
+  font-size: 1rem !important;
+  font-weight: 400;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.security-compliance-services-column ul li img {
+  height: 28px;
+  width: 28px;
+  margin-right: 30px;
+}
+
+.security-compliance-client-stories .heading {
+  padding-left: 150px;
+}
+
+.security-compliance-client-stories h2 {
+  margin-bottom: 0;
+}
+
+/* media query for small screen */
+@media (max-width: 768px) {
+  .security-compliance-page {
+    padding: 0 20px;
+  }
+
+  .security-compliance-hero-section {
+    grid-template-columns: 1fr;
+    height: fit-content;
+    padding: 50px 0 30px 0;
+  }
+
+  .security-compliance-hero-section div h1 {
+    font-size: 28px !important;
+  }
+
+  .security-compliance-hero-section div p {
+    font-size: 14px !important;
+  }
+
+  .security-compliance-hero-section div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .security-compliance-hero-section div a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .security-compliance-hero-img {
+    grid-area: 1;
+    margin: 50px 0 30px 0;
+  }
+
+  /* aws-dynmano-services */
+  .security-compliance-services {
+    padding: 30px 0;
+  }
+
+  .security-compliance-services h2,
+  .security-compliance-client-stories h2 {
+    font-size: 24px !important;
+    margin-bottom: 5px;
+  }
+
+  .security-compliance-services h3,
+  .security-compliance-client-stories h3 {
+    font-size: 16px !important;
+  }
+
+  .security-compliance-client-stories h3 {
+    margin-bottom: 0;
+  }
+
+  .security-compliance-services-column ul li img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .security-compliance-client-stories {
+    margin-bottom: -100px;
+  }
+
+  .security-compliance-client-stories .heading {
+    padding-left: 20px;
+  }
+}

@@ -144,28 +144,6 @@
     text-align: center;
 }
 
-.reviewSectionBg {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 320px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.call-to-action {
-    text-align: center;
-}
-
-.call-to-action h3 {
-    color: #fff;
-    font-family: var(--font-montserrat);
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
 /* small screen */
 @media (max-width: 768px) {
     .partnership-hero-section {
@@ -235,7 +213,4 @@
         font-size: var(--font-size-h2-sm);
     }
 
-    .call-to-action h3 {
-        font-size: 18px !important;
-    }
 }

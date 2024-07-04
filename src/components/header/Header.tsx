@@ -71,7 +71,7 @@ const DesktopNav = () => {
                     </li>
 
                     <li className="dropdown-container">
-                        <Link className="nav-link" href="/case-studies">
+                        <Link className="nav-link" href="/caseStudy">
                             Case Studies
                         </Link>
                     </li>
@@ -251,7 +251,7 @@ export default function Header() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="nav-link" href="/case-studies">
+                                    <Link className="nav-link" href="/caseStudy">
                                         Case Studies
                                     </Link>
                                 </li>

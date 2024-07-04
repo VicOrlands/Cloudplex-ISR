@@ -1,0 +1,140 @@
+.casestudy-hero-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.casestudy-hero {
+    text-align: center;
+    font-family: var(--font-montserrat);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+}
+
+.casestudy-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.casestudy-content h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.casestudy-content p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 30px;
+    width: 70%;
+}
+
+.casestudy-catalog {
+    margin-top: -150px;
+    padding-bottom: 50px;
+}
+
+.casestudy-list {
+    padding: 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.casestudy-list-item {
+    border-radius: 8px;
+    border: 0.8px solid #d0d5dd;
+    background: #fff;
+    box-shadow:
+        0px 3.2096168994903564px 4.814425468444824px -1.6048084497451782px rgba(16, 24, 40, 0.03),
+        0px 9.628850936889648px 12.838467597961426px -3.2096168994903564px rgba(16, 24, 40, 0.08);
+    height: 100%;
+    padding: 20px;
+}
+
+.casestudy-list-item p {
+    color: #667085;
+    font-size: 13px;
+}
+
+.casestudy-list-item .imgcontainer {
+    height: 35vh;
+}
+
+.casestudy-list-item .imgcontainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.casestudy-list-item .content-title {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+}
+
+.casestudy-list-item .content-title h5 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.casestudy-list-item p {
+    color: #667085;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: var(--font-nunito);
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .casestudy-hero {
+        height: 400px;
+        align-items: start;
+        padding: 0 20px;
+        padding-top: 60px;
+    }
+
+    .casestudy-hero h1 {
+        font-size: 26px;
+    }
+
+    .casestudy-hero p {
+        font-size: 17px;
+    }
+
+    .casestudy-content p {
+        width: 100%;
+    }
+
+    .casestudy-catalog {
+        margin-top: -150px;
+    }
+
+    .casestudy-list {
+        padding: 0 20px;
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+
+    .casestudy-list-item .imgcontainer {
+        height: 30vh;
+    }
+
+    .casestudy-list-item .content-title h5 {
+        font-size: 18px;
+    }
+
+    .casestudy-list-item p {
+        font-size: 16px;
+    }
+
+}

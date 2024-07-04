@@ -1,0 +1,262 @@
+.aws-partnership-parent {
+  font-display: swap;
+  font-family: "Montserrat", sans-serif;
+  color: #344054;
+}
+
+.hero-section {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px 70px 80px 70px;
+  border-bottom: 1px solid #d0d5dd;
+}
+
+.hero-section-paragraph h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 49px;
+}
+
+.hero-section-paragraph p {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.hero-section-paragraph button {
+  height: 44px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: transparent;
+  border: 1px solid #d0d5dd;
+}
+
+.hero-section-paragraph button:hover {
+  background-color: #d0d5dd;
+}
+
+/* well-architected-review-matters */
+.well-architected-review-matters,
+.well-architected-reviews {
+  padding: 70px;
+}
+
+.well-architected-review-matters h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #344054;
+}
+
+.well-architected-review-matters p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.pillars-of-well-architected-framework {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 40px;
+  margin-top: 20px;
+}
+
+.pillars-of-well-architected-framework .pillar {
+  display: flex;
+  font-display: swap;
+  font-family: Inter;
+}
+
+.pillars-of-well-architected-framework .pillar img {
+  width: 56px;
+  height: 56px;
+}
+
+.pillars-of-well-architected-framework .pillar h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+.pillars-of-well-architected-framework .pillar p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #848484;
+}
+
+/* well-architected-reviews */
+.well-architected-reviews {
+  padding-top: 0;
+}
+
+.well-architected-reviews h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #344054;
+}
+
+.well-architected-reviews .framework-review {
+  border-bottom: 1px solid #d0d5dd;
+  margin-bottom: 10px;
+  font-display: swap;
+  font-family: Inter;
+}
+
+.well-architected-reviews .framework-review h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+.well-architected-reviews .framework-review p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #848484;
+}
+
+/* well-architected-form */
+.well-architected-form {
+  padding: 0 100px 70px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 50px;
+}
+
+.well-architected-form form label,
+.well-architected-form form label input {
+  display: block;
+  width: 80%;
+}
+
+.well-architected-form h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #344054;
+}
+
+.well-architected-form form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #344054;
+  margin-bottom: 12px;
+}
+
+.well-architected-form form label input {
+  padding: 10px 14px 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  margin-top: 5px;
+}
+
+.well-architected-form form button {
+  width: 101px;
+  height: 44px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3e54ac;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.well-architected-form img {
+  width: 435px;
+  height: 435px;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+/* small screen media query */
+@media (max-width: 991px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    padding: 80px 20px 40px;
+  }
+
+  .hero-section img {
+    width: 100%;
+    margin-bottom: 36px;
+  }
+
+  .hero-section-paragraph h1 {
+    font-size: 28px !important;
+    font-weight: 800;
+    line-height: 34px;
+  }
+
+  .hero-section-paragraph p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+
+  /* well-architected-review-matters */
+  .well-architected-review-matters,
+  .well-architected-reviews {
+    padding: 30px 20px;
+  }
+
+  .well-architected-review-matters h2 {
+    font-size: 18px !important;
+  }
+
+  .well-architected-review-matters p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .pillars-of-well-architected-framework {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
+
+  .pillars-of-well-architected-framework .pillar h3 {
+    font-size: 24px !important;
+  }
+
+  /* well-architected-reviews */
+  .well-architected-reviews {
+    padding-top: 0;
+  }
+
+  .well-architected-reviews h2 {
+    font-size: 18px !important;
+  }
+
+  .well-architected-reviews .framework-review h3 {
+    font-size: 24px !important;
+  }
+
+  /* well-architected-form */
+  .well-architected-form {
+    padding: 0 20px;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .well-architected-form form label,
+  .well-architected-form form label input {
+    width: 100%;
+  }
+
+  .well-architected-form h2 {
+    font-size: 28px !important;
+    line-height: 34px;
+    margin-bottom: 25px;
+  }
+
+  .well-architected-form form button {
+    width: 110px;
+    margin: 10px 0 40px 0;
+  }
+
+  .well-architected-form img {
+    width: 100%;
+    height: 100%;
+    grid-area: 1;
+  }
+}

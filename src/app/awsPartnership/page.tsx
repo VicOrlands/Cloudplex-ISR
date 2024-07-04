@@ -4,16 +4,16 @@ import styles from "./aws.module.css";
 import { awsservices } from "./awsArray";
 import { GoArrowRight } from "react-icons/go";
 
-import Partners from "../../components/partners/Partners";
+import { AwsCTA } from "./component/cta";
+import Review from "../landing/review/Review";
 import BlogGrid from "@/components/blogGrid/Grid";
+import Partners from "../../components/partners/Partners";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 import { ButtonLink, ButtonTranparentLink } from "@/components/button/Button";
 
 import techbadge from "@/assets/landing/badges/techbadge.png";
-import consultingbadge from "@/assets/landing/badges/AWS-Consulting-Partner-Badge 1.png";
 import BgImg from "@/assets/aws_partnership/AwsBackground.webp"
-import BgImg2 from "@/assets/aws_partnership/call-to-action.png"
-import Review from "../landing/review/Review";
+import consultingbadge from "@/assets/landing/badges/AWS-Consulting-Partner-Badge 1.png";
 
 const AWSPartnership = () => {
     return (
@@ -70,7 +70,7 @@ const AWSPartnership = () => {
                                 {service.desc}
                             </p>
                             <Link
-                                href={service.link}
+                                href={service.link.includes("https://") ? service.link : `/awsPartnership/${service.link}`}
                                 className={
                                     service.link === "" ? styles["btn-inactive"] : styles["btn-active"]
                                 }
@@ -93,16 +93,7 @@ const AWSPartnership = () => {
 
             <BlogGrid />
 
-            <LazyBackgroundImage src={BgImg2} className={styles["reviewSectionBg"]}>
-                <div className={styles["call-to-action"]}>
-                    <div>
-                        <h3>
-                            Embrace the future of computing with our expert cloud solutions.
-                        </h3>
-                        <ButtonLink link={"/contact-us"} title="Get in touch" className="" />
-                    </div>
-                </div>
-            </LazyBackgroundImage>
+            <AwsCTA />
         </div>
     );
 }

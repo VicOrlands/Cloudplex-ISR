@@ -1,0 +1,191 @@
+.cloud-resource-page {
+  padding: 0 150px;
+  font-display: swap;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+
+.cloud-resource-dynamo-hero-section {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  height: 70vh;
+  margin-bottom: 20px;
+  padding-top: 6%;
+}
+
+.cloud-resource-dynamo-hero-section div h1 {
+  color: #344054;
+  font-size: 2.8rem !important;
+  font-weight: 800;
+}
+
+.cloud-resource-dynamo-hero-section div p {
+  color: #344054;
+  font-size: 1.4rem !important;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.partnership-hero-btn a {
+  background-color: transparent;
+  color: #344054;
+  text-decoration: none;
+  border: 1px solid #d0d5dd;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 1rem !important;
+  font-weight: 600;
+}
+
+.partnership-hero-btn a:first-child {
+  color: #ffffff !important;
+  background-color: #3e54ac;
+  margin-right: 20px;
+}
+
+.partnership-hero-img img {
+  width: 100%;
+}
+
+/* aws-dynmano-services */
+.cloud-resource-services {
+  padding: 60px 0;
+}
+
+.cloud-resource-services h2,
+.cloud-resource-stories h2 {
+  color: #101828;
+  font-display: swap;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem !important;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.cloud-resource-services h3,
+.cloud-resource-stories p {
+  color: #667085;
+  font-display: swap;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem !important;
+  font-weight: 400;
+}
+
+.cloud-resource-stories .heading {
+  padding-left: 150px;
+}
+
+.cloud-resource-stories .heading h2,
+.cloud-resource-stories .heading p {
+  margin-bottom: 0;
+}
+
+.cloud-resource-services-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 70px;
+  margin: 50px 0;
+}
+
+.cloud-resource-services-column div img {
+  height: 83px;
+  margin-bottom: 30px;
+}
+
+.cloud-resource-services-column div h3 {
+  color: #101828;
+  font-size: 1.25rem !important;
+  font-weight: 600;
+  font-display: swap;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cloud-resource-services-column div p {
+  color: #667085;
+  font-display: swap;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem !important;
+  font-weight: 400;
+}
+
+/* media query for small screen */
+@media (max-width: 768px) {
+  .cloud-resource-page {
+    padding: 0 20px;
+  }
+
+  .cloud-resource-dynamo-hero-section {
+    grid-template-columns: 1fr;
+    height: fit-content;
+    padding: 50px 0 30px 0;
+  }
+
+  .cloud-resource-dynamo-hero-section div h1 {
+    font-size: 28px !important;
+  }
+
+  .cloud-resource-dynamo-hero-section div p {
+    font-size: 14px !important;
+  }
+
+  .partnership-hero-btn {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .partnership-hero-btn a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .partnership-hero-btn a:first-child {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .partnership-hero-img {
+    grid-area: 1;
+    margin: 50px 0 30px 0;
+  }
+
+  /* aws-dynmano-services */
+  .cloud-resource-services {
+    padding: 30px 0;
+  }
+
+  .cloud-resource-services h3 {
+    font-size: 16px !important;
+  }
+
+  .cloud-resource-services h2 {
+    font-size: 24px !important;
+    margin-bottom: 5px;
+  }
+
+  .cloud-resource-services-column {
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+  }
+
+  .cloud-resource-services-column div img {
+    height: 90px;
+    margin-bottom: 20px;
+  }
+
+  .cloud-resource-stories {
+    margin: -30px 0 -70px 0;
+  }
+
+  .cloud-resource-stories .heading {
+    padding-left: 20px;
+  }
+
+  .cloud-resource-stories .heading h2 {
+    font-size: 24px !important;
+  }
+
+  .cloud-resource-stories .heading p {
+    font-size: 14px !important;
+  }
+}
