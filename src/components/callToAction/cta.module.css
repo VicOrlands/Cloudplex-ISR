@@ -1,0 +1,57 @@
+ .heroCta {
+     border-radius: 10px;
+     border: 1px solid #d0d5dd;
+     background: #fff;
+     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+     display: flex;
+     align-items: center;
+     padding: 5px 5px 5px 10px;
+     gap: 8px;
+     width: 450px;
+ }
+
+ .heroCta input {
+     width: -webkit-fill-available;
+     font-size: 16px;
+     padding: 5px;
+     border: none;
+ }
+
+ .heroCta input:focus-visible {
+     outline: none;
+ }
+
+ .button {
+     background-color: #3e54ac;
+     border-radius: 8px;
+     border: 1px solid #3e54ac;
+     color: #fff;
+     cursor: pointer;
+     font-family: var(--font-montserrat);
+     font-size: 16px;
+     font-weight: 600;
+     padding: 10px 20px;
+ }
+
+ .button:hover {
+     background-color: #1935a1;
+     transition: all 0.5s ease-in-out;
+ }
+
+
+ @media (max-width: 768px) {
+     .heroCta {
+         width: 100%;
+     }
+
+     .heroCta input {
+         font-size: 14px;
+         width: 65%;
+     }
+
+     .button {
+         padding: 10px;
+         font-size: 14px;
+     }
+
+ }

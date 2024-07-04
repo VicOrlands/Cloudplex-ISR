@@ -1,0 +1,324 @@
+.eventsParent h2,
+.eventsParent h4,
+.eventsParent h5,
+.eventsParent p {
+    display: block;
+    font-family: var(--font-inter);
+}
+
+.eventsHero {
+    background-color: #10193b;
+    padding: 0 150px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+    padding-top: 4%;
+    color: #eff0fa;
+}
+
+.eventsHeroVideo {
+    border-radius: 8px;
+    justify-self: right;
+    height: 90%;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #475467;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventsHero h1 {
+    font-family: var(--font-inter);
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.eventsHero p {
+    font-family: var(--font-inter);
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* event-socials */
+.eventSocials {
+    padding: 30px 150px 50px 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
+}
+
+.eventSocialsGrid {
+    border: 1px solid #eaecf0;
+    border-radius: 16px;
+    min-height: 488px;
+    width: 100%;
+}
+
+.eventSocialsImgContainer {
+    position: relative;
+    height: 300px;
+}
+
+.eventSocialsImgContainer,
+.eventSocialsImgContainer img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.eventSocialsImgContainer img {
+    height: 100%;
+}
+
+.eventSocialsImgContainer .justifyHeading,
+.eventSocialsImgContainer .alignHeadingCenter {
+    background-color: rgba(117, 110, 118, 0.97);
+    border-top: 1px solid #ffffff4d;
+    padding: 20px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.eventSocialsImgContainer .alignHeadingCenter {
+    justify-content: center;
+}
+
+.eventSocialsImgContainer>div,
+.eventSocialsBodyContainer div {
+    display: flex;
+    align-items: center;
+}
+
+.eventSocialsImgContainer div h5 {
+    color: #fff;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.eventSocialsBodyContainer {
+    padding: 20px;
+}
+
+.eventSocialsBodyContainer h3 {
+    font-family: var(--font-inter);
+    color: #101828;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+
+.eventSocialsBodyContainer p {
+    color: #344054;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+}
+
+.eventSocialsBodyContainer a {
+    font-family: var(--font-inter);
+    color: #3e54ac;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* events-webinars */
+.eventWebinars {
+    padding: 0 150px;
+}
+
+.eventWebinars h2 {
+    font-family: var(--font-inter);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.eventWebinarGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
+}
+
+.eventWebinarCard {
+    border: 1px solid #d0d5dd;
+    border-radius: 16px;
+}
+
+.eventWebinarCardImage {
+    height: 30vh;
+}
+
+.eventWebinarCardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+.eventWebinarCardContent {
+    padding: 20px;
+}
+
+.eventWebinarCardContent h5 {
+    color: #344054;
+    font-family: var(--font-inter);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.eventWebinarCardContent a {
+    font-family: var(--font-inter);
+    color: #3e54ac;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.eventWebinarCardContent a #icon {
+    font-size: 16px;
+}
+
+/* eventPartners */
+.eventPartners {
+    padding: 100px 0;
+}
+
+.eventPartners h2 {
+    color: #475467;
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.eventPartnersLogos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventPartnersLogos .partnersLogo {
+    width: auto;
+    height: 60px;
+    margin-right: 40px;
+}
+
+.eventPartnersLogos .partnersLogo img {
+    height: 100%;
+    width: 100%;
+}
+
+.eventPartnersLogos .partnersLogo:last-child img {
+    margin-right: 0;
+}
+
+/* media query for small screen */
+@media (max-width: 768px) {
+    .eventsHero {
+        padding: 40px 20px 10px 20px;
+        height: fit-content;
+        margin-bottom: 30px;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .eventsHeroVideo {
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        grid-area: 2;
+    }
+
+    .eventsHero h1 {
+        margin-bottom: 0;
+    }
+
+    .eventsHero p {
+        font-size: 14px;
+    }
+
+    /* event-socials */
+    .eventSocials {
+        padding: 0 20px;
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+    .eventSocialsImgContainer {
+        position: relative;
+        height: 250px;
+    }
+
+    .eventSocialsBodyContainer p {
+        display: block;
+    }
+
+    /* events-webinars */
+    .eventWebinars {
+        margin-bottom: 50px;
+        padding: 0 20px;
+        padding-top: 40px;
+    }
+
+    .eventWebinarGrid {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+    .eventWebinarCardImage {
+        height: 24vh;
+    }
+
+    /* eventPartners */
+    .eventPartners {
+        padding: 0 20px 50px 20px;
+    }
+
+    .eventPartners h2 {
+        margin-bottom: 30px;
+    }
+
+    .eventPartnersLogos {
+        flex-wrap: wrap;
+    }
+
+    .eventPartnersLogos .partnersLogo {
+        height: 50px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .eventPartnersLogos .partnersLogo img {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .eventPartnersLogos .partnersLogo:nth-child(odd) img {
+        margin: 0;
+    }
+}

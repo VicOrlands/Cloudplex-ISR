@@ -1,0 +1,175 @@
+  /* courses-container */
+  .courses-container {
+      margin: 50px 0;
+  }
+
+  /*  courses */
+  .blogCatalog {
+      font-family: var(--font-montserrat);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px 20px;
+      padding: 0 5%;
+      margin-bottom: 50px;
+  }
+
+  .blogCard {
+      background: #fff;
+      border: 1px solid #27283323;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+  }
+
+  .blogCard .imgContainer {
+      height: 27vh;
+      border-bottom: 1px solid #27283323;
+  }
+
+  .blogCard img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      height: 100%;
+      width: 100%;
+  }
+
+  .content {
+      padding: 20px 15px;
+      font-family: var(--font-montserrat);
+  }
+
+  .contentTitle {
+      display: flex;
+  }
+
+  .contentTitle h5 {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      color: #272833;
+      margin-bottom: 20px;
+      margin-right: 10px;
+  }
+
+  .contentTitle a {
+      color: #101828;
+  }
+
+  .content p {
+      color: #2728338c;
+      font-family: var(--font-nunito);
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 0;
+  }
+
+  /* page numbers */
+  .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+  }
+
+  .paginationItem {
+      background: #fff;
+      color: #42526e;
+      font-family: var(--font-nunito);
+      border: none;
+      height: 100%;
+      width: 45px;
+      position: relative;
+      margin: 0;
+      cursor: pointer;
+  }
+
+  .paginationItem span {
+      font-size: 1.3rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  .paginationItem:nth-child(even) {
+      margin: 0 20px;
+  }
+
+  .prev,
+  .next {
+      background: #fff;
+      color: #516beb;
+      border: none;
+      cursor: pointer;
+      margin: 0;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+  }
+
+  .paginationItem.active {
+      background: #516beb;
+      border-radius: 3px;
+      color: #fff;
+      padding: 20px 0;
+      pointer-events: none;
+  }
+
+  .prev.disabled,
+  .next.disabled,
+  .courses-category-font.disabled {
+      pointer-events: none;
+      color: #999;
+      fill: #999;
+  }
+
+
+  /* tablet */
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+      /* courses-container */
+      .courses-container {
+          margin: 50px 0;
+      }
+
+      /*  courses */
+      .blogCatalog {
+          grid-template-columns: repeat(2, 1fr);
+      }
+
+      .blogCard .imgContainer {
+          height: 20vh;
+      }
+
+  }
+
+  /* mobile */
+  @media screen and (max-width: 768px) {
+
+      /* courses-container */
+      .courses-container {
+          margin: 50px 0;
+      }
+
+      /*  courses */
+      .blogCatalog {
+          grid-template-columns: 1fr;
+      }
+
+      .blogCard .imgContainer {
+          height: auto;
+      }
+
+      .paginationItem span {
+          font-size: 1.2rem;
+      }
+
+      .prev,
+      .next {
+          font-size: 1.2rem;
+      }
+
+      .paginationItem:nth-child(even) {
+          margin: 0 15px;
+      }
+  }

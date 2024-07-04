@@ -1,0 +1,293 @@
+.fintech-page,
+.email-section {
+    height: 60vh;
+    padding: 0 20%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+}
+
+.fintech-hero-section {
+    font-family: var(--font-montserrat);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.fintech-hero-section img {
+    width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.fintech-hero-section h1 {
+    color: #000;
+    font-size: 46px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.fintech-hero-section p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* fintech-body-section */
+.fintech-body-section {
+    padding: 0 200px;
+    font-family: var(--font-montserrat);
+}
+
+.fintech-body-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.fintech-body-section p {
+    color: #344054;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+
+.fintech-body-section .btn {
+    margin: 0;
+}
+
+/* events-summit sliders */
+.events-summit {
+    padding: 50px 200px 0;
+    font-family: var(--font-montserrat);
+}
+
+.events-summit div h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: 10px;
+}
+
+.events-summit div h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #667085;
+}
+
+.events-summit-container {
+    border-right: 0.744px solid rgba(16, 24, 40, 0.08);
+    box-shadow:
+        0px 4px 6px -2px rgba(16, 24, 40, 0.03),
+        0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+    display: flex;
+    margin: 30px 0;
+    height: 450px;
+    width: 100%;
+}
+
+.events-summit-container .left-side {
+    height: 100%;
+    width: 50%;
+}
+
+.events-summit-container .left-side div {
+    height: 100%;
+    width: 100%;
+}
+
+.events-summit-container .left-side img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.events-summit-container .right-side {
+    border: 1px solid rgba(16, 24, 40, 0.137);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.events-summit-container .right-side img {
+    height: 48px;
+    width: auto;
+    margin-right: auto;
+}
+
+.events-summit-container .right-side h2 {
+    color: #344054;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 20px 0 30px 0;
+}
+
+.events-summit-container .right-side h2 a {
+    color: #3e54ac;
+}
+
+.events-summit-container .right-side h2 a:hover {
+    text-decoration: underline;
+}
+
+.events-summit-container .right-side section {
+    display: flex;
+    align-items: center;
+}
+
+.events-summit-container .right-side button {
+    background-color: transparent;
+    color: #3e54ac;
+    cursor: pointer;
+    border: 1px solid #fff;
+    font-size: 25px;
+    outline: 1px solid #fff;
+    margin-left: 30px;
+    padding: 0;
+}
+
+.events-summit-container .right-side .btn {
+    margin: 0;
+}
+
+/* fintech-email */
+.email-section {
+    height: 50vh;
+    padding: 0;
+}
+
+.fintech-email {
+    padding: 0 200px;
+    font-family: var(--font-montserrat);
+    width: 100%;
+}
+
+.fintech-email .go-to-events-button {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.fintech-email h2 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.fintech-email p {
+    color: #344054;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+/* media query for small screen */
+@media (max-width: 768px) {
+
+    .fintech-page,
+    .email-section {
+        padding: 0 20px;
+    }
+
+    .fintech-hero-section img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .fintech-hero-section h1 {
+        font-size: 28px;
+    }
+
+    .fintech-hero-section p {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    /* fintech-body-section */
+    .fintech-body-section {
+        padding: 0 20px;
+    }
+
+    .fintech-body-section p {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+
+    /* events-summit sliders */
+    .events-summit {
+        padding: 50px 20px 0;
+    }
+
+    .events-summit div h2 {
+        font-size: 24px;
+    }
+
+    .events-summit div h4 {
+        font-size: 16px;
+    }
+
+    .events-summit-container {
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .events-summit-container .left-side {
+        height: auto;
+        width: 100%;
+    }
+
+    .events-summit-container .right-side {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .events-summit-container .right-side img {
+        height: 40px;
+    }
+
+    .events-summit-container .right-side h2 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .events-summit-container .right-side section {
+        display: flex;
+        align-items: center;
+    }
+
+    .events-summit-container .right-side button {
+        font-size: 20px;
+    }
+
+    /* fintech-email */
+    .email-section {
+        padding: 0;
+    }
+
+    .fintech-email {
+        padding: 0 20px;
+    }
+
+    .fintech-email h2 {
+        font-size: 22px;
+    }
+
+    .fintech-email p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}

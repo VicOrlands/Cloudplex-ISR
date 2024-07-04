@@ -1,0 +1,34 @@
+ .button,
+ .transparentButton {
+     font-family: var(--font-montserrat);
+     font-weight: 600;
+     font-size: 16px;
+     border-radius: 8px;
+     padding: 10px 20px;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     margin: auto;
+     width: fit-content;
+ }
+
+ .button {
+     background-color: #3e54ac;
+     border: 1px solid #3e54ac;
+     color: #fff;
+ }
+
+ .button:hover {
+     background-color: #1935a1;
+ }
+
+ .transparentButton {
+     box-shadow: 0px 1px 2px 0px #1018280d;
+     border: 1px solid #d0d5dd;
+     color: #344054;
+     background-color: #fff;
+ }
+
+ .transparentButton:hover {
+     border: 1px solid #878b91;
+ }

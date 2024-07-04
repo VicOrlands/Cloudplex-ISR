@@ -3,13 +3,14 @@ import type { Metadata } from "next";
 import styles from "./page.module.css";
 import logo from "@/assets/landing/gtco.webp";
 
-import HeroSection from "@/pages/Landing/hero/Hero";
-import Partners from "@/pages/Landing/Partners";
-import Service from "@/pages/Landing/Service";
-import Badges from "@/pages/Landing/Badges";
-import Event from "@/pages/Landing/event/Event";
-import Review from "@/pages/Landing/review/Review";
-import Clients from "@/pages/Landing/Client";
+import HeroSection from "@/app/landing/hero/Hero";
+import Partners from "@/app/landing/Partners";
+import Service from "@/app/landing/Service";
+import Badges from "@/app/landing/Badges";
+import Event from "@/app/landing/event/Event";
+import Review from "@/app/landing/review/Review";
+import Clients from "@/app/landing/Client";
+import BlogGrid from "@/components/blogGrid/Grid";
 
 export const metadata: Metadata = {
   title: "Top Cloud Services providers in with CloudPlexo's Innovative Solutions.",
@@ -46,6 +47,7 @@ export default function Home() {
         </div>
       </section>
 
+      <BlogGrid />
     </div>
   );
 }

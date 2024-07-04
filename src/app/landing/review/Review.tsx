@@ -1,12 +1,16 @@
 "use client"
 
-import React, { useState, useRef, useEffect } from "react";
+import clsx from "clsx";
+import Link from "next/link";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import styles from "./reviews.module.css";
 import 'video-react/dist/video-react.css';
 import { Player, BigPlayButton } from "video-react";
 import Image, { StaticImageData } from "next/image";
+import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 
 import img1 from "@/assets/reviews/video1.png";
 import img2 from "@/assets/reviews/video2.png";
@@ -23,53 +27,6 @@ import {
     BsArrowLeftCircle,
     BsArrowRightCircle,
 } from "react-icons/bs";
-import clsx from "clsx";
-import Link from "next/link";
-
-const LazyBackgroundImage = ({ src, className, children }: {
-    src: StaticImageData, className: string, children: React.ReactNode
-}) => {
-    const [isLoaded, setIsLoaded] = useState(false);
-    const bgRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries, observer) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setIsLoaded(true);
-                        observer.disconnect();
-                    }
-                });
-            },
-            {
-                rootMargin: "100px",
-            },
-        );
-
-        if (bgRef.current) {
-            observer.observe(bgRef.current);
-        }
-
-        return () => {
-            if (observer && observer.disconnect) {
-                observer.disconnect();
-            }
-        };
-    }, []);
-
-    return (
-        <div
-            ref={bgRef}
-            className={className}
-            style={{
-                backgroundImage: isLoaded ? `url(${src.src})` : "none",
-            }}
-        >
-            {children}
-        </div>
-    );
-};
 
 
 interface CaseStudyProps {

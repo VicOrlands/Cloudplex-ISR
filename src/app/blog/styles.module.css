@@ -1,0 +1,50 @@
+.blogHeroBg {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 5%;
+}
+
+.blogHero {
+    color: #fff;
+    font-family: var(--font-montserrat);
+    height: 560px;
+    padding-top: 7%;
+    margin-bottom: -270px;
+}
+
+.blogHero h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.blogHero p {
+    margin: 10px 0 1rem 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .blogHeroBg {
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0 5%;
+    }
+
+    .blogHero {
+        height: 500px;
+        padding-top: 10%;
+        margin-bottom: -250px;
+    }
+
+    .blogHero h2 {
+        font-size: 32px;
+    }
+
+    .blogHero p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
