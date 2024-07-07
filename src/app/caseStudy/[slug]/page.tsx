@@ -22,6 +22,11 @@ import IlearnCloud from './Ilearncloud';
 import KoboAccountant from './KoboAccountant';
 import FeedXPay from './Feedpay';
 import HighMart from './Highmart';
+import Qpay from './Qpay';
+import Silicon from './Silicon';
+import Staycon from './Staycon';
+import Suba from './Suba';
+import Varscon from './Varscon';
 
 type PageProps = {
     params: {
@@ -122,8 +127,30 @@ const paths: PathsProps[] = [
     {
         comp: <HighMart />,
         url: "highmart-case-study"
-    }
+    },
+    {
+        comp: <Qpay />,
+        url: "qpay-case-study"
+    },
+    {
+        comp: <Silicon />,
+        url: "silicon-case-study"
+    },
+    {
+        comp: <Staycon />,
+        url: "staycon-case-study"
+    },
+
+    {
+        comp: <Suba />,
+        url: "suba-case-study"
+    },
+    {
+        comp: <Varscon />,
+        url: "varscon-case-study"
+    },
 ];
+
 
 export async function generateStaticParams() {
     return casestudy.map(({ link }) => ({

@@ -11,9 +11,9 @@ import Partners from "../../components/partners/Partners";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 import { ButtonLink, ButtonTranparentLink } from "@/components/button/Button";
 
-import techbadge from "@/assets/landing/badges/techbadge.png";
+import techbadge from "@/assets/landing/badges/techbadge.webp";
 import BgImg from "@/assets/aws_partnership/AwsBackground.webp"
-import consultingbadge from "@/assets/landing/badges/AWS-Consulting-Partner-Badge 1.png";
+import consultingbadge from "@/assets/landing/badges/AWS-Consulting-Partner-Badge 1.webp";
 
 const AWSPartnership = () => {
     return (

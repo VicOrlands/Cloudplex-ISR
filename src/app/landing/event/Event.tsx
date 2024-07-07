@@ -38,6 +38,13 @@ import secondSliderImg4 from "@/assets/events/DSC_0196.webp";
 import secondSliderImg5 from "@/assets/events/DSC_0212.webp";
 import thirdSliderImg1 from "@/assets/events/1691070055643.webp";
 import thirdSliderImg2 from "@/assets/events/1691070093414.webp";
+import kigali1 from "@/assets/events/kigali/first.webp"
+import kigali2 from "@/assets/events/kigali/second.webp"
+import kigali3 from "@/assets/events/kigali/third.webp"
+import kigali4 from "@/assets/events/kigali/fourth.webp"
+import kigali5 from "@/assets/events/kigali/fifth.webp"
+import kigali6 from "@/assets/events/kigali/sixth.webp"
+import kigali7 from "@/assets/events/kigali/seventh.webp"
 
 interface EventProps {
     img: StaticImageData,
@@ -48,6 +55,21 @@ interface EventProps {
 }
 
 const eventSuccessArray: EventProps[] = [
+    {
+        img: awsLogo,
+        imgText: "",
+        text: `Kigali Mixer Event. Watch a recap of the event <a href="https://cloudplexo.com/Kigali-mixer.mp4">here</a>`,
+        images: [
+            kigali1,
+            kigali2,
+            kigali3,
+            kigali4,
+            kigali5,
+            kigali6,
+            kigali7,
+        ],
+        width: 128,
+    },
     {
         img: businessDayLogo,
         imgText: `We were thrilled to co-host & sponsor the BusinessDay Economic Club's "C-Suite Executives Roundtable Dinner." It was an evening of insightful discussions and valuable connections.`,
@@ -97,33 +119,6 @@ const eventSuccessArray: EventProps[] = [
     },
 ];
 
-// link component
-const parseTextWithLinks = (text: string) => {
-    const linkRegex = /<a href="([^"]+)">([^<]+)<\/a>/g;
-    const parts = [];
-    let lastIndex = 0;
-    let match;
-
-    while ((match = linkRegex.exec(text)) !== null) {
-        if (match.index > lastIndex) {
-            parts.push(text.substring(lastIndex, match.index));
-        }
-        parts.push(
-            <Link href={match[1]} key={match.index}>
-                {match[2]}
-            </Link>
-        );
-        lastIndex = match.index + match[0].length;
-    }
-
-    if (lastIndex < text.length) {
-        parts.push(text.substring(lastIndex));
-    }
-
-    return parts;
-};
-
-
 function Event() {
     const [currentEventIndex, setCurrentEventIndex] = useState<number>(0);
     const [currentSlideIndex, setCurrentSlideIndex] = useState<number>(0);
@@ -164,8 +159,6 @@ function Event() {
         appendDots: (dots: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined) => <ul style={{ marginBottom: 40 }}>{dots}</ul>,
     };
 
-    const parsedContent = parseTextWithLinks(currentEvent.text);
-
     return (
         <div className={styles.events}>
             <div>
@@ -203,7 +196,11 @@ function Event() {
                         height={40}
                         width={currentEvent.width}
                     />
-                    <h4>{parsedContent}</h4>
+                    <h4
+                        dangerouslySetInnerHTML={{
+                            __html: currentEvent.text,
+                        }}
+                    ></h4>
                     <section>
                         <Link href="/events" className={styles.viewAllButton}>
                             View All Our Events

@@ -20,9 +20,14 @@ import img18 from "@/assets/casestudies/cryptosmart.png";
 import img19 from "@/assets/casestudies/convexity.png";
 import img20 from "@/assets/casestudies/dukia.png";
 import img21 from "@/assets/casestudies/fundus.png";
-import img22 from "@/assets/casestudies/koboAccHome.png";
+import img22 from "@/assets/casestudies/KoboAcc-logo.png";
 import img23 from "@/assets/casestudies/feedxpay.png";
 import img24 from "@/assets/casestudies/HighMart.png"
+import img25 from "@/assets/casestudies/qpay.png"
+import img26 from "@/assets/casestudies/silicon.png"
+import img27 from "@/assets/casestudies/staycon.png"
+import img28 from "@/assets/casestudies/suba.png"
+import img29 from "@/assets/casestudies/varscon.png"
 
 export interface CaseProps {
     image: StaticImageData,
@@ -136,6 +141,36 @@ const casestudy: CaseProps[] = [
         title: "HighMart - CloudPlexo's Role in the AWS Migration",
         desc: "HighMart, an ecommerce enterprise, sought to enhance its IT infrastructure to support its growing business needs. Faced with the limitations of their existing system, HighMart aimed to migrate to AWS to leverage its robust, scalable, and flexible cloud solutions.",
         link: "highmart-case-study"
+    },
+    {
+        image: img25,
+        title: "Qpay - Data Migration: Moving to AWS for Better Service",
+        desc: "Qpay, a growing company in digital payments, needed to improve its technology to keep up with its expansion. To provide better, more reliable services to its users, Qpay chose to move from Digital Ocean to Amazon Web Services (AWS), leveraging CloudPlexo's expertise.",
+        link: "qpay-case-study"
+    },
+    {
+        image: img26,
+        title: "Silicon Africa - Transitioning to AWS for Better Performance",
+        desc: "Silicon Africa upgraded its web applications to a highly scalable infrastructure on Amazon Web Services (AWS). The main goal is to ensure 24/7 site availability and reliability to meet the increasing demands of their users. This transition was expertly managed by CloudPlexo, ensuring a smooth and efficient migration process.",
+        link: "silicon-case-study"
+    },
+    {
+        image: img27,
+        title: "Staycon's AWS Migration for Telecoms Product",
+        desc: "Staycon transitioned its telecoms product to Amazon Web Services (AWS) to improve availability, reliability, and flexibility. This project supports their nationwide growth goals by leveraging AWS’s powerful services. CloudPlexo expertly managed the entire migration process, ensuring a smooth and efficient transition.",
+        link: "staycon-case-study"
+    },
+    {
+        image: img28,
+        title: "Suba Capital’s Transformation with AWS",
+        desc: "Suba Capital was on a mission to modernize its wealth management application by moving from a monolithic structure to a flexible, scalable microservices architecture using AWS. This initiative focuses on leveraging Amazon ECS (Elastic Container Service) to manage containers efficiently, ensuring the application is agile, maintainable, and ready for future growth.",
+        link: "suba-case-study"
+    },
+    {
+        image: img29,
+        title: "Customer Case Study: Varscon - Data Migration",
+        desc: "Varscon, a research and product design company, decided to migrate its infrastructure from Google Cloud Platform (GCP) to Amazon Web Services (AWS). This move aims to enhance service availability, reliability, and flexibility to support Varscon's growth and strategic objectives.",
+        link: "varscon-case-study"
     },
     {
         image: img2,
