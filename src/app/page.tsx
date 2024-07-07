@@ -41,8 +41,10 @@ export default function Home() {
 
         <div>
           <Image
+            loading="lazy"
             src={logo}
             alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+            priority={false}
           />
         </div>
       </section>

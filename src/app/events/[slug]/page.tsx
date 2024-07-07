@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { EventsArray, WebinarArray } from '../eventsArray';
-import defaultImg from "@/assets/events/events-video-thumbnail.png"
+import defaultImg from "@/assets/events/events-video-thumbnail.webp"
 import PlaceholderComp from './webinars/placeholderComp';
 import Fintech from './fusion/fintechFusion';
 

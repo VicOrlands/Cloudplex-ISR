@@ -17,6 +17,8 @@ const Clients = () => {
             <div className={styles.clientsImages}>
                 <div>
                     <Image
+                        loading="lazy"
+                        priority={false}
                         src={MarketWatchVectorLogo}
                         alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
                         width={150}
@@ -26,6 +28,8 @@ const Clients = () => {
                 <div
                 >
                     <Image
+                        loading="lazy"
+                        priority={false}
                         src={InvestoresPlaceLogo}
                         alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
                         width={150}
@@ -34,6 +38,8 @@ const Clients = () => {
                 </div>
                 <div>
                     <Image
+                        loading="lazy"
+                        priority={false}
                         src={FoxNewsOnboardingLogo}
                         alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
                         width={150}
@@ -43,6 +49,8 @@ const Clients = () => {
                 </div>
                 <div>
                     <Image
+                        loading="lazy"
+                        priority={false}
                         src={InternationalBusinessTimesLogo}
                         alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
                         width={172}
@@ -51,6 +59,8 @@ const Clients = () => {
                 </div>
                 <div>
                     <Image
+                        loading="lazy"
+                        priority={false}
                         src={StribLogo}
                         alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
                         width={150}
@@ -59,6 +69,8 @@ const Clients = () => {
                 </div>
                 <div>
                     <Image
+                        loading="lazy"
+                        priority={false}
                         src={DigitalJournalLogo}
                         alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
                         width={150}

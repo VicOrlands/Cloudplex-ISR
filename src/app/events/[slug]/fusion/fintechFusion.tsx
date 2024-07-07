@@ -7,10 +7,10 @@ import styles from "./styles.module.css";
 import CTAForm from "@/components/callToAction/cta";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 
-import Img from "@/assets/events/DSC_0212.jpg";
-import logo from "@/assets/events/fintech-fusion/event logo.png";
-import BgImg from "@/assets/events/fintech-fusion/hero_background.png";
-import BgImg2 from "@/assets/events/fintech-fusion/email_notification_bg.png";
+import Img from "@/assets/events/DSC_0212.webp";
+import logo from "@/assets/events/fintech-fusion/event logo.webp";
+import BgImg from "@/assets/events/fintech-fusion/hero_background.webp";
+import BgImg2 from "@/assets/events/fintech-fusion/email_notification_bg.webp";
 import { ButtonLink, ButtonTranparentLink } from "@/components/button/Button";
 
 export default function Fintech() {

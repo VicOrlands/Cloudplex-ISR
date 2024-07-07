@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import styles from "./styles.module.css";
-import BgImg from "@/assets/blog/blog-hero.png"
+import BgImg from "@/assets/blog/blog-hero.webp"
 
 import { BlogsProps, blogs } from "./array";
 import Pagination from "@/components/pagination";

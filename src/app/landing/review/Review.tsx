@@ -12,15 +12,15 @@ import { Player, BigPlayButton } from "video-react";
 import Image, { StaticImageData } from "next/image";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 
-import img1 from "@/assets/reviews/video1.png";
-import img2 from "@/assets/reviews/video2.png";
-import img3 from "@/assets/reviews/Immersion day.png";
-import icanlogo from "@/assets/reviews/ican.png";
-import livelilogo from "@/assets/reviews/liveli.png";
-import vectorquote from "@/assets/reviews/vector.png";
-import vectorquote2 from "@/assets/reviews/vector1.png";
+import img1 from "@/assets/reviews/video1.webp";
+import img2 from "@/assets/reviews/video2.webp";
+import img3 from "@/assets/reviews/Immersion day.webp";
+import icanlogo from "@/assets/reviews/ican.webp";
+import livelilogo from "@/assets/reviews/liveli.webp";
+import vectorquote from "@/assets/reviews/vector.webp";
+import vectorquote2 from "@/assets/reviews/vector1.webp";
 import gtcologo from "@/assets/partners/GTCO_logo.webp";
-import BgImage from "@/assets/reviews/testimonialbg.png"
+import BgImage from "@/assets/reviews/testimonialbg.webp"
 import {
     BsArrowLeft,
     BsArrowRight,
@@ -177,7 +177,6 @@ const Review: React.FC = () => {
                             <div className={styles.imageWrap}>
                                 <Player
                                     playsInline
-                                    poster={cases.image.src}
                                     src={cases.link}
                                     fluid
                                 >
@@ -188,6 +187,8 @@ const Review: React.FC = () => {
                             </div>
                             <div className={styles.contentWrap}>
                                 <Image
+                                    loading="lazy"
+                                    priority={false}
                                     src={cases.logo}
                                     className={styles.logoImage}
                                     alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions reviews"
@@ -227,12 +228,16 @@ const Review: React.FC = () => {
                         {wordreview.map((review, index) => (
                             <div className={styles.reviewBox} key={index}>
                                 <Image
+                                    loading="lazy"
+                                    priority={false}
                                     src={vectorquote}
                                     className={styles.quote1}
                                     alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
                                 />
 
                                 <Image
+                                    loading="lazy"
+                                    priority={false}
                                     src={vectorquote2}
                                     className={styles.quote2}
                                     alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"

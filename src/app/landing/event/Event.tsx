@@ -14,30 +14,30 @@ import {
 } from "react-icons/md";
 
 import awsLogo from "@/assets/events/awsLogo.webp";
-import event1 from "@/assets/events/events1/one.jpg";
-import event2 from "@/assets/events/events1/two.png";
-import event3 from "@/assets/events/events1/three.jpg";
-import event4 from "@/assets/events/events1/four.jpg";
-import event5 from "@/assets/events/events1/five.jpg";
-import event6 from "@/assets/events/events1/six.jpg";
-import event7 from "@/assets/events/events1/seven.jpg";
-import event8 from "@/assets/events/events1/eight.jpg";
-import event9 from "@/assets/events/events1/nine.jpg";
-import event10 from "@/assets/events/events1/ten.jpg";
-import event11 from "@/assets/events/events1/eleven.jpg";
+import event1 from "@/assets/events/events1/one.webp";
+import event2 from "@/assets/events/events1/two.webp";
+import event3 from "@/assets/events/events1/three.webp";
+import event4 from "@/assets/events/events1/four.webp";
+import event5 from "@/assets/events/events1/five.webp";
+import event6 from "@/assets/events/events1/six.webp";
+import event7 from "@/assets/events/events1/seven.webp";
+import event8 from "@/assets/events/events1/eight.webp";
+import event9 from "@/assets/events/events1/nine.webp";
+import event10 from "@/assets/events/events1/ten.webp";
+import event11 from "@/assets/events/events1/eleven.webp";
 import firstSliderLogo from "@/assets/events/logo.webp";
 import businessDayLogo from "@/assets/events/Digital-Journal.webp";
-import sliderImg1 from "@/assets/events/Immersion image 1.jpeg";
-import sliderImg2 from "@/assets/events/Immersion image 2.jpeg";
-import sliderImg3 from "@/assets/events/Immersion image 3.jpeg";
-import sliderImg4 from "@/assets/events/Immersiin image 4.jpeg";
-import secondSliderImg1 from "@/assets/events/DSC_0144.jpg";
-import secondSliderImg2 from "@/assets/events/DSC_0158.jpg";
-import secondSliderImg3 from "@/assets/events/DSC_0171.jpg";
-import secondSliderImg4 from "@/assets/events/DSC_0196.jpg";
-import secondSliderImg5 from "@/assets/events/DSC_0212.jpg";
-import thirdSliderImg1 from "@/assets/events/1691070055643.jpeg";
-import thirdSliderImg2 from "@/assets/events/1691070093414.jpeg";
+import sliderImg1 from "@/assets/events/Immersion image 1.webp";
+import sliderImg2 from "@/assets/events/Immersion image 2.webp";
+import sliderImg3 from "@/assets/events/Immersion image 3.webp";
+import sliderImg4 from "@/assets/events/Immersiin image 4.webp";
+import secondSliderImg1 from "@/assets/events/DSC_0144.webp";
+import secondSliderImg2 from "@/assets/events/DSC_0158.webp";
+import secondSliderImg3 from "@/assets/events/DSC_0171.webp";
+import secondSliderImg4 from "@/assets/events/DSC_0196.webp";
+import secondSliderImg5 from "@/assets/events/DSC_0212.webp";
+import thirdSliderImg1 from "@/assets/events/1691070055643.webp";
+import thirdSliderImg2 from "@/assets/events/1691070093414.webp";
 
 interface EventProps {
     img: StaticImageData,
@@ -179,6 +179,7 @@ function Event() {
                         {currentEvent.images.map((image, index) => (
                             <div key={index}>
                                 <Image
+                                    loading="lazy"
                                     src={image}
                                     alt="CloudPlexo's Cloud Solution Webinars - CloudPlexo"
                                 />
@@ -196,6 +197,7 @@ function Event() {
                 </section>
                 <section className={styles.rightSide}>
                     <Image
+                        loading="lazy"
                         src={currentEvent.img}
                         alt="CloudPlexo's Cloud Solution Webinars - CloudPlexo"
                         height={40}

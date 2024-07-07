@@ -23,11 +23,11 @@ import {
 import 'video-react/dist/video-react.css';
 import { Player, BigPlayButton } from "video-react";
 
-import img1 from "@/assets/reviews/video1.png";
-import img2 from "@/assets/reviews/video2.png";
-import img3 from "@/assets/reviews/Immersion day.png";
-import icanlogo from "@/assets/reviews/ican.png";
-import livelilogo from "@/assets/reviews/liveli.png";
+import img1 from "@/assets/reviews/video1.webp";
+import img2 from "@/assets/reviews/video2.webp";
+import img3 from "@/assets/reviews/Immersion day.webp";
+import icanlogo from "@/assets/reviews/ican.webp";
+import livelilogo from "@/assets/reviews/liveli.webp";
 import gtcologo from "@/assets/partners/GTCO_logo.webp";
 
 interface ReviewProps {
@@ -137,7 +137,6 @@ const CaseList: React.FC = () => {
 
 
             <div className={styles["casestudy-catalog"]}>
-
                 <div className={extraStyles.reviewVideo}>
                     <Slider ref={setSliderRef} {...videosettings}>
                         {reviews.map((cases, key) => (
@@ -205,13 +204,13 @@ const CaseList: React.FC = () => {
                                 <>
                                     <div className={styles["content-title"]}>
                                         <Link
-                                            href={cases.link}
+                                            href={`/caseStudy/${cases.link}`}
                                         >
                                             <h5>
                                                 {cases.title}
                                             </h5>
                                         </Link>
-                                        <Link href={cases.link}>
+                                        <Link href={`/caseStudy/${cases.link}`}>
                                             <BsArrowUpRight />
                                         </Link>
                                     </div>

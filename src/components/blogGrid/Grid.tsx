@@ -110,6 +110,8 @@ const BlogGrid: React.FC = () => {
                                     loading="lazy"
                                     src={blog.image}
                                     alt={blog.title}
+                                    height={blog.image.height}
+                                    width={blog.image.width}
                                 />
                             </div>
 

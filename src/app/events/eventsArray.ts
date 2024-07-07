@@ -16,13 +16,13 @@ import michael from "@/assets/webinar/authors/Michael.png";
 import simisola from "@/assets/webinar/authors/Simisola.png";
 import benjamin from "@/assets/webinar/authors/Benjamin.png";
 
-import Nairobi from "@/assets/events/nairobi.jpeg";
-import fintech from "@/assets/events/DSC_0144.jpg";
+import Nairobi from "@/assets/events/nairobi.webp";
+import fintech from "@/assets/events/DSC_0144.webp";
 import founders from "@/assets/events/founders.webp";
-import Kigali from "@/assets/events/kigali_event.png";
-import businessDay from "@/assets/events/events1/seven.jpg";
-import GenerativeAI from "@/assets/events/1691070093414.jpeg";
-import Immersion from "@/assets/events/Immersion image 1.jpeg";
+import Kigali from "@/assets/events/kigali_event.webp";
+import businessDay from "@/assets/events/events1/seven.webp";
+import GenerativeAI from "@/assets/events/1691070093414.webp";
+import Immersion from "@/assets/events/Immersion image 1.webp";
 
 export interface Speaker {
     image: StaticImageData;

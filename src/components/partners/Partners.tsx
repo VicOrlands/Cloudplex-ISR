@@ -91,6 +91,7 @@ const Partners = () => {
                 {images.map((img, index) => (
                     <div className={styles.imageWrapper} key={index}>
                         <Image
+                            loading="lazy"
                             src={img.src}
                             alt="Our Trusted Partners & Clients logo"
                             width={img.width}
@@ -105,6 +106,7 @@ const Partners = () => {
                 {secondImages.map((img, index) => (
                     <div className={styles.imageWrapper} key={index}>
                         <Image
+                            loading="lazy"
                             src={img.src}
                             alt="Our Trusted Partners & Clients logo"
                             width={img.width}

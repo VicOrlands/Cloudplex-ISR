@@ -14,18 +14,18 @@ import {
 
 import firstSliderLogo from "@/assets/events/logo.webp";
 import awsLogo from "@/assets/events/awsLogo.webp";
-import sliderImg1 from "@/assets/events/Immersion image 1.jpeg";
-import sliderImg2 from "@/assets/events/Immersion image 2.jpeg";
-import sliderImg3 from "@/assets/events/Immersion image 3.jpeg";
-import sliderImg4 from "@/assets/events/Immersiin image 4.jpeg";
-import secondSliderImg1 from "@/assets/events/DSC_0144.jpg";
-import secondSliderImg2 from "@/assets/events/DSC_0158.jpg";
-import secondSliderImg3 from "@/assets/events/DSC_0171.jpg";
-import secondSliderImg4 from "@/assets/events/DSC_0196.jpg";
-import secondSliderImg5 from "@/assets/events/DSC_0212.jpg";
-import thirdSliderImg1 from "@/assets/events/1691070055643.jpeg";
-import thirdSliderImg2 from "@/assets/events/1691070093414.jpeg";
-import fourthSliderImg2 from "@/assets/events/event.png";
+import sliderImg1 from "@/assets/events/Immersion image 1.webp";
+import sliderImg2 from "@/assets/events/Immersion image 2.webp";
+import sliderImg3 from "@/assets/events/Immersion image 3.webp";
+import sliderImg4 from "@/assets/events/Immersiin image 4.webp";
+import secondSliderImg1 from "@/assets/events/DSC_0144.webp";
+import secondSliderImg2 from "@/assets/events/DSC_0158.webp";
+import secondSliderImg3 from "@/assets/events/DSC_0171.webp";
+import secondSliderImg4 from "@/assets/events/DSC_0196.webp";
+import secondSliderImg5 from "@/assets/events/DSC_0212.webp";
+import thirdSliderImg1 from "@/assets/events/1691070055643.webp";
+import thirdSliderImg2 from "@/assets/events/1691070093414.webp";
+import fourthSliderImg2 from "@/assets/events/event.webp";
 import { ButtonTranparentLink } from "@/components/button/Button";
 
 const eventSuccessArray = [

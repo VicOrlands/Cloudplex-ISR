@@ -12,7 +12,7 @@ import { Player, BigPlayButton } from "video-react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { HiOutlineArrowSmallRight } from "react-icons/hi2";
 
-import Thumbnail from "@/assets/events/events-video-thumbnail.png";
+import Thumbnail from "@/assets/events/events-video-thumbnail.webp";
 import Partner1 from "@/assets/startups/partners/MaxFiles-logo.png";
 import Partner2 from "@/assets/startups/partners/borderless.png";
 import Partner6 from "@/assets/startups/partners/logo1.png";

@@ -176,6 +176,7 @@ export default function Service() {
                         {serviceContent.slice(0, serviceIndex).map((service) => (
                             <div key={service.name}>
                                 <Image
+                                    loading="lazy"
                                     src={service.image}
                                     alt="Achieve Peak Efficiency with Our Innovative Products and Services"
                                     height={service.height}
@@ -197,6 +198,7 @@ export default function Service() {
                         {professionalServices.map((professional) => (
                             <div key={professional.name}>
                                 <Image
+                                    loading="lazy"
                                     src={professional.image}
                                     alt="Achieve Peak Efficiency with Our Innovative Products and Services"
                                 />

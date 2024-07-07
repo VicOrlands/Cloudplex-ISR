@@ -10,19 +10,19 @@ import heroImageLg from "@/assets/landing/heroimage-lg.webp";
 import heroImageXl from "@/assets/landing/heroimage-xl.webp";
 
 const HeroSection = () => {
-    const common = { alt: `Top Cloud Services providers with CloudPlexo's Innovative Solutions`, width: 372, height: 304, priority: true }
+    const common = { alt: `Top Cloud Services providers with CloudPlexo's Innovative Solutions`, priority: true }
     const {
         props: { srcSet: mobile, },
-    } = getImageProps({ ...common, src: heroImageSm })
+    } = getImageProps({ ...common, src: heroImageSm, height: heroImageSm.height, width: heroImageSm.width })
     const {
         props: { srcSet: mediumScreen },
-    } = getImageProps({ ...common, src: heroImageMd })
+    } = getImageProps({ ...common, src: heroImageMd, height: heroImageMd.height, width: heroImageMd.width })
     const {
         props: { srcSet: tablet },
-    } = getImageProps({ ...common, src: heroImageLg })
+    } = getImageProps({ ...common, src: heroImageLg, height: heroImageLg.height, width: heroImageLg.width })
     const {
         props: { srcSet: desktop, ...rest },
-    } = getImageProps({ ...common, src: heroImageXl })
+    } = getImageProps({ ...common, src: heroImageXl, height: heroImageXl.height, width: heroImageXl.width })
 
     return (
         <section className={styles.heroTopSection}>
