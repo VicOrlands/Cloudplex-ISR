@@ -2,9 +2,15 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import styles from "./styles.module.css";
+import { BlogsProps } from "@/app/blog/array";
 import { BsArrowUpRight } from "react-icons/bs";
-import { PaginationProps } from "@/app/blog/page";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+
+interface PaginationProps {
+    data: BlogsProps[];
+    pageLimit: number;
+    dataLimit: number;
+}
 
 const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) => {
     const [currentPage, setCurrentPage] = useState<number>(1);

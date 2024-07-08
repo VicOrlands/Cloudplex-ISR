@@ -3,18 +3,12 @@
 import styles from "./styles.module.css";
 import BgImg from "@/assets/blog/blog-hero.webp"
 
-import { BlogsProps, blogs } from "./array";
+import { blogs } from "./array";
 import Pagination from "@/components/pagination/pagination";
 import CTAForm from "@/components/callToAction/cta";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 
-export interface PaginationProps {
-    data: BlogsProps[];
-    pageLimit: number;
-    dataLimit: number;
-}
-
-const Blogpage: React.FC<PaginationProps> = () => {
+const Blogpage: React.FC = () => {
     return (
         <>
             <LazyBackgroundImage src={BgImg} className={styles.blogHeroBg}>
