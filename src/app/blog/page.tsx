@@ -1,11 +1,10 @@
 "use client"
 
-import { useEffect } from "react";
 import styles from "./styles.module.css";
 import BgImg from "@/assets/blog/blog-hero.webp"
 
 import { BlogsProps, blogs } from "./array";
-import Pagination from "@/components/pagination";
+import Pagination from "@/components/pagination/pagination";
 import CTAForm from "@/components/callToAction/cta";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 
@@ -15,12 +14,7 @@ export interface PaginationProps {
     dataLimit: number;
 }
 
-const Blog: React.FC<PaginationProps> = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-
-    }, [])
-
+const Blogpage: React.FC<PaginationProps> = () => {
     return (
         <>
             <LazyBackgroundImage src={BgImg} className={styles.blogHeroBg}>
@@ -42,4 +36,4 @@ const Blog: React.FC<PaginationProps> = () => {
 
 }
 
-export default Blog;
+export default Blogpage;
