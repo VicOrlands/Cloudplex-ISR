@@ -139,8 +139,8 @@ const CaseList: React.FC = () => {
             <div className={styles["casestudy-catalog"]}>
                 <div className={extraStyles.reviewVideo}>
                     <Slider ref={setSliderRef} {...videosettings}>
-                        {reviews.map((cases, key) => (
-                            <div className={extraStyles.videoWrap} key={key}>
+                        {reviews.map((cases, index) => (
+                            <div className={extraStyles.videoWrap} key={index}>
                                 <div className={extraStyles.imageWrap}>
                                     <Player
                                         playsInline
@@ -189,8 +189,8 @@ const CaseList: React.FC = () => {
                 </div>
 
                 <div className={styles["casestudy-list"]}>
-                    {casestudy.map((cases, key) => (
-                        <div className={styles["casestudy-list-item"]}>
+                    {casestudy.map((cases, index) => (
+                        <div className={styles["casestudy-list-item"]} key={index}>
                             <div className={styles["imgcontainer"]}>
                                 <Image
                                     src={cases.image}
