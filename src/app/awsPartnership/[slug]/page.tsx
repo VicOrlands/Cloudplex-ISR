@@ -1,8 +1,16 @@
 import { awsservices } from '../awsArray';
 import { notFound } from 'next/navigation';
-import Lambda from './lambda/page';
-import DataAnalytics from './dataAnalytics/page';
 import RDSReady from './rds/page';
+import Lambda from './lambda/page';
+import Ec2 from './awsEC2/page';
+import Transfer from './awsTransfer/page';
+import AWSDynamoDb from './awsDynamo/page';
+import CloudFront from './awsCloudFront/page';
+import CloudResouce from './cloudResouce/page';
+import DataAnalytics from './dataAnalytics/page';
+import CloudMigration from './cloudMigration/page';
+import AWSWellArchitected from './wellArchitected/page';
+import SecurityCompliance from './securityCompliance/page';
 
 type PageProps = {
     params: {
@@ -28,42 +36,38 @@ const paths: PathsProps[] = [
         url: "rds-ready",
         comp: <RDSReady />
     },
-    // {
-    //     url: "cloud-migration",
-    //     comp: <Lambda />
-    // },
-    // {
-    //     url: "aws-well-architected-framework-alignment",
-    //     comp: <Lambda />
-    // },
-    // {
-    //     url: "https://wendu.io",
-    //     comp: <Lambda />
-    // },
-    // {
-    //     url: "aws-dynamo-db",
-    //     comp: <Lambda />
-    // },
-    // {
-    //     url: "amazon-cloudfront-delivery",
-    //     comp: <Lambda />
-    // },
-    // {
-    //     url: "cloud-resource-managament",
-    //     comp: <Lambda />
-    // },
-    // {
-    //     url: "security-compliance",
-    //     comp: <Lambda />
-    // },
-    // {
-    //     url: "aws-transfer-family",
-    //     comp: <Lambda />
-    // },
-    // {
-    //     url: "amazon-ec2",
-    //     comp: <Lambda />
-    // },
+    {
+        url: "cloud-migration",
+        comp: <CloudMigration />
+    },
+    {
+        url: "aws-well-architected-framework-alignment",
+        comp: <AWSWellArchitected />
+    },
+    {
+        url: "aws-dynamo-db",
+        comp: <AWSDynamoDb />
+    },
+    {
+        url: "amazon-cloudfront-delivery",
+        comp: <CloudFront />
+    },
+    {
+        url: "cloud-resource-managament",
+        comp: <CloudResouce />
+    },
+    {
+        url: "security-compliance",
+        comp: <SecurityCompliance />
+    },
+    {
+        url: "aws-transfer-family",
+        comp: <Transfer />
+    },
+    {
+        url: "amazon-ec2",
+        comp: <Ec2 />
+    },
 ]
 
 export async function generateStaticParams() {

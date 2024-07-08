@@ -1,0 +1,137 @@
+.faq-section {
+  margin: 100px auto;
+  width: 70%;
+  font-family: var(--font-inter);
+}
+
+.faq-section>h2 {
+  color: #101828;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.faq {
+  font-family: var(--font-inter);
+}
+
+.faq section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.faq h4,
+#faq-h2,
+.faq-section h4 {
+  color: #101828;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.faq p,
+#faq-p {
+  color: #667085;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+#faq-h2,
+#faq-p {
+  text-align: center;
+  width: 100%;
+}
+
+.faq p {
+  width: 90%;
+}
+
+.faq section #icon {
+  font-size: 24px;
+  fill: #6499e9;
+  cursor: pointer;
+}
+
+.faq-section a {
+  border-radius: 8px;
+  border: 1px solid var(--Primary, #3e54ac);
+  background: var(--Primary, #3e54ac);
+  color: var(--White, #fff);
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 25px;
+  margin: auto;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.faq-section a:hover {
+  background: var(--Primary, #2c3f8b);
+}
+
+.faq-avatars {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.faq-avatars img {
+  width: 70px;
+  height: 70px;
+}
+
+.faq-avatars img:nth-child(1) {
+  margin-right: -20px;
+  margin-top: 5px;
+}
+
+.faq-avatars img:nth-child(2) {
+  z-index: 2;
+}
+
+.faq-avatars img:nth-child(3) {
+  margin-left: -20px;
+  margin-top: 5px;
+  z-index: 1;
+}
+
+/* ------------styling for mobile view--------------- */
+@media screen and (max-width: 768px) {
+  .faq-section {
+    margin: 0;
+    padding: 50px 20px;
+    width: 100%;
+  }
+
+  .faq-section>h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .faq-section .faq {
+    width: 100%;
+    margin: 0;
+  }
+
+  .faq h4,
+  .faq-section h4 {
+    width: 90%;
+    text-align: left;
+  }
+
+  .faq-section #faq-h2 {
+    text-align: center;
+    width: 100%;
+  }
+}

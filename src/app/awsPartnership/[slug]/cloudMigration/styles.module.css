@@ -1,0 +1,268 @@
+.cloud-migration {
+  font-family: var(--font-montserrat);
+  font-size: 10px;
+}
+
+.cloud-migration-hero-section {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  padding: 0 150px;
+  padding-top: 7%;
+  margin-bottom: 5%;
+}
+
+.cloud-migration-hero-section div h1 {
+  color: #344054;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 3.8rem;
+}
+
+.cloud-migration-hero-section div p {
+  color: #344054;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.partnership-hero-btn a {
+  background-color: transparent;
+  color: #344054;
+  text-decoration: none;
+  border: 1px solid #d0d5dd;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.partnership-hero-btn a:first-child {
+  color: #ffffff;
+  background-color: #3e54ac;
+  margin-right: 20px;
+}
+
+.partnership-hero-img {
+  width: 80%;
+  margin: auto;
+}
+
+.partnership-hero-img img {
+  width: 100%;
+  height: auto;
+}
+
+/* cloud-migration-cost */
+.cloud-migration-cost {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 20px;
+  align-items: center;
+  font-family: var(--font-montserrat);
+  justify-content: space-between;
+  padding: 0 150px;
+}
+
+.cloud-migration-cost div,
+.cloud-migration-cost div img {
+  width: 100%;
+}
+
+.cloud-migration-cost div h2 {
+  color: #344054;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.cloud-migration-cost div p {
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+/* cloud-migration-cost */
+.cloud-migration-success {
+  font-family: var(--font-montserrat);
+}
+
+.cloud-migration-success h2 {
+  display: none;
+}
+
+.cloud-migration-success #success-h2 {
+  color: #344054;
+  font-weight: 800;
+  font-size: 28px;
+  padding-left: 300px;
+  margin: 0;
+  display: block;
+}
+
+.cloud-migration-success #p-header {
+  color: #667085;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: -50px;
+  padding-left: 300px;
+}
+
+/* cloud-migration-product */
+.cloud-migration-product {
+  font-family: var(--font-montserrat);
+  padding: 0 150px;
+  padding-top: 50px;
+}
+
+.cloud-migration-product h2 {
+  color: #344054;
+  font-weight: 800;
+  font-size: 28px;
+  text-align: left;
+  margin: 0;
+}
+
+.cloud-migration-product-data {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 0 50px;
+  align-items: center;
+}
+
+.cloud-migration-product-data div {
+  height: fit-content;
+  margin-top: 20px;
+}
+
+.cloud-migration-product-data div img {
+  width: 100%;
+  height: auto;
+}
+
+.cloud-migration-product-data div h4 {
+  color: #344054;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cloud-migration-product-data div p {
+  color: #344054;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* media query for small screen */
+@media (max-width: 768px) {
+  .cloud-migration-hero-section {
+    grid-template-columns: 1fr;
+    height: fit-content;
+    padding: 0 20px;
+    padding-top: 5%;
+    margin-bottom: 30px;
+  }
+
+  .cloud-migration-hero-section div h1 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .cloud-migration-hero-section div p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .partnership-hero-btn a {
+    display: block;
+  }
+
+  .partnership-hero-btn a:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .partnership-hero-img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  /* cloud-migration-cost */
+  .cloud-migration-cost {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0 20px;
+  }
+
+  .cloud-migration-cost div h2 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .cloud-migration-cost div p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  /* cloud-migration-cost */
+  .cloud-migration-success {
+    padding: 0 20px;
+    padding-top: 30px;
+  }
+
+  .cloud-migration-success h2 {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 20px;
+  }
+
+  .cloud-migration-success #p-header {
+    padding: 0 20px;
+  }
+
+  .cloud-migration-success p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  /* cloud-migration-product */
+  .cloud-migration-product {
+    padding: 0 20px;
+  }
+
+  .cloud-migration-product h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .cloud-migration-product-data {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+
+  .cloud-migration-product-data div:first-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cloud-migration-product-data div img {
+    width: 60%;
+  }
+
+  .cloud-migration-product-data div h4 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .cloud-migration-product-data div p {
+    font-size: 14px;
+    text-align: center;
+  }
+}

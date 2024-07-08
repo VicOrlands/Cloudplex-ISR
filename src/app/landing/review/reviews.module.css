@@ -6,6 +6,13 @@
     padding-bottom: 0;
 }
 
+.reviewContainer h2 {
+    color: var(--color-h2);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-h2);
+    text-align: center;
+}
+
 /* reviewVideo */
 .reviewVideo {
     padding: 30px 300px 50px 300px;
@@ -268,6 +275,11 @@
     .reviewContainer {
         padding: 30px 0;
     }
+
+    .reviewContainer h2 {
+        font-size: var(--font-size-h2-sm);
+    }
+
 
     /* reviewVideo */
     .reviewVideo {

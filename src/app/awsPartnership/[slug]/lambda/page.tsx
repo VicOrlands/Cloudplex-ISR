@@ -22,7 +22,7 @@ export default function Lambda() {
                         scaling and responding to various events.
                     </p>
                     <ButtonLink
-                        link="/contact-us"
+                        link="/contactUs"
                         className="btn"
                         title="Contact Sales"
                     />

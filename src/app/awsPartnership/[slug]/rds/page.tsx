@@ -2,6 +2,13 @@ import React from "react";
 import img2 from "@/assets/aws_partnership/rds/finance 1.png";
 import img1 from "@/assets/aws_partnership/rds/planning-schedule 1.png";
 import Image from "next/image";
+import styles from "../lambda/styles.module.css"
+import { ButtonLink } from "@/components/button/Button";
+import Review from "@/app/landing/review/Review";
+import BlogGrid from "@/components/blogGrid/Grid";
+import Partners from "@/components/partners/Partners";
+import { AwsCTA } from "../../component/cta";
+import clsx from "clsx";
 
 {/* <SEO
   title="RDS Ready: Revolutionize Your Cloud Relational Database Management"
@@ -11,85 +18,73 @@ import Image from "next/image";
 
 export default function RDSReady() {
     return (
-        <div className="rdsready-page">
-            <div className="container">
-                <div className="row align-items-center text-center justify-content-center hero">
-                    <div>
-                        <h3>RDS Ready</h3>
-                        <p>
-                            A groundbreaking service that revolutionizes the way you manage
-                            your relational databases in the cloud. Say goodbye to the
-                            complexities of database administration and hello to seamless
-                            scalability and effortless operations.
-                        </p>
-                        <a href="/contact-us">
-                            Contact Sales
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div className="modules ">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-md-6">
-                            <div>
-                                <h3 className="title">
-                                    Simplified Management and Monitoring
-                                </h3>
-                                <p>
-                                    Spend less time on management and more time on innovation.
-                                    Our AWS Redshift service delivery streamlines cluster
-                                    management and provides comprehensive monitoring, freeing up
-                                    your team's resources for strategic initiatives.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <Image
-                                src={img1}
-                                alt="Simplified Management and Monitoring"
-                                className="img-fluid"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="modules ">
-                <div className="container">
-                    <div className="row align-items-center ">
-                        <div className="col-md-6">
-                            <Image src={img2} alt="management" className="img-fluid" />
-                        </div>
-                        <div className="col-md-6 order-first order-md-1">
-                            <div>
-                                <h3 className="title">Scalable and Cost-Effective</h3>
-                                <p>
-                                    Scale your data warehouse effortlessly as your business
-                                    grows. With CloudPlexo's expertise, AWS Redshift allows you
-                                    to expand storage and compute resources as needed, ensuring
-                                    cost-efficiency and eliminating the need for upfront
-                                    investments.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/*        
-        <Partners />
-        <VideoReview />
-        <BlogCatalog /> */}
-
-            <div className="call-to-action">
+        <div className={styles["awslambda-page"]}>
+            <div className={styles["hero"]}>
                 <div>
-                    <h3>
-                        Embrace the future of computing with our expert cloud solutions.
-                    </h3>
-                    <a className="btn btn-primary" href="/contact-us">
-                        Get in touch
-                    </a>
+                    <h1>RDS Ready</h1>
+                    <p>
+                        A groundbreaking service that revolutionizes the way you manage
+                        your relational databases in the cloud. Say goodbye to the
+                        complexities of database administration and hello to seamless
+                        scalability and effortless operations.
+                    </p>
+                    <ButtonLink
+                        link="/contactUs"
+                        className="btn"
+                        title="Contact Sales"
+                    />
                 </div>
             </div>
+
+            <div className={clsx(styles["grid-column"], styles["grid-img-bottom"])}>
+                <div>
+                    <h2 className="title">
+                        Simplified Management and Monitoring
+                    </h2>
+                    <p>
+                        Spend less time on management and more time on innovation.
+                        Our AWS Redshift service delivery streamlines cluster
+                        management and provides comprehensive monitoring, freeing up
+                        your team's resources for strategic initiatives.
+                    </p>
+                </div>
+
+                <div>
+                    <Image
+                        src={img1}
+                        alt="Simplified Management and Monitoring"
+                        className="img-fluid"
+                    />
+                </div>
+            </div>
+
+            <div className={styles["grid-column"]}>
+                <div>
+                    <Image src={img2} alt="management" />
+                </div>
+
+                <div>
+                    <h3 className="title">Scalable and Cost-Effective</h3>
+                    <p>
+                        Scale your data warehouse effortlessly as your business
+                        grows. With CloudPlexo's expertise, AWS Redshift allows you
+                        to expand storage and compute resources as needed, ensuring
+                        cost-efficiency and eliminating the need for upfront
+                        investments.
+                    </p>
+                </div>
+            </div>
+
+            <Partners />
+
+            <div className={styles["reviewSection"]}>
+                <Review />
+            </div>
+
+            <BlogGrid />
+
+            <AwsCTA />
+
         </div>
     );
 }
