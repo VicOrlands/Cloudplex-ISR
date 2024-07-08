@@ -1,0 +1,111 @@
+.solutions .hero {
+    padding: 100px 300px 30px 300px;
+    font-family: var(--font-montserrat);
+    height: 60vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.solutions .hero h1 {
+    color: #344054;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.solutions .hero p {
+    color: #343434;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.solutions .hero-button {
+    display: flex;
+    align-items: center;
+}
+
+.solutions .hero .hero-button .btn {
+    margin: 0;
+}
+
+.solutions .hero .hero-button .btn2 {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.solutions .hero img {
+    width: auto;
+    height: auto;
+}
+
+.solutions-list {
+    padding: 30px 0;
+}
+
+.solutions-list .service-row {
+    border-radius: 10px;
+    border: 1px solid #d0d5dd;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.solutions-list .service-row p {
+    max-width: 100%;
+    text-align: left;
+    color: #343434;
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.solutions .bg-image {
+    background-position: center;
+    background-size: cover;
+}
+
+.solutions .aws-managed-cloud {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.solutions .aws-managed-cloud h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+}
+
+.solutions .aws-managed-cloud p {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .solutions .hero {
+        padding: 30px 10px;
+    }
+
+    .solutions .hero h1 {
+        font-size: 28px;
+    }
+
+    .solutions .hero-button a {
+        width: 100%;
+    }
+
+    .solutions-list .service-row {
+        margin: 0 10px 30px;
+    }
+
+}

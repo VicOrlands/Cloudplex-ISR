@@ -10,6 +10,9 @@ import styles from "./styles.module.css";
 import Link from "next/link";
 import Partners from "@/components/partners/Partners";
 import Image from "next/image";
+import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
+import BgImg from "@/assets/solutions/AWS Managed Cloud.png"
+import { ButtonLink, ButtonTranparentLink } from "@/components/button/Button";
 
 export default function AWSManagedCloud() {
     const services = [
@@ -60,9 +63,9 @@ export default function AWSManagedCloud() {
     //   />
 
     return (
-        <div className={styles["parent-container"]}>
-            <section className={styles["hero-section"]}>
-                <div className={styles["hero-text-container"]}>
+        <div className={styles["solutions"]}>
+            <section className={styles["hero"]}>
+                <div>
                     <h1>
                         AWS Managed Service Solutions.
                     </h1>
@@ -73,14 +76,11 @@ export default function AWSManagedCloud() {
                         you can focus on your business.s
                     </p>
 
-                    <div>
-                        <Link href="/contact-us">
-                            Contact Sales
-                        </Link>
+                    <div className={styles["hero-button"]}>
+                        <ButtonLink link="/contact-us"
+                            title="Contact Sales" className={styles["btn"]} />
 
-                        <Link href="#services">
-                            Learn More
-                        </Link>
+                        <ButtonTranparentLink link="#services" title="Learn More" className={styles["btn2"]} />
                     </div>
                 </div>
 
@@ -165,20 +165,22 @@ export default function AWSManagedCloud() {
                 ))}
             </section>
 
-            <section className={styles["aws-managed-cloud"]}>
-                <h1>Leverage the Power of AWS Managed Cloud with Cloudplexo</h1>
-                <p>
-                    Our solution provides a range of benefits, including expert
-                    management, scalability and flexibility, security and
-                    compliance, cost savings, and automation and efficiency. With
-                    Cloudplexo, you can trust that your cloud infrastructure is in
-                    good hands, allowing you to focus on your core business
-                    objectives.
-                </p>
-                <Link href="/contact-us">
-                    Contact Sales
-                </Link>
-            </section>
+            <LazyBackgroundImage src={BgImg} className={styles["bg-image"]}>
+                <section className={styles["aws-managed-cloud"]}>
+                    <h1>Leverage the Power of AWS Managed Cloud with Cloudplexo</h1>
+                    <p>
+                        Our solution provides a range of benefits, including expert
+                        management, scalability and flexibility, security and
+                        compliance, cost savings, and automation and efficiency. With
+                        Cloudplexo, you can trust that your cloud infrastructure is in
+                        good hands, allowing you to focus on your core business
+                        objectives.
+                    </p>
+                    <Link href="/contact-us">
+                        Contact Sales
+                    </Link>
+                </section>
+            </LazyBackgroundImage>
         </div>
     );
 }

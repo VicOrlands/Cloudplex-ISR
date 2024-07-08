@@ -56,21 +56,6 @@ interface EventProps {
 
 const eventSuccessArray: EventProps[] = [
     {
-        img: awsLogo,
-        imgText: "",
-        text: `Kigali Mixer Event. Watch a recap of the event <a href="https://cloudplexo.com/Kigali-mixer.mp4">here</a>`,
-        images: [
-            kigali1,
-            kigali2,
-            kigali3,
-            kigali4,
-            kigali5,
-            kigali6,
-            kigali7,
-        ],
-        width: 128,
-    },
-    {
         img: businessDayLogo,
         imgText: `We were thrilled to co-host & sponsor the BusinessDay Economic Club's "C-Suite Executives Roundtable Dinner." It was an evening of insightful discussions and valuable connections.`,
         text: `We were thrilled to co-host & sponsor the BusinessDay Economic Club's "C-Suite Executives Roundtable Dinner." It was an evening of insightful discussions and valuable connections.Thank you to all who attended and made it a success!We're excited to see the future collaborations and innovations sparked by this event!`,
@@ -115,6 +100,21 @@ const eventSuccessArray: EventProps[] = [
         imgText: "",
         text: `Heartfelt appreciation to the incredible members of the AWS team <a href="https://www.linkedin.com/in/eberenkoro/">Ebere Nkoro</a> and <a href="https://www.linkedin.com/in/osaretin-j-63692093/">Osaretin J</a> for their unparalleled support and seamless organisation, which contributed immensely to the success of this event.`,
         images: [thirdSliderImg1, thirdSliderImg2],
+        width: 128,
+    },
+    {
+        img: awsLogo,
+        imgText: "",
+        text: `Kigali Mixer Event. Watch a recap of the event <a href="https://cloudplexo.com/Kigali-mixer.mp4">here</a>`,
+        images: [
+            kigali1,
+            kigali2,
+            kigali3,
+            kigali4,
+            kigali5,
+            kigali6,
+            kigali7,
+        ],
         width: 128,
     },
 ];
