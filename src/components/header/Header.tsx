@@ -24,7 +24,7 @@ const DesktopNav = () => {
 
                             <div className="drop-down-content">
                                 <Link href="https://wendu.io/">Wendu</Link>
-                                <Link href="/data-analytics">AI Scan</Link>
+                                <Link href="/awsPartnership/data-analytics">AI Scan</Link>
                                 <Link href="/aws-managed-cloud">AWS Managed Service</Link>
                                 <Link href="/backup-and-restore">Backup and Restore</Link>
                                 <Link href="/cloud-migration">Cloud Migration</Link>
