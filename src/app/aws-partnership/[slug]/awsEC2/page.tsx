@@ -10,38 +10,44 @@ import Image from "next/image";
 import Review from "@/app/landing/review/Review";
 import FaqPage from "@/components/faq/faq";
 
-const Ec2 = () => {
-  const awsservices = [
-    {
-      img: WindowsOptimized,
-      title: "Windows-Optimized Instances",
-      serviceList: [
-        "Choose from a variety of Windows-optimized EC2 instances tailored to meet the specific requirements of your applications, ensuring optimal performance.",
-      ],
-    },
-    {
-      img: SeamlessIntegration,
-      title: "Seamless Integration",
-      serviceList: [
-        `Integrate CloudPlexo's AWS EC2 Service seamlessly with your existing Windows infrastructure, allowing for a smooth transition without disruptions.`,
-      ],
-    },
-    {
-      img: Automated,
-      title: "Automated Backups",
-      serviceList: [
-        "Protect your critical Windows workloads with automated backup solutions, ensuring data integrity and easy recovery in case of unexpected events.",
-      ],
-    },
-    {
-      img: Monitoring,
-      title: "Monitoring and Analytics",
-      serviceList: [
-        "Gain insights into your Windows workloads with our advanced monitoring and analytics tools. Track performance metrics, identify bottlenecks, and optimize resource allocation for improved efficiency.",
-      ],
-    },
-  ]
+const awsservices = [
+  {
+    img: WindowsOptimized,
+    title: "Windows-Optimized Instances",
+    serviceList: [
+      "Choose from a variety of Windows-optimized EC2 instances tailored to meet the specific requirements of your applications, ensuring optimal performance.",
+    ],
+  },
+  {
+    img: SeamlessIntegration,
+    title: "Seamless Integration",
+    serviceList: [
+      `Integrate CloudPlexo's AWS EC2 Service seamlessly with your existing Windows infrastructure, allowing for a smooth transition without disruptions.`,
+    ],
+  },
+  {
+    img: Automated,
+    title: "Automated Backups",
+    serviceList: [
+      "Protect your critical Windows workloads with automated backup solutions, ensuring data integrity and easy recovery in case of unexpected events.",
+    ],
+  },
+  {
+    img: Monitoring,
+    title: "Monitoring and Analytics",
+    serviceList: [
+      "Gain insights into your Windows workloads with our advanced monitoring and analytics tools. Track performance metrics, identify bottlenecks, and optimize resource allocation for improved efficiency.",
+    ],
+  },
+]
 
+export async function generateStaticParams() {
+  return awsservices.map(({ title, img, serviceList }) => ({
+    title, img, serviceList
+  }))
+}
+
+const Ec2 = () => {
   return (
     <>
       <div className={styles["main-ec2-page"]}>

@@ -10,38 +10,44 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles.module.css"
 
-const CloudFront = () => {
-  const awsservices = [
-    {
-      img: Global,
-      title: "Global Content Delivery Acceleration",
-      serviceList: [
-        "Accelerate content delivery worldwide with AWS CloudFront, ensuring your users experience fast and reliable access regardless of their location.",
-      ],
-    },
-    {
-      img: Website,
-      title: "Enhanced Website Performance",
-      serviceList: [
-        `Optimize your website's performance by leveraging CloudFront's content caching and distribution capabilities, reducing latency and improving user experience.`,
-      ],
-    },
-    {
-      img: Scalability,
-      title: "Scalability and Flexibility",
-      serviceList: [
-        "Scale your content delivery seamlessly with CloudFront, adapting to changing traffic patterns and ensuring a consistently high level of performance.",
-      ],
-    },
-    {
-      img: Security,
-      title: "Advanced Security Features",
-      serviceList: [
-        `Safeguard your content with CloudFront's built-in security features, including DDoS protection and SSL/TLS encryption, ensuring a secure and trustworthy user experience.`,
-      ],
-    },
-  ]
+const awsservices = [
+  {
+    img: Global,
+    title: "Global Content Delivery Acceleration",
+    serviceList: [
+      "Accelerate content delivery worldwide with AWS CloudFront, ensuring your users experience fast and reliable access regardless of their location.",
+    ],
+  },
+  {
+    img: Website,
+    title: "Enhanced Website Performance",
+    serviceList: [
+      `Optimize your website's performance by leveraging CloudFront's content caching and distribution capabilities, reducing latency and improving user experience.`,
+    ],
+  },
+  {
+    img: Scalability,
+    title: "Scalability and Flexibility",
+    serviceList: [
+      "Scale your content delivery seamlessly with CloudFront, adapting to changing traffic patterns and ensuring a consistently high level of performance.",
+    ],
+  },
+  {
+    img: Security,
+    title: "Advanced Security Features",
+    serviceList: [
+      `Safeguard your content with CloudFront's built-in security features, including DDoS protection and SSL/TLS encryption, ensuring a secure and trustworthy user experience.`,
+    ],
+  },
+]
 
+export async function generateStaticParams() {
+  return awsservices.map(({ title, img, serviceList }) => ({
+    title, img, serviceList
+  }))
+}
+
+const CloudFront = () => {
   return (
     <>
       <div className={styles["main-cloudfront-page"]}>

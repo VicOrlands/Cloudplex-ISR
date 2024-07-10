@@ -28,18 +28,13 @@ import Staycon from './Staycon';
 import Suba from './Suba';
 import Varscon from './Varscon';
 
-type PageProps = {
-    params: {
-        slug: string;
-    };
-};
-
-type PathsProps = {
-    url?: string;
-    comp?: JSX.Element;
+export async function generateStaticParams() {
+    return casestudy.map(({ link }) => ({
+        slug: link || "404"
+    }));
 }
 
-const paths: PathsProps[] = [
+const paths = [
     {
         comp: <GtbPensions />,
         url: "case-study-of-gt-pensions-managers",
@@ -151,19 +146,11 @@ const paths: PathsProps[] = [
     },
 ];
 
-
-export async function generateStaticParams() {
-    return casestudy.map(({ link }) => ({
-        slug: link,
-    }));
-}
-
-const CaseStudyPage: React.FC<PageProps> = ({ params }) => {
+const CaseStudyPage = ({ params }: { params: { slug: string } }) => {
     const { slug } = params
-    const study = casestudy.find(({ link }) => link === slug);
-    if (!study) notFound()
 
     const path = paths.find(({ url }) => url === slug);
+
     if (!path) notFound()
 
     return path.comp

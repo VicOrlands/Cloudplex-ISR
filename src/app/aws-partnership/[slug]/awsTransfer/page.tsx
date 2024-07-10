@@ -6,42 +6,48 @@ import Workflows from "@/assets/aws_transfer/website.png";
 import Architecture from "@/assets/aws_transfer/architecture.png";
 import HeroImg from "@/assets/aws_transfer/AWS-Badge Amazon CloudFront Delivery.png";
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Review from "@/app/landing/review/Review";
 import FaqPage from "@/components/faq/faq";
 
-const Transfer = () => {
-  const awsservices = [
-    {
-      img: Globe,
-      title: "Scalable and Secure File Transfer",
-      serviceList: [
-        "Facilitate seamless and secure file transfers at scale with AWS Transfer Family, ensuring your data moves efficiently across your organization.",
-      ],
-    },
-    {
-      img: Workflows,
-      title: "Integration with Existing Workflows",
-      serviceList: [
-        `CloudPlexo seamlessly integrates AWS Transfer Family into your existing workflows, minimizing disruptions and enhancing overall operational efficiency.`,
-      ],
-    },
-    {
-      img: Access,
-      title: "Granular Access Controls",
-      serviceList: [
-        "Ensure data security by implementing granular access controls with AWS Transfer Family, allowing you to define who can access your files and from where.",
-      ],
-    },
-    {
-      img: Architecture,
-      title: "Highly Available Architecture",
-      serviceList: [
-        `Rely on the high availability of AWS Transfer Family, ensuring your file transfer infrastructure remains resilient and accessible at all times.`,
-      ],
-    },
-  ]
+const awsArray = [
+  {
+    img: Globe,
+    title: "Scalable and Secure File Transfer",
+    serviceList: [
+      "Facilitate seamless and secure file transfers at scale with AWS Transfer Family, ensuring your data moves efficiently across your organization.",
+    ],
+  },
+  {
+    img: Workflows,
+    title: "Integration with Existing Workflows",
+    serviceList: [
+      `CloudPlexo seamlessly integrates AWS Transfer Family into your existing workflows, minimizing disruptions and enhancing overall operational efficiency.`,
+    ],
+  },
+  {
+    img: Access,
+    title: "Granular Access Controls",
+    serviceList: [
+      "Ensure data security by implementing granular access controls with AWS Transfer Family, allowing you to define who can access your files and from where.",
+    ],
+  },
+  {
+    img: Architecture,
+    title: "Highly Available Architecture",
+    serviceList: [
+      `Rely on the high availability of AWS Transfer Family, ensuring your file transfer infrastructure remains resilient and accessible at all times.`,
+    ],
+  },
+]
 
+export async function generateStaticParams() {
+  return awsArray.map(({ title, img, serviceList }) => ({
+    title, img, serviceList
+  }))
+}
+
+const Transfer: React.FC = () => {
   return (
     <>
       <div className={styles["transfer-main-page"]}>
@@ -71,7 +77,7 @@ const Transfer = () => {
           <h2>Key Benefits</h2>
 
           <div className={styles["transfer-services-column"]}>
-            {awsservices.map((service) => (
+            {awsArray.map((service) => (
               <div key={service.title}>
                 <Image src={service.img} alt={service.title} />
                 <h3>{service.title}</h3>

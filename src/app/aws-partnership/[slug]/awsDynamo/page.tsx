@@ -14,42 +14,48 @@ import Review from "@/app/landing/review/Review";
 import Image from "next/image";
 import styles from "./styles.module.css"
 
-const AWSDynamoDb = () => {
-  const awsservices = [
-    {
-      img: Scalability,
-      title: "Exceptional Scalability",
-      descList: [
-        "Handle Over 10 Trillion Daily Requests, Sustain Peaks of 20 Million Requests per Second!",
-        "DynamoDB Delivery effortlessly manages immense request volumes, ensuring unparalleled scalability to meet your dynamic workloads.",
-      ],
-    },
-    {
-      img: Security,
-      title: "Robust Security and Reliability",
-      descList: [
-        "Ensure Data Security and Reliability - 99.999% SLA, Encryption, and Automatic Backup!",
-        "DynamoDB Delivery safeguards your data with top-notch security measures, including encryption, automatic backup, and a commitment to 99.999% availability.",
-      ],
-    },
-    {
-      img: CostEffective,
-      title: "Cost-Effective Innovation",
-      descList: [
-        "Focus on Innovation, Minimize Costs - Fully Managed Serverless Database!",
-        "DynamoDB Delivery empowers innovation by providing a fully managed serverless database that automatically scales, optimizing costs without compromising performance.",
-      ],
-    },
-    {
-      img: Integration,
-      title: "Seamless Integration and Insightful Analytics",
-      descList: [
-        "Integrate and Analyze with Ease - Connect DynamoDB Delivery with AWS Services!",
-        "DynamoDB Delivery seamlessly integrates with AWS services, offering built-in tools for analytics, insights extraction, and traffic trend monitoring. Maximize the potential of your data effortlessly.",
-      ],
-    },
-  ]
+const awsservices = [
+  {
+    img: Scalability,
+    title: "Exceptional Scalability",
+    descList: [
+      "Handle Over 10 Trillion Daily Requests, Sustain Peaks of 20 Million Requests per Second!",
+      "DynamoDB Delivery effortlessly manages immense request volumes, ensuring unparalleled scalability to meet your dynamic workloads.",
+    ],
+  },
+  {
+    img: Security,
+    title: "Robust Security and Reliability",
+    descList: [
+      "Ensure Data Security and Reliability - 99.999% SLA, Encryption, and Automatic Backup!",
+      "DynamoDB Delivery safeguards your data with top-notch security measures, including encryption, automatic backup, and a commitment to 99.999% availability.",
+    ],
+  },
+  {
+    img: CostEffective,
+    title: "Cost-Effective Innovation",
+    descList: [
+      "Focus on Innovation, Minimize Costs - Fully Managed Serverless Database!",
+      "DynamoDB Delivery empowers innovation by providing a fully managed serverless database that automatically scales, optimizing costs without compromising performance.",
+    ],
+  },
+  {
+    img: Integration,
+    title: "Seamless Integration and Insightful Analytics",
+    descList: [
+      "Integrate and Analyze with Ease - Connect DynamoDB Delivery with AWS Services!",
+      "DynamoDB Delivery seamlessly integrates with AWS services, offering built-in tools for analytics, insights extraction, and traffic trend monitoring. Maximize the potential of your data effortlessly.",
+    ],
+  },
+]
 
+export async function generateStaticParams() {
+  return awsservices.map(({ title, img, descList }) => ({
+    title, img, descList
+  }))
+}
+
+const AWSDynamoDb = () => {
   return (
     <>
       <div className={styles["dynamo-page"]}>

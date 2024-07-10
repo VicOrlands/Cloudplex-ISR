@@ -33,7 +33,7 @@ export interface Speaker {
 export interface WebinarProps {
     image: StaticImageData,
     name: string,
-    slug: string,
+    link: string,
     speakers: Speaker[]
 }
 
@@ -49,13 +49,13 @@ export const WebinarArray: WebinarProps[] = [
     {
         image: WebinarImage1,
         name: "Cloud Cost Savings Strategies In Times of Economic Uncertainties",
-        slug: "https://www.eventleaf.com/e/CCOW",
+        link: "https://www.eventleaf.com/e/CCOW",
         speakers: []
     },
     {
         image: WebinarImage2,
         name: "Edge Computing: Driving the next evolution of internet & Technology",
-        slug: "edge-computing",
+        link: "edge-computing",
         speakers: [
             {
                 image: ewere,
@@ -78,7 +78,7 @@ export const WebinarArray: WebinarProps[] = [
     {
         image: WebinarImage3,
         name: "Leveraging Cloud Solutions For Business Growth.",
-        slug: "leveraging-cloud-solutions-for-business-growth",
+        link: "leveraging-cloud-solutions-for-business-growth",
         speakers: [
             {
                 image: benjamin,
@@ -101,13 +101,13 @@ export const WebinarArray: WebinarProps[] = [
     {
         image: WebinarImage4,
         name: "Getting Your Security Foundations Right",
-        slug: "getting-your-security-foundations-right",
+        link: "getting-your-security-foundations-right",
         speakers: []
     },
     {
         image: WebinarImage5,
         name: "Cloud Security & Requirements",
-        slug: "cloud-security-and-requirements",
+        link: "cloud-security-and-requirements",
         speakers: [
             {
                 image: tosin,
@@ -130,7 +130,7 @@ export const WebinarArray: WebinarProps[] = [
     {
         image: WebinarImage6,
         name: "Cloud Modernization",
-        slug: "cloud-modernization",
+        link: "cloud-modernization",
         speakers: []
     },
 ];

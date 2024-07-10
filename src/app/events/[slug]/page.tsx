@@ -11,25 +11,21 @@ type PageProps = {
 };
 
 export async function generateStaticParams() {
-    let pageData
+    const eventsPaths = EventsArray.map(({ link }) => ({
+        slug: link || "404"
+    }));
 
-    pageData = EventsArray.map((webinar) => ({
-        slug: webinar.link,
-    }))
+    const webinarPaths = WebinarArray.map(({ link }) => ({
+        slug: link || "404"
+    }));
 
-    if (!pageData) {
-        pageData = WebinarArray.map((webinar) => ({
-            slug: webinar.slug,
-        }))
-    }
-
-    return pageData;
+    return [...eventsPaths, ...webinarPaths];
 }
 
 const WebinarPage: React.FC<PageProps> = ({ params }) => {
     const { slug } = params
     const events = EventsArray.find((event) => event.link === slug);
-    const webinar = WebinarArray.find((webinar) => webinar.slug === slug);
+    const webinar = WebinarArray.find((webinar) => webinar.link === slug);
 
     if (!events && !webinar) notFound()
 

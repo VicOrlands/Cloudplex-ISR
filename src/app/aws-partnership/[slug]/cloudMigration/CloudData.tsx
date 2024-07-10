@@ -47,6 +47,13 @@ const ProductArchitecture = [
     desc: "Operations in the cloud, workload Optimisation and Improvements",
   },
 ];
+
+export async function generateStaticParams() {
+  return ProductArchitecture.map(({ id, title, image, desc }) => ({
+    id, title, image, desc
+  }))
+}
+
 export default function CloudData() {
   return (
     <>

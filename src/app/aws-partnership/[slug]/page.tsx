@@ -6,7 +6,7 @@ import Ec2 from './awsEC2/page';
 import Transfer from './awsTransfer/page';
 import AWSDynamoDb from './awsDynamo/page';
 import CloudFront from './awsCloudFront/page';
-import CloudResouce from './cloudResouce/page';
+import CloudResource from './cloudResource/page';
 import DataAnalytics from './dataAnalytics/page';
 import CloudMigration from './cloudMigration/page';
 import AWSWellArchitected from './wellArchitected/page';
@@ -18,12 +18,7 @@ type PageProps = {
     };
 };
 
-type PathsProps = {
-    url: string;
-    comp: JSX.Element;
-}
-
-const paths: PathsProps[] = [
+const paths = [
     {
         url: "aws-lambda-service",
         comp: <Lambda />
@@ -54,7 +49,7 @@ const paths: PathsProps[] = [
     },
     {
         url: "cloud-resource-managament",
-        comp: <CloudResouce />
+        comp: <CloudResource />
     },
     {
         url: "security-compliance",
@@ -72,16 +67,12 @@ const paths: PathsProps[] = [
 
 export async function generateStaticParams() {
     return awsservices.map(({ link }) => ({
-        slug: link,
+        slug: link || "404",
     }));
 }
 
 const AWSPage: React.FC<PageProps> = ({ params }) => {
     const { slug } = params
-    const partner = awsservices.find(({ link }) => link === slug);
-
-    if (!partner) notFound()
-
     const path = paths.find(({ url }) => url === slug);
     if (!path) notFound()
 

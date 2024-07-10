@@ -8,7 +8,7 @@ import Avatar3 from "@/assets/aws_dynamoDb/Avatar2.png";
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
-import { QuestionsProps } from "@/app/awsPartnership/[slug]/cloudMigration/questions";
+import { QuestionsProps } from "@/app/aws-partnership/[slug]/cloudMigration/questions";
 
 interface FaqProps {
   title: string,

@@ -111,7 +111,7 @@ function Events() {
 
                 <div className={styles.eventWebinarGrid}>
                     {WebinarArray.map((webinar) => (
-                        <div className={styles.eventWebinarCard} key={webinar.slug}>
+                        <div className={styles.eventWebinarCard} key={webinar.link}>
                             <div className={styles.eventWebinarCardImage}>
                                 <Image
                                     src={webinar.image}
@@ -120,7 +120,7 @@ function Events() {
                             </div>
                             <div className={styles.eventWebinarCardContent}>
                                 <h5>{webinar.name}</h5>
-                                <Link href={webinar.slug.includes("https://") ? webinar.slug : `/events/${webinar.slug}`}>
+                                <Link href={webinar.link.includes("https://") ? webinar.link : `/events/${webinar.link}`}>
                                     Explore <HiOutlineArrowSmallRight id={styles.icon} />
                                 </Link>
                             </div>

@@ -24,7 +24,7 @@ const DesktopNav = () => {
 
                             <div className="drop-down-content">
                                 <Link href="https://wendu.io/">Wendu</Link>
-                                <Link href="/awsPartnership/data-analytics">AI Scan</Link>
+                                <Link href="/aws-partnership/data-analytics">AI Scan</Link>
                                 <Link href="/aws-managed-cloud">AWS Managed Service</Link>
                                 <Link href="/backup-and-restore">Backup and Restore</Link>
                                 <Link href="/cloud-migration">Cloud Migration</Link>
@@ -59,7 +59,7 @@ const DesktopNav = () => {
                     </li>
 
                     <li className="dropdown-container">
-                        <Link className="nav-link" href="/awsPartnership">
+                        <Link className="nav-link" href="/aws-partnership">
                             AWS Partnership
                         </Link>
                     </li>
@@ -71,7 +71,7 @@ const DesktopNav = () => {
                     </li>
 
                     <li className="dropdown-container">
-                        <Link className="nav-link" href="/caseStudy">
+                        <Link className="nav-link" href="/case-study">
                             Case Studies
                         </Link>
                     </li>
@@ -241,7 +241,7 @@ export default function Header() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="nav-link" href="/awsPartnership">
+                                    <Link className="nav-link" href="/aws-partnership">
                                         AWS Partnership
                                     </Link>
                                 </li>
@@ -251,7 +251,7 @@ export default function Header() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="nav-link" href="/caseStudy">
+                                    <Link className="nav-link" href="/case-study">
                                         Case Studies
                                     </Link>
                                 </li>

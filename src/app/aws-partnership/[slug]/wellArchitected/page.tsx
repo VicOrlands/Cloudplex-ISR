@@ -18,6 +18,12 @@ Well-Architected Framework, CloudPlexo, cloud management, cloud workloads,
 environments, cloud workload assessment, cloud cost optimization"
 /> */}
 
+export async function generateStaticParams() {
+  return pillars.map(({ title, icon, body }) => ({
+    title, icon, body
+  }))
+}
+
 export default function AWSWellArchitected() {
   return (
     <div className={styles["aws-partnership-parent"]}>

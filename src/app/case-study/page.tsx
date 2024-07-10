@@ -204,13 +204,13 @@ const CaseList: React.FC = () => {
                                 <>
                                     <div className={styles["content-title"]}>
                                         <Link
-                                            href={`/caseStudy/${cases.link}`}
+                                            href={`/case-study/${cases.link}`}
                                         >
                                             <h5>
                                                 {cases.title}
                                             </h5>
                                         </Link>
-                                        <Link href={`/caseStudy/${cases.link}`}>
+                                        <Link href={`/case-study/${cases.link}`}>
                                             <BsArrowUpRight />
                                         </Link>
                                     </div>

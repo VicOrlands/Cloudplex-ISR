@@ -10,34 +10,40 @@ import styles from "./styles.module.css"
 import Link from "next/link";
 import Image from "next/image";
 
-const CloudResouce = () => {
-  const awsservices = [
-    {
-      img: Automated,
-      title: "Automated Patching and Compliance",
-      paragraph:
-        "Keep your systems up-to-date and compliant effortlessly, ensuring security and regulatory standards are met without manual intervention.",
-    },
-    {
-      img: Inventory,
-      title: "Inventory and Resource Tracking",
-      paragraph:
-        "Gain real-time insights into your AWS resources, enabling strategic decision-making and efficient resource allocation.",
-    },
-    {
-      img: Configuration,
-      title: "Configuration Management",
-      paragraph:
-        "Ensure consistency across your cloud environment by centrally managing configurations, making updates, and tracking changes seamlessly.",
-    },
-    {
-      img: Operational,
-      title: "Operational Insights with Run Command",
-      paragraph:
-        "Execute commands across your AWS resources, gaining operational insights and taking corrective actions without the need for direct access.",
-    },
-  ]
+const awsArray = [
+  {
+    img: Automated,
+    title: "Automated Patching and Compliance",
+    paragraph:
+      "Keep your systems up-to-date and compliant effortlessly, ensuring security and regulatory standards are met without manual intervention.",
+  },
+  {
+    img: Inventory,
+    title: "Inventory and Resource Tracking",
+    paragraph:
+      "Gain real-time insights into your AWS resources, enabling strategic decision-making and efficient resource allocation.",
+  },
+  {
+    img: Configuration,
+    title: "Configuration Management",
+    paragraph:
+      "Ensure consistency across your cloud environment by centrally managing configurations, making updates, and tracking changes seamlessly.",
+  },
+  {
+    img: Operational,
+    title: "Operational Insights with Run Command",
+    paragraph:
+      "Execute commands across your AWS resources, gaining operational insights and taking corrective actions without the need for direct access.",
+  },
+]
 
+export async function generateStaticParams() {
+  return awsArray.map(({ title, img, paragraph }) => ({
+    title, img, paragraph
+  }))
+}
+
+const CloudResource = () => {
   return (
     <>
       <div className={styles["cloud-resource-page"]}>
@@ -74,7 +80,7 @@ const CloudResouce = () => {
           </h3>
 
           <div className={styles["cloud-resource-services-column"]}>
-            {awsservices.map((service) => (
+            {awsArray.map((service) => (
               <div key={service.title}>
                 <Image src={service.img} alt={service.title} />
                 <h3>{service.title}</h3>
@@ -106,4 +112,4 @@ const CloudResouce = () => {
   )
 }
 
-export default CloudResouce;
+export default CloudResource;
