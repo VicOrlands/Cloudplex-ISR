@@ -82,9 +82,9 @@ export default function DevOps() {
             <Partners />
 
             <div className={styles["solutions-list"]} id="devops-solutions">
-                <h3>
+                <h2>
                     Our Cloud-Based DevOps Solutions Includes
-                </h3>
+                </h2>
 
                 {devopsSolution.map((solution, key) => (
                     <div className={styles["service-row"]} key={key}>
@@ -93,7 +93,7 @@ export default function DevOps() {
                                 src={solution.image}
                                 alt={solution.title}
                             />
-                            <h4>{solution.title}</h4>
+                            <h3>{solution.title}</h3>
                         </div>
 
                         <p>{solution.desc}</p>

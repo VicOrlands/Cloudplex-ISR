@@ -19,9 +19,9 @@ environments, cloud workload assessment, cloud cost optimization"
 /> */}
 
 export async function generateStaticParams() {
-  return pillars.map(({ title, icon, body }) => ({
-    title, icon, body
-  }))
+  return [
+    { slug: "wellArchitected" },
+  ];
 }
 
 export default function AWSWellArchitected() {

@@ -1,6 +1,9 @@
+.solutions {
+    font-family: var(--font-montserrat);
+}
+
 .solutions .hero {
     padding: 100px 300px 30px 300px;
-    font-family: var(--font-montserrat);
     height: 60vh;
     display: grid;
     align-items: center;
@@ -41,29 +44,53 @@
 .solutions .hero img {
     width: auto;
     height: auto;
+    margin: auto;
 }
 
+/* .solutions-list */
 .solutions-list {
-    padding: 30px 0;
+    padding: 30px 280px;
+    border-bottom: 1px solid #d0d5dd;
+}
+
+.solutions-list h2 {
+    color: var(--color-h2);
+    font-size: var(--font-size-h2);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .solutions-list .service-row {
     border-radius: 10px;
     border: 1px solid #d0d5dd;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 30px;
+}
+
+.solutions-list .service-row div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.solutions-list .service-row div img {
+    margin-right: 20px;
+}
+
+.solutions-list .service-row div h3 {
+    color: #161c2d;
+    font-size: 24px;
 }
 
 .solutions-list .service-row p {
     max-width: 100%;
     text-align: left;
     color: #343434;
-    font-family: var(--font-montserrat);
     font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
+    line-height: 26px;
 }
 
+/* aws-managed-cloud */
 .solutions .bg-image {
     background-position: center;
     background-size: cover;

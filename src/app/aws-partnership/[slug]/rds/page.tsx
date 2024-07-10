@@ -16,6 +16,12 @@ import clsx from "clsx";
   keywords="RDS Ready, Relational Database Management, AWS Redshift Service, Scalable Database, Cost-Efficient Data Warehouse"
 /> */}
 
+export async function generateStaticParams() {
+    return [
+        { slug: "wellArchitected" },
+    ];
+}
+
 export default function RDSReady() {
     return (
         <div className={styles["awslambda-page"]}>
