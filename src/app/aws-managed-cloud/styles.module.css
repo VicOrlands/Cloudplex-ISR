@@ -90,49 +90,168 @@
     line-height: 26px;
 }
 
-/* aws-managed-cloud */
-.solutions .bg-image {
-    background-position: center;
-    background-size: cover;
+/* why-choose-us */
+.why-choose-us {
+    border-bottom: 1px solid #d0d5dd;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 300px;
 }
 
-.solutions .aws-managed-cloud {
-    text-align: center;
-    padding: 50px 0;
+.why-choose-us img {
+    height: auto;
+    width: auto;
 }
 
-.solutions .aws-managed-cloud h1 {
-    color: #ffffff;
+.why-choose-us div h3 {
+    color: #344054;
+    font-size: 28px;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
+    margin-bottom: 20px;
+}
+
+.why-choose-us div p {
+    color: #000;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.why-choose-us div a {
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 #1018280d;
+    color: #344054;
+    font-family: var(--font-nunito);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.why-choose-us div a:hover {
+    border: 1px solid #a1a4aa;
+}
+
+/* aws-managed-cloud */
+.aws-managed-image {
+    background-size: cover;
+    background-position: center;
+    background-color: #00000023;
+    background-blend-mode: darken;
+    padding: 50px 300px;
+}
+
+.aws-managed-cloud {
+    color: #fff;
     text-align: center;
 }
 
-.solutions .aws-managed-cloud p {
-    color: #ffffff;
+.aws-managed-cloud h2 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 58px;
+    margin-bottom: 20px;
+}
+
+.aws-managed-cloud p {
     font-weight: 400;
     font-size: 20px;
-    line-height: 29px;
-    text-align: center;
+    line-height: 32px;
+    margin-bottom: 30px;
 }
 
 /* mobile */
 @media (max-width: 768px) {
+
     .solutions .hero {
-        padding: 30px 10px;
+        padding: 30px 20px;
+        padding-top: 50px;
+        height: fit-content;
+        grid-template-columns: 1fr;
     }
 
     .solutions .hero h1 {
         font-size: 28px;
     }
 
-    .solutions .hero-button a {
+    .solutions .hero-button {
+        justify-content: space-between;
+    }
+
+    .solutions .hero .hero-button .btn {
+        margin: 0;
+        width: 47%;
+    }
+
+    .solutions .hero .hero-button .btn2 {
+        margin: 0;
+        width: 47%;
+    }
+
+    .solutions .hero img {
         width: 100%;
     }
 
+    /* .solutions-list */
+    .solutions-list {
+        padding: 30px 20px;
+    }
+
+    .solutions-list h2 {
+        font-size: var(--font-size-h2-sm);
+    }
+
     .solutions-list .service-row {
-        margin: 0 10px 30px;
+        padding: 30px 20px;
+        margin-bottom: 30px;
+    }
+
+    .solutions-list .service-row div h3 {
+        font-size: var(--font-size-h2-sm);
+    }
+
+    /* why-choose-us */
+    .why-choose-us {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 50px 20px;
+    }
+
+    .why-choose-us img {
+        height: auto;
+        width: 100%;
+    }
+
+    .why-choose-us div h3 {
+        font-size: var(--font-size-h2-sm);
+    }
+
+    .why-choose-us div p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* aws-managed-cloud */
+    .aws-managed-image {
+        padding: 30px 20px;
+    }
+
+    .aws-managed-cloud {
+        color: #fff;
+        text-align: center;
+    }
+
+    .aws-managed-cloud h2 {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+
+    .aws-managed-cloud p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
     }
 
 }

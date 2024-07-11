@@ -1,0 +1,171 @@
+.transfer-main-page {
+  padding: 0 150px;
+  font-family: var(--font-montserrat);
+  font-size: 10px;
+}
+
+.transfer-dynamo-hero-section {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding-top: 100px;
+  align-items: center;
+  height: 60vh;
+  padding-top: 5%;
+}
+
+.transfer-dynamo-hero-section div h1 {
+  color: #344054;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.transfer-dynamo-hero-section div p {
+  color: #344054;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 30px;
+}
+
+.transfer-partnership-hero-btn a {
+  background-color: transparent;
+  color: #344054;
+  text-decoration: none;
+  border: 1px solid #d0d5dd;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.transfer-partnership-hero-btn a:first-child {
+  color: #ffffff;
+  background-color: #3e54ac;
+  margin-right: 20px;
+}
+
+.transfer-partnership-hero-img {
+  width: 70%;
+  margin: auto;
+}
+
+.transfer-partnership-hero-img img {
+  width: 100%;
+  height: auto;
+}
+
+/* aws-dynmano-services */
+.transfer-services {
+  padding: 60px 0;
+  padding-bottom: 0;
+}
+
+.transfer-services h2 {
+  color: #101828;
+  font-family: var(--font-montserrat);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.transfer-services h3 {
+  color: #667085;
+  font-family: var(--font-montserrat);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.transfer-services-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 70px;
+  margin: 50px 0;
+}
+
+.transfer-services-column div img {
+  height: 83px;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.transfer-services-column div h3 {
+  color: #101828;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: var(--font-montserrat);
+  margin-bottom: 10px;
+}
+
+.transfer-services-column div ul li {
+  color: #667085;
+  font-family: var(--font-montserrat);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+/* media query for small screen */
+@media (max-width: 768px) {
+  .transfer-main-page {
+    padding: 0 20px;
+  }
+
+  .transfer-dynamo-hero-section {
+    grid-template-columns: 1fr;
+    height: fit-content;
+    padding: 50px 0 30px 0;
+  }
+
+  .transfer-dynamo-hero-section div h1 {
+    font-size: 28px;
+  }
+
+  .transfer-dynamo-hero-section div p {
+    font-size: 14px;
+  }
+
+  .transfer-partnership-hero-btn {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .transfer-partnership-hero-btn a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .transfer-partnership-hero-btn a:first-child {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .transfer-partnership-hero-img {
+    grid-area: 1;
+    margin: 50px auto 20px auto;
+  }
+
+  /* aws-dynmano-services */
+  .transfer-services {
+    padding: 30px 0;
+  }
+
+  .transfer-services h3 {
+    font-size: 16px;
+  }
+
+  .transfer-services h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .transfer-services-column {
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+  }
+
+  .transfer-services-column div img {
+    height: 90px;
+    margin-bottom: 20px;
+  }
+}

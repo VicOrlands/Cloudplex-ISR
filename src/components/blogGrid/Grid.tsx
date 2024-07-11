@@ -116,10 +116,11 @@ const BlogGrid: React.FC = () => {
                             </div>
 
                             <div className={styles.content}>
+                                <h6>{blog.date ? blog.date : "20 Jan 2024"}</h6>
                                 <Link href={blog.link}>
                                     <div className={styles.contentTitle}>
                                         <h5>{blog.title}</h5>
-                                        <BsArrowUpRight color="#000000" />
+                                        <BsArrowUpRight size={22} color="#101828" />
                                     </div>
                                 </Link>
                                 <p className={styles.textDesc}>{blog.desc}</p>
@@ -130,7 +131,7 @@ const BlogGrid: React.FC = () => {
             </div >
 
             <Link href="/blog" className={styles.button}>
-                Read the blogs
+                View Our Blogs
             </Link>
         </section >
     );

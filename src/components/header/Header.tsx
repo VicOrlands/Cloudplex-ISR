@@ -27,11 +27,11 @@ const DesktopNav = () => {
                                 <Link href="/aws-partnership/data-analytics">AI Scan</Link>
                                 <Link href="/aws-managed-cloud">AWS Managed Service</Link>
                                 <Link href="/backup-and-restore">Backup and Restore</Link>
-                                <Link href="/cloud-migration">Cloud Migration</Link>
+                                <Link href="/aws-partnership/cloud-migration">Cloud Migration</Link>
                                 <Link href="/aws-maturity-service">AWS Maturity Service</Link>
-                                <Link href="/security-compliance">Security Compliance</Link>
+                                <Link href="/aws-partnership/security-compliance">Security Compliance</Link>
                                 <Link href="/microsoft-on-aws">Microsoft on AWS</Link>
-                                <Link href="/cloud-resource-managament">
+                                <Link href="/aws-partnership/cloud-resource-managament">
                                     Cloud Resource Management
                                 </Link>
                             </div>
@@ -200,11 +200,11 @@ export default function Header() {
                                             <Link href="/data-analytics">AI Scan</Link>
                                             <Link href="/aws-managed-cloud">AWS Managed Service</Link>
                                             <Link href="/backup-and-restore">Backup and Restore</Link>
-                                            <Link href="/cloud-migration">Cloud Migration</Link>
+                                            <Link href="/aws-partnership/cloud-migration">Cloud Migration</Link>
                                             <Link href="/aws-maturity-service">AWS Maturity Service</Link>
-                                            <Link href="/security-compliance">Security Compliance</Link>
+                                            <Link href="/aws-partnership/security-compliance">Security Compliance</Link>
                                             <Link href="/microsoft-on-aws">Microsoft on AWS</Link>
-                                            <Link href="/cloud-resource-managament">
+                                            <Link href="/aws-partnership/cloud-resource-managament">
                                                 Cloud Resource Management
                                             </Link>
                                         </div>

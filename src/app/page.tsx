@@ -31,7 +31,7 @@ export default function Home() {
 
       <section className={styles.gtcoSection}>
         <div>
-          <h2>Leading Africa and Nigeria's FSI Revolution</h2>
+          <h2>Leading Nigeria's FSI Revolution</h2>
           <p>
             CloudPlexo, an advanced AWS partner, is the first to leverage 100%
             AWS Lagos local zone for data residency requirement to spearhead
@@ -50,6 +50,10 @@ export default function Home() {
       </section>
 
       <BlogGrid />
+
+      {/* <section className={styles["newsletter"]}>
+        
+      </section> */}
     </div>
   );
 }

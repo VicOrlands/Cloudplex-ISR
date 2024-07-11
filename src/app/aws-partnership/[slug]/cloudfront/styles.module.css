@@ -1,0 +1,183 @@
+.main-cloudfront-page {
+  padding: 0 150px;
+  font-family: var(--font-montserrat);
+  font-size: 10px;
+}
+
+.cloudfront-dynamo-hero-section {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding-top: 100px;
+  align-items: center;
+  height: 70vh;
+  padding-top: 8%;
+}
+
+.cloudfront-dynamo-hero-section div h1 {
+  color: #344054;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.cloudfront-dynamo-hero-section div p {
+  color: #344054;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.cloudfront-partnership-hero-btn a {
+  background-color: transparent;
+  color: #344054;
+  text-decoration: none;
+  border: 1px solid #d0d5dd;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cloudfront-partnership-hero-btn a:hover {
+  border: 1px solid #90949b;
+}
+
+.cloudfront-partnership-hero-btn a:first-child {
+  color: #ffffff;
+  background-color: #3e54ac;
+  margin-right: 20px;
+}
+
+.cloudfront-partnership-hero-btn a:first-child:hover {
+  background-color: #4056ac;
+}
+
+.cloudfront-partnership-hero-img {
+  width: 70%;
+  margin: auto;
+}
+
+.cloudfront-partnership-hero-img img {
+  height: auto;
+  width: 100%;
+}
+
+/* aws-dynmano-services */
+.cloudfront-services {
+  padding: 60px 0;
+}
+
+.cloudfront-services h2 {
+  color: #101828;
+  font-family: var(--font-montserrat);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.cloudfront-services h3 {
+  color: #667085;
+  font-family: var(--font-montserrat);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.cloudfront-services-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 70px;
+  margin: 50px 0;
+}
+
+.cloudfront-services-column div img {
+  margin-bottom: 30px;
+  height: 83px;
+  width: auto;
+}
+
+.cloudfront-services-column div h3 {
+  color: #101828;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: var(--font-montserrat);
+}
+
+.cloudfront-services-column div ul li {
+  color: #667085;
+  font-family: var(--font-montserrat);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+/* media query for small screen */
+@media screen and (max-width: 768px) {
+  .main-cloudfront-page {
+    padding: 0 20px;
+  }
+
+  .cloudfront-dynamo-hero-section {
+    grid-template-columns: 1fr;
+    height: fit-content;
+    padding: 50px 0 30px 0;
+  }
+
+  .cloudfront-dynamo-hero-section div h1 {
+    font-size: 28px;
+  }
+
+  .cloudfront-dynamo-hero-section div p {
+    font-size: 14px;
+  }
+
+  .cloudfront-partnership-hero-btn {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cloudfront-partnership-hero-btn a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cloudfront-partnership-hero-btn a:first-child {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .cloudfront-partnership-hero-img {
+    grid-area: 1;
+    margin: 0 auto 20px auto;
+  }
+
+  /* aws-dynmano-services */
+  .cloudfront-services {
+    padding: 20px 0;
+    padding-bottom: 0;
+  }
+
+  .cloudfront-services h3 {
+    font-size: 16px;
+  }
+
+  .cloudfront-services h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .cloudfront-services-column {
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+  }
+
+  .cloudfront-services-column div img {
+    height: 90px;
+    margin-bottom: 20px;
+  }
+
+  .cloudfront-services h2 {
+    font-size: 1.5rem;
+  }
+}

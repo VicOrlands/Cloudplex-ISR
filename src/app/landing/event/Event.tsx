@@ -58,7 +58,7 @@ const eventSuccessArray: EventProps[] = [
     {
         img: businessDayLogo,
         imgText: `We were thrilled to co-host & sponsor the BusinessDay Economic Club's "C-Suite Executives Roundtable Dinner." It was an evening of insightful discussions and valuable connections.`,
-        text: `We were thrilled to co-host & sponsor the BusinessDay Economic Club's "C-Suite Executives Roundtable Dinner." It was an evening of insightful discussions and valuable connections.Thank you to all who attended and made it a success!We're excited to see the future collaborations and innovations sparked by this event!`,
+        text: `We were thrilled to co-host & sponsor the BusinessDay Economic Club's "C-Suite Executives Roundtable Dinner." It was an evening of insightful discussions and valuable connections. <br/><br/> Thank you to all who attended and made it a success! <br/><br/>We're excited to see the future collaborations and innovations sparked by this event!`,
         images: [
             event2,
             event1,

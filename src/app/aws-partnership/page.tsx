@@ -70,7 +70,7 @@ const AWSPartnership = () => {
                                 {service.desc}
                             </p>
                             <Link
-                                href={service.link.includes("https://") ? service.link : `/awsPartnership/${service.link}`}
+                                href={service.link.includes("https://") ? service.link : `/aws-partnership/${service.link}`}
                                 className={
                                     service.link === "" ? styles["btn-inactive"] : styles["btn-active"]
                                 }

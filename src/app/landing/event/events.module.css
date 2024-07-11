@@ -1,7 +1,7 @@
 /* events sliders */
 .events {
     background: #263571;
-    padding: 50px 150px;
+    padding: 50px 5%;
     font-family: var(--font-inter);
 }
 
@@ -150,6 +150,7 @@
     border-radius: 50%;
     border: 2.5px solid #e2e8f0;
     color: #334155;
+    cursor: pointer;
     height: 60px;
     width: 60px;
     font-size: 25px;

@@ -16,6 +16,7 @@
 /* reviewVideo */
 .reviewVideo {
     padding: 30px 300px 50px 300px;
+    padding: 30px 5% 50px 5%;
 }
 
 .videoWrap {
@@ -169,7 +170,7 @@
 .reviewsHeader {
     color: #fff;
     text-align: center;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
     font-size: 36px;
     font-weight: 600;
     line-height: 60px;
@@ -179,7 +180,7 @@
 .reviewsPara {
     color: #fff;
     text-align: center;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
     font-size: 30px;
     font-style: normal;
     line-height: 46px;

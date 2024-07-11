@@ -1,3 +1,9 @@
+import Link from "next/link";
+import Image from "next/image";
+import styles from "./styles.module.css";
+import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
+import { ButtonLink, ButtonTranparentLink } from "@/components/button/Button";
+
 import heroImage from "@/assets/solutions/aws1.png";
 import heroImage2 from "@/assets/solutions/aws2.png";
 import monitor from "@/assets/solutions/monitor.png";
@@ -6,13 +12,8 @@ import backup from "@/assets/solutions/backup.png";
 import cost from "@/assets/solutions/cost.png";
 import security from "@/assets/solutions/security.png";
 import automate from "@/assets/solutions/automate.png";
-import styles from "./styles.module.css";
-import Link from "next/link";
 import Partners from "@/components/partners/Partners";
-import Image from "next/image";
-import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
-import BgImg from "@/assets/solutions/AWS Managed Cloud.png"
-import { ButtonLink, ButtonTranparentLink } from "@/components/button/Button";
+import BgImg from "@/assets/solutions/bg.png"
 
 export default function AWSManagedCloud() {
     const services = [
@@ -92,19 +93,19 @@ export default function AWSManagedCloud() {
 
             <Partners />
 
-            <section className={styles["services"]} id="services">
+            <section className={styles["solutions-list"]} id="services">
                 <h2>
                     Cloudplexo’s AWS Managed Services Include:
                 </h2>
 
                 {services.map((service, key) => (
-                    <div key={key}>
+                    <div className={styles["service-row"]} key={key}>
                         <div>
                             <Image
                                 src={service.image}
                                 alt={service.name}
                             />
-                            <h4>{service.name}</h4>
+                            <h3>{service.name}</h3>
                         </div>
 
                         <p>{service.desc}</p>
@@ -112,7 +113,7 @@ export default function AWSManagedCloud() {
                 ))}
             </section>
 
-            <section>
+            <section className={styles["why-choose-us"]}>
                 <Image
                     src={heroImage2}
                     alt="Why Choose Us"
@@ -135,29 +136,19 @@ export default function AWSManagedCloud() {
                 </div>
             </section>
 
-            <section className="solutions-list">
-                <h2 className="headings">
+            <section className={styles["solutions-list"]}>
+                <h2>
                     More Benefits of AWS Managed Cloud Solution
                 </h2>
 
                 {benefits.map((service, key) => (
-                    <div key={key}>
+                    <div className={styles["service-row"]} key={key}>
                         <div>
                             <Image
                                 src={service.image}
                                 alt={service.name}
                             />
-                            <h4
-                                style={{
-                                    marginBottom: "0",
-                                    marginLeft: "14px",
-                                    lineHeight: "50px",
-                                    fontWeight: "700",
-                                }}
-                                className="title"
-                            >
-                                {service.name}
-                            </h4>
+                            <h3>{service.name}</h3>
                         </div>
 
                         <p>{service.desc}</p>
@@ -165,9 +156,9 @@ export default function AWSManagedCloud() {
                 ))}
             </section>
 
-            <LazyBackgroundImage src={BgImg} className={styles["bg-image"]}>
+            <LazyBackgroundImage src={BgImg} className={styles["aws-managed-image"]}>
                 <section className={styles["aws-managed-cloud"]}>
-                    <h1>Leverage the Power of AWS Managed Cloud with Cloudplexo</h1>
+                    <h2>Leverage the Power of AWS Managed Cloud with Cloudplexo</h2>
                     <p>
                         Our solution provides a range of benefits, including expert
                         management, scalability and flexibility, security and
@@ -176,9 +167,8 @@ export default function AWSManagedCloud() {
                         good hands, allowing you to focus on your core business
                         objectives.
                     </p>
-                    <Link href="/contact-us">
-                        Contact Sales
-                    </Link>
+
+                    <ButtonLink link="/contact-us" title="Contact Sales" />
                 </section>
             </LazyBackgroundImage>
         </div>

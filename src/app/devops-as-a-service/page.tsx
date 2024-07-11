@@ -11,6 +11,7 @@ import image3 from "@/assets/solutions/image3.png";
 import image4 from "@/assets/solutions/image4.png";
 import image5 from "@/assets/solutions/image5.png";
 import image6 from "@/assets/solutions/image6.png";
+import { ButtonLink, ButtonTranparentLink } from "@/components/button/Button";
 
 export default function DevOps() {
     const devopsSolution = [
@@ -63,13 +64,10 @@ export default function DevOps() {
                     </p>
 
                     <div className={styles["hero-button"]}>
-                        <Link href="/contact-us">
-                            Contact Sales
-                        </Link>
+                        <ButtonLink link="/contact-us"
+                            title="Contact Sales" className={styles["btn"]} />
 
-                        <Link href="#devops-solutions">
-                            Learn More
-                        </Link>
+                        <ButtonTranparentLink link="#devops-solutions" title="Learn More" className={styles["btn2"]} />
                     </div>
                 </div>
 
@@ -101,26 +99,24 @@ export default function DevOps() {
                 ))}
             </div>
 
-            <div>
+            <div className={styles["why-choose-us"]}>
+                <Image
+                    src={heroImage2}
+                    alt="Why Choose Us"
+                />
+
                 <div>
-                    <Image
-                        src={heroImage2}
-                        alt="Why Choose Us"
-                    />
+                    <h3>Why Choose Us?</h3>
+                    <p>
+                        We focus on delivering tangible results that align with your
+                        business objectives. We work closely with you to understand
+                        your unique needs, challenges, and goals, and develop
+                        customized solutions that meet your specific requirements.
+                    </p>
 
-                    <div>
-                        <h3>Why Choose Us?</h3>
-                        <p>
-                            We focus on delivering tangible results that align with your
-                            business objectives. We work closely with you to understand
-                            your unique needs, challenges, and goals, and develop
-                            customized solutions that meet your specific requirements.
-                        </p>
-
-                        <Link href="/contact-us">
-                            Contact Sales
-                        </Link>
-                    </div>
+                    <Link href="/contact-us">
+                        Contact Sales
+                    </Link>
                 </div>
             </div>
         </section>

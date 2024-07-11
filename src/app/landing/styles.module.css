@@ -1,7 +1,21 @@
 /* serviceContainer */
 .serviceContainer {
-    padding: 50px 300px;
+    padding: 50px 5%;
     border-bottom: 1px solid #d0d5dd;
+}
+
+.serviceContainer h5 {
+    color: #3e54ac;
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.serviceContainer h2 {
+    width: 48%;
+    margin: auto;
 }
 
 .serviceContainer .tabsTab {
@@ -18,8 +32,10 @@
 }
 
 .servicesTabNavigation {
-    margin-top: 30px;
-    padding: 0 120px;
+    margin-top: 20px;
+    margin-bottom: 88px;
+    padding: 0;
+    height: auto;
 }
 
 .serviceContainer ul {
@@ -28,12 +44,11 @@
     grid-auto-columns: auto;
     grid-auto-flow: column;
     margin: auto;
-    margin-bottom: 88px;
     display: grid;
     padding: 8px;
     border-radius: 15px;
     background: #dfdfdf;
-    width: 50%;
+    width: 40%;
 }
 
 /* Pseudo-element for the background */
@@ -190,7 +205,7 @@
 .btnViewMore button {
     background-color: #3e54ac;
     color: #fff;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
     font-weight: 600;
     font-size: 16px;
     border: 1px solid #3e54ac;
@@ -205,7 +220,7 @@
 
 /* badges styling section */
 .badgesContainer {
-    padding: 50px 120px;
+    padding: 50px 10%;
 }
 
 .badgesContainer section {
@@ -231,12 +246,18 @@
 
 .badgesContainer .otherBadges {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 20px;
 }
 
 .badgesContainer .otherBadges div {
-    width: 110px;
+    width: 100px;
+    height: auto;
+}
+
+.badgesContainer .otherBadges div:nth-child(5),
+.badgesContainer .otherBadges div:nth-child(16) {
+    grid-column: span 2;
 }
 
 /* clientsSection */
@@ -292,6 +313,11 @@
         padding: 30px 60px;
     }
 
+    .serviceContainer h2 {
+        width: 100%;
+        margin: auto;
+    }
+
     .serviceContainer ul {
         background-color: #e8f1ff;
         width: 100%;
@@ -339,6 +365,11 @@
         width: 100%;
     }
 
+    .badgesContainer .otherBadges div:nth-child(5),
+    .badgesContainer .otherBadges div:nth-child(16) {
+        grid-column: span 1;
+    }
+
     /* clientsSection */
     .clientsSection {
         padding: 30px 60px;
@@ -357,14 +388,19 @@
         padding: 30px 20px;
     }
 
+    .serviceContainer h2 {
+        width: 100%;
+        margin: auto;
+    }
+
     .serviceContainer ul {
         background-color: #e8f1ff;
         font-size: 14px;
-        margin-bottom: 50px;
         width: 100%;
     }
 
     .servicesTabNavigation {
+        margin-bottom: 50px;
         padding: 0;
     }
 
@@ -408,6 +444,13 @@
 
     .badgesContainer .otherBadges div {
         width: 100%;
+    }
+
+    .badgesContainer .otherBadges div:nth-child(5),
+    .badgesContainer .otherBadges div:nth-child(16) {
+        grid-column: span 1;
+        height: auto;
+        width: auto;
     }
 
     /* clientsSection */
