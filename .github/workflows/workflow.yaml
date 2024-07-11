@@ -1,0 +1,66 @@
+name: "deployment"
+on:
+    push:
+      branches:
+        - 'main'
+
+permissions:
+    id-token: write
+    contents: read
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+
+        - name: Set up Node.js
+          uses: actions/setup-node@v4
+          with:
+            node-version: 20
+
+        - name: Cache dependencies
+          uses: actions/cache@v4
+          with:
+            path: |
+              .next/cache
+              .npm
+            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+            restore-keys: |
+              ${{ runner.os }}-node-
+
+        - name: Install dependencies
+          run: |
+            npm install
+
+        - name: Build app
+          run: npm run build
+
+        - name: confirm build file
+          run: |
+            ls -al .next
+
+        - name: Upload build artifacts
+          uses: actions/upload-artifact@v3
+          with:
+            name: next-build
+            path: .next
+        
+        - name: configure aws credentials
+          uses: aws-actions/configure-aws-credentials@v4
+          with:
+            role-to-assume: arn:aws:iam::593471573181:role/cloudplexoweb-action-role
+            aws-region: eu-west-1
+
+        - name: confirm user
+          run: |
+            aws sts get-caller-identity
+            aws s3 ls
+
+        - name: Upload to S3
+          run: |
+            aws s3 sync build s3://console-stag.ilearncloud.io
+
+        - name: Invalidate CloudFront Cache
+          run: aws cloudfront create-invalidation --distribution-id E180O0YPC43RSA --paths "/*"
