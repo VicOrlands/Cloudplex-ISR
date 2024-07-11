@@ -18,7 +18,7 @@ import clsx from "clsx";
 
 export async function generateStaticParams() {
     return [
-        { slug: "wellArchitected" },
+        { slug: "rds-ready" },
     ];
 }
 

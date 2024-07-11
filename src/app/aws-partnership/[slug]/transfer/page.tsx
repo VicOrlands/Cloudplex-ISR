@@ -42,9 +42,9 @@ const awsArray = [
 ]
 
 export async function generateStaticParams() {
-  return awsArray.map(({ title, img, serviceList }) => ({
-    title, img, serviceList
-  }))
+  return [{
+    slug: "aws-transfer-family"
+  }]
 }
 
 const Transfer: React.FC = () => {

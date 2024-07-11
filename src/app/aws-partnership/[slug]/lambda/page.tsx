@@ -10,6 +10,12 @@ import Partners from "@/components/partners/Partners";
 import Review from "@/app/landing/review/Review";
 import BlogGrid from "@/components/blogGrid/Grid";
 
+export async function generateStaticParams() {
+    return [{
+        slug: "aws-lambda-service"
+    }]
+}
+
 export default function Lambda() {
     return (
         <div className={styles["awslambda-page"]}>

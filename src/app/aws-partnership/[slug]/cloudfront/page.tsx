@@ -42,9 +42,9 @@ const awsservices = [
 ]
 
 export async function generateStaticParams() {
-  return awsservices.map(({ title, img, serviceList }) => ({
-    title, img, serviceList
-  }))
+  return [{
+    slug: "amazon-cloudfront-delivery"
+  }]
 }
 
 const CloudFront = () => {

@@ -20,7 +20,7 @@ environments, cloud workload assessment, cloud cost optimization"
 
 export async function generateStaticParams() {
   return [
-    { slug: "wellArchitected" },
+    { slug: "aws-well-architected-framework-alignment" },
   ];
 }
 

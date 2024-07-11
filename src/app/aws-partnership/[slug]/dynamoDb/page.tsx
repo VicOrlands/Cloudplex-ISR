@@ -50,9 +50,9 @@ const awsservices = [
 ]
 
 export async function generateStaticParams() {
-  return awsservices.map(({ title, img, descList }) => ({
-    title, img, descList
-  }))
+  return [{
+    slug: "aws-dynamo-db"
+  }]
 }
 
 const AWSDynamoDb = () => {

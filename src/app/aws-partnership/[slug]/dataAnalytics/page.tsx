@@ -42,7 +42,7 @@ import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
   keywords="data analytics for business, data analysis for business, quantitative data analysis, data analytics aws, Data Recycling Services, Data Repurposing, Data Transformation, Data Reuse, Data Augmentation"
 /> */}
 
-const DataAnalytics: React.FC = () => {
+export default function DataAnalyticPage() {
   return (
     <div className={styles["data-analytics"]}>
       <LazyBackgroundImage src={BgImg} className={styles["data-hero-bg"]}>
@@ -388,5 +388,4 @@ const DataAnalytics: React.FC = () => {
       </section>
     </div>
   );
-};
-export default DataAnalytics
+}

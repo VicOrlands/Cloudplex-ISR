@@ -38,9 +38,9 @@ const awsArray = [
 ]
 
 export async function generateStaticParams() {
-  return awsArray.map(({ title, img, paragraph }) => ({
-    title, img, paragraph
-  }))
+  return [{
+    slug: "cloud-resource-managament"
+  }]
 }
 
 const CloudResource = () => {
