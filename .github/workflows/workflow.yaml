@@ -40,12 +40,6 @@ jobs:
         - name: confirm build file
           run: |
             ls -al .next
-
-        - name: Upload build artifacts
-          uses: actions/upload-artifact@v3
-          with:
-            name: next-build
-            path: .next
         
         - name: configure aws credentials
           uses: aws-actions/configure-aws-credentials@v4

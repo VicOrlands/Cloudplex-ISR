@@ -17,7 +17,7 @@ import Badge8 from "@/assets/landing/badges/aws systems manager delivery.webp";
 import Badge14 from "@/assets/landing/badges/aws transfer family delivery badge.webp";
 import Badge2 from "@/assets/landing/badges/AWS-Badge Amazon CloudFront Delivery.webp";
 import Badge9 from "@/assets/landing/badges/aws-partner-immersion-day-program-v1.webp";
-import Badge15 from "@/assets/landing/badges/50-certified.webp"
+import Badge15 from "@/assets/landing/badges/50 Certified Light English.webp"
 
 const badgesArray: StaticImageData[] = [
     Badge14,
