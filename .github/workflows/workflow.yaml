@@ -20,6 +20,16 @@ jobs:
           with:
             node-version: 20
 
+        - name: Cache dependencies
+          uses: actions/cache@v4
+          with:
+            path: |
+              .next/cache
+              .npm
+            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+            restore-keys: |
+              ${{ runner.os }}-node-
+
         - name: Install dependencies
           run: |
             npm install
@@ -29,7 +39,13 @@ jobs:
 
         - name: confirm build file
           run: |
-            ls -al
+            ls -al .next
+
+        - name: Upload build artifacts
+          uses: actions/upload-artifact@v3
+          with:
+            name: next-build
+            path: .next
         
         - name: configure aws credentials
           uses: aws-actions/configure-aws-credentials@v4
@@ -45,8 +61,3 @@ jobs:
         - name: Upload to S3
           run: |
             aws s3 sync build s3://console-stag.ilearncloud.io
-            
-        - name: Invalidate CloudFront Cache
-          run: aws cloudfront create-invalidation --distribution-id E180O0YPC43RSA --paths "/*"
-        
-
