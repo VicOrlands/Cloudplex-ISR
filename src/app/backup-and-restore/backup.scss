@@ -1,0 +1,216 @@
+.backup {
+  font-display: swap;
+  font-family: "Montserrat" !important;
+  font-style: normal;
+  &-hero {
+    .title {
+      font-size: 44px !important;
+      color: #344054;
+      font-weight: 700;
+      @media (max-width: 590px) {
+        font-size: 28px !important;
+      }
+    }
+    p {
+      color: #344054;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .backup-image {
+    text-align: center;
+  }
+  .whitepaperbtn {
+    background: #002797;
+    border-radius: 3px;
+    color: #fff;
+  }
+
+  .whitepaperbtn:hover {
+    color: #fff;
+  }
+
+  .whitepaper {
+    background: transparent;
+    padding: 30px 0;
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #344054;
+      @media (max-width: 590px) {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  .whitepaper-card {
+    border: 0;
+    background: none;
+    box-shadow: 0px 28.8845157623291px 39.13385772705078px 0px
+      rgba(81, 107, 235, 0.19);
+  }
+
+  .whitepaper .whitepaper-card .whitepaper-cardContent {
+    background-color: #fff;
+    padding: 20px 20px;
+  }
+  .modules {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    .title {
+      font-size: 28px !important;
+      font-style: normal;
+      font-weight: 700;
+      @media (max-width: 590px) {
+        font-size: 20px !important;
+      }
+    }
+    p {
+      color: #344054;
+      font-size: 20px;
+      @media (max-width: 590px) {
+        font-size: 15px !important;
+      }
+    }
+    &-cloud {
+      img {
+        width: 80px;
+        height: 50px;
+      }
+    }
+  }
+  .pricing-page {
+    padding: 30px 0;
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    .pricing-tab1 {
+      background: #3e54ac;
+      color: white;
+      box-shadow: 0px 2px 12px rgba(20, 20, 43, 0.08);
+      border-radius: 24px;
+    }
+    .subt {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      @media (max-width: 590px) {
+        font-size: 16px !important;
+      }
+    }
+    .desc {
+      font-size: 18px;
+
+      margin-top: 18px;
+    }
+    .mtitle {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 35px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      @media (max-width: 590px) {
+        font-size: 18px !important;
+      }
+    }
+    li {
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      @media (max-width: 590px) {
+        font-size: 16px !important;
+      }
+    }
+    .pricingtab {
+      box-shadow: 0px 2px 12px rgba(20, 20, 43, 0.08);
+      border-radius: 24px;
+      border: 1px solid #eff0f7;
+      color: #170f49;
+    }
+
+    .pricing-tab1 .btn {
+      border-radius: 8px;
+      border: 1px solid #d0d5dd;
+      background: #fff;
+      color: #344054;
+      font-display: swap;
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    }
+  }
+  .cloud-storage {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    .description {
+      font-display: swap;
+      font-family: "Montserrat";
+      font-size: 18px;
+      color: #344054;
+      @media (max-width: 590px) {
+        font-size: 15px !important;
+      }
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      .input-field {
+        label {
+          color: var(--gray-700, #344054);
+          font-display: swap;
+          font-family: "Montserrat";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          display: block;
+          margin-bottom: 8px;
+        }
+        input {
+          border-radius: 8px;
+          border: 1px solid var(--gray-300, #d0d5dd);
+          background: var(--white, #fff);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          width: 100%;
+          padding: 10px 10px 10px 35px;
+        }
+
+        select {
+          border-radius: 8px;
+          border: 1px solid var(--gray-300, #d0d5dd);
+          background: var(--white, #fff);
+          box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+          width: 100%;
+          padding: 10px 14px;
+          color: black !important;
+        }
+
+        i {
+          position: absolute;
+        }
+        .icon {
+          padding: 9px;
+        }
+        @media (max-width: 767px) {
+          .icon {
+            z-index: 100;
+          }
+          .select-icon {
+            text-indent: 30px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
