@@ -34,16 +34,16 @@ function WhitePaper() {
         <CTAForm />
       </div>
 
-      {Whitepaper.map((list) => (
-        <div className={styles["whitepaper-card"]}>
+      {Whitepaper.map((list, index) => (
+        <div className={styles["whitepaper-card"]} key={index}>
           <Image src={list.image} alt={list.name} />
 
           <div className={styles["whitepaper-content"]}>
             <h3>{list.name}</h3>
             <p>{list.desc}</p>
             <ul>
-              {MoreInfo.map((info) => (
-                <li>{info}</li>
+              {MoreInfo.map((info, idx) => (
+                <li key={idx}>{info}</li>
               ))}
             </ul>
             <Link href={`/whitepaper/${list.link}`} rel="noreferrer">

@@ -1,6 +1,3 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-
 function PricingModule() {
   const tick = (
     <svg
@@ -96,127 +93,115 @@ function PricingModule() {
   );
 
   return (
-    <React.Fragment>
-      <section className="pricing-page">
-        <h3 className="headings">Pricing</h3>
-        <Container>
-          <Row>
-            {/* Business */}
-            <Col lg={6} md={6} className="mb-5">
-              <div className="pricing-tab1 p-4">
-                <div>
-                  <p className="mtitle mb-2">
-                    <i className="mr-3">{Business}</i>Business Essential
-                  </p>
-                  <p className="desc" style={{ color: "#D9DBE9" }}>
-                    Backup Desktops, laptops, think-clients, servers and more{" "}
-                  </p>
+    <section className="pricing-page">
+      <h3 className="headings">Pricing</h3>
+      <div className="pricing-tab1 p-4">
+        <div>
+          <p className="mtitle mb-2">
+            <i className="mr-3">{Business}</i>Business Essential
+          </p>
+          <p className="desc" style={{ color: "#D9DBE9" }}>
+            Backup Desktops, laptops, think-clients, servers and more{" "}
+          </p>
 
-                  <span className="subt">What's Included</span>
-                  <ul
-                    className="list-unstyled pt-3"
-                    style={{ color: "#D9DBE9" }}
-                  >
-                    <li>
-                      <span className="mr-2">
-                        <i>{tick}</i>
-                      </span>
-                      License per user/machine
-                    </li>
-                    <li>
-                      <span className="mr-2">
-                        <i>{tick}</i>
-                      </span>
-                      Bank level security and encryption
-                    </li>
-                    <li>
-                      <span className="mr-2">
-                        <i className="align-middle">{tick}</i>
-                      </span>
-                      Backup to AWS, Azure or Google Cloud
-                    </li>
-                    <li>
-                      <span className="mr-2">
-                        <i className="align-middle">{tick}</i>
-                      </span>
-                      Restore from AWS, Azure or Google Cloud
-                    </li>
-                    <li>
-                      <span className="mr-2">
-                        <i>{tick}</i>
-                      </span>
-                      Premium Support
-                    </li>
-                    <li>
-                      <span className="mr-2">
-                        <i>{tick}</i>
-                      </span>
-                      <span>Cloud-Native</span>
-                    </li>
-                  </ul>
-                  <div className="mt-5">
-                    {/* eslint-disable-next-line*/}
-                    <a href="/contact-us" className="btn">
-                      Contact Us
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            {/* Enterprise */}
-            <Col lg={6} md={6} className="mb-5">
-              <div className="pricingtab p-4">
-                <div>
-                  <p className="mtitle mb-2" style={{ color: "#170F49" }}>
-                    <i className="mr-3">{Enterprise}</i>Enterprise
-                  </p>
-                  <p className="desc" style={{ color: "#170F49" }}>
-                    Enterprise backup and restore{" "}
-                  </p>
-                  <span className="subt" style={{ color: "#170F49" }}>
-                    What's Included
-                  </span>
-                  <ul
-                    className="list-unstyled pt-3"
-                    style={{ color: "#170F49" }}
-                  >
-                    <li>
-                      <span className="mr-2">
-                        <i>{tick2}</i>
-                      </span>
-                      All in Business Essential
-                    </li>
-                    <li>
-                      <span className="mr-2">
-                        <i className="align-middle">{tick2}</i>
-                      </span>
-                      Dedicated Backup Specialist
-                    </li>
-                    <li>
-                      <span className="mr-2">
-                        <i>{tick2}</i>
-                      </span>
-                      Dedicated Account Manager
-                    </li>
-                    <li>
-                      <span className="mr-2">
-                        <i>{tick2}</i>
-                      </span>
-                      <span>Storage Explorer</span>
-                    </li>
-                  </ul>
-                  <div className="mt-5">
-                    <a href="/contact-us" className="btn-outline-primary">
-                      Contact Us
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-    </React.Fragment>
+          <span className="subt">What's Included</span>
+          <ul
+            className="list-unstyled pt-3"
+            style={{ color: "#D9DBE9" }}
+          >
+            <li>
+              <span className="mr-2">
+                <i>{tick}</i>
+              </span>
+              License per user/machine
+            </li>
+            <li>
+              <span className="mr-2">
+                <i>{tick}</i>
+              </span>
+              Bank level security and encryption
+            </li>
+            <li>
+              <span className="mr-2">
+                <i className="align-middle">{tick}</i>
+              </span>
+              Backup to AWS, Azure or Google Cloud
+            </li>
+            <li>
+              <span className="mr-2">
+                <i className="align-middle">{tick}</i>
+              </span>
+              Restore from AWS, Azure or Google Cloud
+            </li>
+            <li>
+              <span className="mr-2">
+                <i>{tick}</i>
+              </span>
+              Premium Support
+            </li>
+            <li>
+              <span className="mr-2">
+                <i>{tick}</i>
+              </span>
+              <span>Cloud-Native</span>
+            </li>
+          </ul>
+          <div className="mt-5">
+            <a href="/contact-us" className="btn">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="pricingtab p-4">
+        <div>
+          <p className="mtitle mb-2" style={{ color: "#170F49" }}>
+            <i className="mr-3">{Enterprise}</i>Enterprise
+          </p>
+          <p className="desc" style={{ color: "#170F49" }}>
+            Enterprise backup and restore{" "}
+          </p>
+          <span className="subt" style={{ color: "#170F49" }}>
+            What's Included
+          </span>
+          <ul
+            className="list-unstyled pt-3"
+            style={{ color: "#170F49" }}
+          >
+            <li>
+              <span className="mr-2">
+                <i>{tick2}</i>
+              </span>
+              All in Business Essential
+            </li>
+            <li>
+              <span className="mr-2">
+                <i className="align-middle">{tick2}</i>
+              </span>
+              Dedicated Backup Specialist
+            </li>
+            <li>
+              <span className="mr-2">
+                <i>{tick2}</i>
+              </span>
+              Dedicated Account Manager
+            </li>
+            <li>
+              <span className="mr-2">
+                <i>{tick2}</i>
+              </span>
+              <span>Storage Explorer</span>
+            </li>
+          </ul>
+          <div className="mt-5">
+            <a href="/contact-us" className="btn-outline-primary">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
