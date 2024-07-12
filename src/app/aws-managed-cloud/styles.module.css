@@ -1,5 +1,5 @@
 .solutions {
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
 }
 
 .solutions .hero {
@@ -123,7 +123,7 @@
     border-radius: 8px;
     box-shadow: 0 1px 2px 0 #1018280d;
     color: #344054;
-    font-family: var(--font-nunito);
+    font-family: var(--font-inter);
     font-size: 16px;
     font-weight: 600;
     padding: 10px 20px;

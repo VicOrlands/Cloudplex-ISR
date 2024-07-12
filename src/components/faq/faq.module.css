@@ -106,7 +106,7 @@
   z-index: 1;
 }
 
-/* ------------styling for mobile view--------------- */
+/* mobile */
 @media screen and (max-width: 768px) {
   .faq-section {
     margin: 0;

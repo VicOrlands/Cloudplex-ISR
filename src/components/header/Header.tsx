@@ -284,7 +284,6 @@ export default function Header() {
                                             className={`dropdown-content ${isDropdownVisible === 3 ? "show" : ""
                                                 }`}
                                         >
-                                            <Link href="/events">Events</Link>
                                             <Link href="/press-release">Press Releases</Link>
                                             <Link href="/whitepaper">Whitepaper & E-books</Link>
                                         </div>

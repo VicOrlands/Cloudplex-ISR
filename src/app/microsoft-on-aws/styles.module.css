@@ -1,0 +1,206 @@
+.aws-dynamo-page {
+  padding: 0 5%;
+  font-family: var(--font-inter);
+  font-size: 10px;
+}
+
+.dynamo-hero-section {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  height: 50vh;
+  margin-top: 100px;
+}
+
+.dynamo-hero-section div:first-child {
+  width: 85%;
+}
+
+.dynamo-hero-section div h1 {
+  color: #344054;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.dynamo-hero-section div p {
+  color: #344054;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.partnership-hero-btn {
+  display: flex;
+  align-items: center;
+}
+
+.partnership-hero-btn .btn,
+.partnership-hero-btn .btn2 {
+  margin: 0;
+}
+
+.partnership-hero-btn .btn {
+  margin-right: 20px;
+}
+
+.dynamo-hero-section img {
+  width: 100%;
+  height: auto;
+}
+
+/* aws-dynmano-services */
+.aws-dynamo-services {
+  padding: 60px 0;
+}
+
+.aws-dynamo-services h2 {
+  color: #101828;
+  font-family: var(--font-inter);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.aws-dynamo-services h3 {
+  color: #667085;
+  font-family: var(--font-inter);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.aws-dynamo-services-column {
+  display: grid;
+  font-family: var(--font-inter);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 70px;
+  margin: 50px 0;
+}
+
+.aws-dynamo-services-column div img {
+  height: 85px;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.aws-dynamo-services-column div h3 {
+  color: #101828;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.aws-dynamo-services-column div ul li {
+  color: #667085;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* client stories */
+.client-stories h2 {
+  display: none;
+}
+
+.client-stories #heading-h1 {
+  display: block;
+  color: #101828;
+  font-family: var(--font-inter);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+
+.client-stories #heading-p {
+  color: #667085;
+  font-family: var(--font-inter);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 5%;
+  margin-bottom: -50px;
+}
+
+/* media query for small screen */
+@media (max-width: 768px) {
+  .aws-dynamo-page {
+    padding: 0 20px;
+  }
+
+  .dynamo-hero-section {
+    grid-template-columns: 1fr;
+    height: fit-content;
+    margin: 50px 0;
+  }
+
+  .dynamo-hero-section img {
+    grid-area: 1;
+    margin-bottom: 30px;
+  }
+
+  .dynamo-hero-section div:first-child {
+    width: 100%;
+  }
+
+  .dynamo-hero-section div h1 {
+    font-size: 28px;
+  }
+
+  .dynamo-hero-section div p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .partnership-hero-btn {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .partnership-hero-btn .btn {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .partnership-hero-btn .btn2 {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* aws-dynmano-services */
+  .aws-dynamo-services {
+    padding: 0;
+  }
+
+  .aws-dynamo-services h3 {
+    font-size: 16px;
+  }
+
+  .aws-dynamo-services h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .aws-dynamo-services-column {
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+  }
+
+  .aws-dynamo-services-column div img {
+    height: 90px;
+    margin-bottom: 20px;
+  }
+
+  /* client stories */
+  .client-stories #heading-h1 {
+    font-size: var(--font-size-h2-sm);
+    margin-left: 20px;
+  }
+
+  .client-stories #heading-p {
+    font-size: var(--font-size-h3-sm);
+    margin-left: 20px;
+    margin-bottom: -40px;
+  }
+}

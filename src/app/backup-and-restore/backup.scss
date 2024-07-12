@@ -1,6 +1,6 @@
 .backup {
   font-display: swap;
-  font-family: "Montserrat" !important;
+    font-family: var(--font-inter);
   font-style: normal;
   &-hero {
     .title {
@@ -142,7 +142,7 @@
       background: #fff;
       color: #344054;
       font-display: swap;
-      font-family: "Montserrat";
+    font-family: var(--font-inter);
       font-size: 16px;
       font-weight: 600;
       box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
@@ -154,7 +154,7 @@
     padding: 30px 0;
     .description {
       font-display: swap;
-      font-family: "Montserrat";
+    font-family: var(--font-inter);
       font-size: 18px;
       color: #344054;
       @media (max-width: 590px) {
@@ -169,7 +169,7 @@
         label {
           color: var(--gray-700, #344054);
           font-display: swap;
-          font-family: "Montserrat";
+    font-family: var(--font-inter);
           font-size: 14px;
           font-style: normal;
           font-weight: 500;

@@ -5,7 +5,7 @@
 
   /*  courses */
   .blogCatalog {
-      font-family: var(--font-montserrat);
+      font-family: var(--font-inter);
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 40px 20px;
@@ -34,7 +34,7 @@
 
   .content {
       padding: 20px 15px;
-      font-family: var(--font-montserrat);
+      font-family: var(--font-inter);
   }
 
   .contentTitle {
@@ -56,7 +56,7 @@
 
   .content p {
       color: #2728338c;
-      font-family: var(--font-nunito);
+      font-family: var(--font-inter);
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 0;
@@ -73,7 +73,7 @@
   .paginationItem {
       background: #fff;
       color: #42526e;
-      font-family: var(--font-nunito);
+      font-family: var(--font-inter);
       border: none;
       height: 100%;
       width: 45px;

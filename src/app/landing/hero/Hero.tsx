@@ -1,8 +1,8 @@
 "use client"
 
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from "./hero.module.css"
-import Image, { getImageProps } from 'next/image'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import heroImageSm from "@/assets/landing/mobile-sm.webp";
 import heroImageMd from "@/assets/landing/mobile-md.webp";
@@ -10,20 +10,6 @@ import heroImageLg from "@/assets/landing/heroimage-lg.webp";
 import heroImageXl from "@/assets/landing/heroimage-xl.webp";
 
 const HeroSection = () => {
-    const common = { alt: `Top Cloud Services providers with CloudPlexo's Innovative Solutions`, priority: true }
-    const {
-        props: { srcSet: mobile, },
-    } = getImageProps({ ...common, src: heroImageSm, height: heroImageSm.height, width: heroImageSm.width })
-    const {
-        props: { srcSet: mediumScreen },
-    } = getImageProps({ ...common, src: heroImageMd, height: heroImageMd.height, width: heroImageMd.width })
-    const {
-        props: { srcSet: tablet },
-    } = getImageProps({ ...common, src: heroImageLg, height: heroImageLg.height, width: heroImageLg.width })
-    const {
-        props: { srcSet: desktop, ...rest },
-    } = getImageProps({ ...common, src: heroImageXl, height: heroImageXl.height, width: heroImageXl.width })
-
     return (
         <section className={styles.heroTopSection}>
             <div className={styles.heroTextContainer}>
@@ -53,11 +39,14 @@ const HeroSection = () => {
 
             <div className={styles.heroImgContainer}>
                 <picture>
-                    <source media="(max-width: 600px)" srcSet={mobile} />
-                    <source media="(max-width: 900px)" srcSet={mediumScreen} />
-                    <source media="(min-width: 1000px)" srcSet={tablet} />
-                    <source media="(min-width: 1200px)" srcSet={desktop} />
-                    <Image alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions" {...rest} priority />
+                    <source media="(max-width: 600px)" srcSet={heroImageSm.src} />
+                    <source media="(max-width: 900px)" srcSet={heroImageMd.src} />
+                    <source media="(max-width: 1000px)" srcSet={heroImageLg.src} />
+                    <Image
+                        priority
+                        src={heroImageXl}
+                        alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                    />
                 </picture>
             </div>
         </section>

@@ -52,3 +52,26 @@
     font-size: 16px;
     font-weight: 400;
 }
+
+/* mobile */
+@media (max-width: 768px) {
+    .whitepaper {
+        padding: 60px 20px;
+    }
+
+    .whitepaper h1 {
+        font-size: 26px;
+    }
+
+    /* whitepaper-catalog */
+    .whitepaper-card {
+        flex-wrap: wrap;
+    }
+
+    .whitepaper-card img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+}

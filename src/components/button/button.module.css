@@ -1,6 +1,6 @@
  .button,
  .transparentButton {
-     font-family: var(--font-montserrat);
+     font-family: var(--font-inter);
      font-weight: 600;
      font-size: 16px;
      border-radius: 8px;

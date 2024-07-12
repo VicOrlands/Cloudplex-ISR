@@ -1,6 +1,6 @@
 .security-compliance-page {
   padding: 0 150px;
-  font-family: var(--font-montserrat);
+  font-family: var(--font-inter);
   font-size: 10px;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .security-compliance-client-stories .heading {
-  font-family: var(--font-montserrat);
+  font-family: var(--font-inter);
   padding-left: 300px;
 }
 

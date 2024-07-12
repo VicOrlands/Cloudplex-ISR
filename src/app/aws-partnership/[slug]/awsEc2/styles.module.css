@@ -1,6 +1,6 @@
 .main-ec2-page {
   padding: 0 150px;
-  font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
   font-size: 10px;
 }
 
@@ -63,7 +63,7 @@
 
 .main-ec2-services h2 {
   color: #101828;
-  font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 15px;
@@ -71,7 +71,7 @@
 
 .main-ec2-services h3 {
   color: #667085;
-  font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -93,13 +93,13 @@
   color: #101828;
   font-size: 1.25rem;
   font-weight: 600;
-  font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
   margin-bottom: 10px;
 }
 
 .main-ec2-services-column div ul li {
   color: #667085;
-  font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
   font-size: 1rem;
   font-weight: 400;
   line-height: 2rem;

@@ -6,7 +6,7 @@
 
 .casestudy-hero {
     text-align: center;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +81,7 @@
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-inter);
 }
 
 .casestudy-list-item .content-title h5 {
@@ -94,7 +94,7 @@
     color: #667085;
     font-size: 15px;
     line-height: 24px;
-    font-family: var(--font-nunito);
+    font-family: var(--font-inter);
 }
 
 /* mobile */

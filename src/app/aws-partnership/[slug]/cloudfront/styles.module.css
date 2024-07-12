@@ -1,6 +1,6 @@
 .main-cloudfront-page {
   padding: 0 150px;
-  font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
   font-size: 10px;
 }
 
@@ -70,7 +70,7 @@
 
 .cloudfront-services h2 {
   color: #101828;
-  font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 15px;
@@ -78,7 +78,7 @@
 
 .cloudfront-services h3 {
   color: #667085;
-  font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 10px;
@@ -101,12 +101,12 @@
   color: #101828;
   font-size: 1.25rem;
   font-weight: 600;
-  font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
 }
 
 .cloudfront-services-column div ul li {
   color: #667085;
-  font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.8rem;
