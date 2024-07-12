@@ -61,7 +61,7 @@ const FaqPage: React.FC<FaqProps> = ({ title, subtitle, questions }) => {
 
       <h4 id={classes["faq-h2"]}>{title}</h4>
       <p id={classes["faq-p"]}>{subtitle}</p>
-      <Link href="/contactUs">
+      <Link href="/contact-us">
         Get in touch
       </Link>
     </section>

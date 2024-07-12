@@ -35,7 +35,7 @@ export default function RDSReady() {
                         scalability and effortless operations.
                     </p>
                     <ButtonLink
-                        link="/contactUs"
+                        link="/contact-us"
                         className="btn"
                         title="Contact Sales"
                     />

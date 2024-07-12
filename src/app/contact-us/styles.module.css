@@ -1,0 +1,119 @@
+.contact-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    padding: 0;
+}
+
+.form-section {
+    font-family: var(--font-inter);
+    padding: 100px 60px;
+    padding-bottom: 70px;
+}
+
+.form-section h1 {
+    color: #344054;
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 0;
+}
+
+.form-section p {
+    color: #595a61;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.form-section p span {
+    color: #6478d5;
+}
+
+.contact-page label {
+    display: block;
+    color: #344054;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.contact-page input,
+.contact-page textarea {
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    color: #344054;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    height: 48px;
+    margin-top: 5px;
+    padding: 12px 16px;
+    width: 100%;
+}
+
+.contact-page textarea {
+    height: 170px;
+}
+
+.contact-page input::placeholder,
+.contact-page textarea::placeholder {
+    color: #667085;
+}
+
+.contact-bg {
+    height: 100%;
+}
+
+.contact-page button {
+    background: #3e54ac;
+    border: 1px solid#3E54AC;
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-page button:hover {
+    background: #334ca7;
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-page {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section {
+        padding: 100px 20px;
+        padding-bottom: 50px;
+    }
+
+    .form-section h1 {
+        font-size: 28px;
+    }
+
+    .form-section p {
+        font-size: 14px;
+    }
+
+    .contact-page label {
+        margin-bottom: 20px;
+    }
+
+    .contact-page input {
+        height: 40px;
+    }
+
+    .contact-page textarea {
+        height: 100px;
+    }
+
+    .contact-bg {
+        display: none;
+    }
+}

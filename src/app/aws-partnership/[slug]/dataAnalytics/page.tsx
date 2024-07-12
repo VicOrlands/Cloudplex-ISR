@@ -36,12 +36,6 @@ import img19 from "@/assets/aws_partnership/data-analytics/iot.png";
 import img20 from "@/assets/aws_partnership/data-analytics/learn.png";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 
-{/* <SEO
-  title="Quantitative Data Analytics for Business | CloudPlexo"
-  description="Transform your business with CloudPlexo's data analytics solutions. Gain actionable insights for strategic decision-making. Explore our analytics services now."
-  keywords="data analytics for business, data analysis for business, quantitative data analysis, data analytics aws, Data Recycling Services, Data Repurposing, Data Transformation, Data Reuse, Data Augmentation"
-/> */}
-
 export default function DataAnalyticPage() {
   return (
     <div className={styles["data-analytics"]}>

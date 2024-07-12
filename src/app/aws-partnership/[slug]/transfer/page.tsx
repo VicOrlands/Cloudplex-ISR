@@ -62,7 +62,7 @@ const Transfer: React.FC = () => {
             <div className={styles["transfer-partnership-hero-btn"]}>
               <Link href="#partnership">Get started</Link>
 
-              <Link href="/contactUs">Learn more</Link>
+              <Link href="/contact-us">Learn more</Link>
             </div>
           </div>
 

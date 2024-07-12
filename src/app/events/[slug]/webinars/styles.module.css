@@ -4,7 +4,7 @@
 
 .placeholderPage h1 {
     color: #3e54ac;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
     font-weight: 700;
     font-size: 30px;
     margin: 48px 0 30px 0;
@@ -24,15 +24,16 @@
 
 .placeholder h2 {
     color: #000;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
     font-weight: 700;
     font-size: 30px;
     margin: 24px 0 10px 0;
 }
 
 .placeholder p {
-    font-family: var(--font-nunito);
+    font-family: var(--font-inter);
     font-size: 16px;
+    line-height: 24px;
     color: #161c2d;
     margin: 0 0 16px;
 }
@@ -51,7 +52,7 @@
     border: 2px solid #3e54ac;
     border-radius: 4px;
     font-size: 14px;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
     font-weight: 500;
     color: #212529;
     width: 100%;
@@ -62,15 +63,10 @@
     font-weight: 500;
 }
 
-.inputContainer p {
-    color: red;
-    font-family: var(--font-montserrat);
-}
-
 .inputContainer button {
     background-color: #3e54ac;
     color: #fff;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
     font-weight: 600;
     font-size: 16px;
     border: 1px solid #3e54ac;
@@ -92,7 +88,7 @@
 
 .authorsSection h2 {
     color: #161c2d;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
     font-size: 30px;
     margin-bottom: 30px;
     font-weight: 600;
@@ -118,7 +114,7 @@
 }
 
 .authors h3 {
-    font-family: var(--font-nunito);
+    font-family: var(--font-inter);
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 16px;
@@ -126,7 +122,7 @@
 }
 
 .authors p {
-    font-family: var(--font-nunito);
+    font-family: var(--font-inter);
     font-size: 18px;
     font-weight: 400;
     color: #3e54ac;

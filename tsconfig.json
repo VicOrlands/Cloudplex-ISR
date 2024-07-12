@@ -33,7 +33,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "build/types/**/*.ts"
-  ],
+, "src/app/whitepaper/WhitepaperTwo.jsx"  ],
   "exclude": [
     "node_modules"
   ]

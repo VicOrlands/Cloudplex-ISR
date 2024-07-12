@@ -27,7 +27,7 @@ export default function Migration() {
           </p>
 
           <div className={styles["partnership-hero-btn"]}>
-            <Link href="/contactUs">Contact us</Link>
+            <Link href="/contact-us">Contact us</Link>
 
             <Link href="#partnership">Learn more</Link>
           </div>

@@ -9,7 +9,7 @@
 }
 
 .fintech-hero-section {
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +41,7 @@
 /* fintech-body-section */
 .fintech-body-section {
     padding: 0 200px;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
 }
 
 .fintech-body-section img {
@@ -65,7 +65,7 @@
 /* events-summit sliders */
 .events-summit {
     padding: 50px 200px 0;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
 }
 
 .events-summit div h2 {
@@ -169,7 +169,7 @@
 
 .fintech-email {
     padding: 0 200px;
-    font-family: var(--font-montserrat);
+    font-family: var(--font-inter);
     width: 100%;
 }
 

@@ -1,0 +1,53 @@
+.backup {
+    padding: 70px 5%;
+    font-family: var(--font-montserrat);
+}
+
+.backup-hero {
+    border: 1px solid;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    height: 55vh;
+    padding: 0 10%;
+}
+
+.backup-hero img {
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+.backup-hero h1 {
+    font-size: 44px;
+    color: #344054;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.backup-hero p {
+    color: #344054;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.btn-group {
+    /* border: ; */
+    width: 100%;
+}
+
+.btn-group a {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    background-color: #3e54ac;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 #1018280d;
+    color: #fff;
+    outline: #3e54ac;
+    width: 100%;
+}

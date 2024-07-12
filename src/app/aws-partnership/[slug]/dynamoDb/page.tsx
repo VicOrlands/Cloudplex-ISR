@@ -78,7 +78,7 @@ const AWSDynamoDb = () => {
             <div className={styles["partnership-hero-btn"]}>
               <a href="#partnership">Get started</a>
 
-              <a href="/contactUs">Learn more</a>
+              <a href="/contact-us">Learn more</a>
             </div>
           </div>
 
