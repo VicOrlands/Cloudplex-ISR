@@ -201,6 +201,8 @@ export default function Service() {
                                 <Image
                                     loading="lazy"
                                     src={professional.image}
+                                    height={professional.image.height}
+                                    width={professional.image.width}
                                     alt="Achieve Peak Efficiency with Our Innovative Products and Services"
                                 />
 

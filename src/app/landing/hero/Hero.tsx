@@ -39,13 +39,18 @@ const HeroSection = () => {
 
             <div className={styles.heroImgContainer}>
                 <picture>
-                    <source media="(max-width: 600px)" srcSet={heroImageSm.src} />
-                    <source media="(max-width: 900px)" srcSet={heroImageMd.src} />
-                    <source media="(max-width: 1000px)" srcSet={heroImageLg.src} />
+                    <source media="(max-width: 600px)" srcSet={heroImageSm.src} height={heroImageSm.height} width={heroImageSm.width}
+                    />
+                    <source media="(max-width: 900px)" srcSet={heroImageMd.src} height={heroImageMd.height} width={heroImageMd.width}
+                    />
+                    <source media="(max-width: 1000px)" srcSet={heroImageLg.src} height={heroImageLg.height} width={heroImageLg.width}
+                    />
                     <Image
                         priority
                         src={heroImageXl}
                         alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                        height={heroImageXl.height}
+                        width={heroImageXl.width}
                     />
                 </picture>
             </div>

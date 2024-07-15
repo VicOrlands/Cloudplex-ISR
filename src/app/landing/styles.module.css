@@ -255,8 +255,7 @@
     height: auto;
 }
 
-.badgesContainer .otherBadges div:nth-child(5),
-.badgesContainer .otherBadges div:nth-child(16) {
+.badgesContainer .otherBadges div:nth-child(5) {
     grid-column: span 2;
 }
 
