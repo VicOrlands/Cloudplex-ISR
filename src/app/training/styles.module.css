@@ -195,6 +195,7 @@
 
 /* video-section */
 .video-section {
+    font-family: var(--font-inter);
     padding: 70px 0;
 }
 
@@ -229,6 +230,7 @@
 
 .footer h2 {
     color: #696984;
+    font-family: var(--font-inter);
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 10px;
