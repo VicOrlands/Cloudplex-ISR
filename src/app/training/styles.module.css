@@ -1,0 +1,257 @@
+.training {
+    padding: 150px 10%;
+}
+
+.training-hero {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: var(--font-inter);
+}
+
+.training-hero img {
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+}
+
+.training-hero h1 {
+    color: #516BEB;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.training-hero p {
+    color: #344054;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.btn-group a {
+    width: 100%;
+}
+
+.btn-group a:first-child {
+    margin-right: 20px;
+}
+
+/* training */
+.offers {
+    padding: 30px 0;
+    font-family: var(--font-inter);
+}
+
+.offers h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 600;
+    color: #516beb;
+    margin-bottom: 30px;
+}
+
+.offers-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    width: 100%;
+}
+
+.offers-row div {
+    border: 1px solid #516beb;
+    box-shadow: -7px 1px 23px 3px rgba(150, 150, 150, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.offers-row img {
+    width: 100%;
+    height: auto;
+}
+
+.offers-row h4 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #516beb;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.offers-row a {
+    background: #516beb;
+    width: 100%;
+}
+
+/* reviews */
+.training-reviews {
+    font-family: var(--font-inter);
+    padding: 30px 0;
+}
+
+.review-h1 {
+    text-align: center;
+    font-size: 5.1rem;
+    font-weight: bold;
+    color: #516beb;
+    margin-bottom: 40px;
+}
+
+.review {
+    display: none;
+}
+
+.feedback-review {
+    height: 50vh;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 15rem;
+}
+
+/* slides heading */
+.slides-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slides-heading h2 {
+    font-weight: 700;
+    font-size: var(--font-size-h2);
+    line-height: 39px;
+    color: #516beb;
+}
+
+.slides-heading p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #133240;
+}
+
+.slides-heading {
+    margin-bottom: 30px;
+}
+
+/* buttons */
+.custom-arrows {
+    display: flex;
+    align-items: center;
+}
+
+.custom-arrows button {
+    font-weight: 600;
+    font-size: 16px;
+    color: #002797;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #516BEB;
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-arrows button:first-of-type {
+    margin-right: 10px;
+}
+
+/* review cards */
+.review-box {
+    border: 1px solid #516beb;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 200px;
+    padding: 30px 20px;
+    margin: 0;
+}
+
+.review-box h4 {
+    color: #516BEB;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: var(--font-inter);
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+}
+
+.review-box p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--font-inter);
+    line-height: 24px;
+    color: #516beb;
+}
+
+/* video-section */
+.video-section {
+    padding: 70px 0;
+}
+
+.video-section section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60% 40%;
+    gap: 30px;
+    border: 1px solid #516BEB;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.video-section div h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #516beb;
+    margin-bottom: 10px;
+}
+
+.video-section div p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #516beb;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer h2 {
+    color: #696984;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #696984;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    .training-service-headertext {
+        text-align: center;
+    }
+
+    .training-service-row {
+        flex-wrap: wrap;
+        padding: 0 30px;
+    }
+
+    .training-service {
+        width: 100%;
+        height: 370px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,5 +1,5 @@
 .cloud-migration {
-    font-family: var(--font-inter);
+  font-family: var(--font-inter);
   font-size: 10px;
 }
 
@@ -61,7 +61,7 @@
   grid-template-columns: 40% 60%;
   gap: 20px;
   align-items: center;
-    font-family: var(--font-inter);
+  font-family: var(--font-inter);
   justify-content: space-between;
   padding: 0 150px;
 }
@@ -87,7 +87,7 @@
 
 /* cloud-migration-cost */
 .cloud-migration-success {
-    font-family: var(--font-inter);
+  font-family: var(--font-inter);
 }
 
 .cloud-migration-success h2 {
@@ -98,7 +98,7 @@
   color: #344054;
   font-weight: 800;
   font-size: 28px;
-  padding-left: 300px;
+  padding-left: 5%;
   margin: 0;
   display: block;
 }
@@ -108,12 +108,12 @@
   font-weight: 400;
   font-size: 20px;
   margin-bottom: -50px;
-  padding-left: 300px;
+  padding-left: 5%;
 }
 
 /* cloud-migration-product */
 .cloud-migration-product {
-    font-family: var(--font-inter);
+  font-family: var(--font-inter);
   padding: 0 150px;
   padding-top: 50px;
 }

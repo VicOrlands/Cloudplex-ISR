@@ -1,0 +1,387 @@
+.technologies {
+  min-height: 100vh;
+  font-family: var(--font-inter);
+}
+
+.technologies button {
+  background: #516beb;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.technologies button:hover {
+  background-color: #1935a1;
+}
+
+.hero-bg {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100vh;
+}
+
+.technologies .hero {
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-left {
+  width: 30%;
+}
+
+.hero h1 {
+  color: #516beb;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 65px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  color: #516beb;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.hero h2 img {
+  margin-left: 10px;
+}
+
+.technologies-contact {
+  padding: 30px 20px;
+  border: 2px solid #516BEB;
+  border-radius: 8px;
+}
+
+.technologies-contact input {
+  display: block;
+  background-color: transparent;
+  border: 2px solid #516beb;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 100%;
+}
+
+.technologies-contact button {
+  width: 100%;
+}
+
+/* why use cloudplexo */
+.why-use {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 10%;
+}
+
+.why-use h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #344054;
+}
+
+.why-use h2 span {
+  color: #516beb;
+}
+
+.why-use p {
+  color: #344054;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.why-use img {
+  margin-left: 100px;
+  height: auto;
+  width: auto;
+}
+
+/* features */
+.features {
+  background-color: #516beb;
+  padding: 3rem 14rem 4rem 14rem;
+}
+
+.features h2 {
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.decks {
+  position: relative;
+}
+
+.decks::before,
+.decks::after {
+  content: "";
+  position: absolute;
+  height: 78%;
+  width: 4px;
+  top: 10.5%;
+  left: -4.3%;
+  background-color: #fff;
+}
+
+.decks::after {
+  left: 103.7%;
+}
+
+.decks>div {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 33px;
+  padding: 17px 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.decks>div::before,
+.decks>div::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: -5%;
+  bottom: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.decks>div::after {
+  left: 103%;
+  right: 0%;
+}
+
+.decks>div>div {
+  width: 60%;
+}
+
+.decks img {
+  height: 20vh;
+  width: auto;
+}
+
+.decks h4 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #516beb;
+  margin-bottom: 10px;
+}
+
+.decks p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #344054;
+}
+
+.decks .learn-more {
+  background: rgba(25, 59, 103, 0.05);
+  border-radius: 7px;
+  color: #516beb;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 14px;
+}
+
+/* lets-talk */
+.talk-bg {
+  height: 70vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.lets-talk {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10%;
+}
+
+.lets-talk h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0px 6.36066px 12.7213px rgba(0, 0, 0, 0.32);
+  margin-bottom: 20px;
+}
+
+.lets-talk a {
+  background-color: #516beb;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 10px 20px;
+}
+
+@media (max-width: 1279px) and (min-width: 768px) {
+  .hero-bg {
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+}
+
+/* mobile reponsiveness */
+@media screen and (max-width: 768px) {
+  .hero-bg {
+    background-color: rgba(34, 33, 33, 0.212);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: fit-content;
+  }
+
+  .technologies .hero {
+    padding: 100px 20px 30px 30px;
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    line-height: 28px;
+    margin-bottom: 5px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .hero h2 img {
+    height: 20px;
+    width: auto;
+  }
+
+  .technologies-contact input {
+    background-color: #fff;
+  }
+
+  /* why use cloudplexo */
+  .why-use {
+    flex-wrap: wrap;
+    padding: 3rem 20px;
+  }
+
+  .why-use h2 {
+    font-size: 2rem;
+  }
+
+  .why-use p {
+    font-size: 16px;
+  }
+
+  .why-use img {
+    display: none;
+  }
+
+  /* features */
+  .features {
+    background-color: #516beb;
+    padding: 3rem 20px;
+  }
+
+  .features h2 {
+    font-size: var(--font-size-h2-sm);
+    margin-bottom: 20px;
+  }
+
+  .decks::before,
+  .decks::after,
+  .decks>div::before,
+  .decks>div::after {
+    display: none;
+  }
+
+  .decks>div {
+    border-radius: 0;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .decks>div>div {
+    width: 100%;
+  }
+
+  .decks img {
+    height: 10vh;
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  .decks h4 {
+    font-size: var(--font-size-h2-sm);
+  }
+
+  .decks p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* lets-talk */
+  .talk-bg {
+    height: 35vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .lets-talk {
+    padding: 0 20px;
+  }
+
+  .lets-talk h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .lets-talk a {
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+}

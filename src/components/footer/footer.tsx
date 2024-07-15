@@ -7,12 +7,11 @@ import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 const Footer = () => {
     const state = {
         grid1: [
-            { title: "Terms of Services", link: "/page-terms" },
-            { title: "Documentation", link: "/knowledge" },
+            { title: "Terms of Services", link: "/terms-of-service" },
             { title: "AWS Partnership", link: "/aws-partnership" },
             { title: "Contact Us", link: "/contact-us" },
-            { title: "Privacy Policy", link: "/page-privacy" },
-            { title: "Cookie Policy", link: "/cookie-policy-more" },
+            { title: "Privacy Policy", link: "/privacy-policy" },
+            { title: "Cookie Policy", link: "/cookie-policy" },
         ],
         grid2: [
             { title: "Founders Lab", link: "/founders-lab" },
