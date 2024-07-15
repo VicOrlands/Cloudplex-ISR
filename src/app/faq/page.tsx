@@ -1,23 +1,16 @@
 "use client"
 
+import Link from "next/link";
+import Image from "next/image";
+import { FAQ } from "./questions";
 import React, { useState } from "react";
 import classes from "./faq.module.css";
 import Avatar from "@/assets/aws_dynamoDb/Avatar.png";
 import Avatar2 from "@/assets/aws_dynamoDb/Avatar1.png";
 import Avatar3 from "@/assets/aws_dynamoDb/Avatar2.png";
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
-import Link from "next/link";
-import Image from "next/image";
-import { QuestionsProps } from "@/app/aws-partnership/[slug]/cloudMigration/questions";
-import { FAQ } from "./questions";
 
-interface FaqProps {
-  title: string,
-  subtitle: string,
-  questions: QuestionsProps[]
-}
-
-const Faq: React.FC<FaqProps> = () => {
+const MainFaq: React.FC = () => {
   const [dropdown, setDropdown] = useState<number[]>([]);
 
   const handleOpen = (id: number) => {
@@ -68,4 +61,4 @@ const Faq: React.FC<FaqProps> = () => {
   );
 };
 
-export default Faq;
+export default MainFaq;

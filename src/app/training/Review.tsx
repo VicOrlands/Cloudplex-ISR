@@ -1,10 +1,10 @@
 "use client"
+import React, { useEffect, useRef } from "react";
 import "./slick.css"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import styles from "./styles.module.css";
 import "slick-carousel/slick/slick-theme.css";
-import React, { useState, useEffect } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const sliderFeedback = [
@@ -27,23 +27,23 @@ const sliderFeedback = [
 ];
 
 const Review = () => {
-  const [sliderRef, setSliderRef] = useState(null);
+  const sliderRef = useRef<Slider | null>(null);
 
-  const scroll = (e) => {
-    if (sliderRef === null) return 0;
+  const scroll = (e: WheelEvent) => {
+    if (!sliderRef.current) return;
 
-    e.wheelDelta > 0
+    e.deltaY > 0
       ? sliderRef.current.slickNext()
       : sliderRef.current.slickPrev();
   };
 
   useEffect(() => {
-    window.addEventListener("wheel", scroll, true);
+    window.addEventListener("wheel", scroll, { passive: true });
 
     return () => {
-      window.removeEventListener("wheel", scroll, true);
+      window.removeEventListener("wheel", scroll);
     };
-  });
+  }, []);
 
   const settings = {
     dots: true,
@@ -90,7 +90,8 @@ const Review = () => {
           <button
             type="button"
             aria-label="arrow pointing left"
-            onClick={sliderRef?.slickPrev}
+            onClick={() => sliderRef.current?.slickPrev()}
+
           >
             <FiChevronLeft size={20} />
             Previous
@@ -98,7 +99,8 @@ const Review = () => {
           <button
             type="button"
             aria-label="arrow pointing right"
-            onClick={sliderRef?.slickNext}
+            onClick={() => sliderRef.current?.slickNext()}
+
           >
             Next
             <FiChevronRight size={20} />
@@ -106,7 +108,7 @@ const Review = () => {
         </div>
       </div>
 
-      <Slider ref={setSliderRef} {...settings}>
+      <Slider ref={sliderRef} {...settings}>
         {sliderFeedback.map((slide, index) => (
           <div className={styles["review-box"]} key={index}>
             <h4>{slide.name}</h4>

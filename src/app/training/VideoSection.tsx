@@ -12,8 +12,6 @@ function VideoSection() {
         <Player
           playsInline
           poster={posterImage.src}
-          className="video-player"
-
           src="https://cloudplexo.com/TrainingReview_Bimbo_1.mp4"
         >
           <BigPlayButton position="center" />
