@@ -8,9 +8,11 @@
 .blogHero {
     color: #fff;
     font-family: var(--font-inter);
-    height: 560px;
-    padding-top: 7%;
-    margin-bottom: -270px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
 }
 
 .blogHero h2 {
@@ -34,9 +36,8 @@
     }
 
     .blogHero {
-        height: 500px;
-        padding-top: 10%;
-        margin-bottom: -250px;
+        height: fit-content;
+        padding: 40px 0;
     }
 
     .blogHero h2 {

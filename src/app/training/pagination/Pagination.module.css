@@ -134,9 +134,9 @@
 
   /* popular courses */
   .courses-container {
-    margin-top: 50px;
+    margin-top: 30px;
     position: relative;
-    padding-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .courses-container-header {
@@ -177,7 +177,7 @@
 
   /* flexed courses column */
   .flex-courses {
-    grid-gap: 50px;
+    grid-gap: 30px;
   }
 
   /* image container */

@@ -53,7 +53,7 @@ export default function Footer() {
                 <nav>
                     <h4>More Case Studies</h4>
 
-                    <Link href="/caseStudy" id={styles["link"]}>
+                    <Link href="/case-study" id={styles["link"]}>
                         View all case studies
                     </Link>
                 </nav>

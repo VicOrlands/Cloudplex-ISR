@@ -135,7 +135,6 @@ const CaseList: React.FC = () => {
             </LazyBackgroundImage>
 
 
-
             <div className={styles["casestudy-catalog"]}>
                 <div className={extraStyles.reviewVideo}>
                     <Slider ref={setSliderRef} {...videosettings}>

@@ -179,6 +179,7 @@ const Review: React.FC = () => {
                                     playsInline
                                     src={cases.link}
                                     fluid
+                                    poster={cases.image.src}
                                 >
                                     <BigPlayButton
                                         position="center"

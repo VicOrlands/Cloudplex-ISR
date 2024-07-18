@@ -5,12 +5,13 @@
 .training-hero {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 45% 55%;
+    gap: 70px;
     font-family: var(--font-inter);
 }
 
 .training-hero img {
-    width: auto;
+    width: 100%;
     height: auto;
     border-radius: 12px;
 }
@@ -94,14 +95,6 @@
 .training-reviews {
     font-family: var(--font-inter);
     padding: 30px 0;
-}
-
-.review-h1 {
-    text-align: center;
-    font-size: 5.1rem;
-    font-weight: bold;
-    color: #516beb;
-    margin-bottom: 40px;
 }
 
 .review {
@@ -241,19 +234,115 @@
 }
 
 /* mobile */
-@media screen and (max-width: 600px) {
-    .training-service-headertext {
+@media screen and (max-width: 768px) {
+    .training {
+        padding: 40px 20px;
+    }
+
+    .training-hero {
+        align-items: center;
+        grid-template-columns: 100%;
+        gap: 30px;
+    }
+
+    .training-hero h1 {
+        font-size: 26px;
+    }
+
+    .training-hero p {
+        font-size: 16px;
+    }
+
+    .btn-group {
+        width: 100%;
+    }
+
+    /* training */
+    .offers {
+        padding: 50px 0;
+        padding-bottom: 30px;
+    }
+
+    .offers h2 {
+        font-size: var(--font-size-h2-sm);
+        margin-bottom: 20px;
         text-align: center;
     }
 
-    .training-service-row {
-        flex-wrap: wrap;
-        padding: 0 30px;
+    .offers-row {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 
-    .training-service {
+    .offers-row h4 {
+        font-size: 14px;
+    }
+
+    /* reviews */
+    .feedback-review {
+        height: 50vh;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+        margin: 0 15rem;
+    }
+
+    /* slides heading */
+    .slides-heading {
+        flex-wrap: wrap;
+    }
+
+    .slides-heading h2 {
+        font-size: var(--font-size-h2-sm);
+        line-height: 24px;
+    }
+
+    .slides-heading p {
+        margin-bottom: 20px;
+    }
+
+    /* buttons */
+    .custom-arrows {
+        justify-content: space-between;
         width: 100%;
-        height: 370px;
-        margin-bottom: 30px;
+    }
+
+    .custom-arrows button {
+        font-size: 14px;
+    }
+
+    .custom-arrows button:first-of-type {
+        margin: 0;
+    }
+
+    /* video-section */
+    .video-section {
+        padding: 30px 0;
+    }
+
+    .video-section section {
+        grid-template-columns: 100%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .video-section div h2 {
+        font-size: 24px;
+    }
+
+    .video-section div p {
+        font-size: 16px;
+    }
+
+    /* footer */
+    .footer {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .footer h2 {
+        font-size: 20px;
+        line-height: 28px;
     }
 }

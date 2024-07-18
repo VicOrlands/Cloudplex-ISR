@@ -63,7 +63,7 @@ const koboAccountant = () => {
                             </ol>
                         </li>
                         <li>
-                            <b>Containerization with Amazon ECS</b>
+                            <b>Containerization with Amazon ECS: </b>
                             The microservices were containerized using Docker and deployed on Amazon Elastic Container Service (ECS), providing:
                             <ol type="a">
                                 <li>Enhanced scalability and management of containerized applications.</li>
@@ -71,7 +71,7 @@ const koboAccountant = () => {
                             </ol>
                         </li>
                         <li>
-                            <b>Secure and Scalable Storage with Amazon S3</b>
+                            <b>Secure and Scalable Storage with Amazon S3: </b>
                             Amazon S3 was implemented for secure and scalable object storage, offering:
                             <ol type="a">
                                 <li>High availability and durability for storing financial data.</li>
@@ -79,7 +79,7 @@ const koboAccountant = () => {
                             </ol>
                         </li>
                         <li>
-                            <b>Enhanced Security with AWS Client VPN and Site-to-Site VPN</b>
+                            <b>Enhanced Security with AWS Client VPN and Site-to-Site VPN: </b>
                             To ensure secure access to the application and protect sensitive data, AWS Client VPN and AWS Site-to-Site VPN were used, providing:
                             <ol type="a">
                                 <li>Secure connections between on-premises networks and AWS environments.</li>
@@ -87,15 +87,15 @@ const koboAccountant = () => {
                             </ol>
                         </li>
                         <li>
-                            <b>Reliable Database Management with Amazon RDS Aurora for MySQL</b>
-                            Amazon RDS Aurora for MySQL was chosen for database management, offering:
+                            <b>Reliable Database Management with Amazon RDS for MySQL: </b>
+                            Amazon RDS for MySQL was chosen for database management, offering:
                             <ol type="a">
                                 <li>High performance and availability with automated backups and replication.</li>
                                 <li>Scalability to handle increased loads with minimal latency.</li>
                             </ol>
                         </li>
                         <li>
-                            <b>Cloud Security and Cost Management with Wendu Platform</b>
+                            <b>Cloud Security and Cost Management with Wendu Platform: </b>
                             The Wendu Cloud Security and Management platform by CloudPlexo was deployed to manage security and optimize costs, ensuring
                             <ol type="a">
                                 <li>Continuous monitoring and compliance with security best practices.</li>
@@ -106,7 +106,7 @@ const koboAccountant = () => {
 
                     <h2>AWS Products Utilized</h2>
                     <p>
-                        Amazon Elastic Container Service (ECS); Amazon S3; AWS Client VPN; AWS EC2; Amazon RDS Aurora for MySQL
+                        Amazon Elastic Container Service (ECS); Amazon S3; AWS Client VPN; AWS EC2; Amazon RDS for MySQL
                     </p>
 
 

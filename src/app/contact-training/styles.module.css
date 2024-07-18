@@ -1,0 +1,90 @@
+.contactTraining {
+    padding: 100px 30%;
+    font-family: var(--font-inter);
+}
+
+.contactTraining h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contactTraining label {
+    font-size: 16px;
+}
+
+.contactTraining label span {
+    margin-right: 5px;
+}
+
+.contactTraining label input,
+.contactTraining label select {
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.checkbox textarea {
+    height: 150px;
+}
+
+.contactTraining p {
+    font-size: 16px;
+}
+
+.contactTraining .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contactTraining .checkbox input {
+    margin-right: 10px;
+}
+
+.contactTraining .checkbox p {
+    width: 100%;
+    display: inline-flex;
+}
+
+.contactTraining button {
+    background-color: #3e54ac;
+    border: 1px solid #3e54ac;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+.contactTraining button:hover {
+    background-color: #1935a1;
+}
+
+@media screen and (max-width: 768px) {
+    .contactTraining {
+        padding: 50px 20px;
+    }
+
+    .contactTraining label {
+        font-size: 14px;
+    }
+
+    .contactTraining input,
+    .contactTraining select {
+        font-size: 14px;
+    }
+
+    .contactTraining p {
+        font-size: 14px;
+    }
+
+}

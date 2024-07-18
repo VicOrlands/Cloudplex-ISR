@@ -8,16 +8,16 @@
       font-family: var(--font-inter);
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 40px 20px;
+      gap: 40px;
       padding: 0 5%;
       margin-bottom: 50px;
   }
 
   .blogCard {
       background: #fff;
-      border: 1px solid #27283323;
+      border: 1px solid #E4E7EC;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
-      border-radius: 5px;
+      border-radius: 16px;
   }
 
   .blogCard .imgContainer {
@@ -26,8 +26,8 @@
   }
 
   .blogCard img {
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
       height: 100%;
       width: 100%;
   }
@@ -39,13 +39,14 @@
 
   .contentTitle {
       display: flex;
+      justify-content: space-between;
   }
 
   .contentTitle h5 {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 600;
       line-height: 24px;
-      color: #272833;
+      color: #101828;
       margin-bottom: 20px;
       margin-right: 10px;
   }
@@ -55,35 +56,41 @@
   }
 
   .content p {
-      color: #2728338c;
+      color: #667085;
       font-family: var(--font-inter);
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 0;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      display: -webkit-box;
   }
 
   /* page numbers */
   .pagination {
       display: flex;
       align-items: center;
-      justify-content: center;
-      margin-top: 50px;
+      justify-content: space-between;
+      border-top: 1px solid #E4E7EC;
+      margin: 0 5%;
+      padding-top: 40px;
+  }
+
+  .pagination div {
+      display: flex;
+      align-items: center;
   }
 
   .paginationItem {
-      background: #fff;
-      color: #42526e;
+      color: #475467;
       font-family: var(--font-inter);
-      border: none;
-      height: 100%;
-      width: 45px;
       position: relative;
       margin: 0;
-      cursor: pointer;
   }
 
   .paginationItem span {
-      font-size: 1.3rem;
+      font-size: 18px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -91,27 +98,38 @@
   }
 
   .paginationItem:nth-child(even) {
-      margin: 0 20px;
+      margin: 0 50px;
   }
 
   .prev,
   .next {
       background: #fff;
-      color: #516beb;
-      border: none;
+      border: 1px solid #D0D5DD;
+      box-shadow: 0px 0px 0px 1px #1018282E;
+      border-radius: 8px;
+      color: #344054;
       cursor: pointer;
       margin: 0;
-      padding: 0 20px;
+      padding: 8px 12px;
       display: flex;
       align-items: center;
-      font-size: 1.3rem;
+      font-size: 18px;
+  }
+
+  .courses-category-font {
+      fill: #344054;
+      font-size: 20px;
+      margin-left: 5px;
+  }
+
+  .courses-category-font:first-child {
+      margin-left: 0;
+      margin-right: 5px;
   }
 
   .paginationItem.active {
-      background: #516beb;
       border-radius: 3px;
-      color: #fff;
-      padding: 20px 0;
+      color: #182230;
       pointer-events: none;
   }
 
@@ -119,8 +137,8 @@
   .next.disabled,
   .courses-category-font.disabled {
       pointer-events: none;
-      color: #999;
-      fill: #999;
+      color: #92969c;
+      fill: #D0D5DD;
   }
 
 
@@ -129,7 +147,7 @@
 
       /* courses-container */
       .courses-container {
-          margin: 50px 0;
+          margin: 30px 0;
       }
 
       /*  courses */
@@ -148,7 +166,7 @@
 
       /* courses-container */
       .courses-container {
-          margin: 50px 0;
+          margin: 30px 0;
       }
 
       /*  courses */

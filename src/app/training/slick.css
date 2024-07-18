@@ -1,3 +1,9 @@
 .slick-slide {
     padding-right: 40px;
 }
+
+@media screen and (max-width: 768px) {
+    .slick-slide {
+        padding-right: 0;
+    }
+}

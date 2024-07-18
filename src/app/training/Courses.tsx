@@ -50,7 +50,6 @@ const posts = [
     link: "/data-science-and-ml",
     name: "Complete Data Science and Machine Learning with R",
   },
-
   {
     img: database,
     link: "/database-and-postgresql",
@@ -61,7 +60,6 @@ const posts = [
     link: "/devops-with-ansible",
     name: "Devops with Ansible",
   },
-
   {
     img: computing,
     link: "/edge-computing",

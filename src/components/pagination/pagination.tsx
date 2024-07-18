@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import { BlogsProps } from "@/app/blog/array";
 import { BsArrowUpRight } from "react-icons/bs";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
 
 interface PaginationProps {
     data: BlogsProps[];
@@ -50,7 +50,7 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
                     <article key={index} className={styles.blogCard}
                     >
                         <div className={styles.imgContainer}>
-                            <Link href={blog.link}>
+                            <Link href={`/blog/${blog.link}`}>
                                 <Image
                                     src={blog.image}
                                     alt={blog.title}
@@ -59,10 +59,10 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
                         </div>
 
                         <div className={styles.content}>
-                            <Link href={blog.link}>
+                            <Link href={`/blog/${blog.link}`}>
                                 <div className={styles.contentTitle}>
                                     <h5>{blog.title}</h5>
-                                    <BsArrowUpRight color="#000" size={24} />
+                                    <BsArrowUpRight color="#101828" size={24} />
                                 </div>
                             </Link>
                             <p>{blog.desc}</p>
@@ -80,34 +80,37 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
                         (currentPage === 1 ? styles["disabled"] : styles[" "])
                     }
                 >
-                    <IoIosArrowBack
+                    <HiOutlineArrowSmLeft
                         className={
                             styles["courses-category-font"] +
                             " " +
                             (currentPage === 1 ? styles["disabled"] : styles[" "])
                         }
                     />
+                    Previous
                 </p>
 
                 {/* show page numbers */}
-                {getPaginationGroup().map((item, index) => (
-                    <p
-                        key={item + index}
-                        onClick={() => {
-                            console.log("item:", item)
-                            console.log("page:", lastPage)
-                            changePage
-                        }}
-                        className={
-                            styles["paginationItem"] +
-                            " " +
-                            (currentPage === item ? styles["active"] : currentPage === pages ? styles["disabled"]
-                                : styles[" "])
-                        }
-                    >
-                        <span>{item}</span>
-                    </p>
-                ))}
+                <div>
+                    {getPaginationGroup().map((item, index) => (
+                        <p
+                            key={item + index}
+                            onClick={() => {
+                                console.log("item:", item)
+                                console.log("page:", lastPage)
+                                changePage
+                            }}
+                            className={
+                                styles["paginationItem"] +
+                                " " +
+                                (currentPage === item ? styles["active"] : currentPage === pages ? styles["disabled"]
+                                    : styles[" "])
+                            }
+                        >
+                            <span>{item}</span>
+                        </p>
+                    ))}
+                </div>
 
                 <p
                     onClick={goToNextPage}
@@ -117,7 +120,8 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
                         (currentPage === pages + 1 ? styles["disabled"] : styles[" "])
                     }
                 >
-                    <IoIosArrowForward
+                    Next
+                    <HiOutlineArrowSmRight
                         className={
                             styles["courses-category-font"] +
                             " " +

@@ -300,6 +300,7 @@ class Convexity extends Component {
               <li>Amazon X-ray</li>
               <li>AWS App Mesh</li>
               <li>Amazon CloudWatch</li>
+              <li>Amazon RDS for MySQL</li>
             </ul>
           </section>
         </section>

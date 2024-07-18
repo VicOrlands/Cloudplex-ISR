@@ -184,7 +184,7 @@
 @media screen and (max-width: 768px) {
   .startup-page {
     padding: 0 20px;
-    padding-top: 12vh;
+    padding-top: 40px;
   }
 
   .hero-section {
@@ -223,6 +223,7 @@
 
   .support-section p {
     font-size: 16px;
+    line-height: 24px;
     width: 100%;
   }
 
@@ -240,6 +241,26 @@
   }
 
   .recent-events p {
+    font-size: 16px;
     margin-bottom: 100px;
+    line-height: 24px;
+  }
+
+  /* partners */
+  .partners-logo-container {
+    flex-wrap: wrap;
+  }
+
+  .partners-logo {
+    height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .partners-logo img {
+    margin: 0;
+  }
+
+  .partners-logo:nth-child(even) img {
+    margin: 0 20px;
   }
 }
