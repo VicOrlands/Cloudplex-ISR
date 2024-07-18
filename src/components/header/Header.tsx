@@ -173,10 +173,7 @@ export default function Header() {
                             <li className="dropdown-container">
                                 <Link
                                     href="#products"
-                                    onClick={() => {
-                                        toggleDropdown(1)
-                                        closeMenu()
-                                    }}>
+                                    onClick={() => toggleDropdown(1)}>
                                     <span>Solutions & Offerings</span>
                                     {isDropdownVisible === 1 ? (
                                         <IoIosArrowUp />
@@ -203,11 +200,7 @@ export default function Header() {
                             <li className="dropdown-container">
                                 <Link
                                     href="#professionalservices"
-                                    onClick={() => {
-                                        toggleDropdown(2)
-                                        closeMenu()
-                                    }}
-                                >
+                                    onClick={() => toggleDropdown(2)}>
                                     <span>Professional Services</span>
                                     {isDropdownVisible === 2 ? (
                                         <IoIosArrowUp />
@@ -258,11 +251,7 @@ export default function Header() {
                             <li className="dropdown-container">
                                 <Link
                                     href="#resources"
-                                    onClick={() => {
-                                        toggleDropdown(3)
-                                        closeMenu()
-                                    }}
-                                >
+                                    onClick={() => toggleDropdown(3)}>
                                     <span>Resources</span>
                                     {isDropdownVisible === 3 ? (
                                         <IoIosArrowUp />

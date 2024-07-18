@@ -53,7 +53,7 @@ const reviews: ReviewProps[] = [
         title: null,
         logo: livelilogo,
         speaker: "CTO Liveli",
-        caselink: "/liveli-case-study",
+        caselink: "/case-study/liveli-case-study",
     },
     {
         id: 2,
@@ -65,7 +65,7 @@ const reviews: ReviewProps[] = [
             "“We highly recommend Cloudplexo, if  you are having any challenges  with your website and mobile apps”",
         logo: icanlogo,
         speaker: "Founder & CEO of IcanOnline Tutors",
-        caselink: "/case-study-in-the-edtech-sector",
+        caselink: "/case-study/case-study-in-the-edtech-sector",
     },
     {
         id: 3,

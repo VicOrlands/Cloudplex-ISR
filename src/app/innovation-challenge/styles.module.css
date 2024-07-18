@@ -1,0 +1,266 @@
+.innovation {
+    color: #101828;
+    font-family: var(--font-inter);
+    padding: 100px 0;
+}
+
+.hero {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    padding: 0 10%;
+}
+
+.hero h1 {
+    color: #516beb;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 62px;
+    margin-bottom: 20px;
+    color: #002797;
+}
+
+.hero p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    margin: 0;
+}
+
+.right-side {
+    position: relative;
+}
+
+.right-side .img {
+    width: 100%;
+    height: auto;
+}
+
+.right-side .vectorhero {
+    position: absolute;
+    bottom: 4.5rem;
+    right: 5rem;
+}
+
+/* second */
+.innovation-2 {
+    padding: 40px 0 0;
+}
+
+.innovation-2 h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+    color: #002797;
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
+    padding-left: 10%;
+}
+
+.innovation-2 .img {
+    position: relative;
+}
+
+.innovation img:first-child {
+    width: 80%;
+    margin-right: auto;
+    height: auto;
+}
+
+.innovation-2 .vectorhero {
+    position: absolute;
+    bottom: 3rem;
+    right: 15rem;
+}
+
+/* third */
+.innovation-3 {
+    padding: 50px 10%;
+    display: grid;
+    /* align-items: center; */
+    grid-template-columns: 45% 10% 45%;
+}
+
+.innovation-3 h2,
+.innovation-4 h2 {
+    font-weight: 700;
+    font-size: var(--font-size-h2);
+    color: #516beb;
+    margin-bottom: 10px;
+}
+
+.innovation-3 ol {
+    padding-left: 20px;
+}
+
+.innovation-3 li {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #2f327d;
+    margin-bottom: 10px;
+}
+
+.middle-divider {
+    background: #2f327d;
+    width: 5px;
+    height: 100%;
+    border: 1px solid;
+    margin: auto;
+    position: relative;
+}
+
+.middle-divider::before {
+    content: "";
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background: #2f327d;
+    border-radius: 50%;
+}
+
+/* fourth */
+.innovation-4 {
+    padding: 50px 10%;
+}
+
+.innovation-4 h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.innovation-4 .criteria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 0 5%;
+}
+
+.innovation-4 .criteria div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.innovation-4 img:first-child {
+    height: 65px;
+    width: 65px;
+    margin: auto;
+}
+
+.innovation-4 img:last-child {
+    width: 24px;
+    height: auto;
+}
+
+.innovation-4 p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #002797;
+}
+
+@media screen and (max-width: 768px) {
+    .innovation {
+        padding: 50px 0;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 10px;
+    }
+
+    .right-side .img {
+        width: 100% !important;
+    }
+
+    .right-side .vectorhero {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* second */
+    .innovation-2 h2 {
+        font-size: var(--font-size-h2-sm);
+        letter-spacing: 0;
+        padding-left: 20px;
+    }
+
+    .innovation img:first-child {
+        margin-right: 0;
+    }
+
+    .innovation-2 .vectorhero {
+        display: none;
+    }
+
+    /* third */
+    .innovation-3 {
+        padding: 50px 20px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .innovation-3 h2,
+    .innovation-4 h2 {
+        font-size: var(--font-size-h2-sm);
+    }
+
+    .innovation-3 li {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .middle-divider {
+        display: none;
+    }
+
+    /* fourth */
+    .innovation-4 {
+        padding: 30px 20px;
+    }
+
+    .innovation-4 .criteria {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .innovation-4 img:first-child {
+        height: 70px;
+        width: 70px;
+        margin: auto;
+    }
+
+    .innovation-4 p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

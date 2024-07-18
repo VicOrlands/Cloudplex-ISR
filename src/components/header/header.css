@@ -342,6 +342,7 @@
     margin: 22px 10px;
     position: relative;
     width: 24px;
+    cursor: pointer;
   }
 
   .menu-lines .lines span {
