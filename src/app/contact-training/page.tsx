@@ -251,9 +251,9 @@ function Contact() {
                         onChange={(e) => setCourseType(e.target.value)}
                     >
                         <option>Select Course Type</option>
-                        {courses.map((course) => {
+                        {courses.map((course, index) => {
                             return (
-                                <option value={course.title}> {course.title} </option>
+                                <option value={course.title} key={index}> {course.title} </option>
                             );
                         })}
                     </select>
