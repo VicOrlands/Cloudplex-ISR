@@ -36,7 +36,7 @@ import optimizingCloudCost from "@/assets/blog/Optimizing Cloud Costs for busine
 import optimizingAWSCost from "@/assets/blog/Strategies to Optimizing AWS Cost for Business.webp";
 import awsManaged from "@/assets/blog/Unlocking the power of aws managed cloud.webp";
 import design from "@/assets/blog/Designing well architected aws solutions.webp";
-import nlpImage from "@/assets/blog/AWS Comprehend and its role in NLP.webp";
+import nlpImage from "@/assets/blog/AWS_Comprehend_and_its_role_in_NLP.webp";
 import AWSCLI from "@/assets/blog/Introduction to CLI Basic.webp";
 import WebAppAWS from "@/assets/blog/Building a Basic Web Application on AWS.webp";
 import s3Boto3 from "@/assets/blog/blog42/aws_login_screen.webp";
@@ -317,10 +317,9 @@ export const blogs: BlogsProps[] = [
     },
     {
         image: blog23,
-        title:
-            "Digitization - How Does The Cloud Enable Agile Digital Transformations?",
+        title: "Digitization - How Does The Cloud Enable Agile Digital Transformations?",
         desc: "Digitization, basically, is the process of conversion of information embedded in physical documents, from analog to digital. It ensures...",
-        link: "how-does-the-cloud-enable-agile-digital-transformations?",
+        link: "digitization-how-does-the-cloud-enable-agile-digital-transformations",
     },
     {
         image: blog14,

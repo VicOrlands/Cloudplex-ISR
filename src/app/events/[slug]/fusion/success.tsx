@@ -39,7 +39,7 @@ const eventSuccessArray = [
             secondSliderImg4,
             secondSliderImg5,
         ],
-        link: "/fintech-fusion-summit",
+        link: "/events/fintech-fusion-summit",
     },
     {
         img: awsLogo,

@@ -34,7 +34,7 @@ const AWSPartnership = () => {
                         <div className={styles["partnership-hero-button-container"]}>
                             <ButtonLink link={"#partnership"} title="Learn more" className={styles["btn"]} />
 
-                            <ButtonTranparentLink link={"/contactUs"} title="Contact Sales" className={styles["btn2"]} />
+                            <ButtonTranparentLink link={"/contact-us"} title="Contact Sales" className={styles["btn2"]} />
                         </div>
                     </div>
 

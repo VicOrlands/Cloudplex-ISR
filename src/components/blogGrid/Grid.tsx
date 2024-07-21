@@ -117,7 +117,7 @@ const BlogGrid: React.FC = () => {
 
                             <div className={styles.content}>
                                 <h6>{blog.date ? blog.date : "20 Jan 2024"}</h6>
-                                <Link href={blog.link}>
+                                <Link href={`/blog/${blog.link}`}>
                                     <div className={styles.contentTitle}>
                                         <h5>{blog.title}</h5>
                                         <BsArrowUpRight size={22} color="#101828" />

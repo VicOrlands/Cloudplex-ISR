@@ -22,7 +22,7 @@ const Footer = () => {
         grid3: [
             { title: "Blogs", link: "/blog" },
             { title: "Case studies", link: "/case-study" },
-            { title: "Webinars", link: "/whitepaper" },
+            { title: "Whitepaper", link: "/whitepaper" },
             { title: "Press Releases", link: "/press-release" },
         ],
     };
