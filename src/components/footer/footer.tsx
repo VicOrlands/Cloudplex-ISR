@@ -17,7 +17,7 @@ const Footer = () => {
             { title: "Founders Lab", link: "/founders-lab" },
             { title: "Innovation Challenge", link: "/innovation-challenge" },
             { title: "Training", link: "/training" },
-            { title: "FAQs", link: "/faq" },
+            { title: "FAQ", link: "/faq" },
         ],
         grid3: [
             { title: "Blogs", link: "/blog" },
