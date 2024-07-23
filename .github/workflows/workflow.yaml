@@ -57,4 +57,4 @@ jobs:
             aws s3 sync out/ s3://console-stag.ilearncloud.io --delete --cache-control "max-age=31536000,public"
 
         - name: Invalidate CloudFront Cache
-          run: aws cloudfront create-invalidation --distribution-id E2PWW76A93GQOC --paths "/*"
+          run: aws cloudfront create-invalidation --distribution-id E180O0YPC43RSA --paths "/*"
