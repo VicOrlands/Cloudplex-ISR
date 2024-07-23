@@ -167,17 +167,20 @@
   }
 
   .cloud-migration-hero-section div h1 {
-    font-size: 18px;
+    font-size: 30px;
+    line-height: 34px;
     font-weight: 700;
   }
 
   .cloud-migration-hero-section div p {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 26px;
     margin-bottom: 20px;
   }
 
   .partnership-hero-btn a {
     display: block;
+    text-align: center;
   }
 
   .partnership-hero-btn a:first-child {
@@ -188,6 +191,7 @@
   .partnership-hero-img {
     width: 100%;
     margin-bottom: 0;
+    grid-area: 1;
   }
 
   /* cloud-migration-cost */
@@ -198,36 +202,32 @@
   }
 
   .cloud-migration-cost div h2 {
-    font-size: 18px;
+    font-size: var(--font-size-h2-sm);
     font-weight: 700;
   }
 
   .cloud-migration-cost div p {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
     margin-bottom: 20px;
     margin-top: 10px;
   }
 
   /* cloud-migration-cost */
   .cloud-migration-success {
-    padding: 0 20px;
+    padding: 0;
     padding-top: 30px;
   }
 
   .cloud-migration-success h2 {
-    font-size: 18px;
+    font-size: var(--font-size-h2-sm);
     font-weight: 700;
     padding: 0 20px;
   }
 
   .cloud-migration-success #p-header {
     padding: 0 20px;
-  }
-
-  .cloud-migration-success p {
-    font-size: 14px;
-    margin-bottom: 10px;
-    padding: 0;
+    font-size: 16px;
   }
 
   /* cloud-migration-product */
@@ -236,7 +236,7 @@
   }
 
   .cloud-migration-product h2 {
-    font-size: 24px;
+    font-size: var(--font-size-h2-sm);
     font-weight: 700;
     text-align: center;
   }
@@ -262,7 +262,8 @@
   }
 
   .cloud-migration-product-data div p {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
     text-align: center;
   }
 }

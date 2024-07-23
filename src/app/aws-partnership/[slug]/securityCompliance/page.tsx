@@ -29,7 +29,7 @@ const SecurityCompliance = () => {
               consultancy in AWS Config.
             </p>
 
-            <Link href="#partnership">Get started</Link>
+            <Link href="/contact-us">Get started</Link>
           </div>
 
           <div className={styles["security-compliance-hero-img"]}>

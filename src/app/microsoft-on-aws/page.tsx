@@ -58,9 +58,9 @@ const Microsoft = () => {
             </p>
 
             <div className={styles["partnership-hero-btn"]}>
-              <ButtonLink link={"#partnership"} title={"Get started"} className={styles['btn']} />
+              <ButtonLink link={"/contact-us"} title={"Get started"} className={styles['btn']} />
 
-              <ButtonTranparentLink link={"/contact-us"} title={"Learn more"} className={styles['btn2']} />
+              <ButtonTranparentLink link={"#partnership"} title={"Learn more"} className={styles['btn2']} />
             </div>
           </div>
 

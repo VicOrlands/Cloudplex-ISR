@@ -44,7 +44,7 @@ jobs:
         - name: configure aws credentials
           uses: aws-actions/configure-aws-credentials@v4
           with:
-            role-to-assume: arn:aws:iam::276023487603:role/Test-user-Mezie
+            role-to-assume: arn:aws:iam::593471573181:role/cloudplexoweb-action-role
             aws-region: eu-west-1
 
         - name: confirm user
@@ -54,7 +54,7 @@ jobs:
 
         - name: Upload to S3
           run: |
-            aws s3 sync out/ s3://test-app-cloudplexo --delete --cache-control "max-age=31536000,public"
+            aws s3 sync out/ s3://console-stag.ilearncloud.io --delete --cache-control "max-age=31536000,public"
 
         - name: Invalidate CloudFront Cache
-          run: aws cloudfront create-invalidation --distribution-id E1QQNO61TGC6L2 --paths "/*"
+          run: aws cloudfront create-invalidation --distribution-id E2PWW76A93GQOC --paths "/*"

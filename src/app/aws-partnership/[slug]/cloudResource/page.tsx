@@ -58,9 +58,9 @@ const CloudResource = () => {
             </p>
 
             <div className={styles["partnership-hero-btn"]}>
-              <Link href="#partnership">Get started</Link>
+              <Link href="/contact-us">Get started</Link>
 
-              <Link href="/contact-us">Learn more</Link>
+              <Link href="#partnership">Learn more</Link>
             </div>
           </div>
 
