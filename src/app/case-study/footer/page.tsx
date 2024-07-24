@@ -74,12 +74,13 @@ export default function Footer() {
 
                             <div className={styles["content-title"]}>
                                 <h5>
-                                    <Link href={cases.link}>
+                                    <Link href={`/case-study/${cases.link}`}
+                                    >
                                         {cases.title}
                                     </Link>
                                 </h5>
 
-                                <Link href={cases.link} className={styles["link"]}>
+                                <Link href={`/case-study/${cases.link}`} className={styles["link"]}>
                                     <BsArrowUpRight />
                                 </Link>
                             </div>
