@@ -83,7 +83,8 @@
   }
 
   .paginationItem {
-      color: #475467;
+      color: #475467a2;
+      cursor: pointer;
       font-family: var(--font-inter);
       position: relative;
       margin: 0;
@@ -131,7 +132,6 @@
   .paginationItem.active {
       border-radius: 3px;
       color: #182230;
-      pointer-events: none;
   }
 
   .prev.disabled,
@@ -140,6 +140,12 @@
       pointer-events: none;
       color: #92969c;
       fill: #D0D5DD;
+  }
+
+  .mobile-page-item {
+      display: none;
+      color: #182230;
+      font-family: var(--font-inter);
   }
 
 
@@ -183,12 +189,22 @@
           font-size: 1.2rem;
       }
 
-      .prev,
-      .next {
-          font-size: 1.2rem;
+      .courses-category-font {
+          margin: 0;
+          font-size: 1.5rem;
       }
 
-      .paginationItem:nth-child(even) {
-          margin: 0 15px;
+      .courses-category-font:first-child {
+          margin: 0;
+      }
+
+      .prev span,
+      .next span,
+      .pagination .paginationItem {
+          display: none;
+      }
+
+      .mobile-page-item {
+          display: block;
       }
   }

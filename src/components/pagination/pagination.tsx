@@ -14,32 +14,34 @@ interface PaginationProps {
 
 const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) => {
     const [currentPage, setCurrentPage] = useState<number>(1);
+    const totalPages = Math.ceil(data.length / dataLimit);
     const [pages] = useState<number>(Math.round(data.length / dataLimit));
-    let lastPage = Math.floor((pages) / dataLimit) * pageLimit;
 
     function goToPreviousPage() {
-        setCurrentPage((page) => page - 1);
+        setCurrentPage((page) => Math.max(page - 1, 1));
     }
 
     function goToNextPage() {
-        setCurrentPage((page) => page + 1);
+        setCurrentPage((page) => Math.min(page + 1, totalPages));
     }
 
     function changePage(event: React.MouseEvent<HTMLParagraphElement>) {
         const target = event.target as HTMLParagraphElement;
         const pageNumber = Number(target.textContent);
-        setCurrentPage(pageNumber);
+        if (!isNaN(pageNumber)) {
+            setCurrentPage(pageNumber);
+        }
     }
 
     const getPaginatedData = () => {
-        const startIndex = currentPage * dataLimit - dataLimit;
+        const startIndex = (currentPage - 1) * dataLimit;
         const endIndex = startIndex + dataLimit;
         return data.slice(startIndex, endIndex);
     };
 
     const getPaginationGroup = () => {
         let start = Math.floor((currentPage - 1) / pageLimit) * pageLimit;
-        return Array.from({ length: pageLimit }, (_, idx) => start + idx + 1);
+        return Array.from({ length: pageLimit }, (_, idx) => start + idx + 1).filter(page => page <= totalPages);
     };
 
 
@@ -87,7 +89,7 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
                             (currentPage === 1 ? styles["disabled"] : styles[" "])
                         }
                     />
-                    Previous
+                    <span>Previous</span>
                 </p>
 
                 {/* show page numbers */}
@@ -95,11 +97,7 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
                     {getPaginationGroup().map((item, index) => (
                         <p
                             key={item + index}
-                            onClick={() => {
-                                console.log("item:", item)
-                                console.log("page:", lastPage)
-                                changePage
-                            }}
+                            onClick={changePage}
                             className={
                                 styles["paginationItem"] +
                                 " " +
@@ -110,6 +108,8 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
                             <span>{item}</span>
                         </p>
                     ))}
+
+                    <p className={styles["mobile-page-item"]}>Page {currentPage} of {totalPages}</p>
                 </div>
 
                 <p
@@ -119,8 +119,8 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
                         " " +
                         (currentPage === pages + 1 ? styles["disabled"] : styles[" "])
                     }
-                >
-                    Next
+                ><span>Next</span>
+
                     <HiOutlineArrowSmRight
                         className={
                             styles["courses-category-font"] +
