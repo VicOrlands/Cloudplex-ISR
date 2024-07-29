@@ -47,7 +47,7 @@ const Description: React.FC<PageProps> = ({ params }) => {
 
             <div>
               <h1>{course.title}</h1>
-              <ButtonLink title="Go to Course" link="https://app.ilearncloud.io/login" target className={styles["btn"]} />
+              <ButtonLink title="Go to Course" link="https://app.ilearncloud.io/login" target="blannk" className={styles["btn"]} />
             </div>
           </div>
 

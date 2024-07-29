@@ -2,9 +2,9 @@ import Link from "next/link"
 import styles from './button.module.css'
 import clsx from "clsx"
 
-export function ButtonLink({ link, title, className, ...target }: { link: string, title: string, className?: string, target?: boolean }) {
+export function ButtonLink({ link, title, target, className }: { link: string, title: string, className?: string, target?: string }) {
     return (
-        <Link href={link} target={target && "blank"} className={clsx(styles.button, className)}>{title}</Link>
+        <Link href={link} target={target} className={clsx(styles.button, className)}>{title}</Link>
     )
 }
 

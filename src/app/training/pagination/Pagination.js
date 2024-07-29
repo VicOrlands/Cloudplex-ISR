@@ -97,7 +97,7 @@ const Pagination = ({ data, pageLimit, dataLimit }) => {
           <article key={post.name} className={styles["flex-courses-column"]}>
             <div className={styles["flex-courses-image-container"]}>
               <Link
-                href={`/training/${post.link}`}
+                href={`/training${post.link}`}
                 state={{
                   courseLink: post.link,
                 }}
@@ -106,7 +106,7 @@ const Pagination = ({ data, pageLimit, dataLimit }) => {
               </Link>
             </div>
             <Link
-              href={`/training/${post.link}`}
+              href={`/training${post.link}`}
               state={{
                 courseLink: post.link,
               }}
