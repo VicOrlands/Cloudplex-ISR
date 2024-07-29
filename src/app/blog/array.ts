@@ -66,24 +66,28 @@ export const blogs: BlogsProps[] = [
         title: "Moving successfully to the Amazon Cloud",
         desc: "Moving to the Amazon cloud can have a number of advantages for a business, the ones most often talked about are cost saving and scalability However, deploying on AWS isn't a simple matter of transferring your existing infrastructure.",
         link: "moving-successfully-to-the-amazon-cloud",
+        date: '17 July 2024'
     },
     {
         image: blog53,
         title: "Migrating Your Applications to the Cloud: The 7 Rs of Cloud Migration",
         desc: "The cloud offers a compelling value proposition for businesses of all sizes. However, transitioning your applications from on-premises infrastructure to the cloud can be a complex undertaking. AWS provides a variety of migration strategies to cater to different application types and business needs.",
         link: "migrating-your-applications-to-the-cloud-the-7-rs-of-cloud-migration",
+        date: '24 June 2024'
     },
     {
         image: blog52,
         title: "Serverless or Server: AWS Lambda vs Amazon EC2 for Cloud Computing",
         desc: "As organizations move toward cloud computing, they are faced with a critical decision: whether to opt for serverless computing with AWS Lambda or traditional server-based computing with Amazon Elastic Compute Cloud (EC2). In this article, we'll look at the key differences between these two compute services and provide guidance on when to use each approach.",
         link: "serverless-or-Server-aws-lambda-vs-amazon-ec2-for-cloud-computing",
+        date: '12 June 2024'
     },
     {
         image: blog51,
         title: "AWS Browser tools and extensions to enhance your experience",
         desc: "If you're just getting started with AWS (Amazon Web Services), navigating the Cloud Console can be a bit daunting at first. Luckily, there are several handy browser tools and extensions that can simplify your AWS experience and make the learning curve less steep.",
         link: "aws-browser-tools-and-extensions-to-enhance-your-experience",
+        date: '29 May 2024'
     },
     {
         image: blog50,
@@ -91,6 +95,7 @@ export const blogs: BlogsProps[] = [
             "Building an Email Subscription and Broadcasting System with React and AWS SNS",
         desc: "AWS Simple Notification Service (SNS) is a fully managed messaging service provided by Amazon Web Services. It allows you to decouple and scale applications by following a publish/subscribe (pub/sub) model.",
         link: "building-an-email-subscription-and-broadcasting-system-with-react-and-aws-sns",
+        date: '14 May 2024'
     },
     {
         image: blog49,

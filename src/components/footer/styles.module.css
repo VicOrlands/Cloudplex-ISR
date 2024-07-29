@@ -47,12 +47,31 @@
     margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .footer {
+        padding: 40px 5%;
+        grid-template-areas: 'header';
+        gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .first-div {
+        width: 100%;
+    }
+
+    .footer-social-links a {
+        margin-right: 20px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
     .footer {
         padding: 40px 20px;
         grid-template-areas: 'header';
         gap: 50px;
-
         display: flex;
         flex-wrap: wrap;
     }

@@ -51,6 +51,15 @@
       margin-right: 10px;
   }
 
+  .content h6 {
+      color: #3E54AC;
+      font-family: var(--font-inter);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      margin-bottom: 10px;
+  }
+
   .contentTitle a {
       color: #101828;
   }

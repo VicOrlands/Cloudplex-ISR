@@ -76,6 +76,16 @@ const BlogGrid: React.FC = () => {
                 },
             },
             {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2,
+                    nextArrow: false,
+                    prevArrow: false,
+                },
+            },
+            {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,

@@ -61,6 +61,7 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
                         </div>
 
                         <div className={styles.content}>
+                            <h6>{blog.date ? blog.date : "2022 / 2024"}</h6>
                             <Link href={`/blog/${blog.link}`}>
                                 <div className={styles.contentTitle}>
                                     <h5>{blog.title}</h5>

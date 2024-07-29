@@ -50,10 +50,6 @@ export default function Home() {
       </section>
 
       <BlogGrid />
-
-      {/* <section className={styles["newsletter"]}>
-        
-      </section> */}
     </div>
   );
 }
