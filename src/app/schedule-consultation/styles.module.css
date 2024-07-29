@@ -1,0 +1,217 @@
+.download-canvas {
+  padding-top: 100px;
+  font-family: var(--font-inter);
+}
+
+.consult-nav {
+  background: linear-gradient(89.81deg, #985acd -4.24%, #ab53bc 104.8%);
+  padding: 10px 0;
+}
+
+.consult-nav h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+}
+
+.consult-service {
+  padding: 4rem 7rem 4rem 4rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 50px;
+}
+
+/* consult-calendar */
+.consult-calendar h3 {
+  font-weight: 500;
+  font-size: 34px;
+  color: #000;
+}
+
+.consult-calendar h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000;
+}
+
+.consult-calendar p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #516beb;
+}
+
+/* consult-form */
+.consult-form {
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 30px 40px 50px 40px;
+  position: relative;
+}
+
+.consult-form h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #161616;
+}
+
+.consult-form h4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #525252;
+}
+
+.consult-form form {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px 20px;
+  padding-bottom: 30px;
+}
+
+.consult-form label {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #525252;
+  margin-bottom: 20px;
+}
+
+.consult-form label:nth-child(1) {
+  grid-column: 1/3;
+}
+
+.consult-form label:nth-child(6) {
+  grid-column: 1/3;
+}
+
+.consult-form label input {
+  background-color: #fff;
+  border: none;
+  border-bottom: 3px solid #8d8d8d;
+  color: #525252;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  height: 6vh;
+  width: 100%;
+  margin-top: 5px;
+  padding-left: 10px;
+  letter-spacing: 0.32px;
+}
+
+.consult-form label input:focus {
+  outline: 3px solid #0f62fe;
+  border: none;
+}
+
+.consult-form label input.success {
+  border: 2px solid #0f62fe;
+}
+
+.consult-form label input.error {
+  border: 2px solid #da1e28;
+}
+
+.consult-form button {
+  background-color: #516beb;
+  border: none;
+  border-bottom-right-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 20px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.consult-form .left {
+  background-color: #393939;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 10px;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .download-canvas {
+    padding-top: 30px;
+  }
+
+  .consult-nav {
+    background: linear-gradient(89.81deg, #985acd -4.24%, #ab53bc 104.8%);
+    padding: 10px 0;
+  }
+
+  .consult-nav h1 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .consult-service {
+    padding: 30px 20px;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  /* consult calendar */
+  .consult-calendar h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .consult-calendar h4 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  /* consult form */
+  .consult-form {
+    padding: 30px 20px;
+    margin-top: 20px;
+  }
+
+  .consult-form h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .consult-form form {
+    margin-top: 30px;
+    grid-template-columns: 1fr;
+    grid-gap: 10px 0;
+    padding-bottom: 30px;
+  }
+
+  .consult-form label {
+    margin-bottom: 10px;
+  }
+
+  .consult-form label:nth-child(1) {
+    grid-column: 1;
+  }
+
+  .consult-form label:nth-child(6) {
+    grid-column: 1;
+  }
+
+  .consult-form label input {
+    height: 5vh;
+    padding-left: 5px;
+  }
+
+  .consult-form button {
+    padding: 15px;
+  }
+}
