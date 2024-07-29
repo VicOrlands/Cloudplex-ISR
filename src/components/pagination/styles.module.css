@@ -183,6 +183,7 @@
 
       .blogCard .imgContainer {
           height: auto;
+          width: 100%;
       }
 
       .paginationItem span {

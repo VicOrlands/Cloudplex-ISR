@@ -400,17 +400,6 @@ export default function BlogFifty() {
             If an error occurs during the subscription process, we
             catch the error and log it to the console.
           </li>
-
-          {/* <code
-                                                    style={{
-                                                        background: 'grey',
-                                                        padding: 5,
-                                                        color: '#f0f0f0',
-                                                        borderRadius: 6,
-                                                    }}
-                                                >
-                                                    amplify push{' '}
-                                                </code> */}
         </ol>
         <p>
           The rendering code (omitted for brevity) displays either a
@@ -522,16 +511,6 @@ export default function BlogFifty() {
           have a complete email subscription and broadcasting system
           using AWS SNS.
         </p>
-        {/* <code
-                                                style={{
-                                                    background: 'grey',
-                                                    padding: 5,
-                                                    color: '#f0f0f0',
-                                                    borderRadius: 6,
-                                                }}
-                                            >
-                                                App.js;
-                                            </code>{' '} */}
         <p>
           Finally we can throw in some styling with React Boostrap
         </p>
@@ -591,74 +570,6 @@ export default function BlogFifty() {
             Authentication and Databases
           </a>
         </p>
-        <h5 className="mt-4">Comments :</h5>
-        <h5 className="mt-4">Leave A Comment :</h5>
-        {/* <Form className="mt-3">
-                      <Row>
-                        <Col md={12}>
-                          <FormGroup>
-                            <Label>Your Comment</Label>
-                            <div className="position-relative">
-                              <textarea
-                                id="message"
-                                placeholder="Your Comment"
-                                rows="5"
-                                name="message"
-                                className="form-control pl-5"
-                                required=""
-                              />
-                            </div>
-                          </FormGroup>
-                        </Col>
-
-                        <div className="col-lg-6">
-                          <FormGroup>
-                            <Label>
-                              Name <span className="text-danger">*</span>
-                            </Label>
-                            <div className="position-relative">
-                              <Input
-                                id="name"
-                                name="name"
-                                type="text"
-                                placeholder="Name"
-                                className="form-control pl-5"
-                                required=""
-                              />
-                            </div>
-                          </FormGroup>
-                        </div>
-
-                        <div className="col-lg-6">
-                          <FormGroup>
-                            <Label>
-                              Your Email <span className="text-danger">*</span>
-                            </Label>
-                            <div className="position-relative">
-                              <Input
-                                id="email"
-                                type="email"
-                                placeholder="Email"
-                                name="email"
-                                className="form-control pl-5"
-                                required=""
-                              />
-                            </div>
-                          </FormGroup>
-                        </div>
-
-                        <Col md={12}>
-                          <div className="send">
-                            <Button
-                              type="submit"
-                              className="btn btn-primary btn-block"
-                            >
-                              Send Message
-                            </Button>
-                          </div>
-                        </Col>
-                      </Row>
-                    </Form> */}
       </div>
     </section >
   )

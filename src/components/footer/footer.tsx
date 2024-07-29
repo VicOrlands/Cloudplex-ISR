@@ -38,17 +38,15 @@ const Footer = () => {
                 />
                 <div>
                     <p>
-                        Headquarters: London 124 City Rd, London EC1V 2NX London,
-                        United Kingdom.
+                        Headquarters: London 124 City Rd, London EC1V 2NX London, United Kingdom.
                     </p>
                     <p>
-                        Lagos: 15 Ihuntayi Rd, Oniru Rd, Victoria Island 101001,Lagos,
-                        Nigeria.
+                        Lagos: 15 Ihuntayi Rd, Oniru Rd, Victoria Island 101001, Lagos, Nigeria.
                     </p>
 
                     <p>
                         Abuja: First Floor, Nigerian Merit Award House, 22 Aguyi
-                        Ironsi Street, Maitama, Abuja
+                        Ironsi Street, Maitama, Abuja.
                     </p>
                 </div>
                 <div className={styles["footer-social-links"]}>
