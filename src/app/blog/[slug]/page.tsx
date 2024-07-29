@@ -51,6 +51,7 @@ import BlogTwentySix from './blogTwentysix';
 import BlogTwentyOne from './blogTwentyone';
 import BlogTwentyThree from './blogTwentythree';
 import BlogTwentyTwo from './blogTwentytwo';
+import BlogFour from './blogFour';
 
 
 export async function generateStaticParams() {
@@ -263,6 +264,10 @@ const paths = [
     {
         comp: <BlogOne />,
         url: "cloudplexo-achieves-aws-isv-partner-status-in-aws-partner-network"
+    },
+    {
+        comp: <BlogFour />,
+        url: "moving-successfully-to-the-amazon-cloud"
     },
 ];
 

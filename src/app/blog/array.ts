@@ -50,6 +50,7 @@ import blog50 from "@/assets/blog/blog50/home.webp";
 import blog51 from "@/assets/blog/blog51/AWS Browser tools and extensions to enhance your experience.webp";
 import blog52 from "@/assets/blog/blog52/cover.webp";
 import blog53 from "@/assets/blog/blog53/thumbnail.webp";
+import blog54 from "@/assets/blog/Moving successfully to the Amazon Cloud.webp";
 
 export interface BlogsProps {
     image: StaticImageData,
@@ -61,9 +62,14 @@ export interface BlogsProps {
 
 export const blogs: BlogsProps[] = [
     {
+        image: blog54,
+        title: "Moving successfully to the Amazon Cloud",
+        desc: "Moving to the Amazon cloud can have a number of advantages for a business, the ones most often talked about are cost saving and scalability However, deploying on AWS isn't a simple matter of transferring your existing infrastructure.",
+        link: "moving-successfully-to-the-amazon-cloud",
+    },
+    {
         image: blog53,
-        title:
-            "Migrating Your Applications to the Cloud: The 7 Rs of Cloud Migration",
+        title: "Migrating Your Applications to the Cloud: The 7 Rs of Cloud Migration",
         desc: "The cloud offers a compelling value proposition for businesses of all sizes. However, transitioning your applications from on-premises infrastructure to the cloud can be a complex undertaking. AWS provides a variety of migration strategies to cater to different application types and business needs.",
         link: "migrating-your-applications-to-the-cloud-the-7-rs-of-cloud-migration",
     },

@@ -251,14 +251,14 @@ export default function BlogFifty() {
             loading="lazy"
             src={Img1}
             alt="Building Fullstack app with React and AWS Amplify - Authentication and Databases"
-            style={{ width: "48%"}}
+            style={{ width: "48%" }}
           />
 
           <Image
             loading="lazy"
             src={Img2}
             alt="Building Fullstack app with React and AWS Amplify - Authentication and Databases"
-            style={{ width: "48%"}}
+            style={{ width: "48%" }}
           />
         </div>
         <br />
