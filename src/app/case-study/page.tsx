@@ -29,6 +29,8 @@ import img3 from "@/assets/reviews/Immersion day.webp";
 import icanlogo from "@/assets/reviews/ican.webp";
 import livelilogo from "@/assets/reviews/liveli.webp";
 import gtcologo from "@/assets/partners/GTCO_logo.webp";
+import convexityLogo from "@/assets/landing/convexity.png"
+import convexity from "@/assets/landing/convexity-placeholder.webp"
 
 interface ReviewProps {
     id: number,
@@ -45,6 +47,18 @@ interface ReviewProps {
 const reviews: ReviewProps[] = [
     {
         id: 1,
+        image: convexity,
+        link: "https://cloudplexo.com/Convexity_Case_Study_Testimonial.mp4",
+        quote:
+            "“With CloudPlexo, they help you to get a robust solution that will stand the test of time.”",
+        company: null,
+        title: null,
+        logo: convexityLogo,
+        speaker: "CTO | Co-founder - Convexity",
+        caselink: "/case-study/convexity-case-study",
+    },
+    {
+        id: 2,
         image: img2,
         link: "https://cloudplexo.com/Liveli-Customer-Sucess.mp4",
         quote:
@@ -56,7 +70,7 @@ const reviews: ReviewProps[] = [
         caselink: "/case-study/liveli-case-study",
     },
     {
-        id: 2,
+        id: 3,
         image: img1,
         link: "https://cloudplexo.com/ICAN_ONLINE_TUTORS_final.mp4 ",
         company: null,
@@ -68,7 +82,7 @@ const reviews: ReviewProps[] = [
         caselink: "/case-study/case-study-in-the-edtech-sector",
     },
     {
-        id: 3,
+        id: 4,
         image: img3,
         link: "https://cloudplexo.com/GT_Pension_Immersion+Day_Testimonial.mp4",
         company: "Guarantee Trust Pension Managers",
@@ -76,7 +90,7 @@ const reviews: ReviewProps[] = [
         quote: `"I had a great time with the Cloudplexo team, learning more about AWS and the cloud"`,
         logo: gtcologo,
         speaker: "Taiwo Owolabi",
-        caselink: "#",
+        caselink: "/case-study/case-study-of-gt-pensions-managers",
     },
 ];
 

@@ -23,6 +23,7 @@ import Kigali from "@/assets/events/kigali_event.webp";
 import businessDay from "@/assets/events/events1/seven.webp";
 import GenerativeAI from "@/assets/events/1691070093414.webp";
 import Immersion from "@/assets/events/Immersion image 1.webp";
+import GenAI from "@/assets/events/GenerativeAI.webp"
 
 export interface Speaker {
     image: StaticImageData;
@@ -136,6 +137,13 @@ export const WebinarArray: WebinarProps[] = [
 ];
 
 export const EventsArray: EventsProps[] = [
+    {
+        img: GenAI,
+        title: "August Gen-AI Fridays",
+        text: `August Gen-AI Fridays: Getting started on Amazon Bedrock`,
+        link: "https://www.linkedin.com/events/7226214750320246784/comments/",
+        date: "Every Friday of August",
+    },
     {
         img: Nairobi,
         title: "Tech Safari Nairobi Mixer",

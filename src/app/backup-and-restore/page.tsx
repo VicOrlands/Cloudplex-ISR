@@ -68,25 +68,25 @@ function Main() {
           <div>
             <Image
               src={AWSLogo}
-              alt="Backup For AWS"
+              alt="Backup with AWS"
             />
-            <p>Backup For AWS</p>
+            <p>Backup with AWS</p>
           </div>
 
           <div>
             <Image
               src={AzureLogo}
-              alt="Backup For Microsoft Azure"
+              alt="Backup with Microsoft Azure"
             />
-            <p>Backup For Microsoft Azure</p>
+            <p>Backup with Microsoft Azure</p>
           </div>
 
           <div>
             <Image
               src={GoogleLogo}
-              alt="Backup For Google Cloud"
+              alt="Backup with Google Cloud"
             />
-            <p>Backup For Google Cloud</p>
+            <p>Backup with Google Cloud</p>
           </div>
         </div>
       </section>
