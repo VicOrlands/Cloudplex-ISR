@@ -29,7 +29,7 @@ import img3 from "@/assets/reviews/Immersion day.webp";
 import icanlogo from "@/assets/reviews/ican.webp";
 import livelilogo from "@/assets/reviews/liveli.webp";
 import gtcologo from "@/assets/partners/GTCO_logo.webp";
-import convexityLogo from "@/assets/landing/convexity.png"
+import convexityLogo from "@/assets/landing/convexitylogo.webp"
 import convexity from "@/assets/landing/convexity-placeholder.webp"
 
 interface ReviewProps {

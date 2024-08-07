@@ -21,7 +21,7 @@ import vectorquote from "@/assets/reviews/vector.webp";
 import vectorquote2 from "@/assets/reviews/vector1.webp";
 import gtcologo from "@/assets/partners/GTCO_logo.webp";
 import BgImage from "@/assets/reviews/testimonialbg.webp"
-import convexityLogo from "@/assets/landing/convexity.png"
+import convexityLogo from "@/assets/landing/convexitylogo.webp"
 import convexity from "@/assets/landing/convexity-placeholder.webp"
 import {
     BsArrowLeft,
