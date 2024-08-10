@@ -53,6 +53,10 @@
   padding: 0;
 }
 
+.events-summit-container .right-side h2 a {
+  color: #3e54ac;
+}
+
 .events-summit-container .right-side h2 a:hover {
   text-decoration: underline;
 }

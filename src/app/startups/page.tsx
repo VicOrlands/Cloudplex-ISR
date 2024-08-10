@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import { supportArray } from "./arrayList";
 import logo from "@/assets/startups/logo.png";
-import hero_map from "@/assets/startups/hero_map.png";
+import hero_map from "@/assets/startups/hero_map.webp";
 import Partner9 from "@/assets/startups/partners/sdc.png";
 import Partner8 from "@/assets/startups/partners/root.png";
 import Partner6 from "@/assets/startups/partners/logo1.png";
