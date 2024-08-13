@@ -24,6 +24,7 @@ const MainFaq: React.FC = () => {
   return (
     <section className={classes["faq-section"]}>
       <h2>Frequently asked questions</h2>
+      <h6>Answers to Common Queries</h6>
 
       {FAQ.map((faq) => (
         <div key={faq.id} className={classes["faq"]}>

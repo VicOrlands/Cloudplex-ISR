@@ -9,10 +9,22 @@
   font-size: 36px;
   font-weight: 600;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-section h6 {
+  color: #475467;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
 }
 
 .faq {
+  border-bottom: 1px solid #EAECF0;
   font-family: var(--font-inter);
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .faq section {
@@ -20,7 +32,6 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
-  margin-top: 50px;
   width: 100%;
 }
 
