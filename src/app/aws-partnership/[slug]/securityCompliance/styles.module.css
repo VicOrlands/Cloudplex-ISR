@@ -1,7 +1,7 @@
 .security-compliance-page {
   padding: 0 150px;
   font-family: var(--font-inter);
-  font-size: 10px;
+  font-size: 1rem;
 }
 
 .security-compliance-hero-section {
@@ -14,16 +14,16 @@
 
 .security-compliance-hero-section div h1 {
   color: #344054;
-  font-size: 2.8rem;
+  font-size: 4.48rem;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
 .security-compliance-hero-section div p {
   color: #344054;
-  font-size: 1.4rem;
+  font-size: 2.24rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 3.2rem;
   margin-bottom: 30px;
 }
 
@@ -34,7 +34,7 @@
   border: 1px solid #d0d5dd;
   padding: 14px 20px;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -56,14 +56,15 @@
 .security-compliance-services h3,
 .security-compliance-client-stories h3 {
   color: #667085;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 400;
+  line-height: 2.6rem;
 }
 
 .security-compliance-services h2,
 .security-compliance-client-stories h2 {
   color: #344054;
-  font-size: 2rem;
+  font-size: var(--font-size-h2);
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -75,7 +76,7 @@
 
 .security-compliance-services-column ul li {
   color: #667085;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
   margin-top: 25px;
   display: flex;
@@ -119,11 +120,12 @@
   }
 
   .security-compliance-hero-section div h1 {
-    font-size: 28px;
+    font-size: 2.4rem;
   }
 
   .security-compliance-hero-section div p {
-    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
   }
 
   .security-compliance-hero-section div {
@@ -132,6 +134,7 @@
   }
 
   .security-compliance-hero-section div a {
+    font-size: 1.4rem;
     width: 100%;
     text-align: center;
   }
@@ -148,13 +151,13 @@
 
   .security-compliance-services h2,
   .security-compliance-client-stories h2 {
-    font-size: 24px;
+    font-size: var(--font-size-h2-sm);
     margin-bottom: 5px;
   }
 
   .security-compliance-services h3,
   .security-compliance-client-stories h3 {
-    font-size: 16px;
+    font-size: 1.4rem;
   }
 
   .security-compliance-client-stories h3 {
@@ -172,6 +175,7 @@
   }
 
   .security-compliance-client-stories .heading {
+    margin-bottom: -40px;
     padding-left: 20px;
   }
 }

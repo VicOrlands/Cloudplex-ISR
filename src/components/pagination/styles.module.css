@@ -43,9 +43,9 @@
   }
 
   .contentTitle h5 {
-      font-size: 18px;
+      font-size: 1.8rem;
       font-weight: 600;
-      line-height: 24px;
+      line-height: 2.4rem;
       color: #101828;
       margin-bottom: 20px;
       margin-right: 10px;
@@ -54,9 +54,9 @@
   .content h6 {
       color: #3E54AC;
       font-family: var(--font-inter);
-      font-size: 14px;
+      font-size: 1.4rem;
       font-weight: 600;
-      line-height: 20px;
+      line-height: 2rem;
       margin-bottom: 10px;
   }
 
@@ -67,8 +67,8 @@
   .content p {
       color: #667085;
       font-family: var(--font-inter);
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
       margin-bottom: 0;
       overflow: hidden;
       -webkit-box-orient: vertical;
@@ -100,7 +100,7 @@
   }
 
   .paginationItem span {
-      font-size: 18px;
+      font-size: 1.8rem;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -124,12 +124,12 @@
       display: flex;
       align-items: center;
       font-family: var(--font-inter);
-      font-size: 18px;
+      font-size: 1.8rem;
   }
 
   .courses-category-font {
       fill: #344054;
-      font-size: 20px;
+      font-size: 2rem;
       margin-left: 5px;
   }
 

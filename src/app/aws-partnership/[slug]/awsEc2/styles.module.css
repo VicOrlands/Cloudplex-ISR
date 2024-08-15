@@ -1,7 +1,7 @@
 .main-ec2-page {
   padding: 0 150px;
-    font-family: var(--font-inter);
-  font-size: 10px;
+  font-family: var(--font-inter);
+  font-size: 1rem;
 }
 
 .ec2-dynamo-hero-section {
@@ -15,16 +15,16 @@
 
 .ec2-dynamo-hero-section div h1 {
   color: #344054;
-  font-size: 2.8rem;
+  font-size: 4.48rem;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
 .ec2-dynamo-hero-section div p {
   color: #344054;
-  font-size: 1.4rem;
+  font-size: 2.24rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 3.2rem;
   margin-bottom: 30px;
 }
 
@@ -35,7 +35,7 @@
   border: 1px solid #d0d5dd;
   padding: 14px 20px;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -63,16 +63,16 @@
 
 .main-ec2-services h2 {
   color: #101828;
-    font-family: var(--font-inter);
-  font-size: 2rem;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-h2);
   font-weight: 600;
   margin-bottom: 15px;
 }
 
 .main-ec2-services h3 {
   color: #667085;
-    font-family: var(--font-inter);
-  font-size: 1.2rem;
+  font-family: var(--font-inter);
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
@@ -91,18 +91,18 @@
 
 .main-ec2-services-column div h3 {
   color: #101828;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 600;
-    font-family: var(--font-inter);
+  font-family: var(--font-inter);
   margin-bottom: 10px;
 }
 
 .main-ec2-services-column div ul li {
   color: #667085;
-    font-family: var(--font-inter);
-  font-size: 1rem;
+  font-family: var(--font-inter);
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 2.6rem;
 }
 
 /* media query for small screen */
@@ -118,11 +118,12 @@
   }
 
   .ec2-dynamo-hero-section div h1 {
-    font-size: 28px;
+    font-size: 2.4rem;
   }
 
   .ec2-dynamo-hero-section div p {
-    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
   }
 
   .main-ec2-hero-btn {
@@ -131,6 +132,7 @@
   }
 
   .main-ec2-hero-btn a {
+    font-size: 1.4rem;
     width: 100%;
     text-align: center;
   }
@@ -151,21 +153,28 @@
   }
 
   .main-ec2-services h3 {
-    font-size: 16px;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
   }
 
   .main-ec2-services h2 {
-    font-size: 24px;
+    font-size: var(--font-size-h2-sm);
     margin-bottom: 5px;
   }
 
   .main-ec2-services-column {
     grid-template-columns: 1fr;
     gap: 30px 0;
+    margin-bottom: 0;
   }
 
   .main-ec2-services-column div img {
     height: 90px;
     margin-bottom: 20px;
+  }
+
+  .main-ec2-services-column div ul li {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
   }
 }

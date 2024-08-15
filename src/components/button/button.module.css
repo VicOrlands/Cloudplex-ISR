@@ -2,7 +2,7 @@
  .transparentButton {
      font-family: var(--font-inter);
      font-weight: 600;
-     font-size: 16px;
+     font-size: 1.6rem;
      border-radius: 8px;
      padding: 10px 20px;
      cursor: pointer;
@@ -31,4 +31,14 @@
 
  .transparentButton:hover {
      border: 1px solid #878b91;
+ }
+
+ /* mobile */
+ @media screen and (max-width: 768px) {
+
+     .button,
+     .transparentButton {
+         font-size: 1.4rem;
+     }
+
  }

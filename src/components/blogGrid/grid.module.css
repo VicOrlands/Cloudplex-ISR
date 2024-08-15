@@ -45,9 +45,9 @@
 .content h6 {
     color: #3E54AC;
     font-family: var(--font-inter);
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 2rem;
     margin-bottom: 10px;
 }
 
@@ -59,9 +59,9 @@
 
 .contentTitle h5 {
     font-family: var(--font-inter);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 2.4rem;
     height: 42px;
     color: #101828;
     margin-right: 10px;
@@ -70,8 +70,8 @@
 .textDesc {
     color: #667085;
     font-family: var(--font-inter);
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     margin-top: 5px;
     margin-bottom: 0;
     overflow: hidden;
@@ -87,7 +87,7 @@
     color: #344054;
     font-family: var(--font-inter);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,5 +145,10 @@
     .blogpageCatalogImage {
         height: auto;
         width: 100%;
+    }
+
+    .textDesc,
+    .button {
+        font-size: 1.4rem;
     }
 }

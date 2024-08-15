@@ -233,14 +233,14 @@ export default class BlogFortyFour extends Component {
           <p>
             Let's create a Python script that utilizes Boto3 to upload
             a large file to S3 in a multipart fashion.
+            <CopyBlock
+              text={code1}
+              language="javascript"
+              showLineNumbers={false}
+              theme={a11yDark}
+              wrapLongLines={true}
+            />
           </p>
-          <CopyBlock
-            text={code1}
-            language="javascript"
-            showLineNumbers={false}
-            theme={a11yDark}
-            wrapLongLines={true}
-          />
           <h4>Understanding the Script</h4>
           <hr />
           <p>Let's break down the key components of the script:</p>
@@ -249,98 +249,91 @@ export default class BlogFortyFour extends Component {
               AWS Credentials and Configuration: Set your AWS
               credentials (access key and secret key) and the AWS
               region where your S3 bucket is located.
+              <CopyBlock
+                text={code2}
+                language="javascript"
+                showLineNumbers={false}
+                theme={a11yDark}
+                wrapLongLines={true} />
             </li>
-            <CopyBlock
-              text={code2}
-              language="javascript"
-              showLineNumbers={false}
-              theme={a11yDark}
-              wrapLongLines={true} />
-            <br />
             <li>
               S3 Bucket and Object Key: Define the target S3 bucket
               and the object key (path) under which the file will be
               stored
+              <CopyBlock
+                text={code3}
+                language="javascript"
+                showLineNumbers={false}
+                theme={a11yDark}
+                wrapLongLines={true} />
             </li>
-            <CopyBlock
-              text={code3}
-              language="javascript"
-              showLineNumbers={false}
-              theme={a11yDark}
-              wrapLongLines={true} />
-            <br />
             <li>
               Local File Path: Specify the local path of the large
               file you want to upload
+              <CopyBlock
+                text={code4}
+                language="javascript"
+                showLineNumbers={false}
+                theme={a11yDark}
+                wrapLongLines={true} />
             </li>
-            <CopyBlock
-              text={code4}
-              language="javascript"
-              showLineNumbers={false}
-              theme={a11yDark}
-              wrapLongLines={true} />
-            <br />
             <li>
               Part Size and Concurrency: Determine the part size in
               megabytes and the number of threads to use during the
               multipart upload. Adjust these values based on your
               network conditions and requirements.
+              <CopyBlock
+                text={code5}
+                language="javascript"
+                showLineNumbers={false}
+                theme={a11yDark}
+                wrapLongLines={true} />
             </li>
-            <CopyBlock
-              text={code5}
-              language="javascript"
-              showLineNumbers={false}
-              theme={a11yDark}
-              wrapLongLines={true} />
-            <br />
             <li>
               Creating S3 Client and Transfer Manager: Initialize the
               Boto3 S3 client and create a TransferConfig object with
               the specified multipart settings.
+              <CopyBlock
+                text={code6}
+                language="javascript"
+                showLineNumbers={false}
+                theme={a11yDark}
+                wrapLongLines={true} />
             </li>
-            <CopyBlock
-              text={code6}
-              language="javascript"
-              showLineNumbers={false}
-              theme={a11yDark}
-              wrapLongLines={true} />
-            <br />
             <li>
               Multipart Upload: Use the TransferManager to initiate a
               multipart upload of the specified file to the S3 bucket.
               This method automatically handles the division of the
               file into parts and manages the upload process.
+              <CopyBlock
+                text={code7}
+                language="javascript"
+                showLineNumbers={false}
+                theme={a11yDark}
+                wrapLongLines={true} />
             </li>
-            <CopyBlock
-              text={code7}
-              language="javascript"
-              showLineNumbers={false}
-              theme={a11yDark}
-              wrapLongLines={true} />
-            <br />
             <li>
               Wait for Upload Completion: Wait for the multipart
               upload to complete before proceeding. This ensures that
               all parts are successfully uploaded and assembled on the
               S3 bucket.
+              <CopyBlock
+                text={code8}
+                language="javascript"
+                showLineNumbers={false}
+                theme={a11yDark}
+                wrapLongLines={true} />
             </li>
-            <CopyBlock
-              text={code8}
-              language="javascript"
-              showLineNumbers={false}
-              theme={a11yDark}
-              wrapLongLines={true} />
-            <br />
             <li>
               Clean Up: Finally, clean up resources by shutting down
               the TransferManager.
+              <CopyBlock
+                text={code9}
+                language="javascript"
+                showLineNumbers={false}
+                theme={a11yDark}
+                wrapLongLines={true} />
             </li>
-            <CopyBlock
-              text={code9}
-              language="javascript"
-              showLineNumbers={false}
-              theme={a11yDark}
-              wrapLongLines={true} />
           </ul>
           <h4>Running the Script</h4>
           <p>To run the script:</p>

@@ -7,7 +7,7 @@
 .serviceContainer h5 {
     color: #3e54ac;
     font-family: var(--font-inter);
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 20px;
@@ -167,7 +167,7 @@
     color: #667085;
     font-family: var(--font-inter);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 24px;
     margin-bottom: 20px;
 }
@@ -179,7 +179,7 @@
     color: #3e54ac;
     font-family: var(--font-inter);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.4rem;
     padding: 10px 16px;
     display: flex;
     align-items: center;
@@ -192,7 +192,7 @@
 
 .tabContent section a #icon {
     color: #3e54ac;
-    font-size: 20px;
+    font-size: 2rem;
     margin-left: 10px;
 }
 
@@ -207,7 +207,7 @@
     color: #fff;
     font-family: var(--font-inter);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.6rem;
     border: 1px solid #3e54ac;
     border-radius: 8px;
     padding: 10px 20px;
@@ -281,7 +281,7 @@
     color: #344054;
     font-family: var(--font-inter);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -320,7 +320,7 @@
     .serviceContainer ul {
         background-color: #e8f1ff;
         width: 100%;
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .tabContent {
@@ -394,7 +394,7 @@
 
     .serviceContainer ul {
         background-color: #e8f1ff;
-        font-size: 14px;
+        font-size: 1.4rem;
         width: 100%;
     }
 

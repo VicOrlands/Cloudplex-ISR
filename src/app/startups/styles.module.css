@@ -26,7 +26,7 @@
 
 .hero-left h6 {
   color: #344054;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
   margin: 0 10px 0 0;
   line-height: normal;
@@ -40,7 +40,7 @@
 
 .hero-left h1 {
   color: #1b2552;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 900;
   line-height: 60.95px;
 }
@@ -51,7 +51,7 @@
 
 .hero-left p {
   color: #667085;
-  font-size: 20px;
+  font-size: 2rem;
   font-family: var(--font-inter);
   font-weight: 400;
   line-height: 30px;
@@ -61,7 +61,7 @@
 .hero-left a {
   background-color: #3e54ac;
   color: #fff;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   padding: 10px 20px;
   border-radius: 10px;
@@ -79,6 +79,25 @@
   object-fit: contain;
 }
 
+/* video-section */
+.video-section {
+  margin: auto;
+  margin-top: 40px;
+  width: 50%;
+}
+
+.video-button {
+  background-color: #fff !important;
+  border-radius: 50% !important;
+  color: #000 !important;
+  font-size: 6rem !important;
+  opacity: 0.5 !important;
+  height: 9.4rem !important;
+  width: 9.4rem !important;
+  margin-left: -20px !important;
+  margin-top: -20px !important;
+}
+
 /* support-section */
 .support-section {
   padding: 50px 50px;
@@ -86,7 +105,7 @@
 
 .support-section p {
   color: #667085;
-  font-size: 20px;
+  font-size: 2rem;
   font-family: var(--font-inter);
   font-weight: 400;
   line-height: 30px;
@@ -120,14 +139,14 @@
 
 .support-and-scale h4 {
   color: #101828;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 .support-and-scale p {
   color: #667085;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
@@ -146,7 +165,7 @@
 
 .recent-events p {
   color: #667085;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 400;
 }
 
@@ -199,12 +218,12 @@
   }
 
   .hero-left h1 {
-    font-size: 33px;
+    font-size: 3.3rem;
     line-height: 40px;
   }
 
   .hero-left p {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 
   .hero-right {
@@ -216,19 +235,36 @@
     width: 100%;
   }
 
+  /* video-section */
+  .video-section {
+    width: 100%;
+  }
+
+  .video-button {
+    font-size: 3.2rem !important;
+    height: 5rem !important;
+    width: 5rem !important;
+    margin-left: -10px !important;
+    margin-top: -10px !important;
+  }
+
   /* support-section */
   .support-section {
     padding: 50px 20px;
   }
 
   .support-section p {
-    font-size: 16px;
+    font-size: 1.4rem;
     line-height: 24px;
     width: 100%;
   }
 
   .support-and-scale {
     grid-template-columns: 1fr;
+  }
+
+  .support-and-scale h4 {
+    font-size: 1.6rem;
   }
 
   /* recent events */
@@ -241,7 +277,7 @@
   }
 
   .recent-events p {
-    font-size: 16px;
+    font-size: 1.4rem;
     margin-bottom: 100px;
     line-height: 24px;
   }

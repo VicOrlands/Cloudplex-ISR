@@ -1,7 +1,7 @@
 .dynamo-page {
   padding: 0 150px;
   font-family: var(--font-inter);
-  font-size: 10px;
+  font-size: 1rem;
 }
 
 .dynamo-hero-section {
@@ -14,7 +14,7 @@
 
 .dynamo-hero-section div h1 {
   color: #344054;
-  font-size: 2.8rem;
+  font-size: 4.48rem;
   font-weight: 800;
 }
 
@@ -26,9 +26,9 @@
 
 .dynamo-hero-section div p {
   color: #344054;
-  font-size: 1.4rem;
+  font-size: 2.24rem;
   font-weight: 400;
-  line-height: 2.2rem;
+  line-height: 3.2rem;
   margin-bottom: 30px;
 }
 
@@ -39,7 +39,7 @@
   border: 1px solid #d0d5dd;
   padding: 14px 20px;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -70,7 +70,7 @@
 .dynamo-services h3 {
   color: #667085;
   font-family: var(--font-inter);
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   font-weight: 400;
 }
 
@@ -78,7 +78,7 @@
 .dynamo-use-cases h2 {
   color: #101828;
   font-family: var(--font-inter);
-  font-size: 2rem;
+  font-size: var(--font-size-h2);
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -99,15 +99,15 @@
 
 .dynamo-services-column div p {
   color: #101828;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .dynamo-services-column div ul li {
   color: #667085;
-  font-size: 1rem;
-  line-height: 1.8rem;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
   font-weight: 400;
 }
 
@@ -141,7 +141,7 @@
 
 .use-cases section p {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .use-cases section:nth-child(1) div {
@@ -173,11 +173,12 @@
   }
 
   .dynamo-hero-section div h1 {
-    font-size: 28px;
+    font-size: 2.4rem;
   }
 
   .dynamo-hero-section div p {
-    font-size: 14px;
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
 
   .partnership-hero-btn {
@@ -186,6 +187,7 @@
   }
 
   .partnership-hero-btn a {
+    font-size: 1.4rem;
     width: 100%;
     text-align: center;
   }
@@ -206,12 +208,12 @@
   }
 
   .dynamo-services h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   .dynamo-services h2,
   .dynamo-use-cases h2 {
-    font-size: 24px;
+    font-size: var(--font-size-h2-sm);
     margin-bottom: 5px;
   }
 
@@ -229,6 +231,10 @@
   /* use-cases */
   .use-cases {
     margin: 30px 0;
+  }
+
+  .use-cases section p {
+    font-size: 1.4rem;
   }
 
   .use-cases section div img {

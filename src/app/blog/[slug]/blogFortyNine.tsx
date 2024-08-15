@@ -468,9 +468,7 @@ export default function BlogFortyNine() {
         <Image
           loading="lazy"
           src={Img1}
-          alt="Building Fullstack app with React
-                                            and AWS Amplify - Authentication and
-                                            Databases"
+          alt="Building Fullstack app with React and AWS Amplify - Authentication and Databases"
         />
         <br />
         <br />
@@ -496,9 +494,7 @@ export default function BlogFortyNine() {
             <Image
               loading="lazy"
               src={Img2}
-              alt="Building Fullstack app with React
-                                            and AWS Amplify - Authentication and
-                                            Databases"
+              alt="Building Fullstack app with React and AWS Amplify - Authentication and Databases"
               style={{
                 border: "1px solid #eaeaea",
               }}
@@ -508,9 +504,7 @@ export default function BlogFortyNine() {
             <Image
               loading="lazy"
               src={Img3}
-              alt="Building Fullstack app with React
-                                            and AWS Amplify - Authentication and
-                                            Databases"
+              alt="Building Fullstack app with React and AWS Amplify - Authentication and Databases"
               style={{
                 border: "1px solid #eaeaea",
               }}
@@ -539,9 +533,7 @@ export default function BlogFortyNine() {
             <Image
               loading="lazy"
               src={Img4}
-              alt="Building Fullstack app with React
-                                            and AWS Amplify - Authentication and
-                                            Databases"
+              alt="Building Fullstack app with React and AWS Amplify - Authentication and Databases"
               style={{
                 border: "1px solid #eaeaea",
               }}
@@ -563,9 +555,7 @@ export default function BlogFortyNine() {
             <Image
               loading="lazy"
               src={Img5}
-              alt="Building Fullstack app with React
-                                            and AWS Amplify - Authentication and
-                                            Databases"
+              alt="Building Fullstack app with React and AWS Amplify - Authentication and Databases"
               style={{
                 border: "1px solid #eaeaea",
               }}
@@ -595,9 +585,7 @@ export default function BlogFortyNine() {
             <Image
               loading="lazy"
               src={Img6}
-              alt="Building Fullstack app with React
-                                            and AWS Amplify - Authentication and
-                                            Databases"
+              alt="Building Fullstack app with React and AWS Amplify - Authentication and Databases"
               style={{
                 border: "1px solid #eaeaea",
               }}
@@ -606,9 +594,7 @@ export default function BlogFortyNine() {
             <Image
               loading="lazy"
               src={Img7}
-              alt="Building Fullstack app with React
-                                            and AWS Amplify - Authentication and
-                                            Databases"
+              alt="Building Fullstack app with React and AWS Amplify - Authentication and Databases"
               style={{
                 border: "1px solid #eaeaea",
               }}
@@ -628,9 +614,7 @@ export default function BlogFortyNine() {
             <Image
               loading="lazy"
               src={Img8}
-              alt="Building Fullstack app with React
-                                            and AWS Amplify - Authentication and
-                                            Databases"
+              alt="Building Fullstack app with React and AWS Amplify - Authentication and Databases"
               style={{
                 border: "1px solid #eaeaea",
               }}
@@ -698,12 +682,15 @@ export default function BlogFortyNine() {
           </code>{" "}
           package
         </p>
-        <CopyBlock
-          text={code8}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+
+        <p>
+          <CopyBlock
+            text={code8}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <p>
           In your{" "}
           <code
@@ -734,22 +721,26 @@ export default function BlogFortyNine() {
         >
           We will be using Amplify ui-react for our components
         </p>
-        <CopyBlock
-          text={code10}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code10}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <p>
           This should be our Form, we can then have our contact
           list;
         </p>
-        <CopyBlock
-          text={code11}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code11}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <p>
           Finally we can bring all this together in our{" "}
           <code
@@ -763,29 +754,35 @@ export default function BlogFortyNine() {
             App.js;
           </code>{" "}
         </p>
-        <CopyBlock
-          text={code12}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code12}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <p>
           We This is very Straight forward React, and you can test
           your code
         </p>
-        <CopyBlock
-          text={code13}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code13}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <h4>Adding Amplify Auth;</h4>
-        <CopyBlock
-          text={code14}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code14}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <p>
           As seen the here, we’re are exposing both the user and
           also the signOut function, which are props provided by the
@@ -834,22 +831,26 @@ export default function BlogFortyNine() {
           related to our user, like signout, and displaying the user
           info.
         </p>
-        <CopyBlock
-          text={code15}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code15}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <p>
           We can the update our App.js, Accordingly, passing signOut
           and user as props;
         </p>
-        <CopyBlock
-          text={code16}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code16}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <h4>Configuring CRUD APIs</h4>
         <p>
           That will complete our authentication flow, now what is
@@ -860,12 +861,14 @@ export default function BlogFortyNine() {
           First off, let include this function in our form, to save
           to cloud before appeding to the list:
         </p>
-        <CopyBlock
-          text={code17}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code17}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <p>
           This should work nicely, Our contact will be saved to the
           cloud database, when we enter them.
@@ -889,12 +892,14 @@ export default function BlogFortyNine() {
             list.js
           </code>{" "}
         </p>
-        <CopyBlock
-          text={code18}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code18}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <p>
           This will fetch our saved content when we sign in to our
           website;
@@ -931,12 +936,14 @@ export default function BlogFortyNine() {
           access to the latest version of your application.
         </p>
         <p>To publish your app, use:</p>
-        <CopyBlock
-          text={code19}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code19}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <p>You should see something like this:</p>
         <Image
           loading="lazy"
@@ -1062,24 +1069,28 @@ export default function BlogFortyNine() {
           First, install the required AWS Amplify libraries for
           React:
         </p>
-        <CopyBlock
-          text={code24}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code24}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <h5>Configure AWS Amplify in React</h5>
         <p>
           In your React application's entry point (typically
           index.js), import and configure AWS Amplify with the cloud
           resources you provisioned earlier:
         </p>
-        <CopyBlock
-          text={code25}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code25}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <p>
           The{" "}
           <code
@@ -1122,12 +1133,14 @@ export default function BlogFortyNine() {
           </code>
           :
         </p>
-        <CopyBlock
-          text={code26}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code26}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <p>
           In this example, we're fetching a list of todos from the
           GraphQL API using the{" "}
@@ -1181,12 +1194,14 @@ export default function BlogFortyNine() {
           </code>
           ;
         </p>
-        <CopyBlock
-          text={code27}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true} />
+        <p>
+          <CopyBlock
+            text={code27}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true} />
+        </p>
         <p>
           In this example, we're demonstrating how to upload a file
           to the Amazon S3 bucket using the{" "}

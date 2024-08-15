@@ -267,46 +267,54 @@ export default function BlogFifty() {
           Open your terminal and run the following command to create
           a new React project:
         </p>
-        <CopyBlock
-          text={code1}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code1}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>Navigate into the project directory:</p>
-        <CopyBlock
-          text={code2}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code2}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <h4>Step 2: Install AWS SDK for JavaScript</h4>
         <p>
           We'll use the AWS SDK for JavaScript to interact with the
           SNS service. Install it by running the following command:
         </p>
-        <CopyBlock
-          text={code3}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code3}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <h4>Step 3: Configure AWS Credentials</h4>
         <p>Create a file `aws.config.js` in your `src` .</p>
         <p>
           You can store your AWS credentials in a `.env` file and
           import it here.
         </p>
-        <CopyBlock
-          text={code4}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code4}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>
           In this step, we import the aws-sdk library and configure
           our AWS credentials. We create a new file aws.config.js to
@@ -342,13 +350,15 @@ export default function BlogFifty() {
         />
         <br />
         <h4>Step 5: Create a Subscription Form Component</h4>
-        <CopyBlock
-          text={code5}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code5}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>
           In this component, we import the `sns` instance from our
           `aws.config.js` file. We also use the `useState` hook to
@@ -426,13 +436,15 @@ export default function BlogFifty() {
           alt="Building Fullstack app with React and AWS Amplify - Authentication and Databases"
         />
         <h4>Step 8: Broadcasting Emails</h4>
-        <CopyBlock
-          text={code6}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code6}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>
           This component is similar to the `SubscriptionForm`
           component, but instead of subscribing emails, it allows
@@ -514,13 +526,15 @@ export default function BlogFifty() {
         <p>
           Finally we can throw in some styling with React Boostrap
         </p>
-        <CopyBlock
-          text={code7}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code7}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>…and there we have it:</p>
         <Image
           loading="lazy"

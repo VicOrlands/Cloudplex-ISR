@@ -6,12 +6,17 @@
     font-family: var(--font-inter);
 }
 
+.blog ul {
+    list-style: disc;
+}
+
 .socials {
     padding-top: 40px;
 }
 
 .socials li {
     font-family: var(--font-inter);
+    font-size: 1.6rem;
     padding-top: 40px;
     width: fit-content;
 }
@@ -26,7 +31,7 @@
 }
 
 .main-content h1 {
-    font-size: 28px;
+    font-size: 2.8rem;
     font-family: var(--font-inter);
     font-weight: 32px;
     margin-bottom: 10px;
@@ -39,16 +44,18 @@
     border: 1px solid #eaeaea;
 }
 
+.main-content h2,
+.main-content h3,
 .main-content h4,
 .main-content h5 {
     font-family: var(--font-inter);
-    font-size: 24px;
+    font-size: 2.4rem;
     margin-bottom: 5px;
 }
 
 .main-content h6 {
     font-family: var(--font-inter);
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .main-content a {
@@ -57,14 +64,14 @@
 
 .main-content p,
 .main-content li {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: var(--font-inter);
-    line-height: 28px;
+    line-height: 2.8rem;
     margin-bottom: 20px;
 }
 
 .main-content li b {
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 /* mobile */
@@ -85,29 +92,30 @@
     .socials li {
         padding-top: 0px;
         padding-left: 20px;
+        font-size: 1.4rem;
     }
 
     .main-content h1 {
-        font-size: 24px;
+        font-size: 2.4rem;
     }
 
     .main-content h4,
     .main-content h5 {
-        font-size: 20px;
+        font-size: 2rem;
     }
 
     .main-content h6 {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     .main-content p,
     .main-content li {
-        font-size: 14px;
-        line-height: 26px;
+        font-size: 1.4rem;
+        line-height: 2.6rem;
     }
 
     .main-content li b {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .main-content ol {

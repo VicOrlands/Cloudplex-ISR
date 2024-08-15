@@ -103,13 +103,15 @@ export default function BlogForty() {
 
         <h5>Configure AWS CLI</h5>
         <p>Open your terminal or command prompt and type:</p>
-        <CopyBlock
-          text={code1}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code1}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>Follow the prompts to enter:</p>
         <ul>
           <li>AWS Access Key ID</li>
@@ -124,33 +126,39 @@ export default function BlogForty() {
 
         <h5>AWS Settings and Configuration:</h5>
         <h6>Set Default Region:</h6>
-        <CopyBlock
-          text={code2}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code2}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>Sets the default region for AWS CLI commands.</p>
 
         <h6>Set Output Format:</h6>
-        <CopyBlock
-          text={code3}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code3}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>Sets the default output format for AWS CLI commands.</p>
 
         <h6>Enable/Disable Paging:</h6>
-        <CopyBlock
-          text={code4}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code4}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>Enables or disables paging for command output.</p>
 
         <h5>Profile Management:</h5>
@@ -165,46 +173,54 @@ export default function BlogForty() {
         </p>
 
         <h6>List Profiles:</h6>
-        <CopyBlock
-          text={code5}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code5}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>Lists all configured profiles.</p>
 
         <h6>Create a Profile:</h6>
-        <CopyBlock
-          text={code6}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code6}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>Creates a new named profile.</p>
 
         <h6>Switch Profiles (Temporary):</h6>
-        <CopyBlock
-          text={code7}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code7}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>
           Temporarily sets a specific profile for the current
           terminal session.
         </p>
 
         <h6>Delete a Profile:</h6>
-        <CopyBlock
-          text={code8}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code8}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>Deletes a specific named profile.</p>
 
         <h5>AWS Simple Storage Server (S3)</h5>
@@ -219,65 +235,75 @@ export default function BlogForty() {
 
         <h6>List S3 Buckets</h6>
         <p>To view all S3 buckets in your account, use:</p>
-        <CopyBlock
-          text={code9}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code9}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>
           Explanation: This command lists all the S3 buckets in your
           AWS account.
         </p>
 
         <h6>Create an S3 Bucket</h6>
-        <CopyBlock
-          text={code10}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code10}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>
           This command creates a new S3 bucket with the provided
           name.
         </p>
 
         <h6>Upload a file to an S3 bucket:</h6>
-        <CopyBlock
-          text={code11}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code11}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>
           This command copies a file from your local system to the
           specified S3 bucket.
         </p>
 
         <h6>Download a File from S3 Bucket</h6>
-        <CopyBlock
-          text={code12}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code12}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>
           It retrieves a file from the specified S3 bucket and saves
           it to the provided local destination.
         </p>
 
         <h6>Delete an empty S3 bucket</h6>
-        <CopyBlock
-          text={code13}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code13}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>This command removes the specified empty S3 bucket.</p>
 
         <h5>AWS Elastic Compute Cloud (EC2)</h5>
@@ -294,39 +320,45 @@ export default function BlogForty() {
         <p>Here are some usefull commands:</p>
 
         <h6>List all running EC2 instances</h6>
-        <CopyBlock
-          text={code14}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code14}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>
           It displays information about all running EC2 instances in
           your AWS account.
         </p>
 
         <h6>Start a stopped EC2 instance:</h6>
-        <CopyBlock
-          text={code15}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code15}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>
           This command initiates a stopped EC2 instance using its
           instance ID.
         </p>
 
         <h6>Stop a running EC2 instance:</h6>
-        <CopyBlock
-          text={code16}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code16}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>
           It halts a running EC2 instance specified by its instance
           ID.
@@ -342,39 +374,45 @@ export default function BlogForty() {
         <p>Basic IAM Operations:</p>
 
         <h6>List IAM users in your AWS account:</h6>
-        <CopyBlock
-          text={code17}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code17}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>
           This command provides a list of all IAM users in your AWS
           account.
         </p>
 
         <h6>Create a new IAM user:</h6>
-        <CopyBlock
-          text={code18}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code18}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>
           This command generates a new IAM user with the provided
           username.
         </p>
 
         <h6>Attach Policy:</h6>
-        <CopyBlock
-          text={code19}
-          language="javascript"
-          showLineNumbers={false}
-          theme={a11yDark}
-          wrapLongLines={true}
-        />
+        <p>
+          <CopyBlock
+            text={code19}
+            language="javascript"
+            showLineNumbers={false}
+            theme={a11yDark}
+            wrapLongLines={true}
+          />
+        </p>
         <p>Attaches an IAM policy to a user.</p>
 
         <h5>Conclusion:</h5>

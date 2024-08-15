@@ -1,7 +1,7 @@
 .cloud-resource-page {
   padding: 0 150px;
   font-family: var(--font-inter);
-  font-size: 10px;
+  font-size: 1rem;
 }
 
 .cloud-resource-dynamo-hero-section {
@@ -15,16 +15,16 @@
 
 .cloud-resource-dynamo-hero-section div h1 {
   color: #344054;
-  font-size: 2.8rem;
+  font-size: 4.48rem;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
 .cloud-resource-dynamo-hero-section div p {
   color: #344054;
-  font-size: 1.4rem;
+  font-size: 2.24rem;
   font-weight: 400;
-  line-height: 2srem;
+  line-height: 2.8rem;
   margin-bottom: 30px;
 }
 
@@ -35,7 +35,7 @@
   border: 1px solid #d0d5dd;
   padding: 14px 20px;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -72,7 +72,7 @@
   display: block;
   color: #101828;
   font-family: var(--font-inter);
-  font-size: 2rem;
+  font-size: var(--font-size-h2);
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -81,7 +81,7 @@
 .cloud-resource-stories .heading p {
   color: #667085;
   font-family: var(--font-inter);
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   font-weight: 400;
 }
 
@@ -114,7 +114,7 @@
 .cloud-resource-services-column div h3 {
   color: #101828;
   font-family: var(--font-inter);
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -122,9 +122,9 @@
 .cloud-resource-services-column div p {
   color: #667085;
   font-family: var(--font-inter);
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.8rem;
+  line-height: 2.6rem;
 }
 
 /* media query for small screen */
@@ -140,11 +140,12 @@
   }
 
   .cloud-resource-dynamo-hero-section div h1 {
-    font-size: 28px;
+    font-size: 2.4rem;
   }
 
   .cloud-resource-dynamo-hero-section div p {
-    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
   }
 
   .partnership-hero-btn {
@@ -153,6 +154,7 @@
   }
 
   .partnership-hero-btn a {
+    font-size: 1.4rem;
     width: 100%;
     text-align: center;
   }
@@ -173,11 +175,12 @@
   }
 
   .cloud-resource-services h3 {
-    font-size: 16px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
   }
 
   .cloud-resource-services h2 {
-    font-size: 24px;
+    font-size: var(--font-size-h2-sm);
     margin-bottom: 5px;
   }
 
@@ -191,6 +194,10 @@
     margin-bottom: 20px;
   }
 
+  .cloud-resource-services-column div h3 {
+    font-size: 1.8rem;
+  }
+
   .cloud-resource-stories {
     margin: -30px 0 -70px 0;
   }
@@ -200,10 +207,10 @@
   }
 
   .cloud-resource-stories .heading h2 {
-    font-size: 24px;
+    font-size: var(--font-size-h2-sm);
   }
 
   .cloud-resource-stories .heading p {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 }

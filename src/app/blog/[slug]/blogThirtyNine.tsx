@@ -589,13 +589,15 @@ export default class BlogThirtyNine extends Component {
           </p>
 
           <h6>Test data</h6>
-          <CopyBlock
-            text={code1}
-            language="javascript"
-            showLineNumbers={false}
-            theme={a11yDark}
-            wrapLongLines={true}
-          />
+          <p>
+            <CopyBlock
+              text={code1}
+              language="javascript"
+              showLineNumbers={false}
+              theme={a11yDark}
+              wrapLongLines={true}
+            />
+          </p>
 
           <h5>Sentiment Analysis Implementation</h5>
           <p>

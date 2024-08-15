@@ -1,7 +1,7 @@
 .main-cloudfront-page {
   padding: 0 150px;
-    font-family: var(--font-inter);
-  font-size: 10px;
+  font-family: var(--font-inter);
+  font-size: 1rem;
 }
 
 .cloudfront-dynamo-hero-section {
@@ -15,16 +15,16 @@
 
 .cloudfront-dynamo-hero-section div h1 {
   color: #344054;
-  font-size: 2.8rem;
+  font-size: 4.48rem;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
 .cloudfront-dynamo-hero-section div p {
   color: #344054;
-  font-size: 1.4rem;
+  font-size: 2.24rem;
   font-weight: 400;
-  line-height: 2.2rem;
+  line-height: 3.4rem;
   margin-bottom: 30px;
 }
 
@@ -35,7 +35,7 @@
   border: 1px solid #d0d5dd;
   padding: 14px 20px;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -70,16 +70,16 @@
 
 .cloudfront-services h2 {
   color: #101828;
-    font-family: var(--font-inter);
-  font-size: 2rem;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-h2);
   font-weight: 600;
   margin-bottom: 15px;
 }
 
 .cloudfront-services h3 {
   color: #667085;
-    font-family: var(--font-inter);
-  font-size: 1.2rem;
+  font-family: var(--font-inter);
+  font-size: 2rem;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -99,17 +99,17 @@
 
 .cloudfront-services-column div h3 {
   color: #101828;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 600;
-    font-family: var(--font-inter);
+  font-family: var(--font-inter);
 }
 
 .cloudfront-services-column div ul li {
   color: #667085;
-    font-family: var(--font-inter);
-  font-size: 1rem;
+  font-family: var(--font-inter);
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.8rem;
+  line-height: 2.6rem;
 }
 
 /* media query for small screen */
@@ -125,19 +125,21 @@
   }
 
   .cloudfront-dynamo-hero-section div h1 {
-    font-size: 28px;
+    font-size: 2.4rem;
   }
 
   .cloudfront-dynamo-hero-section div p {
-    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 
   .cloudfront-partnership-hero-btn {
     display: flex;
     flex-wrap: wrap;
   }
-
+  
   .cloudfront-partnership-hero-btn a {
+    font-size: 1.4rem;
     width: 100%;
     text-align: center;
   }
@@ -159,11 +161,11 @@
   }
 
   .cloudfront-services h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   .cloudfront-services h2 {
-    font-size: 24px;
+    font-size: var(--font-size-h2-sm);
     margin-bottom: 5px;
   }
 

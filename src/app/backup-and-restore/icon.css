@@ -1,0 +1,19 @@
+.svg {
+    margin-right: 10px;
+}
+
+.icon {
+    margin-bottom: 40px;
+}
+
+/* mobile */
+@media screen and (max-width:768px) {
+    .svg {
+        height: 28px;
+        width: 28px;
+    }
+
+    .icon {
+        margin-bottom: 40px;
+    }
+}

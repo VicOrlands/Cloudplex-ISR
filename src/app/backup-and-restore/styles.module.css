@@ -1,420 +1,257 @@
 .backup {
-    padding: 70px 0;
     font-family: var(--font-inter);
 }
 
-.backup h2 {
-    color: var(--color-h2);
-    font-family: var(--font-inter);
-    font-size: var(--font-size-h2);
-    margin-bottom: 10px;
+.bg-backup {
+    background-size: contain;
+    padding-top: 8vh;
+    height: 90vh;
 }
 
 .backup-hero {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    height: 55vh;
+    height: 100%;
     padding: 0 10%;
 }
 
-.backup-hero img {
-    height: auto;
-    width: auto;
-    margin: auto;
-}
-
 .backup-hero h1 {
-    font-size: 44px;
-    color: #344054;
+    font-size: 6rem;
+    line-height: 7.2rem;
+    color: #101828;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 
 .backup-hero p {
-    color: #344054;
-    font-size: 18px;
+    color: #475467;
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 1.6;
-    margin-bottom: 16px;
+    line-height: 2.4rem;
+    margin-bottom: 30px;
 }
 
-.btn-group {
+.backup-hero ul li {
+    color: #475467;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     display: flex;
     align-items: center;
-    width: 80%;
+    margin-bottom: 20px;
 }
 
-.btn-group a {
-    width: 100%;
-}
-
-.btn-group .btn {
+.backup-hero .logos {
+    height: 30px;
     margin-right: 20px;
+    width: auto;
+}
+
+.backup-hero h6 {
+    color: #475467;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.hero-img {
+    height: auto;
+    width: 80%;
+    margin-left: auto;
 }
 
 /* modules */
-.modules,
-.whitepaper,
-.pricing-page {
-    padding: 50px 15%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.modules {
+    padding: 40px 10%;
 }
 
-.modules p {
-    color: #344054;
-    font-size: 18px;
-    line-height: 26px;
-}
-
-.modules-heading p {
-    margin-bottom: 30px;
-}
-
-.modules-cloud div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.modules-cloud div:last-child {
-    margin-bottom: 0;
-}
-
-.modules-cloud div img {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-}
-
-/* whitepaper */
-.whitepaper {
-    display: flex;
-    align-items: center;
-    color: #344054;
-}
-
-.whitepaper-card {
-    border: 0;
-    background: none;
-    box-shadow: 0px 28.8845157623291px 39.13385772705078px 0px rgba(81, 107, 235, 0.19);
-}
-
-.whitepaper-card img,
-.flex-module img {
-    height: auto;
-    width: auto;
-}
-
-.whitepaper-card h4 {
-    font-size: 20px;
+.modules h2 {
+    color: #101828;
+    font-size: 3.6rem;
     font-weight: 600;
-    margin: 20px;
+    margin-bottom: 40px;
 }
 
-.whitepaper-text {
-    margin-left: 50px;
-}
-
-.whitepaper-text h3 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.whitepaper-text a {
-    border-radius: 8px;
-    border: 1px solid #d0d5dd;
-    box-shadow: 0px 1px 2px 0px #1018280d;
-    color: #344054;
-    cursor: pointer;
-    font-family: var(--font-inter);
-    font-weight: 600;
-    font-size: 16px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-}
-
-.whitepaper-text a:hover,
-.pricing-tab a:hover {
-    border: 1px solid #878b91;
-}
-
-/* flex-modules */
-.flex-module {
+.grid {
     display: grid;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 70px;
+}
+
+.saas-grid {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.flex-module img {
-    margin: auto;
-}
-
-/* pricing module */
-.pricing-page h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.pricing-tab,
-.cloud-storage {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 70px;
-}
-
-.pricing-tab div {
-    background: #3e54ac;
-    color: white;
-    box-shadow: 0px 2px 12px rgba(20, 20, 43, 0.08);
-    border-radius: 24px;
-    padding: 20px;
-}
-
-.pricing-tab div h3 {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.pricing-page div i {
-    margin-right: 10px;
-}
-
-.pricing-tab div h4 {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 20px;
-    margin-bottom: 20px;
-}
-
-.pricing-tab div p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.pricing-page div:first-child p,
-.pricing-page div:first-child li {
-    color: #D9DBE9;
-}
-
-.pricing-tab div ul {
-    margin-bottom: 20px;
-}
-
-.pricing-tab div li {
+.grid h3 {
+    color: #101828;
+    font-size: 2rem;
     margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 20px;
-    display: flex;
+}
+
+.grid p {
+    color: #475467;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+/* footer */
+.footer {
+    background-color: #10193B;
+    box-shadow: 0px 20px 24px -4px #10182814;
+    display: grid;
+    grid-template-columns: 60% 40%;
     align-items: center;
+    border-radius: 24px;
 }
 
-.pricing-tab div:nth-child(2) {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    border: 1px solid #eff0f7;
-    background-color: #fff;
-    color: #170f49;
+.footer div {
+    padding: 0 10%;
 }
 
-.pricing-tab a,
-.cloud-form button {
-    background: #fff;
-    border-radius: 8px;
-    border: 1px solid #d0d5dd;
-    box-shadow: 0px 1px 2px 0px #1018280d;
-    color: #344054;
-    cursor: pointer;
-    font-size: 16px;
+.footer h2 {
+    color: #fff;
+    font-size: 3.6rem;
     font-weight: 600;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    width: fit-content;
+    line-height: 4.4rem;
 }
 
-/* cloud-storage */
-.cloud-storage {
-    padding: 50px 15%;
+.footer p {
+    color: #C2C8EF;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.8rem;
 }
 
-.cloud-text p {
-    font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 20px;
+.footer a {
+    margin: 0;
+    margin-top: 20px;
 }
 
-.cloud-text img {
+.footer img {
+    width: 100%;
     height: auto;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.cloud-form label {
-    color: #344054;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.cloud-form .input-field {
-    border: 1px solid #d0d5dd;
-    border-radius: 8px;
-    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-    display: flex;
-    align-items: center;
-    margin-top: 8px;
-    margin-bottom: 20px;
-}
-
-.cloud-form input,
-.cloud-form select {
-    background-color: transparent;
-    border: #fff;
-    color: #344054;
-    font-size: 16px;
-    width: 100%;
-    outline: #fff;
-    height: 100%;
-    padding: 10px 10px 10px 0;
-}
-
-.cloud-form select {
-    color: #344054;
-    cursor: pointer;
-}
-
-.cloud-form i {
-    margin: 0 10px;
-    margin-top: 5px;
-}
-
-.cloud-form button {
-    background: #3e54ac;
-    color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
 }
 
 /* mobile */
 @media screen and (max-width:768px) {
-    .backup {
-        padding: 0;
-        padding-bottom: 50px;
-    }
 
-    .backup h2 {
-        font-size: var(--font-size-h2-sm);
+    .bg-backup {
+        height: fit-content;
+        background-size: cover;
     }
 
     .backup-hero {
         grid-template-columns: 1fr;
-        height: fit-content;
         padding: 0 20px;
-        padding-bottom: 30px;
     }
 
-    .backup-hero h1 {
-        font-size: 28px;
-    }
-
-    .backup-hero p {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .btn-group {
+    .hero-img {
+        height: auto;
         width: 100%;
-    }
-
-    /* modules */
-    .modules,
-    .whitepaper,
-    .pricing-page {
-        padding: 30px 20px;
-    }
-
-    .modules p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .modules-cloud div {
-        margin-bottom: 20px;
-    }
-
-    /* whitepaper */
-    .whitepaper {
-        flex-wrap: wrap;
-    }
-
-    .whitepaper-card img {
-        width: 100%;
-    }
-
-    .whitepaper-card h4 {
-        font-size: 18px;
-    }
-
-    .whitepaper-text {
-        margin: 0;
-        margin-top: 30px;
-    }
-
-    .whitepaper-text h3 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    /* flex-modules */
-    .flex-module {
-        grid-template-columns: 1fr;
-    }
-
-    .flex-module img {
+        margin: auto;
         grid-area: 1;
     }
 
-    /* pricing module */
-    .pricing-tab,
-    .cloud-storage {
+    .backup-hero h1 {
+        font-size: 3rem;
+        line-height: 2.3rem;
+    }
+
+    .backup-hero p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .backup-hero ul li {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .backup-hero .logos {
+        height: 20px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .backup-hero .logos:last-child {
+        margin-bottom: 0;
+    }
+
+    .backup-hero h6 {
+        margin-top: 20px;
+    }
+
+    /* modules */
+    .modules {
+        padding: 40px 20px;
+    }
+
+    .modules h2 {
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+    }
+
+    .grid {
         grid-template-columns: 1fr;
         gap: 40px;
+        margin-bottom: 70px;
     }
 
-    .pricing-tab div h3 {
-        font-size: 20px;
+    .saas-grid {
+        grid-template-columns: 1fr;
     }
 
-    .pricing-tab div h4 {
-        font-size: 16px;
+    .grid h3 {
+        font-size: 1.8rem;
     }
 
-    .pricing-tab div p {
-        font-size: 16px;
+    .grid p {
+        font-size: 1.4rem;
+        line-height: 2rem;
     }
 
-    .pricing-tab div li {
-        font-size: 16px;
+    /* footer */
+    .footer {
+        grid-template-columns: 100%;
     }
 
-    /* cloud-storage */
-    .cloud-storage {
+    .footer div {
         padding: 30px 20px;
     }
 
-    .cloud-text p {
-        font-size: 16px;
-        line-height: 24px;
+    .footer h2 {
+        font-size: 3rem;
+        line-height: 3.8rem;
     }
+
+    .footer p {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    .footer a {
+        background-color: #fff;
+        border: 1px solid #D0D5DD;
+        box-shadow: 0px 0px 0px 1px #1018282E inset;
+        color: #344054;
+        width: 100%;
+    }
+
+    .footer a:hover {
+        background-color: #fff;
+        border: 1px solid #D0D5DD;
+    }
+
+    .footer img {
+        border-radius: 0;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+
+    }
+
 }

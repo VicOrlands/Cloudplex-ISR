@@ -15,14 +15,14 @@
 
 .awslambda-page .hero h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 4.48rem;
     font-weight: 800;
     margin-bottom: .5rem;
 }
 
 .awslambda-page .hero p {
     text-align: center;
-    font-size: 20px;
+    font-size: 2.24rem;
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 1rem;
@@ -37,7 +37,7 @@
 }
 
 .awslambda-page .grid-column h2 {
-    font-size: 26px;
+    font-size: 2.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.5;
@@ -46,7 +46,7 @@
 
 .awslambda-page .grid-column p {
     color: #344054;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
@@ -73,11 +73,11 @@
     }
 
     .awslambda-page .hero h1 {
-        font-size: 28px;
+        font-size: 2.4rem;
     }
 
     .awslambda-page .hero p {
-        font-size: 16px;
+        font-size: 1.4rem;
     }
 
     .awslambda-page .grid-column {
@@ -87,7 +87,7 @@
     }
 
     .awslambda-page .grid-column h2 {
-        font-size: 26px;
+        font-size: var(--font-size-h2-sm);
         font-style: normal;
         font-weight: 700;
         line-height: 1.5;
@@ -96,8 +96,8 @@
 
     .awslambda-page .grid-column p {
         color: #344054;
-        font-size: 18px;
-        line-height: 1.6;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
         margin-bottom: 1rem;
     }
 

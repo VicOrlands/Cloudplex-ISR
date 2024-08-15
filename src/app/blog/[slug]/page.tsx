@@ -52,7 +52,7 @@ import BlogTwentyOne from './blogTwentyone';
 import BlogTwentyThree from './blogTwentythree';
 import BlogTwentyTwo from './blogTwentytwo';
 import BlogFour from './blogFour';
-
+import BlogFiftyFour from './blogFiftyFour';
 
 export async function generateStaticParams() {
     return blogs.map(({ link }) => ({
@@ -61,6 +61,10 @@ export async function generateStaticParams() {
 }
 
 const paths = [
+    {
+        comp: <BlogFiftyFour />,
+        url: "building-an-image-analyzer-with-react-and-amazon-rekognition",
+    },
     {
         comp: <BlogFiftyThree />,
         url: "migrating-your-applications-to-the-cloud-the-7-rs-of-cloud-migration",

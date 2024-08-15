@@ -1,6 +1,6 @@
 .cloud-migration {
   font-family: var(--font-inter);
-  font-size: 10px;
+  font-size: 1rem;
 }
 
 .cloud-migration-hero-section {
@@ -14,18 +14,18 @@
 
 .cloud-migration-hero-section div h1 {
   color: #344054;
-  font-size: 2.8rem;
+  font-size: 4.48rem;
   font-weight: 800;
+  line-height: 6rem;
   margin-bottom: 10px;
-  line-height: 3.8rem;
 }
 
 .cloud-migration-hero-section div p {
   color: #344054;
-  font-size: 1.4rem;
+  font-size: 2.24rem;
   font-weight: 400;
   margin-bottom: 30px;
-  line-height: 30px;
+  line-height: 3.4rem;
 }
 
 .partnership-hero-btn a {
@@ -35,7 +35,7 @@
   border: 1px solid #d0d5dd;
   padding: 14px 20px;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -74,13 +74,13 @@
 .cloud-migration-cost div h2 {
   color: #344054;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .cloud-migration-cost div p {
   color: #000;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 30px;
   margin-top: 20px;
 }
@@ -97,7 +97,7 @@
 .cloud-migration-success #success-h2 {
   color: #344054;
   font-weight: 800;
-  font-size: 28px;
+  font-size: 2.8rem;
   padding-left: 5%;
   margin: 0;
   display: block;
@@ -106,7 +106,7 @@
 .cloud-migration-success #p-header {
   color: #667085;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2rem;
   margin-bottom: -50px;
   padding-left: 5%;
 }
@@ -121,7 +121,7 @@
 .cloud-migration-product h2 {
   color: #344054;
   font-weight: 800;
-  font-size: 28px;
+  font-size: 2.8rem;
   text-align: left;
   margin: 0;
 }
@@ -146,14 +146,14 @@
 .cloud-migration-product-data div h4 {
   color: #344054;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 2.4rem;
   margin-bottom: 10px;
 }
 
 .cloud-migration-product-data div p {
   color: #344054;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 /* media query for small screen */
@@ -167,18 +167,19 @@
   }
 
   .cloud-migration-hero-section div h1 {
-    font-size: 30px;
+    font-size: 2.4rem;
     line-height: 34px;
     font-weight: 700;
   }
 
   .cloud-migration-hero-section div p {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 26px;
     margin-bottom: 20px;
   }
 
   .partnership-hero-btn a {
+    font-size: 1.4rem;
     display: block;
     text-align: center;
   }
@@ -207,7 +208,7 @@
   }
 
   .cloud-migration-cost div p {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 24px;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -227,7 +228,7 @@
 
   .cloud-migration-success #p-header {
     padding: 0 20px;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   /* cloud-migration-product */
@@ -256,13 +257,13 @@
   }
 
   .cloud-migration-product-data div h4 {
-    font-size: 24px;
+    font-size: 2.4rem;
     text-align: center;
     margin: 0;
   }
 
   .cloud-migration-product-data div p {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 24px;
     text-align: center;
   }

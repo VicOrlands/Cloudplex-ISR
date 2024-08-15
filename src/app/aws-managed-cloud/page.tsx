@@ -72,10 +72,7 @@ export default function AWSManagedCloud() {
                         AWS Managed Service Solutions.
                     </h1>
                     <p>
-                        Experience unparalleled scalability and reliability with AWS
-                        Managed Cloud Service by CloudPlexo designed to simplify your
-                        cloud infrastructure management. Let's manage your cloud and
-                        you can focus on your business.s
+                        Experience unparalleled scalability and reliability with AWS Managed Cloud Service by CloudPlexo designed to simplify your cloud infrastructure management. Let's manage your cloud and you can focus on your business.
                     </p>
 
                     <div className={styles["hero-button"]}>

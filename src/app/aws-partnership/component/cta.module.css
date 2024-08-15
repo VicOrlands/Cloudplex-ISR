@@ -15,7 +15,7 @@
 .call-to-action h3 {
     color: #fff;
     font-family: var(--font-inter);
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 600;
     margin-bottom: 30px;
 }
@@ -23,6 +23,6 @@
 /* small screen */
 @media (max-width: 768px) {
     .call-to-action h3 {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }

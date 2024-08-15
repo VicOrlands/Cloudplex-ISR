@@ -31,7 +31,7 @@
 
 .eventsHero h1 {
     font-family: var(--font-inter);
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 600;
     margin: 0;
     margin-bottom: 30px;
@@ -39,7 +39,7 @@
 
 .eventsHero p {
     font-family: var(--font-inter);
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 34px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -103,7 +103,7 @@
 .eventSocialsImgContainer div h5 {
     color: #fff;
     font-family: var(--font-inter);
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 
@@ -114,7 +114,7 @@
 .eventSocialsBodyContainer h3 {
     font-family: var(--font-inter);
     color: #101828;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
     line-height: 32px;
     margin-bottom: 15px;
@@ -123,7 +123,7 @@
 .eventSocialsBodyContainer p {
     color: #344054;
     font-family: var(--font-inter);
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 20px;
@@ -136,7 +136,7 @@
 .eventSocialsBodyContainer a {
     font-family: var(--font-inter);
     color: #3e54ac;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     line-height: 24px;
     text-decoration: none;
@@ -150,7 +150,7 @@
 
 .eventWebinars h2 {
     font-family: var(--font-inter);
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 700;
     line-height: 26px;
     margin-bottom: 20px;
@@ -193,13 +193,13 @@
 .eventWebinarCardContent a {
     font-family: var(--font-inter);
     color: #3e54ac;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     line-height: 24px;
 }
 
 .eventWebinarCardContent a #icon {
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 /* eventPartners */
@@ -210,7 +210,7 @@
 .eventPartners h2 {
     color: #475467;
     font-family: var(--font-inter);
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     text-align: center;
     margin-bottom: 50px;
@@ -258,7 +258,7 @@
     }
 
     .eventsHero p {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     /* event-socials */

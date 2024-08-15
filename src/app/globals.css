@@ -5,11 +5,11 @@
   --color-h2: #344054;
 
   /* fonts */
-  --font-size-h2: 28px;
-  --font-size-h2-sm: 20px;
+  --font-size-h2: 2.8rem;
+  --font-size-h2-sm: 2rem;
 
-  --font-size-h3: 20px;
-  --font-size-h3-sm: 16px;
+  --font-size-h3: 2rem;
+  --font-size-h3-sm: 1.6rem;
 
 }
 
@@ -23,6 +23,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-size: 62.5%;
 }
 
 a {

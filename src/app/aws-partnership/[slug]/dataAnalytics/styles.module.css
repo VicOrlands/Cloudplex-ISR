@@ -49,7 +49,7 @@
 }
 
 .data-hero div h1 {
-  font-size: 44px;
+  font-size: 4.4rem;
   font-weight: 800;
   color: #ffffff;
   line-height: 58px;
@@ -57,7 +57,7 @@
 }
 
 .data-hero p {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 34px;
   color: #ffffff;
   width: 90%;
@@ -70,7 +70,7 @@
   border: none;
   color: #344054;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 24px;
   margin-top: 20px;
   padding: 10px 20px;
@@ -142,7 +142,7 @@
 
 .we-ai-flexsection div h4 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 29px;
   text-align: center;
   color: #094067;
@@ -158,7 +158,7 @@
 }
 
 .we-ai-flexsection div p {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 26px;
   text-align: center;
   color: #5f6c7b;
@@ -187,14 +187,14 @@
 .passion-driven-section div h5,
 .customers div h5 {
   color: #094067;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
 .passion-driven-section div p,
 .customers div p {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 28px;
   color: #5f6c7b;
@@ -204,7 +204,7 @@
 .passion-driven-section div a,
 .customers div a {
   color: var(--text-1, #344054);
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   border: none;
   border-radius: 8px;
@@ -263,7 +263,7 @@
 
 .canvas div p {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 24px;
   text-align: center;
   color: #094067;
@@ -337,7 +337,7 @@
 }
 
 .services section div h4 {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 22px;
   font-weight: 400;
   color: #3e54ac;
@@ -361,7 +361,7 @@
   background: #a9b2ff;
   color: #000b6b;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   border-radius: 4px;
   width: fit-content;
   margin-bottom: 10px;
@@ -375,7 +375,7 @@
 .services section div h5 {
   background: #f1f1f1;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 1.6rem;
   text-align: center;
   font-weight: 600;
   line-height: 28px;
@@ -397,7 +397,7 @@
   align-items: center;
   justify-content: flex-start;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 28px;
   margin: 0;
   margin-bottom: 10px;
@@ -406,13 +406,13 @@
 
 .services #service-font {
   fill: #000;
-  font-size: 20px;
+  font-size: 2rem;
   margin-right: 10px;
 }
 
 .services #service-close-font {
   fill: red;
-  font-size: 20px;
+  font-size: 2rem;
   margin-right: 10px;
 }
 
@@ -429,7 +429,7 @@
   border-radius: 3px;
   color: #ffffff;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-top: 10px;
   padding: 10px 0;
   width: 100%;
@@ -459,14 +459,14 @@
   }
 
   .data-hero div h1 {
-    font-size: 32px;
+    font-size: 2.4rem;
     line-height: 40px;
     text-align: center;
     margin-bottom: 10px;
   }
 
   .data-hero p {
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: center;
     width: 100%;
   }
@@ -510,14 +510,14 @@
 
   .passion-driven-section div h5,
   .customers div h5 {
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 10px;
   }
 
   .passion-driven-section div p,
   .customers div p {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 24px;
     text-align: center;
   }

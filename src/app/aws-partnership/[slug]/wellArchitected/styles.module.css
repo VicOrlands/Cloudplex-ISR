@@ -12,14 +12,14 @@
 }
 
 .hero-section-paragraph h1 {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 800;
   line-height: 49px;
   margin-bottom: 10px;
 }
 
 .hero-section-paragraph p {
-  font-size: 24px;
+  font-size: 2.2rem;
   font-weight: 500;
   line-height: 34px;
   margin-bottom: 20px;
@@ -29,7 +29,7 @@
   height: 44px;
   padding: 10px 20px 10px 20px;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   line-height: 24px;
   background-color: transparent;
@@ -47,14 +47,14 @@
 }
 
 .well-architected-review-matters h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   color: #344054;
   margin-bottom: 10px;
 }
 
 .well-architected-review-matters p {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 60px;
@@ -79,14 +79,14 @@
 }
 
 .pillars-of-well-architected-framework .pillar h3 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 5px;
   color: #000;
 }
 
 .pillars-of-well-architected-framework .pillar p {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
   color: #848484;
 }
@@ -97,7 +97,7 @@
 }
 
 .well-architected-reviews h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 10px;
   color: #344054;
@@ -111,13 +111,13 @@
 
 .well-architected-reviews .framework-review h3 {
   color: #000;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .well-architected-reviews .framework-review li {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 30px;
   color: #848484;
@@ -140,14 +140,14 @@
 
 .well-architected-form h2 {
   color: #344054;
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 800;
   line-height: 38px;
   margin-bottom: 20px;
 }
 
 .well-architected-form form label {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #344054;
   margin-bottom: 12px;
@@ -157,7 +157,7 @@
   padding: 10px 14px;
   border-radius: 6px;
   border: 1px solid #d0d5dd;
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-top: 5px;
 }
 
@@ -167,7 +167,7 @@
   background-color: #3e54ac;
   color: #fff;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.8rem;
   height: 44px;
   margin-top: 10px;
   padding: 10px 22px;
@@ -193,7 +193,7 @@
   }
 
   .hero-section-paragraph h1 {
-    font-size: 28px !important;
+    font-size: 2.4rem !important;
     font-weight: 800;
     line-height: 34px;
   }
@@ -204,6 +204,10 @@
     line-height: 17px;
   }
 
+  .hero-section-paragraph a {
+    font-size: 1.4rem;
+  }
+
   /* well-architected-review-matters */
   .well-architected-review-matters,
   .well-architected-reviews {
@@ -211,7 +215,7 @@
   }
 
   .well-architected-review-matters h2 {
-    font-size: 18px !important;
+    font-size: 1.8rem !important;
   }
 
   .well-architected-review-matters p {
@@ -225,7 +229,7 @@
   }
 
   .pillars-of-well-architected-framework .pillar h3 {
-    font-size: 24px !important;
+    font-size: 2.4rem !important;
   }
 
   /* well-architected-reviews */
@@ -234,11 +238,11 @@
   }
 
   .well-architected-reviews h2 {
-    font-size: 18px !important;
+    font-size: 1.8rem !important;
   }
 
   .well-architected-reviews .framework-review h3 {
-    font-size: 24px !important;
+    font-size: 2.4rem !important;
   }
 
   /* well-architected-form */
@@ -254,7 +258,7 @@
   }
 
   .well-architected-form h2 {
-    font-size: 28px !important;
+    font-size: 2.8rem !important;
     line-height: 34px;
     margin-bottom: 25px;
   }

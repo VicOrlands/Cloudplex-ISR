@@ -51,6 +51,7 @@ import blog51 from "@/assets/blog/blog51/AWS Browser tools and extensions to enh
 import blog52 from "@/assets/blog/blog52/cover.webp";
 import blog53 from "@/assets/blog/blog53/thumbnail.webp";
 import blog54 from "@/assets/blog/Moving successfully to the Amazon Cloud.webp";
+import blog55 from "@/assets/blog/blog54/Building an image analyzer with react and amazon rekognition.webp";
 
 export interface BlogsProps {
     image: StaticImageData,
@@ -61,6 +62,13 @@ export interface BlogsProps {
 }
 
 export const blogs: BlogsProps[] = [
+    {
+        image: blog55,
+        title: "Building an Image Analyzer with React and Amazon Rekognition",
+        desc: "In this tutorial, we'll create an Image Analyzer app using React and Amazon Rekognition. This app allows users to upload images and receive AI-powered analysis of the content, including object detection and text recognition.",
+        link: "building-an-image-analyzer-with-react-and-amazon-rekognition",
+        date: '12 August 2024'
+    },
     {
         image: blog54,
         title: "Moving successfully to the Amazon Cloud",

@@ -15,13 +15,14 @@
 }
 
 .footer h5 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .footer ul li {
     line-height: 28px;
+    font-size: 1.6rem;
 }
 
 .first-div {
@@ -29,7 +30,8 @@
 }
 
 .first-div p {
-    line-height: 28px;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
     margin-bottom: 10px;
 }
 
@@ -60,10 +62,6 @@
     .first-div {
         width: 100%;
     }
-
-    .footer-social-links a {
-        margin-right: 20px;
-    }
 }
 
 /* mobile */
@@ -76,11 +74,17 @@
         flex-wrap: wrap;
     }
 
+    .footer img {
+        width: 30%;
+    }
+
     .first-div {
         width: 100%;
     }
 
-    .footer-social-links a {
-        margin-right: 20px;
+    .footer ul li,
+    .first-div p {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
     }
 }

@@ -188,12 +188,14 @@ export default class BlogFortyTwo extends Component {
           </ol>
           <br /> <br />
           <h4>Uploading a File to S3:</h4>
-          <CopyBlock
-            text={code1}
-            language="javascript"
-            showLineNumbers={false}
-            theme={a11yDark}
-            wrapLongLines={true} />
+          <p>
+            <CopyBlock
+              text={code1}
+              language="javascript"
+              showLineNumbers={false}
+              theme={a11yDark}
+              wrapLongLines={true} />
+          </p>
           <h6>Explanation:</h6>
           <ul>
             <li>
@@ -219,12 +221,14 @@ export default class BlogFortyTwo extends Component {
             For best practices, you should set both secrets in an
             environmental variable, And retrieve them like this:
           </p>
-          <CopyBlock
-            text={code2}
-            language="javascript"
-            showLineNumbers={false}
-            theme={a11yDark}
-            wrapLongLines={true} />
+          <p>
+            <CopyBlock
+              text={code2}
+              language="javascript"
+              showLineNumbers={false}
+              theme={a11yDark}
+              wrapLongLines={true} />
+          </p>
           <p>
             Additionally, If you already have a profile setup in your
             AWS CLI, we can get rid of the{" "}
@@ -261,21 +265,25 @@ export default class BlogFortyTwo extends Component {
             This process might be unreasonable in a Devops workflow.
           </p>
           <p>Hence our code witll be reduced to this:</p>
-          <CopyBlock
-            text={code3}
-            language="javascript"
-            showLineNumbers={false}
-            theme={a11yDark}
-            wrapLongLines={true} />
+          <p>
+            <CopyBlock
+              text={code3}
+              language="javascript"
+              showLineNumbers={false}
+              theme={a11yDark}
+              wrapLongLines={true} />
+          </p>
           <br />
           <br />
           <h4>Downloading a File from S3:</h4>
-          <CopyBlock
-            text={code4}
-            language="javascript"
-            showLineNumbers={false}
-            theme={a11yDark}
-            wrapLongLines={true} />
+          <p>
+            <CopyBlock
+              text={code4}
+              language="javascript"
+              showLineNumbers={false}
+              theme={a11yDark}
+              wrapLongLines={true} />
+          </p>
           <h6>Explanation:</h6>
           <ul>
             <li>

@@ -34,7 +34,8 @@
 
 .main-header-nav .header-links .dropdown-container {
   color: #101828;
-  font-size: 0.95rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   font-family: var(--font-inter);
   font-weight: 500;
   margin-right: 20px;
@@ -58,6 +59,7 @@
 .drop-down h4 {
   color: #3e54ac;
   font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 
@@ -90,7 +92,8 @@
 
 .drop-down-content a {
   color: #101828;
-  font-size: 0.95rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
   border-bottom: 1px solid #d0d5dd;
   padding: 20px 0 2px 0;
@@ -110,6 +113,7 @@
   border-radius: 8px;
   color: #fff;
   font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   padding: 10px 20px;
@@ -247,6 +251,7 @@
     display: flex;
     align-items: center;
     font-size: 16px;
+    font-size: 1.6rem;
     font-family: var(--font-inter);
     font-weight: 600;
     color: #667085;
@@ -414,6 +419,7 @@
     display: flex;
     align-items: center;
     font-size: 16px;
+    font-size: 1.6rem;
     font-family: var(--font-inter);
     font-weight: 600;
     color: #667085;

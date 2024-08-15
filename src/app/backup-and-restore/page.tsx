@@ -1,20 +1,19 @@
-import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import styles from "./styles.module.css";
-import { FiArrowRight } from "react-icons/fi";
-import { ButtonLink, ButtonTranparentLink } from "@/components/button/Button";
-
-import image2 from "@/assets/backup/note.png";
-import image3 from "@/assets/backup/file.png";
-import AWSLogo from "@/assets/backup/aws.png";
-import HeroImage from "@/assets/backup/hero.png";
-import AzureLogo from "@/assets/backup/azure.png";
-import image from "@/assets/backup/whitepaper.png";
-import GoogleLogo from "@/assets/backup/google.png";
+import { ButtonLink } from "@/components/button/Button";
+import { Icon, AwsIcon, AzureIcon, KvmIcon } from "./Icon";
+import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 import clsx from "clsx";
-import PricingModule from "./PricingModule";
-import CloudStorage from "./CloudStorage";
+
+import AWSLogo from "@/assets/backup/aws.png";
+import footer from "@/assets/backup/footer.png"
+import Veeam from "@/assets/backup/veam logo.png";
+import HeroImage from "@/assets/backup/hero.webp";
+import AzureLogo from "@/assets/backup/azure.png";
+import GoogleLogo from "@/assets/backup/google.png";
+import BdrLogo from "@/assets/backup/BDR Suite logo.png";
+import BgImg from "@/assets/backup/Backgroundpattern.png";
 
 export const metadata: Metadata = {
   title: "CloudPlexo Backup & Recovery Solutions - Protect Your Data",
@@ -22,133 +21,247 @@ export const metadata: Metadata = {
   keywords: ['Data backup', 'Ransomware protection', 'Cloud data recovery', 'Hybrid cloud backup', 'Multi-cloud data protection']
 };
 
+const logos = [
+  AWSLogo,
+  GoogleLogo,
+  AzureLogo,
+  Veeam,
+  BdrLogo
+]
+
+const cloud = [
+  {
+    icon: <AwsIcon />,
+    title: 'AWS Backup & Recovery',
+    body: 'Backup EC2 instances without agents, store backups in the cloud or on-premises, with full instance and volume-level recovery.'
+  },
+  {
+    icon: <AzureIcon />,
+    title: 'Azure Backup & Recovery',
+    body: 'Backup virtual machines without an agent, store backups in the cloud or on local servers, and perform complete recovery at both the VM and volume level.'
+  },
+  {
+    icon: <AzureIcon />,
+    title: 'GCP Backup & Recovery',
+    body: 'Agentless backup for Google Cloud VMs, store backups in Google Cloud Storage or on-premises, and perform full VM and volume-level recovery.'
+  }
+]
+
+const virtual = [
+  {
+    icon: <AwsIcon />,
+    title: 'VMware Backup & Replication',
+    body: 'Agentless VM backup & replication, Instant VM & granular recovery, Store backups locally or cloud.'
+  },
+  {
+    icon: <AzureIcon />,
+    title: 'Hyper-V Backup & Replication',
+    body: 'Agentless VM backup & replication, Instant VM & granular recovery, Store backups locally or cloud.'
+  },
+  {
+    icon: <KvmIcon />,
+    title: 'KVM Backup & Replication',
+    body: 'Agentless VM backup, Instant VM restore, granular recovery, Store backups locally or cloud.'
+  }
+]
+
+const application = [
+  {
+    icon: <AwsIcon />,
+    title: 'AWS Backup & Recovery',
+    body: 'Backup EC2 instances without agents, store backups in the cloud or on-premises, with full instance and volume-level recovery.'
+  },
+  {
+    icon: <AzureIcon />,
+    title: 'Azure Backup & Recovery',
+    body: 'Backup virtual machines without an agent, store backups in the cloud or on local servers, and perform complete recovery at both the VM and volume level.'
+  },
+  {
+    icon: <AzureIcon />,
+    title: 'GCP Backup & Recovery',
+    body: 'Agentless backup for Google Cloud VMs, store backups in Google Cloud Storage or on-premises, and perform full VM and volume-level recovery.'
+  }
+]
+
+const endpoint = [
+  {
+    icon: <AwsIcon />,
+    title: 'Windows Endpoint Backup & Recovery',
+    body: 'Disk-image backup & BMR, File-level backup, Remote backup with centralized management.'
+  },
+  {
+    icon: <AzureIcon />,
+    title: 'Linux Endpoint Backup & Recovery',
+    body: 'File-level backup & recovery, Store backups locally or cloud, Remote backup with centralized management.'
+  },
+  {
+    icon: <KvmIcon />,
+    title: 'Mac Endpoint Backup & Recovery',
+    body: 'File-level backup & recovery, Store backups locally or cloud, Remote backup with centralized management.'
+  }
+]
+
+const server = [
+  {
+    icon: <AwsIcon />,
+    title: 'Windows Server Backup & Recovery',
+    body: 'Disk-image backup & BMR, File-level backup, Remote backup with centralized management.'
+  },
+  {
+    icon: <AzureIcon />,
+    title: 'Linux Endpoint Backup & Recovery',
+    body: 'File-level backup & recovery, Store backups locally or cloud, Remote backup with centralized management.'
+  },
+  {
+    icon: <KvmIcon />,
+    title: 'NAS Backup & Recovery',
+    body: 'File-level backup & recovery, CIFS/NFS share backup – NAS, Windows, Linux, Store backups locally or cloud.'
+  }
+]
+
+const saas = [
+  {
+    icon: <AwsIcon />,
+    title: 'Microsoft 365 Backup & Recovery',
+    body: 'Backup for Mails, OneDrive, Sites & Teams, Store backups locally or cloud, Restore to same/different user.'
+  },
+  {
+    icon: <AzureIcon />,
+    title: 'Google Workspace Backup & Recovery',
+    body: 'Backup for Gmail, Google Drive & Shared Drive, Store backups locally or cloud, Restore to same/different user.'
+  },
+]
+
 function Main() {
   return (
     <div className={styles["backup"]}>
-      <section className={styles["backup-hero"]}>
-        <Image
-          src={HeroImage}
-          alt="CloudPlexo Backup & Recovery Solutions - Protect Your Data"
-        />
-
-        <div>
-          <h1>Backup & Restore</h1>
-          <p>
-            Backup and Recover your data from On-premise or Cloud.<br />
-            Protect your data from Ransomware.<br />
-            Hybrid and Multi-cloud.
-          </p>
-
-          <div className={styles["btn-group"]}>
-            <ButtonLink
-              link="/contact-us"
-              title="Contact Us" className={styles["btn"]} />
-            <ButtonTranparentLink
-              link="#backup-services"
-              title="Learn More" />
-          </div>
-        </div>
-      </section>
-
-      <section className={styles["modules"]} id="backup-services">
-        <div className={styles["modules-heading"]}>
-          <h2>Data Backup & Recovery</h2>
-          <p>
-            Backing up your data is a crucial to be safe from Ransomware.
-            CloudPlexo Backup and Recovery solution provides an automated
-            backup and recovery solution for Desktops, laptops,
-            think-clients, servers and also data stored in the cloud. Backup
-            and restore is secure both at rest or in transit.
-          </p>
-        </div>
-
-        <div className={styles["modules-cloud"]}>
-          <h2>Cloud Modules</h2>
-
+      <LazyBackgroundImage src={BgImg} className={styles["bg-backup"]}>
+        <section className={styles["backup-hero"]}>
           <div>
-            <Image
-              src={AWSLogo}
-              alt="Backup with AWS"
-            />
-            <p>Backup with AWS</p>
+            <h1>Backup & Restore</h1>
+            <br />
+            <br />
+
+            <p>Backup and Recover your data from On-premise or Cloud.</p>
+            <p>Protect your data from Ransomware.</p>
+            <p>Hybrid and Multi-cloud.</p>
+
+            <ul>
+              <li><Icon /> Cloud Backup & Recover</li>
+              <li><Icon /> Virtual Machine Backup & Recovery</li>
+              <li><Icon /> Application Backup & Recovery</li>
+              <li><Icon /> Endpoint backup & Recovery</li>
+              <li><Icon /> Server backup & Recovery</li>
+            </ul>
+
+            <h6>Our Partners</h6>
+            {
+              logos.map(item => (
+                <Image src={item} key={item.src}
+                  className={styles["logos"]}
+                  alt="Our Partners - CloudPlexo Backup & Recovery Solutions" />
+              ))
+            }
           </div>
 
-          <div>
-            <Image
-              src={AzureLogo}
-              alt="Backup with Microsoft Azure"
-            />
-            <p>Backup with Microsoft Azure</p>
-          </div>
-
-          <div>
-            <Image
-              src={GoogleLogo}
-              alt="Backup with Google Cloud"
-            />
-            <p>Backup with Google Cloud</p>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles["whitepaper"]}>
-        <div className={styles["whitepaper-card"]}>
           <Image
-            src={image}
-            alt="How Secure is Your Data"
+            src={HeroImage}
+            className={styles["hero-img"]}
+            alt="CloudPlexo Backup & Recovery Solutions - Protect Your Data"
           />
+        </section>
+      </LazyBackgroundImage>
 
-          <h4>How Secure is Your Data?</h4>
+      <section className={styles["modules"]}>
+        <h2>Cloud Backup and Recovery</h2>
+        <div className={styles["grid"]}>
+          {
+            cloud.map(item => (
+              <div key={item.title}>
+                <>{item.icon}</>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </div>
+            ))
+          }
         </div>
 
-        <div className={styles["whitepaper-text"]}>
-          <h3>Get the latest insights and trends on Cloud Security and Recovery.</h3>
-
-          <Link href="/whitepaper">
-            View Whitepaper <FiArrowRight size={20} style={{ marginLeft: 5 }} />
-          </Link>
+        <h2>Virtual Machine Backup and Recovery</h2>
+        <div className={styles["grid"]}>
+          {
+            virtual.map(item => (
+              <div key={item.title}>
+                <>{item.icon}</>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </div>
+            ))
+          }
         </div>
+
+        <h2>Application Backup and Recovery</h2>
+        <div className={styles["grid"]}>
+          {
+            application.map(item => (
+              <div key={item.title}>
+                <>{item.icon}</>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </div>
+            ))
+          }
+        </div>
+
+        <h2>Endpoint Backup and Recovery</h2>
+        <div className={styles["grid"]}>
+          {
+            endpoint.map(item => (
+              <div key={item.title}>
+                <>{item.icon}</>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </div>
+            ))
+          }
+        </div>
+
+        <h2>Server Backup and Recovery</h2>
+        <div className={styles["grid"]}>
+          {
+            server.map(item => (
+              <div key={item.title}>
+                <>{item.icon}</>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </div>
+            ))
+          }
+        </div>
+
+        <h2>SaaS Backup and Recovery</h2>
+        <div className={clsx(styles["grid"], styles["saas-grid"])}>
+          {
+            saas.map(item => (
+              <div key={item.title}>
+                <>{item.icon}</>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </div>
+            ))
+          }
+        </div>
+
+        <section className={styles["footer"]}>
+          <div>
+            <h2>Don’t let data loss threaten your business continuity.</h2>
+            <p>Secure your data with a reliable backup solution. Take the first step towards peace of mind, knowing your business is protected with our cloud backup and restore services.</p>
+            <ButtonLink title="Get Started" link="/contact-us" className={styles["btn"]} />
+          </div>
+
+          <Image src={footer}
+            alt="CloudPlexo Backup & Recovery Solutions" />
+        </section>
       </section>
-
-      <section className={clsx(styles["modules"], styles["flex-module"])}>
-        <div>
-          <h2>Remote Backup of Your Data</h2>
-          <p>
-            All data are remotely backed up using our secured Backup and
-            Recovery Solution. A remote backup is a dedicated failsafe
-            solution for backing up on premise and cloud data. Remote
-            backup prevents data loss that can happen either as a result
-            of logical damage to software or physical damage to hardware.
-            Physical damage could be as a result of a manmade or natural
-            disaster.
-          </p>
-        </div>
-
-        <Image
-          src={image2}
-          alt="Remote Backup of Your Data"
-        />
-      </section>
-
-      <section className={clsx(styles["modules"], styles["flex-module"])}>
-        <Image
-          src={image3}
-          alt="Prevent Data Loss Due to Failed Storage Drives"
-        />
-
-        <div>
-          <h2>Prevent Data Loss Due to Failed Storage Drives</h2>
-          <p>
-            In the case of a data loss due to manmade or natural disasters
-            that can result to a failure of a storage drive. Our secured
-            and reliable Backup and Recovery tool can help prevent storage
-            drive failure data loss.
-          </p>
-        </div>
-      </section>
-
-      <PricingModule />
-      <CloudStorage />
     </div>
   );
 }

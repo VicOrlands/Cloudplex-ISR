@@ -1,8 +1,22 @@
+"use client"
+
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import "./videoplayer.css"
 import styles from "./styles.module.css";
+import 'video-react/dist/video-react.css';
+import { Player, BigPlayButton } from "video-react";
+
+import EventsSuccess from "./event/Event";
 import { supportArray } from "./arrayList";
+import FaqPage from "@/components/faq/faq";
+import Review from "../landing/review/Review";
+import { QuestionsProps } from "../aws-partnership/[slug]/cloudMigration/questions";
+
 import logo from "@/assets/startups/logo.png";
 import hero_map from "@/assets/startups/hero_map.webp";
+import posterImage from "@/assets/startups/poster.webp";
 import Partner9 from "@/assets/startups/partners/sdc.png";
 import Partner8 from "@/assets/startups/partners/root.png";
 import Partner6 from "@/assets/startups/partners/logo1.png";
@@ -13,12 +27,6 @@ import Partner7 from "@/assets/startups/partners/vatebra_logo.png";
 import Partner1 from "@/assets/startups/partners/MaxFiles-logo.png";
 import Partner5 from "@/assets/startups/partners/ibadan_startup.png";
 import Partner10 from "@/assets/startups/partners/start_innovation_hub.png";
-import Image from "next/image";
-import Review from "../landing/review/Review";
-import FaqPage from "@/components/faq/faq";
-import { QuestionsProps } from "../aws-partnership/[slug]/cloudMigration/questions";
-import Link from "next/link";
-import EventsSuccess from "./event/Event";
 
 const FAQ: QuestionsProps[] = [];
 
@@ -67,6 +75,16 @@ export default function Startups() {
               alt="Ready to supercharge your startup journey? - Cloudplexo"
             />
           </section>
+        </div>
+
+        <div className={styles["video-section"]}>
+          <Player
+            playsInline
+            poster={posterImage.src}
+            src="https://cloudplexo.com/cloudplexo-startup-video.mp4"
+          >
+            <BigPlayButton position="center" className={styles["video-button"]} />
+          </Player>
         </div>
 
         <div className={styles["support-section"]}>

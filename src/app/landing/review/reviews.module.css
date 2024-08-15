@@ -48,7 +48,7 @@
 
 .contentWrap h6 {
     font-family: var(--font-inter);
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #000;
     margin: 0;
@@ -56,14 +56,14 @@
 
 .contentWrap .quote {
     color: #344054;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
     text-align: left;
     margin: 0;
 }
 
 .contentWrap .quoteSpeaker {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
     color: #000;
@@ -75,7 +75,7 @@
     border: 1px solid #d0d5dd;
     border-radius: 8px;
     color: #344054;
-    font-size: 14px;
+    font-size: 1.4rem;
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
     margin-bottom: 20px;
     padding: 10px 16px;
@@ -171,7 +171,7 @@
     color: #fff;
     text-align: center;
     font-family: var(--font-inter);
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 600;
     line-height: 60px;
     margin-top: 12px;
@@ -181,7 +181,7 @@
     color: #fff;
     text-align: center;
     font-family: var(--font-inter);
-    font-size: 30px;
+    font-size: 3rem;
     font-style: normal;
     line-height: 46px;
 }
@@ -215,6 +215,7 @@
     .contentWrap h6,
     .contentWrap .quoteSpeaker {
         margin-bottom: 20px;
+        font-size: 1.4rem;
     }
 
     .contentWrap .quote {
@@ -260,12 +261,12 @@
     }
 
     .reviewsHeader {
-        font-size: 30px;
+        font-size: 3rem;
         margin-top: 12px;
     }
 
     .reviewsPara {
-        font-size: 20px;
+        font-size: 2rem;
     }
 }
 
@@ -281,11 +282,11 @@
         font-size: var(--font-size-h2-sm);
     }
 
-
     /* reviewVideo */
     .reviewVideo {
         padding: 30px 20px;
         padding-bottom: 0;
+        margin-bottom: -100px;
     }
 
     .videoWrap {
@@ -322,6 +323,7 @@
     }
 
     .reviewsCarouselContainer {
+        margin-bottom: -50px;
         padding: 0;
     }
 
@@ -360,12 +362,12 @@
     }
 
     .reviewsHeader {
-        font-size: 24px;
+        font-size: 2.4rem;
         margin-top: 12px;
     }
 
     .reviewsPara {
-        font-size: 16px;
+        font-size: 1.4rem;
         line-height: 24px;
         width: 100%;
     }

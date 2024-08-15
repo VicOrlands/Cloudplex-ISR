@@ -436,23 +436,26 @@ export default class BlogFortySeven extends Component {
             Import Boto3 and Initialize DynamoDB Client: Import the
             Boto3 library and initialize the DynamoDB client.
           </p>
-          <CopyBlock
-            text={code2}
-            language="javascript"
-            showLineNumbers={false}
-            theme={a11yDark}
-            wrapLongLines={true} />
-
+          <p>
+            <CopyBlock
+              text={code2}
+              language="javascript"
+              showLineNumbers={false}
+              theme={a11yDark}
+              wrapLongLines={true} />
+          </p>
           <p>
             Creating an Item: Use the put_item method to insert an
             item into a DynamoDB table.
           </p>
-          <CopyBlock
-            text={code3}
-            language="javascript"
-            showLineNumbers={false}
-            theme={a11yDark}
-            wrapLongLines={true} />
+          <p>
+            <CopyBlock
+              text={code3}
+              language="javascript"
+              showLineNumbers={false}
+              theme={a11yDark}
+              wrapLongLines={true} />
+          </p>
 
           <h6>Conclusion:</h6>
           <p>

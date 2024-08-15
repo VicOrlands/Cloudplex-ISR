@@ -417,12 +417,14 @@ export default class BlogFortySix extends Component {
             detect the file type and pass the result into the rest of
             the workflow for processing.
           </p>
-          <CopyBlock
-            text={code1}
-            language="javascript"
-            showLineNumbers={false}
-            theme={a11yDark}
-            wrapLongLines={true} />
+          <p>
+            <CopyBlock
+              text={code1}
+              language="javascript"
+              showLineNumbers={false}
+              theme={a11yDark}
+              wrapLongLines={true} />
+          </p>
 
           <p>
             Code for{" "}
@@ -444,12 +446,14 @@ export default class BlogFortySix extends Component {
             code:
           </p>
 
-          <CopyBlock
-            text={code2}
-            language="javascript"
-            showLineNumbers={false}
-            theme={a11yDark}
-            wrapLongLines={true} />
+          <p>
+            <CopyBlock
+              text={code2}
+              language="javascript"
+              showLineNumbers={false}
+              theme={a11yDark}
+              wrapLongLines={true} />
+          </p>
 
           <p>
             Code for{" "}
@@ -471,12 +475,14 @@ export default class BlogFortySix extends Component {
             code:
           </p>
 
-          <CopyBlock
-            text={code3}
-            language="javascript"
-            showLineNumbers={false}
-            theme={a11yDark}
-            wrapLongLines={true} />
+          <p>
+            <CopyBlock
+              text={code3}
+              language="javascript"
+              showLineNumbers={false}
+              theme={a11yDark}
+              wrapLongLines={true} />
+          </p>
 
           <p>
             Know that we have both functions ready, There are a few
@@ -666,12 +672,14 @@ export default class BlogFortySix extends Component {
           </p>
 
           <p>The code for this looks like this:</p>
-          <CopyBlock
-            text={code4}
-            language="javascript"
-            showLineNumbers={false}
-            theme={a11yDark}
-            wrapLongLines={true} />
+          <p>
+            <CopyBlock
+              text={code4}
+              language="javascript"
+              showLineNumbers={false}
+              theme={a11yDark}
+              wrapLongLines={true} />
+          </p>
 
           <p>
             Finally, you can hit the create button, to complete the

@@ -6,7 +6,7 @@
 
 .faq-section>h2 {
   color: #101828;
-  font-size: 36px;
+  font-size: var(--font-size-h2);
   font-weight: 600;
   text-align: center;
 }
@@ -28,7 +28,7 @@
 #faq-h2,
 .faq-section h4 {
   color: #101828;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
   margin: 0;
   margin-bottom: 10px;
@@ -37,7 +37,7 @@
 .faq p,
 #faq-p {
   color: #667085;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 30px;
 }
@@ -53,7 +53,7 @@
 }
 
 .faq section #icon {
-  font-size: 24px;
+  font-size: 2.4rem;
   fill: #6499e9;
   cursor: pointer;
 }
@@ -64,7 +64,7 @@
   background: var(--Primary, #3e54ac);
   color: var(--White, #fff);
   display: flex;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   justify-content: center;
   align-items: center;
@@ -115,7 +115,7 @@
   }
 
   .faq-section>h2 {
-    font-size: 24px;
+    font-size: var(--font-size-h2-sm);
     margin-bottom: 10px;
   }
 
@@ -126,8 +126,16 @@
 
   .faq h4,
   .faq-section h4 {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
     width: 90%;
     text-align: left;
+  }
+
+  .faq p,
+  #faq-p {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
   }
 
   .faq-section #faq-h2 {

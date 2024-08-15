@@ -171,15 +171,13 @@ export default class BlogFortyFive extends Component {
             Also, if you require a custom build setting, In your
             project root, you can add a amplify.yml where your can
             have something like this:
+            <CopyBlock
+              text={code1}
+              language="javascript"
+              showLineNumbers={false}
+              theme={a11yDark}
+              wrapLongLines={true} />
           </p>
-          <CopyBlock
-            text={code1}
-            language="javascript"
-            showLineNumbers={false}
-            theme={a11yDark}
-            wrapLongLines={true} />
-          <br />
-          <br />
 
           <p>
             Step 5: Review and Deploy
