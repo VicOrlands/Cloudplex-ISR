@@ -18,16 +18,16 @@
 
 .dynamo-hero-section div h1 {
   color: #344054;
-  font-size: 2.8rem;
+  font-size: 4.48rem;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
 .dynamo-hero-section div p {
   color: #344054;
-  font-size: 1.4rem;
+  font-size: 2.24rem;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 3.3rem;
   margin-bottom: 20px;
 }
 
@@ -58,7 +58,7 @@
 .aws-dynamo-services h2 {
   color: #101828;
   font-family: var(--font-inter);
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -66,7 +66,7 @@
 .aws-dynamo-services h3 {
   color: #667085;
   font-family: var(--font-inter);
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   font-weight: 400;
 }
 
@@ -86,16 +86,16 @@
 
 .aws-dynamo-services-column div h3 {
   color: #101828;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .aws-dynamo-services-column div ul li {
   color: #667085;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 2.6rem;
 }
 
 /* client stories */
@@ -107,7 +107,7 @@
   display: block;
   color: #101828;
   font-family: var(--font-inter);
-  font-size: 2rem;
+  font-size: var(--font-size-h2);
   font-weight: 600;
   margin-left: 5%;
   margin-bottom: 10px;
@@ -116,7 +116,7 @@
 .client-stories #heading-p {
   color: #667085;
   font-family: var(--font-inter);
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   margin-left: 5%;
   margin-bottom: -50px;
@@ -144,12 +144,12 @@
   }
 
   .dynamo-hero-section div h1 {
-    font-size: 28px;
+    font-size: 2.8rem;
   }
 
   .dynamo-hero-section div p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: var(--font-size-h3-sm);
+    line-height: 2.4rem;
   }
 
   .partnership-hero-btn {
@@ -174,11 +174,11 @@
   }
 
   .aws-dynamo-services h3 {
-    font-size: 16px;
+    font-size: var(--font-size-h3-sm);
   }
 
   .aws-dynamo-services h2 {
-    font-size: 24px;
+    font-size: var(--font-size-h2-sm);
     margin-bottom: 5px;
   }
 
