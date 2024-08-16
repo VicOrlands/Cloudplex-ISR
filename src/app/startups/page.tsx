@@ -50,7 +50,7 @@ export default function Startups() {
         <div className={styles["hero-section"]}>
           <section className={styles["hero-left"]}>
             <div className={styles["hero-img-parent"]}>
-              <h6>Startoff by</h6>
+              <h6>CloudPlexo For Startup</h6>
               <Image
                 loading="lazy"
                 src={logo}

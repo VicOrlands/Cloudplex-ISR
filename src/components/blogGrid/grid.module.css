@@ -147,6 +147,10 @@
         width: 100%;
     }
 
+    .contentTitle {
+        margin-bottom: 20px;
+    }
+
     .textDesc,
     .button {
         font-size: 1.4rem;
