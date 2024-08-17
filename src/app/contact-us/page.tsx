@@ -188,6 +188,10 @@ const Contact = () => {
                 >
                     Submit
                 </button>
+
+                <h3>Nigeria: <span>+234 901 226 2543, +234 707 049 4845</span></h3>
+                <h3>United Kingdom: <span>+447776447637</span></h3>
+                <h3>You can reach us anytime via <span>contact@cloudplexo.com</span></h3>
             </div>
 
             <LazyBackgroundImage src={BgImg} className={styles["contact-bg"]}>
