@@ -183,10 +183,10 @@ const Contact = () => {
         </button>
 
         <h3>
-          Nigeria: <span>+234 901 226 2543, +234 707 049 4845</span>
+          United Kingdom: <span>+442070721919</span>
         </h3>
         <h3>
-          United Kingdom: <span>+442070721919</span>
+          Nigeria: <span>+234 901 226 2543, +234 707 049 4845</span>
         </h3>
         <h3>
           You can reach us anytime via <span>contact@cloudplexo.com</span>
