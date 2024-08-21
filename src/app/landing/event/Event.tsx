@@ -55,13 +55,6 @@ interface EventProps {
 }
 
 const eventSuccessArray: EventProps[] = [
-    // {
-    //     img: convexity,
-    //     imgText: ``,
-    //     text: `With CloudPlexo, they help you to get a robust solution that will stand the test of time.<br /><br /> <b>CTO | Co-founder - Convexity</b>`,
-    //     images: [],
-    //     width: 307,
-    // },
     {
         img: businessDayLogo,
         imgText: `We were thrilled to co-host & sponsor the BusinessDay Economic Club's "C-Suite Executives Roundtable Dinner." It was an evening of insightful discussions and valuable connections.`,

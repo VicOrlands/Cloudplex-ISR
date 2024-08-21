@@ -15,8 +15,8 @@
 
 /* reviewVideo */
 .reviewVideo {
-    padding: 30px 300px 50px 300px;
     padding: 30px 5% 50px 5%;
+    position: relative;
 }
 
 .videoWrap {
@@ -34,7 +34,7 @@
     box-shadow: rgba(0, 0, 0, 0.13) 0px 5px 15px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     font-family: var(--font-inter);
     padding: 10px 20px;
     padding-bottom: 40px;
@@ -56,10 +56,11 @@
 
 .contentWrap .quote {
     color: #344054;
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.2rem;
     text-align: left;
-    margin: 0;
+    margin: 20px 0 10px 0;
 }
 
 .contentWrap .quoteSpeaker {
@@ -68,13 +69,14 @@
     font-weight: 500;
     color: #000;
     text-align: left;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 .contentWrap a {
     border: 1px solid #d0d5dd;
     border-radius: 8px;
     color: #344054;
+    cursor: pointer;
     font-size: 1.4rem;
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
     margin-bottom: 20px;
@@ -87,18 +89,32 @@
     color: #344054;
 }
 
-.contentWrap .controls {
+.mobile {
+    display: none;
+}
+
+.btngroup {
+    position: absolute;
+    top: 50%;
+    left: 3.5%;
+    right: 3.5%;
     display: flex;
+    justify-content: space-between;
 }
 
-.contentWrap button {
-    border: none;
-    background: none;
+.btngroup button {
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2.5px solid #e2e8f0;
+    color: #334155;
     cursor: pointer;
-}
-
-.contentWrap button:first-child {
-    margin-right: 20px;
+    height: 60px;
+    width: 60px;
+    font-size: 2.5rem;
+    outline: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* wordsReview */
@@ -223,6 +239,33 @@
         line-height: 30px;
     }
 
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .btngroup {
+        position: relative;
+        justify-content: flex-start;
+        margin-bottom: 0;
+        left: 0;
+        top: 15px;
+        padding: 0;
+    }
+
+    .btngroup button {
+        border-radius: 4px;
+        height: 40px;
+        width: 80px;
+    }
+
+    .btngroup button:first-child {
+        margin-right: 20px;
+    }
+
     /* wordsReview */
     .wordsReview {
         padding: 30px;
@@ -312,8 +355,36 @@
     }
 
     .contentWrap .quote {
+        font-size: 1.6rem;
+        line-height: 24px;
         margin-bottom: 10px;
-        line-height: 26px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .btngroup {
+        position: relative;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+        left: 0;
+        top: 15px;
+        padding: 0;
+    }
+
+    .btngroup button {
+        border-radius: 4px;
+        height: 40px;
+        width: 80px;
+    }
+
+    .btngroup button:first-child {
+        margin-right: 20px;
     }
 
     /* wordsReview */
