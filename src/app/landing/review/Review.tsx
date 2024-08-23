@@ -40,7 +40,7 @@ interface CaseStudyProps {
     company: string | null
 }
 
-const casestudy: CaseStudyProps[] = [
+export const casestudy: CaseStudyProps[] = [
     {
         id: 1,
         image: convexity,

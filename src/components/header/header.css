@@ -73,9 +73,9 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.dropdown-professional>.drop-down-content {
+/* .dropdown-professional>.drop-down-content {
   grid-template-columns: 1fr;
-}
+} */
 
 .dropdown-container:hover .drop-down {
   display: grid;
@@ -104,6 +104,7 @@
 .dropdown-resources a:nth-child(2),
 .dropdown-offerings a:nth-child(2),
 .dropdown-professional a:first-child,
+.dropdown-professional a:nth-child(2),
 .dropdown-offerings a:nth-child(3) {
   padding-top: 5px;
 }

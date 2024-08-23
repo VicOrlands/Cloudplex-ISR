@@ -43,8 +43,9 @@ const DesktopNav = () => {
                         </Link>
                         <div className="drop-down dropdown-professional">
                             <h4>Professional Services</h4>
-
                             <div className="drop-down-content">
+                                <Link href="/data-analytics">Data Analytics</Link>
+                                <Link href="/database-as-a-service">Database as a Service</Link>
                                 <Link href="/technologies">Omni-channel Contact Center</Link>
                                 <Link href="/devops-as-a-service">DevOps as a service</Link>
                                 <Link href="/training">Cloud Training</Link>
@@ -212,6 +213,8 @@ export default function Header() {
                                     <div
                                         className={`${isDropdownVisible === 2 && "show"}`}
                                     >
+                                        <Link onClick={closeMenu} href="/data-analytics">Data Analytics</Link>
+                                        <Link onClick={closeMenu} href="/database-as-a-service">Database as a Service</Link>
                                         <Link onClick={closeMenu} href="/technologies">Omni-channel Contact Center</Link>
                                         <Link onClick={closeMenu} href="/devops-as-a-service">DevOps as a service</Link>
                                         <Link onClick={closeMenu} href="/training">Cloud Training</Link>

@@ -16,8 +16,10 @@ import microsoft from "@/assets/landing/microsoft.webp";
 import cloudResource from "@/assets/landing/cloud.webp";
 import omniChannel from "@/assets/landing/omni-channel.webp";
 import managedcloud from "@/assets/landing/managedcloud.webp";
+import dataAnalytics from "@/assets/landing/data-analytics.webp"
 import cloudTraining from "@/assets/landing/cloud training.webp";
 import cloudmigration from "@/assets/landing/cloudmigration.webp";
+import databaseAsAService from "@/assets/landing/database-as-a-service.webp"
 
 interface ProfessionalType {
     name: string,
@@ -107,6 +109,18 @@ const serviceContent: ServiceTypes[] = [
 ];
 
 const professionalServices: ProfessionalType[] = [
+    {
+        name: "Data Analytics",
+        desc: "With real-time data processing and clear visualizations, CloudPlexo enables you to make smart decisions that drive growth.",
+        image: dataAnalytics,
+        link: "/data-analytics"
+    },
+    {
+        name: "Database as a Service",
+        desc: "We provide tailored architecture design, migration, and optimization services to ensure robust, secure, and cost-effective database operations for your business.",
+        image: databaseAsAService,
+        link: "/database-as-a-service"
+    },
     {
         name: "Omni-Channel Contact Center",
         desc: "Cloud-based contact-centre service that makes it easy for any business to deliver better customer service at lower cost. ",
