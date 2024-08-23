@@ -36,7 +36,7 @@ const Footer = () => {
                     loading="lazy"
                     alt="Wendu - Cloud Security and Cost"
                 />
-                <div>
+                <div className={styles["address"]}>
                     <p>
                         Headquarters: London 124 City Rd, London EC1V 2NX London, United Kingdom.
                     </p>

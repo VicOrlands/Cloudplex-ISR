@@ -1,7 +1,7 @@
 .footer {
     background-color: #3e54ac;
     color: #fff;
-    padding: 60px 20%;
+    padding: 60px 18%;
     font-family: var(--font-inter);
     display: grid;
     grid-template-areas: 'header header main main main';
@@ -11,22 +11,28 @@
 .footer img {
     width: auto;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .footer h5 {
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .footer ul li {
-    line-height: 28px;
+    margin-bottom: 10px;
     font-size: 1.6rem;
 }
 
 .first-div {
-    width: 70%;
+    width: 100%;
+}
+
+.first-div .address {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 70px;
 }
 
 .first-div p {
@@ -80,6 +86,11 @@
 
     .first-div {
         width: 100%;
+    }
+
+    .first-div .address {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
     .footer ul li,

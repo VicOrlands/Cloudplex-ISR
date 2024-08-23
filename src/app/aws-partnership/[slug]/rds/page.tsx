@@ -1,4 +1,3 @@
-import React from "react";
 import img2 from "@/assets/aws_partnership/rds/finance 1.png";
 import img1 from "@/assets/aws_partnership/rds/planning-schedule 1.png";
 import Image from "next/image";
