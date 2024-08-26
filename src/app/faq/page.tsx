@@ -26,7 +26,7 @@ const MainFaq: React.FC = () => {
       <h2>Frequently asked questions</h2>
       <h6>Answers to Common Queries</h6>
 
-      {/* {FAQ.map((faq) => (
+      {FAQ.map((faq) => (
         <div key={faq.id} className={classes["faq"]}>
           <section>
             <h4>{faq.question}</h4>
@@ -45,9 +45,9 @@ const MainFaq: React.FC = () => {
           </section>
           {dropdown.includes(faq.id) && <p>{faq.answer}</p>}
         </div>
-      ))} */}
+      ))}
 
-      {/* <section className={classes["faq-avatars"]}>
+      <section className={classes["faq-avatars"]}>
         <Image src={Avatar} alt="iLearnCloud" />
         <Image src={Avatar2} alt="iLearnCloud" />
         <Image src={Avatar3} alt="iLearnCloud" />
@@ -57,7 +57,7 @@ const MainFaq: React.FC = () => {
       <p id={classes["faq-p"]}>Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
       <Link href="/contact-us">
         Get in touch
-      </Link> */}
+      </Link>
     </section>
   );
 };
