@@ -26,6 +26,8 @@ import gtcologo from "@/assets/partners/GTCO_logo.webp";
 import BgImage from "@/assets/reviews/testimonialbg.webp"
 import convexityLogo from "@/assets/landing/convexitylogo.webp"
 import convexity from "@/assets/landing/convexity-placeholder.webp"
+import bitbarterLogo from "@/assets/landing/bitbarter.webp"
+import bitbarter from "@/assets/landing/bitbarter-thumbnail.webp"
 import clsx from "clsx";
 
 interface CaseStudyProps {
@@ -41,6 +43,18 @@ interface CaseStudyProps {
 }
 
 export const casestudy: CaseStudyProps[] = [
+    {
+        id: 5,
+        image: bitbarter,
+        link: "https://cloudplexo.com/BitBarter-Customer-review.mp4",
+        quote:
+            "“If you have issues around infrastructure layer provisioning & deployment, ClousPlexo might just be the right partner that you need.”",
+        company: null,
+        title: null,
+        logo: bitbarterLogo,
+        speaker: "CEO Bitbarter",
+        caselink: "/case-study",
+    },
     {
         id: 1,
         image: convexity,

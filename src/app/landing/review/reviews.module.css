@@ -89,6 +89,20 @@
     color: #344054;
 }
 
+.contentWrap .controls {
+    display: flex;
+}
+
+.contentWrap button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.contentWrap button:first-child {
+    margin-right: 20px;
+}
+
 .mobile {
     display: none;
 }
