@@ -48,7 +48,7 @@ export const casestudy: CaseStudyProps[] = [
         image: bitbarter,
         link: "https://cloudplexo.com/BitBarter-Customer-review.mp4",
         quote:
-            "“If you have issues around infrastructure layer provisioning & deployment, ClousPlexo might just be the right partner that you need.”",
+            "“If you have issues around infrastructure layer provisioning & deployment, CloudPlexo might just be the right partner that you need.”",
         company: null,
         title: null,
         logo: bitbarterLogo,
@@ -72,7 +72,7 @@ export const casestudy: CaseStudyProps[] = [
         image: img2,
         link: "https://cloudplexo.com/Liveli-Customer-Sucess.mp4",
         quote:
-            "“I would defintely advise anyone anybody to migrate their cloud services with a partner like Cloudplexo.”",
+            "“I would defintely advise anyone anybody to migrate their cloud services with a partner like CloudPlexo.”",
         company: null,
         title: null,
         logo: livelilogo,
@@ -86,7 +86,7 @@ export const casestudy: CaseStudyProps[] = [
         company: null,
         title: "CTO of Liveli",
         quote:
-            "“We highly recommend Cloudplexo, if  you are having any challenges  with your website and mobile apps”",
+            "“We highly recommend CloudPlexo, if  you are having any challenges  with your website and mobile apps”",
         logo: icanlogo,
         speaker: "Founder & CEO of IcanOnline Tutors",
         caselink: "/case-study/case-study-in-the-edtech-sector",
@@ -96,8 +96,8 @@ export const casestudy: CaseStudyProps[] = [
         image: img3,
         link: "https://cloudplexo.com/GT_Pension_Immersion+Day_Testimonial.mp4",
         company: "Guarantee Trust Pension Managers",
-        title: "Cloudplexo Immersion Day",
-        quote: `"I had a great time with the Cloudplexo team, learning more about AWS and the cloud"`,
+        title: "CloudPlexo Immersion Day",
+        quote: `"I had a great time with the CloudPlexo team, learning more about AWS and the cloud"`,
         logo: gtcologo,
         speaker: "Taiwo Owolabi",
         caselink: "/case-study/case-study-of-gt-pensions-managers",
@@ -171,7 +171,7 @@ const Review: React.FC = () => {
 
     return (
         <div className={styles.reviewContainer}>
-            <h2>With Cloudplexo, the possibilities for customer innovation are endless.</h2>
+            <h2>With CloudPlexo, the possibilities for customer innovation are endless.</h2>
 
             <div className={styles.reviewVideo}>
                 <Slider ref={setSliderRef} {...videosettings}>
