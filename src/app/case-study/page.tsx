@@ -15,11 +15,13 @@ import extraStyles from "../landing/review/reviews.module.css"
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 import clsx from "clsx";
 import {
-    BsArrowLeft,
-    BsArrowRight,
     BsArrowLeftCircle,
     BsArrowRightCircle,
 } from "react-icons/bs";
+import {
+    MdOutlineKeyboardArrowLeft,
+    MdOutlineKeyboardArrowRight,
+} from "react-icons/md";
 import 'video-react/dist/video-react.css';
 import { Player, BigPlayButton } from "video-react";
 
@@ -130,14 +132,6 @@ const CaseList: React.FC = () => {
         </button>
     );
 
-    const settings = {
-        nextArrow: <SlickArrowRight currentSlide={undefined} slideCount={undefined} />,
-        prevArrow: <SlickArrowLeft currentSlide={undefined} slideCount={undefined} />,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    };
     const videosettings = {
         dots: false,
         arrows: false,
@@ -193,26 +187,42 @@ const CaseList: React.FC = () => {
                                     <Link href={cases.caselink}>
                                         Read case study
                                     </Link>
-                                    <div className={extraStyles.controls}>
-                                        <button
-                                            type="button"
-                                            aria-label="button"
-                                            onClick={sliderRef?.slickPrev}
-                                        >
-                                            <BsArrowLeft size={25} color="#3E54AC" />
-                                        </button>
-                                        <button
-                                            type="button"
-                                            aria-label="button"
-                                            onClick={sliderRef?.slickNext}
-                                        >
-                                            <BsArrowRight size={25} color="#3E54AC" />
-                                        </button>
-                                    </div>
                                 </div>
+                                <section className={clsx(extraStyles.btngroup, extraStyles.mobile)}>
+                                    <button
+                                        type="button"
+                                        aria-label="Arrow pointing left"
+                                        onClick={sliderRef?.slickPrev}
+                                    >
+                                        <MdOutlineKeyboardArrowLeft />
+                                    </button>
+                                    <button
+                                        type="button"
+                                        aria-label="Arrow pointing right"
+                                        onClick={sliderRef?.slickNext}
+                                    >
+                                        <MdOutlineKeyboardArrowRight />
+                                    </button>
+                                </section>
                             </div>
                         ))}
                     </Slider>
+                    <section className={clsx(extraStyles.btngroup, extraStyles.desktop)}>
+                        <button
+                            type="button"
+                            aria-label="Arrow pointing left"
+                            onClick={sliderRef?.slickPrev}
+                        >
+                            <MdOutlineKeyboardArrowLeft />
+                        </button>
+                        <button
+                            type="button"
+                            aria-label="Arrow pointing right"
+                            onClick={sliderRef?.slickNext}
+                        >
+                            <MdOutlineKeyboardArrowRight />
+                        </button>
+                    </section>
                 </div>
 
                 <div className={styles["casestudy-list"]}>
