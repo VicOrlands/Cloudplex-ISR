@@ -17,6 +17,7 @@
 .socials li {
     font-family: var(--font-inter);
     font-size: 1.6rem;
+    list-style: none;
     padding-top: 40px;
     width: fit-content;
 }
@@ -38,10 +39,14 @@
 }
 
 .main-content img {
-    width: 100%;
+    width: 50%;
     height: auto;
     margin-bottom: 10px;
     border: 1px solid #eaeaea;
+}
+
+.main-content img:first-of-type {
+    width: 100%;
 }
 
 .main-content h2,

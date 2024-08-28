@@ -52,6 +52,7 @@ import blog52 from "@/assets/blog/blog52/cover.webp";
 import blog53 from "@/assets/blog/blog53/thumbnail.webp";
 import blog54 from "@/assets/blog/Moving successfully to the Amazon Cloud.webp";
 import blog55 from "@/assets/blog/blog54/Building an image analyzer with react and amazon rekognition.webp";
+import blog56 from "@/assets/blog/blog55/AWS Auto Scaling thumbnail.webp"
 
 export interface BlogsProps {
     image: StaticImageData,
@@ -62,6 +63,13 @@ export interface BlogsProps {
 }
 
 export const blogs: BlogsProps[] = [
+    {
+        image: blog56,
+        title: "Guide to AWS Auto Scaling",
+        desc: "An Auto Scaling group is a collection of Amazon EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management. These groups allow you to automatically adjust the number of EC2 instances in response to changing application demands, ensuring that you have the right number of instances available to handle the load at any given time.",
+        link: "guide-to-aws-auto-scaling",
+        date: '27 August 2024'
+    },
     {
         image: blog55,
         title: "Building an Image Analyzer with React and Amazon Rekognition",

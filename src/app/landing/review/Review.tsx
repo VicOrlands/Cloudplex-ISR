@@ -44,18 +44,6 @@ interface CaseStudyProps {
 
 export const casestudy: CaseStudyProps[] = [
     {
-        id: 5,
-        image: bitbarter,
-        link: "https://cloudplexo.com/BitBarter-Customer-review.mp4",
-        quote:
-            "“If you have issues around infrastructure layer provisioning & deployment, CloudPlexo might just be the right partner that you need.”",
-        company: null,
-        title: null,
-        logo: bitbarterLogo,
-        speaker: "CEO Bitbarter",
-        caselink: "/case-study",
-    },
-    {
         id: 1,
         image: convexity,
         link: "https://cloudplexo.com/Convexity_Case_Study_Testimonial.mp4",
@@ -66,6 +54,18 @@ export const casestudy: CaseStudyProps[] = [
         logo: convexityLogo,
         speaker: "CTO | Co-founder - Convexity",
         caselink: "/case-study/convexity-case-study",
+    },
+    {
+        id: 5,
+        image: bitbarter,
+        link: "https://cloudplexo.com/BitBarter-Customer-review.mp4",
+        quote:
+            "“If you have issues around infrastructure layer provisioning & deployment, CloudPlexo might just be the right partner that you need.”",
+        company: null,
+        title: null,
+        logo: bitbarterLogo,
+        speaker: "CEO Bitbarter",
+        caselink: "/case-study",
     },
     {
         id: 2,

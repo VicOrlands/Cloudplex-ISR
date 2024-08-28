@@ -53,6 +53,7 @@ import BlogTwentyThree from './blogTwentythree';
 import BlogTwentyTwo from './blogTwentytwo';
 import BlogFour from './blogFour';
 import BlogFiftyFour from './blogFiftyFour';
+import BlogFiftyFive from './blogFiftyFive';
 
 export async function generateStaticParams() {
     return blogs.map(({ link }) => ({
@@ -61,6 +62,10 @@ export async function generateStaticParams() {
 }
 
 const paths = [
+    {
+        comp: <BlogFiftyFive />,
+        url: "guide-to-aws-auto-scaling",
+    },
     {
         comp: <BlogFiftyFour />,
         url: "building-an-image-analyzer-with-react-and-amazon-rekognition",
