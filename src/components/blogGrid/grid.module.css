@@ -62,9 +62,8 @@
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 2.4rem;
-  height: 32px;
+  height: 5vh;
   color: #101828;
-  margin-right: 10px;
 }
 
 .textDesc {
@@ -121,6 +120,11 @@
     height: 20vh;
     width: 100%;
   }
+
+  .contentTitle h5 {
+    height: 6vh;
+    height: 7vh;
+  } 
 }
 
 /* mobile */
