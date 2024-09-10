@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from 'next/navigation';
 import { casestudy } from '../caseArray';
 import Mkobo from "./Mkobo"
@@ -27,6 +28,12 @@ import Silicon from './Silicon';
 import Staycon from './Staycon';
 import Suba from './Suba';
 import Varscon from './Varscon';
+
+type PageProps = {
+    params: {
+        slug: string;
+    };
+};
 
 export async function generateStaticParams() {
     return casestudy.map(({ link }) => ({
@@ -145,6 +152,17 @@ const paths = [
         url: "varscon-case-study"
     },
 ];
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { slug } = params;
+
+    return {
+        title: `${slug.charAt(0).toUpperCase() + slug.slice(1).replaceAll("-", " ")} - CloudPlexo's Expert Solutions`,
+        alternates: {
+            canonical: `https://cloudplexo.com/case-study/${slug}`,
+        },
+    };
+}
 
 const CaseStudyPage = ({ params }: { params: { slug: string } }) => {
     const { slug } = params

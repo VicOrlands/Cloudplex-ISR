@@ -61,9 +61,7 @@ export default function Startups() {
             <h1>
               Ready to <span>supercharge</span> your startup journey?
             </h1>
-            <p>
-              Access free perks and resources to scale your Startup from Africa to
-              the world.
+            <p>Access free perks and resources to scale your Startup from Africa to the world.
             </p>
             <Link href="/contact-us">Get started</Link>
           </section>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import styles from "./styles.module.css";
 import HeroImg from "@/assets/cloud-resource/hero.png";
 import MicrosoftWorkload from "@/assets/cloud-resource/microsoft.png";
@@ -9,6 +10,14 @@ import Review from "../landing/review/Review";
 import FaqPage from "@/components/faq/faq";
 import { questions } from "./questions";
 import { ButtonLink, ButtonTranparentLink } from "@/components/button/Button";
+
+export const metadata: Metadata = {
+  title: "Orchestrating Microsoft Workloads in the AWS Symphony",
+  description: "Embark on a revolutionary fusion of Microsoft Workloads and AWS with CloudPlexo, where expertise meets innovation.",
+  alternates: {
+    canonical: 'https://cloudplexo.com/microsoft-on-aws',
+  },
+};
 
 const Microsoft = () => {
   const awsservices = [

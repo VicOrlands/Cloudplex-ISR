@@ -4,7 +4,10 @@ import styles from "../terms-of-service/styles.module.css"
 export const metadata: Metadata = {
     title: "CloudPlexo Cookie Policy",
     description: "Learn how CloudPlexo uses cookies and how they impact your experience on our website and services. Review our Cookie Policy for details",
-    keywords: ['CloudPlexo Cookie Policy']
+    keywords: ['CloudPlexo Cookie Policy'],
+    alternates: {
+        canonical: 'https://cloudplexo.com/cookie-policy',
+    },
 };
 
 const PagePrivacy = () => {

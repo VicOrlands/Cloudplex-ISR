@@ -16,7 +16,6 @@ export interface MetaProps {
     slug: string
 }
 
-// metadata
 export async function generateMetadata({ params }: { params: MetaProps }) {
     const { slug } = params
     const currentEvent = EventsArray.find(event => event.link === slug)
@@ -25,7 +24,10 @@ export async function generateMetadata({ params }: { params: MetaProps }) {
     return {
         title: `Webinar: ${currentEvent ? currentEvent?.title : currentWebinar?.name}`,
         description: `Join CloudPlexo's webinars for insights into cloud cost savings, edge computing, leveraging cloud solutions for business growth, security foundations, cloud security, and cloud modernization.`,
-        keywords: ['Technology updates', 'Cloud industry insights', 'Webinars on cloud technology', 'Industry developments', 'Cloud trends']
+        keywords: ['Technology updates', 'Cloud industry insights', 'Webinars on cloud technology', 'Industry developments', 'Cloud trends'],
+        alternates: {
+            canonical: `https://cloudplexo.com/events/${slug}`,
+        },
     }
 }
 

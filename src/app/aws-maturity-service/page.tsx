@@ -18,7 +18,10 @@ export async function generateMetadata() {
   return {
     title: "AWS Maturity Assessment with CloudPlexo's Expert Solutions",
     description: `Elevate your AWS maturity in with CloudPlexo's expert services. Enhance performance, security, and scalability on the AWS platform. Explore our solutions now.`,
-    keywords: ['aws cloud maturity assessment']
+    keywords: ['aws cloud maturity assessment'],
+    alternates: {
+      canonical: 'https://cloudplexo.com/aws-maturity-assessment',
+    },
   }
 }
 

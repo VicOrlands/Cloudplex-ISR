@@ -33,7 +33,10 @@ export async function generateMetadata({ params }: { params: MetaProps }) {
     return {
         title: `${currentPaper?.name} - CloudPlexo Whitepaper`,
         description: `Read CloudPlexo's whitepaper on securing data and gain insights into cloud space, types of cloud, financial considerations, cloud services, cloud computing components, security, and the cloud adoption framework.`,
-        keywords: [currentPaper?.keyword, "CloudPlexo cloud space", "CloudPlexo cloud security"]
+        keywords: [currentPaper?.keyword, "CloudPlexo cloud space", "CloudPlexo cloud security"],
+        alternates: {
+            canonical: `https://cloudplexo.com/whitepaper/${slug}`,
+        },
     }
 }
 

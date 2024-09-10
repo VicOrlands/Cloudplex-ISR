@@ -64,12 +64,6 @@ export default function PressRelease() {
         },
     ];
 
-    //   <SEO
-    //     title="CloudPlexo Press Release"
-    //     description="Stay updated on the latest industry developments, news, interviews, and cutting-edge technologies with CloudPlexo's press releases"
-    //     keywords="Cloud Industry Updates, Cutting-Edge Technologies"
-    //   />
-
     return (
         <div className={styles["press-release"]}>
             <LazyBackgroundImage src={BgImg} className={styles["hero-bg"]}>

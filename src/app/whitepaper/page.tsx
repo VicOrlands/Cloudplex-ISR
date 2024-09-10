@@ -18,7 +18,10 @@ const MoreInfo = [
 export const metadata: Metadata = {
   title: "CloudPlexo Whitepapers & E-books",
   description: "Explore CloudPlexo's collection of whitepapers and e-books covering topics like cloud migration, cloud security, cloud services, and more. Stay updated with industry insights.",
-  keywords: ['CloudPlexo industry insights', 'CloudPlexo resources', 'CloudPlexo whitepapers', 'CloudPlexo e-books']
+  keywords: ['CloudPlexo industry insights', 'CloudPlexo resources', 'CloudPlexo whitepapers', 'CloudPlexo e-books'],
+  alternates: {
+    canonical: "https://cloudplexo.com/whitepaper"
+  }
 };
 
 function WhitePaper() {

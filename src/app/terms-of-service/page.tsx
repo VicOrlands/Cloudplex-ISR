@@ -4,7 +4,10 @@ import styles from "./styles.module.css"
 export const metadata: Metadata = {
     title: "CloudPlexo Terms and Conditions",
     description: "Review our Terms and Conditions to understand your rights and responsibilities when using CloudPlexo's website and services",
-    keywords: ['CloudPlexo Terms and Conditions', 'User agreement', 'Service agreement', 'Website terms']
+    keywords: ['CloudPlexo Terms and Conditions', 'User agreement', 'Service agreement', 'Website terms'],
+    alternates: {
+        canonical: "https://cloudplexo.com/terms-of-service"
+    }
 };
 
 const PageTerms = () => {

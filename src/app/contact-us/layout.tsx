@@ -9,9 +9,11 @@ interface ToastProviderProps {
 export const metadata: Metadata = {
     title: "Contact CloudPlexo - Reach Out to Our Cloud Experts",
     description: "Have questions or need assistance with cloud solutions? Contact CloudPlexo's experts for support and guidance.",
-    keywords: ["Cloud experts", "Cloud experts in Africa", "cloud experts in Lagos", "cloud experts in London"]
+    keywords: ["Cloud experts", "Cloud experts in Africa", "cloud experts in Lagos", "cloud experts in London"],
+    alternates: {
+        canonical: "https://cloudplexo.com/contact-us"
+    }
 };
-
 
 export default function ToastProvider({ children }: ToastProviderProps) {
     return (

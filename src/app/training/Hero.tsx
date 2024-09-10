@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from "./styles.module.css"
 import HeroImage from "@/assets/training/main.png";
 import Image from "next/image";

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { awsservices } from '../awsArray';
 import { notFound } from 'next/navigation';
 import RDSReady from './rds/page';
@@ -69,6 +70,19 @@ export async function generateStaticParams() {
     return awsservices.map(({ link }) => ({
         slug: link || "404",
     }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { slug } = params;
+
+    return {
+        title: `${slug.charAt(0).toUpperCase() + slug.slice(1).replaceAll("-", " ")} - Expert Cloud Solutions`,
+        description: `Discover in-depth insights on ${slug} with CloudPlexo's expert services. Enhance your knowledge and solutions.`,
+        keywords: [slug, 'cloud solutions', 'expert services'],
+        alternates: {
+            canonical: `https://cloudplexo.com/aws-partnership/${slug}`,
+        },
+    };
 }
 
 const AWSPage: React.FC<PageProps> = ({ params }) => {

@@ -19,9 +19,12 @@ export async function generateMetadata({ params }: { params: MetaProps }) {
   const course = CourseDescriptionList.find(course => course.courseLink === slug)
 
   return {
-    title: `Course: ${course?.seoTitle}`,
+    title: `Course: ${course?.title}`,
     description: course?.seoDesc,
-    keywords: course?.seoDesc
+    keywords: course?.seoDesc,
+    alternates: {
+      canonical: `https://cloudplexo.com/training/${slug}`,
+    },
   }
 }
 

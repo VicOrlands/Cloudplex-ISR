@@ -18,7 +18,10 @@ import BgImg from "@/assets/backup/Backgroundpattern.png";
 export const metadata: Metadata = {
   title: "CloudPlexo Backup & Recovery Solutions - Protect Your Data",
   description: "Discover CloudPlexo's Backup and Recovery solutions to safeguard your data from ransomware and ensure secure data backup and recovery.",
-  keywords: ['Data backup', 'Ransomware protection', 'Cloud data recovery', 'Hybrid cloud backup', 'Multi-cloud data protection']
+  keywords: ['Data backup', 'Ransomware protection', 'Cloud data recovery', 'Hybrid cloud backup', 'Multi-cloud data protection'],
+  alternates: {
+    canonical: 'https://cloudplexo.com/backup-and-restore',
+  },
 };
 
 const logos = [

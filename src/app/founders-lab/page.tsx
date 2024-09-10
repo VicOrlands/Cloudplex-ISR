@@ -9,7 +9,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "CloudPlexo's Founders Lab - Empowering African Descent Entrepreneurs",
   description: "Invest in your entrepreneurial journey with CloudPlexo's Founders Lab. We support early-stage founders of African descent to bring value to the mass market. Apply now and power your startup dreams.",
-  keywords: ['Startup support program', 'Entrepreneurial empowerment', 'African descent entrepreneurs', 'Early-stage founders', 'Mass market value delivery']
+  keywords: ['Startup support program', 'Entrepreneurial empowerment', 'African descent entrepreneurs', 'Early-stage founders', 'Mass market value delivery'],
+  alternates: {
+    canonical: "https://cloudplexo.com/founders-lab",
+  },
 };
 
 function FoundersLab() {

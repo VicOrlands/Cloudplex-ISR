@@ -1,5 +1,7 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { blogs } from "../array";
+
 import BlogFiftyThree from "./blogFiftyThree";
 import BlogFiftyTwo from "./blogFiftyTwo";
 import BlogFiftyOne from "./blogFiftyOne";
@@ -56,10 +58,29 @@ import BlogFiftyFour from "./blogFiftyFour";
 import BlogFiftyFive from "./blogFiftyFive";
 import BlogFiftySix from "./blogFiftySix";
 
+type BlogProps = {
+  params: {
+    slug: string;
+  };
+};
+
 export async function generateStaticParams() {
   return blogs.map(({ link }) => ({
     slug: link || "404",
   }));
+}
+
+export async function generateMetadata({ params }: BlogProps): Promise<Metadata> {
+  const { slug } = params;
+
+  return {
+    title: `${slug.charAt(0).toUpperCase() + slug.slice(1).replaceAll("-", " ")} - CloudPlexo Blog`,
+    description: `Explore CloudPlexo's blog for expert insights on cloud computing, AWS, Azure, and GCP. Stay updated with cloud technology trends.`,
+    keywords: [slug, 'Cloud Computing Insights', 'AWS Blog', 'Azure Articles', 'Google Cloud Updates', 'Cloud Technology Trends'],
+    alternates: {
+      canonical: `https://cloudplexo.com/blog/${slug}`,
+    },
+  };
 }
 
 const paths = [

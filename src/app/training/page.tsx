@@ -10,7 +10,10 @@ import { ButtonTranparentLink } from "@/components/button/Button";
 export const metadata: Metadata = {
   title: "Highly Rated Modern Computing Courses - CloudPlexo",
   description: "Unlock Your Tech Potential - Learn modern computing tech skills, including AWS Certified Cloud Practitioner, Microsoft Azure Fundamentals, and more.",
-  keywords: ['Cloud technology training', 'Tech skills development', 'Cloud certification programs', 'Computing courses with experts']
+  keywords: ['Cloud technology training', 'Tech skills development', 'Cloud certification programs', 'Computing courses with experts'],
+  alternates: {
+    canonical: "https://cloudplexo.com/training"
+  }
 };
 
 function Training() {

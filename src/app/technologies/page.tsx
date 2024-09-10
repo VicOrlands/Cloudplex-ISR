@@ -20,12 +20,6 @@ import BgImg1 from "@/assets/tech/Main.png"
 import BgImg2 from "@/assets/tech/mask-group.png"
 import { LazyBackgroundImage } from '@/components/backgroundImage/bg';
 
-{/* <SEO
-  title="Amazon Connect - Cloud-Based Contact Center Services"
-  description="Amazon Connect offers scalable, cost-effective cloud-based contact center services with features like chatbots and omnichannel functionality. Contact us to learn more"
-  keywords="Amazon Connect, Cloud-Based Contact Center, Customer Care, Call Center, Chatbot Integration, Scalable Contact Center, Contact Center Services"
-/> */}
-
 interface ContactProps {
   fullName: string,
   phoneNumber: string,

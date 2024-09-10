@@ -4,7 +4,10 @@ import styles from "../terms-of-service/styles.module.css"
 export const metadata: Metadata = {
     title: "CloudPlexo Privacy Policy",
     description: "Learn how CloudPlexo collects, protects, and uses your personal information. Understand your rights and our data practices",
-    keywords: ['CloudPlexo Privacy Policy', 'Data protection', 'Information security', 'User rights', 'Privacy practices']
+    keywords: ['CloudPlexo Privacy Policy', 'Data protection', 'Information security', 'User rights', 'Privacy practices'],
+    alternates: {
+        canonical: "https://cloudplexo.com/privacy-policy"
+    }
 };
 
 const PagePrivacy = () => {

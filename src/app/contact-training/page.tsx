@@ -22,120 +22,101 @@ const courses = [
     },
     {
         title: "AWS SYSOPS ADMINISTRATOR COURSE",
-        duration: " 3 days",
+        duration: "3 days",
     },
     {
         title: "AWS CERTIFIED DEVOPS ENGINEER ASSOCIATE COURSE ",
-        duration: " 3 days",
+        duration: "3 days",
     },
     {
         title: "AWS CERTIFIED SOLUTIONS ARCHITECT PROFESSIONAL COURSE",
-        duration: " 4 days",
+        duration: "4 days",
     },
     {
         title: "AWS ADVANCED NETWORKING COURSE",
-        duration: " 4 days",
+        duration: "4 days",
     },
     {
         title: "AWS CERTIFIED SECURITY COURSE",
-        duration: " 3 days",
+        duration: "3 days",
     },
     {
         title: "AWS CERTIFIED MACHINE LEARNING COURSE",
-        duration: " 4 days",
+        duration: "4 days",
     },
     {
         title: "AWS CERTIFIED DATABASE COURSE",
-        duration: " 3 days",
+        duration: "3 days",
     },
     {
         title: "AWS CERTIFIED DATA ANALYTICS COURSE",
-        duration: " 3 days",
+        duration: "3 days",
     },
     {
         title: "FUNDAMENTALS OF AWS",
-        duration: " 1 day",
+        duration: "1 day",
     },
     {
         title: "Big Data Advanced Hadoop Ecosystem",
-        duration: " 1 day",
+        duration: "1 day",
     },
     {
-        id: 3,
         title: "Complete Data Science and Machine Learning with R",
     },
 
     {
-        id: 4,
         title: "Relational Databases & PostGRESQL",
     },
     {
-        id: 5,
         title: "Devops with Ansible",
     },
 
     {
-        id: 6,
         title: "Edge Computing: Driving the next evolution of internet Technology",
     },
     {
-        id: 7,
         title: "Machine Learning",
     },
     {
-        id: 8,
         title: "Networking CCNA",
     },
     {
-        id: 9,
         title: "Non Relational Databases - NoSQL & MongoDB",
     },
     {
-        id: 10,
         title: "Automated Software Testing Using Selenium",
     },
     {
-        id: 11,
         title: "Kubernetes",
     },
     {
-        id: 12,
         title: "Python for Data Science",
     },
     {
-        id: 13,
         title: "Introduction to version control Git/Github",
     },
     {
-        id: 14,
         title: "Java programming",
     },
     {
-        id: 15,
         title: "Leveraging Cloud for business growth",
     },
     {
-        id: 16,
         title: "Introduction to Continous Integration CI-Jenkins",
     },
     {
-        id: 17,
         title: "Bigdata Beginner Hadoop ecosystem",
     },
     {
-        id: 18,
         title: "Bigdata with Spark",
     },
     {
-        id: 19,
         title: "Unix Shell Scripting",
     },
     {
-        id: 20,
         title: "Microsoft Azure Fundamentals",
     },
     {
-        id: 21,
         title: "Power Bi Analytics",
     },
 ];
@@ -222,11 +203,6 @@ function Contact() {
 
     return (
         <React.Fragment>
-            {/* <SEO
-        title="Training - CloudPlexo"
-        description="Complete the CloudPlexo Training Contact Form to inquire about our courses. Choose your course funding source, select the training course type, and provide your details."
-        keywords="Course inquiry form, Training course enrollment, Contact us for courses"
-      /> */}
             <ToastContainer />
             <section className={styles["contactTraining"]}>
                 <h1>TRAINING CONTACT FORM</h1>

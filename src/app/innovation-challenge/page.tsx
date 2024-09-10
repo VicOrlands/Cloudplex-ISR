@@ -15,7 +15,10 @@ import { ButtonLink } from "@/components/button/Button";
 export const metadata: Metadata = {
   title: "$5,000 African Innovation Coding Challenge by CloudPlexo",
   description: "Join the African Equity Innovation Challenge by CloudPlexo and turn your software-driven idea into reality. Submit your innovative project by October 31, 2022.",
-  keywords: ['Software innovation challenge', 'African tech competition', 'Coding contest for African solutions']
+  keywords: ['Software innovation challenge', 'African tech competition', 'Coding contest for African solutions'],
+  alternates: {
+    canonical: 'https://cloudplexo.com/innovation-challenge',
+  },
 };
 
 const Criteria = [

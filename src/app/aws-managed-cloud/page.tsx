@@ -19,7 +19,10 @@ import BgImg from "@/assets/solutions/bg.png"
 export const metadata: Metadata = {
     title: "Expert AWS Managed Cloud Services | CloudPlexo Solutions",
     description: "Experience top-tier AWS managed cloud services tailored for businesses. CloudPlexo ensures optimization, security, and scalability on the AWS platform.",
-    keywords: ['aws managed services', 'aws database migration service', 'aws cloud services', 'AWS Managed Cloud Solutions', 'AWS Managed Cloud Services', 'Cloud Infrastructure Management', 'Scalability', 'Reliability', 'Cost Savings', 'Expert Management']
+    keywords: ['aws managed services', 'aws database migration service', 'aws cloud services', 'AWS Managed Cloud Solutions', 'AWS Managed Cloud Services', 'Cloud Infrastructure Management', 'Scalability', 'Reliability', 'Cost Savings', 'Expert Management'],
+    alternates: {
+        canonical: "https://cloudplexo.com/aws-managed-cloud"
+    }
 };
 
 export default function AWSManagedCloud() {
