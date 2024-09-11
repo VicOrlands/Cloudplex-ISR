@@ -1,0 +1,58 @@
+name: "deployment cloudplexo web prod"
+on:
+    workflow_dispatch:
+
+permissions:
+    id-token: write
+    contents: read
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+
+        - name: Set up Node.js
+          uses: actions/setup-node@v4
+          with:
+            node-version: 20
+
+        - name: Cache dependencies
+          uses: actions/cache@v4
+          with:
+            path: |
+              .next/cache
+              .npm
+            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+            restore-keys: |
+              ${{ runner.os }}-node-
+
+        - name: Install dependencies
+          run: |
+            npm install
+
+        - name: Build app
+          run: npm run build
+
+        - name: confirm build file
+          run: |
+            ls -al .next
+        
+        - name: configure aws credentials
+          uses: aws-actions/configure-aws-credentials@v4
+          with:
+            role-to-assume: arn:aws:iam::665886241887:role/cloudplexoprodoidc
+            aws-region: eu-west-1
+
+        - name: confirm user
+          run: |
+            aws sts get-caller-identity
+            aws s3 ls
+
+        - name: Upload to S3
+          run: |
+            aws s3 sync out/ s3://cloudplexoweb-s3bucket-t5dpv2fv6ihd
+
+        - name: Invalidate CloudFront Cache
+          run: aws cloudfront create-invalidation --distribution-id EQMS6BC4LDT4 --paths "/*"
