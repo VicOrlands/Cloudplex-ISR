@@ -42,7 +42,7 @@ jobs:
         - name: configure aws credentials
           uses: aws-actions/configure-aws-credentials@v4
           with:
-            role-to-assume: arn:aws:iam::665886241887:role/cloudplexoprodoidc
+            role-to-assume: arn:aws:iam::665886241887:role/cloudplexooidc-01-website
             aws-region: eu-west-1
 
         - name: confirm user
