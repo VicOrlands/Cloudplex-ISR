@@ -79,7 +79,7 @@ function Events() {
                                 }
                             >
                                 {event.date !== "" && <h5>{event.date}</h5>}
-                                <h5>{event.title}</h5>
+                                <h5>{event.title === "The Amazon Q Advantage" ? "11:00 AM (GMT+1)" : event.title.includes("Unlocking Digital Transformation") ? "2pm (WAT)" : event.title}</h5>
                             </div>
                         </div>
                         <div className={styles.eventSocialsBodyContainer}>
@@ -91,11 +91,11 @@ function Events() {
                             ></p>
                             <div>
                                 {event.link.includes("https://") ?
-                                    <Link href={event.link} aria-label="Learn more">
+                                    <Link href={event.link} target="blank" aria-label="Learn more">
                                         Register
                                     </Link>
                                     :
-                                    <Link href={`/events/${event.link}`} aria-label="Learn more">
+                                    <Link href={`/events/${event.link}`} target="blank" aria-label="Learn more">
                                         Learn More
                                     </Link>
                                 }

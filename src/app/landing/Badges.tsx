@@ -19,6 +19,7 @@ import Badge2 from "@/assets/landing/badges/AWS-Badge Amazon CloudFront Delivery
 import Badge9 from "@/assets/landing/badges/aws-partner-immersion-day-program-v1.webp";
 import Badge15 from "@/assets/landing/badges/50 Certified Light English.webp"
 import Badge16 from "@/assets/landing/badges/busineesbadge.webp"
+import Badge17 from "@/assets/landing/badges/AWS RDS delivery.png"
 
 const badgesArray: StaticImageData[] = [
     Badge14,
@@ -26,6 +27,7 @@ const badgesArray: StaticImageData[] = [
     Badge6,
     Badge1,
     Badge5,
+    Badge17,
     Badge4,
     Badge13,
     Badge12,

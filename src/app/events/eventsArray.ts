@@ -24,6 +24,8 @@ import businessDay from "@/assets/events/events1/seven.webp";
 import GenerativeAI from "@/assets/events/1691070093414.webp";
 import Immersion from "@/assets/events/Immersion image 1.webp";
 import GenAI from "@/assets/events/GenerativeAI.webp"
+import PublicSector from "@/assets/events/public sector strategic engagement.png"
+import AmazonQ from "@/assets/events/amazon q.jpeg"
 
 export interface Speaker {
     image: StaticImageData;
@@ -138,6 +140,20 @@ export const WebinarArray: WebinarProps[] = [
 
 export const EventsArray: EventsProps[] = [
     {
+        img: AmazonQ,
+        title: "The Amazon Q Advantage",
+        text: `Join us for our upcoming workshop, "The Amazon Q Advantage," and learn how to harness the power of generative AI without compromising your data security.`,
+        link: "https://bit.ly/qadvantage24",
+        date: "October 3rd & 4th, 2024",
+    },
+    {
+        img: PublicSector,
+        title: "Unlocking Digital Transformation in Nigeria's Public Sector ",
+        text: `Don't miss this opportunity to connect with like-minded professionals and shape the future of Nigeria's public sector.`,
+        link: "https://bit.ly/publicsector24",
+        date: "September 17th, 2024",
+    },
+    {
         img: GenAI,
         title: "August Gen-AI Fridays",
         text: `August Gen-AI Fridays: Getting started on Amazon Bedrock`,
@@ -182,14 +198,14 @@ export const EventsArray: EventsProps[] = [
     {
         img: Immersion,
         title: "AWS Immersion Day",
-        text: `🚀 Just concluded an enriching AWS Immersion Day with the GT Pension Manager's team, and immense appreciation to the AWS team <a href="https://www.linkedin.com/in/kayode-ranger/">Kayode A. Akomolafe (Tech Ranger)</a>, <a href="https://www.linkedin.com/in/ousintkd/">Ousseynou khadim BEYE</a>, <a href="https://www.linkedin.com/in/onaopemipo-osunyomi-45a73244/">Onaopemipo Osunyomi</a>, and <a href="https://www.linkedin.com/in/eberenkoro"/>Ebere Nkoro</a> for their invaluable insights and guidance! 💡`,
+        text: `🚀 Just concluded an enriching AWS Immersion Day with the GT Pension Manager's team, and immense appreciation to the AWS team <a target="blank" href="https://www.linkedin.com/in/kayode-ranger/">Kayode A. Akomolafe (Tech Ranger)</a>, <a target="blank" href="https://www.linkedin.com/in/ousintkd/">Ousseynou khadim BEYE</a>, <a href="https://www.linkedin.com/in/onaopemipo-osunyomi-45a73244/" target="blank">Onaopemipo Osunyomi</a>, and <a href="https://www.linkedin.com/in/eberenkoro"/>Ebere Nkoro</a> for their invaluable insights and guidance! 💡`,
         link: "",
         date: "",
     },
     {
         img: GenerativeAI,
         title: "Generative AI",
-        text: `Heartfelt appreciation to the incredible members of the AWS team <a href="https://www.linkedin.com/in/eberenkoro/">Ebere Nkoro</a> and <a href="https://www.linkedin.com/in/osaretin-j-63692093/">Osaretin J</a> for their unparalleled support and seamless organisation, which contributed immensely to the success of this event.`,
+        text: `Heartfelt appreciation to the incredible members of the AWS team <a target="blank" href="https://www.linkedin.com/in/eberenkoro/">Ebere Nkoro</a> and <a target="blank" href="https://www.linkedin.com/in/osaretin-j-63692093/">Osaretin J</a> for their unparalleled support and seamless organisation, which contributed immensely to the success of this event.`,
         link: "",
         date: "",
     },
