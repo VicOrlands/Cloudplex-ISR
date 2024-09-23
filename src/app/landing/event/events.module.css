@@ -62,13 +62,21 @@
     z-index: 9999;
 }
 
-.sliderText .textContent {
+.sliderText .textContent,
+.sliderText .textContentWithoutHeader {
     position: absolute;
-    top: 75%;
     left: 0;
     right: 0;
     color: #fff;
     text-align: center;
+}
+
+.sliderText .textContent {
+    top: 75%;
+}
+
+.sliderText .textContentWithoutHeader {
+    top: 85%;
 }
 
 .sliderText .textContent h3 {
@@ -78,7 +86,8 @@
     margin-bottom: 15px;
 }
 
-.sliderText .textContent p {
+.sliderText .textContent p,
+.sliderText .textContentWithoutHeader p {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 24px;

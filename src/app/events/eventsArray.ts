@@ -26,6 +26,7 @@ import Immersion from "@/assets/events/Immersion image 1.webp";
 import GenAI from "@/assets/events/GenerativeAI.webp"
 import PublicSector from "@/assets/events/public sector strategic engagement.png"
 import AmazonQ from "@/assets/events/amazon q.jpeg"
+import Brunch from "@/assets/events/Nairobi Founders Brunch.png"
 
 export interface Speaker {
     image: StaticImageData;
@@ -139,6 +140,13 @@ export const WebinarArray: WebinarProps[] = [
 ];
 
 export const EventsArray: EventsProps[] = [
+    {
+        img: Brunch,
+        title: "Nairobi Founders Brunch",
+        text: `Join us for Nairobi Founders' Brunch Next Monday!🥂 <a href="https://www.linkedin.com/company/cloudplexo/mycompany/" target="blank">CloudPlexo</a> and <a href="https://www.linkedin.com/company/amazon-web-services/" target="blank">Amazon Web Services (AWS)</a> Startups will be bringing the amazing founders and leaders together to connect, learn, and build with fellow innovators on`,
+        link: "https://www.linkedin.com/posts/cloudplexo_cloudplexo-awsstartups-kenya-activity-7239472733938499585-dT6O",
+        date: "Monday 9th September",
+    },
     {
         img: AmazonQ,
         title: "The Amazon Q Advantage",

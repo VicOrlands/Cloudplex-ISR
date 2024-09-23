@@ -79,7 +79,7 @@ function Events() {
                                 }
                             >
                                 {event.date !== "" && <h5>{event.date}</h5>}
-                                <h5>{event.title === "The Amazon Q Advantage" ? "11:00 AM (GMT+1)" : event.title.includes("Unlocking Digital Transformation") ? "2pm (WAT)" : event.title}</h5>
+                                <h5>{event.title === "The Amazon Q Advantage" ? "11:00 AM (GMT+1)" : event.title.includes("Unlocking Digital Transformation") ? "2pm (WAT)" : event.title === "Nairobi Founders Brunch" ? "1pm" : event.title}</h5>
                             </div>
                         </div>
                         <div className={styles.eventSocialsBodyContainer}>
@@ -90,14 +90,18 @@ function Events() {
                                 }}
                             ></p>
                             <div>
-                                {event.link.includes("https://") ?
-                                    <Link href={event.link} target="blank" aria-label="Learn more">
-                                        Register
-                                    </Link>
-                                    :
-                                    <Link href={`/events/${event.link}`} target="blank" aria-label="Learn more">
-                                        Learn More
-                                    </Link>
+                                {event.link.includes("https://www.linkedin") ?
+                                    <Link href={event.link} target="blank" aria-label="View info">
+                                        View info
+                                    </Link> :
+                                    event.link.includes("https://") ?
+                                        <Link href={event.link} target="blank" aria-label="Register">
+                                            Register
+                                        </Link>
+                                        :
+                                        <Link href={`/events/${event.link}`} target="blank" aria-label="View info">
+                                            View info
+                                        </Link>
                                 }
                                 <MdOutlineArrowOutward id="icon" size={16} color="#3E54AC" />
                             </div>
