@@ -48,7 +48,8 @@ export interface EventsProps {
     text: string,
     link: string,
     date: string,
-    linkText: string
+    linkText: string,
+    imgRightText: string
 }
 
 export const WebinarArray: WebinarProps[] = [
@@ -105,12 +106,6 @@ export const WebinarArray: WebinarProps[] = [
         ]
     },
     {
-        image: WebinarImage4,
-        name: "Getting Your Security Foundations Right",
-        link: "getting-your-security-foundations-right",
-        speakers: []
-    },
-    {
         image: WebinarImage5,
         name: "Cloud Security & Requirements",
         link: "cloud-security-and-requirements",
@@ -139,6 +134,12 @@ export const WebinarArray: WebinarProps[] = [
         link: "cloud-modernization",
         speakers: []
     },
+    {
+        image: WebinarImage4,
+        name: "Getting Your Security Foundations Right",
+        link: "getting-your-security-foundations-right",
+        speakers: []
+    },
 ];
 
 export const EventsArray: EventsProps[] = [
@@ -147,8 +148,9 @@ export const EventsArray: EventsProps[] = [
         title: "TECH CONNECT ACCRA",
         text: `This Tech Ecosystem Mixer is a unique gathering designed to bring together key players from Ghana’s fast-growing tech ecosystem, including founders, operators, investors, and ecosystem builders. It will serve as a platform for discussions around collaboration, innovation, and business expansion within the region.`,
         link: "https://lu.ma/bzlis1e6",
-        date: "Monday 9th September",
-        linkText: "Register"
+        date: "Wednesday, October 2",
+        linkText: "Register",
+        imgRightText: "4:00 PM - 9:00 PM GMT"
     },
     {
         img: AmazonQ,
@@ -156,15 +158,17 @@ export const EventsArray: EventsProps[] = [
         text: `Join us for our upcoming workshop, "The Amazon Q Advantage," and learn how to harness the power of generative AI without compromising your data security.`,
         link: "https://bit.ly/qadvantage24",
         date: "October 3rd & 4th, 2024",
-        linkText: "Register"
+        linkText: "Register",
+        imgRightText: "11:00 AM (GMT+1)"
     },
     {
         img: PublicSector,
         title: "Unlocking Digital Transformation in Nigeria's Public Sector ",
-        text: `Don't miss this opportunity to connect with like-minded professionals and shape the future of Nigeria's public sector.`,
+        text: ``,
         link: "https://bit.ly/publicsector24",
         date: "September 17th, 2024",
-        linkText: "View info"
+        linkText: "View info",
+        imgRightText: "2pm (WAT)"
     },
     {
         img: Brunch,
@@ -172,15 +176,17 @@ export const EventsArray: EventsProps[] = [
         text: `Join us for Nairobi Founders' Brunch Next Monday!🥂 <a href="https://www.linkedin.com/company/cloudplexo/mycompany/" target="blank">CloudPlexo</a> and <a href="https://www.linkedin.com/company/amazon-web-services/" target="blank">Amazon Web Services (AWS)</a> Startups will be bringing the amazing founders and leaders together to connect, learn, and build with fellow innovators on`,
         link: "https://www.linkedin.com/posts/cloudplexo_cloudplexo-awsstartups-kenya-activity-7239472733938499585-dT6O",
         date: "Monday 9th September",
-        linkText: "View info"
+        linkText: "View info",
+        imgRightText: "1pm"
     },
     {
         img: GenAI,
-        title: "August Gen-AI Fridays",
-        text: `August Gen-AI Fridays: Getting started on Amazon Bedrock`,
+        title: "August Gen-AI Fridays: Getting started on Amazon Bedrock",
+        text: ``,
         link: "https://www.linkedin.com/events/7226214750320246784/comments/",
         date: "Every Friday of August",
-        linkText: "View info"
+        linkText: "View info",
+        imgRightText: "August Gen-AI"
     },
     {
         img: Nairobi,
@@ -188,7 +194,8 @@ export const EventsArray: EventsProps[] = [
         text: `We're hosting our Tech Safari Mixer in Nairobi 🎉Hosted by Tech Safari, along with AWS Startups, CloudPlexo and Infobip for founders, investors, ecosystem players and tech-curious. ​Early bird tickets are on sale and if you prefer to pay with MPesa, click here. ​You will be added to the event page when you make the payment. ​If you need help or have questions, reach out to Daniel (daniel [at] techsafari.io).`,
         link: "https://lu.ma/gjpmq019",
         date: "Thursday 4 July",
-        linkText: "View info"
+        linkText: "View info",
+        imgRightText: "Tech Safari Nairobi Mixer"
     },
     {
         img: Kigali,
@@ -196,7 +203,8 @@ export const EventsArray: EventsProps[] = [
         text: `Call out to Founders in Kigali, Rwanda! 🚀Looking to connect with fellow CTOs, founders, and industry experts? Join us at CTO & Founders Mixer on Friday 21st June by 4pm CAT for an evening of networking, insights, and collaboration as we bring together top minds in the industry. Gain valuable knowledge to propel your ventures forward in the dynamic world of Amazon Web Services (AWS).Don't miss out on this opportunity to share experiences and connect with like-minded individuals.`,
         link: "https://lu.ma/g8jo2rcm",
         date: "21 Jun 2024",
-        linkText: "View info"
+        linkText: "View info",
+        imgRightText: "KIGALI CTO & Founders Mixer"
     },
     {
         img: businessDay,
@@ -204,7 +212,8 @@ export const EventsArray: EventsProps[] = [
         text: `We were thrilled to co-host & sponsor the BusinessDay Economic Club's "C-Suite Executives Roundtable Dinner." It was an evening of insightful discussions and valuable connections.Thank you to all who attended and made it a success!We're excited to see the future collaborations and innovations sparked by this event!`,
         link: "",
         date: "07 Jun 2024",
-        linkText: "View info"
+        linkText: "View info",
+        imgRightText: "Business Day Event"
     },
     {
         img: founders,
@@ -212,7 +221,8 @@ export const EventsArray: EventsProps[] = [
         text: `The energy was electric as attendees soaked in the insightful discussions and invaluable connections made. From groundbreaking tech insights to entrepreneurial wisdom, the mixer catalyzes innovation and collaboration.`,
         link: "",
         date: "22 Apr 2024",
-        linkText: "View info"
+        linkText: "View info",
+        imgRightText: "CTO’s & Founders Mixer"
     },
     {
         img: fintech,
@@ -220,7 +230,8 @@ export const EventsArray: EventsProps[] = [
         text: `From startups to industry giants, the Fintechfusion Summit had it all. It was a knowledge feast, an incredible day of insights, innovation, unparalled networking and limitless opportunities at the Fintech Summit 2023!`,
         link: "fintech-fusion-summit",
         date: "02 Nov 2023",
-        linkText: "View info"
+        linkText: "View info",
+        imgRightText: "Fintech Fusion Submit"
     },
     {
         img: Immersion,
@@ -228,7 +239,8 @@ export const EventsArray: EventsProps[] = [
         text: `🚀 Just concluded an enriching AWS Immersion Day with the GT Pension Manager's team, and immense appreciation to the AWS team <a target="blank" href="https://www.linkedin.com/in/kayode-ranger/">Kayode A. Akomolafe (Tech Ranger)</a>, <a target="blank" href="https://www.linkedin.com/in/ousintkd/">Ousseynou khadim BEYE</a>, <a href="https://www.linkedin.com/in/onaopemipo-osunyomi-45a73244/" target="blank">Onaopemipo Osunyomi</a>, and <a href="https://www.linkedin.com/in/eberenkoro"/>Ebere Nkoro</a> for their invaluable insights and guidance! 💡`,
         link: "",
         date: "",
-        linkText: "View info"
+        linkText: "View info",
+        imgRightText: "AWS Immersion Day"
     },
     {
         img: GenerativeAI,
@@ -236,6 +248,7 @@ export const EventsArray: EventsProps[] = [
         text: `Heartfelt appreciation to the incredible members of the AWS team <a target="blank" href="https://www.linkedin.com/in/eberenkoro/">Ebere Nkoro</a> and <a target="blank" href="https://www.linkedin.com/in/osaretin-j-63692093/">Osaretin J</a> for their unparalleled support and seamless organisation, which contributed immensely to the success of this event.`,
         link: "",
         date: "",
-        linkText: "View info"
+        linkText: "View info",
+        imgRightText: "Generative AI"
     },
 ];

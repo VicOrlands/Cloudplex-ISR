@@ -1,21 +1,27 @@
-.eventsParent h2,
-.eventsParent h4,
-.eventsParent h5,
-.eventsParent p {
+.eventsHero,
+.eventSocials,
+.pagination,
+.eventWebinars,
+.eventPartners,
+.footer {
     display: block;
     font-family: var(--font-inter);
 }
 
+.bgImg {
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
 .eventsHero {
-    background-color: #0A0F25;
+    color: #eff0fa;
     padding: 0 150px;
+    padding-top: 4%;
     height: 500px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     align-items: center;
-    padding-top: 4%;
-    color: #eff0fa;
 }
 
 .eventsHeroVideo {
@@ -30,7 +36,6 @@
 }
 
 .eventsHero h1 {
-    font-family: var(--font-inter);
     font-size: 4.8rem;
     font-weight: 600;
     margin: 0;
@@ -38,7 +43,6 @@
 }
 
 .eventsHero p {
-    font-family: var(--font-inter);
     font-size: 2rem;
     line-height: 34px;
     font-weight: 400;
@@ -102,7 +106,6 @@
 
 .eventSocialsImgContainer div h5 {
     color: #fff;
-    font-family: var(--font-inter);
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -112,7 +115,6 @@
 }
 
 .eventSocialsBodyContainer h3 {
-    font-family: var(--font-inter);
     color: #101828;
     font-size: 2.4rem;
     font-weight: 600;
@@ -122,7 +124,6 @@
 
 .eventSocialsBodyContainer p {
     color: #344054;
-    font-family: var(--font-inter);
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 24px;
@@ -135,7 +136,6 @@
 }
 
 .eventSocialsBodyContainer a {
-    font-family: var(--font-inter);
     color: #3e54ac;
     font-size: 1.6rem;
     font-weight: 600;
@@ -144,6 +144,7 @@
     margin-right: 10px;
 }
 
+/* pagination */
 .pagination,
 .pagination p,
 .pagination div {
@@ -159,7 +160,6 @@
 
 .pagination p {
     color: #475467;
-    font-family: var(--font-inter);
     font-size: 1.4rem;
     font-weight: 600;
     cursor: pointer;
@@ -191,7 +191,6 @@
 .pagination .mobile-page-item {
     display: none;
     color: #182230;
-    font-family: var(--font-inter);
 }
 
 /* events-webinars */
@@ -202,7 +201,6 @@
 }
 
 .eventWebinars h2 {
-    font-family: var(--font-inter);
     font-size: 2.2rem;
     font-weight: 700;
     line-height: 26px;
@@ -238,13 +236,12 @@
 
 .eventWebinarCardContent h5 {
     color: #344054;
-    font-family: var(--font-inter);
+    font-size: 2.4rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
 .eventWebinarCardContent a {
-    font-family: var(--font-inter);
     color: #3e54ac;
     font-size: 1.6rem;
     font-weight: 600;
@@ -262,7 +259,6 @@
 
 .eventPartners h2 {
     color: #475467;
-    font-family: var(--font-inter);
     font-size: 1.6rem;
     font-weight: 500;
     text-align: center;
@@ -290,9 +286,71 @@
     margin-right: 0;
 }
 
+/* footer newsletter */
+.footer {
+    background: #10193B;
+    color: #fff;
+    padding: 96px 200px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.footer h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #C2C8EF;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.footer .input-section {
+    display: flex;
+    width: 100%;
+}
+
+.footer .input-section div {
+    width: 70%;
+    margin-right: 20px;
+}
+
+.footer .input-section input {
+    border-radius: 8px;
+    border: 1px solid #fff;
+    padding: 12px 14px;
+    color: #667085;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.footer .input-section button {
+    background: #3E54AC;
+    border: 1px solid #3E54AC;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 12px 18px;
+    height: fit-content;
+}
+
+.footer .input-section p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.footer .input-section p a {
+    text-decoration: underline;
+}
+
 /* media query for small screen */
 @media (max-width: 768px) {
     .eventsHero {
+        background: #0A0F25;
         padding: 40px 20px 10px 20px;
         height: fit-content;
         margin-bottom: 30px;
@@ -301,17 +359,20 @@
     }
 
     .eventsHeroVideo {
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 2/1;
         width: 100%;
+        height: fit-content;
         grid-area: 2;
+        margin: 30px 0;
     }
 
     .eventsHero h1 {
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 
     .eventsHero p {
         font-size: 1.4rem;
+        line-height: 26px;
     }
 
     /* event-socials */
@@ -402,4 +463,43 @@
     .eventPartnersLogos .partnersLogo:nth-child(odd) img {
         margin: 0;
     }
+
+    /* footer newsletter */
+    .footer {
+        padding: 50px 20px;
+        grid-template-columns: 100%;
+        gap: 40px;
+    }
+
+    .footer h2 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .footer p {
+        font-size: 1.6rem;
+    }
+
+    .footer .input-section {
+        flex-wrap: wrap;
+    }
+
+    .footer .input-section div {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer .input-section input {
+        font-size: 1.4rem;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .footer .input-section button {
+        font-size: 1.4rem;
+        padding: 12px 18px;
+        width: 100%;
+    }
+
 }

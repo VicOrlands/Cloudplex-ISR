@@ -6,6 +6,7 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 import 'video-react/dist/video-react.css';
 
+import axios from "axios";
 import { EventsArray, WebinarArray } from "./eventsArray";
 import CTAForm from "@/components/callToAction/cta";
 import { Player, BigPlayButton } from "video-react";
@@ -25,7 +26,7 @@ import Partner9 from "@/assets/startups/partners/sdc.png";
 import Partner10 from "@/assets/startups/partners/start_innovation_hub.png";
 import Partner8 from "@/assets/startups/partners/root.png";
 import Partner7 from "@/assets/startups/partners/vatebra_logo.png";
-import BgImg from "@/assets/events/Background pattern.png"
+import BgImg from "@/assets/events/Background_pattern.png"
 
 const partners = [
     Partner1,
@@ -43,9 +44,40 @@ const partners = [
 function Events() {
     const eventsPerPage = 6
     const paginationLimit = 4
+    const [email, setEmail] = useState<string>("")
     const [currentPage, setCurrentPage] = useState<number>(1);
     const totalPages = Math.ceil(EventsArray.length / eventsPerPage);
     const [pages] = useState<number>(Math.round(EventsArray.length / eventsPerPage));
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setEmail(e.target.value);
+    };
+
+    const handleSubmit = async () => {
+        const emailRegex = new RegExp(
+            /^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/,
+            "gm",
+        );
+        const isValidEmail = emailRegex.test(email);
+        if (email !== "") {
+            if (isValidEmail) {
+                const saveform = await axios.post(
+                    "https://enr95mz778.execute-api.eu-west-1.amazonaws.com/Prod/newsletter-cloudplexo",
+                    { email: email },
+                );
+                if (saveform.status === 200) {
+                    alert("Email address submitted successfully");
+                    setEmail("");
+                } else {
+                    alert("Form not submitted");
+                }
+            } else {
+                alert("Invalid format");
+            }
+        } else {
+            alert("Empty input! Fill in your email address");
+        }
+    };
 
     function nextEvents() {
         setCurrentPage((page) => Math.min(page + 1, totalPages));
@@ -117,7 +149,7 @@ function Events() {
                                 }
                             >
                                 {event.date !== "" && <h5>{event.date}</h5>}
-                                <h5>{event.title === "The Amazon Q Advantage" ? "11:00 AM (GMT+1)" : event.title.includes("Unlocking Digital Transformation") ? "2pm (WAT)" : event.title === "Nairobi Founders Brunch" ? "1pm" : event.title}</h5>
+                                <h5>{event.imgRightText}</h5>
                             </div>
                         </div>
                         <div className={styles.eventSocialsBodyContainer}>
@@ -198,6 +230,32 @@ function Events() {
                     ))}
                 </div>
             </section>
+
+            <footer className={styles["footer"]}>
+                <div>
+                    <h2>Sign up for our newsletter</h2>
+                    <p>Be the first to know about releases and industry news and insights.</p>
+                </div>
+
+                <div className={styles["input-section"]}>
+                    <div>
+                        <input
+                            type="text"
+                            placeholder="Enter your email"
+                            value={email}
+                            onChange={handleChange}
+                        />
+                        <p>We care about your data in our <Link href="/privacy-policy">privacy policy.</Link></p>
+                    </div>
+                    <button
+                        aria-label="submit"
+                        onClick={handleSubmit}
+                        className={styles.button}
+                    >
+                        Subscribe
+                    </button>
+                </div>
+            </footer>
         </section>
     );
 }
