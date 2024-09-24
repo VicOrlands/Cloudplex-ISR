@@ -4,12 +4,13 @@ import styles from "./styles.module.css"
 import React, { Component } from "react";
 import FeatherIcon from "feather-icons-react";
 import blog1 from "@/assets/work/30servicelimit.png";
+import type { Metadata } from "next";
 
-{/* <SEO
-  title="Maximizing Operational Efficiency with AWS Service Limits Monitoring by CloudPlexo"
-  description="Discover how CloudPlexo, in collaboration with AWS, helps enterprise businesses proactively monitor service limits, optimize costs, and maintain operational efficiency in the cloud"
-  keywords="AWS Service Limits Monitoring, CloudPlexo, Operational Efficiency, Cost Optimization, Cloud Resource Usage, Cloud resource monitoring, AWS Trusted Advisor, CloudPlexo's service limits monitoring, AWS cost management, Operational effectiveness, Cloud service availability"
-/> */}
+export const metadata: Metadata = {
+  title: "Maximizing Operational Efficiency with AWS Service Limits Monitoring by CloudPlexo",
+  description: "Discover how CloudPlexo, in collaboration with AWS, helps enterprise businesses proactively monitor service limits, optimize costs, and maintain operational efficiency in the cloud.",
+  keywords: ["AWS Service Limits Monitoring", "CloudPlexo", "Operational Efficiency", "Cost Optimization", "Cloud Resource Usage", "Cloud resource monitoring", "AWS Trusted Advisor", `CloudPlexo's service limits monitoring`, "AWS cost management", "Operational effectiveness", "Cloud service availability"]
+};
 
 export default class BlogSeven extends Component {
   render() {
@@ -56,7 +57,6 @@ export default class BlogSeven extends Component {
             src={blog1}
             alt="Maximizing Operational Efficiency with AWS Service Limits Monitoring by CloudPlexo"
           />
-
           <br />
           <br />
 

@@ -15,12 +15,13 @@ import image8 from "@/assets/blog/create_test2.webp";
 import image9 from "@/assets/blog/create_test3.webp";
 import image10 from "@/assets/blog/clean_up.webp";
 import FeatherIcon from "feather-icons-react";
+import type { Metadata } from "next";
 
-{/* <SEO
-  title="Getting Started with Serverless - AWS Lambda Tutorial for Beginners"
-  description="Learn the basics of serverless computing and AWS Lambda with this step-by-step tutorial. Create your first serverless function and test it with ease"
-  keywords="Serverless AWS Lambda Tutorial, Serverless Computing, AWS Lambda Basics, Serverless Function Creation"
-/> */}
+export const metadata: Metadata = {
+  title: "Getting Started with Serverless - AWS Lambda Tutorial for Beginners",
+  description: "Learn the basics of serverless computing and AWS Lambda with this step-by-step tutorial. Create your first serverless function and test it with ease.",
+  keywords: ["Serverless AWS Lambda Tutorial", "Serverless Computing", "AWS Lambda Basics", "Serverless Function Creation"]
+};
 
 export default class BlogFourteen extends Component {
   render() {

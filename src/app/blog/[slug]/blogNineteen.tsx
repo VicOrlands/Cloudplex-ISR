@@ -11,12 +11,13 @@ import githubactions from "@/assets/blog/github_actions/github_actions.webp";
 import inspectworkflow from "@/assets/blog/github_actions/inspect-workflow.webp";
 import newproject from "@/assets/blog/github_actions/new-project.webp";
 import cover from "@/assets/blog/githubactions.webp"
+import type { Metadata } from "next";
 
-{/* <SEO
-  title="Getting Started with CI/CD Using GitHub Actions - A Step-by-Step Guide"
-  description="Learn the basics of CI/CD using GitHub Actions. Discover how to automate your software development pipeline for continuous integration and continuous delivery"
-  keywords="CI/CD with GitHub Actions, GitHub Actions, Continuous Integration, Continuous Delivery, Automate Software Development, GitHub CI/CD"
-/> */}
+export const metadata: Metadata = {
+  title: "Getting Started with CI/CD Using GitHub Actions - A Step-by-Step Guide",
+  description: "Learn the basics of CI/CD using GitHub Actions. Discover how to automate your software development pipeline for continuous integration and continuous delivery.",
+  keywords: ["CI/CD with GitHub Actions", "GitHub Actions", "Continuous Integration", "Continuous Delivery", "Automate Software Development", "GitHub CI/CD"]
+};
 
 export default class BlogNineteen extends Component {
   render() {

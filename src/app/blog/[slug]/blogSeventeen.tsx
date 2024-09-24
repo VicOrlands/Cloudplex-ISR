@@ -2,6 +2,7 @@
 import Image from "next/image";
 import styles from "./styles.module.css"
 import React, { Component } from "react";
+import thumbnail from "@/assets/blog/rekognition.webp";
 import FeatherIcon from "feather-icons-react";
 import image1 from "@/assets/blog/recognition/image1.webp";
 import image2 from "@/assets/blog/recognition/image2.webp";
@@ -22,12 +23,13 @@ import image16 from "@/assets/blog/recognition/image16.webp";
 import code1 from "@/assets/blog/recognition/code1.webp";
 import code2 from "@/assets/blog/recognition/code2.webp";
 import code3 from "@/assets/blog/recognition/code3.webp";
+import type { Metadata } from "next";
 
-{/* <SEO
-  title="AWS Rekognition Video Detection Guide - Step-by-Step Configuration"
-  description="Learn how to set up AWS Rekognition for video detection with this step-by-step guide. Configure Amazon S3, Amazon SNS, Amazon SQS, and Lambda for efficient video analysis"
-  keywords="AWS Rekognition Video Detection, Amazon Rekognition, Video Analysis Setup, AWS Video Detection Guide, Video Recognition Configuration"
-/> */}
+export const metadata: Metadata = {
+  title: "AWS Rekognition Video Detection Guide - Step-by-Step Configuration",
+  description: "Learn how to set up AWS Rekognition for video detection with this step-by-step guide. Configure Amazon S3, Amazon SNS, Amazon SQS, and Lambda for efficient video analysis.",
+  keywords: ["AWS Rekognition Video Detection", "Amazon Rekognition", "Video Analysis Setup", "AWS Video Detection Guide", "Video Recognition Configuration"]
+};
 
 export default class BlogSeventeen extends Component {
   render() {
@@ -69,7 +71,12 @@ export default class BlogSeventeen extends Component {
 
         <div className={styles["main-content"]}>
           <h1>Video Detection with AWS Rekognition</h1>
-
+          <Image
+            src={thumbnail}
+            alt="Maximizing Operational Efficiency with AWS Service Limits Monitoring by CloudPlexo"
+          />
+          <br />
+          <br />
           <h2>Introduction</h2>
           <p>
             Amazon Rekognition is a fully managed computer vision

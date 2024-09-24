@@ -3,12 +3,13 @@ import Image from "next/image";
 import styles from "./styles.module.css"
 import FeatherIcon from "feather-icons-react";
 import blog1 from "@/assets/blog/blog5.webp";
+import type { Metadata } from "next";
 
-{/* <SEO
-  title="Cloud Computing - Revolutionizing the Global Village with CloudPlexo and AWS"
-  description="Discover how cloud computing, powered by AWS and managed by CloudPlexo, is revolutionizing the global exchange of data and enabling businesses to thrive in the digital age"
-  keywords="Cloud Computing, AWS, Global Village, CloudPlexo, Data Globalization, Cloud Technology, Cloud Services, Data Exchange, Digital Age Transformation"
-/> */}
+export const metadata: Metadata = {
+  title: "Cloud Computing - Revolutionizing the Global Village with CloudPlexo and AWS",
+  description: "Discover how cloud computing, powered by AWS and managed by CloudPlexo, is revolutionizing the global exchange of data and enabling businesses to thrive in the digital age.",
+  keywords: ["Cloud Computing", "Global Village", "AWS", "Data Globalization", "Cloud Technology", "Cloud Services", `CloudPlexo`, "Data Exchange", "Digital Age Transformation"]
+};
 
 export default function BlogEleven() {
   return (

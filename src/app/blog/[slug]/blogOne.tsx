@@ -1,14 +1,14 @@
-import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles.module.css"
 import FeatherIcon from "feather-icons-react";
 import blog1 from "@/assets/blog/partnernetwork.webp";
+import type { Metadata } from "next";
 
-{/* <SEO
-  title="CloudPlexo Achieves AWS ISV Partner Status"
-  description="CloudPlexo, a cloud management platform, earns AWS ISV Partner status, helping companies reduce cloud expenses."
-  keywords="CloudPlexo, AWS ISV Partner, CloudPlexo, cloud management platform, AWS Independent Software Vendor Partner, cloud expenses reduction"
-/> */}
+export const metadata: Metadata = {
+  title: "CloudPlexo Achieves AWS ISV Partner Status",
+  description: "CloudPlexo, a cloud management platform, earns AWS ISV Partner status, helping companies reduce cloud expenses.",
+  keywords: ["AWS ISV Partner", "CloudPlexo", "cloud management platform", "AWS Independent Software Vendor Partner", "cloud expenses reduction"]
+};
 
 export default function BlogOne() {
   return (
@@ -46,7 +46,7 @@ export default function BlogOne() {
           </a>
         </li>
       </ul>
-      
+
       <div className={styles["main-content"]}>
         <h1>
           CloudPlexo Achieves AWS ISV Partner Status in AWS Partner

@@ -1,11 +1,5 @@
 import FeatherIcon from "feather-icons-react";
 import badge from "@/assets/blog/Moving successfully to the Amazon Cloud.webp";
-import Img1 from "@/assets/blog/blog53/1.webp";
-import Img2 from "@/assets/blog/blog53/2.webp";
-import Img3 from "@/assets/blog/blog53/3.webp";
-import Img4 from "@/assets/blog/blog53/4.webp";
-import Img5 from "@/assets/blog/blog53/5.webp";
-import Img6 from "@/assets/blog/blog53/6.webp";
 import Image from "next/image";
 import styles from "./styles.module.css"
 import Link from "next/link";

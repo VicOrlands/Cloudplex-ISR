@@ -1,19 +1,15 @@
-import Link from "next/link";
 import Image from "next/image";
 import FeatherIcon from "feather-icons-react";
-import bgimg from "@/assets/blog/1.jpg";
-import logodark from "@/assets/blog/logo-dark.png";
-import logolight from "@/assets/blog/logo-light.png";
 import blog1 from "@/assets/blog/AWS-cost-optimization-1.jpeg";
 import styles from "./styles.module.css"
+import type { Metadata } from "next";
 
-{/* <SEO
-      title="Achieving AWS Cost Optimization with CloudPlexo"
-      description="Learn how CloudPlexo, as an AWS Partner, helps organizations achieve cost optimization in the AWS cloud by following best practices."
-      keywords="AWS Cost Optimization, CloudPlexo, AWS Partner, best practices,
-    AWS cloud cost reduction, AWS cost management, CloudPlexo's AWS
-    optimization, AWS cloud expense reduction"
-    /> */}
+export const metadata: Metadata = {
+  title: "Achieving AWS Cost Optimization with CloudPlexo",
+  description: "Learn how CloudPlexo, as an AWS Partner, helps organizations achieve cost optimization in the AWS cloud by following best practices.",
+  keywords: ["AWS Cost Optimization", "CloudPlexo", "AWS Partner", "best practices", "AWS cloud cost reduction", "AWS cost management", `CloudPlexo's AWS
+    optimization`, "AWS cloud expense reduction"]
+};
 
 export default function BlogEight() {
   return (

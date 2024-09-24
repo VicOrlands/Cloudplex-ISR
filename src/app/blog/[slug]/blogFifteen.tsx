@@ -12,12 +12,13 @@ import configuretest from "@/assets/blog/images/configure-test.webp";
 import edittest from "@/assets/blog/images/edit-test.webp";
 import selecttest from "@/assets/blog/images/select-test.webp";
 import deletefunction from "@/assets/blog/images/delete-function.webp";
+import type { Metadata } from "next";
 
-{/* <SEO
-    title="AWS Lambda - Your Guide to Serverless Application Development"
-    description="Learn about AWS Lambda and how to create serverless applications with this comprehensive guide. Get started with your first function, testing, and cleanup."
-    keywords="AWS Lambda Introduction, Serverless Application Development, AWS Lambda Basics, Writing Serverless Functions, AWS Lambda Cleanup"
-  /> */}
+export const metadata: Metadata = {
+  title: "AWS Lambda - Your Guide to Serverless Application Development",
+  description: "Learn about AWS Lambda and how to create serverless applications with this comprehensive guide. Get started with your first function, testing, and cleanup.",
+  keywords: ["AWS Lambda Introduction", "Serverless Application Development", "AWS Lambda Basics", "Writing Serverless Functions", "AWS Lambda Cleanup"]
+};
 
 export default function BlogFifteen() {
   return (

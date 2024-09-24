@@ -3,12 +3,14 @@ import Image from "next/image";
 import styles from "./styles.module.css"
 import FeatherIcon from "feather-icons-react";
 import blog1 from "@/assets/work/cloudnative.jpeg";
+import type { Metadata } from "next";
 
-{/* <SEO
-  title="The Benefits of Building a Cloud-Native Company"
-  description="Discover the advantages of creating a cloud-native company, including micro-scalability, faster product delivery, optimized security, cost efficiency, and more."
-  keywords="Cloud-native company, benefits of cloud-native architecture, micro-scalability, cloud security, cost optimization, Cloud-native business advantages, cloud-native organization benefits, cloud-native company features"
-/> */}
+export const metadata: Metadata = {
+  title: "The Benefits of Building a Cloud-Native Company",
+  description: "Discover the advantages of creating a cloud-native company, including micro-scalability, faster product delivery, optimized security, cost efficiency, and more.",
+  keywords: ["Cloud-native company", "benefits of cloud-native architecture", "micro-scalability", "cloud security", "cost optimization", "Cloud-native business advantages", "cloud-native organization benefits", "cloud-native company features"]
+};
+
 export default function BlogFive() {
   return (
     <section className={styles["blog"]}>

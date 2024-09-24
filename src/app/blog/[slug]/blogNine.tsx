@@ -5,12 +5,13 @@ import styles from "./styles.module.css"
 import React, { Component } from "react";
 import FeatherIcon from "feather-icons-react";
 import blog1 from "@/assets/blog/rightsizing.webp";
+import type { Metadata } from "next";
 
-{/* <SEO
-  title="Leveraging Rightsizing Recommendations for Cost Optimization in Cloud Deployments"
-  description="Discover how CloudPlexo, an AWS Partner, extends rightsizing recommendations to help businesses optimize cloud deployments, reduce costs, and enhance efficiency in line with best practices"
-  keywords="Rightsizing Recommendations, CloudPlexo, Cost Optimization, Cloud Deployments, AWS Partner, Cloud resource optimization, AWS cost-saving, CloudPlexo's rightsizing, Cloud economics, AWS cost management"
-/> */}
+export const metadata: Metadata = {
+  title: "Leveraging Rightsizing Recommendations for Cost Optimization in Cloud Deployments",
+  description: "Discover how CloudPlexo, an AWS Partner, extends rightsizing recommendations to help businesses optimize cloud deployments, reduce costs, and enhance efficiency in line with best practices.",
+  keywords: ["Rightsizing Recommendations", "CloudPlexo", "Cost Optimization", "Cloud Deployments", "AWS Partner", "AWS cost management", `Cloud resource optimization`, "AWS cloud expense reduction", "AWS cost-saving", "CloudPlexo's rightsizing", "Cloud economics"]
+};
 
 export default class BlogNine extends Component {
   render() {

@@ -4,12 +4,13 @@ import styles from "./styles.module.css"
 import React, { Component } from "react";
 import FeatherIcon from "feather-icons-react";
 import blog1 from "@/assets/blog/awswellarchitect.jpg";
+import type { Metadata } from "next";
 
-{/* <SEO
-  title="Aligning CloudPlexo with the AWS Well-Architected Framework"
-  description="Discover how CloudPlexo aligns with the AWS Well-Architected Framework, offering users the ability to assess, monitor, and optimize their cloud workloads across multiple AWS cloud environments."
-  keywords="AWS Well-Architected Framework, CloudPlexo, cloud management, cloud workloads, 5 pillars of best practices, cloud infrastructure management, AWS cloud environments, cloud workload assessment, cloud cost optimization"
-/> */}
+export const metadata: Metadata = {
+  title: "Aligning CloudPlexo with the AWS Well-Architected Framework",
+  description: "Discover how CloudPlexo aligns with the AWS Well-Architected Framework, offering users the ability to assess, monitor, and optimize their cloud workloads across multiple AWS cloud environments.",
+  keywords: ["AWS Well-Architected Framework, CloudPlexo, cloud management, cloud workloads, 5 pillars of best practices, cloud infrastructure management, AWS cloud environments, cloud workload assessment, cloud cost optimization"]
+};
 
 export default class BlogSix extends Component {
   render() {
