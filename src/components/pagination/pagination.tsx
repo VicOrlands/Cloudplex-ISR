@@ -44,7 +44,6 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
         return Array.from({ length: pageLimit }, (_, idx) => start + idx + 1).filter(page => page <= totalPages);
     };
 
-
     return (
         <section className={styles["courses-container"]}>
             <div className={styles.blogCatalog}>

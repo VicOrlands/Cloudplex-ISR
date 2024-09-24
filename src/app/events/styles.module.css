@@ -7,7 +7,7 @@
 }
 
 .eventsHero {
-    background-color: #10193b;
+    background-color: #0A0F25;
     padding: 0 150px;
     height: 500px;
     display: grid;
@@ -47,7 +47,7 @@
 
 /* event-socials */
 .eventSocials {
-    padding: 30px 150px 50px 150px;
+    padding: 30px 150px 30px 150px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5em;
@@ -130,6 +130,7 @@
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     display: -webkit-box;
 }
 
@@ -143,9 +144,61 @@
     margin-right: 10px;
 }
 
+.pagination,
+.pagination p,
+.pagination div {
+    display: flex;
+    align-items: center;
+}
+
+.pagination {
+    justify-content: space-between;
+    margin: 0 150px;
+    margin-bottom: 30px;
+}
+
+.pagination p {
+    color: #475467;
+    font-family: var(--font-inter);
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pagination p span {
+    margin: 0 5px;
+}
+
+.pagination div p {
+    font-weight: 500;
+    justify-content: center;
+    height: 40px;
+    margin: 0 10px;
+    width: 40px;
+}
+
+.pagination div p.active {
+    background: #F9FAFB;
+    border-radius: 50%;
+}
+
+.pagination p.disabled {
+    pointer-events: none;
+    color: #92969c;
+    fill: #D0D5DD;
+}
+
+.pagination .mobile-page-item {
+    display: none;
+    color: #182230;
+    font-family: var(--font-inter);
+}
+
 /* events-webinars */
 .eventWebinars {
-    padding: 0 150px;
+    border-top: 1px solid #F0F1F1;
+    margin: 0 150px;
+    padding-top: 20px;
 }
 
 .eventWebinars h2 {
@@ -277,11 +330,40 @@
         display: block;
     }
 
+    /* pagination */
+    .pagination {
+        margin: 20px;
+    }
+
+    .pagination p:has(span) {
+        border: 1px solid #D0D5DD;
+        border-radius: 8px;
+        padding: 8px;
+    }
+
+    .pagination p span {
+        display: none;
+    }
+
+    .pagination div p {
+        height: auto;
+        margin: 0;
+        width: auto;
+    }
+
+    .pagination .paginationItem {
+        display: none;
+    }
+
+    .pagination .mobile-page-item {
+        display: block;
+    }
+
     /* events-webinars */
     .eventWebinars {
+        margin: 0 20px;
+        margin-top: 40px;
         margin-bottom: 50px;
-        padding: 0 20px;
-        padding-top: 40px;
     }
 
     .eventWebinarGrid {
