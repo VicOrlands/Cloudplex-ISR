@@ -1,259 +1,260 @@
 /* serviceContainer */
 .serviceContainer {
-    padding: 50px 5%;
-    border-bottom: 1px solid #d0d5dd;
+  /* background: #f7f7f7; */
+  border-bottom: 1px solid #d0d5dd;
+  padding: 50px 5%;
 }
 
 .serviceContainer h5 {
-    color: #3e54ac;
-    font-family: var(--font-inter);
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 20px;
+  color: #3e54ac;
+  font-family: var(--font-inter);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .serviceContainer h2 {
-    width: 48%;
-    margin: auto;
+  width: 48%;
+  margin: auto;
 }
 
 .serviceContainer .tabsTab {
-    cursor: pointer;
-    color: #344054;
-    font-family: var(--font-inter);
-    font-weight: 500;
-    font-size: 1.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 15px 10px;
-    position: relative;
+  cursor: pointer;
+  color: #344054;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px 10px;
+  position: relative;
 }
 
 .servicesTabNavigation {
-    margin-top: 20px;
-    margin-bottom: 88px;
-    padding: 0;
-    height: auto;
+  margin-top: 20px;
+  margin-bottom: 88px;
+  padding: 0;
+  height: auto;
 }
 
 .serviceContainer ul {
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    grid-auto-columns: auto;
-    grid-auto-flow: column;
-    margin: auto;
-    display: grid;
-    padding: 8px;
-    border-radius: 15px;
-    background: #dfdfdf;
-    width: 40%;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
+  margin: auto;
+  display: grid;
+  padding: 8px;
+  border-radius: 15px;
+  background: #dfdfdf;
+  width: 40%;
 }
 
 /* Pseudo-element for the background */
 .serviceContainer .tabsTab::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.5s ease;
-    transform: translateX(0);
-    z-index: 9999;
-
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+  transform: translateX(0);
+  z-index: 9999;
 }
 
 /* Active tab with sliding background */
 .serviceContainer .tabsTabActive.slideLeft::before {
-    animation: sliderLeft 0.5s forwards;
+  animation: sliderLeft 0.5s forwards;
 }
 
 .serviceContainer .tabsTabActive.slideRight::before {
-    animation: sliderRight 0.5s forwards;
+  animation: sliderRight 0.5s forwards;
 }
 
 /* when tab is active, replace the line text with this :before content */
 /* one way to achieve this is to make the original line transparent and then overlay it with the ::before content */
 .serviceContainer .slideLeft.tabsTab::before {
-    content: "Solutions & Offerings";
-    color: #344054;
-    padding: 15px 0;
+  content: "Solutions & Offerings";
+  color: #344054;
+  padding: 15px 0;
 }
 
 .serviceContainer .slideRight.tabsTab::before {
-    content: "Professional Services";
-    color: #344054;
-    padding: 15px 0;
+  content: "Professional Services";
+  color: #344054;
+  padding: 15px 0;
 }
 
 .serviceContainer .slideLeft.tabsTab.tabsTabActive.slideLeft,
 .serviceContainer .slideRight.tabsTab.tabsTabActive.slideRight {
-    color: transparent;
+  color: transparent;
 }
 
 /* animation for sliding left and right between tabs*/
 @keyframes sliderLeft {
-    from {
-        background: #fff;
-        transform: translateX(100%);
-    }
+  from {
+    background: #fff;
+    transform: translateX(100%);
+  }
 
-    to {
-        background: #fff;
-        transform: translateX(0);
-    }
+  to {
+    background: #fff;
+    transform: translateX(0);
+  }
 }
 
 @keyframes sliderRight {
-    from {
-        background-color: #fff;
-        transform: translateX(-100%);
-    }
+  from {
+    background-color: #fff;
+    transform: translateX(-100%);
+  }
 
-    to {
-        background-color: #fff;
-        transform: translateX(0);
-    }
+  to {
+    background-color: #fff;
+    transform: translateX(0);
+  }
 }
 
 .serviceContainer .tabsTab:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .serviceContainer .tabsTabActive,
 .tabsTab:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .tabContent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
 }
 
-.tabContent>div {
-    padding: 10px;
-    border-radius: 5px;
-    transition: transform 0.3s;
+.tabContent > div {
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s;
 }
 
-.tabContent>div:hover {
-    background-color: #ebeeff;
-    transform: scale(1.05);
+.tabContent > div:hover {
+  background-color: #ebeeff;
+  transform: scale(1.05);
 }
 
-.tabContent>div:hover a {
-    background-color: #fff;
+.tabContent > div:hover a {
+  background-color: #fff;
 }
 
 .tabContent img {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .tabContent h3 {
-    color: #101828;
-    font-family: var(--font-inter);
-    font-size: var(--font-size-h3);
-    font-weight: 500;
-    margin-bottom: 20px;
+  color: #101828;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-h3);
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .tabContent section p {
-    color: #667085;
-    font-family: var(--font-inter);
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 24px;
-    margin-bottom: 20px;
+  color: #667085;
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 24px;
+  margin-bottom: 20px;
 }
 
 .tabContent section a {
-    box-shadow: 0px 1px 2px 0px #1018280d;
-    border: 1px solid #d0d5dd;
-    border-radius: 8px;
-    color: #3e54ac;
-    font-family: var(--font-inter);
-    font-weight: 600;
-    font-size: 1.4rem;
-    padding: 10px 16px;
-    display: flex;
-    align-items: center;
-    width: fit-content;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  color: #3e54ac;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
 }
 
 .tabContent section a:hover {
-    border: 1px solid #93969c;
+  border: 1px solid #93969c;
 }
 
 .tabContent section a #icon {
-    color: #3e54ac;
-    font-size: 2rem;
-    margin-left: 10px;
+  color: #3e54ac;
+  font-size: 2rem;
+  margin-left: 10px;
 }
 
 .btnViewMore {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 .btnViewMore button {
-    background-color: #3e54ac;
-    color: #fff;
-    font-family: var(--font-inter);
-    font-weight: 600;
-    font-size: 1.6rem;
-    border: 1px solid #3e54ac;
-    border-radius: 8px;
-    padding: 10px 20px;
-    cursor: pointer;
+  background-color: #3e54ac;
+  color: #fff;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid #3e54ac;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 .btnViewMore button:hover {
-    background-color: #1935a1;
+  background-color: #1935a1;
 }
 
 /* badges styling section */
 .badgesContainer {
-    padding: 50px 10%;
+  background: #f7f7f7;
+  padding: 50px 10%;
 }
 
 .badgesContainer section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .badgesContainer img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .badgesContainer .partnerBadges {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .badgesContainer .partnerBadges div {
-    width: 85%;
+  width: 85%;
 }
 
 .badgesContainer .otherBadges {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
 }
 
 .badgesContainer .otherBadges div {
-    width: 100px;
-    height: auto;
+  width: 100px;
+  height: auto;
 }
 
 /* .badgesContainer .otherBadges div:nth-child(5) {
@@ -262,209 +263,207 @@
 
 /* clientsSection */
 .clientsSection {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .clientsImages {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .clientsImages div {
-    margin: 0 30px;
+  margin: 0 30px;
 }
 
 .clientsSection a {
-    box-shadow: 0px 1px 2px 0px #1018280d;
-    border: 1px solid #d0d5dd;
-    border-radius: 8px;
-    color: #344054;
-    font-family: var(--font-inter);
-    font-weight: 600;
-    font-size: 1.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: 10px 16px;
-    width: fit-content;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  color: #344054;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 10px 16px;
+  width: fit-content;
 }
 
 .clientsSection a:hover {
-    border: 1px solid #93969c;
+  border: 1px solid #93969c;
 }
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .imageWrapper {
-        margin-top: 50px;
-        height: 30px;
-        width: auto;
-    }
+  .imageWrapper {
+    margin-top: 50px;
+    height: 30px;
+    width: auto;
+  }
 
-    .imageWrapper img {
-        margin: 0 20px;
-        width: auto;
-    }
+  .imageWrapper img {
+    margin: 0 20px;
+    width: auto;
+  }
 
-    /* serviceContainer */
-    .serviceContainer {
-        padding: 30px 60px;
-    }
+  /* serviceContainer */
+  .serviceContainer {
+    padding: 30px 60px;
+  }
 
-    .serviceContainer h2 {
-        width: 100%;
-        margin: auto;
-    }
+  .serviceContainer h2 {
+    width: 100%;
+    margin: auto;
+  }
 
-    .serviceContainer ul {
-        background-color: #e8f1ff;
-        width: 100%;
-        font-size: 1.6rem;
-    }
+  .serviceContainer ul {
+    background-color: #e8f1ff;
+    width: 100%;
+    font-size: 1.6rem;
+  }
 
-    .tabContent {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .tabContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .tabContent img {
-        margin-bottom: 10px;
-    }
+  .tabContent img {
+    margin-bottom: 10px;
+  }
 
-    .tabContent>div {
-        padding: 0;
-        transition: none;
-    }
+  .tabContent > div {
+    padding: 0;
+    transition: none;
+  }
 
-    .tabContent>div:hover {
-        background-color: #fff;
-        transform: none;
-    }
+  .tabContent > div:hover {
+    background-color: #fff;
+    transform: none;
+  }
 
-    /* badges styling section */
-    .badgesContainer {
-        padding: 30px 60px;
-    }
+  /* badges styling section */
+  .badgesContainer {
+    padding: 30px 60px;
+  }
 
-    .badgesContainer section {
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
+  .badgesContainer section {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
 
-    .badgesContainer .partnerBadges {
-        gap: 30px;
-    }
+  .badgesContainer .partnerBadges {
+    gap: 30px;
+  }
 
-    .badgesContainer .partnerBadges div {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .badgesContainer .partnerBadges div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    .badgesContainer .otherBadges div {
-        width: 100%;
-    }
+  .badgesContainer .otherBadges div {
+    width: 100%;
+  }
 
-    .badgesContainer .otherBadges div:nth-child(5),
-    .badgesContainer .otherBadges div:nth-child(16) {
-        grid-column: span 1;
-    }
+  .badgesContainer .otherBadges div:nth-child(5),
+  .badgesContainer .otherBadges div:nth-child(16) {
+    grid-column: span 1;
+  }
 
-    /* clientsSection */
-    .clientsSection {
-        padding: 30px 60px;
-    }
+  /* clientsSection */
+  .clientsSection {
+    padding: 30px 60px;
+  }
 
-    .clientsImages {
-        flex-wrap: wrap;
-    }
+  .clientsImages {
+    flex-wrap: wrap;
+  }
 }
 
 /* mobile */
 @media (max-width: 767px) and (min-width: 300px) {
+  /* serviceContainer */
+  .serviceContainer {
+    padding: 30px 20px;
+  }
 
-    /* serviceContainer */
-    .serviceContainer {
-        padding: 30px 20px;
-    }
+  .serviceContainer h2 {
+    width: 100%;
+    margin: auto;
+  }
 
-    .serviceContainer h2 {
-        width: 100%;
-        margin: auto;
-    }
+  .serviceContainer .tabsTab {
+    font-size: 1.4rem;
+  }
 
-    .serviceContainer .tabsTab {
-        font-size: 1.4rem;
-    }
+  .serviceContainer ul {
+    background-color: #e8f1ff;
+    font-size: 1.4rem;
+    width: 100%;
+  }
 
-    .serviceContainer ul {
-        background-color: #e8f1ff;
-        font-size: 1.4rem;
-        width: 100%;
-    }
+  .servicesTabNavigation {
+    margin-bottom: 50px;
+    padding: 0;
+  }
 
-    .servicesTabNavigation {
-        margin-bottom: 50px;
-        padding: 0;
-    }
+  .tabContent {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 
-    .tabContent {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
+  .tabContent img {
+    margin-bottom: 10px;
+  }
 
-    .tabContent img {
-        margin-bottom: 10px;
-    }
+  .tabContent > div {
+    padding: 0;
+    transition: none;
+  }
 
-    .tabContent>div {
-        padding: 0;
-        transition: none;
-    }
+  .tabContent > div:hover {
+    background-color: #fff;
+    transform: none;
+  }
 
-    .tabContent>div:hover {
-        background-color: #fff;
-        transform: none;
-    }
+  /* badges styling section */
+  .badgesContainer {
+    padding: 20px;
+  }
 
-    /* badges styling section */
-    .badgesContainer {
-        padding: 20px;
-    }
+  .badgesContainer section {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
 
-    .badgesContainer section {
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
+  .badgesContainer .partnerBadges {
+    gap: 20px;
+  }
 
-    .badgesContainer .partnerBadges {
-        gap: 20px;
-    }
+  .badgesContainer .partnerBadges div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    .badgesContainer .partnerBadges div {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .badgesContainer .otherBadges div {
+    width: 100%;
+  }
 
-    .badgesContainer .otherBadges div {
-        width: 100%;
-    }
+  .badgesContainer .otherBadges div:nth-child(5),
+  .badgesContainer .otherBadges div:nth-child(16) {
+    grid-column: span 1;
+    height: auto;
+    width: auto;
+  }
 
-    .badgesContainer .otherBadges div:nth-child(5),
-    .badgesContainer .otherBadges div:nth-child(16) {
-        grid-column: span 1;
-        height: auto;
-        width: auto;
-    }
+  /* clientsSection */
+  .clientsSection {
+    padding: 30px 20px;
+  }
 
-    /* clientsSection */
-    .clientsSection {
-        padding: 30px 20px;
-    }
-
-    .clientsImages {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+  .clientsImages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
