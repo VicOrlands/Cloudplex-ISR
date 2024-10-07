@@ -125,6 +125,7 @@ export const EventsArray: EventsProps[] = [
           experience for all participants.
         </p>`,
     eventImages: digitalImages,
+    videoLink: "https://cloudplexo.com/cloudplexo-public-sector-2024.mp4",
     guestSpeakers:
       "NTDA Nigeria, Nnena Irebisi, Samuel Njeka, Techspecialist Consulting Limited, Startup Abuja, FEDERAL MORTGAGE BANK OF NIGERIA (FMBN), Galaxy Backbone",
   },
@@ -173,7 +174,7 @@ export const EventsArray: EventsProps[] = [
     linkText: "View info",
     imgRightText: "KIGALI CTO & Founders Mixer",
     eventImages: kigaliImages,
-    videoLink: 'https://cloudplexo.com/Kigali-mixer.mp4',
+    videoLink: "https://cloudplexo.com/Kigali-mixer.mp4",
     eventDescription: `On Friday, June 21st at 4pm CAT, we proudly hosted the CTO & Founders Mixer, a gathering designed to foster networking, insights, and collaboration.<br /><br /><br />Bringing together some of the brightest minds in the industry, the event offered attendees a chance to exchange valuable knowledge and strategies to drive their ventures forward in the ever-evolving world of Amazon Web Services (AWS). From insightful conversations on cloud innovation to sharing personal experiences, the mixer created a dynamic environment for founders and CTOs to connect with like-minded professionals, sparking new ideas and potential partnerships.<br /><br /><br />A huge thank you to everyone who participated in making the evening such a success. We’re excited to see the impact of the collaborations and knowledge shared at this inspiring event!`,
   },
   {
@@ -193,7 +194,7 @@ export const EventsArray: EventsProps[] = [
     title: "CTO’s & Founders Mixer",
     text: `The energy was electric as attendees soaked in the insightful discussions and invaluable connections made. From groundbreaking tech insights to entrepreneurial wisdom, the mixer catalyzes innovation and collaboration.`,
     link: "ctos-and-founders-mixer",
-    date: "22 Apr 2024",
+    date: "22 April, 2024",
     linkText: "View info",
     imgRightText: "CTO’s & Founders Mixer",
     eventImages: [founders],
@@ -204,7 +205,7 @@ export const EventsArray: EventsProps[] = [
     title: "Fintech Fusion Submit",
     text: `From startups to industry giants, the Fintechfusion Summit had it all. It was a knowledge feast, an incredible day of insights, innovation, unparalled networking and limitless opportunities at the Fintech Summit 2023!`,
     link: "fintech-fusion-summit",
-    date: "2nd November 2023",
+    date: "2nd November, 2023",
     linkText: "View info",
     imgRightText: "Fintech Fusion Submit",
     eventImages: fintechFusionImages,

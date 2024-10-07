@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Unlock Your Tech Potential - Learn modern computing tech skills, including AWS Certified Cloud Practitioner, Microsoft Azure Fundamentals, and more.",
   keywords: ['Cloud technology training', 'Tech skills development', 'Cloud certification programs', 'Computing courses with experts'],
   alternates: {
-    canonical: "https://cloudplexo.com/training"
+    canonical: "https://www.cloudplexo.com/training"
   }
 };
 

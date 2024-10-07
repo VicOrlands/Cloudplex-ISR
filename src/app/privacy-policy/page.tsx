@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description: "Learn how CloudPlexo collects, protects, and uses your personal information. Understand your rights and our data practices",
     keywords: ['CloudPlexo Privacy Policy', 'Data protection', 'Information security', 'User rights', 'Privacy practices'],
     alternates: {
-        canonical: "https://cloudplexo.com/privacy-policy"
+        canonical: "https://www.cloudplexo.com/privacy-policy"
     }
 };
 

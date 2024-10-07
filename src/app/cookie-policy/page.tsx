@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description: "Learn how CloudPlexo uses cookies and how they impact your experience on our website and services. Review our Cookie Policy for details",
     keywords: ['CloudPlexo Cookie Policy'],
     alternates: {
-        canonical: 'https://cloudplexo.com/cookie-policy',
+        canonical: 'https://www.cloudplexo.com/cookie-policy',
     },
 };
 

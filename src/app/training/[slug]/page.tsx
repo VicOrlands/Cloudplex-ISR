@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: MetaProps }) {
     description: course?.seoDesc,
     keywords: course?.seoDesc,
     alternates: {
-      canonical: `https://cloudplexo.com/training/${slug}`,
+      canonical: `https://www.cloudplexo.com/training/${slug}`,
     },
   }
 }

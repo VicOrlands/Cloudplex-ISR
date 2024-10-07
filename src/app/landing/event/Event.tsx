@@ -4,10 +4,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick.css";
 import styles from "./events.module.css";
 import { eventSuccessArray } from "./array";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick-theme.css";
 import { MdArrowForward, MdArrowBack } from "react-icons/md";
 import { EventsArray } from "@/app/events/arrays/eventsArray";
 
@@ -76,7 +76,12 @@ function Event() {
         <section className={styles["upcoming-events"]}>
           {upcomingEvents.map((item) => (
             <div key={item.title} className={styles["upcoming-events-grid"]}>
-              <Image loading="lazy" src={item.img} alt={item.title} />
+              <Image
+                loading="lazy"
+                src={item.img}
+                alt={item.title}
+                priority={false}
+              />
               <div>
                 <h4>{item.date}</h4>
                 <h3>{item.title}</h3>
@@ -102,6 +107,7 @@ function Event() {
                       loading="lazy"
                       src={image}
                       alt={`Event Image ${index + 1}`}
+                      priority={false}
                     />
                     {currentEvent.imgHeader || currentEvent.imgText ? (
                       <div className={styles["sliderText"]}>

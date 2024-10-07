@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: "Have questions or need assistance with cloud solutions? Contact CloudPlexo's experts for support and guidance.",
     keywords: ["Cloud experts", "Cloud experts in Africa", "cloud experts in Lagos", "cloud experts in London"],
     alternates: {
-        canonical: "https://cloudplexo.com/contact-us"
+        canonical: "https://www.cloudplexo.com/contact-us"
     }
 };
 

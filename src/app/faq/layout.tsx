@@ -3,7 +3,7 @@ export async function generateMetadata() {
     return {
         title: "FAQ - CloudPlexo's Expert Solutions",
         alternates: {
-            canonical: 'https://cloudplexo.com/faq',
+            canonical: 'https://www.cloudplexo.com/faq',
         },
     };
 }

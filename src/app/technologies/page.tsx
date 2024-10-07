@@ -9,7 +9,6 @@ import { useRouter } from 'next/navigation'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// import { Technologiespage } from "../../facebookEvent";
 import tel from "@/assets/tech/call-calling.png";
 import customerCare from "@/assets/tech/care.gif";
 import Dollar from "@/assets/tech/dollar.gif";
@@ -37,10 +36,6 @@ const Technologies = () => {
     jobTitle: "",
     company: "",
   })
-
-  // componentDidMount() {
-  // Technologiespage();
-  // }
 
   const formHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;

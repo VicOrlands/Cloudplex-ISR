@@ -13,13 +13,21 @@ import Clients from "@/app/landing/Client";
 import BlogGrid from "@/components/blogGrid/Grid";
 
 export const metadata: Metadata = {
-  title: "Top Cloud Services Providers - CloudPlexo's Innovative solutions.",
-  description: "Transform your business in with CloudPlexo's cutting-edge solutions. From cloud services to digital transformation, we elevate your success. Explore now!",
-  keywords: ['cloud services', 'cloud service providers', 'cloud solutions', 'scalable cloud services', 'cloud based backup services', 'cloud solutions', 'scalable cloud services', 'cloud based backup services', 'Cloud services', 'Cloud technology', 'Cloud computing solutions', 'Cloud-based solutions', 'Scalable cloud services'],
-  metadataBase: new URL('https://www.davegray.codes/'), // for root layout
+  title:
+    "Scalable Cloud Services by CloudPlexo | Expert Cloud Service Providers",
+  description:
+    "Choose CloudPlexo for cloud services and solutions. As leading cloud service providers, we offer scalable, reliable, and cutting-edge cloud technologies.",
+  keywords: [
+    "cloud services",
+    "cloud service providers",
+    "cloud solutions",
+    "scalable cloud services",
+    "cloud based backup services",
+  ],
+  metadataBase: new URL("https://www.cloudplexo.com"),
   alternates: {
-    canonical: "https://cloudplexo.com/"
-  }
+    canonical: "https://www.cloudplexo.com",
+  },
 };
 
 export default function Home() {
@@ -38,8 +46,8 @@ export default function Home() {
           <h2>Leading Nigeria's FSI Revolution</h2>
           <p>
             CloudPlexo, an advanced AWS partner, is the first to leverage 100%
-            AWS Lagos local zone for data residency requirement to spearhead
-            the shift of GTCO Pensions to the AWS Cloud.
+            AWS Lagos local zone for data residency requirement to spearhead the
+            shift of GTCO Pensions to the AWS Cloud.
           </p>
         </div>
 

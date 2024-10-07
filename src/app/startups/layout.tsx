@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description: "Access free perks and resources to scale your Startup from Africa to the world",
     keywords: ["startup", "africa startup"],
     alternates: {
-        canonical: "https://cloudplexo.com/startups"
+        canonical: "https://www.cloudplexo.com/startups"
     }
 };
 

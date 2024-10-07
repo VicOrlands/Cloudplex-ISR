@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description: "Schedule a free consultation with CloudPlexo's data transformation experts. Discuss your data optimization and AI strategies",
     keywords: ["Data Transformation Free Consultation", "Consultation Booking", "Expert Meeting Request", "Data Strategy Discussion"],
     alternates: {
-        canonical: "https://cloudplexo.com/schedule-consultation"
+        canonical: "https://www.cloudplexo.com/schedule-consultation"
     }
 };
 

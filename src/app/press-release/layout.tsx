@@ -5,7 +5,7 @@ export async function generateMetadata() {
         description: "Stay updated on the latest industry developments, news, interviews, and cutting-edge technologies with CloudPlexo's press releases",
         keywords: ['Cloud Industry Updates', 'Cutting-Edge Technologies'],
         alternates: {
-            canonical: "https://cloudplexo.com/press-release"
+            canonical: "https://www.cloudplexo.com/press-release"
         }
     };
 }

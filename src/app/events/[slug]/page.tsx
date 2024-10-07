@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: MetaProps }) {
       "Cloud trends",
     ],
     alternates: {
-      canonical: `https://cloudplexo.com/events/${slug}`,
+      canonical: `https://www.cloudplexo.com/events/${slug}`,
     },
   };
 }

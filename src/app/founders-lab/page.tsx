@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Invest in your entrepreneurial journey with CloudPlexo's Founders Lab. We support early-stage founders of African descent to bring value to the mass market. Apply now and power your startup dreams.",
   keywords: ['Startup support program', 'Entrepreneurial empowerment', 'African descent entrepreneurs', 'Early-stage founders', 'Mass market value delivery'],
   alternates: {
-    canonical: "https://cloudplexo.com/founders-lab",
+    canonical: "https://www.cloudplexo.com/founders-lab",
   },
 };
 

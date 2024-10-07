@@ -12,7 +12,7 @@ import bgImg from "@/assets/events/events_description_background_pattern.png";
 
 import Modal from "./modal/ImgModal";
 import Footer from "../../footer/page";
-import { EventsArray, EventsProps } from "../../arrays/eventsArray";
+import { EventsProps } from "../../arrays/eventsArray";
 
 // types
 type PageProps = {
@@ -171,23 +171,25 @@ const EventsDetails: React.FC<PageProps> = ({ event }) => {
           ))}
         </div>
 
-        <div className={styles["pagination"]}>
-          <button
-            onClick={handlePreviousPage}
-            disabled={currentPage === 0}
-            aria-label="Previous Page"
-          >
-            <MdArrowBack />
-          </button>
-          <span>{`Page ${currentPage + 1} of ${totalPages}`}</span>
-          <button
-            onClick={handleNextPage}
-            disabled={currentPage === totalPages - 1}
-            aria-label="Next Page"
-          >
-            <MdArrowForward />
-          </button>
-        </div>
+        {totalPages > 1 && (
+          <div className={styles["pagination"]}>
+            <button
+              onClick={handlePreviousPage}
+              disabled={currentPage === 0}
+              aria-label="Previous Page"
+            >
+              <MdArrowBack />
+            </button>
+            <span>{`Page ${currentPage + 1} of ${totalPages}`}</span>
+            <button
+              onClick={handleNextPage}
+              disabled={currentPage === totalPages - 1}
+              aria-label="Next Page"
+            >
+              <MdArrowForward />
+            </button>
+          </div>
+        )}
       </section>
 
       <Footer />

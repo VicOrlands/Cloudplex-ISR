@@ -7,12 +7,6 @@ import Image from "next/image";
 import styles from "./styles.module.css"
 import Link from "next/link";
 
-{/* <SEO
-  title="Efficient Cloud Migration Services | CloudPlexo"
-  description="Explore CloudPlexo's cloud migration services. Ensure a smooth transition to the cloud with our expert solutions. Elevate your business efficiency today."
-  keywords="cloud migration service providers, cloud migration services aws, cloud migration readiness assessment, cloud migration specialists, cloud data migration, cloud migration service, cloud cost savings, AWS server migration automation, large-scale cloud migration, agile cloud transition, cost-effective server migration"
-/> */}
-
 export default function Migration() {
   return (
     <section className={styles["cloud-migration"]}>

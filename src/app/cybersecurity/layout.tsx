@@ -5,7 +5,7 @@ export async function generateMetadata() {
         description: "Secure your business with CloudPlexo's advanced cybersecurity services. Safeguard your digital assets with cutting-edge solutions designed to prevent, detect, and respond to cyber threats. Explore our services now!",
         keywords: ['cybersecurity', 'digital asset protection', 'cyber threat prevention', 'cybersecurity services', 'CloudPlexo cybersecurity'],
         alternates: {
-            canonical: 'https://cloudplexo.com/cybersecurity',
+            canonical: 'https://www.cloudplexo.com/cybersecurity',
         },
     };
 }

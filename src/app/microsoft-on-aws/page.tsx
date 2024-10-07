@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Orchestrating Microsoft Workloads in the AWS Symphony",
   description: "Embark on a revolutionary fusion of Microsoft Workloads and AWS with CloudPlexo, where expertise meets innovation.",
   alternates: {
-    canonical: 'https://cloudplexo.com/microsoft-on-aws',
+    canonical: 'https://www.cloudplexo.com/microsoft-on-aws',
   },
 };
 

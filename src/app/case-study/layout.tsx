@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     description: "Explore case studies of organizations optimizing cloud costs and maximizing savings through strategies like AWS credits and resource allocation",
     keywords: ['Cloud Billing Solutions', 'Cloud Cost Optimization', 'AWS Credits', 'Cost Management', 'Cloud Spending', 'Resource Allocation', 'Billing Challenges'],
     alternates: {
-        canonical: 'https://cloudplexo.com/case-study',
+        canonical: 'https://www.cloudplexo.com/case-study',
     },
 };
 

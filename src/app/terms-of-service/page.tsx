@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description: "Review our Terms and Conditions to understand your rights and responsibilities when using CloudPlexo's website and services",
     keywords: ['CloudPlexo Terms and Conditions', 'User agreement', 'Service agreement', 'Website terms'],
     alternates: {
-        canonical: "https://cloudplexo.com/terms-of-service"
+        canonical: "https://www.cloudplexo.com/terms-of-service"
     }
 };
 

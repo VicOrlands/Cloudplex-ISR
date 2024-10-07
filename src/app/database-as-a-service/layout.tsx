@@ -3,7 +3,7 @@ export async function generateMetadata() {
     return {
         title: "Optimize Your Databases - CloudPlexo Expert Solution",
         alternates: {
-            canonical: 'https://cloudplexo.com/database-as-a-service',
+            canonical: 'https://www.cloudplexo.com/database-as-a-service',
         },
     };
 }
