@@ -54,6 +54,7 @@ import blog54 from "@/assets/blog/Moving successfully to the Amazon Cloud.webp";
 import blog55 from "@/assets/blog/blog54/Building an image analyzer with react and amazon rekognition.webp";
 import blog56 from "@/assets/blog/blog55/AWS Auto Scaling thumbnail.webp";
 import blog56Main from "@/assets/blog/blog56/partyrock_thumbnail_main.webp";
+import blog57Main from "@/assets/blog/blog57/event bus arch.png";
 
 export interface BlogsProps {
   image: StaticImageData;
@@ -64,6 +65,13 @@ export interface BlogsProps {
 }
 
 export const blogs: BlogsProps[] = [
+  {
+    image: blog57Main,
+    title: "AWS SNS and SQS - How To Build A Robust Event Bus Architecture",
+    desc: "This article will explore how these services work individually and how they can be integrated to create a robust event bus architecture.",
+    link: "aws-sns-and-sqs-how-to-build-a-robust-event-bus-architecture",
+    date: "03 October 2024",
+  },
   {
     image: blog56Main,
     title:
