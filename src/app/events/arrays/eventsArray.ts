@@ -8,10 +8,13 @@ import businessDay from "@/assets/events/businessDay/seven.webp";
 import GenerativeAI from "@/assets/events/1691070093414.webp";
 import Immersion from "@/assets/events/Immersion image 1.webp";
 import GenAI from "@/assets/events/GenerativeAI.webp";
-import PublicSector from "@/assets/events/public sector strategic engagement.png";
-import AmazonQ from "@/assets/events/amazoq advantage.png";
-import Brunch from "@/assets/events/Nairobi Founders Brunch.png";
-import AccraConnect from "@/assets/events/tech connect.png";
+import PublicSector from "@/assets/events/public sector strategic engagement.webp";
+import AmazonQ from "@/assets/events/amazoq advantage.webp";
+import Brunch from "@/assets/events/Nairobi Founders Brunch.webp";
+import AccraConnect from "@/assets/events/tech connect.webp";
+import OwerriEvent from "@/assets/events/owerri_founders_mixer.webp";
+import digitalThumbnail from "@/assets/events/transcorp/videothumbnail.webp";
+
 import {
   businessDayImages,
   digitalImages,
@@ -37,9 +40,21 @@ export interface EventsProps {
   eventImages: StaticImageData[];
   guestSpeakers?: string;
   videoLink?: string;
+  videoThumbnail?: StaticImageData;
 }
 
 export const EventsArray: EventsProps[] = [
+  {
+    img: OwerriEvent,
+    title: "Founders’ Mixer",
+    text: `Are you a tech entrepreneur looking to expand your network and connect with like-minded individuals? Look no further! We're thrilled to announce the SMFEST Founders' Mixer, a unique opportunity to meet fellow founders, explore potential partnerships, and gain valuable insights from industry leaders.`,
+    link: "https://lu.ma/xkx3fdtg",
+    date: "18th October 2024 Accra, Protea Hotel Owerri",
+    linkText: "Register",
+    imgRightText: "5PM WAT",
+    eventImages: [],
+    eventDescription: "",
+  },
   {
     img: AccraConnect,
     title: "Tech Connect Accra",
@@ -66,7 +81,7 @@ export const EventsArray: EventsProps[] = [
   {
     img: PublicSector,
     title: "Unlocking Digital Transformation in Nigeria's Public Sector ",
-    text: ``,
+    text: `The event kicked off with a warm welcome from Cloudplexo, followed by insightful keynote speeches from Mr. Kashifu Abdullahi, represented by Mr. Oladejo Olawwumi - Director of IT Infrastructure Solutions  and Prof. Ibrahim A. Adeyanju. Their presentations highlighted the transformative potential of cloud technology and its role in enhancing efficiency, transparency, and service delivery within government agencies.`,
     link: "unlocking-digital-transformation-in-nigeria-public-sector",
     date: "September 17th, 2024",
     linkText: "View info",
@@ -126,6 +141,7 @@ export const EventsArray: EventsProps[] = [
         </p>`,
     eventImages: digitalImages,
     videoLink: "https://cloudplexo.com/cloudplexo-public-sector-2024.mp4",
+    videoThumbnail: digitalThumbnail,
     guestSpeakers:
       "NTDA Nigeria, Nnena Irebisi, Samuel Njeka, Techspecialist Consulting Limited, Startup Abuja, FEDERAL MORTGAGE BANK OF NIGERIA (FMBN), Galaxy Backbone",
   },
@@ -145,7 +161,7 @@ export const EventsArray: EventsProps[] = [
   {
     img: GenAI,
     title: "August Gen-AI Fridays: Getting started on Amazon Bedrock",
-    text: ``,
+    text: `Discover the potential of generative AI with Amazon Bedrock. Our in-depth workshop will equip you with the knowledge and skills to harness the power of this cutting-edge technology.`,
     link: "https://www.linkedin.com/events/7226214750320246784/comments/",
     date: "Every Friday of August",
     linkText: "View info",

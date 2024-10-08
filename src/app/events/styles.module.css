@@ -14,7 +14,7 @@
 
 .eventsHero {
   color: #eff0fa;
-  padding: 0 150px;
+  padding: 0 100px;
   padding-top: 4%;
   height: 500px;
   display: grid;
@@ -42,7 +42,7 @@
 }
 
 .eventsHero p {
-  font-size: 2rem;
+  font-size: 2.2rem;
   line-height: 34px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -50,9 +50,9 @@
 
 /* event-socials */
 .eventSocials {
-  padding: 30px 150px 30px 150px;
+  padding: 30px 100px 30px 100px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.5em;
 }
 
@@ -115,7 +115,7 @@
 
 .eventSocialsBodyContainer h3 {
   color: #101828;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 32px;
   margin-bottom: 15px;
@@ -153,7 +153,7 @@
 
 .pagination {
   justify-content: space-between;
-  margin: 0 150px;
+  margin: 0 100px;
   margin-bottom: 30px;
 }
 
@@ -195,7 +195,7 @@
 /* events-webinars */
 .eventWebinars {
   border-top: 1px solid #f0f1f1;
-  margin: 0 150px;
+  margin: 0 100px;
   padding-top: 20px;
 }
 

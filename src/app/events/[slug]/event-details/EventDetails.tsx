@@ -8,7 +8,7 @@ import "video-react/dist/video-react.css";
 import { Player, BigPlayButton } from "video-react";
 import { MdArrowForward, MdArrowBack } from "react-icons/md";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
-import bgImg from "@/assets/events/events_description_background_pattern.png";
+import bgImg from "@/assets/events/events_description_background_pattern.webp";
 
 import Modal from "./modal/ImgModal";
 import Footer from "../../footer/page";
@@ -156,7 +156,7 @@ const EventsDetails: React.FC<PageProps> = ({ event }) => {
               playsInline
               aspectRatio="2.5:1"
               src={event.videoLink}
-              poster={coverImage?.src}
+              poster={event.videoThumbnail?.src || coverImage?.src}
             >
               <BigPlayButton position="center" />
             </Player>

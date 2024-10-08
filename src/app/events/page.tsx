@@ -16,11 +16,11 @@ import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
 
 import Thumbnail from "@/assets/events/events-video-thumbnail.webp";
-import BgImg from "@/assets/events/Background_pattern.png";
+import BgImg from "@/assets/events/Background_pattern.webp";
 import Footer from "./footer/page";
 
 function Events() {
-  const eventsPerPage = 6;
+  const eventsPerPage = 8;
   const paginationLimit = 4;
   const [currentPage, setCurrentPage] = useState<number>(1);
   const totalPages = Math.ceil(EventsArray.length / eventsPerPage);

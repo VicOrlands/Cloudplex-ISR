@@ -14,7 +14,7 @@ import event10 from "@/assets/events/businessDay/ten.webp";
 import event11 from "@/assets/events/businessDay/eleven.webp";
 import firstSliderLogo from "@/assets/events/logo.webp";
 import businessDayLogo from "@/assets/events/Digital-Journal.webp";
-import cloudplexoLogo from "@/assets/events/CloudPlexo logo.png";
+import cloudplexoLogo from "@/assets/events/CloudPlexo logo.webp";
 import sliderImg1 from "@/assets/events/Immersion image 1.webp";
 import sliderImg2 from "@/assets/events/Immersion image 2.webp";
 import sliderImg3 from "@/assets/events/Immersion image 3.webp";
@@ -33,19 +33,19 @@ import kigali4 from "@/assets/events/kigali/fourth.webp"
 import kigali5 from "@/assets/events/kigali/fifth.webp"
 import kigali6 from "@/assets/events/kigali/sixth.webp"
 import kigali7 from "@/assets/events/kigali/seventh.webp"
-import Nairobi1 from "@/assets/events/nairobi/1.jpeg"
-import Nairobi2 from "@/assets/events/nairobi/2.jpeg"
-import Nairobi3 from "@/assets/events/nairobi/3.jpeg"
-import Nairobi4 from "@/assets/events/nairobi/4.jpeg"
-import Nairobi5 from "@/assets/events/nairobi/5.png"
-import Transcorp1 from "@/assets/events/transcorp/1.jpeg"
-import Transcorp2 from "@/assets/events/transcorp/2.jpeg"
-import Transcorp3 from "@/assets/events/transcorp/3.png"
-import Transcorp4 from "@/assets/events/transcorp/4.jpeg"
-import Transcorp5 from "@/assets/events/transcorp/5.jpeg"
-import Transcorp6 from "@/assets/events/transcorp/6.jpeg"
-import Transcorp7 from "@/assets/events/transcorp/7.jpeg"
-import Transcorp8 from "@/assets/events/transcorp/8.jpeg"
+import Nairobi1 from "@/assets/events/nairobi/1.webp"
+import Nairobi2 from "@/assets/events/nairobi/2.webp"
+import Nairobi3 from "@/assets/events/nairobi/3.webp"
+import Nairobi4 from "@/assets/events/nairobi/4.webp"
+import Nairobi5 from "@/assets/events/nairobi/5.webp"
+import Transcorp1 from "@/assets/events/transcorp/1.webp"
+import Transcorp2 from "@/assets/events/transcorp/2.webp"
+import Transcorp3 from "@/assets/events/transcorp/3.webp"
+import Transcorp4 from "@/assets/events/transcorp/4.webp"
+import Transcorp5 from "@/assets/events/transcorp/5.webp"
+import Transcorp6 from "@/assets/events/transcorp/6.webp"
+import Transcorp7 from "@/assets/events/transcorp/7.webp"
+import Transcorp8 from "@/assets/events/transcorp/8.webp"
 
 interface EventProps {
     img: StaticImageData,

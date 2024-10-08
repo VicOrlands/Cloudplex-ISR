@@ -1,7 +1,6 @@
 import EventsDetails from "./EventDetails";
 import { EventsArray } from "../../arrays/eventsArray";
 
-// Server Component
 export async function generateStaticParams() {
   const eventPath = EventsArray.map(({ link }) => ({
     slug: link || "404",
