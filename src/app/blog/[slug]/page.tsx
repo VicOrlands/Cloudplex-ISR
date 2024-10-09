@@ -57,6 +57,7 @@ import BlogFour from "./blogFour";
 import BlogFiftyFour from "./blogFiftyFour";
 import BlogFiftyFive from "./blogFiftyFive";
 import BlogFiftySix from "./blogFiftySix";
+import BlogFiftySeven from "./blogFiftySeven";
 
 type BlogProps = {
   params: {
@@ -70,13 +71,24 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: BlogProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: BlogProps): Promise<Metadata> {
   const { slug } = params;
 
   return {
-    title: `${slug.charAt(0).toUpperCase() + slug.slice(1).replaceAll("-", " ")} - CloudPlexo Blog`,
+    title: `${
+      slug.charAt(0).toUpperCase() + slug.slice(1).replaceAll("-", " ")
+    } - CloudPlexo Blog`,
     description: `Explore CloudPlexo's blog for expert insights on cloud computing, AWS, Azure, and GCP. Stay updated with cloud technology trends.`,
-    keywords: [slug, 'Cloud Computing Insights', 'AWS Blog', 'Azure Articles', 'Google Cloud Updates', 'Cloud Technology Trends'],
+    keywords: [
+      slug,
+      "Cloud Computing Insights",
+      "AWS Blog",
+      "Azure Articles",
+      "Google Cloud Updates",
+      "Cloud Technology Trends",
+    ],
     alternates: {
       canonical: `https://cloudplexo.com/blog/${slug}`,
     },
@@ -84,6 +96,10 @@ export async function generateMetadata({ params }: BlogProps): Promise<Metadata>
 }
 
 const paths = [
+  {
+    comp: <BlogFiftySeven />,
+    url: "aws-sns-and-sqs-how-to-build-a-robust-event-bus-architecture",
+  },
   {
     comp: <BlogFiftySix />,
     url: "the-ultimate-guide-to-building-generative-ai-apps-with-amazon-partyrock",
