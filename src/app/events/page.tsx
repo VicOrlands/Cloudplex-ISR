@@ -94,16 +94,6 @@ function Events() {
                 src={event.img}
                 alt="CloudPlexo's Cloud Solution Webinars - CloudPlexo"
               />
-              <div
-                className={
-                  event.date !== ""
-                    ? styles.justifyHeading
-                    : styles.alignHeadingCenter
-                }
-              >
-                {event.date !== "" && <h5>{event.date}</h5>}
-                <h5>{event.imgRightText}</h5>
-              </div>
             </div>
             <div className={styles.eventSocialsBodyContainer}>
               <h3>{event.title}</h3>
