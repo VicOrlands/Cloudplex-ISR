@@ -58,6 +58,7 @@ import BlogFiftyFour from "./blogFiftyFour";
 import BlogFiftyFive from "./blogFiftyFive";
 import BlogFiftySix from "./blogFiftySix";
 import BlogFiftySeven from "./blogFiftySeven";
+import BlogFiftyEight from "./blogFiftyEight";
 
 type BlogProps = {
   params: {
@@ -96,6 +97,10 @@ export async function generateMetadata({
 }
 
 const paths = [
+  {
+    comp: <BlogFiftyEight />,
+    url: "how-to-redirect-www-to-non-www-site-in-aws",
+  },
   {
     comp: <BlogFiftySeven />,
     url: "aws-sns-and-sqs-how-to-build-a-robust-event-bus-architecture",
