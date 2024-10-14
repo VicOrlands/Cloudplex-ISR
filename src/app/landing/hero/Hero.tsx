@@ -16,7 +16,7 @@ const HeroSection = () => {
                 <Link href="/events">
                     <h4>
                         <span>Latest News</span>
-                        Business day event
+                        Founders’ Mixer
                         <IoIosArrowRoundForward
                             size={20}
                             color="#3E54AC"
@@ -39,7 +39,7 @@ const HeroSection = () => {
 
             <div className={styles.heroImgContainer}>
                 <picture>
-                    <source media="(max-width: 600px)" srcSet={heroImageSm.src} height={heroImageSm.height} width={heroImageSm.width}
+                    <source media="(max-width: 1024px)" srcSet={heroImageSm.src} height={heroImageSm.height} width={heroImageSm.width}
                     />
                     <source media="(max-width: 900px)" srcSet={heroImageMd.src} height={heroImageMd.height} width={heroImageMd.width}
                     />

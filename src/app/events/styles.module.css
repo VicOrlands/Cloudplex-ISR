@@ -230,6 +230,72 @@
   font-size: 1.6rem;
 }
 
+/* smaller laptop screens */
+@media (min-width: 1025px) and (max-width: 1425px) {
+  .eventsHero {
+    padding: 0 5%;
+    padding-top: 3%;
+  }
+
+  .eventsHero h1 {
+    margin-bottom: 20px;
+  }
+
+  .eventsHero p {
+    font-size: 2rem;
+    line-height: 32px;
+  }
+
+  /* event-socials */
+  .eventSocials {
+    padding: 30px 5%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pagination {
+    margin: 0 5%;
+    margin-bottom: 30px;
+  }
+
+  /* events-webinars */
+  .eventWebinars {
+    margin: 0 5%;
+  }
+}
+
+/* smaller laptop screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .eventsHero {
+    padding: 0 5%;
+    padding-top: 0;
+  }
+
+  .eventsHero h1 {
+    margin-bottom: 20px;
+  }
+
+  .eventsHero p {
+    font-size: 2rem;
+    line-height: 32px;
+  }
+
+  /* event-socials */
+  .eventSocials {
+    padding: 30px 5%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pagination {
+    margin: 0 5%;
+    margin-bottom: 30px;
+  }
+
+  /* events-webinars */
+  .eventWebinars {
+    margin: 0 5%;
+  }
+}
+
 /* media query for small screen */
 @media (max-width: 768px) {
   .eventsHero {
@@ -267,7 +333,7 @@
 
   .eventSocialsImgContainer {
     position: relative;
-    height: 250px;
+    height: auto;
   }
 
   .eventSocialsBodyContainer p {
@@ -316,6 +382,6 @@
   }
 
   .eventWebinarCardImage {
-    height: 24vh;
+    height: auto;
   }
 }

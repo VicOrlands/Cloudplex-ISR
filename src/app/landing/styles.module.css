@@ -1,6 +1,5 @@
 /* serviceContainer */
 .serviceContainer {
-  /* background: #f7f7f7; */
   border-bottom: 1px solid #d0d5dd;
   padding: 50px 5%;
 }
@@ -257,10 +256,6 @@
   height: auto;
 }
 
-/* .badgesContainer .otherBadges div:nth-child(5) {
-    grid-column: span 2;
-} */
-
 /* clientsSection */
 .clientsSection {
   padding: 50px 0;
@@ -294,6 +289,45 @@
 
 .clientsSection a:hover {
   border: 1px solid #93969c;
+}
+
+/* smaller laptop screens */
+@media (min-width: 1025px) and (max-width: 1425px) {
+  .serviceContainer h2 {
+    width: 50%;
+  }
+
+  .serviceContainer .tabsTab {
+    font-size: 1.4rem;
+  }
+
+  .tabContent section p {
+    font-size: 1.4rem;
+  }
+
+  .btnViewMore button {
+    font-size: 1.4rem;
+  }
+
+  /* badges styling section */
+  .badgesContainer {
+    padding: 50px 5%;
+  }
+
+  .badgesContainer img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .badgesContainer .otherBadges div {
+    width: 70px;
+    height: auto;
+  }
+
+  /* clientsSection */
+  .clientsSection {
+    padding-top: 30px;
+  }
 }
 
 /* tablet */

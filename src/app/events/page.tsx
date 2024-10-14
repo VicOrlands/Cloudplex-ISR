@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles.module.css";
@@ -20,13 +20,32 @@ import BgImg from "@/assets/events/Background_pattern.webp";
 import Footer from "./footer/page";
 
 function Events() {
-  const eventsPerPage = 8;
+  const eventsPerPage = useRef<number>(8);
   const paginationLimit = 4;
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const totalPages = Math.ceil(EventsArray.length / eventsPerPage);
-  const [pages] = useState<number>(
-    Math.round(EventsArray.length / eventsPerPage)
+  const [totalPages, setTotalPages] = useState<number>(
+    Math.ceil(EventsArray.length / eventsPerPage.current)
   );
+
+  const [pages] = useState<number>(
+    Math.round(EventsArray.length / eventsPerPage.current)
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 769 && window.innerWidth <= 1425) {
+        eventsPerPage.current = 6;
+      } else {
+        eventsPerPage.current = 8;
+      }
+      setTotalPages(Math.ceil(EventsArray.length / eventsPerPage.current));
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   function nextEvents() {
     setCurrentPage((page) => Math.min(page + 1, totalPages));
@@ -37,8 +56,8 @@ function Events() {
   }
 
   const getPaginatedData = () => {
-    const startIndex = (currentPage - 1) * eventsPerPage;
-    const endIndex = startIndex + eventsPerPage;
+    const startIndex = (currentPage - 1) * eventsPerPage.current;
+    const endIndex = startIndex + eventsPerPage.current;
     return EventsArray.slice(startIndex, endIndex);
   };
 

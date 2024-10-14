@@ -90,6 +90,36 @@
   height: 100%;
 }
 
+/* smaller laptop screens */
+@media (min-width: 1025px) and (max-width: 1425px) {
+  .heroTopSection {
+    grid-template-columns: 50% 50%;
+    height: fit-content;
+  }
+
+  .heroTextContainer {
+    padding: 0 7%;
+  }
+
+  .heroTextContainer h1 {
+    font-size: 4rem;
+    line-height: 5.7rem;
+  }
+
+  .heroTextContainer p {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .heroTextContainer .buttonGroup a {
+    font-size: 1.6rem;
+  }
+
+  .heroImgContainer {
+    height: 80vh;
+  }
+}
+
 /* medium screens */
 @media (min-width: 768px) and (max-width: 1024px) {
   .heroTopSection {

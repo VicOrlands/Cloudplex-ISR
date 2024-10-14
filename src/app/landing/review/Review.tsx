@@ -31,12 +31,11 @@ interface CaseStudyProps {
   id: number;
   image: StaticImageData;
   link: string;
-  title: string | null;
   quote: string;
   logo: StaticImageData;
   speaker: string;
   caselink: string;
-  company: string | null;
+  company: string;
 }
 
 export const casestudy: CaseStudyProps[] = [
@@ -46,10 +45,9 @@ export const casestudy: CaseStudyProps[] = [
     link: "https://cloudplexo.com/Convexity_Case_Study_Testimonial.mp4",
     quote:
       "“With CloudPlexo, they help you to get a robust solution that will stand the test of time.”",
-    company: null,
-    title: null,
+    company: "Convexity",
     logo: convexityLogo,
-    speaker: "CTO | Co-founder - Convexity",
+    speaker: "CTO | Co-founder",
     caselink: "/case-study/convexity-case-study",
   },
   {
@@ -58,10 +56,9 @@ export const casestudy: CaseStudyProps[] = [
     link: "https://cloudplexo.com/BitBarter-Customer-review.mp4",
     quote:
       "“If you have issues around infrastructure layer provisioning & deployment, CloudPlexo might just be the right partner that you need.”",
-    company: null,
-    title: null,
+    company: "Bitbarter",
     logo: bitbarterLogo,
-    speaker: "CEO Bitbarter",
+    speaker: "CEO",
     caselink: "/case-study",
   },
   {
@@ -70,22 +67,20 @@ export const casestudy: CaseStudyProps[] = [
     link: "https://cloudplexo.com/Liveli-Customer-Sucess.mp4",
     quote:
       "“I would defintely advise anyone anybody to migrate their cloud services with a partner like CloudPlexo.”",
-    company: null,
-    title: null,
+    company: "Liveli",
     logo: livelilogo,
-    speaker: "CTO Liveli",
+    speaker: "CTO",
     caselink: "/case-study/liveli-case-study",
   },
   {
     id: 3,
     image: img1,
     link: "https://cloudplexo.com/ICAN_ONLINE_TUTORS_final.mp4 ",
-    company: null,
-    title: "CTO of Liveli",
+    company: "IcanOnline Tutors",
     quote:
       "“We highly recommend CloudPlexo, if  you are having any challenges  with your website and mobile apps”",
     logo: icanlogo,
-    speaker: "Founder & CEO of IcanOnline Tutors",
+    speaker: "Founder & CEO",
     caselink: "/case-study/case-study-in-the-edtech-sector",
   },
   {
@@ -93,7 +88,6 @@ export const casestudy: CaseStudyProps[] = [
     image: img3,
     link: "https://cloudplexo.com/GT_Pension_Immersion+Day_Testimonial.mp4",
     company: "Guarantee Trust Pension Managers",
-    title: "CloudPlexo Immersion Day",
     quote: `"I had a great time with the CloudPlexo team, learning more about AWS and the cloud"`,
     logo: gtcologo,
     speaker: "Taiwo Owolabi",
@@ -194,11 +188,10 @@ const Review: React.FC = () => {
                   className={styles.logoImage}
                   alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions reviews"
                 />
-
-                <h6>{cases["company"]}</h6>
-                <p className={styles["quote"]}>{cases.quote}</p>
-                <p className={styles["quoteSpeaker"]}>{cases.speaker}</p>
+                <h3>{cases.quote}</h3>
                 <Link href={cases.caselink}>Read case study</Link>
+                <h4>{cases.speaker}</h4>
+                <h6>{cases.company}</h6>
               </div>
               <section className={clsx(styles.btngroup, styles.mobile)}>
                 <button

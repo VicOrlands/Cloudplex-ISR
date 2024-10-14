@@ -159,6 +159,15 @@
   }
 
 
+/* smaller laptop screens */
+@media (min-width: 1025px) and (max-width: 1425px) {
+    /*  courses */
+    .blogCatalog {
+        grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+}
+
   /* tablet */
   @media (min-width: 768px) and (max-width: 1024px) {
 

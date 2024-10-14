@@ -54,16 +54,6 @@ export const EventsArray: EventsProps[] = [
     eventDescription: "",
   },
   {
-    img: AccraConnect,
-    title: "Tech Connect Accra",
-    text: `This Tech Ecosystem Mixer is a unique gathering designed to bring together key players from Ghana’s fast-growing tech ecosystem, including founders, operators, investors, and ecosystem builders. It will serve as a platform for discussions around collaboration, innovation, and business expansion within the region.`,
-    link: "https://lu.ma/bzlis1e6",
-    date: "Wednesday, October 2nd",
-    linkText: "Register",
-    eventImages: [],
-    eventDescription: "",
-  },
-  {
     img: AmazonQ,
     title: "The Amazon Q Advantage",
     text: `Join us for our upcoming workshop, "The Amazon Q Advantage," and learn how to harness the power of generative AI without compromising your data security.`,
@@ -73,6 +63,16 @@ export const EventsArray: EventsProps[] = [
     eventImages: [],
     eventDescription: "",
     guestSpeakers: "Lucky Sharma, Prankit Gupta",
+  },
+  {
+    img: AccraConnect,
+    title: "Tech Connect Accra",
+    text: `This Tech Ecosystem Mixer is a unique gathering designed to bring together key players from Ghana’s fast-growing tech ecosystem, including founders, operators, investors, and ecosystem builders. It will serve as a platform for discussions around collaboration, innovation, and business expansion within the region.`,
+    link: "https://lu.ma/bzlis1e6",
+    date: "Wednesday, October 2nd",
+    linkText: "View info",
+    eventImages: [],
+    eventDescription: "",
   },
   {
     img: PublicSector,
