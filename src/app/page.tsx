@@ -12,6 +12,24 @@ import Review from "@/app/landing/review/Review";
 import Clients from "@/app/landing/Client";
 import BlogGrid from "@/components/blogGrid/Grid";
 
+import dynamic from "next/dynamic";
+
+const DynamicEvents = dynamic(() => import("@/app/landing/event/Event"), {
+  loading: () => <p>Loading...</p>,
+});
+
+const DynamicReviews = dynamic(() => import("@/app/landing/review/Review"), {
+  loading: () => <p>Loading...</p>,
+});
+
+const DynamicClients = dynamic(() => import("@/app/landing/Client"), {
+  loading: () => <p>Loading...</p>,
+});
+
+const DynamicBlog = dynamic(() => import("@/components/blogGrid/Grid"), {
+  loading: () => <p>Loading...</p>,
+});
+
 export const metadata: Metadata = {
   title:
     "Scalable Cloud Services by CloudPlexo | Expert Cloud Service Providers",
@@ -37,9 +55,13 @@ export default function Home() {
       <Partners />
       <Service />
       <Badges />
-      <Event />
+      <DynamicEvents />
+      <DynamicReviews />
+      <DynamicClients />
+
+      {/* <Event />
       <Review />
-      <Clients />
+      <Clients /> */}
 
       <section className={styles.gtcoSection}>
         <div>
@@ -57,11 +79,12 @@ export default function Home() {
             src={logo}
             alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
             priority={false}
+            placeholder="blur"
           />
         </div>
       </section>
 
-      <BlogGrid />
+      <DynamicBlog />
     </div>
   );
 }

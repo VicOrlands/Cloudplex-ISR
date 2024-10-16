@@ -191,6 +191,7 @@ export default function Service() {
                   height={service.height}
                   width={service.width}
                   priority={false}
+                  placeholder="blur"
                 />
 
                 <section>
@@ -213,6 +214,7 @@ export default function Service() {
                   height={professional.image.height}
                   width={professional.image.width}
                   priority={false}
+                  placeholder="blur"
                   alt="Achieve Peak Efficiency with Our Innovative Products and Services"
                 />
 

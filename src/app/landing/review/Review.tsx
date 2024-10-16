@@ -237,6 +237,7 @@ const Review: React.FC = () => {
               <div className={styles.reviewBox} key={index}>
                 <Image
                   loading="lazy"
+                  placeholder="blur"
                   priority={false}
                   src={vectorquote}
                   className={styles.quote1}

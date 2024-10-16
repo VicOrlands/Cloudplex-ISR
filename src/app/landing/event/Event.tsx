@@ -79,6 +79,7 @@ function Event() {
                 src={item.img}
                 alt={item.title}
                 priority={false}
+                placeholder="blur"
               />
               <div>
                 <h4>{item.date}</h4>
@@ -106,6 +107,7 @@ function Event() {
                       src={image}
                       alt={`Event Image ${index + 1}`}
                       priority={false}
+                      placeholder="blur"
                     />
                     {currentEvent.imgHeader || currentEvent.imgText ? (
                       <div className={styles["sliderText"]}>
