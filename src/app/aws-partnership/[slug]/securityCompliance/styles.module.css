@@ -110,6 +110,7 @@
 /* media query for small screen */
 @media (max-width: 768px) {
   .security-compliance-page {
+    margin-top: 6vh;
     padding: 0 20px;
   }
 

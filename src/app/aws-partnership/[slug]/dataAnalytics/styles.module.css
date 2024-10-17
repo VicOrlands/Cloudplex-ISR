@@ -443,7 +443,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .we-ai h2,
   .canvas h2,
   .services h2,
@@ -454,6 +453,7 @@
   /* hero section */
   .data-hero {
     height: fit-content;
+    margin-top: 8vh;
     padding: 40px 20px 80px;
     flex-wrap: wrap;
   }

@@ -96,6 +96,7 @@
 
 @media screen and (max-width: 767px) {
     .contact-page {
+    margin-top: 8vh;
         grid-template-columns: 1fr;
     }
 

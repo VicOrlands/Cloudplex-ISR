@@ -71,8 +71,22 @@
     font-size: 16px;
 }
 
+/* smaller laptop screens */
+@media (min-width: 769px) and (max-width: 1425px) {
+    .press-release-hero {
+        height: 500px;
+        padding: 0 5%;
+    }
+
+    .press-release-catalog {
+        padding: 0 5%;
+    }
+}
+
+/* mobile */
 @media (max-width: 768px) {
     .press-release {
+        margin-top: 8vh;
         padding-bottom: 50px;
     }
 

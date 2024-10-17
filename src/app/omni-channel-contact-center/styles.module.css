@@ -267,6 +267,7 @@
     background-size: cover;
     background-blend-mode: overlay;
     height: fit-content;
+    padding-top: 8vh;
   }
 
   .technologies .hero {

@@ -7,11 +7,12 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import styles from "./header.module.css";
 import { professional, resources, solutions } from "./dropdownArrays";
 import clsx from "clsx";
+import { DotIcon } from "./Icons";
 
 const DesktopNav = () => {
     return (
         <div className={styles["main-header-nav"]}>
-            <Link href="/">
+            <Link href="/" style={{ zIndex: 9999 }}>
                 <Logo />
             </Link>
 
@@ -68,20 +69,6 @@ const DesktopNav = () => {
                         </Link>
                         <div className={styles["drop-down"]}>
                             <h4>Resources</h4>
-                            {/* <div className={clsx(styles["drop-down-content"], styles["resources"])}>
-                                {resources.map(item => (
-                                    <Link href={item.link} key={item.name}>
-                                        <div className={styles["grid-item"]}>
-                                            <span><item.icon /></span>
-                                            <div>
-                                                <h6>{item.name}</h6>
-                                                <p>{item.description}</p>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                ))}
-                            </div> */}
-
                             <div className={styles["drop-down-content"]}>
                                 <div className={styles["left-column"]}>
                                     {resources.slice(0, 2).map((item) => (
@@ -89,7 +76,9 @@ const DesktopNav = () => {
                                             <div className={styles["grid-item"]}>
                                                 <span><item.icon /></span>
                                                 <div>
-                                                    <h6>{item.name}</h6>
+                                                    <h6>{item.name}
+                                                        {item.name === "Events" && <span><DotIcon /> New</span>}
+                                                    </h6>
                                                     <p>{item.description}</p>
                                                 </div>
                                             </div>
@@ -143,36 +132,19 @@ const DesktopNav = () => {
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
-    const [isDropdownVisible, setIsDropdownVisible] = useState<number | null>(null);
+    const [openDropdown, setOpenDropdown] = useState<number | null>(null);
+
+    const toggleDropdown = (index: number) => {
+        setOpenDropdown(openDropdown === index ? null : index);
+    };
 
     const toggleLine = () => {
         setIsOpen(!isOpen);
-        const body = document.body.style
-
-        if (!isOpen) {
-            body.position = "fixed";
-            body.top = `-${window.screenY}px`
-        } else {
-            const scrollY = body.top
-            body.position = "";
-            window.scrollTo(0, parseInt(scrollY || "0") * -1)
-        }
-    };
-
-    const toggleDropdown = (dropdownId: number) => {
-        setIsDropdownVisible((prevDropdownId) =>
-            prevDropdownId === dropdownId ? null : dropdownId,
-        );
     };
 
     const closeMenu = () => {
         setIsOpen(false);
-        setIsDropdownVisible(null);
-
-        const body = document.body.style
-        const scrollY = body.top
-        body.position = "";
-        window.scrollTo(0, parseInt(scrollY || "0") * -1)
+        setOpenDropdown(null);
     };
 
     return (
@@ -187,7 +159,7 @@ export default function Header() {
                     </Link>
 
                     <div className={styles["menu-lines"]} onClick={toggleLine}>
-                        <div className={isOpen ? styles["navbar-toggle open"] : styles["navbar-toggle"]}>
+                        <div className={isOpen ? clsx(styles["navbar-toggle"], styles["open"]) : styles["navbar-toggle"]}>
                             <div className={styles["lines"]}>
                                 <span />
                                 <span />
@@ -197,115 +169,88 @@ export default function Header() {
                     </div>
                 </div>
 
-                <div className={isOpen ? styles["visible-links"] : styles["invisible"]}>
-                    <div className={styles["links"]}>
-                        <ul>
-                            <li className={styles["dropdown-container"]}>
-                                <Link
-                                    href="#products"
-                                    onClick={() => toggleDropdown(1)}>
-                                    <span>Solutions & Offerings</span>
-                                    {isDropdownVisible === 1 ? (
-                                        <IoIosArrowUp />
-                                    ) : (
-                                        <IoIosArrowDown />
-                                    )}
-                                </Link>
-                                <div className={styles["dropdown"]}>
-                                    <div className={`${isDropdownVisible === 1 && styles["show"]}`}>
-                                        <Link onClick={closeMenu} href="https://wendu.io/">Wendu</Link>
-                                        <Link onClick={closeMenu} href="/aws-partnership/data-analytics">AI Scan</Link>
-                                        <Link onClick={closeMenu} href="/aws-managed-cloud">AWS Managed Service</Link>
-                                        <Link onClick={closeMenu} href="/backup-and-restore">Backup and Restore</Link>
-                                        <Link onClick={closeMenu} href="/aws-partnership/cloud-migration">Cloud Migration</Link>
-                                        <Link onClick={closeMenu} href="/aws-maturity-service">AWS Maturity Service</Link>
-                                        <Link onClick={closeMenu} href="/aws-partnership/security-compliance">Security Compliance</Link>
-                                        <Link onClick={closeMenu} href="/microsoft-on-aws">Microsoft on AWS</Link>
-                                        <Link onClick={closeMenu} href="/aws-partnership/cloud-resource-managament">
-                                            Cloud Resource Management
-                                        </Link>
-                                    </div>
-                                </div>
-                            </li>
-                            <li className={styles["dropdown-container"]}>
-                                <Link
-                                    href="#professionalservices"
-                                    onClick={() => toggleDropdown(2)}>
-                                    <span>Professional Services</span>
-                                    {isDropdownVisible === 2 ? (
-                                        <IoIosArrowUp />
-                                    ) : (
-                                        <IoIosArrowDown />
-                                    )}
-                                </Link>
-                                <div className={styles["dropdown"]}>
-                                    <div
-                                        className={`${isDropdownVisible === 2 && styles["show"]}`}
-                                    >
-                                        <Link onClick={closeMenu} href="/data-analytics">Data Analytics</Link>
-                                        <Link onClick={closeMenu} href="/database-as-a-service">Database as a Service</Link>
-                                        <Link onClick={closeMenu} href="/omni-channel-contact-center">Omni-channel Contact Center</Link>
-                                        <Link onClick={closeMenu} href="/devops-as-a-service">DevOps as a service</Link>
-                                        <Link onClick={closeMenu} href="/training">Cloud Training</Link>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <Link onClick={closeMenu} href="/cybersecurity">
-                                    Cybersecurity
-                                </Link>
-                            </li>
-                            <li>
-                                <Link onClick={closeMenu} href="/aws-partnership">
-                                    AWS Partnership
-                                </Link>
-                            </li>
-                            <li>
-                                <Link onClick={closeMenu} href="/startups">
-                                    Startups
-                                </Link>
-                            </li>
-                            <li>
-                                <Link onClick={closeMenu} href="/case-study">
-                                    Case Studies
-                                </Link>
-                            </li>
-                            <li>
-                                <Link onClick={closeMenu} href="/events">
-                                    Events
-                                </Link>
-                            </li>
-                            <li>
-                                <Link onClick={closeMenu} href="/blog">
-                                    Blogs
-                                </Link>
-                            </li>
-                            <li className={styles["dropdown-container"]}>
-                                <Link
-                                    href="#resources"
-                                    onClick={() => toggleDropdown(3)}>
-                                    <span>Resources</span>
-                                    {isDropdownVisible === 3 ? (
-                                        <IoIosArrowUp />
-                                    ) : (
-                                        <IoIosArrowDown />
-                                    )}
-                                </Link>
-                                <div className={styles["dropdown"]}>
-                                    <div
-                                        className={`${isDropdownVisible === 3 && styles["show"]}`}
-                                    >
-                                        <Link href="/press-release" onClick={closeMenu}>Press Releases</Link>
-                                        <Link href="/whitepaper" onClick={closeMenu}>Whitepaper & E-books</Link>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <Link className={styles["header-btn"]} onClick={closeMenu} href="/contact-us">
-                                    Contact Us
-                                </Link>
-                            </li>
-                        </ul>
+                <div className={`${styles["mobile-visible"]} ${isOpen ? styles["active"] : ""}`}>
+                    <ul>
+                        <li onClick={() => toggleDropdown(0)}
+                            className={openDropdown === 0 ? styles["remove-mg-bottom"] : styles[""]}
+                        >
+                            <span>Solutions & Offerings</span>
+                            {openDropdown === 0 ? <IoIosArrowUp id={styles["icon"]} /> : <IoIosArrowDown id={styles["icon"]} />}
+                        </li>
+                        {openDropdown === 0 && (
+                            <div className={styles["dropdown"]}>
+                                {solutions.map(item => (
+                                    <Link onClick={closeMenu} href={item.link} key={item.name}>
+                                        <div className={styles["grid-item"]}>
+                                            <span><item.icon /></span>
+                                            <h6>{item.name}</h6>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
+
+                        <li onClick={() => toggleDropdown(1)}
+                            className={openDropdown === 1 ? styles["remove-mg-bottom"] : styles[""]}>
+                            <span>Professional Services</span>
+                            {openDropdown === 1 ? <IoIosArrowUp id={styles["icon"]} /> : <IoIosArrowDown id={styles["icon"]} />}
+                        </li>
+                        {openDropdown === 1 && (
+                            <div className={styles["dropdown"]}>
+                                {professional.map(item => (
+                                    <Link onClick={closeMenu} href={item.link} key={item.name}>
+                                        <div className={styles["grid-item"]}>
+                                            <span><item.icon /></span>
+                                            <h6>{item.name}</h6>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
+
+                        <li onClick={() => toggleDropdown(2)}
+                            className={openDropdown === 2 ? styles["remove-mg-bottom"] : styles[""]}>
+                            <span>Resources</span>
+                            {openDropdown === 2 ? <IoIosArrowUp id={styles["icon"]} /> : <IoIosArrowDown id={styles["icon"]} />}
+                        </li>
+                        {openDropdown === 2 && (
+                            <div className={styles["dropdown"]}>
+                                {resources.map((item) => (
+                                    <Link onClick={closeMenu} href={item.link} key={item.name}>
+                                        <div className={styles["grid-item"]}>
+                                            <span><item.icon /></span>
+                                            <h6>{item.name}
+                                                {item.name === "Events" && <span><DotIcon /> New</span>}
+                                            </h6>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
+
+                        <li>
+                            <Link onClick={closeMenu} href="/startups">
+                                Startups
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link onClick={closeMenu} href="/cybersecurity">
+                                Cybersecurity
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link onClick={closeMenu} href="/aws-partnership">
+                                AWS Partnership
+                            </Link>
+                        </li>
+                    </ul>
+
+                    <div className={styles["btn-div"]}>
+                        <Link href="/contact-us">
+                            Contact Us
+                        </Link>
                     </div>
                 </div>
             </div >

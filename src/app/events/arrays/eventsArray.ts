@@ -13,10 +13,12 @@ import AmazonQ from "@/assets/events/amazoq advantage.webp";
 import Brunch from "@/assets/events/Nairobi Founders Brunch.webp";
 import AccraConnect from "@/assets/events/tech connect.webp";
 import OwerriEvent from "@/assets/events/owerri_founders_mixer.webp";
+import CommunityDay from "@/assets/events/community-day/thumbnail.webp";
 import digitalThumbnail from "@/assets/events/transcorp/videothumbnail.webp";
 
 import {
   accraImages,
+  awsCommunityDayImages,
   businessDayImages,
   digitalImages,
   fintechFusionImages,
@@ -49,21 +51,21 @@ export const EventsArray: EventsProps[] = [
     title: "Founders’ Mixer",
     text: `Are you a tech entrepreneur looking to expand your network and connect with like-minded individuals? Look no further! We're thrilled to announce the SMFEST Founders' Mixer, a unique opportunity to meet fellow founders, explore potential partnerships, and gain valuable insights from industry leaders.`,
     link: "https://lu.ma/xkx3fdtg",
-    date: "18th October 2024 Accra, Protea Hotel Owerri",
+    date: "18th October 2024, Protea Hotel Owerri",
     linkText: "Register",
     eventImages: [],
     eventDescription: "",
   },
   {
-    img: AmazonQ,
-    title: "The Amazon Q Advantage",
-    text: `Join us for our upcoming workshop, "The Amazon Q Advantage," and learn how to harness the power of generative AI without compromising your data security.`,
-    link: "https://bit.ly/qadvantage24",
-    date: "October 3rd & 4th, 2024",
+    img: CommunityDay,
+    title: "AWS Community Day West Africa",
+    text: `What a fantastic AWS Community Day West Africa!  We were thrilled to be a Gold Sponsor and Preferred Amazon Web Services (AWS) Partner for this incredible event. It was a great opportunity to connect with the vibrant cloud community, share insights, and learn about the latest trends in AWS.Ready to elevate your cloud strategy? CloudPlexo offers expert guidance and cutting-edge solutions to help you achieve your business objectives. Let's partner to unlock the full potential of the cloud.`,
+    link: "aws-community-day-west-africa",
+    date: "11th October 2024",
     linkText: "View info",
-    eventImages: [],
-    eventDescription: "",
-    guestSpeakers: "Lucky Sharma, Prankit Gupta",
+    eventImages: awsCommunityDayImages,
+    eventDescription: `What a fantastic AWS Community Day West Africa! <br /><br /> We were thrilled to be a Gold Sponsor and Preferred Amazon Web Services (AWS) Partner for this incredible event. It was a great opportunity to connect with the vibrant cloud community, share insights, and learn about the latest trends in AWS.<br /><br />Ready to elevate your cloud strategy? CloudPlexo offers expert guidance and cutting-edge solutions to help you achieve your business objectives. Let's partner to unlock the full potential of the cloud.`,
+    about: `CloudPlexo was honored to be a Gold Sponsor and a Preferred Amazon Web Services (AWS) Partner for this landmark event. AWS Community Day is an annual gathering that brings together cloud enthusiasts, developers, architects, and industry leaders from across West Africa to exchange ideas, discuss innovations, and explore the future of cloud technology.<br /><br />This year’s event offered a deep dive into the latest AWS trends, from advancements in AI/ML and serverless architectures to best practices for cloud security and cost optimization. We were thrilled to engage with the vibrant and fast-growing cloud community in West Africa, sharing our insights on how AWS can drive digital transformation across industries.<br /><br />At our booth, we had the opportunity to demonstrate our expertise in AWS Cloud solutions and show how CloudPlexo is empowering businesses with cutting-edge tools for cloud management, security, and scalability. Whether it was discussing multi-cloud strategies, cost optimization, or cloud security, our team was excited to collaborate with attendees, offering tailored solutions that align with their unique business needs.<br /><br />Ready to advance your cloud journey? CloudPlexo is here to provide expert guidance and innovative solutions that ensure you get the most out of your AWS investment. Whether you’re just beginning your cloud migration or looking to optimize an existing infrastructure, let’s work together to unlock new possibilities and drive business success in the cloud.`
   },
   {
     img: AccraConnect,
@@ -75,6 +77,17 @@ export const EventsArray: EventsProps[] = [
     eventImages: accraImages,
     eventDescription: `Tech Connect Accra, Ghana 🇬🇭 was lit 🔥 <br /><br />We had the most fun connecting with founders, innovators, ecosystem builders and investors!<br /><br />It was an evening of invaluable conversations with our guests attendees over great networking and fine dining experiences.<br /><br />Cheers to our partners; XConnect & Africa Startup Ecosystem Builders Summit & Awards(ASEB)   for making this happen!!!<br /><br />Special Guests: Gerald Black  McKevin Ayaba`,
     about: `The energy at Tech Connect was electric as we had the pleasure of engaging with an incredible mix of founders, innovators, ecosystem builders, and investors. It was a unique gathering where creativity and vision met collaboration, sparking new ideas and opportunities across the tech landscape in Ghana and beyond.<br /><br />The evening was packed with invaluable conversations, where attendees shared their experiences, discussed challenges, and explored the latest trends shaping the tech ecosystem. From early-stage startups to seasoned investors, the event provided a platform for meaningful connections and insightful exchanges that we know will lead to lasting partnerships.<br /><br />The night was made even better by the relaxed atmosphere of fine dining, which allowed everyone to connect on a deeper level, beyond business discussions. It was a fantastic blend of networking and celebration of the innovative spirit that drives the tech community forward.<br /><br />A huge thank you to our partners, XConnect and Africa Startup Ecosystem Builders Summit & Awards (ASEB), for helping make this unforgettable event possible. Your commitment to empowering startups and fostering innovation is truly inspiring!<br /><br />A special shout-out to Gerald Black and McKevin Ayaba for their leadership and contributions to making this event a reality. We look forward to many more Tech Connect events and continued collaboration in the future!`
+  },
+  {
+    img: AmazonQ,
+    title: "The Amazon Q Advantage",
+    text: `Join us for our upcoming workshop, "The Amazon Q Advantage," and learn how to harness the power of generative AI without compromising your data security.`,
+    link: "https://bit.ly/qadvantage24",
+    date: "October 3rd & 4th, 2024",
+    linkText: "View info",
+    eventImages: [],
+    eventDescription: "",
+    guestSpeakers: "Lucky Sharma, Prankit Gupta",
   },
   {
     img: PublicSector,

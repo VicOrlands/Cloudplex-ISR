@@ -135,10 +135,165 @@
     border-bottom-right-radius: 24px;
 }
 
+/* smaller laptops */
+@media (min-width: 1025px) and (max-width: 1425px) {
+    .bg-backup {
+        padding-top: 14vh;
+        height: fit-content;
+    }
+    
+    .backup-hero {
+        padding: 0 5%;
+    }
+    
+    .backup-hero h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    
+    .backup-hero p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .backup-hero ul li {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .backup-hero .logos {
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .backup-hero h6 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+        
+    /* modules */
+    .modules {
+        padding: 40px 5%;
+    }
+    
+    .modules h2 {
+        font-size: 2.4rem;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* footer */
+    .footer {
+        grid-template-columns: 60% 40%;
+    }
+    
+    .footer div {
+        padding: 5%;
+    }
+    
+    .footer h2 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+    
+    .footer p {
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+    }
+    
+    .footer img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    .bg-backup {
+    margin-top: 8vh;
+        padding-top: 5vh;
+        height: fit-content;
+    }
+    
+    .backup-hero {
+        padding: 0 5%;
+    }
+    
+    .backup-hero h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    
+    .backup-hero p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .backup-hero ul li {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .backup-hero .logos {
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .backup-hero h6 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+        
+    /* modules */
+    .modules {
+        padding: 40px 5%;
+    }
+    
+    .modules h2 {
+        font-size: 2.4rem;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* footer */
+    .footer {
+        grid-template-columns: 60% 40%;
+    }
+    
+    .footer div {
+        padding: 5%;
+    }
+    
+    .footer h2 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+    
+    .footer p {
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+    }
+    
+    .footer img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 /* mobile */
 @media screen and (max-width:768px) {
 
     .bg-backup {
+    margin-top: 8vh;
         height: fit-content;
         background-size: cover;
     }

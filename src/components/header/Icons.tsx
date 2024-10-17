@@ -273,3 +273,11 @@ export function CaseStudyIcon() {
         </svg>
     );
 }
+
+export function DotIcon() {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" fill="none" style={{ marginRight: "5px" }}>
+            <circle cx="3" cy="3" r="3" fill="#2E90FA"></circle>
+        </svg>
+    );
+}

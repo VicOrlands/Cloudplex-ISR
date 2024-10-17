@@ -77,6 +77,13 @@ const BlogGrid: React.FC = () => {
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
+        breakpoint: 1425,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
@@ -96,9 +103,8 @@ const BlogGrid: React.FC = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           nextArrow: false,
           prevArrow: false,
         },

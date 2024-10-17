@@ -243,6 +243,10 @@
     padding: 0;
   }
 
+  .reviewBox {
+    padding-bottom: 30px;
+  }
+
   .reviewBox .quoteImg1 {
     right: 62px;
     height: 20px;
@@ -264,6 +268,22 @@
   .reviewBox h4 {
     font-size: 1.6rem;
     line-height: 26px;
+  }
+
+  .arrow {
+    font-size: 1.8rem;
+    top: 40%;
+    height: 40px;
+    width: 40px;
+    padding-top: 3px;
+  }
+
+  .left {
+    left: -20px;
+  }
+
+  .right {
+    right: -20px;
   }
 }
 
@@ -343,6 +363,7 @@
 
   .reviewBox {
     margin: 0;
+    padding-bottom: 30px;
   }
 
   .reviewBox .quoteImg1,
@@ -372,9 +393,26 @@
     font-size: 3rem;
     margin-top: 12px;
   }
-
+  
   .reviewBox h3 {
+    line-height: 30px;
     font-size: 2rem;
+  }
+
+  .arrow {
+    font-size: 1.8rem;
+    top: 70%;
+    height: 40px;
+    width: 40px;
+    padding-top: 3px;
+  }
+
+  .left {
+    left: -20px;
+  }
+
+  .right {
+    right: -20px;
   }
 }
 
@@ -487,6 +525,8 @@
   .arrow {
     top: 90%;
     transform: translateY(-90%);
+    height: 40px;
+    width: 40px;
   }
 
   .left {

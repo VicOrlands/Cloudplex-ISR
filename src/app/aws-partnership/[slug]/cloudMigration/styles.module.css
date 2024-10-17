@@ -161,6 +161,7 @@
   .cloud-migration-hero-section {
     grid-template-columns: 1fr;
     height: fit-content;
+    margin-top: 8vh;
     padding: 0 20px;
     padding-top: 5%;
     margin-bottom: 30px;

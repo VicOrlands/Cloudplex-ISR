@@ -177,6 +177,7 @@
 @media (max-width: 767px) and (min-width: 300px) {
   .heroTopSection {
     grid-template-columns: 1fr;
+    margin-top: 8vh;
     padding: 30px 0;
     height: fit-content;
   }

@@ -91,6 +91,30 @@ import techAccra20 from "@/assets/events/tech-connect-accra/techAccra20.webp"
 import techAccra21 from "@/assets/events/tech-connect-accra/techAccra21.webp"
 import techAccra22 from "@/assets/events/tech-connect-accra/techAccra22.webp"
 
+import communityDay from "@/assets/events/community-day/cover.webp"
+import communityDay1 from "@/assets/events/community-day/Image.webp"
+import communityDay2 from "@/assets/events/community-day/Image-1.webp"
+import communityDay3 from "@/assets/events/community-day/Image-2.webp"
+import communityDay4 from "@/assets/events/community-day/Image-3.webp"
+import communityDay5 from "@/assets/events/community-day/Image-5.webp"
+import communityDay6 from "@/assets/events/community-day/thumbnail.webp"
+import communityDay7 from "@/assets/events/community-day/Image-6.webp"
+import communityDay8 from "@/assets/events/community-day/Image-7.webp"
+import communityDay9 from "@/assets/events/community-day/Image-8.webp"
+
+export const awsCommunityDayImages: StaticImageData[] = [
+  communityDay,
+  communityDay2,
+  communityDay3,
+  communityDay1,
+  communityDay4,
+  communityDay5,
+  communityDay6,
+  communityDay7,
+  communityDay8,
+  communityDay9
+]
+
 export const accraImages: StaticImageData[] = [
   techAccra,
   techAccra1,

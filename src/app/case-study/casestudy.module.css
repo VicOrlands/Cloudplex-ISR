@@ -97,11 +97,19 @@
     font-family: var(--font-inter);
 }
 
+/* smaller laptop screens */
+@media (min-width: 769px) and (max-width: 1425px) {
+    .casestudy-list {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
 /* mobile */
 @media (max-width: 768px) {
     .casestudy-hero {
         height: 400px;
         align-items: start;
+        margin-top: 8vh;
         padding: 0 20px;
         padding-top: 60px;
     }
@@ -130,6 +138,10 @@
 
     .casestudy-list-item .imgcontainer {
         height: 30vh;
+    }
+
+    .casestudy-list-item .imgcontainer img {
+        height: 100%;
     }
 
     .casestudy-list-item .content-title h5 {

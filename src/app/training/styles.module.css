@@ -236,6 +236,7 @@
 /* mobile */
 @media screen and (max-width: 768px) {
     .training {
+    margin-top: 8vh;
         padding: 40px 20px;
     }
 

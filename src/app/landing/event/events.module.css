@@ -196,7 +196,7 @@
 }
 
 /* smaller laptop screens */
-@media (min-width: 301px) and (max-width: 1425px) {
+@media (min-width: 769px) and (max-width: 1425px) {
   /* events sliders */
   .events {
     padding: 30px 5%;
@@ -219,7 +219,7 @@
 }
 
 /* mobile */
-@media (max-width: 767px) and (min-width: 300px) {
+@media (min-width: 300px) and (max-width: 768px) {
   /* events sliders */
   .events {
     padding: 30px 20px;

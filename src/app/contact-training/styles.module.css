@@ -71,6 +71,7 @@
 
 @media screen and (max-width: 768px) {
     .contactTraining {
+        margin-top: 8vh;
         padding: 50px 20px;
     }
 

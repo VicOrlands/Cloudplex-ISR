@@ -125,6 +125,7 @@
 /* media query for small screen */
 @media (max-width: 768px) {
   .aws-dynamo-page {
+    margin-top: 8vh;
     padding: 0 20px;
   }
 
