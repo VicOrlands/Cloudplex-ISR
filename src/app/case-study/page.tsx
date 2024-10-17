@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { BsArrowUpRight } from "react-icons/bs";
 import BgImg from "@/assets/casestudies/hero.webp"
 import Image, { StaticImageData } from "next/image";
-import extraStyles from "../landing/review/reviews.module.css"
+import extraStyles from "../landing/testimonial/testimonial.module.css"
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 import clsx from "clsx";
 import {
@@ -181,12 +181,10 @@ const CaseList: React.FC = () => {
                                         alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions reviews"
                                     />
 
+                                    <h3>{cases.quote}</h3>
+                                    <Link href={cases.caselink}>Read case study</Link>
+                                    <h4>{cases.speaker}</h4>
                                     <h6>{cases.company}</h6>
-                                    <p className={extraStyles.quote}>{cases.quote}</p>
-                                    <p className={extraStyles.quoteSpeaker}>{cases.speaker}</p>
-                                    <Link href={cases.caselink}>
-                                        Read case study
-                                    </Link>
                                 </div>
                                 <section className={clsx(extraStyles.btngroup, extraStyles.mobile)}>
                                     <button

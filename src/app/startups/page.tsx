@@ -11,7 +11,7 @@ import { Player, BigPlayButton } from "video-react";
 import EventsSuccess from "./event/Event";
 import { supportArray } from "./arrayList";
 import FaqPage from "@/components/faq/faq";
-import Review from "../landing/review/Review";
+import Review from "../landing/testimonial/Testimonial";
 import { QuestionsProps } from "../aws-partnership/[slug]/cloudMigration/questions";
 
 import logo from "@/assets/startups/logo.png";

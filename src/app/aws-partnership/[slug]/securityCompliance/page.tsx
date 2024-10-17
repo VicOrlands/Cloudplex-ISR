@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 import { FAQ } from "./questions";
 import checkIcon from "@/assets/aws_partnership/Check icon.png";
 import HeroImg from "@/assets/aws_partnership/security-protection.png";
-import Review from "@/app/landing/review/Review";
+import Testimonial from "@/app/landing/testimonial/Testimonial";
 import FaqPage from "@/components/faq/faq";
 import Image from "next/image";
 import Link from "next/link";
@@ -77,7 +77,7 @@ const SecurityCompliance = () => {
           </h3>
         </div>
 
-        <Review />
+        <Testimonial />
       </div>
 
       <FaqPage

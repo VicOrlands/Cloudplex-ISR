@@ -7,7 +7,7 @@ import { ButtonLink } from "@/components/button/Button";
 import img2 from "@/assets/aws_partnership/lambda/enterprise 1.png";
 import img1 from "@/assets/aws_partnership/lambda/people-collaborating 1.png";
 import Partners from "@/components/partners/Partners";
-import Review from "@/app/landing/review/Review";
+import Testimonial from "@/app/landing/testimonial/Testimonial";
 import BlogGrid from "@/components/blogGrid/Grid";
 
 export async function generateStaticParams() {
@@ -77,7 +77,7 @@ export default function Lambda() {
             <Partners />
 
             <div className={styles["reviewSection"]}>
-                <Review />
+                <Testimonial />
             </div>
 
             <BlogGrid />

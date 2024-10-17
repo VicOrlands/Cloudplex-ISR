@@ -9,8 +9,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'video-react/dist/video-react.css';
 import { Player, BigPlayButton } from "video-react";
-import { casestudy } from "../landing/review/Review";
-import styles from "../landing/review/reviews.module.css";
+import { casestudy } from "../landing/testimonial/Testimonial";
+import styles from "../landing/testimonial/testimonial.module.css";
 import secondStyles from "./styles.module.css";
 import {
     MdOutlineKeyboardArrowLeft,

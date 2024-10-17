@@ -7,10 +7,6 @@ import HeroSection from "@/app/landing/hero/Hero";
 import Partners from "@/components/partners/Partners";
 import Service from "@/app/landing/Service";
 import Badges from "@/app/landing/Badges";
-import Event from "@/app/landing/event/Event";
-import Review from "@/app/landing/review/Review";
-import Clients from "@/app/landing/Client";
-import BlogGrid from "@/components/blogGrid/Grid";
 
 import dynamic from "next/dynamic";
 
@@ -18,7 +14,7 @@ const DynamicEvents = dynamic(() => import("@/app/landing/event/Event"), {
   loading: () => <p>Loading...</p>,
 });
 
-const DynamicReviews = dynamic(() => import("@/app/landing/review/Review"), {
+const DynamicTestimonials = dynamic(() => import("@/app/landing/testimonial/Testimonial"), {
   loading: () => <p>Loading...</p>,
 });
 
@@ -56,12 +52,8 @@ export default function Home() {
       <Service />
       <Badges />
       <DynamicEvents />
-      <DynamicReviews />
+      <DynamicTestimonials />
       <DynamicClients />
-
-      {/* <Event />
-      <Review />
-      <Clients /> */}
 
       <section className={styles.gtcoSection}>
         <div>

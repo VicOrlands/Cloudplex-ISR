@@ -68,10 +68,11 @@ function Event() {
 
   return (
     <div className={styles.events}>
-      <h2 id={styles["header-h2"]}>Upcoming Events</h2>
+      {/* <h2 id={styles["header-h2"]}>Upcoming Events</h2> */}
 
       <div className={styles["events-grid"]}>
         <section className={styles["upcoming-events"]}>
+          <h2 id={styles["header-h2"]}>Upcoming Events</h2>
           {upcomingEvents.slice(0, 2).map((item) => (
             <div key={item.title} className={styles["upcoming-events-grid"]}>
               <Image

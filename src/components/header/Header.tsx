@@ -4,108 +4,137 @@ import React, { useState } from "react";
 import Logo from "../Logo"
 import Link from "next/link";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import "./header.css";
+import styles from "./header.module.css";
+import { professional, resources, solutions } from "./dropdownArrays";
+import clsx from "clsx";
 
 const DesktopNav = () => {
     return (
-        <div className="main-header-nav">
+        <div className={styles["main-header-nav"]}>
             <Link href="/">
                 <Logo />
             </Link>
 
-            <div className="header-links">
+            <div className={styles["header-links"]}>
                 <ul>
-                    <li className="dropdown-container">
-                        <Link className="nav-link" href="#products">
+                    <li className={styles["dropdown-container"]}>
+                        <Link className={styles["nav-link"]} href="#products">
                             <span>Solutions & Offerings</span> <IoIosArrowDown />
                         </Link>
-                        <div className="drop-down dropdown-offerings">
-                            <h4>Our Solutions & Offerings</h4>
+                        <div className={styles["drop-down"]}>
+                            <h4>Solutions & Offerings</h4>
 
-                            <div className="drop-down-content">
-                                <Link href="https://wendu.io/">Wendu</Link>
-                                <Link href="/aws-partnership/data-analytics">AI Scan</Link>
-                                <Link href="/aws-managed-cloud">AWS Managed Service</Link>
-                                <Link href="/backup-and-restore">Backup and Restore</Link>
-                                <Link href="/aws-partnership/cloud-migration">Cloud Migration</Link>
-                                <Link href="/aws-maturity-service">AWS Maturity Service</Link>
-                                <Link href="/aws-partnership/security-compliance">Security Compliance</Link>
-                                <Link href="/microsoft-on-aws">Microsoft on AWS</Link>
-                                <Link href="/aws-partnership/cloud-resource-managament">
-                                    Cloud Resource Management
-                                </Link>
+                            <div className={styles["drop-down-content"]}>
+                                {solutions.map(item => (
+                                    <Link href={item.link} key={item.name}>
+                                        <div className={styles["grid-item"]}>
+                                            <span><item.icon /></span>
+                                            <div>
+                                                <h6>{item.name}</h6>
+                                                <p>{item.description}</p>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                ))}
                             </div>
                         </div>
                     </li>
-                    <li className="dropdown-container">
-                        <Link className="nav-link" href="#professionalservices">
+
+                    <li className={styles["dropdown-container"]}>
+                        <Link className={styles["nav-link"]} href="#professionalservices">
                             <span>Professional Services</span> <IoIosArrowDown />
                         </Link>
-                        <div className="drop-down dropdown-professional">
+                        <div className={styles["drop-down"]}>
                             <h4>Professional Services</h4>
-                            <div className="drop-down-content">
-                                <Link href="/data-analytics">Data Analytics</Link>
-                                <Link href="/database-as-a-service">Database as a Service</Link>
-                                <Link href="/technologies">Omni-channel Contact Center</Link>
-                                <Link href="/devops-as-a-service">DevOps as a service</Link>
-                                <Link href="/training">Cloud Training</Link>
+                            <div className={styles["drop-down-content"]}>
+                                {professional.map(item => (
+                                    <Link href={item.link} key={item.name}>
+                                        <div className={styles["grid-item"]}>
+                                            <span><item.icon /></span>
+                                            <div>
+                                                <h6>{item.name}</h6>
+                                                <p>{item.description}</p>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                ))}
                             </div>
                         </div>
                     </li>
 
-                    <li className="dropdown-container">
-                        <Link className="nav-link" href="/cybersecurity">
-                            Cybersecurity
+                    <li className={styles["dropdown-container"]}>
+                        <Link className={styles["nav-link"]} href="#resources">
+                            <span>Resources</span> <IoIosArrowDown />
                         </Link>
+                        <div className={styles["drop-down"]}>
+                            <h4>Resources</h4>
+                            {/* <div className={clsx(styles["drop-down-content"], styles["resources"])}>
+                                {resources.map(item => (
+                                    <Link href={item.link} key={item.name}>
+                                        <div className={styles["grid-item"]}>
+                                            <span><item.icon /></span>
+                                            <div>
+                                                <h6>{item.name}</h6>
+                                                <p>{item.description}</p>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div> */}
+
+                            <div className={styles["drop-down-content"]}>
+                                <div className={styles["left-column"]}>
+                                    {resources.slice(0, 2).map((item) => (
+                                        <Link href={item.link} key={item.name}>
+                                            <div className={styles["grid-item"]}>
+                                                <span><item.icon /></span>
+                                                <div>
+                                                    <h6>{item.name}</h6>
+                                                    <p>{item.description}</p>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    ))}
+                                </div>
+
+                                <div className={styles["right-column"]}>
+                                    {resources.slice(2).map((item) => (
+                                        <Link href={item.link} key={item.name}>
+                                            <div className={styles["grid-item"]}>
+                                                <span><item.icon /></span>
+                                                <div>
+                                                    <h6>{item.name}</h6>
+                                                    <p>{item.description}</p>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
                     </li>
 
-                    <li className="dropdown-container">
-                        <Link className="nav-link" href="/aws-partnership">
-                            AWS Partnership
-                        </Link>
-                    </li>
-
-                    <li className="dropdown-container">
-                        <Link className="nav-link" href="/startups">
+                    <li className={styles["dropdown-container"]}>
+                        <Link className={styles["nav-link"]} href="/startups">
                             Startups
                         </Link>
                     </li>
 
-                    <li className="dropdown-container">
-                        <Link className="nav-link" href="/case-study">
-                            Case Studies
+                    <li className={styles["dropdown-container"]}>
+                        <Link className={styles["nav-link"]} href="/cybersecurity">
+                            Cybersecurity
                         </Link>
                     </li>
 
-                    <li className="dropdown-container">
-                        <Link className="nav-link" href="/events">
-                            Events
+                    <li className={styles["dropdown-container"]}>
+                        <Link className={styles["nav-link"]} href="/aws-partnership">
+                            AWS Partnership
                         </Link>
-                    </li>
-
-                    <li className="dropdown-container">
-                        <Link className="nav-link" href="/blog">
-                            Blogs
-                        </Link>
-                    </li>
-
-                    <li className="dropdown-container">
-                        <Link className="nav-link" href="#resources">
-                            <span>Resources</span> <IoIosArrowDown />
-                        </Link>
-                        <div className="drop-down dropdown-resources">
-                            <h4>Resources</h4>
-
-                            <div className="drop-down-content">
-                                <Link href="/press-release">Press Releases</Link>
-                                <Link href="/whitepaper">Whitepaper & E-books</Link>
-                            </div>
-                        </div>
                     </li>
                 </ul>
             </div>
 
-            <Link className="header-btn" href="/contact-us">
+            <Link className={styles["header-btn"]} href="/contact-us">
                 Contact Us
             </Link>
         </div>
@@ -150,16 +179,16 @@ export default function Header() {
         <>
             <DesktopNav />
 
-            <div className="mobile-nav">
-                <div className="header-content">
+            <div className={styles["mobile-nav"]}>
+                <div className={styles["header-content"]}>
                     <Link onClick={closeMenu} href="/">
                         <Logo
                         />
                     </Link>
 
-                    <div className="menu-lines" onClick={toggleLine}>
-                        <div className={isOpen ? "navbar-toggle open" : "navbar-toggle"}>
-                            <div className="lines">
+                    <div className={styles["menu-lines"]} onClick={toggleLine}>
+                        <div className={isOpen ? styles["navbar-toggle open"] : styles["navbar-toggle"]}>
+                            <div className={styles["lines"]}>
                                 <span />
                                 <span />
                                 <span />
@@ -168,10 +197,10 @@ export default function Header() {
                     </div>
                 </div>
 
-                <div className={isOpen ? "visible-links" : "invisible"}>
-                    <div className="links">
+                <div className={isOpen ? styles["visible-links"] : styles["invisible"]}>
+                    <div className={styles["links"]}>
                         <ul>
-                            <li className="dropdown-container">
+                            <li className={styles["dropdown-container"]}>
                                 <Link
                                     href="#products"
                                     onClick={() => toggleDropdown(1)}>
@@ -182,8 +211,8 @@ export default function Header() {
                                         <IoIosArrowDown />
                                     )}
                                 </Link>
-                                <div className="dropdown">
-                                    <div className={`${isDropdownVisible === 1 && "show"}`}>
+                                <div className={styles["dropdown"]}>
+                                    <div className={`${isDropdownVisible === 1 && styles["show"]}`}>
                                         <Link onClick={closeMenu} href="https://wendu.io/">Wendu</Link>
                                         <Link onClick={closeMenu} href="/aws-partnership/data-analytics">AI Scan</Link>
                                         <Link onClick={closeMenu} href="/aws-managed-cloud">AWS Managed Service</Link>
@@ -198,7 +227,7 @@ export default function Header() {
                                     </div>
                                 </div>
                             </li>
-                            <li className="dropdown-container">
+                            <li className={styles["dropdown-container"]}>
                                 <Link
                                     href="#professionalservices"
                                     onClick={() => toggleDropdown(2)}>
@@ -209,13 +238,13 @@ export default function Header() {
                                         <IoIosArrowDown />
                                     )}
                                 </Link>
-                                <div className="dropdown">
+                                <div className={styles["dropdown"]}>
                                     <div
-                                        className={`${isDropdownVisible === 2 && "show"}`}
+                                        className={`${isDropdownVisible === 2 && styles["show"]}`}
                                     >
                                         <Link onClick={closeMenu} href="/data-analytics">Data Analytics</Link>
                                         <Link onClick={closeMenu} href="/database-as-a-service">Database as a Service</Link>
-                                        <Link onClick={closeMenu} href="/technologies">Omni-channel Contact Center</Link>
+                                        <Link onClick={closeMenu} href="/omni-channel-contact-center">Omni-channel Contact Center</Link>
                                         <Link onClick={closeMenu} href="/devops-as-a-service">DevOps as a service</Link>
                                         <Link onClick={closeMenu} href="/training">Cloud Training</Link>
                                     </div>
@@ -251,7 +280,7 @@ export default function Header() {
                                     Blogs
                                 </Link>
                             </li>
-                            <li className="dropdown-container">
+                            <li className={styles["dropdown-container"]}>
                                 <Link
                                     href="#resources"
                                     onClick={() => toggleDropdown(3)}>
@@ -262,9 +291,9 @@ export default function Header() {
                                         <IoIosArrowDown />
                                     )}
                                 </Link>
-                                <div className="dropdown">
+                                <div className={styles["dropdown"]}>
                                     <div
-                                        className={`${isDropdownVisible === 3 && "show"}`}
+                                        className={`${isDropdownVisible === 3 && styles["show"]}`}
                                     >
                                         <Link href="/press-release" onClick={closeMenu}>Press Releases</Link>
                                         <Link href="/whitepaper" onClick={closeMenu}>Whitepaper & E-books</Link>
@@ -272,7 +301,7 @@ export default function Header() {
                                 </div>
                             </li>
                             <li>
-                                <Link className="header-btn" onClick={closeMenu} href="/contact-us">
+                                <Link className={styles["header-btn"]} onClick={closeMenu} href="/contact-us">
                                     Contact Us
                                 </Link>
                             </li>

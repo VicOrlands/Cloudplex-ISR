@@ -4,7 +4,7 @@ import Inventory from "@/assets/aws_microsoft/inventory.png";
 import Automated from "@/assets/aws_microsoft/automated.png";
 import Operational from "@/assets/aws_microsoft/operational.png";
 import Configuration from "@/assets/aws_microsoft/configuration.png";
-import Review from "@/app/landing/review/Review";
+import Testimonial from "@/app/landing/testimonial/Testimonial";
 import FaqPage from "@/components/faq/faq";
 import styles from "./styles.module.css"
 import Link from "next/link";
@@ -100,7 +100,7 @@ const CloudResource = () => {
           </p>
         </div>
 
-        <Review />
+        <Testimonial />
       </div>
 
       <FaqPage

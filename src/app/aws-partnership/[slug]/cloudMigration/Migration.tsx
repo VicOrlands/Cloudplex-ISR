@@ -1,7 +1,7 @@
 import React from "react";
 import data from "@/assets/cloud/data.gif";
 import HeroImg from "@/assets/cloud/codecollaboration.png";
-import Review from "@/app/landing/review/Review";
+import Testimonial from "@/app/landing/testimonial/Testimonial";
 import Partners from "@/components/partners/Partners";
 import Image from "next/image";
 import styles from "./styles.module.css"
@@ -64,7 +64,7 @@ export default function Migration() {
         <h2 id={styles["success-h2"]}>Client Success Stories</h2>
         <p id={styles["p-header"]}>Explore how CloudPlexo has transformed businesses</p>
 
-        <Review />
+        <Testimonial />
       </section>
     </section>
   );

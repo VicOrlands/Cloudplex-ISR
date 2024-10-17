@@ -67,6 +67,56 @@ import immersion4 from "@/assets/events/Immersiin image 4.webp";
 import generativeAI1 from "@/assets/events/1691070055643.webp";
 import generativeAI2 from "@/assets/events/1691070093414.webp";
 
+import techAccra from "@/assets/events/tech-connect-accra/cover.webp"
+import techAccra1 from "@/assets/events/tech-connect-accra/techAccra1.webp"
+import techAccra2 from "@/assets/events/tech-connect-accra/techAccra2.webp"
+import techAccra3 from "@/assets/events/tech-connect-accra/techAccra3.webp"
+import techAccra4 from "@/assets/events/tech-connect-accra/techAccra4.webp"
+import techAccra5 from "@/assets/events/tech-connect-accra/techAccra5.webp"
+import techAccra6 from "@/assets/events/tech-connect-accra/techAccra6.webp"
+import techAccra7 from "@/assets/events/tech-connect-accra/techAccra7.webp"
+import techAccra8 from "@/assets/events/tech-connect-accra/techAccra8.webp"
+import techAccra9 from "@/assets/events/tech-connect-accra/techAccra9.webp"
+import techAccra10 from "@/assets/events/tech-connect-accra/techAccra10.webp"
+import techAccra11 from "@/assets/events/tech-connect-accra/techAccra11.webp"
+import techAccra12 from "@/assets/events/tech-connect-accra/techAccra12.webp"
+import techAccra13 from "@/assets/events/tech-connect-accra/techAccra13.webp"
+import techAccra14 from "@/assets/events/tech-connect-accra/techAccra14.webp"
+import techAccra15 from "@/assets/events/tech-connect-accra/techAccra15.webp"
+import techAccra16 from "@/assets/events/tech-connect-accra/techAccra16.webp"
+import techAccra17 from "@/assets/events/tech-connect-accra/techAccra17.webp"
+import techAccra18 from "@/assets/events/tech-connect-accra/techAccra18.webp"
+import techAccra19 from "@/assets/events/tech-connect-accra/techAccra19.webp"
+import techAccra20 from "@/assets/events/tech-connect-accra/techAccra20.webp"
+import techAccra21 from "@/assets/events/tech-connect-accra/techAccra21.webp"
+import techAccra22 from "@/assets/events/tech-connect-accra/techAccra22.webp"
+
+export const accraImages: StaticImageData[] = [
+  techAccra,
+  techAccra1,
+  techAccra2,
+  techAccra3,
+  techAccra4,
+  techAccra5,
+  techAccra6,
+  techAccra7,
+  techAccra8,
+  techAccra9,
+  techAccra10,
+  techAccra11,
+  techAccra12,
+  techAccra13,
+  techAccra14,
+  techAccra15,
+  techAccra16,
+  techAccra17,
+  techAccra18,
+  techAccra19,
+  techAccra20,
+  techAccra21,
+  techAccra22,
+]
+
 export const digitalImages: StaticImageData[] = [
   digitalSector,
   digitalSector5,

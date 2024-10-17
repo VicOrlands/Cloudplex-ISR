@@ -5,7 +5,7 @@ import { awsservices } from "./awsArray";
 import { GoArrowRight } from "react-icons/go";
 
 import { AwsCTA } from "./component/cta";
-import Review from "../landing/review/Review";
+import Review from "../landing/testimonial/Testimonial";
 import BlogGrid from "@/components/blogGrid/Grid";
 import Partners from "../../components/partners/Partners";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";

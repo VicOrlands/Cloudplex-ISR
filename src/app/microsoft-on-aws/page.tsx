@@ -6,7 +6,7 @@ import MicrosoftWorkload from "@/assets/cloud-resource/microsoft.png";
 import Performance from "@/assets/cloud-resource/performance.png";
 import CloudConsulting from "@/assets/cloud-resource/operational.png";
 import CloudSolutions from "@/assets/cloud-resource/cloud_solutions.png";
-import Review from "../landing/review/Review";
+import Review from "../landing/testimonial/Testimonial";
 import FaqPage from "@/components/faq/faq";
 import { questions } from "./questions";
 import { ButtonLink, ButtonTranparentLink } from "@/components/button/Button";

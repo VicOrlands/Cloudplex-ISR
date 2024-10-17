@@ -3,7 +3,7 @@ import img1 from "@/assets/aws_partnership/rds/planning-schedule 1.png";
 import Image from "next/image";
 import styles from "../lambda/styles.module.css"
 import { ButtonLink } from "@/components/button/Button";
-import Review from "@/app/landing/review/Review";
+import Testimonial from "@/app/landing/testimonial/Testimonial";
 import BlogGrid from "@/components/blogGrid/Grid";
 import Partners from "@/components/partners/Partners";
 import { AwsCTA } from "../../component/cta";
@@ -83,7 +83,7 @@ export default function RDSReady() {
             <Partners />
 
             <div className={styles["reviewSection"]}>
-                <Review />
+                <Testimonial />
             </div>
 
             <BlogGrid />

@@ -16,6 +16,7 @@ import OwerriEvent from "@/assets/events/owerri_founders_mixer.webp";
 import digitalThumbnail from "@/assets/events/transcorp/videothumbnail.webp";
 
 import {
+  accraImages,
   businessDayImages,
   digitalImages,
   fintechFusionImages,
@@ -59,7 +60,7 @@ export const EventsArray: EventsProps[] = [
     text: `Join us for our upcoming workshop, "The Amazon Q Advantage," and learn how to harness the power of generative AI without compromising your data security.`,
     link: "https://bit.ly/qadvantage24",
     date: "October 3rd & 4th, 2024",
-    linkText: "Register",
+    linkText: "View info",
     eventImages: [],
     eventDescription: "",
     guestSpeakers: "Lucky Sharma, Prankit Gupta",
@@ -68,11 +69,12 @@ export const EventsArray: EventsProps[] = [
     img: AccraConnect,
     title: "Tech Connect Accra",
     text: `This Tech Ecosystem Mixer is a unique gathering designed to bring together key players from Ghana’s fast-growing tech ecosystem, including founders, operators, investors, and ecosystem builders. It will serve as a platform for discussions around collaboration, innovation, and business expansion within the region.`,
-    link: "https://lu.ma/bzlis1e6",
-    date: "Wednesday, October 2nd",
+    link: "tech-connect-accra",
+    date: "2nd October, 2024",
     linkText: "View info",
-    eventImages: [],
-    eventDescription: "",
+    eventImages: accraImages,
+    eventDescription: `Tech Connect Accra, Ghana 🇬🇭 was lit 🔥 <br /><br />We had the most fun connecting with founders, innovators, ecosystem builders and investors!<br /><br />It was an evening of invaluable conversations with our guests attendees over great networking and fine dining experiences.<br /><br />Cheers to our partners; XConnect & Africa Startup Ecosystem Builders Summit & Awards(ASEB)   for making this happen!!!<br /><br />Special Guests: Gerald Black  McKevin Ayaba`,
+    about: `The energy at Tech Connect was electric as we had the pleasure of engaging with an incredible mix of founders, innovators, ecosystem builders, and investors. It was a unique gathering where creativity and vision met collaboration, sparking new ideas and opportunities across the tech landscape in Ghana and beyond.<br /><br />The evening was packed with invaluable conversations, where attendees shared their experiences, discussed challenges, and explored the latest trends shaping the tech ecosystem. From early-stage startups to seasoned investors, the event provided a platform for meaningful connections and insightful exchanges that we know will lead to lasting partnerships.<br /><br />The night was made even better by the relaxed atmosphere of fine dining, which allowed everyone to connect on a deeper level, beyond business discussions. It was a fantastic blend of networking and celebration of the innovative spirit that drives the tech community forward.<br /><br />A huge thank you to our partners, XConnect and Africa Startup Ecosystem Builders Summit & Awards (ASEB), for helping make this unforgettable event possible. Your commitment to empowering startups and fostering innovation is truly inspiring!<br /><br />A special shout-out to Gerald Black and McKevin Ayaba for their leadership and contributions to making this event a reality. We look forward to many more Tech Connect events and continued collaboration in the future!`
   },
   {
     img: PublicSector,

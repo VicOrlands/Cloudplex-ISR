@@ -7,7 +7,7 @@ import SeamlessIntegration from "@/assets/aws_ec2/seamless.png";
 import styles from "./styles.module.css"
 import Link from "next/link";
 import Image from "next/image";
-import Review from "@/app/landing/review/Review";
+import Testimonial from "@/app/landing/testimonial/Testimonial";
 import FaqPage from "@/components/faq/faq";
 
 const awsservices = [
@@ -102,7 +102,7 @@ const Ec2 = () => {
         </div>
       </div>
 
-      <Review />
+      <Testimonial />
 
       <FaqPage
         questions={FAQ}

@@ -4,7 +4,7 @@ import Website from "@/assets/aws_cloudfront/website_performance.png";
 import Scalability from "@/assets/aws_cloudfront/scalability.png";
 import Global from "@/assets/aws_cloudfront/global.png";
 import { FAQ } from "./questions";
-import Review from "@/app/landing/review/Review";
+import Testimonial from "@/app/landing/testimonial/Testimonial";
 import FaqPage from "@/components/faq/faq";
 import Image from "next/image";
 import Link from "next/link";
@@ -96,7 +96,7 @@ const CloudFront = () => {
         </div>
       </div>
 
-      <Review />
+      <Testimonial />
 
       <FaqPage
         questions={FAQ}

@@ -10,7 +10,7 @@ import HeroImg from "@/assets/aws_dynamoDb/hero_img.png";
 import Badge from "@/assets/aws_dynamoDb/partner_badge.png";
 import { FAQ } from "./questions";
 import FaqPage from "@/components/faq/faq";
-import Review from "@/app/landing/review/Review";
+import Testimonial from "@/app/landing/testimonial/Testimonial";
 import Image from "next/image";
 import styles from "./styles.module.css"
 
@@ -152,7 +152,7 @@ const AWSDynamoDb = () => {
         </div>
       </div>
 
-      <Review />
+      <Testimonial />
 
       <FaqPage
         questions={FAQ}

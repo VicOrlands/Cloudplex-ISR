@@ -6,8 +6,8 @@ import Workflows from "@/assets/aws_transfer/website.png";
 import Architecture from "@/assets/aws_transfer/architecture.png";
 import HeroImg from "@/assets/aws_transfer/AWS-Badge Amazon CloudFront Delivery.png";
 import Link from "next/link";
-import Image, { StaticImageData } from "next/image";
-import Review from "@/app/landing/review/Review";
+import Image from "next/image";
+import Testimonial from "@/app/landing/testimonial/Testimonial";
 import FaqPage from "@/components/faq/faq";
 
 const awsArray = [
@@ -92,7 +92,7 @@ const Transfer: React.FC = () => {
         </div>
       </div>
 
-      <Review />
+      <Testimonial />
 
       <FaqPage
         questions={FAQ}

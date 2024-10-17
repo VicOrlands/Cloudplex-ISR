@@ -69,7 +69,7 @@ const EventsDetails: React.FC<PageProps> = ({ event }) => {
     (_, idx) => idx === 0
   );
 
-  const imagesPerPage = isMobile ? 1 : 6;
+  const imagesPerPage = isMobile ? 1 : event.videoLink ? 6 : 9;
   const paginatedImages = event.eventImages.slice(
     currentPage * imagesPerPage,
     currentPage * imagesPerPage + imagesPerPage
@@ -165,7 +165,7 @@ const EventsDetails: React.FC<PageProps> = ({ event }) => {
 
         <div className={styles["img-collage"]}>
           {paginatedImages.map((item, index) => (
-            <div key={index} onClick={() => handleOpenModal(index)}>
+            <div key={index} onClick={() => handleOpenModal(index)} className={event.videoLink ? styles.sixImages : styles.nineImages}>
               <Image src={item} alt="" />
             </div>
           ))}
