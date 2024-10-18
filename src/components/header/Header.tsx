@@ -3,11 +3,11 @@
 import React, { useState } from "react";
 import Logo from "../Logo"
 import Link from "next/link";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { DotIcon } from "./Icons";
 import styles from "./header.module.css";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { professional, resources, solutions } from "./dropdownArrays";
 import clsx from "clsx";
-import { DotIcon } from "./Icons";
 
 const DesktopNav = () => {
     return (
@@ -64,52 +64,6 @@ const DesktopNav = () => {
                     </li>
 
                     <li className={styles["dropdown-container"]}>
-                        <Link className={styles["nav-link"]} href="#resources">
-                            <span>Resources</span> <IoIosArrowDown />
-                        </Link>
-                        <div className={styles["drop-down"]}>
-                            <h4>Resources</h4>
-                            <div className={styles["drop-down-content"]}>
-                                <div className={styles["left-column"]}>
-                                    {resources.slice(0, 2).map((item) => (
-                                        <Link href={item.link} key={item.name}>
-                                            <div className={styles["grid-item"]}>
-                                                <span><item.icon /></span>
-                                                <div>
-                                                    <h6>{item.name}
-                                                        {item.name === "Events" && <span><DotIcon /> New</span>}
-                                                    </h6>
-                                                    <p>{item.description}</p>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    ))}
-                                </div>
-
-                                <div className={styles["right-column"]}>
-                                    {resources.slice(2).map((item) => (
-                                        <Link href={item.link} key={item.name}>
-                                            <div className={styles["grid-item"]}>
-                                                <span><item.icon /></span>
-                                                <div>
-                                                    <h6>{item.name}</h6>
-                                                    <p>{item.description}</p>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li className={styles["dropdown-container"]}>
-                        <Link className={styles["nav-link"]} href="/startups">
-                            Startups
-                        </Link>
-                    </li>
-
-                    <li className={styles["dropdown-container"]}>
                         <Link className={styles["nav-link"]} href="/cybersecurity">
                             Cybersecurity
                         </Link>
@@ -119,6 +73,53 @@ const DesktopNav = () => {
                         <Link className={styles["nav-link"]} href="/aws-partnership">
                             AWS Partnership
                         </Link>
+                    </li>
+
+                    <li className={styles["dropdown-container"]}>
+                        <Link className={styles["nav-link"]} href="/startups">
+                            Startups
+                        </Link>
+                    </li>
+
+                    <li className={styles["dropdown-container"]}>
+                        <Link className={styles["nav-link"]} href="/case-study">
+                            Case studies
+                        </Link>
+                    </li>
+
+                    <li className={styles["dropdown-container"]}>
+                        <Link className={styles["nav-link"]} href="/events">
+                            Events
+                        </Link>
+                    </li>
+
+                    <li className={styles["dropdown-container"]}>
+                        <Link className={styles["nav-link"]} href="/blog">
+                            Blogs
+                        </Link>
+                    </li>
+
+
+                    <li className={styles["dropdown-container"]}>
+                        <Link className={styles["nav-link"]} href="#resources">
+                            <span>Resources</span> <IoIosArrowDown />
+                        </Link>
+                        <div className={styles["drop-down"]}>
+                            <h4>Resources</h4>
+                            <div className={styles["drop-down-content"]}>
+                                {resources.map((item) => (
+                                    <Link href={item.link} key={item.name}>
+                                        <div className={styles["grid-item"]}>
+                                            <span><item.icon /></span>
+                                            <div>
+                                                <h6>{item.name}</h6>
+                                                <p>{item.description}</p>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -208,6 +209,43 @@ export default function Header() {
                             </div>
                         )}
 
+                        <li>
+                            <Link onClick={closeMenu} href="/cybersecurity">
+                                Cybersecurity
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link onClick={closeMenu} href="/aws-partnership">
+                                AWS Partnership
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link onClick={closeMenu} href="/startups">
+                                Startups
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link onClick={closeMenu} href="/case-study">
+                                Case studies
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link onClick={closeMenu} href="/events">
+                                Events
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link onClick={closeMenu} href="/blog">
+                                Blogs
+                            </Link>
+                        </li>
+
+
                         <li onClick={() => toggleDropdown(2)}
                             className={openDropdown === 2 ? styles["remove-mg-bottom"] : styles[""]}>
                             <span>Resources</span>
@@ -227,24 +265,6 @@ export default function Header() {
                                 ))}
                             </div>
                         )}
-
-                        <li>
-                            <Link onClick={closeMenu} href="/startups">
-                                Startups
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link onClick={closeMenu} href="/cybersecurity">
-                                Cybersecurity
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link onClick={closeMenu} href="/aws-partnership">
-                                AWS Partnership
-                            </Link>
-                        </li>
                     </ul>
 
                     <div className={styles["btn-div"]}>

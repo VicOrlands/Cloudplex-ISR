@@ -12,14 +12,14 @@
 
 .casefooter nav h4 {
   color: #263571;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
 .casefooter nav #link {
   background-color: #3e54ac;
   color: #fff;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   padding: 12px 20px;
   border-radius: 8px;
@@ -32,7 +32,7 @@
 .casefooter p {
   color: #475467;
   font-family: var(--font-inter);
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 40px;
 }
@@ -75,7 +75,7 @@
 
 .casefooter-list-item .content-title h5 {
   font-family: var(--font-inter);
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 20px;
   margin-bottom: 10px;
 }
@@ -83,7 +83,7 @@
 .casefooter-list-item p {
   color: #667085;
   font-family: var(--font-inter);
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 20px;
   margin-bottom: 0;
   padding: 0 20px 20px 20px;
@@ -100,13 +100,13 @@
 .casefooter-newsletter h2 {
   color: #101828;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 3.6rem;
   margin-bottom: 10px;
 }
 
 .casefooter-newsletter p {
   color: #475467;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -123,7 +123,7 @@
   box-shadow: 0px 1px 2px 0px #1018280d;
   border-radius: 8px;
   color: #667085;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   padding: 4px 15px;
   margin-right: 10px;
   min-width: 25vw;
@@ -136,7 +136,7 @@
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   font-weight: 600;
   padding: 0 20px;
   height: 100%;
@@ -154,7 +154,7 @@
   }
 
   .casefooter #link {
-    font-size: 14px;
+    font-size: 1.4rem;
     padding: 10px 12px;
   }
 
@@ -168,11 +168,11 @@
   }
 
   .casefooter-list-item .content-title h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   .casefooter-list-item p {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   /* newsletter */
@@ -182,11 +182,11 @@
   }
 
   .casefooter-newsletter h2 {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 
   .casefooter-newsletter p {
-    font-size: 16px;
+    font-size: 1.6rem;
     width: 90%;
     margin: 0 auto;
     margin-bottom: 20px;
