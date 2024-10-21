@@ -4,12 +4,13 @@ import React, { CSSProperties } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Slider from "react-slick";
-import "./style.css";
 import styles from "./grid.module.css";
 import { BsArrowLeft, BsArrowRight, BsArrowUpRight } from "react-icons/bs";
+import "./style.css";
 
 import { blogs } from "@/app/blog/array";
 import clsx from "clsx";
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 
 interface SampleArrowProps {
   className?: string;
@@ -68,6 +69,8 @@ const SamplePrevArrow: React.FC<SampleArrowProps> = ({
 };
 
 const BlogGrid: React.FC = () => {
+  const { ref, isVisible } = useIntersectionObserver();
+
   const settings = {
     lazyLoad: true,
     slidesToShow: 3,
@@ -122,44 +125,48 @@ const BlogGrid: React.FC = () => {
   };
 
   return (
-    <section className={styles.blogCatalog}>
-      <h2>Our Latest News Updates and Posts</h2>
+    <section className={styles.blogCatalog} ref={ref}>
+      {isVisible && (
+        <>
+          <h2>Our Latest News Updates and Posts</h2>
 
-      <div className={styles.blogpageCarousel}>
-        <Slider {...settings}>
-          {blogs.slice(0, 6).map((blog, index) => (
-            <div
-              className={clsx(styles.blogpageParent, "blogpageParent")}
-              key={index}
-            >
-              <div className={styles.blogpageCatalogImage}>
-                <Image
-                  loading="lazy"
-                  src={blog.image}
-                  alt={blog.title}
-                  height={blog.image.height}
-                  width={blog.image.width}
-                />
-              </div>
-
-              <div className={styles.content}>
-                <h6>{blog.date ? blog.date : "20 Jan 2024"}</h6>
-                <Link href={`/blog/${blog.link}`}>
-                  <div className={styles.contentTitle}>
-                    <h5>{blog.title}</h5>
-                    <BsArrowUpRight size={22} color="#101828" />
+          <div className={styles.blogpageCarousel}>
+            <Slider {...settings}>
+              {blogs.slice(0, 6).map((blog, index) => (
+                <div
+                  className={clsx(styles.blogpageParent, "blogpageParent")}
+                  key={index}
+                >
+                  <div className={styles.blogpageCatalogImage}>
+                    <Image
+                      loading="lazy"
+                      src={blog.image}
+                      alt={blog.title}
+                      height={blog.image.height}
+                      width={blog.image.width}
+                    />
                   </div>
-                </Link>
-                <p className={styles.textDesc}>{blog.desc}</p>
-              </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
 
-      <Link href="/blog" className={styles.button}>
-        View Our Blogs
-      </Link>
+                  <div className={styles.content}>
+                    <h6>{blog.date ? blog.date : "20 Jan 2024"}</h6>
+                    <Link href={`/blog/${blog.link}`}>
+                      <div className={styles.contentTitle}>
+                        <h5>{blog.title}</h5>
+                        <BsArrowUpRight size={22} color="#101828" />
+                      </div>
+                    </Link>
+                    <p className={styles.textDesc}>{blog.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+
+          <Link href="/blog" className={styles.button}>
+            View Our Blogs
+          </Link>
+        </>
+      )}
     </section>
   );
 };

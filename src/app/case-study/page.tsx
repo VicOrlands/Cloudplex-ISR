@@ -4,13 +4,12 @@ import React, { useState } from "react";
 
 import Link from "next/link";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import { casestudy } from "./caseArray";
 import styles from "./casestudy.module.css";
-import "slick-carousel/slick/slick-theme.css";
 import { BsArrowUpRight } from "react-icons/bs";
 import BgImg from "@/assets/casestudies/hero.webp"
 import Image, { StaticImageData } from "next/image";
+import { Player, BigPlayButton } from "video-react";
 import extraStyles from "../landing/testimonial/testimonial.module.css"
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 import clsx from "clsx";
@@ -22,8 +21,6 @@ import {
     MdOutlineKeyboardArrowLeft,
     MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
-import 'video-react/dist/video-react.css';
-import { Player, BigPlayButton } from "video-react";
 
 import img1 from "@/assets/reviews/video1.webp";
 import img2 from "@/assets/reviews/video2.webp";

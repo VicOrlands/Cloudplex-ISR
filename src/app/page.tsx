@@ -1,4 +1,5 @@
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 import logo from "@/assets/landing/gtco.webp";
@@ -8,23 +9,13 @@ import Partners from "@/components/partners/Partners";
 import Service from "@/app/landing/Service";
 import Badges from "@/app/landing/Badges";
 
-import dynamic from "next/dynamic";
+const DynamicEvents = dynamic(() => import("@/app/landing/event/Event"), { ssr: false });
 
-const DynamicEvents = dynamic(() => import("@/app/landing/event/Event"), {
-  loading: () => <p>Loading...</p>,
-});
+const DynamicTestimonials = dynamic(() => import("@/app/landing/testimonial/Testimonial"), { ssr: false });
 
-const DynamicTestimonials = dynamic(() => import("@/app/landing/testimonial/Testimonial"), {
-  loading: () => <p>Loading...</p>,
-});
+const DynamicClients = dynamic(() => import("@/app/landing/Client"), { ssr: false });
 
-const DynamicClients = dynamic(() => import("@/app/landing/Client"), {
-  loading: () => <p>Loading...</p>,
-});
-
-const DynamicBlog = dynamic(() => import("@/components/blogGrid/Grid"), {
-  loading: () => <p>Loading...</p>,
-});
+const DynamicBlog = dynamic(() => import("@/components/blogGrid/Grid"), { ssr: false });
 
 export const metadata: Metadata = {
   title:

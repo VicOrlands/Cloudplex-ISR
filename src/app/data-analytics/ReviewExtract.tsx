@@ -5,9 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import 'video-react/dist/video-react.css';
 import { Player, BigPlayButton } from "video-react";
 import { casestudy } from "../landing/testimonial/Testimonial";
 import styles from "../landing/testimonial/testimonial.module.css";
@@ -58,12 +55,10 @@ const ReviewExtract: React.FC = () => {
                                     alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions reviews"
                                 />
 
+                                <h3>{cases.quote}</h3>
+                                <Link href={cases.caselink}>Read case study</Link>
+                                <h4>{cases.speaker}</h4>
                                 <h6>{cases.company}</h6>
-                                <p className={styles.quote}>{cases.quote}</p>
-                                <p className={styles.quoteSpeaker}>{cases.speaker}</p>
-                                <Link href={cases.caselink}>
-                                    Read case study
-                                </Link>
                             </div>
                             <section className={clsx(styles.btngroup, styles.mobile)}>
                                 <button

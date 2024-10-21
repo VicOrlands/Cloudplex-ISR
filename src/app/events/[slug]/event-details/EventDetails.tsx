@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import styles from "./styles.module.css";
-import "video-react/dist/video-react.css";
 import { Player, BigPlayButton } from "video-react";
 import { MdArrowForward, MdArrowBack } from "react-icons/md";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";

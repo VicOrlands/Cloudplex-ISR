@@ -20,6 +20,7 @@ import dataAnalytics from "@/assets/landing/data-analytics.webp";
 import cloudTraining from "@/assets/landing/cloud training.webp";
 import cloudmigration from "@/assets/landing/cloudmigration.webp";
 import databaseAsAService from "@/assets/landing/database-as-a-service.webp";
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 
 interface ProfessionalType {
   name: string;
@@ -30,7 +31,6 @@ interface ProfessionalType {
 
 interface ServiceTypes extends ProfessionalType {
   width: number;
-  height: number;
 }
 
 const serviceContent: ServiceTypes[] = [
@@ -40,7 +40,6 @@ const serviceContent: ServiceTypes[] = [
     image: wenduImage,
     link: "https://wendu.io",
     width: 199,
-    height: 171,
   },
   {
     name: "AI Scan",
@@ -48,7 +47,6 @@ const serviceContent: ServiceTypes[] = [
     image: aiscanImage,
     link: "/aws-partnership/data-analytics",
     width: 200,
-    height: 171,
   },
   {
     name: "AWS Managed Service",
@@ -56,7 +54,6 @@ const serviceContent: ServiceTypes[] = [
     image: managedcloud,
     link: "/aws-managed-cloud",
     width: 233,
-    height: 171,
   },
   {
     name: "Backup & Restore",
@@ -64,7 +61,6 @@ const serviceContent: ServiceTypes[] = [
     image: backup,
     link: "/backup-and-restore",
     width: 228,
-    height: 171,
   },
   {
     name: "Cloud Migration Factory",
@@ -72,7 +68,6 @@ const serviceContent: ServiceTypes[] = [
     image: cloudmigration,
     link: "/aws-partnership/cloud-migration",
     width: 119,
-    height: 171,
   },
   {
     name: "AWS Maturity Service",
@@ -80,7 +75,6 @@ const serviceContent: ServiceTypes[] = [
     image: maturity,
     link: "/aws-maturity-service",
     width: 167,
-    height: 171,
   },
   {
     name: "Security Compliance",
@@ -88,7 +82,6 @@ const serviceContent: ServiceTypes[] = [
     image: security,
     link: "/aws-partnership/security-compliance",
     width: 170,
-    height: 171,
   },
   {
     name: "Microsoft on AWS",
@@ -96,7 +89,6 @@ const serviceContent: ServiceTypes[] = [
     image: microsoft,
     link: "/microsoft-on-aws",
     width: 193,
-    height: 171,
   },
   {
     name: "Cloud Resource Management",
@@ -104,7 +96,6 @@ const serviceContent: ServiceTypes[] = [
     image: cloudResource,
     link: "/aws-partnership/cloud-resource-managament",
     width: 160,
-    height: 171,
   },
 ];
 
@@ -142,6 +133,8 @@ const professionalServices: ProfessionalType[] = [
 ];
 
 export default function Service() {
+  const { ref, isVisible } = useIntersectionObserver();
+
   const [activeTab, setActiveTab] = useState<boolean>(true);
   const [serviceIndex, setServiceIndex] = useState<number>(6);
 
@@ -150,98 +143,99 @@ export default function Service() {
   };
 
   return (
-    <div className={styles.serviceContainer} id="product-services">
-      <div>
-        <h5>Solutions</h5>
-        <h2>
-          Achieve Peak Efficiency with Our Innovative Products and Services
-        </h2>
+    <div className={styles.serviceContainer} id="product-services" ref={ref}>
+      {isVisible && (
+        <div>
+          <h5>Solutions</h5>
+          <h2>
+            Achieve Peak Efficiency with Our Innovative Products and Services
+          </h2>
 
-        <div className={styles.servicesTabNavigation}>
-          <ul>
-            <li
-              className={clsx(styles.tabsTab, {
-                [styles.tabsTabActive]: activeTab,
-                [styles.slideLeft]: activeTab,
-              })}
-              onClick={() => setActiveTab(true)}
-            >
-              Solutions & Offerings
-            </li>
-            <li
-              className={clsx(styles.tabsTab, {
-                [styles.tabsTabActive]: !activeTab,
-                [styles.slideRight]: !activeTab,
-              })}
-              onClick={() => setActiveTab(false)}
-            >
-              Professional Services
-            </li>
-          </ul>
+          <div className={styles.servicesTabNavigation}>
+            <ul>
+              <li
+                className={clsx(styles.tabsTab, {
+                  [styles.tabsTabActive]: activeTab,
+                  [styles.slideLeft]: activeTab,
+                })}
+                onClick={() => setActiveTab(true)}
+              >
+                Solutions & Offerings
+              </li>
+              <li
+                className={clsx(styles.tabsTab, {
+                  [styles.tabsTabActive]: !activeTab,
+                  [styles.slideRight]: !activeTab,
+                })}
+                onClick={() => setActiveTab(false)}
+              >
+                Professional Services
+              </li>
+            </ul>
+          </div>
+
+          {activeTab ? (
+            <div className={styles.tabContent}>
+              {serviceContent.slice(0, serviceIndex).map((service) => (
+                <div key={service.name}>
+                  <Image
+                    loading="lazy"
+                    priority={false}
+                    src={service.image}
+                    alt="Achieve Peak Efficiency with Our Innovative Products and Services"
+                    height={171}
+                    width={service.width}
+                  />
+
+                  <section>
+                    <h3>{service.name}</h3>
+                    <p>{service.desc}</p>
+                    <a href={service.link}>
+                      Explore <BsArrowRight id={styles.icon} />
+                    </a>
+                  </section>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className={styles.tabContent}>
+              {professionalServices.map((professional) => (
+                <div key={professional.name}>
+                  <Image
+                    loading="lazy"
+                    priority={false}
+                    src={professional.image}
+                    height={171}
+                    width={professional.image.width}
+                    // placeholder="blur"
+                    alt="Achieve Peak Efficiency with Our Innovative Products and Services"
+                  />
+
+                  <section>
+                    <h3>{professional.name}</h3>
+                    <p>{professional.desc}</p>
+                    <a href={professional.link}>
+                      Explore <BsArrowRight id="icon" />
+                    </a>
+                  </section>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {activeTab && (
+            <div className={styles.btnViewMore}>
+              <button
+                type="button"
+                onClick={handleViewMore}
+                aria-label={serviceIndex === 6 ? "View More" : "View less"}
+              >
+                {serviceIndex === 6 ? "View More" : "View less"}
+              </button>
+            </div>
+          )}
         </div>
-
-        {activeTab ? (
-          <div className={styles.tabContent}>
-            {serviceContent.slice(0, serviceIndex).map((service) => (
-              <div key={service.name}>
-                <Image
-                  loading="lazy"
-                  src={service.image}
-                  alt="Achieve Peak Efficiency with Our Innovative Products and Services"
-                  height={service.height}
-                  width={service.width}
-                  priority={false}
-                  placeholder="blur"
-                />
-
-                <section>
-                  <h3>{service.name}</h3>
-                  <p>{service.desc}</p>
-                  <a href={service.link}>
-                    Explore <BsArrowRight id={styles.icon} />
-                  </a>
-                </section>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className={styles.tabContent}>
-            {professionalServices.map((professional) => (
-              <div key={professional.name}>
-                <Image
-                  loading="lazy"
-                  src={professional.image}
-                  height={professional.image.height}
-                  width={professional.image.width}
-                  priority={false}
-                  placeholder="blur"
-                  alt="Achieve Peak Efficiency with Our Innovative Products and Services"
-                />
-
-                <section>
-                  <h3>{professional.name}</h3>
-                  <p>{professional.desc}</p>
-                  <a href={professional.link}>
-                    Explore <BsArrowRight id="icon" />
-                  </a>
-                </section>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {activeTab && (
-          <div className={styles.btnViewMore}>
-            <button
-              type="button"
-              onClick={handleViewMore}
-              aria-label={serviceIndex === 6 ? "View More" : "View less"}
-            >
-              {serviceIndex === 6 ? "View More" : "View less"}
-            </button>
-          </div>
-        )}
-      </div>
+      )}
     </div>
   );
 }
