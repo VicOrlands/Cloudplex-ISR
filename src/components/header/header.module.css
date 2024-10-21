@@ -240,6 +240,7 @@
     backdrop-filter: blur(22px);
     font-family: var(--font-inter);
     padding: 0 20px;
+    height: 8vh;
   }
 
   .mobile-nav .header-content {

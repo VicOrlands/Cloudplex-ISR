@@ -66,9 +66,10 @@
 /* mobile */
 @media screen and (max-width: 768px) {
     .awslambda-page .hero {
-        padding: 0 20px;
+        height: fit-content;
         margin: 0;
-        height: 40vh;
+        margin-top: 8vh;
+        padding: 30px 20px;
         width: 100%;
     }
 
@@ -78,6 +79,7 @@
 
     .awslambda-page .hero p {
         font-size: 1.4rem;
+        line-height: 2.6rem;
     }
 
     .awslambda-page .grid-column {
@@ -90,14 +92,13 @@
         font-size: var(--font-size-h2-sm);
         font-style: normal;
         font-weight: 700;
-        line-height: 1.5;
         margin-bottom: .5rem;
     }
 
     .awslambda-page .grid-column p {
         color: #344054;
         font-size: 1.4rem;
-        line-height: 1.6rem;
+        line-height: 2.6rem;
         margin-bottom: 1rem;
     }
 

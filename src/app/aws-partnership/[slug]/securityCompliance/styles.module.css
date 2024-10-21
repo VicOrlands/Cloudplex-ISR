@@ -110,12 +110,13 @@
 /* media query for small screen */
 @media (max-width: 768px) {
   .security-compliance-page {
-    margin-top: 6vh;
+    margin-top: 8vh;
     padding: 0 20px;
   }
 
   .security-compliance-hero-section {
     grid-template-columns: 1fr;
+    gap: 30px;
     height: fit-content;
     padding: 50px 0 30px 0;
   }
@@ -125,7 +126,7 @@
   }
 
   .security-compliance-hero-section div p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 2.6rem;
   }
 
@@ -142,7 +143,6 @@
 
   .security-compliance-hero-img {
     grid-area: 1;
-    margin: 50px 0 30px 0;
   }
 
   /* aws-dynmano-services */
@@ -158,7 +158,7 @@
 
   .security-compliance-services h3,
   .security-compliance-client-stories h3 {
-    font-size: 1.4rem;
+    font-size: var(--font-size-h3-sm);
   }
 
   .security-compliance-client-stories h3 {

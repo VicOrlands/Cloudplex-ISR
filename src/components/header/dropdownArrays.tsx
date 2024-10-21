@@ -1,4 +1,4 @@
-import { AiScanIcon, AwsManagedIcon, AwsMaturityIcon, BackupIcon, BlogsIcon, CaseStudyIcon, CloudMigrationIcon, CloudResourceIcon, CloudTrainingIcon, DataAnalyticsIcon, DevopsServiceIcon, EventsIcon, MicrosoftIcon, OmniCallCenterIcon, PressIcon, SecurityComplianceIcon, WenduIcon, WhitepaperIcon } from "./Icons";
+import { AiScanIcon, AwsManagedIcon, AwsMaturityIcon, BackupIcon, CloudMigrationIcon, CloudResourceIcon, CloudTrainingIcon, DataAnalyticsIcon, DevopsServiceIcon, MicrosoftIcon, OmniCallCenterIcon, PressIcon, SecurityComplianceIcon, WenduIcon, WhitepaperIcon } from "./Icons";
 
 type Dropdown = {
     icon: () => React.JSX.Element;
@@ -98,18 +98,6 @@ export const professional: Dropdown[] = [
 ]
 
 export const resources: Dropdown[] = [
-    // {
-    //     icon: EventsIcon,
-    //     name: "Events",
-    //     description: "Get updated on the most recent events in hosted & supported by us, concerning news, interviews, cutting-edge technologies, and valuable resources.",
-    //     link: "/events"
-    // },
-    // {
-    //     icon: BlogsIcon,
-    //     name: "Blogs",
-    //     description: "Get updated on the most recent developments in the industry, including news, interviews, cutting-edge technologies, and valuable resources.",
-    //     link: "/blog"
-    // },
     {
         icon: PressIcon,
         name: "Press Releases",
@@ -119,10 +107,5 @@ export const resources: Dropdown[] = [
         icon: WhitepaperIcon,
         name: "White-paper & Ebooks",
         link: "/whitepaper"
-    },
-    // {
-    //     icon: CaseStudyIcon,
-    //     name: "Case studies",
-    //     link: "/case-study"
-    // }
+    }
 ]

@@ -202,6 +202,7 @@
 
 @media screen and (max-width: 768px) {
   .startup-page {
+    margin-top: 8vh;
     padding: 0 20px;
     padding-top: 40px;
   }

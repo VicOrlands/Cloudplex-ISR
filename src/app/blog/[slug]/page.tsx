@@ -91,7 +91,7 @@ export async function generateMetadata({
       "Cloud Technology Trends",
     ],
     alternates: {
-      canonical: `https://cloudplexo.com/blog/${slug}`,
+      canonical: `https://www.cloudplexo.com/blog/${slug}`,
     },
   };
 }
