@@ -3,13 +3,17 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Slider from "react-slick";
+import dynamic from 'next/dynamic';
 import styles from "./events.module.css";
 import { eventSuccessArray } from "./array";
 import { MdArrowForward, MdArrowBack } from "react-icons/md";
 import { EventsArray } from "@/app/events/arrays/eventsArray";
+import useIntersectionObserver from "@/hooks/useIntersectionObserver";
+
+const Slider = dynamic(() => import('react-slick'), { ssr: false });
 
 function Event() {
+  const { ref, isVisible } = useIntersectionObserver()
   const [currentEventIndex, setCurrentEventIndex] = useState<number>(0);
   const [currentSlideIndex, setCurrentSlideIndex] = useState<number>(0);
   const currentEvent = eventSuccessArray[currentEventIndex];
@@ -67,88 +71,92 @@ function Event() {
   };
 
   return (
-    <div className={styles.events}>
-      {/* <h2 id={styles["header-h2"]}>Upcoming Events</h2> */}
+    <div className={styles.events} ref={ref}>
+      {isVisible && (
+        <>
+          {/* <h2 id={styles["header-h2"]}>Upcoming Events</h2> */}
 
-      <div className={styles["events-grid"]}>
-        <section className={styles["upcoming-events"]}>
-          <h2 id={styles["header-h2"]}>Upcoming Events</h2>
-          {upcomingEvents.slice(0, 2).map((item) => (
-            <div key={item.title} className={styles["upcoming-events-grid"]}>
-              <Image
-                loading="lazy"
-                src={item.img}
-                alt={item.title}
-                priority={false}
-                placeholder="blur"
-              />
-              <div>
-                <h4>{item.date}</h4>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-                <Link href={item.link} target="blank">
-                  Register
-                </Link>
-              </div>
-            </div>
-          ))}
-        </section>
-
-        <section className={styles["past-events"]}>
-          <h2>Celebrating Thought Leadership Successes</h2>
-          <Link href="/events">Go to event gallery</Link>
-
-          <div className={styles["slider-container"]}>
-            <div className={styles["slider"]}>
-              <Slider {...settings}>
-                {currentEvent.images.map((image, index) => (
-                  <div key={index}>
-                    <Image
-                      loading="lazy"
-                      src={image}
-                      alt={`Event Image ${index + 1}`}
-                      priority={false}
-                      placeholder="blur"
-                    />
-                    {currentEvent.imgHeader || currentEvent.imgText ? (
-                      <div className={styles["sliderText"]}>
-                        <div
-                          className={
-                            currentEvent.imgHeader
-                              ? styles.textContent
-                              : styles.textContentWithoutHeader
-                          }
-                        >
-                          {currentEvent.imgHeader && (
-                            <h3>Business Day Event</h3>
-                          )}
-                          <p>{currentEvent.imgText}</p>
-                        </div>
-                      </div>
-                    ) : null}
+          <div className={styles["events-grid"]}>
+            <section className={styles["upcoming-events"]}>
+              <h2 id={styles["header-h2"]}>Upcoming Events</h2>
+              {upcomingEvents.slice(0, 2).map((item) => (
+                <div key={item.title} className={styles["upcoming-events-grid"]}>
+                  <Image
+                    loading="lazy"
+                    src={item.img}
+                    alt={item.title}
+                    priority={false}
+                    placeholder="blur"
+                  />
+                  <div>
+                    <h4>{item.date}</h4>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                    <Link href={item.link} target="blank">
+                      Register
+                    </Link>
                   </div>
-                ))}
-              </Slider>
-            </div>
-            <section className={styles.btngroup}>
-              <button
-                type="button"
-                aria-label="Arrow pointing left"
-                onClick={handlePreviousEvent}
-              >
-                <MdArrowBack />
-              </button>
-              <button
-                type="button"
-                aria-label="Arrow pointing right"
-                onClick={handleNextEvent}
-              >
-                <MdArrowForward />
-              </button>
+                </div>
+              ))}
+            </section>
+
+            <section className={styles["past-events"]}>
+              <h2>Celebrating Thought Leadership Successes</h2>
+              <Link href="/events">Go to event gallery</Link>
+
+              <div className={styles["slider-container"]}>
+                <div className={styles["slider"]}>
+                  <Slider {...settings}>
+                    {currentEvent.images.map((image, index) => (
+                      <div key={index}>
+                        <Image
+                          loading="lazy"
+                          src={image}
+                          alt={`Event Image ${index + 1}`}
+                          priority={false}
+                          placeholder="blur"
+                        />
+                        {currentEvent.imgHeader || currentEvent.imgText ? (
+                          <div className={styles["sliderText"]}>
+                            <div
+                              className={
+                                currentEvent.imgHeader
+                                  ? styles.textContent
+                                  : styles.textContentWithoutHeader
+                              }
+                            >
+                              {currentEvent.imgHeader && (
+                                <h3>Business Day Event</h3>
+                              )}
+                              <p>{currentEvent.imgText}</p>
+                            </div>
+                          </div>
+                        ) : null}
+                      </div>
+                    ))}
+                  </Slider>
+                </div>
+                <section className={styles.btngroup}>
+                  <button
+                    type="button"
+                    aria-label="Arrow pointing left"
+                    onClick={handlePreviousEvent}
+                  >
+                    <MdArrowBack />
+                  </button>
+                  <button
+                    type="button"
+                    aria-label="Arrow pointing right"
+                    onClick={handleNextEvent}
+                  >
+                    <MdArrowForward />
+                  </button>
+                </section>
+              </div>
             </section>
           </div>
-        </section>
-      </div>
+        </>
+      )}
     </div>
   );
 }

@@ -1,7 +1,6 @@
 "use client"
 import React from "react";
 import styles from "./styles.module.css"
-import 'video-react/dist/video-react.css';
 import { Player, BigPlayButton } from "video-react";
 import posterImage from "@/assets/training/videothumbnail.png";
 

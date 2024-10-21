@@ -3,8 +3,6 @@
 import React, { useState } from "react";
 import "./events.css";
 import Image from "next/image";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import {
   HiOutlineArrowSmallLeft,
   HiOutlineArrowSmallRight,

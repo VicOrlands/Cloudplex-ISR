@@ -30,6 +30,12 @@
   padding: 0;
 }
 
+.placeholderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .contentWrap {
   background: #f9fafb;
   border: 1px solid rgba(0, 0, 0, 0.13);
@@ -393,7 +399,7 @@
     font-size: 3rem;
     margin-top: 12px;
   }
-  
+
   .reviewBox h3 {
     line-height: 30px;
     font-size: 2rem;

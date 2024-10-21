@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import "./videoplayer.css"
 import styles from "./styles.module.css";
-import 'video-react/dist/video-react.css';
 import { Player, BigPlayButton } from "video-react";
 
 import EventsSuccess from "./event/Event";
