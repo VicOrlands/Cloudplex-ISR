@@ -146,22 +146,57 @@
     text-align: center;
 }
 
+@media (min-width: 769px) and (max-width: 1300px) {
+    .partnership-hero-section {
+        flex-wrap: wrap;
+        padding: 50px;
+        padding-top: 10vh;
+    }
+
+    .partnership-hero-main-title {
+        font-size: 4rem;
+    }
+
+    .partnership-hero-paragraph {
+        font-size: 2rem;
+        line-height: 2.6rem;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .partnership-hero-button-container {
+        margin-bottom: 20px;
+    }
+
+    /* services column styling */
+    .aws-partnership-services {
+        padding: 40px 50px;
+    }
+
+    .aws-partnership-services-column {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 0;
+    }
+
+}
+
 /* small screen */
 @media (max-width: 768px) {
     .partnership-hero-section {
         flex-wrap: wrap;
-        padding: 50px 20px;
-        height: 90vh;
+        gap: 20px;
+        padding: 0 20px;
+        padding-top: 8vh;
+        height: fit-content;
     }
 
     .partnership-hero-main-title {
         font-size: 3rem;
-        margin-bottom: 5px;
     }
 
     .partnership-hero-paragraph {
         font-size: 1.4rem;
-        line-height: 2.2rem;
+        line-height: 2.6rem;
         margin-right: 0;
         margin-bottom: 30px;
     }
@@ -182,7 +217,7 @@
     }
 
     .partnership-hero-button-img div {
-        height: 170px;
+        height: auto;
     }
 
     .partnership-hero-button-img div img {

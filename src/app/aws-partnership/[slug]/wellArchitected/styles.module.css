@@ -182,26 +182,38 @@
 
 /* small screen media query */
 @media (max-width: 991px) {
+
+  .aws-partnership-parent h2 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .aws-partnership-parent h3 {
+    font-size: 2.4rem;
+    line-height: normal;
+  }
+
+  .aws-partnership-parent p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+  }
+
   .hero-section {
     grid-template-columns: 1fr;
-    padding: 80px 20px 40px;
+    padding: 100px 20px 40px;
   }
 
   .hero-section img {
-    width: 100%;
+    height: min-content;
     margin-bottom: 36px;
+    width: 100%;
   }
 
   .hero-section-paragraph h1 {
-    font-size: 2.4rem !important;
+    font-size: 2.4rem;
     font-weight: 800;
     line-height: 34px;
-  }
-
-  .hero-section-paragraph p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
   }
 
   .hero-section-paragraph a {
@@ -214,12 +226,9 @@
     padding: 30px 20px;
   }
 
-  .well-architected-review-matters h2 {
-    font-size: 1.8rem !important;
-  }
-
   .well-architected-review-matters p {
-    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
     margin-bottom: 30px;
   }
 
@@ -228,8 +237,13 @@
     grid-gap: 0px;
   }
 
-  .pillars-of-well-architected-framework .pillar h3 {
-    font-size: 2.4rem !important;
+  .aws-partnership-parent .pillars-of-well-architected-framework h3 {
+    font-size: 2rem;
+  }
+
+  .aws-partnership-parent .pillars-of-well-architected-framework p {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
   }
 
   /* well-architected-reviews */
@@ -237,12 +251,14 @@
     padding-top: 0;
   }
 
-  .well-architected-reviews h2 {
-    font-size: 1.8rem !important;
+  .well-architected-reviews .framework-review h3 {
+    font-size: 2rem;
   }
 
-  .well-architected-reviews .framework-review h3 {
-    font-size: 2.4rem !important;
+  .well-architected-reviews .framework-review li {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    padding-bottom: 20px;
   }
 
   /* well-architected-form */
@@ -257,9 +273,9 @@
     width: 100%;
   }
 
-  .well-architected-form h2 {
-    font-size: 2.8rem !important;
-    line-height: 34px;
+  .aws-partnership-parent .well-architected-form h2 {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
     margin-bottom: 25px;
   }
 

@@ -23,7 +23,6 @@ import convexity from "@/assets/landing/convexity-placeholder.webp";
 import bitbarterLogo from "@/assets/landing/bitbarter.webp";
 import bitbarter from "@/assets/landing/bitbarter-thumbnail.webp";
 import clsx from "clsx";
-import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 
 interface CaseStudyProps {
   id: number;
@@ -140,7 +139,6 @@ const testimonials: {
   ];
 
 const Testimonial: React.FC = () => {
-  const { ref, isVisible } = useIntersectionObserver();
   const [sliderRef, setSliderRef] = useState<Slider | null>(null);
 
   const SlickArrowLeft = ({ ...props }) => (
@@ -183,109 +181,106 @@ const Testimonial: React.FC = () => {
   };
 
   return (
-    <div className={clsx(styles.reviewContainer, { [styles.visible]: isVisible })} ref={ref}>
-      {isVisible && (
-        <>
-          <h2>
-            With CloudPlexo, the possibilities for customer innovation are endless.
-          </h2>
+    <div className={styles["reviewContainer"]}>
+      <h2>
+        With CloudPlexo, the possibilities for customer innovation are endless.
+      </h2>
 
-          <div className={styles.reviewVideo}>
-            <Slider ref={setSliderRef} {...videosettings}>
-              {casestudy.map((cases, index) =>
-                <div className={styles.videoWrap} key={index}>
-                  <div className={styles.imageWrap}>
-                    <Player
-                      playsInline
-                      src={cases.link}
-                      fluid
-                      poster={cases.image.src}
-                    >
-                      <BigPlayButton position="center" />
-                    </Player>
-                  </div>
-                  <div className={styles.contentWrap}>
-                    <Image
-                      loading="lazy"
-                      priority={false}
-                      src={cases.logo}
-                      className={styles.logoImage}
-                      alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions reviews"
-                    />
-                    <h3>{cases.quote}</h3>
-                    <Link href={cases.caselink}>Read case study</Link>
-                    <h4>{cases.speaker}</h4>
-                    <h6>{cases.company}</h6>
-                  </div>
-                  <section className={clsx(styles.btngroup, styles.mobile)}>
-                    <button
-                      type="button"
-                      aria-label="Arrow pointing left"
-                      onClick={sliderRef?.slickPrev}
-                    >
-                      <MdArrowBack />
-                    </button>
-                    <button
-                      type="button"
-                      aria-label="Arrow pointing right"
-                      onClick={sliderRef?.slickNext}
-                    >
-                      <MdArrowForward />
-                    </button>
-                  </section>
-                </div>
-              )}
-            </Slider>
-            <section className={clsx(styles.btngroup, styles.desktop)}>
-              <button
-                type="button"
-                aria-label="Arrow pointing left"
-                onClick={sliderRef?.slickPrev}
-              >
-                <MdArrowBack />
-              </button>
-              <button
-                type="button"
-                aria-label="Arrow pointing right"
-                onClick={sliderRef?.slickNext}
-              >
-                <MdArrowForward />
-              </button>
-            </section>
-          </div>
-
-          <LazyBackgroundImage src={BgImage} className={styles.wordsReview}>
-            <div className={styles.reviewsCarouselContainer}>
-              <Slider {...settings}>
-                {testimonials.map((testimonial, index) => (
-                  <div className={styles.reviewBox} key={index}>
-                    <Image
-                      loading="lazy"
-                      placeholder="blur"
-                      priority={false}
-                      src={vectorquote}
-                      className={styles.quoteImg1}
-                      alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-                    />
-
-                    <Image
-                      loading="lazy"
-                      priority={false}
-                      src={vectorquote2}
-                      className={styles.quoteImg2}
-                      alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-                    />
-
-                    <div>
-                      <h3>{testimonial.content}</h3>
-                      <h4>{testimonial.by}</h4>
-                    </div>
-                  </div>
-                ))}
-              </Slider>
+      <div className={styles.reviewVideo}>
+        <Slider ref={setSliderRef} {...videosettings}>
+          {casestudy.map((cases, index) =>
+            <div className={styles.videoWrap} key={index}>
+              <div className={styles.imageWrap}>
+                <Player
+                  playsInline
+                  src={cases.link}
+                  fluid
+                  poster={cases.image.src}
+                >
+                  <BigPlayButton position="center" />
+                </Player>
+              </div>
+              <div className={styles.contentWrap}>
+                <Image
+                  loading="lazy"
+                  priority={false}
+                  src={cases.logo}
+                  className={styles.logoImage}
+                  alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions reviews"
+                />
+                <h3>{cases.quote}</h3>
+                <Link href={cases.caselink}>Read case study</Link>
+                <h4>{cases.speaker}</h4>
+                <h6>{cases.company}</h6>
+              </div>
+              <section className={clsx(styles.btngroup, styles.mobile)}>
+                <button
+                  type="button"
+                  aria-label="Arrow pointing left"
+                  onClick={sliderRef?.slickPrev}
+                >
+                  <MdArrowBack />
+                </button>
+                <button
+                  type="button"
+                  aria-label="Arrow pointing right"
+                  onClick={sliderRef?.slickNext}
+                >
+                  <MdArrowForward />
+                </button>
+              </section>
             </div>
-          </LazyBackgroundImage>
-        </>)}
+          )}
+        </Slider>
+        <section className={clsx(styles.btngroup, styles.desktop)}>
+          <button
+            type="button"
+            aria-label="Arrow pointing left"
+            onClick={sliderRef?.slickPrev}
+          >
+            <MdArrowBack />
+          </button>
+          <button
+            type="button"
+            aria-label="Arrow pointing right"
+            onClick={sliderRef?.slickNext}
+          >
+            <MdArrowForward />
+          </button>
+        </section>
+      </div>
+
+      <LazyBackgroundImage src={BgImage} className={styles.wordsReview}>
+        <div className={styles.reviewsCarouselContainer}>
+          <Slider {...settings}>
+            {testimonials.map((testimonial, index) => (
+              <div className={styles.reviewBox} key={index}>
+                <Image
+                  loading="lazy"
+                  placeholder="blur"
+                  priority={false}
+                  src={vectorquote}
+                  className={styles.quoteImg1}
+                  alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                />
+
+                <Image
+                  loading="lazy"
+                  priority={false}
+                  src={vectorquote2}
+                  className={styles.quoteImg2}
+                  alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                />
+
+                <div>
+                  <h3>{testimonial.content}</h3>
+                  <h4>{testimonial.by}</h4>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </LazyBackgroundImage>
     </div>
   );
 };

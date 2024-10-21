@@ -467,6 +467,7 @@
 
   .data-hero p {
     font-size: 1.6rem;
+    line-height: 2.6rem;
     text-align: center;
     width: 100%;
   }

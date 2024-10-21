@@ -108,11 +108,13 @@
 /* media query for small screen */
 @media (max-width: 768px) {
   .transfer-main-page {
+    margin-top: 8vh;
     padding: 0 20px;
   }
 
   .transfer-dynamo-hero-section {
     grid-template-columns: 1fr;
+    gap: 30px;
     height: fit-content;
     padding: 50px 0 30px 0;
   }
@@ -122,7 +124,7 @@
   }
 
   .transfer-dynamo-hero-section div p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 2.6rem;
   }
 
@@ -144,7 +146,7 @@
 
   .transfer-partnership-hero-img {
     grid-area: 1;
-    margin: 50px auto 20px auto;
+    margin: 0 auto;
   }
 
   /* aws-dynmano-services */
@@ -153,7 +155,7 @@
   }
 
   .transfer-services h3 {
-    font-size: 1.6rem;
+    font-size: var(--font-size-h3-sm);
   }
 
   .transfer-services h2 {
@@ -174,5 +176,6 @@
 
   .transfer-services-column div ul li {
     font-size: 1.4rem;
+    line-height: 2.6rem;
   }
 }
