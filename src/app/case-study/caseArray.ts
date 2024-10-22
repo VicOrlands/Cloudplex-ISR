@@ -33,8 +33,22 @@ export interface CaseProps {
     image: StaticImageData,
     title: string,
     desc: string,
-    link: string
+    link: string,
+    tag: string
 }
+
+const caseTags: string[] = [
+    "Financial Services",
+    "E-commerce and Retail",
+    "Technology",
+    "Telecommunications",
+    "Education Tech",
+    "Logistics",
+    "Energy",
+    "Automotive",
+    "Social Networking",
+    "Health",
+]
 
 const casestudy: CaseProps[] = [
     {
@@ -43,6 +57,7 @@ const casestudy: CaseProps[] = [
             "Migration of On-Premise Workload for Financial Institution to AWS Lagos Local Zone for Data Residency Requirements : A Case Study of GT Pensions Managers",
         desc: `GT Pensions Managers migrated on-premise workload to Lagos Local Zone for compliance, scalability, security, and efficiency.`,
         link: "case-study-of-gt-pensions-managers",
+        tag: "Financial Services"
     },
     {
         image: img13,
@@ -50,6 +65,7 @@ const casestudy: CaseProps[] = [
             "Mkobo uses CloudPlexo’s SaaS solution -  to discover cost optimization opportunities and security posture.",
         desc: `Mkobo Microfinance Bank, based in Nigeria, offers microfinance services to individuals and small businesses, aiming to promote financial inclusion and empower underserved communities.`,
         link: "mkobo-uses-cloudplexo-saas-solution",
+        tag: "Financial Services"
     },
     {
         image: img10,
@@ -57,6 +73,7 @@ const casestudy: CaseProps[] = [
             "PhastPay collaborated with CloudPlexo experts and leveraging on CloudPlexo SaaS solution",
         desc: `PhastPay, a Nigerian fintech company, simplifies financial transactions with digital payment solutions for businesses and individuals.`,
         link: "phastpay-collaborated-with-cloudplexo-experts-and-leveraging-on-cloudplexo-saas-solution",
+        tag: "Financial Services"
     },
     {
         image: img14,
@@ -64,6 +81,7 @@ const casestudy: CaseProps[] = [
             "BillyRonks selected CloudPlexo as AWS Advanced partner to provide a Well Architected Review & Remediation",
         desc: `BillyRonks Global Ltd, established in 2018, is a global telecoms firm offering Wholesale Carrier Services, Business and Retail Voice, Value Added Services, and more.`,
         link: "billyronks-selected-cloudplexo-as-aws-advanced-partner",
+        tag: "Telecommunications"
     },
     {
         image: img15,
@@ -71,18 +89,21 @@ const casestudy: CaseProps[] = [
             "Alarrt achieves enhanced cost efficiency, elevated security standards, and a highly scalable and efficient infrastructure.",
         desc: `Alarrt is the essential companion for your journeys. It's a social app designed to keep you updated about road conditions, disturbances, and emergencies along your route in advance.`,
         link: "alarrt-achieves-enhanced-cost-efficiency-elevated-security-standards-and-a-highly-scalable-and-efficient-infrastructure",
+        tag: "Social Networking"
     },
     {
         image: img16,
         title: "Talentsync Case study",
         desc: `Talentsync, a leading provider of talent network solutions, has experienced phenomenal growth. To meet the demands of their expanding user base and ensure exceptional service, they embarked on a strategic migration from DigitalOcean to AWS.`,
         link: "talentsync-case-study",
+        tag: "Technology"
     },
     {
         image: img17,
         title: `Ideyfind Optimizes E-commerce Platform for Growth with CloudPlexo's AWS Expertise`,
         desc: `Ideyfind, an innovative e-commerce platform, empowers customers to find personalized products and services through AI-powered matching with suitable vendors. As their user base and business demands grew, IdeyFind's on-premises infrastructure encountered limitations, hindering their ability to scale effectively.`,
         link: "ideyfind-optimizes-e-commerce-platform-for-growth-with-cloudplexo-aws-expertise",
+        tag: "E-commerce and Retail"
     },
     {
         image: img1,
@@ -90,6 +111,7 @@ const casestudy: CaseProps[] = [
             "Migrating Web Applications to AWS: A Case Study in the EdTech Sector",
         desc: `This case study presents the process of migrating a web application for icanonlinetutors.com - an EdTech company to Amazon Web Services (AWS).`,
         link: "case-study-in-the-edtech-sector",
+        tag: "Education Tech"
     },
     {
         image: img18,
@@ -97,6 +119,7 @@ const casestudy: CaseProps[] = [
             "CryptoSmart collaborates with CloudPlexo for Application Modernisation with Kubernetes",
         desc: "CryptoSmart (Bitsave Smart Ltd) is a leading B2B asset management  :company in Africa, focusing on sustainable crypto wealth. Cryptosmart in addition enables businesses to  set up your trading department to solely trade...",
         link: "cryptosmart-case-study",
+        tag: "Financial Services"
     },
     {
         image: img19,
@@ -104,6 +127,7 @@ const casestudy: CaseProps[] = [
             "AWS Case Study: Re-architecting Infrastructure from Monolithic to Microservices for Convexity",
         desc: "Convexity Technology Limited stands as a prominent blockchain consultancy firm, not only in Nigeria but also across Africa. At the forefront of their offerings is their groundbreaking solution known as the ‘Convexity Humanitarian Aid Transfer Solution.’",
         link: "convexity-case-study",
+        tag: ""
     },
     {
         image: img20,
@@ -114,6 +138,7 @@ const casestudy: CaseProps[] = [
     platform where users can surf, design, amass, sell, auction, and
     gift NFTs.`,
         link: "dukia-case-study",
+        tag: "E-commerce and Retail"
     },
     {
         image: img21,
@@ -121,6 +146,7 @@ const casestudy: CaseProps[] = [
             "FundusAI partners with CloudPlexo for Database Migration, Application Migration and Cloud Maturity Service",
         desc: "FundusAI embarked on a transformative project to elevate its cloud capabilities using CloudPlexo's AWS Maturity Services. The objectives were to develop an optimized cloud infrastructure on AWS, strengthen security measures, ...",
         link: "fundusai-case-study",
+        tag: "Health"
     },
     {
         image: img22,
@@ -128,6 +154,7 @@ const casestudy: CaseProps[] = [
             "Rearchitecting KoboAccountant's Application Infrastructure to Microservices on AWS",
         desc: "KoboAccountant is a financial technology and service company dedicated to revolutionizing the finance and accounting industry in Africa and global markets.",
         link: "koboaccountant-case-study",
+        tag: "Financial Services"
     },
     {
         image: img23,
@@ -135,97 +162,113 @@ const casestudy: CaseProps[] = [
             "FeedXPay - CloudPlexo's Role in the AWS Migration",
         desc: "FeedXPay, a leading player in the digital payment solutions sector, was facing the challenge of ensuring robust service availability, reliability, and scalability to meet their growing customer base's demands.",
         link: "feedxpay-case-study",
+        tag: "Financial Services"
     },
     {
         image: img24,
         title: "HighMart - CloudPlexo's Role in the AWS Migration",
         desc: "HighMart, an ecommerce enterprise, sought to enhance its IT infrastructure to support its growing business needs. Faced with the limitations of their existing system, HighMart aimed to migrate to AWS to leverage its robust, scalable, and flexible cloud solutions.",
-        link: "highmart-case-study"
+        link: "highmart-case-study",
+        tag: "E-commerce and Retail"
     },
     {
         image: img25,
         title: "Qpay - Data Migration: Moving to AWS for Better Service",
         desc: "Qpay, a growing company in digital payments, needed to improve its technology to keep up with its expansion. To provide better, more reliable services to its users, Qpay chose to move from Digital Ocean to Amazon Web Services (AWS), leveraging CloudPlexo's expertise.",
-        link: "qpay-case-study"
+        link: "qpay-case-study",
+        tag: "Financial Services"
     },
     {
         image: img26,
         title: "Silicon Africa - Transitioning to AWS for Better Performance",
         desc: "Silicon Africa upgraded its web applications to a highly scalable infrastructure on Amazon Web Services (AWS). The main goal is to ensure 24/7 site availability and reliability to meet the increasing demands of their users. This transition was expertly managed by CloudPlexo, ensuring a smooth and efficient migration process.",
-        link: "silicon-case-study"
+        link: "silicon-case-study",
+        tag: ""
     },
     {
         image: img27,
         title: "Staycon's AWS Migration for Telecoms Product",
         desc: "Staycon transitioned its telecoms product to Amazon Web Services (AWS) to improve availability, reliability, and flexibility. This project supports their nationwide growth goals by leveraging AWS’s powerful services. CloudPlexo expertly managed the entire migration process, ensuring a smooth and efficient transition.",
-        link: "staycon-case-study"
+        link: "staycon-case-study",
+        tag: "Telecommunications"
     },
     {
         image: img28,
         title: "Suba Capital’s Transformation with AWS",
         desc: "Suba Capital was on a mission to modernize its wealth management application by moving from a monolithic structure to a flexible, scalable microservices architecture using AWS. This initiative focuses on leveraging Amazon ECS (Elastic Container Service) to manage containers efficiently, ensuring the application is agile, maintainable, and ready for future growth.",
-        link: "suba-case-study"
+        link: "suba-case-study",
+        tag: ""
     },
     {
         image: img29,
         title: "Customer Case Study: Varscon - Data Migration",
         desc: "Varscon, a research and product design company, decided to migrate its infrastructure from Google Cloud Platform (GCP) to Amazon Web Services (AWS). This move aims to enhance service availability, reliability, and flexibility to support Varscon's growth and strategic objectives.",
-        link: "varscon-case-study"
+        link: "varscon-case-study",
+        tag: "Technology"
     },
     {
         image: img2,
         title: "Liveli Case Study",
         desc: `Liveli is a company based in Ontario, Canada. Liveli is a Social Networking and Live Entertainment Hub. Users can share their Lifestyle, Earn real money from posts and contents, stream live events, watch live entertainment and stay connected.`,
         link: "liveli-case-study",
+        tag: "Social Networking"
     },
     {
         image: img3,
         title: "Geria Case Study",
         desc: `Geria is a company based in the United Kingdom. It connects talented software engineers, developers, designers, and project managers from Africa to UK technology companies.`,
         link: "geria-case-study",
+        tag: ""
     },
     {
         image: img5,
         title: "Inttix Case Study",
         desc: `Inttix, an artificial intelligence development company. The company is a Data/AI, Analytical cloud first innovative solutions provider offering intelligent data driven business applications to customers.`,
         link: "inttix-case-study",
+        tag: "Technology"
     },
     {
         image: img6,
         title: "Kobo Case Study",
         desc: `Kobo360 is a company based in Lagos, Nigeria. Kobo360 is Africa’s innovation leader in integrated logistics solutions and truck brokerage services. Kobo360 aggregates end-to-end haulage operations to help cargo owners, truck owners, drivers, ...`,
         link: "kobo-case-study",
+        tag: "Logistics"
     },
     {
         image: img7,
         title: "Jaguar & Land Rover Case Study",
         desc: `JLR, or Jaguar Land Rover, is a British automotive company that specializes in the production of luxury vehicles. JLR is known for its iconic brands, Jaguar and Land Rover, which have a rich heritage and are renowned for their performance, craftsmanship, and...`,
         link: "jaguar-and-land-rover-case-study",
+        tag: "Automotive"
     },
     {
         image: img8,
         title: "BP Case Study",
         desc: `British Petroleum, commonly known as BP, is a multinational oil and gas company headquartered in London, United Kingdom. It is one of the world's largest oil and gas companies and has operations in all areas of the oil and gas industry...`,
         link: "bp-case-study",
+        tag: "Energy"
     },
     {
         image: img4,
         title: "iLearn Cloud Case Study",
         desc: `Ilearncloud is a company based in the United Kingdom. Ilearncloud (ilearncloud.io) is an online learning management platform for learning cloud computing, ilearncloud offers a wide range of high-quality courses taught by experienced instructors.`,
         link: "ilearncloud-case-study",
+        tag: "Education Tech"
     },
     {
         image: img11,
         title: "",
         desc: ``,
         link: "",
+        tag: ""
     },
     {
         image: img12,
         title: "",
         desc: ``,
         link: "",
+        tag: ""
     },
 ];
 
-export { casestudy };
+export { casestudy, caseTags };

@@ -69,6 +69,7 @@
 .cloud-migration-cost div,
 .cloud-migration-cost div img {
   width: 100%;
+  height: auto;
 }
 
 .cloud-migration-cost div h2 {

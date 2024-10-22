@@ -1,11 +1,11 @@
-import styles from "./styles.module.css";
+import Link from "next/link";
+import Image from "next/image";
 import { FAQ } from "./questions";
+import styles from "./styles.module.css";
+import FaqPage from "@/components/faq/faq";
 import checkIcon from "@/assets/aws_partnership/Check icon.png";
 import HeroImg from "@/assets/aws_partnership/security-protection.png";
 import Testimonial from "@/app/landing/testimonial/Testimonial";
-import FaqPage from "@/components/faq/faq";
-import Image from "next/image";
-import Link from "next/link";
 
 export async function generateStaticParams() {
   return [

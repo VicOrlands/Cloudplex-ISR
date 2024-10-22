@@ -1,11 +1,10 @@
-import React from "react";
-import data from "@/assets/cloud/data.gif";
-import HeroImg from "@/assets/cloud/codecollaboration.png";
-import Testimonial from "@/app/landing/testimonial/Testimonial";
-import Partners from "@/components/partners/Partners";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles.module.css"
-import Link from "next/link";
+import data from "@/assets/cloud/data.gif";
+import HeroImg from "@/assets/cloud/codecollaboration.png";
+import Partners from "@/components/partners/Partners";
+import Testimonial from "@/app/landing/testimonial/Testimonial";
 
 export default function Migration() {
   return (

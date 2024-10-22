@@ -3,19 +3,24 @@
 import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import { Player, BigPlayButton } from "video-react";
-import { casestudy } from "../landing/testimonial/Testimonial";
 import styles from "../landing/testimonial/testimonial.module.css";
 import secondStyles from "./styles.module.css";
 import {
     MdOutlineKeyboardArrowLeft,
     MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
+import { casestudy } from "../landing/testimonial/testimonialData";
+import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 
 const ReviewExtract: React.FC = () => {
     const [sliderRef, setSliderRef] = useState<Slider | null>(null);
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const settings = {
         dots: false,
@@ -26,6 +31,19 @@ const ReviewExtract: React.FC = () => {
         slidesToScroll: 1,
     };
 
+    if (!isClient) {
+        return (
+            <div className={styles.reviewContainer}>
+                <h2>
+                    With CloudPlexo, the possibilities for customer innovation are endless.
+                </h2>
+                <div className={styles.reviewVideo}>
+                    <h3>Loading videos...</h3>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div className={clsx(secondStyles["reviewExtract"], styles.reviewContainer)}>
             <h2>With Cloudplexo, the possibilities for customer innovation are endless.</h2>
@@ -35,16 +53,10 @@ const ReviewExtract: React.FC = () => {
                     {casestudy.map((cases, key) => (
                         <div className={styles.videoWrap} key={key}>
                             <div className={styles.imageWrap}>
-                                <Player
-                                    playsInline
+                                <VideoPlayer
                                     src={cases.link}
-                                    fluid
                                     poster={cases.image.src}
-                                >
-                                    <BigPlayButton
-                                        position="center"
-                                    />
-                                </Player>
+                                />
                             </div>
                             <div className={styles.contentWrap}>
                                 <Image

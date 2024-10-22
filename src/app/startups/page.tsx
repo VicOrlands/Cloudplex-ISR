@@ -3,9 +3,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import "./videoplayer.css"
 import styles from "./styles.module.css";
-import { Player, BigPlayButton } from "video-react";
+import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 
 import EventsSuccess from "./event/Event";
 import { supportArray } from "./arrayList";
@@ -75,13 +74,10 @@ export default function Startups() {
         </div>
 
         <div className={styles["video-section"]}>
-          <Player
-            playsInline
-            poster={posterImage.src}
+          <VideoPlayer
             src="https://cloudplexo.com/cloudplexo-startup-video.mp4"
-          >
-            <BigPlayButton position="center" className={styles["video-button"]} />
-          </Player>
+            poster={posterImage.src}
+          />
         </div>
 
         <div className={styles["support-section"]}>

@@ -9,13 +9,13 @@ import Partners from "@/components/partners/Partners";
 import Service from "@/app/landing/Service";
 import Badges from "@/app/landing/Badges";
 
-const DynamicEvents = dynamic(() => import("@/app/landing/event/Event"), { ssr: false });
+const DynamicEvents = dynamic(() => import("@/app/landing/event/Event"), { loading: () => <p>Loading...</p>, });
 
-const DynamicTestimonials = dynamic(() => import("@/app/landing/testimonial/Testimonial"), { ssr: false });
+const DynamicTestimonials = dynamic(() => import("@/app/landing/testimonial/Testimonial"), { loading: () => <p>Loading...</p>, });
 
-const DynamicClients = dynamic(() => import("@/app/landing/Client"), { ssr: false });
+const DynamicClients = dynamic(() => import("@/app/landing/Client"), { loading: () => <p>Loading...</p>, });
 
-const DynamicBlog = dynamic(() => import("@/components/blogGrid/Grid"), { ssr: false });
+const DynamicBlog = dynamic(() => import("@/components/blogGrid/Grid"), { loading: () => <p>Loading...</p>, });
 
 export const metadata: Metadata = {
   title:

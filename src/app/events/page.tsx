@@ -4,12 +4,10 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles.module.css";
-import "video-react/dist/video-react.css";
 
 import { EventsArray } from "./arrays/eventsArray";
 import { WebinarArray } from "./arrays/webinarArray";
 import CTAForm from "@/components/callToAction/cta";
-import { Player, BigPlayButton } from "video-react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { HiOutlineArrowSmallRight } from "react-icons/hi2";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
@@ -18,6 +16,7 @@ import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
 import Thumbnail from "@/assets/events/events-video-thumbnail.webp";
 import BgImg from "@/assets/events/Background_pattern.webp";
 import Footer from "./footer/page";
+import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 
 function Events() {
   const eventsPerPage = useRef<number>(8);
@@ -93,14 +92,10 @@ function Events() {
           </div>
 
           <div className={styles.eventsHeroVideo}>
-            <Player
-              playsInline
-              aspectRatio="2.2:1"
-              poster={Thumbnail.src}
+            <VideoPlayer
               src="https://cloudplexo.com/Marketing-Migration.mp4"
-            >
-              <BigPlayButton position="center" />
-            </Player>
+              poster={Thumbnail.src}
+            />
           </div>
         </div>
       </LazyBackgroundImage>

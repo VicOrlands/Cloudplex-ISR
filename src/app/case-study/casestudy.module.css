@@ -1,3 +1,8 @@
+.casestudy {
+    font-family: var(--font-inter);
+}
+
+/* hero section */
 .casestudy-hero-bg {
     background-position: center;
     background-repeat: no-repeat;
@@ -6,27 +11,26 @@
 
 .casestudy-hero {
     text-align: center;
-    font-family: var(--font-inter);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 450px;
 }
 
-.casestudy-content {
+.casestudy-hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.casestudy-content h1 {
+.casestudy-hero-content h1 {
     font-size: 4rem;
     font-weight: 800;
     color: #fff;
     margin-bottom: 20px;
 }
 
-.casestudy-content p {
+.casestudy-hero-content p {
     color: #fff;
     font-size: 2rem;
     font-weight: 300;
@@ -39,11 +43,37 @@
     padding-bottom: 50px;
 }
 
+/* case study grid */
+.case-tags {
+    border-bottom: 1px solid #E9D7FE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 5% 10px 5%;
+}
+
+.case-tags h5 {
+    color: #717680;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-bottom: 7px;
+}
+
+.case-tags h5.active {
+    border-bottom: 2px solid #3E54AC;
+    color: #3E54AC;
+}
+
+.case-tags-mobile {
+    display: none;
+}
+
 .casestudy-list {
-    padding: 20px 60px;
+    padding: 20px 5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 20px;
 }
 
 .casestudy-list-item {
@@ -76,7 +106,6 @@
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
-    font-family: var(--font-inter);
 }
 
 .casestudy-list-item .content-title h5 {
@@ -89,7 +118,6 @@
     color: #667085;
     font-size: 1.4rem;
     line-height: 24px;
-    font-family: var(--font-inter);
 }
 
 /* smaller laptop screens */
@@ -117,7 +145,7 @@
         font-size: 1.7rem;
     }
 
-    .casestudy-content p {
+    .casestudy-hero-content p {
         width: 100%;
     }
 
@@ -125,6 +153,51 @@
         margin-top: -150px;
     }
 
+    /*case tag  */
+    .case-tags {
+        display: none;
+    }
+
+    .case-tags-mobile {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .case-tags-select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: 1px solid #D5D7DA;
+        border-radius: 8px;
+        background-color: #fff;
+        color: #181D27;
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 10px 30px 10px 10px;
+        width: 100%;
+    }
+
+    .case-tags-mobile::after {
+        content: "\25BC";
+        color: #667085;
+        font-size: 1.6rem;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    .case-tags-select:focus {
+        outline: none;
+        border-color: #d0d5dd;
+        box-shadow: 0 0 0 2px #002797;
+    }
+
+    /* case grids */
     .casestudy-list {
         padding: 0 20px;
         grid-template-columns: 1fr;

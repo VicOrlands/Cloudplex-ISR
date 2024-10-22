@@ -2,11 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import "./video-player.css"
 import styles from "./styles.module.css";
 import Marquee from "react-fast-marquee";
-import { Player, BigPlayButton } from "video-react";
-import 'video-react/dist/video-react.css';
 import {
   AiOutlinePlus,
   AiFillCheckCircle,
@@ -35,6 +32,7 @@ import img18 from "@/assets/aws_partnership/data-analytics/logistics.png";
 import img19 from "@/assets/aws_partnership/data-analytics/iot.png";
 import img20 from "@/assets/aws_partnership/data-analytics/learn.png";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
+import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 
 export default function DataAnalyticPage() {
   return (
@@ -57,13 +55,10 @@ export default function DataAnalyticPage() {
           </div>
 
           <div className={styles["data-video"]}>
-            <Player
-              playsInline
+            <VideoPlayer
               poster={img1.src}
               src="https://cloudplexo.com/cloudplexo-AI-Scan.mp4"
-            >
-              <BigPlayButton position="center" />
-            </Player>
+            />
           </div>
         </section>
       </LazyBackgroundImage>
