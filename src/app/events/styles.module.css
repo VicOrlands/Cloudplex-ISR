@@ -15,8 +15,7 @@
 .eventsHero {
   color: #eff0fa;
   padding: 0 100px;
-  padding-top: 4%;
-  height: 500px;
+  padding-top: 8vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
@@ -24,8 +23,8 @@
 }
 
 .eventsHeroVideo {
-  border-radius: 8px;
-  justify-self: right;
+  border-radius: 20px;
+  overflow: hidden;
   height: 90%;
   width: 100%;
   padding: 10px;

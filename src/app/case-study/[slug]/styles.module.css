@@ -80,6 +80,7 @@
 @media (max-width: 550px) {
   .gtb-pensions-page {
     padding: 30px 20px;
+    margin-top: 8vh;
   }
 
   .gtb-pensions-page h1 {

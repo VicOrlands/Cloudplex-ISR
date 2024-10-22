@@ -166,7 +166,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 const CaseStudyPage = ({ params }: { params: { slug: string } }) => {
     const { slug } = params
-
     const path = paths.find(({ url }) => url === slug);
 
     if (!path) notFound()

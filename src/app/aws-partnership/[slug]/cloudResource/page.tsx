@@ -39,7 +39,7 @@ const awsArray = [
 
 export async function generateStaticParams() {
   return [{
-    slug: "cloud-resource-managament"
+    slug: "cloud-resource-management"
   }]
 }
 

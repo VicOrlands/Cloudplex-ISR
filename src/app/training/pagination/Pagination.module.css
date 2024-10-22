@@ -26,7 +26,7 @@
 
 .courses-category-font {
   fill: #516beb;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .pagination {
@@ -47,7 +47,7 @@
 }
 
 .paginationItem span {
-  font-size: 1rem;
+  font-size: 1.4rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -101,7 +101,7 @@
   cursor: pointer;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 20px;
   padding-top: 10px;
 }
@@ -123,14 +123,21 @@
 }
 
 /* grid-styling on desktop view */
-@media (min-width: 600px) {
+@media (min-width: 1201px) {
   .flex-courses {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem 4rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 789px) and (max-width: 1200px) {
+  .flex-courses {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem 4rem;
+  }
+}
+
+@media (max-width: 768px) {
 
   /* popular courses */
   .courses-container {
@@ -166,13 +173,9 @@
     margin: 0 15px;
   }
 
-  .paginationItem span {
-    font-size: 1rem;
-  }
-
   .prev,
   .next {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   /* flexed courses column */
@@ -187,11 +190,11 @@
   }
 
   .post-heading {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .post-paragraph {
     text-indent: 20px;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }

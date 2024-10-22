@@ -38,7 +38,6 @@
 
 .data-hero {
   height: 90vh;
-  /* gap: 50px; */
   display: flex;
   align-items: center;
   padding: 0 150px;
@@ -81,6 +80,12 @@
 
 .data-hero a:hover {
   background: #f0f0f0;
+}
+
+.data-video {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(236, 236, 236, 0.582) 0px 2px 8px 0px;
 }
 
 /* we-ai section */
@@ -443,6 +448,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   .we-ai h2,
   .canvas h2,
   .services h2,

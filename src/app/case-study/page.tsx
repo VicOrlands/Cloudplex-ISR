@@ -4,19 +4,15 @@ import React, { useState } from "react";
 
 import Link from "next/link";
 import Slider from "react-slick";
-import { casestudy } from "./caseArray";
 import styles from "./casestudy.module.css";
 import { BsArrowUpRight } from "react-icons/bs";
 import BgImg from "@/assets/casestudies/hero.webp"
 import Image, { StaticImageData } from "next/image";
-import { Player, BigPlayButton } from "video-react";
+import { CaseProps, casestudy, caseTags } from "./caseArray";
 import extraStyles from "../landing/testimonial/testimonial.module.css"
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
+import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 import clsx from "clsx";
-import {
-    BsArrowLeftCircle,
-    BsArrowRightCircle,
-} from "react-icons/bs";
 import {
     MdOutlineKeyboardArrowLeft,
     MdOutlineKeyboardArrowRight,
@@ -108,26 +104,17 @@ const reviews: ReviewProps[] = [
 ];
 
 const CaseList: React.FC = () => {
+    const [tag, setTag] = useState<string | null>("");
     const [sliderRef, setSliderRef] = useState<Slider | null>(null);
 
-    const SlickArrowLeft: React.FC<{
-        [x: string]: any;
-        currentSlide: any;
-        slideCount: any;
-    }> = ({ currentSlide, slideCount, ...props }) => (
-        <button type="button" aria-label="button" {...props} className={clsx(styles.arrow, styles.left)}>
-            <BsArrowLeftCircle />
-        </button>
-    );
-    const SlickArrowRight: React.FC<{
-        [x: string]: any;
-        currentSlide: any;
-        slideCount: any;
-    }> = ({ currentSlide, slideCount, ...props }) => (
-        <button {...props} type="button" aria-label="button" className={clsx(styles.arrow, styles.right)}>
-            <BsArrowRightCircle />
-        </button>
-    );
+    const filterCases: CaseProps[] =
+        tag !== null && tag !== ""
+            ? casestudy.filter((caseItem) => caseItem.tag === tag)
+            : casestudy;
+
+    function handleSelect(caseTag: string) {
+        setTag(caseTag);
+    }
 
     const videosettings = {
         dots: false,
@@ -142,7 +129,7 @@ const CaseList: React.FC = () => {
         <section className={styles["casestudy"]}>
             <LazyBackgroundImage src={BgImg} className={styles["case-hero-bg"]}>
                 <div className={styles["casestudy-hero"]}>
-                    <div className={styles["casestudy-content"]}>
+                    <div className={styles["casestudy-hero-content"]}>
                         <h1>Case Studies</h1>
                         <p>
                             Get updated on the most recent developments in the industry,
@@ -160,16 +147,10 @@ const CaseList: React.FC = () => {
                         {reviews.map((cases, index) => (
                             <div className={extraStyles.videoWrap} key={index}>
                                 <div className={extraStyles.imageWrap}>
-                                    <Player
-                                        playsInline
-                                        poster={cases.image.src}
+                                    <VideoPlayer
                                         src={cases.link}
-                                        fluid
-                                    >
-                                        <BigPlayButton
-                                            position="center"
-                                        />
-                                    </Player>
+                                        poster={cases.image.src}
+                                    />
                                 </div>
                                 <div className={extraStyles.contentWrap}>
                                     <Image
@@ -220,8 +201,34 @@ const CaseList: React.FC = () => {
                     </section>
                 </div>
 
+                <header className={styles["case-tags"]}>
+                    <h5 onClick={() => setTag("")} className={tag === "" ? styles.active : ""}>All</h5>
+                    {caseTags.map((caseTag) => (
+                        <h5 key={caseTag} onClick={() => handleSelect(caseTag)}
+                            className={caseTag === tag ? styles.active : ""}
+                        >
+                            {caseTag}
+                        </h5>
+                    ))}
+                </header>
+                <header className={styles["case-tags-mobile"]}>
+                    <select
+                        className={styles["case-tags-select"]}
+                        onChange={(e) => handleSelect(e.target.value)}
+                    >
+                        <option value={""}>
+                            All
+                        </option>
+                        {caseTags.map((option) => (
+                            <option key={option} value={option}>
+                                {option}
+                            </option>
+                        ))}
+                    </select>
+                </header>
+
                 <div className={styles["casestudy-list"]}>
-                    {casestudy.map((cases, index) => (
+                    {filterCases.map((cases, index) => (
                         <div className={styles["casestudy-list-item"]} key={index}>
                             <div className={styles["imgcontainer"]}>
                                 <Image

@@ -1,20 +1,17 @@
 "use client"
 import React from "react";
 import styles from "./styles.module.css"
-import { Player, BigPlayButton } from "video-react";
 import posterImage from "@/assets/training/videothumbnail.png";
+import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 
 function VideoSection() {
   return (
     <section className={styles["video-section"]}>
       <section>
-        <Player
-          playsInline
+        <VideoPlayer
           poster={posterImage.src}
           src="https://cloudplexo.com/TrainingReview_Bimbo_1.mp4"
-        >
-          <BigPlayButton position="center" />
-        </Player>
+        />
 
         <div>
           <h2>Words from our Alumni</h2>

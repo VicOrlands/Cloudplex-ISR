@@ -22,12 +22,9 @@
 .videoWrap {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr);
+  border: 1px solid rgba(0, 0, 0, 0.13);
   border-radius: 21px;
   overflow: hidden;
-}
-
-.imageWrap {
-  padding: 0;
 }
 
 .placeholderImage {
@@ -38,8 +35,7 @@
 
 .contentWrap {
   background: #f9fafb;
-  border: 1px solid rgba(0, 0, 0, 0.13);
-  box-shadow: rgba(0, 0, 0, 0.13) 0px 5px 15px 0px;
+  /* box-shadow: rgba(0, 0, 0, 0.13) 0px 5px 15px 0px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -484,6 +480,7 @@
     left: 0;
     top: 15px;
     padding: 0;
+    padding-left: 20px;
   }
 
   .btngroup button {

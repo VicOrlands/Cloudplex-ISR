@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import styles from "./styles.module.css";
-import { Player, BigPlayButton } from "video-react";
 import { MdArrowForward, MdArrowBack } from "react-icons/md";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 import bgImg from "@/assets/events/events_description_background_pattern.webp";
@@ -12,6 +11,7 @@ import bgImg from "@/assets/events/events_description_background_pattern.webp";
 import Modal from "./modal/ImgModal";
 import Footer from "../../footer/page";
 import { EventsProps } from "../../arrays/eventsArray";
+import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 
 // types
 type PageProps = {
@@ -151,14 +151,10 @@ const EventsDetails: React.FC<PageProps> = ({ event }) => {
 
         {event.videoLink && (
           <div className={styles["video-player"]}>
-            <Player
-              playsInline
-              aspectRatio="2.5:1"
+            <VideoPlayer
               src={event.videoLink}
               poster={event.videoThumbnail?.src || coverImage?.src}
-            >
-              <BigPlayButton position="center" />
-            </Player>
+            />
           </div>
         )}
 
