@@ -40,22 +40,16 @@ const HeroSection = () => {
       <div className={styles.heroImgContainer}>
         <picture>
           <source
-            media="(max-width: 640px)"
+            media="(max-width: 900px)"
             srcSet={heroImageSm.src}
             height={heroImageSm.height}
             width={heroImageSm.width}
-          />
-          <source
-            media="(max-width: 900px)"
-            srcSet={heroImageMd.src}
-            height={heroImageMd.height}
-            width={heroImageMd.width}
           />
           <source
             media="(max-width: 1024px)"
-            srcSet={heroImageSm.src}
-            height={heroImageSm.height}
-            width={heroImageSm.width}
+            srcSet={heroImageMd.src}
+            height={heroImageMd.height}
+            width={heroImageMd.width}
           />
           <source
             media="(max-width: 1200px)"
@@ -70,7 +64,6 @@ const HeroSection = () => {
             height={heroImageXl.height}
             width={heroImageXl.width}
             quality={85}
-            loading="eager"
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkiAMAAGQAYG61VcsAAAAASUVORK5CYII="
           />

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles.module.css"
 
+import logo from "@/assets/landing/gtco.webp";
 import StribLogo from "@/assets/client/striblogo_large.webp";
 import InvestoresPlaceLogo from "@/assets/client/InvestoresPlace.webp";
 import DigitalJournalLogo from "@/assets/client/digital-journal-logo.webp";
@@ -83,6 +84,27 @@ const Clients = () => {
             <Link href="/press-release">
                 Read press releases
             </Link>
+
+            <section className={styles.gtcoSection}>
+                <div>
+                    <h2>Leading Nigeria's FSI Revolution</h2>
+                    <p>
+                        CloudPlexo, an advanced AWS partner, is the first to leverage 100%
+                        AWS Lagos local zone for data residency requirement to spearhead the
+                        shift of GTCO Pensions to the AWS Cloud.
+                    </p>
+                </div>
+
+                <div>
+                    <Image
+                        loading="lazy"
+                        src={logo}
+                        alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                        priority={false}
+                        placeholder="blur"
+                    />
+                </div>
+            </section>
         </section>
     );
 
