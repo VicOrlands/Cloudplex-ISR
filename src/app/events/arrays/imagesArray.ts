@@ -102,6 +102,26 @@ import communityDay7 from "@/assets/events/community-day/Image-6.webp"
 import communityDay8 from "@/assets/events/community-day/Image-7.webp"
 import communityDay9 from "@/assets/events/community-day/Image-8.webp"
 
+import africCover from "@/assets/events/africArena/cover.webp"
+import africArena from "@/assets/events/africArena/Image.webp"
+import africArena1 from "@/assets/events/africArena/Image-1.webp"
+import africArena2 from "@/assets/events/africArena/Image-2.webp"
+import africArena4 from "@/assets/events/africArena/Image-4.webp"
+import africArena5 from "@/assets/events/africArena/Image-5.webp"
+import africArena6 from "@/assets/events/africArena/Image-6.webp"
+import africArena7 from "@/assets/events/africArena/Image-7.webp"
+
+export const africaArenaImages: StaticImageData[] = [
+  africCover,
+  africArena,
+  africArena1,
+  africArena2,
+  africArena4,
+  africArena5,
+  africArena6,
+  africArena7,
+]
+
 export const awsCommunityDayImages: StaticImageData[] = [
   communityDay,
   communityDay2,

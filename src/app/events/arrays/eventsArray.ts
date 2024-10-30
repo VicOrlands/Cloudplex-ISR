@@ -15,9 +15,11 @@ import AccraConnect from "@/assets/events/tech connect.webp";
 import OwerriEvent from "@/assets/events/owerri_founders_mixer.webp";
 import CommunityDay from "@/assets/events/community-day/thumbnail.webp";
 import digitalThumbnail from "@/assets/events/transcorp/videothumbnail.webp";
+import AricaArena from "@/assets/events/africArena/cover.webp";
 
 import {
   accraImages,
+  africaArenaImages,
   awsCommunityDayImages,
   businessDayImages,
   digitalImages,
@@ -55,6 +57,17 @@ export const EventsArray: EventsProps[] = [
     linkText: "Register",
     eventImages: [],
     eventDescription: "",
+  },
+  {
+    img: AricaArena,
+    title: "AfricArena Tunis Summit 2024",
+    text: `CloudPlexo was thrilled to sponsor the AfricArena Tunis Summit 2024, contributing to the innovation and engagement seen throughout the event. From a Founders Boot Camp on Deep Tech & AI to a fireside chat on “The State of AI in Africa” and dynamic sessions with startup founders and partners, it was a remarkable experience.`,
+    link: "africa-arena-tunis-summit-2024",
+    date: "23rd October 2024",
+    linkText: "View info",
+    eventImages: africaArenaImages,
+    eventDescription: `CloudPlexo was thrilled to sponsor the AfricArena Tunis Summit 2024, contributing to the innovation and engagement seen throughout the event. From a Founders Boot Camp on Deep Tech & AI to a fireside chat on “The State of AI in Africa” and dynamic sessions with startup founders and partners, it was a remarkable experience. We are proud to support leaders in DeepTech, Generative AI, HealthTech, Biotech, and EdTech. Special thanks to the AfricArena team and Tunisia’s thriving startup ecosystem for their incredible collaboration and success!`,
+    about: `CloudPlexo was thrilled to sponsor the AfricArena Tunis Summit 2024, where innovation met engagement, sparking exciting developments throughout the event. The summit kicked off with a specialized Founders Boot Camp focused on Deep Tech & AI, setting the tone for a transformative gathering. In addition, the fireside chat on “The State of AI in Africa” provided a thought-provoking discussion on the continent’s AI landscape, drawing attention to current advancements and potential for growth.<br /><br />Our team was deeply engaged with innovative startup founders, visionary partners, and experts from diverse fields. With sessions ranging from interactive panels to one-on-one discussions, the summit provided an ideal platform to explore cutting-edge ideas. We are proud to support leaders and changemakers in DeepTech, Generative AI, HealthTech, Biotech, and EdTech who are shaping the future through groundbreaking technologies.<br /><br />We extend our heartfelt thanks to the AfricArena team for their exceptional work in organizing this impactful summit. The collaboration with Tunisia’s vibrant and ambitious startup ecosystem was both inspiring and essential to the success of the event, and we are excited to see the continued evolution and growth that this collaboration will bring to the region.”<br /><br />This version emphasizes CloudPlexo’s enthusiasm and specific activities at the summit while highlighting the focus on collaborative growth within Africa’s tech ecosystem`
   },
   {
     img: CommunityDay,

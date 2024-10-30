@@ -48,9 +48,11 @@
 }
 
 .footer h2 {
+  color: #fff;
   font-size: 3.6rem;
   font-weight: 600;
   line-height: 44px;
+  text-align: left;
   margin-bottom: 20px;
 }
 
