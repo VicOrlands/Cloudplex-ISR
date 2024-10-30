@@ -61,8 +61,8 @@ const HeroSection = () => {
             src={heroImageXl}
             alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
             priority
-            height={heroImageXl.height}
             width={heroImageXl.width}
+            height={heroImageXl.height}
             quality={85}
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkiAMAAGQAYG61VcsAAAAASUVORK5CYII="
