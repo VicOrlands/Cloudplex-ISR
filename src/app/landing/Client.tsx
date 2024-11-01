@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles.module.css"
@@ -9,102 +11,112 @@ import DigitalJournalLogo from "@/assets/client/digital-journal-logo.webp";
 import FoxNewsOnboardingLogo from "@/assets/client/Fox-News-Onboarding-Logo.webp";
 import MarketWatchVectorLogo from "@/assets/client/marketwatch-vector-logo.webp";
 import InternationalBusinessTimesLogo from "@/assets/client/International-Business-Times-Logo.webp";
+import { useInView } from "react-intersection-observer";
 
 const Clients = () => {
+    const { ref, inView, entry } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
     return (
-        <section className={styles.clientsSection}>
+        <section className={styles.clientsSection} ref={ref}>
             <h2>As Featured In</h2>
 
-            <div className={styles.clientsImages}>
-                <div>
-                    <Image
-                        loading="lazy"
-                        priority={false}
-                        src={MarketWatchVectorLogo}
-                        alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-                        width={150}
-                        height={150}
-                    />
-                </div>
-                <div
-                >
-                    <Image
-                        loading="lazy"
-                        priority={false}
-                        src={InvestoresPlaceLogo}
-                        alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-                        width={150}
-                        height={150}
-                    />
-                </div>
-                <div>
-                    <Image
-                        loading="lazy"
-                        priority={false}
-                        src={FoxNewsOnboardingLogo}
-                        alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-                        width={150}
-                        height={150}
+            {inView &&
+                <>
+                    <div className={styles.clientsImages}>
+                        <div>
+                            <Image
+                                loading="lazy"
+                                priority={false}
+                                src={MarketWatchVectorLogo}
+                                alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                                width={150}
+                                height={150}
+                            />
+                        </div>
+                        <div
+                        >
+                            <Image
+                                loading="lazy"
+                                priority={false}
+                                src={InvestoresPlaceLogo}
+                                alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                                width={150}
+                                height={150}
+                            />
+                        </div>
+                        <div>
+                            <Image
+                                loading="lazy"
+                                priority={false}
+                                src={FoxNewsOnboardingLogo}
+                                alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                                width={150}
+                                height={150}
 
-                    />
-                </div>
-                <div>
-                    <Image
-                        loading="lazy"
-                        priority={false}
-                        src={InternationalBusinessTimesLogo}
-                        alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-                        width={172}
-                        height={50}
-                    />
-                </div>
-                <div>
-                    <Image
-                        loading="lazy"
-                        priority={false}
-                        src={StribLogo}
-                        alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-                        width={150}
-                        height={150}
-                    />
-                </div>
-                <div>
-                    <Image
-                        loading="lazy"
-                        priority={false}
-                        src={DigitalJournalLogo}
-                        alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-                        width={150}
-                        height={150}
-                    />
-                </div>
-            </div>
-            <br />
+                            />
+                        </div>
+                        <div>
+                            <Image
+                                loading="lazy"
+                                priority={false}
+                                src={InternationalBusinessTimesLogo}
+                                alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                                width={172}
+                                height={50}
+                            />
+                        </div>
+                        <div>
+                            <Image
+                                loading="lazy"
+                                priority={false}
+                                src={StribLogo}
+                                alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                                width={150}
+                                height={150}
+                            />
+                        </div>
+                        <div>
+                            <Image
+                                loading="lazy"
+                                priority={false}
+                                src={DigitalJournalLogo}
+                                alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                                width={150}
+                                height={150}
+                            />
+                        </div>
+                    </div>
+                    <br />
 
-            <Link href="/press-release">
-                Read press releases
-            </Link>
+                    <Link href="/press-release">
+                        Read press releases
+                    </Link>
 
-            <section className={styles.gtcoSection}>
-                <div>
-                    <h2>Leading Nigeria's FSI Revolution</h2>
-                    <p>
-                        CloudPlexo, an advanced AWS partner, is the first to leverage 100%
-                        AWS Lagos local zone for data residency requirement to spearhead the
-                        shift of GTCO Pensions to the AWS Cloud.
-                    </p>
-                </div>
+                    <section className={styles.gtcoSection}>
+                        <div>
+                            <h2>Leading Nigeria's FSI Revolution</h2>
+                            <p>
+                                CloudPlexo, an advanced AWS partner, is the first to leverage 100%
+                                AWS Lagos local zone for data residency requirement to spearhead the
+                                shift of GTCO Pensions to the AWS Cloud.
+                            </p>
+                        </div>
 
-                <div>
-                    <Image
-                        loading="lazy"
-                        src={logo}
-                        alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-                        priority={false}
-                        placeholder="blur"
-                    />
-                </div>
-            </section>
+                        <div>
+                            <Image
+                                loading="lazy"
+                                src={logo}
+                                alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                                priority={false}
+                                placeholder="blur"
+                            />
+                        </div>
+                    </section>
+                </>
+            }
         </section>
     );
 

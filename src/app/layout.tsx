@@ -6,13 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Metrics from "./metrics";
 import Header from "@/components/header/Header";
-const Footer = dynamic(() => import("@/components/footer/footer"));
+const Footer = dynamic(() => import("@/components/footer/footer"), { ssr: false });
 
 const inter = Inter({
   subsets: ["latin"],
   variable: '--font-inter',
   display: "swap",
-  adjustFontFallback: false
 });
 
 export default function RootLayout({

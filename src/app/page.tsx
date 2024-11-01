@@ -2,13 +2,34 @@ import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import HeroSection from "@/app/landing/hero/Hero";
 
-const Badges = dynamic(() => import("@/app/landing/Badges"));
-const Clients = dynamic(() => import("@/app/landing/Client"));
-const Service = dynamic(() => import("@/app/landing/Service"));
-const Events = dynamic(() => import("@/app/landing/event/Event"));
-const BlogGrid = dynamic(() => import("@/components/blogGrid/Grid"));
-const Partners = dynamic(() => import("@/components/partners/Partners"));
-const Testimonials = dynamic(() => import("@/app/landing/testimonial/Testimonial"));
+const Badges = dynamic(() => import("@/app/landing/Badges"), {
+  loading: () => <div>Loading...</div>,
+  ssr: false
+});
+const Clients = dynamic(() => import("@/app/landing/Client"), {
+  loading: () => <div>Loading...</div>,
+  ssr: false
+});
+const Service = dynamic(() => import("@/app/landing/Service"), {
+  loading: () => <div>Loading...</div>,
+  ssr: false
+});
+const Events = dynamic(() => import("@/app/landing/event/Event"), {
+  loading: () => <div>Loading...</div>,
+  ssr: false
+});
+const BlogGrid = dynamic(() => import("@/components/blogGrid/Grid"), {
+  loading: () => <div>Loading...</div>,
+  ssr: false
+});
+const Partners = dynamic(() => import("@/components/partners/Partners"), {
+  loading: () => <div>Loading...</div>,
+  ssr: false
+});
+const Testimonials = dynamic(() => import("@/app/landing/testimonial/Testimonial"), {
+  loading: () => <div>Loading...</div>,
+  ssr: false
+});
 
 export const metadata: Metadata = {
   title:

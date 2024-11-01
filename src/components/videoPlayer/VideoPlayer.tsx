@@ -32,9 +32,9 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster }) => {
 
     if (!isClient) {
         return (
-            <div className="video-container">
+            <div className={styles["video-container"]}>
                 <video
-                    className="video-player"
+                    className={styles["video-player"]}
                     poster={poster}
                     preload="none"
                 >

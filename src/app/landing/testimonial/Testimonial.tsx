@@ -9,6 +9,7 @@ import { MdArrowForward, MdArrowBack } from "react-icons/md";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 import { casestudy, testimonials } from './testimonialData';
 import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
+import { useInView } from "react-intersection-observer";
 
 import clsx from "clsx";
 import vectorquote from "@/assets/reviews/vector.webp";
@@ -63,8 +64,13 @@ SlickArrowLeft.displayName = 'SlickArrowLeft';
 SlickArrowRight.displayName = 'SlickArrowRight';
 
 const Testimonial: React.FC = () => {
-  const [videoSliderRef, setVideoSliderRef] = useState<Slider | null>(null);
+  const { ref, inView, entry } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   const [isClient, setIsClient] = useState(false);
+  const [videoSliderRef, setVideoSliderRef] = useState<Slider | null>(null);
 
   useEffect(() => {
     setIsClient(true);
@@ -102,100 +108,102 @@ const Testimonial: React.FC = () => {
   }
 
   return (
-    <div className={styles["reviewContainer"]}>
+    <div className={styles["reviewContainer"]} ref={ref}>
       <h2>
         With CloudPlexo, the possibilities for customer innovation are endless.
       </h2>
 
-      <div className={styles.reviewVideo}>
-        <Slider ref={setVideoSliderRef} {...videosettings}>
-          {casestudy.map((cases, index) =>
-            <div key={index} className={styles.videoWrap}>
-              <VideoPlayer
-                src={cases.link}
-                poster={cases.image.src}
-              />
-              <div className={styles.contentWrap}>
-                <Image
-                  loading="lazy"
-                  priority={false}
-                  src={cases.logo}
-                  className={styles.logoImage}
-                  alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions reviews"
+      {inView && <>
+        <div className={styles.reviewVideo}>
+          <Slider ref={setVideoSliderRef} {...videosettings}>
+            {casestudy.map((cases, index) =>
+              <div key={index} className={styles.videoWrap}>
+                <VideoPlayer
+                  src={cases.link}
+                  poster={cases.image.src}
                 />
-                <h3>{cases.quote}</h3>
-                <Link href={cases.caselink}>Read case study</Link>
-                <h4>{cases.speaker}</h4>
-                <h6>{cases.company}</h6>
-              </div>
-              <section className={clsx(styles.btngroup, styles.mobile)}>
-                <button
-                  type="button"
-                  aria-label="Arrow pointing left"
-                  onClick={videoSliderRef?.slickPrev}
-                >
-                  <MdArrowBack />
-                </button>
-                <button
-                  type="button"
-                  aria-label="Arrow pointing right"
-                  onClick={videoSliderRef?.slickNext}
-                >
-                  <MdArrowForward />
-                </button>
-              </section>
-            </div>
-          )}
-        </Slider>
-        <section className={clsx(styles.btngroup, styles.desktop)}>
-          <button
-            type="button"
-            aria-label="Arrow pointing left"
-            onClick={videoSliderRef?.slickPrev}
-          >
-            <MdArrowBack />
-          </button>
-          <button
-            type="button"
-            aria-label="Arrow pointing right"
-            onClick={videoSliderRef?.slickNext}
-          >
-            <MdArrowForward />
-          </button>
-        </section>
-      </div>
-
-      <LazyBackgroundImage src={BgImage} className={styles.wordsReview}>
-        <div className={styles.reviewsCarouselContainer}>
-          <Slider {...settings}>
-            {testimonials.map((testimonial, index) => (
-              <div className={styles.reviewBox} key={index}>
-                <Image
-                  loading="lazy"
-                  placeholder="blur"
-                  priority={false}
-                  src={vectorquote}
-                  className={styles.quoteImg1}
-                  alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-                />
-
-                <Image
-                  loading="lazy"
-                  priority={false}
-                  src={vectorquote2}
-                  className={styles.quoteImg2}
-                  alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-                />
-
-                <div>
-                  <h3>{testimonial.content}</h3>
-                  <h4>{testimonial.by}</h4>
+                <div className={styles.contentWrap}>
+                  <Image
+                    loading="lazy"
+                    priority={false}
+                    src={cases.logo}
+                    className={styles.logoImage}
+                    alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions reviews"
+                  />
+                  <h3>{cases.quote}</h3>
+                  <Link href={cases.caselink}>Read case study</Link>
+                  <h4>{cases.speaker}</h4>
+                  <h6>{cases.company}</h6>
                 </div>
+                <section className={clsx(styles.btngroup, styles.mobile)}>
+                  <button
+                    type="button"
+                    aria-label="Arrow pointing left"
+                    onClick={videoSliderRef?.slickPrev}
+                  >
+                    <MdArrowBack />
+                  </button>
+                  <button
+                    type="button"
+                    aria-label="Arrow pointing right"
+                    onClick={videoSliderRef?.slickNext}
+                  >
+                    <MdArrowForward />
+                  </button>
+                </section>
               </div>
-            ))}
+            )}
           </Slider>
+          <section className={clsx(styles.btngroup, styles.desktop)}>
+            <button
+              type="button"
+              aria-label="Arrow pointing left"
+              onClick={videoSliderRef?.slickPrev}
+            >
+              <MdArrowBack />
+            </button>
+            <button
+              type="button"
+              aria-label="Arrow pointing right"
+              onClick={videoSliderRef?.slickNext}
+            >
+              <MdArrowForward />
+            </button>
+          </section>
         </div>
-      </LazyBackgroundImage>
+
+        <LazyBackgroundImage src={BgImage} className={styles.wordsReview}>
+          <div className={styles.reviewsCarouselContainer}>
+            <Slider {...settings}>
+              {testimonials.map((testimonial, index) => (
+                <div className={styles.reviewBox} key={index}>
+                  <Image
+                    loading="lazy"
+                    placeholder="blur"
+                    priority={false}
+                    src={vectorquote}
+                    className={styles.quoteImg1}
+                    alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                  />
+
+                  <Image
+                    loading="lazy"
+                    priority={false}
+                    src={vectorquote2}
+                    className={styles.quoteImg2}
+                    alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                  />
+
+                  <div>
+                    <h3>{testimonial.content}</h3>
+                    <h4>{testimonial.by}</h4>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </LazyBackgroundImage>
+      </>}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -37,25 +37,18 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className={styles.heroImgContainer}>
-        <picture>
+        <picture className={styles.heroImgContainer}>
           <source
             media="(max-width: 900px)"
             srcSet={heroImageSm.src}
-            height={heroImageSm.height}
-            width={heroImageSm.width}
           />
           <source
             media="(max-width: 1024px)"
             srcSet={heroImageMd.src}
-            height={heroImageMd.height}
-            width={heroImageMd.width}
           />
           <source
             media="(max-width: 1200px)"
             srcSet={heroImageLg.src}
-            height={heroImageLg.height}
-            width={heroImageLg.width}
           />
           <Image
             src={heroImageXl}
@@ -63,12 +56,11 @@ const HeroSection = () => {
             priority
             width={heroImageXl.width}
             height={heroImageXl.height}
-            quality={85}
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkiAMAAGQAYG61VcsAAAAASUVORK5CYII="
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            quality={75}
+            loading="eager"
           />
         </picture>
-      </div>
     </section>
   );
 };

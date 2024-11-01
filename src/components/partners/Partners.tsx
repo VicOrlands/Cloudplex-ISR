@@ -1,7 +1,10 @@
+"use client"
+
 import React from "react";
 import styles from "./styles.module.css";
 import Marquee from "react-fast-marquee";
 import Image, { StaticImageData } from "next/image";
+import { useInView } from "react-intersection-observer";
 
 import img1 from "@/assets/partners/one.webp";
 import img2 from "@/assets/partners/inttix.webp";
@@ -83,39 +86,46 @@ const secondImages = [
 ];
 
 const Partners = () => {
+  const { ref, inView, entry } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <div className={styles.partnersSection}>
+    <div className={styles.partnersSection} ref={ref}>
       <h2 className={styles["center-h2"]}>Our Trusted Partners & Clients</h2>
 
-      <Marquee direction="right" speed={100} delay={5}>
-        {images.map((img, index) => (
-          <div className={styles.imageWrapper} key={index}>
-            <Image
-              loading="lazy"
-              src={img.src}
-              alt="Our Trusted Partners & Clients logo"
-              width={img.width}
-              height={img.height}
-              priority={false}
-            />
-          </div>
-        ))}
-      </Marquee>
+      {inView && <>
+        <Marquee direction="right" speed={100} delay={5}>
+          {images.map((img, index) => (
+            <div className={styles.imageWrapper} key={index}>
+              <Image
+                loading="lazy"
+                src={img.src}
+                alt="Our Trusted Partners & Clients logo"
+                width={img.width}
+                height={img.height}
+                priority={false}
+              />
+            </div>
+          ))}
+        </Marquee>
 
-      <Marquee direction="right" speed={100} delay={5}>
-        {secondImages.map((img, index) => (
-          <div className={styles.imageWrapper} key={index}>
-            <Image
-              loading="lazy"
-              src={img.src}
-              alt="Our Trusted Partners & Clients logo"
-              width={img.width}
-              height={img.height}
-              priority={false}
-            />
-          </div>
-        ))}
-      </Marquee>
+        <Marquee direction="right" speed={100} delay={5}>
+          {secondImages.map((img, index) => (
+            <div className={styles.imageWrapper} key={index}>
+              <Image
+                loading="lazy"
+                src={img.src}
+                alt="Our Trusted Partners & Clients logo"
+                width={img.width}
+                height={img.height}
+                priority={false}
+              />
+            </div>
+          ))}
+        </Marquee>
+      </>}
     </div>
   );
 };

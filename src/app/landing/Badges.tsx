@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "./styles.module.css";
 import Image, { StaticImageData } from "next/image";
 
@@ -20,6 +22,7 @@ import Badge9 from "@/assets/landing/badges/aws-partner-immersion-day-program-v1
 import Badge15 from "@/assets/landing/badges/50 Certified Light English.webp";
 import Badge16 from "@/assets/landing/badges/busineesbadge.webp";
 import Badge17 from "@/assets/landing/badges/AWS RDS delivery.webp";
+import { useInView } from "react-intersection-observer";
 
 const badgesArray: StaticImageData[] = [
   Badge14,
@@ -43,49 +46,56 @@ const badgesArray: StaticImageData[] = [
 ];
 
 function Badges() {
+  const { ref, inView, entry } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
     <div className={styles.badgesContainer}>
       <h2>AWS Partnership and Certified Engineers</h2>
 
-      <section>
-        <div className={styles.partnerBadges}>
-          <div>
-            <Image
-              loading="lazy"
-              src={consultingbadge}
-              alt="AWS Partnership and Certified Engineers"
-              height={consultingbadge.height}
-              width={consultingbadge.width}
-              priority={false}
-            />
-          </div>
-          <div>
-            <Image
-              loading="lazy"
-              src={techbadge}
-              alt="AWS Partnership and Certified Engineers"
-              height={techbadge.height}
-              width={techbadge.width}
-              priority={false}
-            />
-          </div>
-        </div>
-
-        <div className={styles.otherBadges}>
-          {badgesArray.map((badge, index) => (
-            <div key={index}>
+      {inView &&
+        <section>
+          <div className={styles.partnerBadges}>
+            <div>
               <Image
                 loading="lazy"
-                src={badge}
+                src={consultingbadge}
                 alt="AWS Partnership and Certified Engineers"
-                height={badge.height}
-                width={badge.width}
+                height={consultingbadge.height}
+                width={consultingbadge.width}
                 priority={false}
               />
             </div>
-          ))}
-        </div>
-      </section>
+            <div>
+              <Image
+                loading="lazy"
+                src={techbadge}
+                alt="AWS Partnership and Certified Engineers"
+                height={techbadge.height}
+                width={techbadge.width}
+                priority={false}
+              />
+            </div>
+          </div>
+
+          <div className={styles.otherBadges}>
+            {badgesArray.map((badge, index) => (
+              <div key={index}>
+                <Image
+                  loading="lazy"
+                  src={badge}
+                  alt="AWS Partnership and Certified Engineers"
+                  height={badge.height}
+                  width={badge.width}
+                  priority={false}
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      }
     </div>
   );
 }
