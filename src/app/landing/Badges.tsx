@@ -22,6 +22,7 @@ import Badge9 from "@/assets/landing/badges/aws-partner-immersion-day-program-v1
 import Badge15 from "@/assets/landing/badges/50 Certified Light English.webp";
 import Badge16 from "@/assets/landing/badges/busineesbadge.webp";
 import Badge17 from "@/assets/landing/badges/AWS RDS delivery.webp";
+import Badge18 from "@/assets/landing/badges/s&m badge.svg";
 import { useInView } from "react-intersection-observer";
 
 const badgesArray: StaticImageData[] = [
@@ -43,6 +44,7 @@ const badgesArray: StaticImageData[] = [
   Badge4,
   Badge10,
   Badge16,
+  Badge18,
 ];
 
 function Badges() {
@@ -52,7 +54,7 @@ function Badges() {
   });
 
   return (
-    <div className={styles.badgesContainer}>
+    <div className={styles.badgesContainer} ref={ref}>
       <h2>AWS Partnership and Certified Engineers</h2>
 
       {inView &&
