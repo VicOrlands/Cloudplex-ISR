@@ -1,8 +1,8 @@
 "use client"
 
 import React, { Component } from "react";
-import logo from "@/assets/casestudies/logo.png";
-import bp from "@/assets/casestudies/phastpay-brand.png";
+import logo from "@/assets/casestudies/logo.webp";
+import bp from "@/assets/casestudies/phastpay-brand.webp";
 import landerImg from "@/assets/casestudies/PhastpayBg.webp";
 import Image from "next/image";
 import Footer from "../footer/page";

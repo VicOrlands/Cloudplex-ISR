@@ -4,8 +4,8 @@ import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css";
 import React, { Component } from "react";
-import jaguar from "@/assets/casestudies/jaguar.png";
-import logo from "@/assets/casestudies/logo.png";
+import jaguar from "@/assets/casestudies/jaguar.webp";
+import logo from "@/assets/casestudies/logo.webp";
 
 class Jaguar extends Component {
 

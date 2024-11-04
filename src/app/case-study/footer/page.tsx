@@ -45,7 +45,7 @@ export default function Footer() {
     };
 
     const url = `${pathname}`
-    const filteredCaseStudies = casestudy.filter((item) => item.link !== url);
+    const filteredCaseStudies = casestudy.filter((item) => `/case-study/${item.link}/` !== url);
 
     return (
         <>

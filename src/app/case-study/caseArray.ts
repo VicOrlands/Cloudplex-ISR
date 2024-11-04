@@ -1,33 +1,35 @@
 import { StaticImageData } from "next/image";
-import img1 from "@/assets/casestudies/ican.png";
-import img2 from "@/assets/casestudies/liveli.png";
-import img3 from "@/assets/casestudies/geria.png";
-import img4 from "@/assets/casestudies/ilearncloud.png";
-import img5 from "@/assets/casestudies/inttix.png";
-import img6 from "@/assets/casestudies/kobo.png";
-import img7 from "@/assets/casestudies/jaguar.png";
-import img8 from "@/assets/casestudies/bp.png";
-import img9 from "@/assets/casestudies/gtco.png";
-import img10 from "@/assets/casestudies/fastpay.png";
-import img11 from "@/assets/casestudies/dhl.png";
-import img12 from "@/assets/casestudies/asml.png";
-import img13 from "@/assets/casestudies/mkobo.png";
-import img14 from "@/assets/casestudies/billyronks.png";
-import img15 from "@/assets/casestudies/alarrt-brand.png";
-import img16 from "@/assets/casestudies/talentsync.png";
-import img17 from "@/assets/casestudies/ideyfindCover.png";
-import img18 from "@/assets/casestudies/cryptosmart.png";
-import img19 from "@/assets/casestudies/convexity.png";
-import img20 from "@/assets/casestudies/dukia.png";
-import img21 from "@/assets/casestudies/fundus.png";
-import img22 from "@/assets/casestudies/KoboAcc-logo.png";
-import img23 from "@/assets/casestudies/feedxpay.png";
-import img24 from "@/assets/casestudies/HighMart.png"
-import img25 from "@/assets/casestudies/qpay.png"
-import img26 from "@/assets/casestudies/silicon.png"
-import img27 from "@/assets/casestudies/staycon.png"
-import img28 from "@/assets/casestudies/suba.png"
-import img29 from "@/assets/casestudies/varscon.png"
+import img1 from "@/assets/casestudies/ican.webp";
+import img2 from "@/assets/casestudies/liveli.webp";
+import img3 from "@/assets/casestudies/geria.webp";
+import img4 from "@/assets/casestudies/ilearncloud.webp";
+import img5 from "@/assets/casestudies/inttix.webp";
+import img6 from "@/assets/casestudies/kobo.webp";
+import img7 from "@/assets/casestudies/jaguar.webp";
+import img8 from "@/assets/casestudies/bp.webp";
+import img9 from "@/assets/casestudies/gtco.webp";
+import img10 from "@/assets/casestudies/fastpay.webp";
+import img11 from "@/assets/casestudies/dhl.webp";
+import img12 from "@/assets/casestudies/asml.webp";
+import img13 from "@/assets/casestudies/mkobo.webp";
+import img14 from "@/assets/casestudies/billyronks.webp";
+import img15 from "@/assets/casestudies/alarrt-brand.webp";
+import img16 from "@/assets/casestudies/talentsync.webp";
+import img17 from "@/assets/casestudies/ideyfindCover.webp";
+import img18 from "@/assets/casestudies/cryptosmart.webp";
+import img19 from "@/assets/casestudies/convexity.webp";
+import img20 from "@/assets/casestudies/dukia.webp";
+import img21 from "@/assets/casestudies/fundus.webp";
+import img22 from "@/assets/casestudies/KoboAcc-logo.webp";
+import img23 from "@/assets/casestudies/feedxpay.webp";
+import img24 from "@/assets/casestudies/HighMart.webp"
+import img25 from "@/assets/casestudies/qpay.webp"
+import img26 from "@/assets/casestudies/silicon.webp"
+import img27 from "@/assets/casestudies/staycon.webp"
+import img28 from "@/assets/casestudies/suba.webp"
+import img29 from "@/assets/casestudies/varscon.webp"
+import img30 from "@/assets/casestudies/consode.webp"
+import img31 from "@/assets/casestudies/climdes.webp"
 
 export interface CaseProps {
     image: StaticImageData,
@@ -51,6 +53,20 @@ const caseTags: string[] = [
 ]
 
 const casestudy: CaseProps[] = [
+    {
+        image: img31,
+        title: "Case Study: Empowering Climate Decision-Making with AWS IoT for Climdes",
+        desc: `The Climate-Smart Decision Support Systems (Climdes) Research Group is a leader in using technology and climate science to support sustainable decision-making. They focus on creating accessible, data-driven tools that help communities and organizations make informed choices to adapt to climate variability, ensuring resilience and equity in climate solutions.`,
+        link: "empowering-climate-decision-making-with-aws-iot-for-climdes",
+        tag: "Technology"
+    },
+    {
+        image: img30,
+        title: "Case Study: Consode’s Strategic ERP Migration to AWS for Enhanced Scalability and Availability",
+        desc: `Consode Digital, an IT solutions provider, specializes in delivering digital solutions by designing and configuring tailored models that help medium-sized enterprises streamline operations and achieve scalable growth.`,
+        link: "consodes-strategic-erp-migration-to-aws-for-enhanced-scalability-and-availability",
+        tag: "Technology"
+    },
     {
         image: img9,
         title:

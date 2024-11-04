@@ -4,8 +4,8 @@ import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css";
 import React, { Component } from "react";
-import ilearncloud from "@/assets/casestudies/ilearncloud.png";
-import logo from "@/assets/casestudies/logo.png";
+import ilearncloud from "@/assets/casestudies/ilearncloud.webp";
+import logo from "@/assets/casestudies/logo.webp";
 import Link from "next/link";
 
 class IlearnCloud extends Component {

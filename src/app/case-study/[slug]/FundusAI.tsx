@@ -4,8 +4,8 @@ import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css"
 import React, { Component } from "react";
-import logo from "@/assets/casestudies/logo.png";
-import bp from "@/assets/casestudies/fundus.png";
+import logo from "@/assets/casestudies/logo.webp";
+import bp from "@/assets/casestudies/fundus.webp";
 import landerImg from "@/assets/casestudies/fundusBg.svg";
 
 class FundusAI extends Component {

@@ -1,8 +1,8 @@
 "use client"
 
 import React, { Component } from "react";
-import logo from "@/assets/casestudies/logo.png";
-import bp from "@/assets/casestudies/alarrt.png";
+import logo from "@/assets/casestudies/logo.webp";
+import bp from "@/assets/casestudies/alarrt.webp";
 import landerImg from "@/assets/casestudies/AlarrtBg.webp";
 import Image from "next/image";
 import Footer from "../footer/page";

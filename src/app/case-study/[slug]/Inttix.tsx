@@ -4,8 +4,8 @@ import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css"
 import React, { Component } from "react";
-import inttix from "@/assets/casestudies/inttix1.png";
-import logo from "@/assets/casestudies/logo.png";
+import inttix from "@/assets/casestudies/inttix1.webp";
+import logo from "@/assets/casestudies/logo.webp";
 
 {/* <SEO
   title="Inttix's Success Story: AWS-Optimized AI Development with CloudPlexo CCMP"

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css";
-import logo from "@/assets/casestudies/logo.png";
-import bp from "@/assets/casestudies/KoboAcc-logo.png";
-import landerImg from "@/assets/casestudies/koboAccBg.png";
+import logo from "@/assets/casestudies/logo.webp";
+import bp from "@/assets/casestudies/KoboAcc-logo.webp";
+import landerImg from "@/assets/casestudies/koboAccBg.webp";
 
 const koboAccountant = () => {
     return (

@@ -4,8 +4,8 @@ import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css";
 import React, { Component } from "react";
-import kobo from "@/assets/casestudies/kobo.png";
-import logo from "@/assets/casestudies/logo.png";
+import kobo from "@/assets/casestudies/kobo.webp";
+import logo from "@/assets/casestudies/logo.webp";
 
 class Kobo extends Component {
 

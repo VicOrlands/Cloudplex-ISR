@@ -4,8 +4,8 @@ import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css"
 import React, { Component } from "react";
-import liveli from "@/assets/casestudies/liveli.png";
-import logo from "@/assets/casestudies/logo.png";
+import liveli from "@/assets/casestudies/liveli.webp";
+import logo from "@/assets/casestudies/logo.webp";
 
 {/* <SEO
   title="Liveli's Cloud Cost Optimization with Wendu on AWS - A Case Study in High Savings"

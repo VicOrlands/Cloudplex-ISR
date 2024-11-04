@@ -4,8 +4,8 @@ import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css";
 import React, { Component } from "react";
-import logo from "@/assets/casestudies/logo.png";
-import bp from "@/assets/casestudies/cryptosmart.png";
+import logo from "@/assets/casestudies/logo.webp";
+import bp from "@/assets/casestudies/cryptosmart.webp";
 import landerImg from "@/assets/casestudies/cryptosmartBg.webp";
 
 class CryptoSmart extends Component {

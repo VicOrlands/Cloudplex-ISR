@@ -1,12 +1,11 @@
 "use client"
 
-import Link from "next/link";
 import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css"
 import React, { Component } from "react";
-import logo from "@/assets/casestudies/logo.png";
-import bp from "@/assets/casestudies/dukia.png";
+import logo from "@/assets/casestudies/logo.webp";
+import bp from "@/assets/casestudies/dukia.webp";
 import landerImg from "@/assets/casestudies/dukiaBg.webp";
 
 class Dukia extends Component {

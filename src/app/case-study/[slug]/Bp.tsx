@@ -4,8 +4,8 @@ import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css";
 import React, { Component } from "react";
-import bp from "@/assets/casestudies/bp.png";
-import logo from "@/assets/casestudies/logo.png";
+import bp from "@/assets/casestudies/bp.webp";
+import logo from "@/assets/casestudies/logo.webp";
 
 {/* <SEO
   title="Building a Scalable Data Lake: The BP and AWS Serverless Data Lake Framework Success Story"

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css";
-import bp from "@/assets/casestudies/varscon.png";
-import logo from "@/assets/casestudies/logo.png";
-import landerImg from "@/assets/casestudies/varscon_cover.png";
+import bp from "@/assets/casestudies/varscon.webp";
+import logo from "@/assets/casestudies/logo.webp";
+import landerImg from "@/assets/casestudies/varscon_cover.webp";
 
 const Varscon = () => {
     return (

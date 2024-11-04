@@ -1,7 +1,6 @@
-import React from "react";
 import styles from "./styles.module.css";
-import kobo from "@/assets/casestudies/gtco.png";
-import logo from "@/assets/casestudies/logo.png";
+import kobo from "@/assets/casestudies/gtco.webp";
+import logo from "@/assets/casestudies/logo.webp";
 import img1 from "@/assets/events/Immersiin image 4.webp";
 import img2 from "@/assets/events/Immersion image 2.webp";
 import img3 from "@/assets/events/Immersion image 1.webp";

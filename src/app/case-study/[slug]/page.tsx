@@ -28,6 +28,8 @@ import Silicon from './Silicon';
 import Staycon from './Staycon';
 import Suba from './Suba';
 import Varscon from './Varscon';
+import Climdes from "./Climdes";
+import Consodes from "./Consode";
 
 type PageProps = {
     params: {
@@ -42,6 +44,14 @@ export async function generateStaticParams() {
 }
 
 const paths = [
+    {
+        comp: <Climdes />,
+        url: "empowering-climate-decision-making-with-aws-iot-for-climdes",
+    },
+    {
+        comp: <Consodes />,
+        url: "consodes-strategic-erp-migration-to-aws-for-enhanced-scalability-and-availability",
+    },
     {
         comp: <GtbPensions />,
         url: "case-study-of-gt-pensions-managers",

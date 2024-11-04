@@ -4,8 +4,8 @@ import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css";
 import React, { Component } from "react";
-import ican from "@/assets/casestudies/ican.png";
-import logo from "@/assets/casestudies/logo.png";
+import ican from "@/assets/casestudies/ican.webp";
+import logo from "@/assets/casestudies/logo.webp";
 
 {/* <SEO
   title="EdTech Web Application Migration to AWS - A Case Study in Scalability and Performance Enhancement"

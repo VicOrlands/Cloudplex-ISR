@@ -4,8 +4,8 @@ import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css"
 import React, { Component } from "react";
-import geria from "@/assets/casestudies/geria.png";
-import logo from "@/assets/casestudies/logo.png";
+import geria from "@/assets/casestudies/geria.webp";
+import logo from "@/assets/casestudies/logo.webp";
 
 class Geria extends Component {
   // <SEO
