@@ -76,7 +76,7 @@ const Contact = () => {
           comments: "",
         });
       } else {
-        toast.info("Form not submitted", {
+        toast.error("Form not submitted", {
           position: "top-right",
           autoClose: 2000,
           hideProgressBar: true,

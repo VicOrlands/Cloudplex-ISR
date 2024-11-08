@@ -30,6 +30,8 @@ import Suba from './Suba';
 import Varscon from './Varscon';
 import Climdes from "./Climdes";
 import Consodes from "./Consode";
+import Bitbarter from "./BitBarter";
+import MyBalance from "./Mybalance";
 
 type PageProps = {
     params: {
@@ -44,6 +46,14 @@ export async function generateStaticParams() {
 }
 
 const paths = [
+    {
+        comp: <Bitbarter />,
+        url: "from-monolith-to-microservives-bitbarters-journey-to-a-scalable-cloud-architecture"
+    },
+    {
+        comp: <MyBalance />,
+        url: "rearchitecting-mybalance-infrastructure-for-cost-efficiency-and-downtime-mitigation"
+    },
     {
         comp: <Climdes />,
         url: "empowering-climate-decision-making-with-aws-iot-for-climdes",

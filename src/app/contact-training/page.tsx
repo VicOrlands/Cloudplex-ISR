@@ -1,10 +1,9 @@
 "use client"
 import React, { useState } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
 import styles from "./styles.module.css"
 import "react-phone-number-input/style.css";
-import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer, toast } from "react-toastify";
 import PhoneInput from "react-phone-number-input";
 
 const courses = [
@@ -182,7 +181,7 @@ function Contact() {
                     window.location.reload();
                 }, 2000);
             } else {
-                toast.info("Form not submitted", {
+                toast.error("Form not submitted", {
                     position: "top-right",
                     hideProgressBar: true,
                     closeOnClick: true,
@@ -196,117 +195,114 @@ function Contact() {
                 hideProgressBar: true,
                 closeOnClick: true,
                 autoClose: 2000,
-                theme: 'colored'
+                theme: 'colored',
             });
         }
     };
 
     return (
-        <React.Fragment>
-            <ToastContainer />
-            <section className={styles["contactTraining"]}>
-                <h1>TRAINING CONTACT FORM</h1>
-                <label>
-                    <span style={{ color: "red" }}>*</span>
-                    Who will be funding the course
-                    <select
-                        value={courseFund}
-                        onChange={(e) => setCourseFund(e.target.value)}
-                    >
-                        <option value="">Select Course Funding</option>
-                        <option value="My Employer">My employer</option>
-                        <option value="I will">I will</option>
-                        <option value="Not sure">Not Sure</option>
-                    </select>
-                </label>
-                <label>
-                    <span style={{ color: "red" }}>*</span>
-                    Training course
-                    <select
-                        value={courseType}
-                        onChange={(e) => setCourseType(e.target.value)}
-                    >
-                        <option>Select Course Type</option>
-                        {courses.map((course, index) => {
-                            return (
-                                <option value={course.title} key={index}> {course.title} </option>
-                            );
-                        })}
-                    </select>
-                </label>
-                <label>
-                    <span style={{ color: "red" }}>*</span>
-                    First Name
-                    <input
-                        name="firstName"
-                        type="text"
-                        value={firstName}
-                        onChange={formHandler}
-                    />
-                </label>
-                <label>
-                    <span style={{ color: "red" }}>*</span>
-                    Last Name
-                    <input
-                        name="lastName"
-                        type="text"
-                        value={lastName}
-                        onChange={formHandler}
-                    />
-                </label>
-                <label>
-                    <span style={{ color: "red" }}>*</span>
-                    MOBILE NUMBER
-                    <PhoneInput
-                        placeholder="Enter phone number"
-                        international
-                        defaultCountry="NG"
-                        value={phoneNumber}
-                        autoComplete="off"
-                        onChange={handlePhoneChange}
-                    />
-                </label>
-                <label>
-                    <span style={{ color: "red" }}>*</span>
-                    COMPANY EMAIL
-                    <input
-                        name="businessEmail"
-                        type="text"
-                        value={businessEmail}
-                        onChange={formHandler}
-                    />
-                </label>
-                <label>MESSAGE (OPTIONAL)
-                    <input
-                        name="comments"
-                        type="textarea"
-                        className="textarea"
-                        value={comments}
-                        onChange={formHandler}
-                    />
-                </label>
-                <div className={styles["checkbox"]}>
-                    <input
-                        type="checkbox"
-                        className="mr-3"
-                        value={marketing}
-                        onChange={handleCheckChange}
-                    />
-                    <p>I wish to sign up to our marketing offers and discounts</p>
-                </div>
-                <p>
-                    By submitting your details you agree to be contacted in
-                    order to respond to your enquiry
-                </p>
-                <button
-                    type="submit"
-                    aria-label="submit"
-                    onClick={handleSubmit}
+        <section className={styles["contactTraining"]}>
+            <h1>TRAINING CONTACT FORM</h1>
+            <label>
+                <span style={{ color: "red" }}>*</span>
+                Who will be funding the course
+                <select
+                    value={courseFund}
+                    onChange={(e) => setCourseFund(e.target.value)}
                 >
-                    Submit
-                </button>
-            </section>
-        </React.Fragment>
+                    <option value="">Select Course Funding</option>
+                    <option value="My Employer">My employer</option>
+                    <option value="I will">I will</option>
+                    <option value="Not sure">Not Sure</option>
+                </select>
+            </label>
+            <label>
+                <span style={{ color: "red" }}>*</span>
+                Training course
+                <select
+                    value={courseType}
+                    onChange={(e) => setCourseType(e.target.value)}
+                >
+                    <option>Select Course Type</option>
+                    {courses.map((course, index) => {
+                        return (
+                            <option value={course.title} key={index}> {course.title} </option>
+                        );
+                    })}
+                </select>
+            </label>
+            <label>
+                <span style={{ color: "red" }}>*</span>
+                First Name
+                <input
+                    name="firstName"
+                    type="text"
+                    value={firstName}
+                    onChange={formHandler}
+                />
+            </label>
+            <label>
+                <span style={{ color: "red" }}>*</span>
+                Last Name
+                <input
+                    name="lastName"
+                    type="text"
+                    value={lastName}
+                    onChange={formHandler}
+                />
+            </label>
+            <label>
+                <span style={{ color: "red" }}>*</span>
+                MOBILE NUMBER
+                <PhoneInput
+                    placeholder="Enter phone number"
+                    international
+                    defaultCountry="NG"
+                    value={phoneNumber}
+                    autoComplete="off"
+                    onChange={handlePhoneChange}
+                />
+            </label>
+            <label>
+                <span style={{ color: "red" }}>*</span>
+                COMPANY EMAIL
+                <input
+                    name="businessEmail"
+                    type="text"
+                    value={businessEmail}
+                    onChange={formHandler}
+                />
+            </label>
+            <label>MESSAGE (OPTIONAL)
+                <input
+                    name="comments"
+                    type="textarea"
+                    className="textarea"
+                    value={comments}
+                    onChange={formHandler}
+                />
+            </label>
+            <div className={styles["checkbox"]}>
+                <input
+                    type="checkbox"
+                    className="mr-3"
+                    value={marketing}
+                    onChange={handleCheckChange}
+                />
+                <p>I wish to sign up to our marketing offers and discounts</p>
+            </div>
+            <p>
+                By submitting your details you agree to be contacted in
+                order to respond to your enquiry
+            </p>
+            <button
+                type="submit"
+                aria-label="submit"
+                onClick={handleSubmit}
+            >
+                Submit
+            </button>
+        </section>
     );
 }
 

@@ -254,7 +254,7 @@
   border-radius: 7.5px;
 }
 
-.customDot li.slick-active button {
+.customDot :global(li.slick-active) button {
   background-color: #FFFFFF;
 }
 
@@ -397,7 +397,7 @@
   .reviewVideo {
     padding: 30px 60px 0;
   }
-  
+
   .videoWrap {
     grid-template-columns: 1fr;
     padding-bottom: 40px;

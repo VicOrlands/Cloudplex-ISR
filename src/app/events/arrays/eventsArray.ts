@@ -16,6 +16,7 @@ import OwerriEvent from "@/assets/events/owerri_founders_mixer.webp";
 import CommunityDay from "@/assets/events/community-day/thumbnail.webp";
 import digitalThumbnail from "@/assets/events/transcorp/videothumbnail.webp";
 import AricaArena from "@/assets/events/africArena/cover.webp";
+import Workshop from "@/assets/events/executive cloud workshop.webp";
 
 import {
   accraImages,
@@ -49,12 +50,22 @@ export interface EventsProps {
 
 export const EventsArray: EventsProps[] = [
   {
+    img: Workshop,
+    title: "Executive Cloud Workshop",
+    text: `Drive efficiency & innovation in the pension industry.`,
+    link: "http://bit.ly/penops124",
+    date: "12th November 2024 PARK INN by RADISSON VI, LAGOS",
+    linkText: "Register",
+    eventImages: [],
+    eventDescription: "",
+  },
+  {
     img: OwerriEvent,
     title: "Founders’ Mixer",
     text: `Are you a tech entrepreneur looking to expand your network and connect with like-minded individuals? Look no further! We're thrilled to announce the SMFEST Founders' Mixer, a unique opportunity to meet fellow founders, explore potential partnerships, and gain valuable insights from industry leaders.`,
     link: "https://lu.ma/xkx3fdtg",
     date: "18th October 2024, Protea Hotel Owerri",
-    linkText: "Register",
+    linkText: "View info",
     eventImages: [],
     eventDescription: "",
   },

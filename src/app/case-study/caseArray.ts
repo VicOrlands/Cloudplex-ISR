@@ -30,6 +30,8 @@ import img28 from "@/assets/casestudies/suba.webp"
 import img29 from "@/assets/casestudies/varscon.webp"
 import img30 from "@/assets/casestudies/consode.webp"
 import img31 from "@/assets/casestudies/climdes.webp"
+import img32 from "@/assets/casestudies/mybalance.webp"
+import img33 from "@/assets/casestudies/bitbarter.webp"
 
 export interface CaseProps {
     image: StaticImageData,
@@ -53,6 +55,20 @@ const caseTags: string[] = [
 ]
 
 const casestudy: CaseProps[] = [
+    {
+        image: img33,
+        title: "From Monolith to Microservices: BitBarter’s Journey to a Scalable Cloud Architecture",
+        desc: `BitBarter is a digital service provider that connects users through a cryptocurrency-based barter system, allowing individuals and businesses to trade goods and services using digital assets. Through a dynamic digital asset marketplace, BitBarter bridges the gap between cryptocurrencies, fiat currencies, and digital assets, providing a seamless payment infrastructure across Africa and Asia.`,
+        link: "from-monolith-to-microservives-bitbarters-journey-to-a-scalable-cloud-architecture",
+        tag: "Financial Services"
+    },
+    {
+        image: img32,
+        title: "Re-Architecting MyBalance’s Infrastructure for Cost Efficiency and Downtime Mitigation",
+        desc: `MyBalance offers digital tools to help individuals and businesses manage their finances. The platform enables users to track spending, set budgets, and make informed financial decisions. The company’s services cater to a wide range of users, from everyday consumers to small and medium-sized enterprises, enabling them to gain greater control over their financial health.`,
+        link: "rearchitecting-mybalance-infrastructure-for-cost-efficiency-and-downtime-mitigation",
+        tag: "Financial Services"
+    },
     {
         image: img31,
         title: "Case Study: Empowering Climate Decision-Making with AWS IoT for Climdes",

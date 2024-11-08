@@ -13,6 +13,7 @@ import { useInView } from "react-intersection-observer";
 import clsx from "clsx";
 import vectorquote from "@/assets/reviews/vector.webp";
 import vectorquote2 from "@/assets/reviews/vector1.webp";
+import { beforeEach } from "node:test";
 
 interface SlickArrowProps {
   currentSlide?: number;
@@ -172,7 +173,7 @@ const Testimonial: React.FC = () => {
         </div>
 
         <div className={styles.reviewsCarouselContainer}>
-          <h5>Case Studies</h5>
+          <h5>Testimonials</h5>
           <Slider {...settings}>
             {testimonials.map((testimonial, index) => (
               <div className={styles.reviewBox} key={index}>

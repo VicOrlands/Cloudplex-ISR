@@ -1,6 +1,4 @@
-// "use client";
-
-import Link from "next/link";
+ import Link from "next/link";
 import Image from "next/image";
 import styles from "./hero.module.css";
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -28,7 +26,7 @@ const HeroSection = () => {
         <p>Agile, flexible, secure—cloud strategies designed to drive your digital transformation</p>
 
         <div className={styles.buttonGroup}>
-          <a href="#product-services">Book a free consultation</a>
+          <a href="/schedule-consultation">Book a free consultation</a>
         </div>
       </div>
 

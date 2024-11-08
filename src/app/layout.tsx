@@ -3,6 +3,7 @@ import "./globals.css";
 import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 import Metrics from "./metrics";
 import Header from "@/components/header/Header";

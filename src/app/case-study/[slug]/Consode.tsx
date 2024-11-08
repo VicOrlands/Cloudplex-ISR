@@ -32,7 +32,6 @@ const Climdes = () => {
 
                     <h2>Introduction</h2>
                     <p>Consode Digital, an IT solutions provider, specializes in delivering digital solutions by designing and configuring tailored models that help medium-sized enterprises streamline operations and achieve scalable growth. Known for its effective ERP solutions, they recognized the need to enhance their core ERP application by migrating from Namecheap to Amazon Web Services (AWS).</p>
-                    <p>Recognizing the complexity and potential risks associated with this migration, Consode employed the expertise of CloudPlexo, a trusted AWS Advanced partner in cloud consulting and migration solutions.</p>
 
                     <h2>Challenge</h2>
                     <p>Recognizing the complexity and potential risks associated with this migration, Consode employed the expertise of CloudPlexo, a trusted AWS Advanced partner in cloud consulting and migration solutions</p>
