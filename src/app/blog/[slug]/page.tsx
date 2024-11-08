@@ -59,6 +59,7 @@ import BlogFiftyFive from "./blogFiftyFive";
 import BlogFiftySix from "./blogFiftySix";
 import BlogFiftySeven from "./blogFiftySeven";
 import BlogFiftyEight from "./blogFiftyEight";
+import BlogFiftyNine from "./blogFiftyNine";
 
 type BlogProps = {
   params: {
@@ -78,9 +79,8 @@ export async function generateMetadata({
   const { slug } = params;
 
   return {
-    title: `${
-      slug.charAt(0).toUpperCase() + slug.slice(1).replaceAll("-", " ")
-    } - CloudPlexo Blog`,
+    title: `${slug.charAt(0).toUpperCase() + slug.slice(1).replaceAll("-", " ")
+      } - CloudPlexo Blog`,
     description: `Explore CloudPlexo's blog for expert insights on cloud computing, AWS, Azure, and GCP. Stay updated with cloud technology trends.`,
     keywords: [
       slug,
@@ -97,6 +97,10 @@ export async function generateMetadata({
 }
 
 const paths = [
+  {
+    comp: <BlogFiftyNine />,
+    url: "aws-smb-competency-badge-africa",
+  },
   {
     comp: <BlogFiftyEight />,
     url: "how-to-redirect-www-to-non-www-site-in-aws",

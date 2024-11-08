@@ -56,6 +56,7 @@ import blog56 from "@/assets/blog/blog55/AWS Auto Scaling thumbnail.webp";
 import blog56Main from "@/assets/blog/blog56/partyrock_thumbnail_main.webp";
 import blog57Main from "@/assets/blog/blog57/event bus arch.png";
 import blog58Main from "@/assets/blog/blog58/redirect thumbnail.png";
+import blog59 from "@/assets/blog/SMB Blog Thumbnail.webp";
 
 export interface BlogsProps {
   image: StaticImageData;
@@ -67,9 +68,16 @@ export interface BlogsProps {
 
 export const blogs: BlogsProps[] = [
   {
+    image: blog59,
+    title: "CloudPlexo Achieves AWS SMB Competency: Leading AWS Partner in Africa",
+    desc: "Cloudplexo has achieved the AWS Small and Medium Business (SMB) Competency status. While we're thrilled about adding another badge to our collection, we're even more excited about what this means for businesses like yours.",
+    link: "aws-smb-competency-badge-africa",
+    date: "8 November 2024",
+  },
+  {
     image: blog58Main,
     title: "Full Guide -  Redirecting www to non-www in AWS",
-    desc: "  Maintaining a consistent URL structure is crucial for website management and search engine optimization (SEO). This guide explores five methods to redirect the www subdomain to the root domain",
+    desc: "Maintaining a consistent URL structure is crucial for website management and search engine optimization (SEO). This guide explores five methods to redirect the www subdomain to the root domain",
     link: "how-to-redirect-www-to-non-www-site-in-aws",
     date: "11 October 2024",
   },

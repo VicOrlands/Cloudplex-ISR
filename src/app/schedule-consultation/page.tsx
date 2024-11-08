@@ -11,7 +11,7 @@ type ValuePiece = Date | null;
 type Value = ValuePiece | [ValuePiece, ValuePiece];
 
 const Consultation = () => {
-  const [value, onChange] = useState<Value>(new Date());
+  const [value, setValue] = useState<Value>(new Date());
 
   return (
     <div className={styles["download-canvas"]}>
@@ -26,7 +26,11 @@ const Consultation = () => {
           <p>Pick a date & time</p>
 
           <div>
-            <DateTimePicker onChange={onChange} value={value} />
+            <DateTimePicker
+              className={styles["date-picker"]}
+              value={value}
+              onChange={setValue}
+            />
           </div>
         </div>
 
