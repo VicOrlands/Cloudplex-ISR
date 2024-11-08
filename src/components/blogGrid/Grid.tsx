@@ -10,7 +10,7 @@ import "./style.css";
 
 import clsx from "clsx";
 import { blogs } from "@/app/blog/array";
-import Newsletter from "@/app/events/footer/newsletter";
+import FooterCTA from "../callToAction/footerCTA";
 
 interface SampleArrowProps {
   className?: string;
@@ -164,7 +164,7 @@ const BlogGrid: React.FC = () => {
         </Link>
       </section>
 
-      <Newsletter />
+      <FooterCTA />
     </>
   );
 };

@@ -1,31 +1,88 @@
-.footer {
-    background-color: #3e54ac;
+.footer-parent {
+    background-color: #263571;
     color: #fff;
-    padding: 60px 10%;
     font-family: var(--font-inter);
+    padding: 60px 10%;
+}
+
+/* newsletter */
+.newsletter {
+    border-bottom: 1px solid #6478D5;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.newsletter h2 {
+    color: #EFF0FA;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    color: #EFF0FA;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.newsletter .input-section {
+    display: flex;
+    width: 100%;
+}
+
+.newsletter .input-section input {
+    border-radius: 8px;
+    border: 1px solid #fff;
+    margin-right: 20px;
+    padding: 12px 14px;
+    color: #667085;
+    font-size: 1.4rem;
+    height: fit-content;
+    width: 100%;
+}
+
+.newsletter .input-section button {
+    background: #3e54ac;
+    border: 1px solid #3e54ac;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 12px 18px;
+    height: fit-content;
+}
+
+/* main footer body */
+.footer-main {
     display: grid;
     grid-template-areas: 'header header main main main';
     gap: 60px;
 }
 
-.footer img {
+.footer-main img {
     width: auto;
     height: auto;
     margin-bottom: 10px;
 }
 
-.footer h5 {
+.footer-main h5 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 25px;
 }
 
-.footer ul li {
+.footer-main ul li {
     margin-bottom: 15px;
     font-size: 1.6rem;
 }
 
 .first-div {
+    grid-area: header;
     width: 100%;
 }
 
@@ -41,23 +98,23 @@
     margin-bottom: 5px;
 }
 
-.footer-social-links {
+.footer-main-social-links {
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
 
-.footer-social-links a {
+.footer-main-social-links a {
     margin-right: 20px;
 }
 
-.footer-social-links a:last-child {
+.footer-main-social-links a:last-child {
     margin: 0;
 }
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .footer {
+    .footer-main {
         padding: 40px 5%;
         grid-template-areas: 'header';
         gap: 50px;
@@ -72,7 +129,38 @@
 
 /* mobile */
 @media screen and (max-width: 767px) {
-    .footer {
+
+    /* footer newsletter */
+    .newsletter {
+        grid-template-columns: 100%;
+        gap: 30px;
+        margin: 0;
+    }
+
+    .newsletter h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .newsletter p {
+        font-size: 1.6rem;
+    }
+
+    .newsletter .input-section {
+        flex-wrap: wrap;
+    }
+
+    .newsletter .input-section input {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .newsletter .input-section button {
+        width: 100%;
+    }
+
+    /* footer main */
+    .footer-main {
         padding: 40px 20px;
         grid-template-areas: 'header';
         gap: 50px;
@@ -80,7 +168,7 @@
         flex-wrap: wrap;
     }
 
-    .footer img {
+    .footer-main img {
         width: 30%;
     }
 
@@ -93,7 +181,7 @@
         gap: 0;
     }
 
-    .footer ul li,
+    .footer-main ul li,
     .first-div p {
         font-size: 1.4rem;
         line-height: 2.4rem;

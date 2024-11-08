@@ -78,7 +78,7 @@ function Events() {
   }
 
   return (
-    <section className={styles.eventParent}>
+    <>
       <LazyBackgroundImage src={BgImg} className={styles["bgImg"]}>
         <div className={styles.eventsHero}>
           <div>
@@ -201,7 +201,7 @@ function Events() {
       </div>
 
       <Footer />
-    </section>
+    </>
   );
 }
 

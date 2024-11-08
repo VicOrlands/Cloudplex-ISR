@@ -25,42 +25,37 @@ const HeroSection = () => {
           </h4>
         </Link>
         <h1>Modernise and Secure All Processes</h1>
-        <p>
-          Cloud Native strategies that enable business agility, flexibility,
-          scalability and data security of the cloud to solve the challenges in
-          today's business world through digital transformation.
-        </p>
+        <p>Agile, flexible, secure—cloud strategies designed to drive your digital transformation</p>
 
         <div className={styles.buttonGroup}>
-          <a href="/contact-us">Contact Sales</a>
-          <a href="#product-services">Learn More</a>
+          <a href="#product-services">Book a free consultation</a>
         </div>
       </div>
 
-        <picture className={styles.heroImgContainer}>
-          <source
-            media="(max-width: 900px)"
-            srcSet={heroImageSm.src}
-          />
-          <source
-            media="(max-width: 1024px)"
-            srcSet={heroImageMd.src}
-          />
-          <source
-            media="(max-width: 1200px)"
-            srcSet={heroImageLg.src}
-          />
-          <Image
-            src={heroImageXl}
-            alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-            priority
-            width={heroImageXl.width}
-            height={heroImageXl.height}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            quality={75}
-            loading="eager"
-          />
-        </picture>
+      <picture className={styles.heroImgContainer}>
+        <source
+          media="(max-width: 900px)"
+          srcSet={heroImageSm.src}
+        />
+        <source
+          media="(max-width: 1024px)"
+          srcSet={heroImageMd.src}
+        />
+        <source
+          media="(max-width: 1200px)"
+          srcSet={heroImageLg.src}
+        />
+        <Image
+          src={heroImageXl}
+          alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+          priority
+          width={heroImageXl.width}
+          height={heroImageXl.height}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          quality={75}
+          loading="eager"
+        />
+      </picture>
     </section>
   );
 };

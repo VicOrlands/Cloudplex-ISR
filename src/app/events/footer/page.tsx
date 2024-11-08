@@ -10,7 +10,6 @@ import Partner9 from "@/assets/startups/partners/sdc.png";
 import Partner10 from "@/assets/startups/partners/start_innovation_hub.png";
 import Partner8 from "@/assets/startups/partners/root.png";
 import Partner7 from "@/assets/startups/partners/vatebra_logo.png";
-import Newsletter from "./newsletter";
 
 const partners = [
   Partner1,
@@ -27,24 +26,20 @@ const partners = [
 
 function Footer() {
   return (
-    <>
-      <section className={styles.eventPartners}>
-        <h2>Join 4,000+ companies already growing</h2>
+    <section className={styles.eventPartners}>
+      <h2>Join 4,000+ companies already growing</h2>
 
-        <div className={styles.eventPartnersLogos}>
-          {partners.map((partner, index) => (
-            <div className={styles.partnersLogo} key={index}>
-              <Image
-                src={partner}
-                alt="Ready to supercharge your startup journey"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <Newsletter />
-    </>
+      <div className={styles.eventPartnersLogos}>
+        {partners.map((partner, index) => (
+          <div className={styles.partnersLogo} key={index}>
+            <Image
+              src={partner}
+              alt="Ready to supercharge your startup journey"
+            />
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 

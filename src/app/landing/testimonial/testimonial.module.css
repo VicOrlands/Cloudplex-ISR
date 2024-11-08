@@ -6,6 +6,15 @@
   padding-bottom: 0;
 }
 
+.reviewContainer h5 {
+  color: #3e54ac;
+  font-family: var(--font-inter);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .reviewContainer h2 {
   color: var(--color-h2);
   font-family: var(--font-inter);
@@ -35,12 +44,11 @@
 
 .contentWrap {
   background: #f9fafb;
-  /* box-shadow: rgba(0, 0, 0, 0.13) 0px 5px 15px 0px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-family: var(--font-inter);
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 .contentWrap .logoImage {
@@ -55,7 +63,7 @@
   font-weight: 500;
   line-height: 40px;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .contentWrap a {
@@ -76,19 +84,67 @@
 }
 
 .contentWrap h4 {
-  font-size: 1.6rem;
+  font-size: 1.65rem;
   font-weight: 600;
-  color: #000;
+  color: #101828;
   text-align: left;
-  margin: 30px 0 10px 0;
+  margin: 10px 0;
 }
 
 .contentWrap h6 {
   font-family: var(--font-inter);
   font-size: 1.4rem;
   font-weight: 400;
-  color: #000;
+  color: #475467;
 }
+
+/* custom dots */
+.videoDot {
+  /* display: inline-block; */
+  /* margin: auto; */
+  /* padding: 0; */
+  /* text-align: right; */
+  /* margin-left: auto; */
+  position: absolute;
+  right: 0;
+  top: 0;
+  right: 0;
+  z-index: 999999;
+  background-color: #101828;
+  left: 100%;
+  width: 100%;
+}
+
+.videoDot li {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+}
+
+.videoDot li button {
+  border: none;
+  background-color: #C2C8EF;
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  height: 12px;
+  width: 12px;
+  border-radius: 7.5px;
+}
+
+.videoDot li.slick-active button {
+  background-color: #3E54AC;
+}
+
+.videoDot li button:hover,
+.videoDot li button:focus {
+  background-color: #3E54AC;
+  outline: 0;
+}
+
+/* custom dots ends here */
 
 .mobile {
   display: none;
@@ -119,24 +175,19 @@
 }
 
 /* wordsReview */
-.wordsReview {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.wordsReview {
-  margin-top: 30px;
-  padding: 60px;
-  color: white;
-}
-
 .reviewsCarouselContainer {
-  background-size: cover;
+  background: #263571;
   height: auto;
-  padding: 0 200px;
+  margin-top: 30px;
+  padding: 100px 200px;
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.reviewsCarouselContainer h5 {
+  color: #EFF0FA;
+  margin-bottom: 0;
 }
 
 .reviewBox {
@@ -161,24 +212,69 @@
   color: #fff;
   text-align: center;
   font-family: var(--font-inter);
-  font-size: 3.3rem;
-  font-weight: 400;
+  font-size: 3.6rem;
+  font-weight: 500;
   line-height: 46px;
 }
 
 .reviewBox h4 {
-  color: #fff;
+  color: #A4A7AE;
   text-align: center;
   font-family: var(--font-inter);
-  font-size: 3.6rem;
-  font-weight: 600;
-  line-height: 60px;
-  margin-top: 12px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 30px;
 }
+
+/* custom dots */
+.customDot {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+}
+
+.customDot li {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+}
+
+.customDot li button {
+  border: none;
+  background-color: #717680;
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  height: 12px;
+  width: 12px;
+  border-radius: 7.5px;
+}
+
+.customDot li.slick-active button {
+  background-color: #FFFFFF;
+}
+
+.customDot li button:hover,
+.customDot li button:focus {
+  background-color: #FFFFFF;
+  outline: 0;
+}
+
+.slick-slide img {
+  border: 5px solid #fff;
+  display: block;
+  margin: auto;
+}
+
+/* custom dots ends here */
 
 .arrow {
   background: transparent;
-  border: 1.5px solid #FFFFFF;
+  border: 1.7px solid #FFFFFF;
   border-radius: 50%;
   color: white;
   cursor: pointer;
@@ -242,7 +338,7 @@
   }
 
   .reviewsCarouselContainer {
-    padding: 0;
+    padding: 50px 5%;
   }
 
   .reviewBox {
@@ -274,18 +370,18 @@
 
   .arrow {
     font-size: 1.8rem;
-    top: 40%;
+    top: 50%;
     height: 40px;
     width: 40px;
     padding-top: 3px;
   }
 
   .left {
-    left: -20px;
+    left: 0;
   }
 
   .right {
-    right: -20px;
+    right: 0;
   }
 }
 
@@ -301,9 +397,11 @@
   .reviewVideo {
     padding: 30px 60px 0;
   }
-
+  
   .videoWrap {
     grid-template-columns: 1fr;
+    padding-bottom: 40px;
+    background: #f9fafb;
   }
 
   .contentWrap {
@@ -341,6 +439,7 @@
     left: 0;
     top: 15px;
     padding: 0;
+    padding-left: 30px;
   }
 
   .btngroup button {
@@ -360,7 +459,7 @@
   }
 
   .reviewsCarouselContainer {
-    padding: 0 20px;
+    padding: 50px 20px;
   }
 
   .reviewBox {
@@ -383,14 +482,6 @@
     bottom: 90px;
   }
 
-  .left {
-    left: 0;
-  }
-
-  .right {
-    right: 0;
-  }
-
   .reviewBox h4 {
     font-size: 3rem;
     margin-top: 12px;
@@ -410,11 +501,11 @@
   }
 
   .left {
-    left: -20px;
+    left: 20px;
   }
 
   .right {
-    right: -20px;
+    right: 20px;
   }
 }
 
@@ -424,6 +515,10 @@
   /* reviewContainer */
   .reviewContainer {
     padding: 30px 0;
+  }
+
+  .reviewContainer h5 {
+    font-size: 1.4rem;
   }
 
   .reviewContainer h2 {
@@ -439,6 +534,7 @@
 
   .videoWrap {
     grid-template-columns: 1fr;
+    background: #f9fafb;
   }
 
   .contentWrap {
@@ -480,7 +576,7 @@
     left: 0;
     top: 15px;
     padding: 0;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 
   .btngroup button {
@@ -500,8 +596,9 @@
   }
 
   .reviewsCarouselContainer {
-    margin-bottom: -50px;
-    padding: 0;
+    margin-top: 0;
+    margin-bottom: -30px;
+    padding: 50px 0;
   }
 
   .reviewBox {
@@ -511,7 +608,7 @@
 
   .reviewBox .quoteImg1,
   .reviewBox .quoteImg2 {
-    height: 20px;
+    height: 15px;
     width: auto;
   }
 
@@ -538,11 +635,6 @@
 
   .right {
     right: 20px;
-  }
-
-  .reviewBox h4 {
-    font-size: 2.4rem;
-    margin-top: 12px;
   }
 
   .reviewBox h3 {

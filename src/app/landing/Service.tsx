@@ -36,21 +36,21 @@ interface ServiceTypes extends ProfessionalType {
 const serviceContent: ServiceTypes[] = [
   {
     name: "Wendu - Cloud Security and Cost Management Platform",
-    desc: "Insights for both developers and management to run a secured, efficient, lean, cost-optimized and reliable cloud.",
+    desc: "Run a secured, efficient, lean, cost-optimized and reliable cloud.",
     image: wenduImage,
     link: "https://wendu.io",
     width: 199,
   },
   {
     name: "AI Scan",
-    desc: "360 Degree Approach Where We Analyse How Your Data Can Be Recycled To Be Beneficial To Your Business.",
+    desc: "We take a holistic approach to analyzing your data, exploring how it can be repurposed to benefit your business.",
     image: aiscanImage,
     link: "/aws-partnership/data-analytics",
     width: 200,
   },
   {
     name: "AWS Managed Service",
-    desc: "Experience unparalleled scalability and reliability with AWS Managed service, a cloud service designed to simplify your cloud infrastructure management.",
+    desc: "Say goodbye to complexities and hello to unparalleled scalability and reliability.",
     image: managedcloud,
     link: "/aws-managed-cloud",
     width: 233,
@@ -64,14 +64,14 @@ const serviceContent: ServiceTypes[] = [
   },
   {
     name: "Cloud Migration Factory",
-    desc: "Automates the coordination of large migrations to Amazon Web Services, including multiple servers, by automating the use of several tools",
+    desc: "An automated process of moving a lot of data to Amazon Web Services, including multiple servers.",
     image: cloudmigration,
     link: "/aws-partnership/cloud-migration",
     width: 119,
   },
   {
     name: "AWS Maturity Service",
-    desc: "A transformative solution designed to propel your cloud operations towards enhanced efficiency, optimal performance, and strategic growth. ",
+    desc: "A revolutionary approach to elevate your cloud operations, boosting efficiency, performance, and strategic growth.",
     image: maturity,
     link: "/aws-maturity-service",
     width: 167,
@@ -210,7 +210,6 @@ export default function Service() {
                     src={professional.image}
                     height={171}
                     width={professional.image.width}
-                    // placeholder="blur"
                     alt="Achieve Peak Efficiency with Our Innovative Products and Services"
                   />
 
@@ -218,7 +217,7 @@ export default function Service() {
                     <h3>{professional.name}</h3>
                     <p>{professional.desc}</p>
                     <a href={professional.link}>
-                      Explore <BsArrowRight id="icon" />
+                      Explore <BsArrowRight id={styles.icon} />
                     </a>
                   </section>
                 </div>

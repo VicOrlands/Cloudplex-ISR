@@ -70,17 +70,6 @@
   transition: all 0.5s ease-in-out;
 }
 
-.heroTextContainer .buttonGroup a:first-child {
-  background-color: transparent;
-  color: #344054;
-  border: 1px solid #d0d5dd;
-  margin-right: 20px;
-}
-
-.heroTextContainer .buttonGroup a:first-child:hover {
-  border: 1px solid #93969c;
-}
-
 .heroImgContainer {
   height: 100vh;
 }
@@ -160,11 +149,6 @@
     font-size: 1.6rem;
     line-height: 2.4rem;
     text-align: center;
-  }
-
-  .heroTextContainer .buttonGroup a:first-child {
-    margin-right: 0;
-    margin-bottom: 20px;
   }
 
   .heroImgContainer {

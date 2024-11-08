@@ -6,7 +6,6 @@ import Slider from "react-slick";
 import React, { useState, useEffect } from "react";
 import styles from "./testimonial.module.css";
 import { MdArrowForward, MdArrowBack } from "react-icons/md";
-import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 import { casestudy, testimonials } from './testimonialData';
 import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 import { useInView } from "react-intersection-observer";
@@ -14,7 +13,6 @@ import { useInView } from "react-intersection-observer";
 import clsx from "clsx";
 import vectorquote from "@/assets/reviews/vector.webp";
 import vectorquote2 from "@/assets/reviews/vector1.webp";
-import BgImage from "@/assets/reviews/testimonialbg.webp";
 
 interface SlickArrowProps {
   currentSlide?: number;
@@ -77,29 +75,31 @@ const Testimonial: React.FC = () => {
   }, []);
 
   const settings = {
-    prevArrow: <SlickArrowLeft />,
-    nextArrow: <SlickArrowRight />,
     speed: 500,
+    dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    dotsClass: styles.customDot,
+    prevArrow: <SlickArrowLeft />,
+    nextArrow: <SlickArrowRight />,
   };
 
   const videosettings = {
+    speed: 500,
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    // dotsClass: styles.videoDot,
   };
 
   if (!isClient) {
     return (
       <div className={styles.reviewContainer}>
-        <h2>
-          With CloudPlexo, the possibilities for customer innovation are endless.
-        </h2>
+        <h5>Case Studies</h5>
+        <h2>Real Results, Real Stories – Explore How We’re Transforming Businesses.</h2>
         <div className={styles.reviewVideo}>
           <h3>Loading videos...</h3>
         </div>
@@ -109,9 +109,8 @@ const Testimonial: React.FC = () => {
 
   return (
     <div className={styles["reviewContainer"]} ref={ref}>
-      <h2>
-        With CloudPlexo, the possibilities for customer innovation are endless.
-      </h2>
+      <h5>Case Studies</h5>
+      <h2>Real Results, Real Stories – Explore How We’re Transforming Businesses.</h2>
 
       {inView && <>
         <div className={styles.reviewVideo}>
@@ -172,37 +171,36 @@ const Testimonial: React.FC = () => {
           </section>
         </div>
 
-        <LazyBackgroundImage src={BgImage} className={styles.wordsReview}>
-          <div className={styles.reviewsCarouselContainer}>
-            <Slider {...settings}>
-              {testimonials.map((testimonial, index) => (
-                <div className={styles.reviewBox} key={index}>
-                  <Image
-                    loading="lazy"
-                    placeholder="blur"
-                    priority={false}
-                    src={vectorquote}
-                    className={styles.quoteImg1}
-                    alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-                  />
+        <div className={styles.reviewsCarouselContainer}>
+          <h5>Case Studies</h5>
+          <Slider {...settings}>
+            {testimonials.map((testimonial, index) => (
+              <div className={styles.reviewBox} key={index}>
+                <Image
+                  loading="lazy"
+                  placeholder="blur"
+                  priority={false}
+                  src={vectorquote}
+                  className={styles.quoteImg1}
+                  alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                />
 
-                  <Image
-                    loading="lazy"
-                    priority={false}
-                    src={vectorquote2}
-                    className={styles.quoteImg2}
-                    alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
-                  />
+                <Image
+                  loading="lazy"
+                  priority={false}
+                  src={vectorquote2}
+                  className={styles.quoteImg2}
+                  alt="Top Cloud Services providers with CloudPlexo's Innovative Solutions"
+                />
 
-                  <div>
-                    <h3>{testimonial.content}</h3>
-                    <h4>{testimonial.by}</h4>
-                  </div>
+                <div>
+                  <h3>{testimonial.content}</h3>
+                  <h4>{testimonial.by}</h4>
                 </div>
-              ))}
-            </Slider>
-          </div>
-        </LazyBackgroundImage>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </>}
     </div>
   );
