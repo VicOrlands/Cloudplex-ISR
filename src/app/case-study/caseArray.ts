@@ -55,27 +55,27 @@ const caseTags: string[] = [
 ]
 
 const casestudy: CaseProps[] = [
-    // {
-    //     image: img33,
-    //     title: "From Monolith to Microservices: BitBarter’s Journey to a Scalable Cloud Architecture",
-    //     desc: `BitBarter is a digital service provider that connects users through a cryptocurrency-based barter system, allowing individuals and businesses to trade goods and services using digital assets. Through a dynamic digital asset marketplace, BitBarter bridges the gap between cryptocurrencies, fiat currencies, and digital assets, providing a seamless payment infrastructure across Africa and Asia.`,
-    //     link: "from-monolith-to-microservives-bitbarters-journey-to-a-scalable-cloud-architecture",
-    //     tag: "Financial Services"
-    // },
-    // {
-    //     image: img32,
-    //     title: "Re-Architecting MyBalance’s Infrastructure for Cost Efficiency and Downtime Mitigation",
-    //     desc: `MyBalance offers digital tools to help individuals and businesses manage their finances. The platform enables users to track spending, set budgets, and make informed financial decisions. The company’s services cater to a wide range of users, from everyday consumers to small and medium-sized enterprises, enabling them to gain greater control over their financial health.`,
-    //     link: "rearchitecting-mybalance-infrastructure-for-cost-efficiency-and-downtime-mitigation",
-    //     tag: "Financial Services"
-    // },
     {
-        image: img31,
-        title: "Case Study: Empowering Climate Decision-Making with AWS IoT for Climdes",
-        desc: `The Climate-Smart Decision Support Systems (Climdes) Research Group is a leader in using technology and climate science to support sustainable decision-making. They focus on creating accessible, data-driven tools that help communities and organizations make informed choices to adapt to climate variability, ensuring resilience and equity in climate solutions.`,
-        link: "empowering-climate-decision-making-with-aws-iot-for-climdes",
-        tag: "Technology"
+        image: img33,
+        title: "From Monolith to Microservices: BitBarter’s Journey to a Scalable Cloud Architecture",
+        desc: `BitBarter is a digital service provider that connects users through a cryptocurrency-based barter system, allowing individuals and businesses to trade goods and services using digital assets. Through a dynamic digital asset marketplace, BitBarter bridges the gap between cryptocurrencies, fiat currencies, and digital assets, providing a seamless payment infrastructure across Africa and Asia.`,
+        link: "from-monolith-to-microservives-bitbarters-journey-to-a-scalable-cloud-architecture",
+        tag: "Financial Services"
     },
+    {
+        image: img32,
+        title: "Re-Architecting MyBalance’s Infrastructure for Cost Efficiency and Downtime Mitigation",
+        desc: `MyBalance offers digital tools to help individuals and businesses manage their finances. The platform enables users to track spending, set budgets, and make informed financial decisions. The company’s services cater to a wide range of users, from everyday consumers to small and medium-sized enterprises, enabling them to gain greater control over their financial health.`,
+        link: "rearchitecting-mybalance-infrastructure-for-cost-efficiency-and-downtime-mitigation",
+        tag: "Financial Services"
+    },
+    // {
+    //     image: img31,
+    //     title: "Case Study: Empowering Climate Decision-Making with AWS IoT for Climdes",
+    //     desc: `The Climate-Smart Decision Support Systems (Climdes) Research Group is a leader in using technology and climate science to support sustainable decision-making. They focus on creating accessible, data-driven tools that help communities and organizations make informed choices to adapt to climate variability, ensuring resilience and equity in climate solutions.`,
+    //     link: "empowering-climate-decision-making-with-aws-iot-for-climdes",
+    //     tag: "Technology"
+    // },
     {
         image: img30,
         title: "Case Study: Consode’s Strategic ERP Migration to AWS for Enhanced Scalability and Availability",
