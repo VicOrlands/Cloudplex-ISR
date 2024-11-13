@@ -17,6 +17,7 @@ import CommunityDay from "@/assets/events/community-day/thumbnail.webp";
 import digitalThumbnail from "@/assets/events/transcorp/videothumbnail.webp";
 import AricaArena from "@/assets/events/africArena/cover.webp";
 import Workshop from "@/assets/events/executive cloud workshop.webp";
+import techSMEThumbnail from "@/assets/events/techSME/video_thumbnail.webp";
 
 import {
   accraImages,
@@ -30,6 +31,7 @@ import {
   kigaliImages,
   nairobiImages,
   techSafariImages,
+  techSMEImages,
 } from "./imagesArray";
 
 export interface EventsProps {
@@ -63,11 +65,16 @@ export const EventsArray: EventsProps[] = [
     img: OwerriEvent,
     title: "Founders’ Mixer",
     text: `Are you a tech entrepreneur looking to expand your network and connect with like-minded individuals? Look no further! We're thrilled to announce the SMFEST Founders' Mixer, a unique opportunity to meet fellow founders, explore potential partnerships, and gain valuable insights from industry leaders.`,
-    link: "https://lu.ma/xkx3fdtg",
-    date: "18th October 2024, Protea Hotel Owerri",
+    link: "founders-mixer",
+    date: "18th October, 2024",
     linkText: "View info",
-    eventImages: [],
-    eventDescription: "",
+    eventLocation: "Protea Hotel Owerri",
+    eventDescription: `On October 18, 2024, tech entrepreneurs and innovators gathered at the exclusive SMFEST Founders’ Mixer. It was an incredible evening filled with energy, creativity, and potential! Attendees mingled with founders from a variety of industries, making meaningful connections and exploring future partnerships.`,
+    about: `With inspiring talks from successful entrepreneurs, everyone left with fresh insights and motivation. The event also treated guests to a delightful spread of food and drinks, creating a warm and inviting atmosphere for networking. To top it off, attendees enjoyed exclusive perks, adding a touch of excitement to an already unforgettable evening.
+    <br /><br />Thank you to everyone who made the night a success. We can’t wait to see where these new connections and ideas will lead!`,
+    eventImages: techSMEImages,
+    videoThumbnail: techSMEThumbnail,
+    videoLink: "https://cloudplexo.com/SMFEST-Founders-Mixer.mp4",
   },
   {
     img: AricaArena,

@@ -111,6 +111,16 @@ import africArena5 from "@/assets/events/africArena/Image-5.webp"
 import africArena6 from "@/assets/events/africArena/Image-6.webp"
 import africArena7 from "@/assets/events/africArena/Image-7.webp"
 
+import techSME from "@/assets/events/techSME/cover.webp"
+import techSME2 from "@/assets/events/techSME/image1.webp"
+import techSME3 from "@/assets/events/techSME/image2.webp"
+
+export const techSMEImages: StaticImageData[] = [
+  techSME,
+  techSME3,
+  techSME2
+]
+
 export const africaArenaImages: StaticImageData[] = [
   africCover,
   africArena,
