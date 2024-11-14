@@ -1,9 +1,17 @@
-.container {
+.container,
+.calendlyContainer {
   display: grid;
   font-family: var(--font-inter);
   grid-template-columns: 1fr 1fr;
   margin-top: 8vh;
+}
+
+.container {
   min-height: 90vh;
+}
+
+.calendlyContainer {
+  min-height: 120vh;
 }
 
 .formSection {
@@ -12,8 +20,9 @@
   position: relative;
 }
 
-.formWrapper {
-  width: 60%;
+.formWrapper,
+.formWrapperContainer {
+  width: 62%;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -23,6 +32,11 @@
   font-size: 3.6rem;
   font-weight: 600;
   margin-bottom: 2rem;
+}
+
+.calendly {
+  border: 1px solid #D5D7DA;
+  height: 100vh;
 }
 
 .form {

@@ -4,6 +4,7 @@ import { useState } from 'react'
 import styles from './styles.module.css'
 import BgImg from "@/assets/schedule_consultation.webp"
 import { LazyBackgroundImage } from '@/components/backgroundImage/bg';
+import CalendlyEmbed from '@/components/CalendlyEmbed';
 
 type StateProps = {
   name: string;
@@ -20,11 +21,9 @@ const generateCalendlyUrl = (formData: StateProps): string => {
   const baseUrl = 'https://calendly.com/chimezie-cloudplexo/30min';
 
   const formatDate = (dateString: string): { datetime: string; month: string; date: string } => {
-    if (!dateString) {
-      return { datetime: '', month: '', date: '' };
-    }
-    const date = new Date(dateString);
+    if (!dateString) return { datetime: '', month: '', date: '' };
 
+    const date = new Date(dateString);
     const monthStr = (date.getMonth() + 1).toString().padStart(2, '0');
     const yearMonth = `${date.getFullYear()}-${monthStr}`;
     const fullDate = `${yearMonth}-${date.getDate().toString().padStart(2, '0')}`;
@@ -37,23 +36,21 @@ const generateCalendlyUrl = (formData: StateProps): string => {
   };
 
   const dateInfo = formatDate(formData.date);
-
   const params = new URLSearchParams({
     name: formData.name,
     email: formData.email,
-    a1: `Company:  ${formData.company}, No of Employees:  ${formData.employees},
-    Country: ${formData.country}, Message: ${formData.message}`,
+    a1: `Company:  ${formData.company}\nNo of Employees:  ${formData.employees}\nCountry: ${formData.country}\nMessage: ${formData.message}`,
     back: '1',
     month: dateInfo.month,
     date: formData.date,
     time: formData.time
   });
 
-  return `${baseUrl}/${dateInfo.datetime}?${params.toString()}`;
+  return `${baseUrl}/${dateInfo.datetime}?${params.toString().replace(/\+/g, '%20')}`;
 };
 
 export default function ConsultationPage() {
-  const [loading, setLoading] = useState<boolean>(false)
+  const [showCalendly, setShowCalendly] = useState(false);
   const [formData, setFormData] = useState<StateProps>({
     name: '',
     email: '',
@@ -75,139 +72,140 @@ export default function ConsultationPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setLoading(true)
 
     try {
-      const calendlyUrl = generateCalendlyUrl(formData);
-      window.location.href = calendlyUrl;
+      setShowCalendly(true);
     } catch (err: any) {
       console.error('Scheduling error:', err)
-    } finally {
-      setLoading(false)
     }
   }
 
   return (
-    <div className={styles.container}>
+    <div className={!showCalendly ? styles.container : styles.calendlyContainer}>
       <div className={styles.formSection}>
         <div className={styles.formWrapper}>
           <h1 className={styles.title}>Schedule Free Consultation</h1>
 
-          <form onSubmit={handleSubmit} className={styles.form}>
-            <div className={styles.inputGroup}>
-              <label htmlFor="name">Full name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Enter your name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-              />
+          {showCalendly ? (
+            <div className={styles.calendly}>
+              <CalendlyEmbed url={generateCalendlyUrl(formData)} />
             </div>
-
-            <div className={styles.inputGroup}>
-              <label htmlFor="date">Select Date & Time</label>
-              <div className={styles.dateTimeWrapper}>
-                <input
-                  id="date"
-                  name="date"
-                  type="date"
-                  placeholder="Select date"
-                  value={formData.date}
-                  onChange={handleInputChange}
-                  required
-                  className={styles.dateInput}
-                />
-                <input
-                  id="time"
-                  name="time"
-                  type="time"
-                  placeholder="Select time"
-                  value={formData.time}
-                  onChange={handleInputChange}
-                  required
-                  className={styles.timeInput}
-                />
-              </div>
-            </div>
-
-            <div className={styles.inputGroup}>
-              <label htmlFor="email">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="Enter your email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-              />
-            </div>
-
-            <div className={styles.inputGroup}>
-              <label htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Please share anything that will help prepare for our meeting."
-                value={formData.message}
-                onChange={handleInputChange}
-                required
-                rows={4}
-                className={styles.textarea}
-              />
-            </div>
-
-            <div className={styles.rowGroup}>
+          ) :
+            (<form onSubmit={handleSubmit} className={styles.form}>
               <div className={styles.inputGroup}>
-                <label htmlFor="company">Company</label>
+                <label htmlFor="name">Full name</label>
                 <input
-                  id="company"
-                  name="company"
+                  id="name"
+                  name="name"
                   type="text"
-                  placeholder="Enter your company"
-                  value={formData.company}
+                  placeholder="Enter your name"
+                  value={formData.name}
                   onChange={handleInputChange}
                   required
                 />
               </div>
+
               <div className={styles.inputGroup}>
-                <label htmlFor="employees">Number of employees</label>
+                <label htmlFor="date">Select Date & Time</label>
+                <div className={styles.dateTimeWrapper}>
+                  <input
+                    id="date"
+                    name="date"
+                    type="date"
+                    placeholder="Select date"
+                    value={formData.date}
+                    onChange={handleInputChange}
+                    required
+                    className={styles.dateInput}
+                  />
+                  <input
+                    id="time"
+                    name="time"
+                    type="time"
+                    placeholder="Select time"
+                    value={formData.time}
+                    onChange={handleInputChange}
+                    required
+                    className={styles.timeInput}
+                  />
+                </div>
+              </div>
+
+              <div className={styles.inputGroup}>
+                <label htmlFor="email">Email</label>
                 <input
-                  id="employees"
-                  name="employees"
-                  type="text"
-                  placeholder="Enter number of employees"
-                  value={formData.employees}
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  value={formData.email}
                   onChange={handleInputChange}
                   required
                 />
               </div>
-            </div>
 
-            <div className={styles.inputGroup}>
-              <label htmlFor="country">Country</label>
-              <input
-                id="country"
-                name="country"
-                type="text"
-                placeholder="Enter your country"
-                value={formData.country}
-                onChange={handleInputChange}
-                required
-              />
-            </div>
+              <div className={styles.inputGroup}>
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Please share anything that will help prepare for our meeting."
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required
+                  rows={4}
+                  className={styles.textarea}
+                />
+              </div>
 
-            <button
-              type="submit"
-              className={styles.submitButton}
-              disabled={loading}
-            >
-              {loading ? 'Scheduling...' : 'Schedule Consultation'}
-            </button>
-          </form>
+              <div className={styles.rowGroup}>
+                <div className={styles.inputGroup}>
+                  <label htmlFor="company">Company</label>
+                  <input
+                    id="company"
+                    name="company"
+                    type="text"
+                    placeholder="Enter your company"
+                    value={formData.company}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </div>
+                <div className={styles.inputGroup}>
+                  <label htmlFor="employees">Number of employees</label>
+                  <input
+                    id="employees"
+                    name="employees"
+                    type="text"
+                    placeholder="Enter number of employees"
+                    value={formData.employees}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className={styles.inputGroup}>
+                <label htmlFor="country">Country</label>
+                <input
+                  id="country"
+                  name="country"
+                  type="text"
+                  placeholder="Enter your country"
+                  value={formData.country}
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                className={styles.submitButton}
+              >
+                Schedule Consultation
+              </button>
+            </form>
+            )}
 
           <footer className={styles.footer}>
             <p>© CloudPlexo 2024</p>
