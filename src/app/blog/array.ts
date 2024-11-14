@@ -57,6 +57,7 @@ import blog56Main from "@/assets/blog/blog56/partyrock_thumbnail_main.webp";
 import blog57Main from "@/assets/blog/blog57/event bus arch.png";
 import blog58Main from "@/assets/blog/blog58/redirect thumbnail.png";
 import blog59 from "@/assets/blog/SMB Blog Thumbnail.webp";
+import blog60 from "@/assets/blog/blog60/thumbnail.webp";
 
 export interface BlogsProps {
   image: StaticImageData;
@@ -68,10 +69,17 @@ export interface BlogsProps {
 
 export const blogs: BlogsProps[] = [
   {
+    image: blog60,
+    title: "Building a Robust Generative AI Infrastructure on AWS: Best Practices and Tips",
+    desc: "Generative AI is a type of artificial intelligence that can create new data. It is currently facing a reality check, as many companies have not seen the return on investment (ROI) they were hoping for. This is due in part to limitations in cloud infrastructure.",
+    link: "building-a-robust-generative-ai-infrastructure-on-aws",
+    date: "14 November 2024",
+  },
+  {
     image: blog59,
-    title: "CloudPlexo Achieves AWS SMB Competency: Leading AWS Partner in Africa",
+    title: "CloudPlexo Achieves AWS SMB Competency Badge: Leading AWS Partner",
     desc: "Cloudplexo has achieved the AWS Small and Medium Business (SMB) Competency status. While we're thrilled about adding another badge to our collection, we're even more excited about what this means for businesses like yours.",
-    link: "aws-smb-competency-badge-africa",
+    link: "cloudplexo-achieves-aws-smb-competency-badge",
     date: "8 November 2024",
   },
   {

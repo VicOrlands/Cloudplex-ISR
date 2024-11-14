@@ -18,7 +18,7 @@ export default function BlogFiftyNine() {
                 <li>Share</li>
                 <li>
                     <Link
-                        href="https://www.facebook.com/sharer/sharer.php?u=https://wendu.io/aws-smb-competency-badge-africa"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://wendu.io/cloudplexo-achieves-aws-smb-competency-badge"
                         target="blank"
                     >
                         <FeatherIcon
@@ -28,7 +28,7 @@ export default function BlogFiftyNine() {
                 </li>
                 <li>
                     <Link
-                        href="https://twitter.com/intent/tweet?url=https://wendu.io/aws-smb-competency-badge-africa"
+                        href="https://twitter.com/intent/tweet?url=https://wendu.io/cloudplexo-achieves-aws-smb-competency-badge"
                         target="blank"
                     >
                         <FeatherIcon
@@ -38,7 +38,7 @@ export default function BlogFiftyNine() {
                 </li>
                 <li>
                     <Link
-                        href="https://www.linkedin.com/shareArticle?mini=true&url=https://wendu.io/aws-smb-competency-badge-africa"
+                        href="https://www.linkedin.com/shareArticle?mini=true&url=https://wendu.io/cloudplexo-achieves-aws-smb-competency-badge"
                         target="blank"
                     >
                         <FeatherIcon
@@ -48,7 +48,7 @@ export default function BlogFiftyNine() {
             </ul>
 
             <div className={styles["main-content"]}>
-                <h1>CloudPlexo Achieves AWS SMB Competency: Leading AWS Partner in Africa</h1>
+                <h1>CloudPlexo Achieves AWS SMB Competency Badge: Leading AWS Partner</h1>
                 <br />
 
                 <Image

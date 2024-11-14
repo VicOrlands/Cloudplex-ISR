@@ -60,6 +60,7 @@ import BlogFiftySix from "./blogFiftySix";
 import BlogFiftySeven from "./blogFiftySeven";
 import BlogFiftyEight from "./blogFiftyEight";
 import BlogFiftyNine from "./blogFiftyNine";
+import BlogSixty from "./blogSixty";
 
 type BlogProps = {
   params: {
@@ -98,8 +99,12 @@ export async function generateMetadata({
 
 const paths = [
   {
+    comp: <BlogSixty />,
+    url: "building-a-robust-generative-ai-infrastructure-on-aws",
+  },
+  {
     comp: <BlogFiftyNine />,
-    url: "aws-smb-competency-badge-africa",
+    url: "cloudplexo-achieves-aws-smb-competency-badge",
   },
   {
     comp: <BlogFiftyEight />,
