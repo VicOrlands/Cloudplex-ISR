@@ -7,8 +7,27 @@ import { blogs } from "./array";
 import Pagination from "@/components/pagination/pagination";
 import CTAForm from "@/components/callToAction/cta";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
+import { useEffect, useState } from "react";
 
 const Blogpage: React.FC = () => {
+    const [blogList, setBlogList] = useState([])
+
+
+    useEffect(() => {
+        function getBlogs() {
+            const url = "https://ocph6cngftcvzbx7tkln4shgxq0mrxwf.lambda-url.us-east-1.on.aws/";
+            fetch(url)
+                .then(response => response.json())
+                .then(data => setBlogList(data.data))
+                .catch(error => console.error(error.message))
+        }
+        getBlogs()
+
+        return () => getBlogs()
+    }, [])
+
+    const tempBlog = [blogList, ...blogs]
+
     return (
         <>
             <LazyBackgroundImage src={BgImg} className={styles.blogHeroBg}>

@@ -47,7 +47,7 @@ interface ImageData {
 }
 
 const images: ImageData[] = [
-  { src: img1, height: 50, width: 228 },
+  { src: img9, height: 50, width: 82 },
   { src: img2, height: 50, width: 128 },
   { src: img3, height: 50, width: 37 },
   { src: img4, height: 50, width: 71 },
@@ -56,7 +56,6 @@ const images: ImageData[] = [
   { src: img7, height: 50, width: 118 },
   { src: img33, height: 50, width: 319 },
   { src: img8, height: 50, width: 50 },
-  { src: img9, height: 50, width: 82 },
   { src: img10, height: 50, width: 172 },
   { src: img11, height: 50, width: 75 },
   { src: img12, height: 50, width: 95 },
@@ -64,6 +63,7 @@ const images: ImageData[] = [
   { src: img14, height: 50, width: 94 },
   { src: img15, height: 50, width: 233 },
   { src: img17, height: 50, width: 135 },
+  { src: img1, height: 50, width: 228 },
   { src: img18, height: 50, width: 143 },
   { src: img19, height: 50, width: 103 },
 ];
