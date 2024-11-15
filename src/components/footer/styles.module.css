@@ -130,6 +130,11 @@
 /* mobile */
 @media screen and (max-width: 767px) {
 
+    .footer-parent {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
     /* footer newsletter */
     .newsletter {
         grid-template-columns: 100%;
@@ -161,7 +166,7 @@
 
     /* footer main */
     .footer-main {
-        padding: 40px 20px;
+        padding: 40px 0;
         grid-template-areas: 'header';
         gap: 50px;
         display: flex;

@@ -18,7 +18,7 @@ type StateProps = {
 }
 
 const generateCalendlyUrl = (formData: StateProps): string => {
-  const baseUrl = 'https://calendly.com/chimezie-cloudplexo/30min';
+  const baseUrl = 'https://calendly.com/cloudplexo/30min';
 
   const formatDate = (dateString: string): { datetime: string; month: string; date: string } => {
     if (!dateString) return { datetime: '', month: '', date: '' };
