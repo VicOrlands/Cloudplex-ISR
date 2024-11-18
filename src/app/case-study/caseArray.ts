@@ -69,13 +69,6 @@ const casestudy: CaseProps[] = [
         link: "rearchitecting-mybalance-infrastructure-for-cost-efficiency-and-downtime-mitigation",
         tag: "Financial Services"
     },
-    // {
-    //     image: img31,
-    //     title: "Case Study: Empowering Climate Decision-Making with AWS IoT for Climdes",
-    //     desc: `The Climate-Smart Decision Support Systems (Climdes) Research Group is a leader in using technology and climate science to support sustainable decision-making. They focus on creating accessible, data-driven tools that help communities and organizations make informed choices to adapt to climate variability, ensuring resilience and equity in climate solutions.`,
-    //     link: "empowering-climate-decision-making-with-aws-iot-for-climdes",
-    //     tag: "Technology"
-    // },
     {
         image: img30,
         title: "Case Study: Consode’s Strategic ERP Migration to AWS for Enhanced Scalability and Availability",

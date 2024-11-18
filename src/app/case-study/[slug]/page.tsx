@@ -28,7 +28,6 @@ import Silicon from './Silicon';
 import Staycon from './Staycon';
 import Suba from './Suba';
 import Varscon from './Varscon';
-import Climdes from "./Climdes";
 import Consodes from "./Consode";
 import Bitbarter from "./BitBarter";
 import MyBalance from "./Mybalance";
@@ -53,10 +52,6 @@ const paths = [
     {
         comp: <MyBalance />,
         url: "rearchitecting-mybalance-infrastructure-for-cost-efficiency-and-downtime-mitigation"
-    },
-    {
-        comp: <Climdes />,
-        url: "empowering-climate-decision-making-with-aws-iot-for-climdes",
     },
     {
         comp: <Consodes />,

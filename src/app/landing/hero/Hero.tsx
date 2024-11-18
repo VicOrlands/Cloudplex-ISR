@@ -1,4 +1,4 @@
- import Link from "next/link";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "./hero.module.css";
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -14,7 +14,7 @@ const HeroSection = () => {
         <Link href="/events">
           <h4>
             <span>Latest News</span>
-            Founders’ Mixer
+            Executive Cloud Workshop
             <IoIosArrowRoundForward
               size={20}
               color="#3E54AC"
