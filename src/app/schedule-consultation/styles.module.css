@@ -1,231 +1,42 @@
+
 .container,
 .calendlyContainer {
-  display: grid;
-  font-family: var(--font-inter);
-  grid-template-columns: 1fr 1fr;
-  margin-top: 8vh;
-}
-
-.container {
-  min-height: 90vh;
-}
-
-.calendlyContainer {
-  min-height: 120vh;
-}
-
-.formSection {
   display: flex;
+  justify-content: center;
   align-items: center;
-  position: relative;
+  flex-direction: column;
+  gap: 10px;
+  height: 150dvh;
+  margin: 0;
+  padding:30px;
 }
 
-.formWrapper {
-  width: 62%;
-  max-width: 700px;
-  margin: 0 auto;
-}
+.header{
+  margin:70px 0px 50px 0px;
+  font-size:3rem;
+  font-family: var(--font-inter);
 
-.title {
-  color: #181D27;
-  font-size: 3.6rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
+
 }
 
 .calendly {
-  border: 1px solid #D5D7DA;
-  height: 100vh;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.inputGroup {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.inputGroup label {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #414651;
-}
-
-.inputGroup label::after {
-  content: " *";
-  color: #ff4444;
-}
-
-.inputGroup input {
-  border: 1px solid #D5D7DA;
-  border-radius: 8px;
-  color: #717680;
-  font-size: 1.6rem;
-  padding: 1rem 1.4rem;
   width: 100%;
+  height: 100%;
 }
 
-.inputGroup input:focus {
-  outline: none;
-  border-color: #181D27;
-  box-shadow: 0 0 0 2px rgba(64, 82, 255, 0.1);
-}
-
-.dateTimeWrapper {
-  display: flex;
-  gap: 8px;
-}
-
-.dateInput,
-.timeInput {
-  padding: 10px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1.4rem;
-  width: 30%;
-}
-
-.dateInput {
-  flex: 3;
-}
-
-.timeInput {
-  flex: 2;
-}
-
-.textarea {
+.calendly iframe {
   width: 100%;
-  min-height: 100px;
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  resize: vertical;
-  font-family: inherit;
-  font-size: 1.6rem;
-}
-
-.textarea:focus {
-  outline: none;
-  border-color: #0066cc;
-  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
-}
-
-.rowGroup {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.submitButton {
-  background: #3E54AC;
+  height: 100%;
   border: none;
-  border-radius: 8px;
-  color: white;
-  font-size: 1.6rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s;
-  margin-top: 1rem;
-  padding: 1.2rem;
 }
 
-.submitButton:hover {
-  background: #384ea7;
-  transform: translateY(-1px);
-}
 
-.submitButton:active {
-  transform: translateY(0);
-}
 
-.heroSection {
-  background-color: rgba(0, 0, 0, 0.301);
-  background-blend-mode: darken;
-  background-size: cover;
-  background-position: top;
-  display: flex;
-  align-items: flex-end;
-  padding: 2rem;
-  color: white;
-}
-
-.heroContent {
-  max-width: 80%;
-  color: white;
-  padding: 4rem;
-}
-
-.heroContent h2 {
-  font-size: 6rem;
-  font-weight: 600;
-  margin: 1rem 0;
-}
-
-.heroContent p {
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 2.8rem;
-}
-
-.footer {
-  color: #535862;
-  font-size: 1.4rem;
-  font-weight: 400;
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  bottom: 20px;
-  right: 40px;
-  left: 40px;
-}
-
-.footer p {
-  display: flex;
-  align-items: center;
-}
-
-.submitButton:disabled {
-  background-color: #cccccc;
-  cursor: not-allowed;
-  transform: none;
-}
-
+/* Mobile Styles */
 @media (max-width: 768px) {
 
-  .container,
-  .calendlyContainer {
-    grid-template-columns: 1fr;
-    height: 100%;
-  }
+.header{
+  font-size:2rem;
 
-  .formWrapper {
-    width: 90%;
-    max-width: 90%;
-    padding-top: 40px;
-  }
-
-  .title {
-    font-size: 2.4rem;
-  }
-
-  .textarea,
-  .inputGroup input,
-  .submitButton {
-    font-size: 1.4rem;
-  }
-
-  .footer {
-    position: inherit;
-    margin-top: 30px;
-  }
-
-  .heroSection {
-    display: none;
-  }
+}
 }
