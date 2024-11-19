@@ -29,7 +29,6 @@ import img27 from "@/assets/casestudies/staycon.webp"
 import img28 from "@/assets/casestudies/suba.webp"
 import img29 from "@/assets/casestudies/varscon.webp"
 import img30 from "@/assets/casestudies/consode.webp"
-import img31 from "@/assets/casestudies/climdes.webp"
 import img32 from "@/assets/casestudies/mybalance.webp"
 import img33 from "@/assets/casestudies/bitbarter.webp"
 

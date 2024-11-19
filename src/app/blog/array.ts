@@ -67,6 +67,17 @@ export interface BlogsProps {
   date?: string;
 }
 
+function generateSlug(title: string) {
+  return title
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w\-]+/g, "")
+    .replace(/--+/g, "-")
+    .replace(/^-+/, "")
+    .replace(/-+$/, "");
+}
+
 export const blogs: BlogsProps[] = [
   {
     image: blog60,

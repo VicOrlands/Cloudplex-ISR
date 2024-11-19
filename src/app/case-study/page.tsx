@@ -260,7 +260,7 @@ const CaseList: React.FC = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div>``
         </section>
     );
 }
