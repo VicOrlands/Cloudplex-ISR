@@ -39,9 +39,21 @@ type PageProps = {
 };
 
 export async function generateStaticParams() {
-    return casestudy.map(({ link }) => ({
-        slug: link || "404"
-    }));
+    return [
+        ...paths.map(({ url }) => ({ slug: url })),
+        { slug: "empowering-climate-decision-making-with-aws-iot-for-climdes" }
+    ];
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { slug } = params;
+
+    return {
+        title: `${slug.charAt(0).toUpperCase() + slug.slice(1).replaceAll("-", " ")} - CloudPlexo's Expert Solutions`,
+        alternates: {
+            canonical: `https://cloudplexo.com/case-study/${slug}`,
+        },
+    };
 }
 
 const paths = [
@@ -157,7 +169,6 @@ const paths = [
         comp: <Staycon />,
         url: "staycon-case-study"
     },
-
     {
         comp: <Suba />,
         url: "suba-case-study"
@@ -168,22 +179,14 @@ const paths = [
     },
 ];
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-    const { slug } = params;
-
-    return {
-        title: `${slug.charAt(0).toUpperCase() + slug.slice(1).replaceAll("-", " ")} - CloudPlexo's Expert Solutions`,
-        alternates: {
-            canonical: `https://cloudplexo.com/case-study/${slug}`,
-        },
-    };
-}
-
 const CaseStudyPage = ({ params }: { params: { slug: string } }) => {
     const { slug } = params
+
     const path = paths.find(({ url }) => url === slug);
 
-    if (!path) notFound()
+    if (!path) {
+        notFound()
+    }
 
     return path.comp
 };

@@ -59,7 +59,7 @@ const casestudy: CaseProps[] = [
         title: "From Monolith to Microservices: BitBarter’s Journey to a Scalable Cloud Architecture",
         desc: `BitBarter is a digital service provider that connects users through a cryptocurrency-based barter system, allowing individuals and businesses to trade goods and services using digital assets. Through a dynamic digital asset marketplace, BitBarter bridges the gap between cryptocurrencies, fiat currencies, and digital assets, providing a seamless payment infrastructure across Africa and Asia.`,
         link: "from-monolith-to-microservives-bitbarters-journey-to-a-scalable-cloud-architecture",
-        tag: "Financial Services"
+        tag: "Financial Services",
     },
     {
         image: img32,
