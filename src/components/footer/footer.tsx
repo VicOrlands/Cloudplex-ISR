@@ -133,7 +133,7 @@ const Footer = () => {
                                 <b>Abuja:</b> First Floor, Nigerian Merit Award House, 22 Aguyi Ironsi Street, Maitama.
                             </p>
                             <p>
-                                <b>Kenya:</b> Kenyatta Avenue ICEA Building, 17th floor, Kenyatta Avenue, P.O BOX 15168-00400, Nairobi.
+                                <b>Kenya:</b> Dennis Pritt Road, Next to Maalim Juma Road, Kilimani, Nairobi.
                             </p>
                         </div>
                         <div className={styles["footer-main-social-links"]}>

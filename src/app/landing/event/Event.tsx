@@ -16,6 +16,7 @@ function Event() {
   const { ref, inView, entry } = useInView({
     triggerOnce: true,
     threshold: 0.1,
+    delay: 2000
   });
 
   const [currentEventIndex, setCurrentEventIndex] = useState<number>(0);
@@ -43,7 +44,7 @@ function Event() {
     speed: 500,
     arrows: false,
     infinite: true,
-    autoplay: true,
+    // autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplaySpeed: 4000,
