@@ -31,6 +31,7 @@ import img29 from "@/assets/casestudies/varscon.webp"
 import img30 from "@/assets/casestudies/consode.webp"
 import img32 from "@/assets/casestudies/mybalance.webp"
 import img33 from "@/assets/casestudies/bitbarter.webp"
+import img34 from "@/assets/casestudies/ibile.png"
 
 export interface CaseProps {
     image: StaticImageData,
@@ -55,10 +56,10 @@ const caseTags: string[] = [
 
 const casestudy: CaseProps[] = [
     {
-        image: img33,
-        title: "From Monolith to Microservices: BitBarter’s Journey to a Scalable Cloud Architecture",
-        desc: `BitBarter is a digital service provider that connects users through a cryptocurrency-based barter system, allowing individuals and businesses to trade goods and services using digital assets. Through a dynamic digital asset marketplace, BitBarter bridges the gap between cryptocurrencies, fiat currencies, and digital assets, providing a seamless payment infrastructure across Africa and Asia.`,
-        link: "from-monolith-to-microservives-bitbarters-journey-to-a-scalable-cloud-architecture",
+        image: img34,
+        title: "IBILE MFB Case Study",
+        desc: `In the financial sector, building secure, scalable, and resilient infrastructure is crucial. Financial institutions are tasked with the responsibilities of protecting sensitive data, ensuring regulatory compliance, and delivering a seamless experience to customers and as the industry increasingly adopts cloud-based solutions to meet these needs, selecting the right infrastructure becomes vital for optimising performance, controlling costs, and supporting long-term growth.`,
+        link: "ibile-mfb-case-study",
         tag: "Financial Services",
     },
     {

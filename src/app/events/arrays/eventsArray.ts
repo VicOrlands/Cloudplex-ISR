@@ -16,8 +16,10 @@ import OwerriEvent from "@/assets/events/owerri_founders_mixer.webp";
 import CommunityDay from "@/assets/events/community-day/thumbnail.webp";
 import digitalThumbnail from "@/assets/events/transcorp/videothumbnail.webp";
 import AricaArena from "@/assets/events/africArena/cover.webp";
-import Workshop from "@/assets/events/executive cloud workshop.webp";
+import PenOpsEvent from "@/assets/events/executive cloud workshop.webp";
 import techSMEThumbnail from "@/assets/events/techSME/video_thumbnail.webp";
+import AfricStartupThumbnail from "@/assets/events/AfricaStartup/cover.jpeg"
+import Symposium from "@/assets/events/Symposium.png"
 
 import {
   accraImages,
@@ -30,8 +32,10 @@ import {
   immersionDaymages,
   kigaliImages,
   nairobiImages,
+  penOpsImages,
   techSafariImages,
   techSMEImages,
+  africaStartupImages
 } from "./imagesArray";
 
 export interface EventsProps {
@@ -39,7 +43,7 @@ export interface EventsProps {
   title: string;
   text: string;
   link: string;
-  date: string;
+  date?: string;
   linkText: string;
   eventLocation?: string;
   eventDescription: string | TrustedHTML;
@@ -52,14 +56,38 @@ export interface EventsProps {
 
 export const EventsArray: EventsProps[] = [
   {
-    img: Workshop,
-    title: "Executive Cloud Workshop",
-    text: `Drive efficiency & innovation in the pension industry.`,
-    link: "http://bit.ly/penops124",
-    date: "12th November 2024 PARK INN by RADISSON VI, LAGOS",
+    img: Symposium,
+    title: "CIO100 Symposium and Awards",
+    text: `Innovation at Scale: Driving Business Growth Through IT Leadership.`,
+    link: "https://tickets.cioafrica.co/events/cio100-symposium-and-awards",
     linkText: "Register",
     eventImages: [],
     eventDescription: "",
+  },
+  {
+    img: AfricStartupThumbnail,
+    title: "Africa Startup Festival",
+    text: `A buzzing hive of innovation, the festival was filled with passionate entrepreneurs, tech wizards, and industry leaders. It was inspiring to witness and support the incredible talent and groundbreaking ideas shaping the future of Africa`,
+    link: "africa-startup-festival",
+    date: "12th November, 2024",
+    linkText: "View info",
+    eventDescription: `The energy was electric at the Africa Startup Festival in Lagos! ⚡<br /><br />A buzzing hive of innovation, the festival was filled with passionate entrepreneurs, tech wizards, and industry leaders. It was inspiring to witness and support the incredible talent and groundbreaking ideas shaping the future of Africa.<br /><br />We were thrilled to be a part of this vibrant community as a sponsor, showcasing how CloudPlexo, powered by Amazon Web Services (AWS), can accelerate business growth through Cloud Technology.<br /><br />Check out this video to relive the highlights and see how CloudPlexo made a significant impact at the festival.`,
+    about: `The Africa Startup Festival in Lagos was a dynamic gathering of entrepreneurs, tech experts, and industry leaders, celebrating innovation and groundbreaking ideas shaping Africa’s future. As a sponsor, CloudPlexo, powered by AWS, showcased its ability to drive business growth through cloud technology, making a notable impact at the event. Watch the highlights in this video to see the energy and excitement of the festival.`,
+    eventImages: africaStartupImages,
+  },
+  {
+    img: PenOpsEvent,
+    title: "PenOps Executive Workshop",
+    text: `Drive efficiency & innovation in the pension industry.`,
+    link: "penops-executive-workshop",
+    date: "12th November, 2024",
+    linkText: "View info",
+    eventLocation: "Park Inn by Radisson VI, Lagos",
+    eventDescription: `The PenOps Executive Cloud Workshop brought together pension industry leaders, technology experts, and innovators to discuss the role of cloud technology in transforming pension operations. The workshop served as a platform to explore modern challenges faced by pension operators and to demonstrate how cloud solutions can streamline processes, enhance data security, and improve operational efficiency. The event featured thought-provoking presentations, live demonstrations of cutting-edge tools, and collaborative discussions aimed at fostering a future-ready pension ecosystem.`,
+    about: `The workshop was an incredible success, fostering meaningful dialogue and offering valuable insights into the digital transformation of pension operations. Attendees actively engaged in sessions, sharing their unique perspectives and experiences. The hands-on demonstrations received enthusiastic responses, with many participants expressing excitement about integrating cloud-based solutions into their operations. The event strengthened industry connections and underscored the growing commitment to adopting innovative technologies to ensure secure, efficient, and customer-centric pension management.`,
+    eventImages: penOpsImages,
+    // videoThumbnail: techSMEThumbnail,
+    // videoLink: "https://cloudplexo.com/SMFEST-Founders-Mixer.mp4", // there's a video but will upload to S3 first
   },
   {
     img: OwerriEvent,

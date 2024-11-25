@@ -14,7 +14,7 @@ const HeroSection = () => {
         <Link href="/events">
           <h4>
             <span>Latest News</span>
-            Executive Cloud Workshop
+            CIO100 Symposium and Awards
             <IoIosArrowRoundForward
               size={20}
               color="#3E54AC"

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from 'next/navigation';
-import { casestudy } from '../caseArray';
 import Mkobo from "./Mkobo"
 import Alarrt from './Alarrt';
 import Phastpay from "./Phastpay"
@@ -31,6 +30,7 @@ import Varscon from './Varscon';
 import Consodes from "./Consode";
 import Bitbarter from "./BitBarter";
 import MyBalance from "./Mybalance";
+import Ibile from "./Ibile";
 
 type PageProps = {
     params: {
@@ -57,6 +57,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 const paths = [
+    {
+        comp: <Ibile />,
+        url: "ibile-mfb-case-study"
+    },
     {
         comp: <Bitbarter />,
         url: "from-monolith-to-microservives-bitbarters-journey-to-a-scalable-cloud-architecture"

@@ -115,12 +115,12 @@ export const testimonials: {
         },
         {
             content:
-                "CloudPlexo is a tool both finance and developers can use. Having all our cloud environments managed in one consolidated, easy-to-use platform has helped us significantly reduce our AWS bill.",
-            by: "Cloud Solutions Manager, Inttix",
+                "The service was a great one both the support and technical teams are awesome. There was proper communication and technical knowhow so the process was seamless and I will definitely tell others about it.",
+            by: "Moshood Mustapha, Locatemeee",
         },
         {
             content:
-                "CloudPlexo is a tool both finance and developers can use. Having all our cloud environments managed in one consolidated, easy-to-use platform has helped us significantly reduce our AWS bill.",
-            by: "CEO, Sentaloe",
+                "The CloudPlexo team is very professional and supportive. They provided sound technical solutions to my challenges",
+            by: "Maro Agobe, Udo Udoma & Belo-Osagie",
         },
     ];

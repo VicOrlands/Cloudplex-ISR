@@ -115,6 +115,46 @@ import techSME from "@/assets/events/techSME/cover.webp"
 import techSME2 from "@/assets/events/techSME/image1.webp"
 import techSME3 from "@/assets/events/techSME/image2.webp"
 
+import PenOps from "@/assets/events/penOps/cover.jpeg"
+import PenOps1 from "@/assets/events/penOps/image.jpeg"
+import PenOps2 from "@/assets/events/penOps/image1.jpeg"
+import PenOps3 from "@/assets/events/penOps/image2.jpeg"
+import PenOps4 from "@/assets/events/penOps/image3.jpeg"
+import PenOps5 from "@/assets/events/penOps/image4.jpeg"
+
+import africaStartup from "@/assets/events/AfricaStartup/cover.jpeg"
+import africaStartup1 from "@/assets/events/AfricaStartup/img1.jpeg"
+import africaStartup2 from "@/assets/events/AfricaStartup/img2.jpeg"
+import africaStartup3 from "@/assets/events/AfricaStartup/img3.jpeg"
+import africaStartup4 from "@/assets/events/AfricaStartup/img4.jpeg"
+import africaStartup5 from "@/assets/events/AfricaStartup/img5.jpeg"
+import africaStartup6 from "@/assets/events/AfricaStartup/img6.jpeg"
+import africaStartup7 from "@/assets/events/AfricaStartup/img7.jpeg"
+import africaStartup8 from "@/assets/events/AfricaStartup/img8.jpeg"
+import africaStartup9 from "@/assets/events/AfricaStartup/img9.jpeg"
+
+export const africaStartupImages: StaticImageData[] = [
+  africaStartup,
+  africaStartup1,
+  africaStartup2,
+  africaStartup3,
+  africaStartup4,
+  africaStartup5,
+  africaStartup6,
+  africaStartup7,
+  africaStartup8,
+  africaStartup9,
+]
+
+export const penOpsImages: StaticImageData[] = [
+  PenOps,
+  PenOps2,
+  PenOps1,
+  PenOps3,
+  PenOps4,
+  PenOps5,
+]
+
 export const techSMEImages: StaticImageData[] = [
   techSME,
   techSME3,

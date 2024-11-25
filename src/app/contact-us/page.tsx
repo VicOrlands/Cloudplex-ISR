@@ -189,6 +189,9 @@ const Contact = () => {
           Nigeria: <span>+234 901 226 2543, +234 707 049 4845</span>
         </h3>
         <h3>
+          Kenya: <span>+254 100 204 176</span>
+        </h3>
+        <h3>
           You can reach us anytime via <span>contact@cloudplexo.com</span>
         </h3>
       </div>

@@ -7,7 +7,7 @@ import dynamic from 'next/dynamic';
 import styles from "./events.module.css";
 import { eventSuccessArray } from "./array";
 import { useInView } from "react-intersection-observer";
-import { MdArrowForward, MdArrowBack } from "react-icons/md";
+// import { MdArrowForward, MdArrowBack } from "react-icons/md";
 import { EventsArray } from "@/app/events/arrays/eventsArray";
 
 const Slider = dynamic(() => import('react-slick'), { ssr: false });
@@ -16,24 +16,29 @@ function Event() {
   const { ref, inView, entry } = useInView({
     triggerOnce: true,
     threshold: 0.1,
-    delay: 2000
   });
 
-  const [currentEventIndex, setCurrentEventIndex] = useState<number>(0);
+  // const [currentEventIndex, setCurrentEventIndex] = useState<number>(0);
   const [currentSlideIndex, setCurrentSlideIndex] = useState<number>(0);
-  const currentEvent = eventSuccessArray[currentEventIndex];
+  // const currentEvent = eventSuccessArray[currentEventIndex];
 
-  const handleNextEvent = () => {
-    setCurrentEventIndex((prevIndex) =>
-      prevIndex === eventSuccessArray.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  // const handleNextEvent = () => {
+  //   setCurrentEventIndex((prevIndex) =>
+  //     prevIndex === eventSuccessArray.length - 1 ? 0 : prevIndex + 1
+  //   );
+  // };
 
-  const handlePreviousEvent = () => {
-    setCurrentEventIndex((prevIndex) =>
-      prevIndex === 0 ? eventSuccessArray.length - 1 : prevIndex - 1
-    );
-  };
+  // const handlePreviousEvent = () => {
+  //   setCurrentEventIndex((prevIndex) =>
+  //     prevIndex === 0 ? eventSuccessArray.length - 1 : prevIndex - 1
+  //   );
+  // };
+
+  let randomId: number;
+  const randomImages = eventSuccessArray.map(item => {
+    randomId = Math.floor(Math.random() * item.images.length)
+    return item.images[randomId]
+  });
 
   const upcomingEvents = EventsArray.filter(
     (event) => event.linkText === "Register"
@@ -44,7 +49,7 @@ function Event() {
     speed: 500,
     arrows: false,
     infinite: true,
-    // autoplay: true,
+    autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplaySpeed: 4000,
@@ -111,28 +116,31 @@ function Event() {
             <div className={styles["slider-container"]}>
               <div className={styles["slider"]}>
                 <Slider {...settings}>
-                  {currentEvent.images.map((image, index) => (
-                    <div key={index}>
+                  {randomImages.map((image, index) => (
+                    <div key={image.src}>
                       <Image
                         loading="lazy"
-                        src={image}
-                        alt={`Event Image ${index + 1}`}
+                        src={image.src}
                         priority={false}
+                        alt="Event Image"
                         placeholder="blur"
+                        width={image.width}
+                        height={image.height}
+                        blurDataURL={image.blurDataURL}
                       />
-                      {currentEvent.imgHeader || currentEvent.imgText ? (
+                      {eventSuccessArray[randomId].imgHeader || eventSuccessArray[randomId].imgText ? (
                         <div className={styles["sliderText"]}>
                           <div
                             className={
-                              currentEvent.imgHeader
+                              eventSuccessArray[randomId].imgHeader
                                 ? styles.textContent
                                 : styles.textContentWithoutHeader
                             }
                           >
-                            {currentEvent.imgHeader && (
+                            {eventSuccessArray[randomId].imgHeader && (
                               <h3>Business Day Event</h3>
                             )}
-                            <p>{currentEvent.imgText}</p>
+                            <p>{eventSuccessArray[randomId].imgText}</p>
                           </div>
                         </div>
                       ) : null}
@@ -140,7 +148,7 @@ function Event() {
                   ))}
                 </Slider>
               </div>
-              <section className={styles.btngroup}>
+              {/* <section className={styles.btngroup}>
                 <button
                   type="button"
                   aria-label="Arrow pointing left"
@@ -155,7 +163,7 @@ function Event() {
                 >
                   <MdArrowForward />
                 </button>
-              </section>
+              </section> */}
             </div>
           </section>
         </div>
