@@ -170,42 +170,9 @@
     margin-bottom: 30px;
 }
 
-/* tablet */
-@media (min-width: 769px) and (max-width: 1555px) {
-    .solutions .hero {
-        padding: 100px 150px 30px 150px;
-    }
-
-    .solutions .hero p {
-        font-size: 2rem;
-    }
-
-    .solutions .hero .hero-button .btn {
-        width: 40%;
-    }
-
-    .solutions .hero .hero-button .btn2 {
-        width: 40%;
-    }
-
-    .solutions .hero img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* solutions-list */
-    .solutions-list {
-        padding: 30px 150px;
-    }
-
-    /* why-choose-us */
-    .why-choose-us {
-        padding: 50px 150px;
-    }
-}
 
 /* mobile */
-@media (max-width: 769px) {
+@media (max-width: 1024px) {
 
     .solutions .hero {
         margin-top: 8vh;
