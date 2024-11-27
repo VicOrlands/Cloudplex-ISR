@@ -3,8 +3,8 @@
 }
 
 .solutions .hero {
-    padding: 100px 300px 30px 300px;
-    height: 60vh;
+    padding: 100px 100px 30px 100px;
+    height: 111%;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
@@ -100,7 +100,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    padding: 50px 300px;
+    padding: 50px 100px;
 }
 
 .why-choose-us img {
@@ -205,7 +205,7 @@
 }
 
 /* mobile */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 
     .solutions .hero {
         margin-top: 8vh;
