@@ -191,6 +191,7 @@ const EventsDetails: React.FC<PageProps> = ({ event }) => {
 
       {state.open && (
         <Modal
+          title={event.title}
           currentImg={state.id}
           selectImg={handleOpenModal}
           close={closeModal}

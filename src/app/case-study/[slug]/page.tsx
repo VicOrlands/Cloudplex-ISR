@@ -57,6 +57,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 const paths = [
+//     {
+// url: "suba-capital-case-study",
+// comp: <Suba
+//     },
     {
         comp: <Ibile />,
         url: "ibile-mfb-case-study"

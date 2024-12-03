@@ -55,6 +55,20 @@ const caseTags: string[] = [
 ]
 
 const casestudy: CaseProps[] = [
+    // {
+    //     image: img34,
+    //     title: "SUBA Capital Case Study",
+    //     desc: `SUBA Capital is a financial services provider dedicated to delivering personalized savings, investment, and loan solutions to customers in Nigeria and the UK. Focused on making wealth management both accessible and cost-effective, SUBA Capital aims to ensure financial growth and security for its clients.`,
+    //     link: "suba-capital-case-study",
+    //     tag: "Financial Services",
+    // },
+    {
+        image: img28,
+        title: "Suba Capital’s Transformation with AWS",
+        desc: "Suba Capital was on a mission to modernize its wealth management application by moving from a monolithic structure to a flexible, scalable microservices architecture using AWS. This initiative focuses on leveraging Amazon ECS (Elastic Container Service) to manage containers efficiently, ensuring the application is agile, maintainable, and ready for future growth.",
+        link: "suba-case-study",
+        tag: "Financial Services"
+    },
     {
         image: img34,
         title: "IBILE MFB Case Study",
@@ -216,13 +230,6 @@ const casestudy: CaseProps[] = [
         desc: "Staycon transitioned its telecoms product to Amazon Web Services (AWS) to improve availability, reliability, and flexibility. This project supports their nationwide growth goals by leveraging AWS’s powerful services. CloudPlexo expertly managed the entire migration process, ensuring a smooth and efficient transition.",
         link: "staycon-case-study",
         tag: "Telecommunications"
-    },
-    {
-        image: img28,
-        title: "Suba Capital’s Transformation with AWS",
-        desc: "Suba Capital was on a mission to modernize its wealth management application by moving from a monolithic structure to a flexible, scalable microservices architecture using AWS. This initiative focuses on leveraging Amazon ECS (Elastic Container Service) to manage containers efficiently, ensuring the application is agile, maintainable, and ready for future growth.",
-        link: "suba-case-study",
-        tag: ""
     },
     {
         image: img29,

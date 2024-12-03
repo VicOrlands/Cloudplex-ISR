@@ -8,6 +8,7 @@ import Image, { StaticImageData } from "next/image";
 import clsx from "clsx";
 
 type EventsProps = {
+  title: string;
   currentImg: number;
   close: () => void;
   selectImg: (id: number) => void;
@@ -15,6 +16,7 @@ type EventsProps = {
 };
 
 export default function Modal({
+  title,
   currentImg,
   selectImg,
   close,
@@ -61,7 +63,7 @@ export default function Modal({
           <GrFormClose size={24} color="#475467" />
           <h4>Close</h4>
         </div>
-        <h2>Unlocking Digital Transformation in Nigeria's Public Sector </h2>
+        <h2>{title}</h2>
 
         <section className={styles["img"]}>
           <Image
@@ -82,9 +84,9 @@ export default function Modal({
             className={
               imgArray.length <= 5
                 ? clsx(
-                    styles["image-scroll-container"],
-                    styles["flex-center"]
-                  )
+                  styles["image-scroll-container"],
+                  styles["flex-center"]
+                )
                 : styles["image-scroll-container"]
             }
           >
