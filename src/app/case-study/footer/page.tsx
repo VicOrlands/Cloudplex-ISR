@@ -10,7 +10,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 export default function Footer() {
     const pathname = usePathname()
     const url = `${pathname}`
-    const filteredCaseStudies = casestudy.filter((item) => `/case-study/${item.link}/` !== url);
+    const filteredCaseStudies = casestudy.filter((item) => `/case-study/${item.slug}/` !== url);
 
     return (
         <div className={styles["casefooter"]}>
@@ -28,28 +28,28 @@ export default function Footer() {
 
             <div className={styles["casefooter-list"]}>
                 {filteredCaseStudies.slice(0, 4).map((cases) => (
-                    <div className={styles["casefooter-list-item"]} key={cases.link}>
+                    <div className={styles["casefooter-list-item"]} key={cases.slug}>
                         <div className={styles["casefooter-img"]}>
                             <Image
-                                src={cases.image}
+                                src={cases.thumbnail}
                                 alt="Cloud Billing Solutions: Case Studies in Cost Optimization and Savings"
                             />
                         </div>
 
                         <div className={styles["content-title"]}>
                             <h5>
-                                <Link href={`/case-study/${cases.link}`}
+                                <Link href={`/case-study/${cases.slug}`}
                                 >
                                     {cases.title}
                                 </Link>
                             </h5>
 
-                            <Link href={`/case-study/${cases.link}`} className={styles["link"]}>
+                            <Link href={`/case-study/${cases.slug}`} className={styles["link"]}>
                                 <BsArrowUpRight />
                             </Link>
                         </div>
 
-                        <p className={styles["casefooter-description"]}>{cases.desc}</p>
+                        <p className={styles["casefooter-description"]}>{cases.description}</p>
                     </div>
                 ))}
             </div>

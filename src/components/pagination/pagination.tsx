@@ -1,13 +1,26 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import styles from "./styles.module.css";
-import { BlogsProps } from "@/app/blog/array";
 import { BsArrowUpRight } from "react-icons/bs";
 import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
+import { extractFirstParagraph, formatDate } from "@/lib/utils"
+
+interface Blog {
+    thumbnail: string;
+    title: string;
+    slug: string;
+    date: string;
+    author: string;
+    content: string;
+    key: string;
+    desc?: string;
+}
 
 interface PaginationProps {
-    data: BlogsProps[];
+    data: Blog[];
     pageLimit: number;
     dataLimit: number;
 }
@@ -47,27 +60,33 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
     return (
         <section className={styles["courses-container"]}>
             <div className={styles.blogCatalog}>
-                {getPaginatedData().map((blog, index) => (
-                    <article key={index} className={styles.blogCard}
+                {getPaginatedData().map((blog) => (
+                    <article key={blog.slug} className={styles.blogCard}
                     >
                         <div className={styles.imgContainer}>
-                            <Link href={`/blog/${blog.link}`}>
+                            <Link href={`/blog/${blog.slug}`}>
                                 <Image
-                                    src={blog.image}
+                                    priority
+                                    src={blog.thumbnail}
                                     alt={blog.title}
+                                    width={300}
+                                    height={300}
                                 />
                             </Link>
                         </div>
 
                         <div className={styles.content}>
-                            <h6>{blog.date ? blog.date : "2022 / 2024"}</h6>
-                            <Link href={`/blog/${blog.link}`}>
+                            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                {blog.author && <h6>By {blog.author}</h6>}
+                                <h6>{formatDate(blog.date) || "2022 / 2024"}</h6>
+                            </div>
+                            <Link href={`/blog/${blog.slug}`}>
                                 <div className={styles.contentTitle}>
                                     <h5>{blog.title}</h5>
                                     <BsArrowUpRight color="#101828" size={24} />
                                 </div>
                             </Link>
-                            <p>{blog.desc}</p>
+                            <p>{blog?.desc || extractFirstParagraph(blog.content)}</p>
                         </div>
                     </article>
                 ))}

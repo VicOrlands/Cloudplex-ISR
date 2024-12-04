@@ -1,14 +1,124 @@
-2:I[84154,["5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","8887","static/chunks/8887-3b8bc04e91dc8bde.js","308","static/chunks/app/blog/%5Bslug%5D/page-be016df2d4451b96.js"],"default"]
 3:I[4707,[],""]
 5:I[36423,[],""]
-6:I[83575,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
-7:I[72972,["5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","8887","static/chunks/8887-3b8bc04e91dc8bde.js","308","static/chunks/app/blog/%5Bslug%5D/page-be016df2d4451b96.js"],""]
+6:I[83575,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
+7:I[72972,["5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","5915","static/chunks/5915-0201d1e543d87633.js","3486","static/chunks/3486-31c46a73f5eb8de6.js","273","static/chunks/273-4de1aefaf8cd17ce.js","308","static/chunks/app/blog/%5Bslug%5D/page-e7b2d01086a187e4.js"],""]
 8:"$Sreact.suspense"
-9:I[81523,["6051","static/chunks/795d4814-476d6416c8e2052d.js","1779","static/chunks/0e762574-e2250de400a4ed4b.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3705","static/chunks/3705-6e03b39fcaffb9dd.js","3978","static/chunks/3978-5d39e3c5800054b0.js","1110","static/chunks/1110-142787639e130df6.js","1055","static/chunks/1055-349abfd8f52419d8.js","4606","static/chunks/4606-e72707569d1a06cf.js","2403","static/chunks/2403-4383a29793ac9144.js","3839","static/chunks/3839-050ccec6cac83fe9.js","1931","static/chunks/app/page-3de5719137762b60.js"],"BailoutToCSR"]
-a:I[7237,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
-b:I[22207,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
-c:I[75549,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
+9:I[81523,["6051","static/chunks/795d4814-476d6416c8e2052d.js","1779","static/chunks/0e762574-e2250de400a4ed4b.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","3705","static/chunks/3705-b8fe6f5208fe399e.js","3978","static/chunks/3978-b267f049d115c2b8.js","1110","static/chunks/1110-de266bf53394e4db.js","1055","static/chunks/1055-c276cbff28cfad9a.js","4606","static/chunks/4606-20a0c42850a47167.js","2403","static/chunks/2403-4383a29793ac9144.js","3839","static/chunks/3839-050ccec6cac83fe9.js","1931","static/chunks/app/page-c8486484b9037db3.js"],"BailoutToCSR"]
+a:I[7237,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
+b:I[22207,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
+c:I[75549,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
 4:["slug","how-to-deploy-and-host-your-web-app-on-aws-amplify","d"]
-0:["8ZD4foaAHjKgczs1T8v65",[[["",{"children":["blog",{"children":[["slug","how-to-deploy-and-host-your-web-app-on-aws-amplify","d"],{"children":["__PAGE__?{\"slug\":\"how-to-deploy-and-host-your-web-app-on-aws-amplify\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["slug","how-to-deploy-and-host-your-web-app-on-aws-amplify","d"],{"children":["__PAGE__",{},[["$L1",["$","$L2",null,{}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/31e337c2aa3be57f.css","precedence":"next","crossOrigin":"$undefined"}]]],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/01329c7d2530a3fe.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/a2429df6874052f9.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","className":"__variable_d65c78","children":["$","body",null,{"children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"style":{"display":"flex","flexDirection":"column","justifyContent":"center","alignItems":"center","height":"100vh","textAlign":"center","fontFamily":"Arial, sans-serif","backgroundColor":"#f9f9f9","color":"#333","padding":"0 20px"},"children":[["$","div",null,{"style":{"marginBottom":"20px","color":"#555"},"children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 24 24","width":"150","height":"150","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":[["$","circle",null,{"cx":"12","cy":"12","r":"10"}],["$","line",null,{"x1":"15","y1":"9","x2":"9","y2":"15"}],["$","line",null,{"x1":"9","y1":"9","x2":"15","y2":"15"}]]}]}],["$","h1",null,{"style":{"fontSize":"3rem","marginBottom":"10px"},"children":"404 - Page Not Found"}],["$","p",null,{"style":{"fontSize":"1.6rem","marginBottom":"20px"},"children":"Oops! The page you are looking for does not exist."}],["$","$L7",null,{"href":"/","style":{"fontSize":"1.4rem","color":"#0070f3","textDecoration":"none"},"children":"Return to Home"}]]}],"notFoundStyles":[]}],["$","$8",null,{"fallback":null,"children":["$","$L9",null,{"reason":"next/dynamic","children":["$","$La",null,{}]}]}],[["$","$Lb",null,{}],["$","$Lc",null,{}]]]}]}]],null],null],["$Ld",null]]]]
-d:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"How to deploy and host your web app on aws amplify - CloudPlexo Blog"}],["$","meta","3",{"name":"description","content":"Explore CloudPlexo's blog for expert insights on cloud computing, AWS, Azure, and GCP. Stay updated with cloud technology trends."}],["$","meta","4",{"name":"keywords","content":"how-to-deploy-and-host-your-web-app-on-aws-amplify,Cloud Computing Insights,AWS Blog,Azure Articles,Google Cloud Updates,Cloud Technology Trends"}],["$","link","5",{"rel":"canonical","href":"https://www.cloudplexo.com/blog/how-to-deploy-and-host-your-web-app-on-aws-amplify/"}],["$","link","6",{"rel":"icon","href":"/icon.ico?7156ce2ac441bdbe","type":"image/x-icon","sizes":"16x16"}],["$","meta","7",{"name":"next-size-adjust"}]]
+0:["uEu_oHx93E1n1djLkNdZ9",[[["",{"children":["blog",{"children":[["slug","how-to-deploy-and-host-your-web-app-on-aws-amplify","d"],{"children":["__PAGE__?{\"slug\":\"how-to-deploy-and-host-your-web-app-on-aws-amplify\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["slug","how-to-deploy-and-host-your-web-app-on-aws-amplify","d"],{"children":["__PAGE__",{},[["$L1","$L2",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/31e337c2aa3be57f.css","precedence":"next","crossOrigin":"$undefined"}]]],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/01329c7d2530a3fe.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/a2429df6874052f9.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","className":"__variable_d65c78","children":["$","body",null,{"children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"style":{"display":"flex","flexDirection":"column","justifyContent":"center","alignItems":"center","height":"100vh","textAlign":"center","fontFamily":"Arial, sans-serif","backgroundColor":"#f9f9f9","color":"#333","padding":"0 20px"},"children":[["$","div",null,{"style":{"marginBottom":"20px","color":"#555"},"children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 24 24","width":"150","height":"150","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":[["$","circle",null,{"cx":"12","cy":"12","r":"10"}],["$","line",null,{"x1":"15","y1":"9","x2":"9","y2":"15"}],["$","line",null,{"x1":"9","y1":"9","x2":"15","y2":"15"}]]}]}],["$","h1",null,{"style":{"fontSize":"3rem","marginBottom":"10px"},"children":"404 - Page Not Found"}],["$","p",null,{"style":{"fontSize":"1.6rem","marginBottom":"20px"},"children":"Oops! The page you are looking for does not exist."}],["$","$L7",null,{"href":"/","style":{"fontSize":"1.4rem","color":"#0070f3","textDecoration":"none"},"children":"Return to Home"}]]}],"notFoundStyles":[]}],["$","$8",null,{"fallback":null,"children":["$","$L9",null,{"reason":"next/dynamic","children":["$","$La",null,{}]}]}],[["$","$Lb",null,{}],["$","$Lc",null,{}]]]}]}]],null],null],["$Ld",null]]]]
+e:I[34027,["5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","5915","static/chunks/5915-0201d1e543d87633.js","3486","static/chunks/3486-31c46a73f5eb8de6.js","273","static/chunks/273-4de1aefaf8cd17ce.js","308","static/chunks/app/blog/%5Bslug%5D/page-e7b2d01086a187e4.js"],"default"]
+10:I[84154,["5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","5915","static/chunks/5915-0201d1e543d87633.js","3486","static/chunks/3486-31c46a73f5eb8de6.js","273","static/chunks/273-4de1aefaf8cd17ce.js","308","static/chunks/app/blog/%5Bslug%5D/page-e7b2d01086a187e4.js"],"default"]
+f:T110c,## Introduction
+
+AWS Amplify is a powerful service that simplifies the process of deploying and hosting web applications. With its ease of use and integration with various frontend frameworks, deploying your app becomes straightforward. In this tutorial, we'll walk through the steps required to deploy a web app using AWS Amplify.
+
+#### Step 1: Sign in to the AWS Management Console
+
+Navigate to the [AWS Management Console](https://console.aws.amazon.com/) and sign in to your AWS account. If you don’t have an account, you'll need to sign up.
+
+#### Step 2: Access AWS Amplify Console
+
+1. Once logged in, search for "Amplify" in the AWS services search bar.
+
+![](https://cloudplexo-cms-bucket.s3.af-south-1.amazonaws.com/blog/custom-uploads/images/searchAWSamplify.png)
+
+#### Step 2: Click "New app" button and choose host a web app 
+
+![](https://cloudplexo-cms-bucket.s3.af-south-1.amazonaws.com/blog/custom-uploads/images/HostAWEBapp.png)
+
+#### Step 3: Choose the platform your code is hosted
+
+Select your preferred Git provider (GitHub, Bitbucket, GitLab, or AWS CodeCommit). In our case, we will be using Github. Choose and click continue.
+
+![](https://cloudplexo-cms-bucket.s3.af-south-1.amazonaws.com/blog/custom-uploads/images/chooseAmplifyPlatfom.png)
+
+#### Step 4: Authorize Amplify
+
+Authorize AWS Amplify to access your repository.
+
+![](https://cloudplexo-cms-bucket.s3.af-south-1.amazonaws.com/blog/custom-uploads/images/authorizeGithubAmplify.png)
+
+- Choose the repository and branch that contains your web app code.
+
+![](https://cloudplexo-cms-bucket.s3.af-south-1.amazonaws.com/blog/custom-uploads/images/amplifySelectRepo.png)
+
+![](https://cloudplexo-cms-bucket.s3.af-south-1.amazonaws.com/blog/custom-uploads/images/amplifySelectBranch.png)
+
+- Click "Next."
+
+#### Step 4: Configure Build Settings
+
+1. Define your build settings:
+   - Select the framework or environment of your app (React, Angular, Vue.js, etc.).
+   - Configure the build settings like build commands, output directory, etc.
+2. Click "Next."
+
+> Framework and build settings can be auto detected, this steps can be skipped if it does.
+
+Also, if you require a custom build setting, In your project root, you can add a `amplify.yml` where your can have something like this:
+
+```yml
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: out
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - node_modules/**/*
+```
+
+#### Step 5: Review and Deploy
+
+![](https://cloudplexo-cms-bucket.s3.af-south-1.amazonaws.com/blog/custom-uploads/images/amplifyReview.png)
+
+1. Review the settings to ensure they're correct.
+2. Click "Save and deploy" to trigger the deployment process.
+
+#### Step 6: Monitor the Deployment
+
+AWS Amplify will start the deployment process. You can monitor the deployment progress in the Amplify Console. It will automatically build and deploy your app based on the configuration you provided.
+
+#### Step 7: View Your Deployed App
+
+Once the deployment is completed successfully:
+
+Here is our pomodoro site built with nextjs
+
+![](https://cloudplexo-cms-bucket.s3.af-south-1.amazonaws.com/blog/custom-uploads/images/amplifyPomodoroApp.png)
+
+- Click on the link provided in the Amplify Console to view your live web app.
+- Ensure everything looks and works as expected.
+
+#### Step 8: Set Up Custom Domains (Optional)
+
+If you want to use a custom domain for your app:
+
+- In the Amplify Console, go to "Domain management."
+- Follow the instructions to add and configure your custom domain.
+
+#### Step 9: Continuous Deployment (Optional)
+
+AWS Amplify supports continuous deployment, allowing automatic updates whenever you push changes to your repository:
+
+- Enable the "Continuous deployment" option in the Amplify Console.
+- Choose the branch to monitor for changes.
+- Any new commits to that branch will trigger automatic redeployment.
+
+Congratulations! You've successfully deployed and hosted your web app on AWS Amplify. Remember to manage your app settings and monitor its performance regularly through the Amplify Console.
+
+Customize your deployment settings further based on your app’s specific requirements. AWS Amplify offers a variety of features for scaling, monitoring, and managing your applications, making it a robust choice for hosting web apps.
+2:["$","$Le",null,{"blog":{"content":"$f","date":"2024-02-07","published":false,"updated":"12/2/2024","slug":"how-to-deploy-and-host-your-web-app-on-aws-amplify","description":"AWS Amplify is a powerful service that simplifies the process of deploying and hosting web applications. With its ease of use and integration with various frontend frameworks, deploying your app becomes straightforward. In this tutorial, we'll walk through the steps required to deploy a web app using AWS Amplify.\n","key":"how-to-deploy-and-host-your-web-app-on-aws-amplify","thumbnail":"https://cloudplexo-cms-bucket.s3.af-south-1.amazonaws.com/blog/how-to-deploy-and-host-your-web-app-on-aws-amplify/1733118688830-amplify-hosting-thumbnail.png","author":"abdulmumin yaqeen","title":"How to Deploy and Host Your Web App on AWS Amplify"},"oldBlog":{"comp":["$","$L10",null,{}],"url":"how-to-deploy-and-host-your-web-app-on-aws-amplify"}}]
+d:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"How to Deploy and Host Your Web App on AWS Amplify - CloudPlexo Blog"}],["$","meta","3",{"name":"description","content":"AWS Amplify is a powerful service that simplifies the process of deploying and hosting web applications. With its ease of use and integration with various frontend frameworks, deploying your app becomes straightforward. In this tutorial, we'll walk through the steps required to deploy a web app using AWS Amplify."}],["$","meta","4",{"name":"keywords","content":"how-to-deploy-and-host-your-web-app-on-aws-amplify,Cloud Computing Insights,AWS Blog,Azure Articles,Google Cloud Updates,Cloud Technology Trends"}],["$","link","5",{"rel":"canonical","href":"https://www.cloudplexo.com/blog/how-to-deploy-and-host-your-web-app-on-aws-amplify/"}],["$","link","6",{"rel":"icon","href":"/icon.ico?7156ce2ac441bdbe","type":"image/x-icon","sizes":"16x16"}],["$","meta","7",{"name":"next-size-adjust"}]]
 1:null

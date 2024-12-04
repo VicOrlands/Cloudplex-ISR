@@ -1,14 +1,641 @@
-2:I[3848,["5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","8887","static/chunks/8887-3b8bc04e91dc8bde.js","308","static/chunks/app/blog/%5Bslug%5D/page-be016df2d4451b96.js"],"default"]
 3:I[4707,[],""]
 5:I[36423,[],""]
-6:I[83575,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
-7:I[72972,["5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","8887","static/chunks/8887-3b8bc04e91dc8bde.js","308","static/chunks/app/blog/%5Bslug%5D/page-be016df2d4451b96.js"],""]
+6:I[83575,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
+7:I[72972,["5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","5915","static/chunks/5915-0201d1e543d87633.js","3486","static/chunks/3486-31c46a73f5eb8de6.js","273","static/chunks/273-4de1aefaf8cd17ce.js","308","static/chunks/app/blog/%5Bslug%5D/page-e7b2d01086a187e4.js"],""]
 8:"$Sreact.suspense"
-9:I[81523,["6051","static/chunks/795d4814-476d6416c8e2052d.js","1779","static/chunks/0e762574-e2250de400a4ed4b.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3705","static/chunks/3705-6e03b39fcaffb9dd.js","3978","static/chunks/3978-5d39e3c5800054b0.js","1110","static/chunks/1110-142787639e130df6.js","1055","static/chunks/1055-349abfd8f52419d8.js","4606","static/chunks/4606-e72707569d1a06cf.js","2403","static/chunks/2403-4383a29793ac9144.js","3839","static/chunks/3839-050ccec6cac83fe9.js","1931","static/chunks/app/page-3de5719137762b60.js"],"BailoutToCSR"]
-a:I[7237,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
-b:I[22207,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
-c:I[75549,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
+9:I[81523,["6051","static/chunks/795d4814-476d6416c8e2052d.js","1779","static/chunks/0e762574-e2250de400a4ed4b.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","3705","static/chunks/3705-b8fe6f5208fe399e.js","3978","static/chunks/3978-b267f049d115c2b8.js","1110","static/chunks/1110-de266bf53394e4db.js","1055","static/chunks/1055-c276cbff28cfad9a.js","4606","static/chunks/4606-20a0c42850a47167.js","2403","static/chunks/2403-4383a29793ac9144.js","3839","static/chunks/3839-050ccec6cac83fe9.js","1931","static/chunks/app/page-c8486484b9037db3.js"],"BailoutToCSR"]
+a:I[7237,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
+b:I[22207,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
+c:I[75549,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
 4:["slug","building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases","d"]
-0:["8ZD4foaAHjKgczs1T8v65",[[["",{"children":["blog",{"children":[["slug","building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases","d"],{"children":["__PAGE__?{\"slug\":\"building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["slug","building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases","d"],{"children":["__PAGE__",{},[["$L1",["$","$L2",null,{}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/31e337c2aa3be57f.css","precedence":"next","crossOrigin":"$undefined"}]]],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/01329c7d2530a3fe.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/a2429df6874052f9.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","className":"__variable_d65c78","children":["$","body",null,{"children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"style":{"display":"flex","flexDirection":"column","justifyContent":"center","alignItems":"center","height":"100vh","textAlign":"center","fontFamily":"Arial, sans-serif","backgroundColor":"#f9f9f9","color":"#333","padding":"0 20px"},"children":[["$","div",null,{"style":{"marginBottom":"20px","color":"#555"},"children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 24 24","width":"150","height":"150","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":[["$","circle",null,{"cx":"12","cy":"12","r":"10"}],["$","line",null,{"x1":"15","y1":"9","x2":"9","y2":"15"}],["$","line",null,{"x1":"9","y1":"9","x2":"15","y2":"15"}]]}]}],["$","h1",null,{"style":{"fontSize":"3rem","marginBottom":"10px"},"children":"404 - Page Not Found"}],["$","p",null,{"style":{"fontSize":"1.6rem","marginBottom":"20px"},"children":"Oops! The page you are looking for does not exist."}],["$","$L7",null,{"href":"/","style":{"fontSize":"1.4rem","color":"#0070f3","textDecoration":"none"},"children":"Return to Home"}]]}],"notFoundStyles":[]}],["$","$8",null,{"fallback":null,"children":["$","$L9",null,{"reason":"next/dynamic","children":["$","$La",null,{}]}]}],[["$","$Lb",null,{}],["$","$Lc",null,{}]]]}]}]],null],null],["$Ld",null]]]]
-d:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Building fullstack app with react and aws amplify authentication and databases - CloudPlexo Blog"}],["$","meta","3",{"name":"description","content":"Explore CloudPlexo's blog for expert insights on cloud computing, AWS, Azure, and GCP. Stay updated with cloud technology trends."}],["$","meta","4",{"name":"keywords","content":"building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases,Cloud Computing Insights,AWS Blog,Azure Articles,Google Cloud Updates,Cloud Technology Trends"}],["$","link","5",{"rel":"canonical","href":"https://www.cloudplexo.com/blog/building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases/"}],["$","link","6",{"rel":"icon","href":"/icon.ico?7156ce2ac441bdbe","type":"image/x-icon","sizes":"16x16"}],["$","meta","7",{"name":"next-size-adjust"}]]
+0:["uEu_oHx93E1n1djLkNdZ9",[[["",{"children":["blog",{"children":[["slug","building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases","d"],{"children":["__PAGE__?{\"slug\":\"building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["slug","building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases","d"],{"children":["__PAGE__",{},[["$L1","$L2",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/31e337c2aa3be57f.css","precedence":"next","crossOrigin":"$undefined"}]]],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/01329c7d2530a3fe.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/a2429df6874052f9.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","className":"__variable_d65c78","children":["$","body",null,{"children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"style":{"display":"flex","flexDirection":"column","justifyContent":"center","alignItems":"center","height":"100vh","textAlign":"center","fontFamily":"Arial, sans-serif","backgroundColor":"#f9f9f9","color":"#333","padding":"0 20px"},"children":[["$","div",null,{"style":{"marginBottom":"20px","color":"#555"},"children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 24 24","width":"150","height":"150","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":[["$","circle",null,{"cx":"12","cy":"12","r":"10"}],["$","line",null,{"x1":"15","y1":"9","x2":"9","y2":"15"}],["$","line",null,{"x1":"9","y1":"9","x2":"15","y2":"15"}]]}]}],["$","h1",null,{"style":{"fontSize":"3rem","marginBottom":"10px"},"children":"404 - Page Not Found"}],["$","p",null,{"style":{"fontSize":"1.6rem","marginBottom":"20px"},"children":"Oops! The page you are looking for does not exist."}],["$","$L7",null,{"href":"/","style":{"fontSize":"1.4rem","color":"#0070f3","textDecoration":"none"},"children":"Return to Home"}]]}],"notFoundStyles":[]}],["$","$8",null,{"fallback":null,"children":["$","$L9",null,{"reason":"next/dynamic","children":["$","$La",null,{}]}]}],[["$","$Lb",null,{}],["$","$Lc",null,{}]]]}]}]],null],null],["$Ld",null]]]]
+e:I[34027,["5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","5915","static/chunks/5915-0201d1e543d87633.js","3486","static/chunks/3486-31c46a73f5eb8de6.js","273","static/chunks/273-4de1aefaf8cd17ce.js","308","static/chunks/app/blog/%5Bslug%5D/page-e7b2d01086a187e4.js"],"default"]
+10:I[3848,["5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","5915","static/chunks/5915-0201d1e543d87633.js","3486","static/chunks/3486-31c46a73f5eb8de6.js","273","static/chunks/273-4de1aefaf8cd17ce.js","308","static/chunks/app/blog/%5Bslug%5D/page-e7b2d01086a187e4.js"],"default"]
+f:T5855,
+## Introduction
+
+AWS Amplify is a powerful set of tools and services provided by Amazon Web Services (AWS) that simplifies the process of building modern web and mobile applications. It abstracts away much of the complexity involved in integrating various AWS services, such as authentication, API management, storage, database, and more, into your application.
+
+In this tutorial, we'll learn how to integrate AWS Amplify with a React Frontend, allowing us to leverage AWS services like Amazon Cognito for authentication, Restful APIs, and Amazon DynamodB for data storage, among others. 
+
+By the end of this tutorial, you'll have a decent understanding of how to build scalable web application, with authentication flows, databases and feature-rich web applications using React and AWS Amplify.
+
+
+> We will first look true how easy it is to add aws services to your app with amplify, then we will build a fullstack project with these services, you can jump to that section [here](/scl/fi/x936xzn3qfwmekq204dpx/Untitled-3.paper?rlkey=e4aerwg05oo44xfd66sv10b2v&dl=0#:uid=419117774459370047717982&h2=Authentication-and-Storage-wit)
+## Prerequisites
+
+Before we begin, make sure you have the following prerequisites in place:
+
+
+1. **Node.js and npm**: You'll need to have Node.js and npm (Node Package Manager) installed on your machine. You can download the latest version of Node.js from the official website: https://nodejs.org/
+2. **AWS Account**: You'll need an AWS account to access and use AWS services. If you don't have an account yet, you can create one for free at https://aws.amazon.com/
+3. **React Development Environment**: We'll assume you already have a basic understanding of React and have a development environment set up for building React applications. If you're new to React, you can follow the official React documentation to set up a new project: https://reactjs.org/docs/create-a-new-react-app.html
+## Setting up the Work Environment
+
+Follow these steps to set up your work environment for the tutorial:
+
+
+1. **Create a new React application**
+
+If you don't already have a React application, you can create a new one using Create React App:
+
+```bash
+npx create-react-app my-amplify-app
+cd my-amplify-app
+```
+
+1. **Install AWS Amplify CLI**
+
+The AWS Amplify CLI is a toolchain that simplifies the process of creating, integrating, and managing AWS services for your application. Install it globally using npm:
+
+```bash
+npm install -g @aws-amplify/cli
+```
+
+## Authentication and Storage with Amplify - Building a Contact Manager;
+
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713855422488_Screenshot+2024-04-23+at+07-56-13+React+App.png)
+
+
+
+
+1. **Initialize a New Amplify Project**
+
+Navigate to your React project's directory and run the following command to initialize a new Amplify project:
+
+```bash
+amplify init
+```
+
+Follow the prompts to select your project settings, such as the project name, environment name, editor, and type of app. 
+
+The process will look something like this:
+
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713806575074_Screenshot+from+2024-04-22+18-22-10.png)
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713806647113_Screenshot+from+2024-04-22+18-23-54.png)
+
+1. **Add Authentication to Your Project**
+
+Once the project is initialized, run the following command to add authentication to your project:
+
+```bash
+amplify add auth
+```
+
+This command will prompt you to select the authentication service you want to use (e.g., Cognito User Pools, Cognito Identity Pools, etc.) and configure the necessary settings.
+
+It should look something like this:
+
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713806804984_Screenshot+from+2024-04-22+18-26-08.png)
+
+2. **Push Your Changes to the Cloud**
+
+After configuring the authentication service, run the following command to push your changes to the AWS cloud:
+
+```bash
+amplify push
+```
+
+This command will create the necessary AWS resources (e.g., Cognito User Pool, Identity Pool, etc.) and update your project's AWS Amplify configuration.
+
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713807317630_Screenshot+from+2024-04-22+18-34-54.png)
+
+
+
+3. **Add API to your project**
+
+We will be adding an API that allows us to fetch the contact list from a dynamoDB database, we will be setting everything up in our terminal, with just a few entries to show how easy this actually is:
+
+Run:
+
+```bash
+amplify add api
+```
+
+Next, you'll be prompted to choose the data source. For this tutorial, we'll use the **Create a new datasource service** option and select **Amazon DynamoDB**.
+
+Here is what the process will look like:
+
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713848858918_Screenshot+from+2024-04-23+06-03-00.png)
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713848868814_Screenshot+from+2024-04-23+06-03-36.png)
+
+
+Once again, you need to run amplify push:
+
+```bash
+amplify push 
+```
+
+Now that the backend process is complete, we can begin adding it to our React Application.
+
+You should be able to see an output like this:
+
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713849179960_Screenshot+from+2024-04-23+06-12-27.png)
+
+
+
+1. **Get Your AWS Amplify Configuration**
+
+After the `amplify push` command completes successfully, it will generate an `aws-exports.js` file in the `src` directory of your React project. This file contains your AWS Amplify configuration, which includes the necessary details for your authentication service and other AWS resources.
+
+That's it! By following these steps, you'll be able to get your AWS Amplify configuration and integrate it with your React app for authentication and other AWS services.
+
+Install the `@aws-amplify/ui-react` - package:
+
+```bash
+npm install @aws-amplify/ui-react
+```
+In your `index.js` file, import the Amplify libraries and configure them:
+
+```js
+import { Amplify } from 'aws-amplify';
+import awsconfig from './aws-exports';
+// also import the amplify styles
+import "@aws-amplify/ui-react/styles.css";
+
+Amplify.configure(awsconfig);
+```
+For our contact manager, let start of with this;
+
+First, our contact form, 
+
+
+> We will be using Amplify ui-react for our components
+
+```js
+import React, { useState } from "react";
+import {
+  Button,
+  PhoneNumberField,
+  Flex,
+  Input,
+  Label,
+} from "@aws-amplify/ui-react";
+const ContactForm = ({ onAddContact }) => {
+  const [newContact, setNewContact] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
+  const handleInputChange = (e) => {
+    setNewContact({ ...newContact, [e.target.name]: e.target.value });
+  };
+  const addContact = (event) => {
+    event.preventDefault();
+    if (newContact.name && newContact.email && newContact.phone) {
+      onAddContact(newContact);
+      setNewContact({ name: "", email: "", phone: "" });
+    }
+  };
+  return (
+    <Flex as="form" direction="column" gap="medium" onSubmit={addContact}>
+      <h1>Contact Manager</h1>
+      <Flex direction="column" gap="small">
+        <Label htmlFor="Default">Email</Label>
+        <Input
+          id="name"
+          type="text"
+          name="name"
+          value={newContact.name}
+          onChange={handleInputChange}
+          placeholder="Name"
+        />
+      </Flex>
+      <Flex direction="column" gap="small">
+        <Label htmlFor="Default">Email</Label>
+        <Input
+          id="email"
+          type="email"
+          name="email"
+          value={newContact.email}
+          onChange={handleInputChange}
+          placeholder="Email"
+          isRequired={true}
+        />
+      </Flex>
+      <PhoneNumberField
+        label="Phone Number"
+        defaultDialCode="+1"
+        id="phone"
+        type="text"
+        name="phone"
+        value={newContact.phone}
+        onChange={handleInputChange}
+        placeholder="Phone"
+      />
+      <Button type="submit"> + Add Contact</Button>
+    </Flex>
+  );
+};
+export default ContactForm;
+```
+This should be our Form, we can then have our contact list;
+
+```js
+import React from "react";
+import {
+  Button,
+  Table,
+  TableBody,
+  TableCell,
+  TableRow,
+  TableHead,
+  Heading,
+} from "@aws-amplify/ui-react";
+const ContactList = ({ contacts, onDeleteContact }) => {
+  return (
+    <>
+      <Heading level="2">Saved Contacts</Heading>
+      <Table title="Table" variation="striped">
+        <TableHead>
+          <TableRow>
+            <TableCell as="th">Name</TableCell>
+            <TableCell as="th">Email</TableCell>
+            <TableCell as="th">Phone</TableCell>
+            <TableCell as="th">Action</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {contacts.map((contact, index) => (
+            <TableRow key={index}>
+              <TableCell>{contact.name}</TableCell>
+              <TableCell>{contact.email}</TableCell>
+              <TableCell>{contact.phone}</TableCell>
+              <TableCell>
+                <Button
+                  variation="primary"
+                  colorTheme="error"
+                  onClick={() => onDeleteContact(index)}
+                >
+                  Delete
+                </Button>
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </>
+  );
+};
+export default ContactList;
+```
+Finally we can bring all this together in our `App.js`:
+
+```js
+import React, { useState } from "react";
+import { Flex } from "@aws-amplify/ui-react";
+
+import ContactList from "./comp/list";
+import ContactForm from "./comp/form";
+
+const ContactManager = () => {
+  const [contacts, setContacts] = useState([]);
+  const addContact = (newContact) => {
+    setContacts([...contacts, newContact]);
+  };
+  const deleteContact = (index) => {
+    const newContacts = [...contacts];
+    newContacts.splice(index, 1);
+    setContacts(newContacts);
+  };
+  return (
+    <Flex direction="column" gap="medium" style={{ padding: 20 }}>
+      <h1>Contact Manager</h1>
+      <ContactForm onAddContact={addContact} />
+      <ContactList contacts={contacts} onDeleteContact={deleteContact} />
+    </Flex>
+  );
+};
+export default ContactManager;    
+```
+
+We This is very Straight forward React, and you can test your code
+
+```bash
+npm start
+```
+
+## Adding Amplify Auth;
+
+```bash
+import { withAuthenticator } from "@aws-amplify/ui-react";
+// ....
+
+const ContactManager = ({ signOut, user }) => {
+  // ...
+};
+export default withAuthenticator(ContactManager);
+```
+
+As seen the here, we’re are exposing both the user and also the signOut function, which are props provided by the higher order `withAuthenticator` component. We will be utilizing those later in the tutorial.
+
+If you ran into errors, make sure to review your steps or check out the the [Amplify documentation](https://docs.amplify.aws/javascript/tools/cli/start/set-up-cli/#configure-the-amplify-cli) for setting up your AWS resources and configuring your app correctly.
+
+If everything works correctly, you should straight up be hit with an auth page like this:
+
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713850865432_Screenshot+2024-04-23+at+06-35-45+React+App.png)
+
+
+
+You can enter in your details and it will sent a verification OTP;
+
+
+![Contact manage with Amplify and React](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713818320218_Screenshot+2024-04-22+at+21-36-55+React+App.png)
+
+
+
+We can throw in another component, to handle our thing related to our user, like signout, and displaying the user info.
+
+```js
+import { Badge, Button, Flex } from "@aws-amplify/ui-react";
+
+function User({ user, signOut }) {
+  return (
+    <Flex justifyContent="space-between">
+      <Badge variation="success" style={{ paddingTop: 12 }}>
+        {user.signInDetails.loginId}
+      </Badge>
+      <Button onClick={signOut} colorTheme="warning">
+        SignOut
+      </Button>
+    </Flex>
+  );
+}
+export default User;
+```
+
+We can the update our `App.js`, Accordingly, passing signOut and user as props;
+
+```js
+import User from "./comp/userInfo";
+
+const ContactManager = ({ signOut, user }) => {
+  // ...
+  <User user={user} signOut={signOut} />
+  //...
+};
+```
+
+
+## Configuring CRUD APIs
+
+That will complete our authentication flow, now what is left is to handle user data, I.e with DynamoDB that we configured.
+
+First off, let include this function in our form, to save to cloud before appeding to the list:
+
+```js
+// form.js
+
+const ContactForm = ({ onAddContact }) => {
+// ...
+async function SaveToCloud(contact) {
+    try {
+      const restOperation = put({
+        apiName: "YOUR_API_NAME", // example amplifyContactMD
+        path: "/contacts",
+        options: {
+          body: contact,
+        },
+      });
+      const response = await restOperation.response;
+      console.log("PUT call succeeded: ", response);
+      onAddContact(newContact);
+      setNewContact({ name: "", email: "", phone: "" });
+    } catch (e) {
+      console.log("PUT call failed: ", JSON.parse(e.response.body));
+    }
+  }
+// ...
+
+}
+```
+
+This should work nicely, Our contact will be saved to the cloud database, when we enter them.
+
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713855175535_Screenshot+2024-04-23+at+07-52-35+React+App.png)
+
+
+To fetch our items from cloud, we can use the following in our `list.js`
+
+```js
+const ContactList = ({ contacts, onDeleteContact }) => {
+// ...
+import { get } from 'aws-amplify/api';
+
+async function getTodo() {
+  try {
+    const restOperation = get({ 
+      apiName: "YOUR_API_NAME", // example amplifyContactMD
+      path: '/contacts' 
+    });
+    const response = await restOperation.response;
+    
+  } catch (e) {
+    const remoteContacts =  JSON.parse(e.response.body);
+    setContacts(remoteContacts) // set the new state of contacts;
+  }
+}
+// ...
+}
+
+```
+
+This will fetch our saved content when we sign in to our website;
+
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713855422488_Screenshot+2024-04-23+at+07-56-13+React+App.png)
+
+
+And, That is it for this demo, we can also publish our website on Amplify, with is one of the advantages of using AWS Amplify.
+
+
+> Notice that, update and delete are left out, you can test yourself by implementing those on your own. You can always refere to the AWS Amplify build & connect backend [documentation](https://docs.amplify.aws/javascript/build-a-backend);
+
+You can easily set up continuous deployment pipelines, where your application is automatically deployed whenever you push changes to your repository. This streamlines the deployment process and ensures that your users always have access to the latest version of your application.
+
+To publish your app, use:
+
+```bash
+amplify hosting add
+```
+
+You should see something like this:
+
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713856932558_Screenshot+from+2024-04-23+08-21-46.png)
+
+
+it should complete with something like this:
+
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713857179287_image.png)
+
+
+And we can view our live site on the url:
+
+
+![](https://paper-attachments.dropboxusercontent.com/s_BF662A84200005AB159B0D559093B544FA6B58BB2E283DADED3628D983F1BDB3_1713857471080_image.png)
+
+
+
+## Extending your Application
+
+AWS Amplify provides a simple way to add and configure various AWS services for your application using the Amplify CLI. In this section, we'll explore in brief, how easy it is to add other services like, API (GraphQL), and storage services to your React application.
+
+**API Management with AWS AppSync**
+
+AWS AppSync is a managed GraphQL service that simplifies the process of building data-driven applications with real-time and offline capabilities. With AWS Amplify, you can easily integrate AWS AppSync into your React application.
+
+
+1. **Add API Service**
+
+Run the following command to add the API service to your Amplify project:
+
+```bash
+amplify add api
+```
+
+You'll be prompted to select the service provider. Choose **GraphQL** and then select **Amazon Cognito User Pool** as the authentication type.
+
+Next, you'll be prompted to choose the data source. For this tutorial, we'll use the **Create a new datasource service** option and select **Amazon DynamoDB**.
+
+Follow the prompts to configure the API and data source according to your requirements. You can choose to use the default options for simplicity.
+
+
+2. **Push Changes to the Cloud**
+
+After configuring the API service, push the changes to the AWS cloud:
+
+```bash
+amplify push
+```
+
+This command will provision the AWS AppSync GraphQL API, Amazon DynamoDB table, and update your local configuration files with the necessary connection details.
+
+**Storage with Amazon S3**
+
+Amazon Simple Storage Service (Amazon S3) is a highly scalable and durable object storage service. With AWS Amplify, you can easily integrate Amazon S3 into your React application for storing and retrieving files, images, and other media assets.
+
+
+1. **Add Storage Service**
+
+Run the following command to add the storage service to your Amplify project:
+
+```bash
+amplify add storage
+```
+
+You'll be prompted to select the storage service. Choose **Content (Images, audio, video, etc.)**. You can use the default options for the rest of the configuration.
+
+
+2. **Push Changes to the Cloud**
+
+After configuring the storage service, push the changes to the AWS cloud:
+
+```bash
+amplify push
+```
+
+This command will provision the Amazon S3 bucket and update your local configuration files with the necessary connection details.
+With these three services (authentication, API management, and storage) added to your Amplify project, you're now ready to integrate them into your React application.
+
+## Integrating with React
+
+In this section, we'll explore how to integrate the AWS services you've added into your React application using the AWS Amplify libraries.
+
+**Install AWS Amplify Libraries**
+
+First, install the required AWS Amplify libraries for React:
+
+```bash
+npm install aws-amplify @aws-amplify/ui-react
+```
+
+**Configure AWS Amplify in React**
+
+In your React application's entry point (typically `index.js`), import and configure AWS Amplify with the cloud resources you provisioned earlier:
+
+```js
+import Amplify from 'aws-amplify';
+import awsconfig from './aws-exports';
+
+Amplify.configure(awsconfig);
+```
+The `aws-exports.js` file was generated during the `amplify push` step and contains the configuration details for your AWS services.
+
+**API Management (GraphQL)**
+
+To interact with the AWS AppSync GraphQL API, you can use the `API` module from `aws-amplify`:
+
+```js
+import { API, graphqlOperation } from 'aws-amplify';
+import { listTodos } from './graphql/queries';
+
+async function fetchTodos() {
+  try {
+    const todoData = await API.graphql(graphqlOperation(listTodos));
+    console.log('todos:', todoData.data.listTodos.items);
+  } catch (error) {
+    console.error('Error fetching todos:', error);
+  }
+}
+```
+
+In this example, we're fetching a list of todos from the GraphQL API using the `listTodos` query defined in the `graphql/queries` file.
+
+**Storage**
+
+To interact with the Amazon S3 bucket for storing and retrieving files, you can use the `Storage` module from `aws-amplify`:
+
+```js
+import { Storage } from 'aws-amplify';
+
+async function uploadFile(file) {
+  try {
+    const result = await Storage.put(file.name, file, {
+      contentType: file.type,
+    });
+    console.log('File uploaded:', result.key);
+  } catch (error) {
+    console.error('Error uploading file:', error);
+  }
+}
+
+async function downloadFile(fileKey) {
+  try {
+    const result = await Storage.get(fileKey, { download: true });
+    console.log('File downloaded:', result.Body);
+  } catch (error) {
+    console.error('Error downloading file:', error);
+  }
+}
+```
+In this example, we're demonstrating how to upload a file to the Amazon S3 bucket using the `Storage.put` method and how to download a file using the `Storage.get` method.
+
+These are just a few examples of how you can integrate AWS services into your React application using AWS Amplify. You can find more examples and documentation for various AWS Amplify services and components on the [AWS Amplify Documentation](https://docs.amplify.aws/) website.
+
+**Conclusion**
+
+By integrating AWS Amplify into your React application, you’re Introduced to a suite of powerful set of tools and services that streamline the development process and provide robust functionality out of the box. AWS Amplify simplifies the integration of essential cloud services, such as authentication, API management, storage, and analytics, allowing you to focus on building compelling user experiences with React.
+
+One of the key advantages of using AWS Amplify with React is the ease of implementing authentication flows. The `@aws-amplify/ui-react`  library provides a pre-built, customizable UI components that handle user sign-in, sign-up, and sign-out processes seamlessly. This not only enhances security but also ensures a consistent and user-friendly authentication experience across your application.
+
+Beyond authentication, AWS Amplify offers a range of services that can be seamlessly integrated into your React application. With the Rest API and DynamoDB, you can easily build scalable and data-driven applications, while the Storage service provides a secure and reliable way to manage user-generated content. 
+
+To learn more about the capabilities of AWS Amplify and how it can supercharge your React development, visit the official documentation: [here](https://docs.amplify.aws/javascript/build-a-backend)
+
+By combining the power of React's reactive and component-based approach with the comprehensive set of services offered by AWS Amplify, you can build modern, scalable, and feature-rich applications that deliver exceptional user experiences while leveraging the reliability and scalability of AWS.
+
+2:["$","$Le",null,{"blog":{"content":"$f","date":"2024-04-29","published":false,"updated":"12/3/2024","slug":"building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases","description":"AWS Amplify is a powerful set of tools and services provided by Amazon Web Services (AWS) that simplifies the process of building modern web and mobile applications. It abstracts away much of the complexity involved in integrating various AWS services, such as authentication, API management, storage, database, and more, into your application.\n","key":"building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases","thumbnail":"https://cloudplexo-cms-bucket.s3.af-south-1.amazonaws.com/blog/building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases/1733193076452-react-amplify-thumbnail.png","author":"abdulmumin yaqeen","title":"Building Fullstack app with React and AWS Amplify - Authentication and Databases"},"oldBlog":{"comp":["$","$L10",null,{}],"url":"building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases"}}]
+d:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Building Fullstack app with React and AWS Amplify - Authentication and Databases - CloudPlexo Blog"}],["$","meta","3",{"name":"description","content":"AWS Amplify is a powerful set of tools and services provided by Amazon Web Services (AWS) that simplifies the process of building modern web and mobile applications. It abstracts away much of the complexity involved in integrating various AWS services, such as authentication, API management, storage, database, and more, into your application."}],["$","meta","4",{"name":"keywords","content":"building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases,Cloud Computing Insights,AWS Blog,Azure Articles,Google Cloud Updates,Cloud Technology Trends"}],["$","link","5",{"rel":"canonical","href":"https://www.cloudplexo.com/blog/building-fullstack-app-with-react-and-aws-amplify-authentication-and-databases/"}],["$","link","6",{"rel":"icon","href":"/icon.ico?7156ce2ac441bdbe","type":"image/x-icon","sizes":"16x16"}],["$","meta","7",{"name":"next-size-adjust"}]]
 1:null

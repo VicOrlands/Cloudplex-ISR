@@ -1,202 +1,68 @@
-import type { Metadata } from "next";
 import { notFound } from 'next/navigation';
-import Mkobo from "./Mkobo"
-import Alarrt from './Alarrt';
-import Phastpay from "./Phastpay"
-import BillyRonks from './BillyRonks'
-import TalentSync from "./TalentSync"
-import GtbPensions from "./GtbPensions"
-import IdeyFind from "./IdeyFind"
-import Convexity from "./Convexity"
-import CryptoSmart from "./CryptoSmart"
-import Dukia from "./Dukia"
-import Edtech from "./IcanTutors"
-import Fundus from "./FundusAI"
-import Liveli from './Liveli';
-import Geria from './Geria';
-import Inttix from './Inttix';
-import Kobo from './Kobo';
-import Jaguar from './Jaguar';
-import Bp from './Bp';
-import IlearnCloud from './Ilearncloud';
-import KoboAccountant from './KoboAccountant';
-import FeedXPay from './Feedpay';
-import HighMart from './Highmart';
-import Qpay from './Qpay';
-import Silicon from './Silicon';
-import Staycon from './Staycon';
-import Suba from './Suba';
-import Varscon from './Varscon';
-import Consodes from "./Consode";
-import Bitbarter from "./BitBarter";
-import MyBalance from "./Mybalance";
-import Ibile from "./Ibile";
+import { Metadata } from 'next';
+import { paths } from './paths';
+import { casestudy } from '../caseArray';
+import ClientCaseStudy from './ClientCaseStudy';
 
-type PageProps = {
+type SlugParams = {
     params: {
-        slug: string;
-    };
-};
+        slug: string
+    }
+}
 
 export async function generateStaticParams() {
+    const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies');
+    const data = await res.json();
+
+    const publishedCaseStudies = data.filter((caseStudy: { published: boolean }) => caseStudy.published);
+    const publishedSlug = publishedCaseStudies.map((pub: { slug: string; }) => ({ slug: pub.slug }));
+
+    const hardcodedSlugs = paths.map(({ url }) => ({ slug: url }));
+
     return [
-        ...paths.map(({ url }) => ({ slug: url })),
+        ...publishedSlug,
+        ...hardcodedSlugs,
         { slug: "empowering-climate-decision-making-with-aws-iot-for-climdes" }
     ];
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-    const { slug } = params;
+export async function generateMetadata({ params }: SlugParams): Promise<Metadata> {
+    const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies');
+    const data = await res.json();
 
+    const publishedCaseStudies = data.filter((caseStudy: { published: boolean }) => caseStudy.published);
+    const publishedSlug = publishedCaseStudies.find((pub: { slug: string; }) => pub.slug === params.slug);
+
+    if (publishedSlug) {
+        return {
+            title: `${publishedSlug.title} - CloudPlexo's Expert Solutions`,
+            description: publishedSlug.description,
+            alternates: {
+                canonical: `https://cloudplexo.com/case-study/${publishedSlug.slug}`,
+            },
+        };
+    }
+
+    const oldCaseStudy = casestudy.find(({ slug }) => slug === params.slug)
     return {
-        title: `${slug.charAt(0).toUpperCase() + slug.slice(1).replaceAll("-", " ")} - CloudPlexo's Expert Solutions`,
+        title: `${oldCaseStudy?.title} - CloudPlexo's Expert Solutions`,
+        description: oldCaseStudy?.description,
         alternates: {
-            canonical: `https://cloudplexo.com/case-study/${slug}`,
+            canonical: `https://cloudplexo.com/case-study/${oldCaseStudy?.slug}`,
         },
     };
 }
 
-const paths = [
-//     {
-// url: "suba-capital-case-study",
-// comp: <Suba
-//     },
-    {
-        comp: <Ibile />,
-        url: "ibile-mfb-case-study"
-    },
-    {
-        comp: <Bitbarter />,
-        url: "from-monolith-to-microservives-bitbarters-journey-to-a-scalable-cloud-architecture"
-    },
-    {
-        comp: <MyBalance />,
-        url: "rearchitecting-mybalance-infrastructure-for-cost-efficiency-and-downtime-mitigation"
-    },
-    {
-        comp: <Consodes />,
-        url: "consodes-strategic-erp-migration-to-aws-for-enhanced-scalability-and-availability",
-    },
-    {
-        comp: <GtbPensions />,
-        url: "case-study-of-gt-pensions-managers",
-    },
-    {
-        comp: <Mkobo />,
-        url: "mkobo-uses-cloudplexo-saas-solution",
-    },
-    {
-        comp: <Phastpay />,
-        url: "phastpay-collaborated-with-cloudplexo-experts-and-leveraging-on-cloudplexo-saas-solution",
-    },
-    {
-        comp: <BillyRonks />,
-        url: "billyronks-selected-cloudplexo-as-aws-advanced-partner",
-    },
-    {
-        comp: <Alarrt />,
-        url: "alarrt-achieves-enhanced-cost-efficiency-elevated-security-standards-and-a-highly-scalable-and-efficient-infrastructure",
-    },
-    {
-        comp: <TalentSync />,
-        url: "talentsync-case-study",
-    },
-    {
-        comp: <IdeyFind />,
-        url: "ideyfind-optimizes-e-commerce-platform-for-growth-with-cloudplexo-aws-expertise",
-    },
-    {
-        comp: <Edtech />,
-        url: "case-study-in-the-edtech-sector",
-    },
-    {
-        comp: <CryptoSmart />,
-        url: "cryptosmart-case-study",
-    },
-    {
-        comp: <Convexity />,
-        url: "convexity-case-study",
-    },
-    {
-        comp: <Dukia />,
-        url: "dukia-case-study",
-    },
-    {
-        comp: <Fundus />,
-        url: "fundusai-case-study",
-    },
-    {
-        comp: <Liveli />,
-        url: "liveli-case-study",
-    },
-    {
-        comp: <Geria />,
-        url: "geria-case-study",
-    },
-    {
-        comp: <Inttix />,
-        url: "inttix-case-study",
-    },
-    {
-        comp: <Kobo />,
-        url: "kobo-case-study",
-    },
-    {
-        comp: <Jaguar />,
-        url: "jaguar-and-land-rover-case-study",
-    },
-    {
-        comp: <Bp />,
-        url: "bp-case-study",
-    },
-    {
-        comp: <IlearnCloud />,
-        url: "ilearncloud-case-study",
-    },
-    {
-        comp: <KoboAccountant />,
-        url: "koboaccountant-case-study",
-    },
-    {
-        comp: <FeedXPay />,
-        url: "feedxpay-case-study",
-    },
-    {
-        comp: <HighMart />,
-        url: "highmart-case-study"
-    },
-    {
-        comp: <Qpay />,
-        url: "qpay-case-study"
-    },
-    {
-        comp: <Silicon />,
-        url: "silicon-case-study"
-    },
-    {
-        comp: <Staycon />,
-        url: "staycon-case-study"
-    },
-    {
-        comp: <Suba />,
-        url: "suba-case-study"
-    },
-    {
-        comp: <Varscon />,
-        url: "varscon-case-study"
-    },
-];
+export default async function CaseStudyPage({ params }: { params: { slug: string } }) {
+    const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies');
+    const data = await res.json();
 
-const CaseStudyPage = ({ params }: { params: { slug: string } }) => {
-    const { slug } = params
+    const caseStudy = data.find(({ slug }: { slug: string }) => slug === params.slug);
+    const oldCaseStudy = paths.find(({ url }) => url === params.slug);
 
-    const path = paths.find(({ url }) => url === slug);
-
-    if (!path) {
-        notFound()
+    if (!caseStudy && !oldCaseStudy) {
+        return notFound();
     }
 
-    return path.comp
-};
-
-export default CaseStudyPage;
+    return <ClientCaseStudy caseStudy={caseStudy} oldCaseStudy={oldCaseStudy} />;
+}

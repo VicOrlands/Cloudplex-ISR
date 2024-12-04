@@ -1,14 +1,235 @@
-2:I[89840,["5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","8887","static/chunks/8887-3b8bc04e91dc8bde.js","308","static/chunks/app/blog/%5Bslug%5D/page-be016df2d4451b96.js"],"default"]
 3:I[4707,[],""]
 5:I[36423,[],""]
-6:I[83575,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
-7:I[72972,["5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","8887","static/chunks/8887-3b8bc04e91dc8bde.js","308","static/chunks/app/blog/%5Bslug%5D/page-be016df2d4451b96.js"],""]
+6:I[83575,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
+7:I[72972,["5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","5915","static/chunks/5915-0201d1e543d87633.js","3486","static/chunks/3486-31c46a73f5eb8de6.js","273","static/chunks/273-4de1aefaf8cd17ce.js","308","static/chunks/app/blog/%5Bslug%5D/page-e7b2d01086a187e4.js"],""]
 8:"$Sreact.suspense"
-9:I[81523,["6051","static/chunks/795d4814-476d6416c8e2052d.js","1779","static/chunks/0e762574-e2250de400a4ed4b.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3705","static/chunks/3705-6e03b39fcaffb9dd.js","3978","static/chunks/3978-5d39e3c5800054b0.js","1110","static/chunks/1110-142787639e130df6.js","1055","static/chunks/1055-349abfd8f52419d8.js","4606","static/chunks/4606-e72707569d1a06cf.js","2403","static/chunks/2403-4383a29793ac9144.js","3839","static/chunks/3839-050ccec6cac83fe9.js","1931","static/chunks/app/page-3de5719137762b60.js"],"BailoutToCSR"]
-a:I[7237,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
-b:I[22207,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
-c:I[75549,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
+9:I[81523,["6051","static/chunks/795d4814-476d6416c8e2052d.js","1779","static/chunks/0e762574-e2250de400a4ed4b.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","3705","static/chunks/3705-b8fe6f5208fe399e.js","3978","static/chunks/3978-b267f049d115c2b8.js","1110","static/chunks/1110-de266bf53394e4db.js","1055","static/chunks/1055-c276cbff28cfad9a.js","4606","static/chunks/4606-20a0c42850a47167.js","2403","static/chunks/2403-4383a29793ac9144.js","3839","static/chunks/3839-050ccec6cac83fe9.js","1931","static/chunks/app/page-c8486484b9037db3.js"],"BailoutToCSR"]
+a:I[7237,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
+b:I[22207,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
+c:I[75549,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
 4:["slug","introduction-to-aws-cli-basic-commands-for-beginners","d"]
-0:["8ZD4foaAHjKgczs1T8v65",[[["",{"children":["blog",{"children":[["slug","introduction-to-aws-cli-basic-commands-for-beginners","d"],{"children":["__PAGE__?{\"slug\":\"introduction-to-aws-cli-basic-commands-for-beginners\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["slug","introduction-to-aws-cli-basic-commands-for-beginners","d"],{"children":["__PAGE__",{},[["$L1",["$","$L2",null,{}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/31e337c2aa3be57f.css","precedence":"next","crossOrigin":"$undefined"}]]],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/01329c7d2530a3fe.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/a2429df6874052f9.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","className":"__variable_d65c78","children":["$","body",null,{"children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"style":{"display":"flex","flexDirection":"column","justifyContent":"center","alignItems":"center","height":"100vh","textAlign":"center","fontFamily":"Arial, sans-serif","backgroundColor":"#f9f9f9","color":"#333","padding":"0 20px"},"children":[["$","div",null,{"style":{"marginBottom":"20px","color":"#555"},"children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 24 24","width":"150","height":"150","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":[["$","circle",null,{"cx":"12","cy":"12","r":"10"}],["$","line",null,{"x1":"15","y1":"9","x2":"9","y2":"15"}],["$","line",null,{"x1":"9","y1":"9","x2":"15","y2":"15"}]]}]}],["$","h1",null,{"style":{"fontSize":"3rem","marginBottom":"10px"},"children":"404 - Page Not Found"}],["$","p",null,{"style":{"fontSize":"1.6rem","marginBottom":"20px"},"children":"Oops! The page you are looking for does not exist."}],["$","$L7",null,{"href":"/","style":{"fontSize":"1.4rem","color":"#0070f3","textDecoration":"none"},"children":"Return to Home"}]]}],"notFoundStyles":[]}],["$","$8",null,{"fallback":null,"children":["$","$L9",null,{"reason":"next/dynamic","children":["$","$La",null,{}]}]}],[["$","$Lb",null,{}],["$","$Lc",null,{}]]]}]}]],null],null],["$Ld",null]]]]
-d:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Introduction to aws cli basic commands for beginners - CloudPlexo Blog"}],["$","meta","3",{"name":"description","content":"Explore CloudPlexo's blog for expert insights on cloud computing, AWS, Azure, and GCP. Stay updated with cloud technology trends."}],["$","meta","4",{"name":"keywords","content":"introduction-to-aws-cli-basic-commands-for-beginners,Cloud Computing Insights,AWS Blog,Azure Articles,Google Cloud Updates,Cloud Technology Trends"}],["$","link","5",{"rel":"canonical","href":"https://www.cloudplexo.com/blog/introduction-to-aws-cli-basic-commands-for-beginners/"}],["$","link","6",{"rel":"icon","href":"/icon.ico?7156ce2ac441bdbe","type":"image/x-icon","sizes":"16x16"}],["$","meta","7",{"name":"next-size-adjust"}]]
+0:["uEu_oHx93E1n1djLkNdZ9",[[["",{"children":["blog",{"children":[["slug","introduction-to-aws-cli-basic-commands-for-beginners","d"],{"children":["__PAGE__?{\"slug\":\"introduction-to-aws-cli-basic-commands-for-beginners\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["slug","introduction-to-aws-cli-basic-commands-for-beginners","d"],{"children":["__PAGE__",{},[["$L1","$L2",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/31e337c2aa3be57f.css","precedence":"next","crossOrigin":"$undefined"}]]],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/01329c7d2530a3fe.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/a2429df6874052f9.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","className":"__variable_d65c78","children":["$","body",null,{"children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"style":{"display":"flex","flexDirection":"column","justifyContent":"center","alignItems":"center","height":"100vh","textAlign":"center","fontFamily":"Arial, sans-serif","backgroundColor":"#f9f9f9","color":"#333","padding":"0 20px"},"children":[["$","div",null,{"style":{"marginBottom":"20px","color":"#555"},"children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 24 24","width":"150","height":"150","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":[["$","circle",null,{"cx":"12","cy":"12","r":"10"}],["$","line",null,{"x1":"15","y1":"9","x2":"9","y2":"15"}],["$","line",null,{"x1":"9","y1":"9","x2":"15","y2":"15"}]]}]}],["$","h1",null,{"style":{"fontSize":"3rem","marginBottom":"10px"},"children":"404 - Page Not Found"}],["$","p",null,{"style":{"fontSize":"1.6rem","marginBottom":"20px"},"children":"Oops! The page you are looking for does not exist."}],["$","$L7",null,{"href":"/","style":{"fontSize":"1.4rem","color":"#0070f3","textDecoration":"none"},"children":"Return to Home"}]]}],"notFoundStyles":[]}],["$","$8",null,{"fallback":null,"children":["$","$L9",null,{"reason":"next/dynamic","children":["$","$La",null,{}]}]}],[["$","$Lb",null,{}],["$","$Lc",null,{}]]]}]}]],null],null],["$Ld",null]]]]
+e:I[34027,["5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","5915","static/chunks/5915-0201d1e543d87633.js","3486","static/chunks/3486-31c46a73f5eb8de6.js","273","static/chunks/273-4de1aefaf8cd17ce.js","308","static/chunks/app/blog/%5Bslug%5D/page-e7b2d01086a187e4.js"],"default"]
+10:I[89840,["5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","5915","static/chunks/5915-0201d1e543d87633.js","3486","static/chunks/3486-31c46a73f5eb8de6.js","273","static/chunks/273-4de1aefaf8cd17ce.js","308","static/chunks/app/blog/%5Bslug%5D/page-e7b2d01086a187e4.js"],"default"]
+f:T16f7,
+The Amazon Web Services Command Line Interface (AWS CLI) is a powerful tool that enables users to interact with various AWS services using commands in the terminal or command prompt. This tutorial aims to introduce fundamental AWS CLI commands with explanations for beginners.
+
+## **Prerequisites:**
+
+1. **AWS Account:** Sign up for an AWS account if you haven’t already.  
+2. **AWS CLI Installation:** Install AWS CLI on your local machine. Refer to the official AWS [documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) for installation instructions on various operating systems.
+
+## **Getting Started:**
+
+### **Configure AWS CLI**
+
+Open your terminal or command prompt and type:
+
+```bash
+aws configure
+```
+
+Follow the prompts to enter:
+
+* AWS Access Key ID  
+* AWS Secret Access Key  
+* Default region (e.g., us-west-2)  
+* Default output format (e.g., json)
+
+Once you have everything setup, the following are commands grouped by services or usage.
+
+AWS Settings and Configuration:
+
+**Set Default Region:**
+
+```bash
+aws configure set region your-region
+```
+
+*Sets the default region for AWS CLI commands.*
+
+**Set Output Format:**
+
+```bash
+aws configure set output json
+```
+
+*Sets the default output format for AWS CLI commands.*
+
+**Enable/Disable Paging:**
+
+```bash
+aws configure set cli_pager enabled/disabled
+```
+
+*Enables or disables paging for command output.*
+
+### **Profile Management:**
+
+AWS profiles are configurations within the AWS Command Line Interface (CLI) that store credentials and settings for accessing AWS services. They allow users to manage multiple sets of AWS credentials and switch between them easily. Each profile can contain its own set of credentials, default region, output format, and other configurations.
+
+#### **List Profiles:**
+
+```bash
+aws configure list-profiles
+```
+
+Lists all configured profiles.
+
+#### **Create a Profile:**
+
+```bash
+aws configure --profile your-profile-name
+```
+
+*Creates a new named profile.*
+
+#### **Switch Profiles (Temporary):**
+
+```bash
+export AWS_PROFILE=your-profile-name
+```
+
+*Temporarily sets a specific profile for the current terminal session.*
+
+#### **Delete a Profile:**
+
+```bash
+aws configure --profile your-profile-name delete
+```
+
+*Deletes a specific named profile.*
+
+### **AWS Simple Storage Server (S3)**
+
+Amazon Simple Storage Service (S3) is a scalable, secure, and highly available object storage service provided by Amazon Web Services (AWS). It allows users to store and retrieve any amount of data from anywhere on the web, offering a simple web services interface to access and manage data.
+
+#### **List S3 Buckets**
+
+To view all S3 buckets in your account, use:
+
+```bash
+aws s3 ls
+```
+
+**Explanation:** This command lists all the S3 buckets in your AWS account.
+
+#### **Create an S3 Bucket**
+
+Create a new S3 bucket:
+
+```bash
+aws s3 mb s3://your-bucket-name
+```
+
+**Explanation:** This command creates a new S3 bucket with the provided name.
+
+#### **Upload a File to S3 Bucket**
+
+Upload a file to an S3 bucket:
+
+```bash
+aws s3 cp /path/to/your/file.txt s3://your-bucket-name
+```
+
+**Explanation:** This command copies a file from your local system to the specified S3 bucket.
+
+#### **Download a File from S3 Bucket**
+
+```bash
+aws s3 cp s3://your-bucket-name/file.txt /path/to/destination
+```
+
+**Explanation:** It retrieves a file from the specified S3 bucket and saves it to the provided local destination.
+
+#### **Delete an S3 Bucket**
+
+Delete an empty S3 bucket:
+
+```bash
+aws s3 rb s3://your-bucket-name
+```
+
+**Explanation:** This command removes the specified empty S3 bucket.
+
+### **AWS Elastic Compute Cloud (EC2)**
+
+Amazon Elastic Compute Cloud (EC2) is a core service provided by Amazon Web Services (AWS) that enables users to rent virtual servers, known as instances, on which they can run applications. EC2 offers a scalable computing capacity in the cloud, allowing users to configure instances as needed, with control over CPU, memory, storage, and networking.
+
+Here are some usefull commands:
+
+#### **List EC2 Instances**
+
+List all running EC2 instances:
+
+```bash
+aws ec2 describe-instances
+```
+
+**Explanation:** It displays information about all running EC2 instances in your AWS account.
+
+#### **Start an EC2 Instance**
+
+Start a stopped EC2 instance:
+
+```bash
+aws ec2 start-instances --instance-ids your-instance-id
+```
+
+**Explanation:** This command initiates a stopped EC2 instance using its instance ID.
+
+#### **Stop an EC2 Instance**
+
+Stop a running EC2 instance:
+
+```bash
+aws ec2 stop-instances --instance-ids your-instance-id
+```
+
+**Explanation:** It halts a running EC2 instance specified by its instance ID.
+
+### **AWS Identity and Access Management (IAM)**
+
+AWS Identity and Access Management (IAM) is a web service that helps securely control access to AWS services and resources. It enables users to manage users, groups, roles, and their permissions within an AWS account.
+
+Basic IAM Operations:
+
+#### **Describe IAM Users**
+
+List IAM users in your AWS account:
+
+```bash
+aws iam list-users
+```
+
+**Explanation:** This command provides a list of all IAM users in your AWS account.
+
+#### **Create an IAM User**
+
+Create a new IAM user:
+
+```bash
+aws iam create-user --user-name your-username
+```
+
+**Explanation:** This command generates a new IAM user with the provided username.
+
+#### **Attach Policy:**
+
+```bash
+aws iam attach-user-policy --policy-arn your-policy-arn --user-name your-username
+```
+
+**Explanation:** Attaches an IAM policy to a user.
+
+### **Conclusion:**
+
+AWS CLI offers a convenient way to manage AWS services through simple commands. These basic commands provide a starting point for exploring and utilizing various AWS functionalities.
+
+Refer to the official AWS CLI documentation for more commands and advanced usage.
+
+**Note:** Always use AWS CLI commands carefully to avoid unintended actions or charges.
+
+2:["$","$Le",null,{"blog":{"content":"$f","date":"2023-12-07","published":false,"updated":"12/2/2024","slug":"introduction-to-aws-cli-basic-commands-for-beginners","description":"The Amazon Web Services Command Line Interface (AWS CLI) is a powerful tool that enables users to interact with various AWS services using commands in the terminal or command prompt. This tutorial aims to introduce fundamental AWS CLI commands with explanations for beginners.\n","key":"introduction-to-aws-cli-basic-commands-for-beginners","thumbnail":"https://cloudplexo-cms-bucket.s3.af-south-1.amazonaws.com/blog/introduction-to-aws-cli-basic-commands-for-beginners/1733069646681-basic-aws-cli-beginners.png","author":"abdulmumin yaqeen","title":"Introduction to AWS CLI: Basic Commands for Beginners"},"oldBlog":{"comp":["$","$L10",null,{}],"url":"introduction-to-aws-cli-basic-commands-for-beginners"}}]
+d:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Introduction to AWS CLI: Basic Commands for Beginners - CloudPlexo Blog"}],["$","meta","3",{"name":"description","content":"The Amazon Web Services Command Line Interface (AWS CLI) is a powerful tool that enables users to interact with various AWS services using commands in the terminal or command prompt. This tutorial aims to introduce fundamental AWS CLI commands with explanations for beginners."}],["$","meta","4",{"name":"keywords","content":"introduction-to-aws-cli-basic-commands-for-beginners,Cloud Computing Insights,AWS Blog,Azure Articles,Google Cloud Updates,Cloud Technology Trends"}],["$","link","5",{"rel":"canonical","href":"https://www.cloudplexo.com/blog/introduction-to-aws-cli-basic-commands-for-beginners/"}],["$","link","6",{"rel":"icon","href":"/icon.ico?7156ce2ac441bdbe","type":"image/x-icon","sizes":"16x16"}],["$","meta","7",{"name":"next-size-adjust"}]]
 1:null

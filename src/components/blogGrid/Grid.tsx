@@ -137,16 +137,16 @@ const BlogGrid: React.FC = () => {
                 <div className={styles.blogpageCatalogImage}>
                   <Image
                     loading="lazy"
-                    src={blog.image}
+                    src={blog.thumbnail}
                     alt={blog.title}
-                    height={blog.image.height}
-                    width={blog.image.width}
+                    height={300}
+                    width={300}
                   />
                 </div>
 
                 <div className={styles.content}>
                   <h6>{blog.date ? blog.date : "20 Jan 2024"}</h6>
-                  <Link href={`/blog/${blog.link}`}>
+                  <Link href={`/blog/${blog.slug}`}>
                     <div className={styles.contentTitle}>
                       <h5>{blog.title}</h5>
                       <BsArrowUpRight size={22} color="#101828" />

@@ -1,14 +1,84 @@
-2:I[33901,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","4115","static/chunks/4115-a42ac57ffd83c359.js","9331","static/chunks/app/case-study/%5Bslug%5D/page-3db7a7585f1adfb9.js"],"default"]
 3:I[4707,[],""]
 5:I[36423,[],""]
-6:I[83575,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
-7:I[72972,["6051","static/chunks/795d4814-476d6416c8e2052d.js","1779","static/chunks/0e762574-e2250de400a4ed4b.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3705","static/chunks/3705-6e03b39fcaffb9dd.js","3978","static/chunks/3978-5d39e3c5800054b0.js","1110","static/chunks/1110-142787639e130df6.js","1055","static/chunks/1055-349abfd8f52419d8.js","4606","static/chunks/4606-e72707569d1a06cf.js","2403","static/chunks/2403-4383a29793ac9144.js","3839","static/chunks/3839-050ccec6cac83fe9.js","1931","static/chunks/app/page-3de5719137762b60.js"],""]
+6:I[83575,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
+7:I[72972,["6051","static/chunks/795d4814-476d6416c8e2052d.js","1779","static/chunks/0e762574-e2250de400a4ed4b.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","3705","static/chunks/3705-b8fe6f5208fe399e.js","3978","static/chunks/3978-b267f049d115c2b8.js","1110","static/chunks/1110-de266bf53394e4db.js","1055","static/chunks/1055-c276cbff28cfad9a.js","4606","static/chunks/4606-20a0c42850a47167.js","2403","static/chunks/2403-4383a29793ac9144.js","3839","static/chunks/3839-050ccec6cac83fe9.js","1931","static/chunks/app/page-c8486484b9037db3.js"],""]
 8:"$Sreact.suspense"
-9:I[81523,["6051","static/chunks/795d4814-476d6416c8e2052d.js","1779","static/chunks/0e762574-e2250de400a4ed4b.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3705","static/chunks/3705-6e03b39fcaffb9dd.js","3978","static/chunks/3978-5d39e3c5800054b0.js","1110","static/chunks/1110-142787639e130df6.js","1055","static/chunks/1055-349abfd8f52419d8.js","4606","static/chunks/4606-e72707569d1a06cf.js","2403","static/chunks/2403-4383a29793ac9144.js","3839","static/chunks/3839-050ccec6cac83fe9.js","1931","static/chunks/app/page-3de5719137762b60.js"],"BailoutToCSR"]
-a:I[7237,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
-b:I[22207,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
-c:I[75549,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-1b8e6e793626db54.js","2972","static/chunks/2972-885cd7b58fc7386a.js","3464","static/chunks/3464-3fd7939c3a03ede8.js","7261","static/chunks/7261-e11c4348f24bbc13.js","8003","static/chunks/8003-de2f4c375cbf9715.js","3185","static/chunks/app/layout-b23017c896e7cd1f.js"],"default"]
+9:I[81523,["6051","static/chunks/795d4814-476d6416c8e2052d.js","1779","static/chunks/0e762574-e2250de400a4ed4b.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","3705","static/chunks/3705-b8fe6f5208fe399e.js","3978","static/chunks/3978-b267f049d115c2b8.js","1110","static/chunks/1110-de266bf53394e4db.js","1055","static/chunks/1055-c276cbff28cfad9a.js","4606","static/chunks/4606-20a0c42850a47167.js","2403","static/chunks/2403-4383a29793ac9144.js","3839","static/chunks/3839-050ccec6cac83fe9.js","1931","static/chunks/app/page-c8486484b9037db3.js"],"BailoutToCSR"]
+a:I[7237,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
+b:I[22207,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
+c:I[75549,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5452","static/chunks/5e22fd23-548660fd7966a330.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","3464","static/chunks/3464-108d3965859ff6f4.js","7261","static/chunks/7261-55c1cedd72bd6eaa.js","8003","static/chunks/8003-22382164f812e9a5.js","3185","static/chunks/app/layout-07248a66e26d07dc.js"],"default"]
 4:["slug","liveli-case-study","d"]
-0:["8ZD4foaAHjKgczs1T8v65",[[["",{"children":["case-study",{"children":[["slug","liveli-case-study","d"],{"children":["__PAGE__?{\"slug\":\"liveli-case-study\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["case-study",{"children":[["slug","liveli-case-study","d"],{"children":["__PAGE__",{},[["$L1",["$","$L2",null,{}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/080c5d008dd17029.css","precedence":"next","crossOrigin":"$undefined"}]]],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","case-study","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","case-study","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/01329c7d2530a3fe.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/a2429df6874052f9.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","className":"__variable_d65c78","children":["$","body",null,{"children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"style":{"display":"flex","flexDirection":"column","justifyContent":"center","alignItems":"center","height":"100vh","textAlign":"center","fontFamily":"Arial, sans-serif","backgroundColor":"#f9f9f9","color":"#333","padding":"0 20px"},"children":[["$","div",null,{"style":{"marginBottom":"20px","color":"#555"},"children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 24 24","width":"150","height":"150","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":[["$","circle",null,{"cx":"12","cy":"12","r":"10"}],["$","line",null,{"x1":"15","y1":"9","x2":"9","y2":"15"}],["$","line",null,{"x1":"9","y1":"9","x2":"15","y2":"15"}]]}]}],["$","h1",null,{"style":{"fontSize":"3rem","marginBottom":"10px"},"children":"404 - Page Not Found"}],["$","p",null,{"style":{"fontSize":"1.6rem","marginBottom":"20px"},"children":"Oops! The page you are looking for does not exist."}],["$","$L7",null,{"href":"/","style":{"fontSize":"1.4rem","color":"#0070f3","textDecoration":"none"},"children":"Return to Home"}]]}],"notFoundStyles":[]}],["$","$8",null,{"fallback":null,"children":["$","$L9",null,{"reason":"next/dynamic","children":["$","$La",null,{}]}]}],[["$","$Lb",null,{}],["$","$Lc",null,{}]]]}]}]],null],null],["$Ld",null]]]]
-d:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Liveli case study - CloudPlexo's Expert Solutions"}],["$","meta","3",{"name":"description","content":"Explore case studies of organizations optimizing cloud costs and maximizing savings through strategies like AWS credits and resource allocation"}],["$","meta","4",{"name":"keywords","content":"Cloud Billing Solutions,Cloud Cost Optimization,AWS Credits,Cost Management,Cloud Spending,Resource Allocation,Billing Challenges"}],["$","link","5",{"rel":"canonical","href":"https://cloudplexo.com/case-study/liveli-case-study/"}],["$","link","6",{"rel":"icon","href":"/icon.ico?7156ce2ac441bdbe","type":"image/x-icon","sizes":"16x16"}],["$","meta","7",{"name":"next-size-adjust"}]]
+0:["uEu_oHx93E1n1djLkNdZ9",[[["",{"children":["case-study",{"children":[["slug","liveli-case-study","d"],{"children":["__PAGE__?{\"slug\":\"liveli-case-study\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["case-study",{"children":[["slug","liveli-case-study","d"],{"children":["__PAGE__",{},[["$L1","$L2",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/080c5d008dd17029.css","precedence":"next","crossOrigin":"$undefined"}]]],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","case-study","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","case-study","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/01329c7d2530a3fe.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/a2429df6874052f9.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","className":"__variable_d65c78","children":["$","body",null,{"children":[["$","$L6",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"style":{"display":"flex","flexDirection":"column","justifyContent":"center","alignItems":"center","height":"100vh","textAlign":"center","fontFamily":"Arial, sans-serif","backgroundColor":"#f9f9f9","color":"#333","padding":"0 20px"},"children":[["$","div",null,{"style":{"marginBottom":"20px","color":"#555"},"children":["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 24 24","width":"150","height":"150","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":[["$","circle",null,{"cx":"12","cy":"12","r":"10"}],["$","line",null,{"x1":"15","y1":"9","x2":"9","y2":"15"}],["$","line",null,{"x1":"9","y1":"9","x2":"15","y2":"15"}]]}]}],["$","h1",null,{"style":{"fontSize":"3rem","marginBottom":"10px"},"children":"404 - Page Not Found"}],["$","p",null,{"style":{"fontSize":"1.6rem","marginBottom":"20px"},"children":"Oops! The page you are looking for does not exist."}],["$","$L7",null,{"href":"/","style":{"fontSize":"1.4rem","color":"#0070f3","textDecoration":"none"},"children":"Return to Home"}]]}],"notFoundStyles":[]}],["$","$8",null,{"fallback":null,"children":["$","$L9",null,{"reason":"next/dynamic","children":["$","$La",null,{}]}]}],[["$","$Lb",null,{}],["$","$Lc",null,{}]]]}]}]],null],null],["$Ld",null]]]]
+e:I[86466,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","5915","static/chunks/5915-0201d1e543d87633.js","3486","static/chunks/3486-31c46a73f5eb8de6.js","4669","static/chunks/4669-1bb1b2a9e5229ba7.js","9331","static/chunks/app/case-study/%5Bslug%5D/page-71fe1c0560c69e0d.js"],"default"]
+10:I[33901,["1779","static/chunks/0e762574-e2250de400a4ed4b.js","5878","static/chunks/5878-5874fb2c0dc2a1fa.js","2972","static/chunks/2972-ec2c5667a187e8c4.js","6434","static/chunks/6434-f1ba83ef6f4d8ff1.js","5915","static/chunks/5915-0201d1e543d87633.js","3486","static/chunks/3486-31c46a73f5eb8de6.js","4669","static/chunks/4669-1bb1b2a9e5229ba7.js","9331","static/chunks/app/case-study/%5Bslug%5D/page-71fe1c0560c69e0d.js"],"default"]
+f:T74e,## The Company
+
+Liveli is a company based in Ontario, Canada. Liveli is a Social Networking and Live Entertainment Hub where users can:
+
+* Share their lifestyle.
+* Earn real money from posts and content.
+* Stream live events and watch live entertainment.
+* Stay connected with family and friends.
+
+Liveli is an all-in-one app for social networking and entertainment.
+
+## Solution
+
+* **Wendu Cloud Security and Cost Management Platform** solution.
+
+## Products
+
+* AWS RDS Aurora Serverless
+* Lambda
+* API Gateway
+* Amazon S3
+* AWS Step Functions
+* AWS Certificate Manager
+* AWS Secret Manager
+* CloudFront
+
+## Business Challenge
+
+Before adopting **Wendu**, Liveli faced several challenges in managing their cloud environment and infrastructure:
+
+* Lack of maturity and processes for cloud management.
+* Inability to identify areas for cost optimization.
+* Needed a high-level management tool for monitoring operations and spending.
+* Required visibility into underutilized and idle resources.
+
+## Working Together
+
+CloudPlexo served as a **Trusted Independent Software Vendor (ISV)** for Liveli.
+
+## Why Amazon Web Services
+
+AWS was chosen as the cloud platform for its:
+
+* Flexibility
+* Elasticity
+* Scalability
+* Cost-effectiveness
+
+CloudPlexo worked closely with Liveli to meet their cloud management objectives, leveraging a range of AWS services, including:
+
+* AWS RDS Aurora Serverless
+* Lambda
+* API Gateway
+* Amazon S3
+* AWS Step Functions
+* AWS Certificate Manager
+* AWS Secret Manager
+* CloudFront
+
+## Outcomes
+
+By implementing the **Wendu Cloud Security and Cost Management Platform**, Liveli achieved:
+
+* High-level management of their cloud environment.
+* Significant cost optimization.
+* Efficient scheduling of non-production VMs and databases.
+* Enhanced forecasting and inventory management.
+
+These improvements resulted in cost savings of up to **28%**.2:["$","$Le",null,{"caseStudy":{"content":"$f","date":"2022-07-02","published":false,"slug":"liveli-case-study","tag":"Social Networking","description":"Liveli is a company based in Ontario, Canada. Liveli is a Social Networking and Live Entertainment Hub. Users can share their Lifestyle, Earn real money from posts and contents, stream live events, watch live entertainment and stay connected.\n\n","key":"liveli-case-study","thumbnail":"https://cloudplexo-cms-bucket.s3.af-south-1.amazonaws.com/case-studies/liveli-case-study/1733122627238-liveli-case-study.webp","author":"cloudplexo team","title":"Liveli Case Study"},"oldCaseStudy":{"comp":["$","$L10",null,{}],"url":"liveli-case-study"}}]
+d:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Liveli Case Study - CloudPlexo's Expert Solutions"}],["$","meta","3",{"name":"description","content":"Liveli is a company based in Ontario, Canada. Liveli is a Social Networking and Live Entertainment Hub. Users can share their Lifestyle, Earn real money from posts and contents, stream live events, watch live entertainment and stay connected."}],["$","meta","4",{"name":"keywords","content":"Cloud Billing Solutions,Cloud Cost Optimization,AWS Credits,Cost Management,Cloud Spending,Resource Allocation,Billing Challenges"}],["$","link","5",{"rel":"canonical","href":"https://cloudplexo.com/case-study/liveli-case-study/"}],["$","link","6",{"rel":"icon","href":"/icon.ico?7156ce2ac441bdbe","type":"image/x-icon","sizes":"16x16"}],["$","meta","7",{"name":"next-size-adjust"}]]
 1:null

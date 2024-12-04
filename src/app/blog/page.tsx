@@ -2,31 +2,42 @@
 
 import styles from "./styles.module.css";
 import BgImg from "@/assets/blog/blog-hero.webp"
-
-import { blogs } from "./array";
-import Pagination from "@/components/pagination/pagination";
 import CTAForm from "@/components/callToAction/cta";
+import Pagination from "@/components/pagination/pagination";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
-import { useEffect, useState } from "react";
+
+import { useContent } from "@/lib/actions";
+import { blogs as oldBlogs } from "./array";
 
 const Blogpage: React.FC = () => {
-    const [blogList, setBlogList] = useState([])
+    const { data, isError, isLoading } = useContent("blog")
 
+    const publishedBlogs = data?.filter((blog: { published: boolean }) => blog.published) || [];
 
-    useEffect(() => {
-        function getBlogs() {
-            const url = "https://ocph6cngftcvzbx7tkln4shgxq0mrxwf.lambda-url.us-east-1.on.aws/";
-            fetch(url)
-                .then(response => response.json())
-                .then(data => setBlogList(data.data))
-                .catch(error => console.error(error.message))
-        }
-        getBlogs()
+    const blogPosts = [...publishedBlogs, ...oldBlogs]
 
-        return () => getBlogs()
-    }, [])
+    if (isError) return <div>failed to load</div>
 
-    const tempBlog = [blogList, ...blogs]
+    if (isLoading) {
+        return (
+            <>
+                <LazyBackgroundImage src={BgImg} className={styles.blogHeroBg}>
+                    <div className={styles.blogHero}>
+                        <h2>Blogs</h2>
+                        <p>
+                            Get updated on the most recent developments in the industry,
+                            including news, interviews, cutting-edge technologies, and
+                            valuable resources.
+                        </p>
+
+                        <CTAForm />
+                    </div>
+                </LazyBackgroundImage>
+
+                <div>Loading Blogs...</div>
+            </>
+        )
+    }
 
     return (
         <>
@@ -43,7 +54,7 @@ const Blogpage: React.FC = () => {
                 </div>
             </LazyBackgroundImage>
 
-            <Pagination data={blogs} pageLimit={4} dataLimit={12} />
+            <Pagination data={blogPosts} pageLimit={4} dataLimit={12} />
         </>
     );
 
