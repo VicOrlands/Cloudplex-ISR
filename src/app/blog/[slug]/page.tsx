@@ -11,7 +11,7 @@ type BlogProps = {
 };
 
 export async function generateStaticParams() {
-  const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/blog');
+  const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/blog/');
   const data = await res.json();
 
   const publishedBlogs = data.filter((blog: { published: boolean }) => blog.published);
@@ -28,7 +28,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params
 }: BlogProps): Promise<Metadata> {
-  const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/blog');
+  const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/blog/');
   const data = await res.json();
 
   const publishedBlog = data.filter((caseStudy: { published: boolean }) => caseStudy.published);

@@ -6,7 +6,7 @@ const fetcher = (url) => fetch(url).then(res => res.json())
 
 export function useContent(endpoint) {
     const { data, error, isLoading } = useSWR(
-        `https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/${endpoint}`,
+        `https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/${endpoint}/`,
         fetcher,
         {
             revalidateOnFocus: true,
