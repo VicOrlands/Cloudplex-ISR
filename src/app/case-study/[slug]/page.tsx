@@ -11,7 +11,7 @@ type SlugParams = {
 }
 
 export async function generateStaticParams() {
-    const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies');
+    const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies/');
     const data = await res.json();
 
     const publishedCaseStudies = data.filter((caseStudy: { published: boolean }) => caseStudy.published);
@@ -27,7 +27,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: SlugParams): Promise<Metadata> {
-    const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies');
+    const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies/');
     const data = await res.json();
 
     const publishedCaseStudies = data.filter((caseStudy: { published: boolean }) => caseStudy.published);
