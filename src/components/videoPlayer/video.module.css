@@ -25,6 +25,7 @@
     border-radius: 50%;
     color: white;
     cursor: pointer;
+    z-index: 9999; /* Ensures it's above everything else */
     transition: all 0.3s ease;
 }
 
@@ -34,10 +35,13 @@
 }
 
 .play-button.playing {
-    opacity: 0;
-    pointer-events: none;
+    opacity: 0; /* Hides the button when video is playing */
+    pointer-events: none; /* Prevents interaction */
+    transition: opacity 0.3s ease;
 }
 
 .play-button.playing:hover {
-    opacity: 1;
+    opacity: 1; /* Allows hover interaction to make it visible */
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.7);
 }

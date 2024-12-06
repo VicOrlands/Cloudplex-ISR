@@ -34,6 +34,7 @@
   border: 1px solid rgba(0, 0, 0, 0.13);
   border-radius: 21px;
   overflow: hidden;
+  z-index:100;
 }
 
 .placeholderImage {
@@ -138,6 +139,7 @@
   background-color: #3E54AC;
 }
 
+
 .videoDot li button:hover,
 .videoDot li button:focus {
   background-color: #3E54AC;
@@ -149,7 +151,7 @@
 .mobile {
   display: none;
 }
-
+/* 
 .btngroup {
   position: absolute;
   top: 45%;
@@ -157,7 +159,29 @@
   right: 3.5%;
   display: flex;
   justify-content: space-between;
+  pointer-events: none;
+  z-index: 0;
+} */
+
+.buttonLeft, 
+.buttonRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
+
+.buttonLeft {
+  left: 10px;
+}
+
+.buttonRight {
+  right: 10px; 
+}
+
 
 .btngroup button {
   background-color: #fff;

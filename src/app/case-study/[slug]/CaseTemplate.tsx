@@ -33,10 +33,10 @@ export default function CaseTemplate(props: CaseStudyProps) {
                 </section>
 
                 <section className={styles["main-body"]}>
-                    <Image
+                    {/* <Image
                         src={coverImage || landerImg}
                         alt="Rearchitecting KoboAccountant's Application Infrastructure to Microservices on AWS"
-                    />
+                    /> */}
                     <p>By <b>{author}</b> on {formatDate(date)}</p>
 
                     <ReactMarkdown

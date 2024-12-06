@@ -64,6 +64,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, poster }) => {
             {isClient && (
                 <button
                     onClick={togglePlay}
+                    style={{zIndex:9999}}
                     className={clsx(styles["play-button"], { [styles["playing"]]: isPlaying })}
                     aria-label={isPlaying ? styles['Pause video'] : styles['Play video']}
                 >

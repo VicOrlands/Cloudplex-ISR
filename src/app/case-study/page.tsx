@@ -60,8 +60,8 @@ const CaseList: React.FC = () => {
         )
     }
 
-    const publishedCaseStudies = data.filter((caseStudy: { published: boolean }) => caseStudy.published);
-    const study = publishedCaseStudies ? [...publishedCaseStudies, ...casestudy] : casestudy
+    const publishedCaseStudies = data.filter((caseStudy: { published: boolean }) => caseStudy?.published );
+    const study = publishedCaseStudies ? [...publishedCaseStudies] : casestudy
 
     const handleSelect = (caseTag: string) => {
         setTag(caseTag);

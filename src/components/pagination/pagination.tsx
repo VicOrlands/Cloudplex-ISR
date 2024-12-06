@@ -16,7 +16,7 @@ interface Blog {
     author: string;
     content: string;
     key: string;
-    desc?: string;
+    description?: string;
 }
 
 interface PaginationProps {
@@ -86,7 +86,7 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
                                     <BsArrowUpRight color="#101828" size={24} />
                                 </div>
                             </Link>
-                            <p>{blog?.desc || extractFirstParagraph(blog.content)}</p>
+                            <p>{blog?.description}</p>
                         </div>
                     </article>
                 ))}

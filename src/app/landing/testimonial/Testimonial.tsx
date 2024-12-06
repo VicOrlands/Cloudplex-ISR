@@ -158,6 +158,7 @@ const Testimonial: React.FC = () => {
             <button
               type="button"
               aria-label="Arrow pointing left"
+              className={clsx(styles.buttonLeft)}
               onClick={videoSliderRef?.slickPrev}
             >
               <MdArrowBack />
@@ -165,6 +166,7 @@ const Testimonial: React.FC = () => {
             <button
               type="button"
               aria-label="Arrow pointing right"
+              className={clsx(styles.buttonRight)}
               onClick={videoSliderRef?.slickNext}
             >
               <MdArrowForward />

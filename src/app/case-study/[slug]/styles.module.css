@@ -47,6 +47,20 @@
   text-transform: capitalize;
   line-height: 22.42px;
   margin-bottom: 10px;
+
+  
+}
+
+.main-body > h3 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 22.42px;
+  margin-bottom: 10px;
+}
+
+.main-body > * + * {
+  margin-top: 2.2rem !important;
 }
 
 .gtb-pensions-page .main-body p,

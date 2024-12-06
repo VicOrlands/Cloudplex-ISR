@@ -12,9 +12,8 @@ import { blogs as oldBlogs } from "./array";
 const Blogpage: React.FC = () => {
     const { data, isError, isLoading } = useContent("blog")
 
-    const publishedBlogs = data?.filter((blog: { published: boolean }) => blog.published) || [];
+    const blogPosts = data?.filter((blog: { published: boolean }) => blog.published) || [];
 
-    const blogPosts = [...publishedBlogs, ...oldBlogs]
 
     if (isError) return <div>failed to load</div>
 

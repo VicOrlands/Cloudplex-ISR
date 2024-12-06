@@ -2,7 +2,7 @@
   color: #344054;
   display: grid;
   grid-template-columns: 15% 85%;
-  padding: 150px 20%;
+  padding: 150px 15%;
   font-family: var(--font-inter);
 }
 
@@ -43,6 +43,8 @@
   height: auto;
   margin-bottom: 10px;
   border: 1px solid #eaeaea;
+  max-height: 600px;
+  overflow:hidden;
 }
 
 .main-content img:first-of-type {
@@ -58,6 +60,12 @@
   margin-bottom: 12px;
   margin-top: 20px;
 }
+
+
+.main-content > * + * {
+  margin-top: 2.2rem !important;
+}
+
 
 .main-content h6 {
   font-family: var(--font-inter);

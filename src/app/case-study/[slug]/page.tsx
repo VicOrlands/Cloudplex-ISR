@@ -27,42 +27,42 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: SlugParams): Promise<Metadata> {
-    const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies/');
+    const res = await fetch(`https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies/${params.slug}`);
     const data = await res.json();
 
-    const publishedCaseStudies = data.filter((caseStudy: { published: boolean }) => caseStudy.published);
-    const publishedSlug = publishedCaseStudies.find((pub: { slug: string; }) => pub.slug === params.slug);
-
-    if (publishedSlug) {
-        return {
-            title: `${publishedSlug.title} - CloudPlexo's Expert Solutions`,
-            description: publishedSlug.description,
-            alternates: {
-                canonical: `https://cloudplexo.com/case-study/${publishedSlug.slug}`,
-            },
-        };
+    if (res.ok){
+        const publishedSlug = data
+    
+    
+        if (publishedSlug?.published) {
+            return {
+                title: `${publishedSlug.title} - CloudPlexo's Expert Solutions`,
+                description: publishedSlug.description,
+                alternates: {
+                    canonical: `https://cloudplexo.com/case-study/${publishedSlug.slug}`,
+                },
+            };
+        }
     }
 
-    const oldCaseStudy = casestudy.find(({ slug }) => slug === params.slug)
-    return {
-        title: `${oldCaseStudy?.title} - CloudPlexo's Expert Solutions`,
-        description: oldCaseStudy?.description,
-        alternates: {
-            canonical: `https://cloudplexo.com/case-study/${oldCaseStudy?.slug}`,
-        },
-    };
 }
 
 export default async function CaseStudyPage({ params }: { params: { slug: string } }) {
-    const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies');
-    const data = await res.json();
+    const res = await fetch(`https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies/${params.slug}`);
+    if (res.ok){
+        const data = await res.json();
+        console.log(data)
+    
+        const caseStudy = data;
+    
+        if (!caseStudy?.published) {
+            return notFound();
+        }
+    
+        return <ClientCaseStudy caseStudy={caseStudy} oldCaseStudy={null} />;
 
-    const caseStudy = data.find(({ slug }: { slug: string }) => slug === params.slug);
-    const oldCaseStudy = paths.find(({ url }) => url === params.slug);
+    } else{
 
-    if (!caseStudy && !oldCaseStudy) {
-        return notFound();
+        return notFound()
     }
-
-    return <ClientCaseStudy caseStudy={caseStudy} oldCaseStudy={oldCaseStudy} />;
 }
