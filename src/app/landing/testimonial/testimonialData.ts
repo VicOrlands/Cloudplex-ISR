@@ -84,6 +84,10 @@ export const testimonials: {
     by: string;
 }[] = [
         {
+            content: "Since having our workloads on AWS, the ability to be flexible with server provisioning has been second to none. It has improved our time to market by 60% and given us more cost control over our infrastructure thanks to CloudPlexo.",
+            by:"Head of IT, GT Pension Managers"
+        },
+        {
             content:
                 "CloudPlexo is the best in their league, providing top-notch services for our cloud-based enterprise. Their advanced software identifies vulnerabilities, optimizes cost efficiency, and streamlines resources",
             by: "CTO, PhastPay",
