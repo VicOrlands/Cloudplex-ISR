@@ -24,6 +24,8 @@ export async function generateStaticParams() {
         ...publishedSlug,
     ];
   }
+
+  return []
 }
 
 export async function generateMetadata({
