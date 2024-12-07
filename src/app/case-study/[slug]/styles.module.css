@@ -47,11 +47,9 @@
   text-transform: capitalize;
   line-height: 22.42px;
   margin-bottom: 10px;
-
-  
 }
 
-.main-body > h3 {
+.main-body>h3 {
   font-size: 16px;
   font-weight: 700;
   text-transform: capitalize;
@@ -59,19 +57,39 @@
   margin-bottom: 10px;
 }
 
-.main-body > * + * {
+.main-body>*+* {
   margin-top: 2.2rem !important;
 }
 
 .gtb-pensions-page .main-body p,
 .gtb-pensions-page .main-body ul li {
   font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 30px;
 }
 
 .gtb-pensions-page .main-body p {
   margin-bottom: 20px;
+}
+
+.gtb-pensions-page .date-tag-container {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gtb-pensions-page .date-tag-container h6 {
+  font-size: 1.8rem;
+}
+
+.gtb-pensions-page .date-tag-container p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
 .gtb-pensions-page ul {

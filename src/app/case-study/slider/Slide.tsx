@@ -2,8 +2,8 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Slider from "react-slick";
-import { reviews } from "./caseArray";
-import extraStyles from "../landing/testimonial/testimonial.module.css"
+import { reviews } from "../caseArray";
+import extraStyles from "@/app/landing/testimonial/testimonial.module.css"
 import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 import clsx from "clsx";
 import {

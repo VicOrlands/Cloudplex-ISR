@@ -4,7 +4,6 @@ import Image from "next/image";
 import Footer from "../footer/page";
 import styles from "./styles.module.css"
 import logo from "@/assets/casestudies/logo.webp";
-import landerImg from "@/assets/casestudies/koboAccBg.webp";
 
 import remarkGfm from "remark-gfm";
 import { CaseStudyProps } from "../page";
@@ -12,7 +11,7 @@ import ReactMarkdown from "react-markdown";
 import { formatDate } from "@/lib/utils";
 
 export default function CaseTemplate(props: CaseStudyProps) {
-    const { title, thumbnail, coverImage, content, author, date } = props
+    const { title, thumbnail, content, author, date, tag } = props
 
     return (
         <>
@@ -33,11 +32,10 @@ export default function CaseTemplate(props: CaseStudyProps) {
                 </section>
 
                 <section className={styles["main-body"]}>
-                    {/* <Image
-                        src={coverImage || landerImg}
-                        alt="Rearchitecting KoboAccountant's Application Infrastructure to Microservices on AWS"
-                    /> */}
-                    <p>By <b>{author}</b> on {formatDate(date)}</p>
+                    <div className={styles["date-tag-container"]}>
+                        <h6>By <b>{author}</b> on {formatDate(date)}</h6>
+                        <p>Tag: {tag}</p>
+                    </div>
 
                     <ReactMarkdown
                         children={content}

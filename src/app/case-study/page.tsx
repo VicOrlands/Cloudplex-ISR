@@ -8,7 +8,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 import BgImg from "@/assets/casestudies/hero.webp"
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 
-import Slide from "./Slide";
+import Slide from "./slider/Slide";
 import { useContent } from "@/lib/actions";
 import { casestudy, caseTags } from "./caseArray";
 
@@ -60,7 +60,7 @@ const CaseList: React.FC = () => {
         )
     }
 
-    const publishedCaseStudies = data.filter((caseStudy: { published: boolean }) => caseStudy?.published );
+    const publishedCaseStudies = data.filter((caseStudy: { published: boolean }) => caseStudy?.published);
     const study = publishedCaseStudies ? [...publishedCaseStudies] : casestudy
 
     const handleSelect = (caseTag: string) => {
