@@ -9,8 +9,8 @@ import BgImg from "@/assets/casestudies/hero.webp"
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 
 import Slide from "./slider/Slide";
+import { caseTags } from "./caseArray";
 import { useContent } from "@/lib/actions";
-import { casestudy, caseTags } from "./caseArray";
 
 export interface CaseStudyProps {
     thumbnail: string,
@@ -60,14 +60,13 @@ const CaseList: React.FC = () => {
         )
     }
 
-    const publishedCaseStudies = data.filter((caseStudy: { published: boolean }) => caseStudy?.published);
-    const study = publishedCaseStudies ? [...publishedCaseStudies] : casestudy
+    const study = data.filter((caseStudy: { published: boolean }) => caseStudy?.published);
 
     const handleSelect = (caseTag: string) => {
         setTag(caseTag);
     };
 
-    const filterCases = tag === "" ? study : study?.filter((caseItem) => caseItem.tag === tag);
+    const filterCases = tag === "" ? study : study?.filter((caseItem: { tag: string; }) => caseItem.tag === tag);
 
     return (
         <section className={styles["casestudy"]}>

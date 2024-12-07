@@ -2,9 +2,7 @@
 
 import CaseTemplate from './CaseTemplate';
 
-const ClientCaseStudy = ({ caseStudy, oldCaseStudy }: any) => {
-    if (oldCaseStudy) return oldCaseStudy.comp;
-
+const ClientCaseStudy = ({ caseStudy }: any) => {
     return <CaseTemplate {...caseStudy} key={caseStudy.key} />;
 };
 

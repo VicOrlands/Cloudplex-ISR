@@ -69,6 +69,7 @@ const Slide: React.FC = () => {
                 <button
                     type="button"
                     aria-label="Arrow pointing left"
+                    className={clsx(extraStyles.buttonLeft)}
                     onClick={sliderRef?.slickPrev}
                 >
                     <MdOutlineKeyboardArrowLeft />
@@ -76,6 +77,7 @@ const Slide: React.FC = () => {
                 <button
                     type="button"
                     aria-label="Arrow pointing right"
+                    className={clsx(extraStyles.buttonRight)}
                     onClick={sliderRef?.slickNext}
                 >
                     <MdOutlineKeyboardArrowRight />

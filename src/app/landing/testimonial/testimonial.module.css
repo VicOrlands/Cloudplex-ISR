@@ -171,17 +171,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .buttonLeft {
-  left: 10px;
+  left: 30px;
 }
 
 .buttonRight {
-  right: 10px; 
+  right: 30px; 
 }
-
 
 .btngroup button {
   background-color: #fff;

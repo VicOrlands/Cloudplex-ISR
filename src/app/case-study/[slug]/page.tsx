@@ -1,39 +1,38 @@
-import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
-import { paths } from './paths';
+import NotFound from '@/app/not-found';
 import ClientCaseStudy from './ClientCaseStudy';
 
-type SlugParams = {
-  params: {
-    slug: string
+type CaseStudy = {
+  slug: string;
+  title: string;
+  description: string;
+  published: boolean;
+};
+
+const fetchCaseStudies = async (): Promise<CaseStudy[]> => {
+  const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies/');
+  if (!res.ok) {
+    throw new Error('Failed to fetch case studies');
   }
-}
+  const data = await res.json();
+  return data.filter((caseStudy: CaseStudy) => caseStudy.published);
+};
 
 export async function generateStaticParams() {
-  const res = await fetch('https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies/');
+  try {
+    const publishedCaseStudies = await fetchCaseStudies();
 
-  if (res.ok) {
+    return publishedCaseStudies.map((caseStudy) => ({
+      slug: caseStudy.slug,
+    }));
 
-    const data = await res.json();
-
-    const publishedCaseStudies = data.filter((caseStudy: { published: boolean }) => caseStudy.published);
-    const publishedSlug = publishedCaseStudies.map((pub: { slug: string; }) => ({ slug: pub.slug }));
-
-    const hardcodedSlugs = paths.map(({ url }) => ({ slug: url }));
-
-    return [
-      ...publishedSlug,
-      ...hardcodedSlugs,
-      { slug: "empowering-climate-decision-making-with-aws-iot-for-climdes" }
-    ];
+  } catch (error) {
+    console.error('Error generating static params:', error);
+    return [];
   }
-
-  return []
 }
 
-export async function generateMetadata({
-  params,
-}: SlugParams): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   try {
     const res = await fetch(
       `https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies/${params.slug}`
@@ -69,19 +68,18 @@ export async function generateMetadata({
   }
 }
 
-
 export default async function CaseStudyPage({ params }: { params: { slug: string } }) {
   const res = await fetch(`https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/case-studies/${params.slug}`);
+
   if (res.ok) {
     const data = await res.json();
-    const caseStudy = data;
 
-    if (!caseStudy?.published) {
-      return notFound();
+    if (!data?.published) {
+      return <NotFound />;
     }
 
-    return <ClientCaseStudy caseStudy={caseStudy} oldCaseStudy={null} />;
+    return <ClientCaseStudy caseStudy={data} />;
   } else {
-    return notFound()
+    return <NotFound />;
   }
 }
