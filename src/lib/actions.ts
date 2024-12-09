@@ -1,14 +1,22 @@
 export async function fetchContent(endpoint: string) {
-    const res = await fetch(
-        `https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/${endpoint}/`,
-        { cache: "no-store" }
-    );
+    try {
+        const res = await fetch(
+            `https://bw5bt69rjh.execute-api.af-south-1.amazonaws.com/prod/${endpoint}/`,
+            { cache: "no-store" }
+        );
 
-    if (!res.ok) {
-        throw new Error(`Failed to fetch content from ${endpoint}`);
+        if (!res.ok) {
+            if (res.status === 404) {
+                return null;
+            }
+
+            throw new Error(`Failed to fetch content from ${endpoint}. Status: ${res.status}`);
+        }
+
+        return res.json();
+    } catch (error: any) {
+        throw new Error(`Error fetching content from ${endpoint}: ${error.message}`);
     }
-
-    return res.json();
 }
 
 // get all published case studies

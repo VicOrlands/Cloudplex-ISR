@@ -1,4 +1,3 @@
-
 .container,
 .calendlyContainer {
   display: flex;
@@ -8,15 +7,13 @@
   gap: 10px;
   height: 150dvh;
   margin: 0;
-  padding:30px;
+  padding: 30px;
 }
 
-.header{
-  margin:70px 0px 50px 0px;
-  font-size:3rem;
+.header {
+  margin: 70px 0px 50px 0px;
+  font-size: 3rem;
   font-family: var(--font-inter);
-
-
 }
 
 .calendly {
@@ -30,13 +27,9 @@
   border: none;
 }
 
-
-
 /* Mobile Styles */
 @media (max-width: 768px) {
-
-.header{
-  font-size:2rem;
-
-}
+  .header {
+    font-size: 2rem;
+  }
 }

@@ -62,15 +62,15 @@ const WebinarPage = async ({ params }: { params: { slug: string } }) => {
     <>
       <ToastContainer />
 
-      {event ? (
-        <EventsDetails {...event} key={event.key} />
-      ) : (
+      {webinar ? (
         <PlaceholderComp
           title={webinar?.name}
           src={webinar?.image || defaultImg}
           alt={webinar?.name || "events img"}
           speakers={webinar?.speakers}
         />
+      ) : (
+        <EventsDetails {...event} key={event.key} />
       )}
     </>
   );
