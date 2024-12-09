@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, Suspense } from "react";
 import useSWR from "swr"
 import Link from "next/link";
 import Image from "next/image";
@@ -34,12 +34,13 @@ export interface EventProps {
   description: string;
 }
 
-const EventsPage: React.FC = () => {
+function EventsWithURLParam() {
   const router = useRouter();
   const searchParams = useSearchParams()
-  const page = searchParams.get('page')
 
+  const page = searchParams.get('page')
   const currentPageFromUrl = parseInt(page as string, 10) || 1;
+
   const { data: events = [], error, isLoading } = useSWR<EventProps[]>(
     "events",
     fetchContent, {
@@ -228,6 +229,14 @@ const EventsPage: React.FC = () => {
 
       <Footer />
     </>
+  )
+}
+
+const EventsPage: React.FC = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <EventsWithURLParam />
+    </Suspense>
   );
 }
 
