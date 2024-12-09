@@ -8,7 +8,7 @@ import styles from "./events.module.css";
 import { eventSuccessArray } from "./array";
 import { useInView } from "react-intersection-observer";
 // import { MdArrowForward, MdArrowBack } from "react-icons/md";
-import { EventsArray } from "@/app/events/arrays/eventsArray";
+// import { EventsArray } from "@/app/events/arrays/eventsArray";
 
 const Slider = dynamic(() => import('react-slick'), { ssr: false });
 

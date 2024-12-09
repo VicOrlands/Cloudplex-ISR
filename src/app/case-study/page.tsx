@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import useSWR from "swr"
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 import styles from "./casestudy.module.css";
 import { BsArrowUpRight } from "react-icons/bs";
 import BgImg from "@/assets/casestudies/hero.webp"
@@ -10,7 +11,7 @@ import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 
 import Slide from "./slider/Slide";
 import { caseTags } from "./caseArray";
-import { useContent } from "@/lib/actions";
+import { fetchCaseStudies, fetchContent } from "@/lib/actions";
 
 export interface CaseStudyProps {
     thumbnail: string,
@@ -28,9 +29,17 @@ export interface CaseStudyProps {
 
 const CaseList: React.FC = () => {
     const [tag, setTag] = useState<string>("");
-    const { data, isError, isLoading } = useContent("case-studies")
 
-    if (isError) return <div>failed to load</div>
+    // combined server fetch and client side fetch for better experience
+    // REASON: since swr revalidates data when page is onFocus, it checks for new case studies and fetches it(no need to refresh the page). Meanwhile, initialData is fetched on req and works better for SEO too.
+    const initialData = fetchCaseStudies()
+    const { data, error, isLoading } = useSWR("case-studies", fetchContent, {
+        initialData,
+        revalidateOnFocus: true,
+        revalidateOnReconnect: true
+    })
+
+    if (error) return <div>failed to load</div>
 
     if (isLoading) {
         return (
@@ -60,13 +69,13 @@ const CaseList: React.FC = () => {
         )
     }
 
-    const study = data.filter((caseStudy: { published: boolean }) => caseStudy?.published);
+    const study = data.filter((caseStudy: { published: boolean }) => caseStudy.published);
+
+    const filterCases = tag === "" ? study : study?.filter((caseItem: { tag: string; }) => caseItem.tag === tag);
 
     const handleSelect = (caseTag: string) => {
         setTag(caseTag);
     };
-
-    const filterCases = tag === "" ? study : study?.filter((caseItem: { tag: string; }) => caseItem.tag === tag);
 
     return (
         <section className={styles["casestudy"]}>

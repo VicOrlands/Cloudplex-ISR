@@ -1,32 +1,26 @@
-import { notFound } from "next/navigation";
-import { EventsArray } from "../arrays/eventsArray";
-import { WebinarArray } from "../arrays/webinarArray";
-import defaultImg from "@/assets/events/events-video-thumbnail.webp";
-import PlaceholderComp from "./webinars/placeholderComp";
+import { Metadata } from "next";
+import NotFound from "@/app/not-found";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { WebinarArray } from "../arrays/webinarArray";
+import PlaceholderComp from "./webinars/placeholderComp";
 import EventsDetails from "./event-details/EventDetails";
+import { fetchContent, fetchEvents } from "@/lib/actions";
+import defaultImg from "@/assets/events/events-video-thumbnail.webp";
 
-type PageProps = {
-  params: {
-    slug: string;
-  };
-};
+export const revalidate = 60
 
-export interface MetaProps {
-  slug: string;
-}
+export const dynamicParams = true
 
-export async function generateMetadata({ params }: { params: MetaProps }) {
-  const { slug } = params;
-  const currentEvent = EventsArray.find((event) => event.link === slug);
-  const currentWebinar = WebinarArray.find((webinar) => webinar.link === slug);
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const currentEvent = await fetchContent(`events/${params.slug}`);
+
+  const currentWebinar = WebinarArray.find((webinar) => webinar.link === params.slug);
 
   return {
-    title: `${
-      currentEvent ? currentEvent?.title : `Webinar: ${currentWebinar?.name}`
-    }`,
-    description: `Join CloudPlexo's webinars for insights into cloud cost savings, edge computing, leveraging cloud solutions for business growth, security foundations, cloud security, and cloud modernization.`,
+    title: `${currentEvent ? currentEvent.title : `Webinar: ${currentWebinar?.name}`
+      }`,
+    description: `${currentEvent ? currentEvent.description : "Join CloudPlexo's webinars for insights into cloud cost savings, edge computing, leveraging cloud solutions for business growth, security foundations, cloud security, and cloud modernization."}`,
     keywords: [
       "Technology updates",
       "Cloud industry insights",
@@ -35,35 +29,41 @@ export async function generateMetadata({ params }: { params: MetaProps }) {
       "Cloud trends",
     ],
     alternates: {
-      canonical: `https://www.cloudplexo.com/events/${slug}`,
+      canonical: `https://www.cloudplexo.com/events/${params.slug}`,
     },
   };
 }
 
 // link params
 export async function generateStaticParams() {
-  const eventsPaths = EventsArray.map(({ link }) => ({
-    slug: link || "404",
+  const events = await fetchEvents()
+
+  const eventsPaths = events.map(({ key }: { key: string }) => ({
+    slug: key,
   }));
 
   const webinarPaths = WebinarArray.map(({ link }) => ({
-    slug: link || "404",
+    slug: link,
   }));
 
   return [...eventsPaths, ...webinarPaths];
 }
 
-const WebinarPage: React.FC<PageProps> = ({ params }) => {
-  const { slug } = params;
-  const event = EventsArray.find((event) => event.link === slug);
-  const webinar = WebinarArray.find((webinar) => webinar.link === slug);
+const WebinarPage = async ({ params }: { params: { slug: string } }) => {
+  const event = await fetchContent(`events/${params.slug}`);
 
-  if (!event && !webinar) notFound();
+  const webinar = WebinarArray.find((webinar) => webinar.link === params.slug);
+
+  if (!event && !webinar) {
+    return <NotFound />
+  };
 
   return (
     <>
+      <ToastContainer />
+
       {event ? (
-        <EventsDetails event={event} />
+        <EventsDetails {...event} key={event.key} />
       ) : (
         <PlaceholderComp
           title={webinar?.name}
@@ -72,8 +72,6 @@ const WebinarPage: React.FC<PageProps> = ({ params }) => {
           speakers={webinar?.speakers}
         />
       )}
-
-      <ToastContainer />
     </>
   );
 };

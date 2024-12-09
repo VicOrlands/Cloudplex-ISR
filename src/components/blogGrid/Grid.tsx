@@ -4,18 +4,29 @@ import React, { CSSProperties } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Slider from "react-slick";
-import styles from "./grid.module.css";
 import { BsArrowLeft, BsArrowRight, BsArrowUpRight } from "react-icons/bs";
-import "./style.css";
 
+import "./style.css";
 import clsx from "clsx";
-import { blogs } from "@/app/blog/array";
+import styles from "./grid.module.css";
+import { fetchBlogs } from "@/lib/actions";
 import FooterCTA from "../callToAction/footerCTA";
 
-interface SampleArrowProps {
+type SampleArrowProps = {
   className?: string;
   style?: CSSProperties;
   onClick?: () => void;
+}
+
+type BlogProps = {
+  key: string;
+  slug: string;
+  date: string;
+  title: string;
+  author: string;
+  content: string;
+  thumbnail: string;
+  description: string;
 }
 
 const SampleNextArrow: React.FC<SampleArrowProps> = ({
@@ -68,7 +79,9 @@ const SamplePrevArrow: React.FC<SampleArrowProps> = ({
   );
 };
 
-const BlogGrid: React.FC = () => {
+const BlogGrid: React.FC = async () => {
+  const blogs = await fetchBlogs()
+
   const settings = {
     lazyLoad: true,
     slidesToShow: 3,
@@ -129,10 +142,10 @@ const BlogGrid: React.FC = () => {
 
         <div className={styles.blogpageCarousel}>
           <Slider {...settings}>
-            {blogs.slice(0, 6).map((blog, index) => (
+            {blogs.slice(0, 6).map((blog: BlogProps) => (
               <div
                 className={clsx(styles.blogpageParent, "blogpageParent")}
-                key={index}
+                key={blog.key}
               >
                 <div className={styles.blogpageCatalogImage}>
                   <Image
@@ -145,14 +158,14 @@ const BlogGrid: React.FC = () => {
                 </div>
 
                 <div className={styles.content}>
-                  <h6>{blog.date ? blog.date : "20 Jan 2024"}</h6>
+                  <h6>{blog.date}</h6>
                   <Link href={`/blog/${blog.slug}`}>
                     <div className={styles.contentTitle}>
                       <h5>{blog.title}</h5>
                       <BsArrowUpRight size={22} color="#101828" />
                     </div>
                   </Link>
-                  <p className={styles.textDesc}>{blog.desc}</p>
+                  <p className={styles.textDesc}>{blog.description}</p>
                 </div>
               </div>
             ))}

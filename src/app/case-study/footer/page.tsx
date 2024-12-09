@@ -1,12 +1,10 @@
-"use client"
-
 import { Key } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles.module.css";
 import { usePathname } from 'next/navigation'
 import { BsArrowUpRight } from "react-icons/bs";
-import { useContent } from "@/lib/actions";
+import { fetchCaseStudies } from "@/lib/actions";
 
 type CaseType = {
     slug: Key;
@@ -15,19 +13,13 @@ type CaseType = {
     description: string;
 }
 
-export default function Footer() {
-    const { data, isError, isLoading } = useContent("case-studies")
-
+export default async function Footer() {
     const pathname = usePathname()
     const url = `${pathname}`
 
-    const publishedData = data.filter((caseStudy: { published: boolean }) => caseStudy.published)
-
-    const filteredCaseStudies = publishedData?.filter(({ slug }: { slug: string }) => `/case-study/${slug}/` !== url);
-
-    if (isError) return null
-
-    if (isLoading) return <div>Loading more case studies...</div>
+    const caseStudies = await fetchCaseStudies();
+    
+    const filteredCaseStudies = caseStudies?.filter(({ slug }: { slug: string }) => `/case-study/${slug}/` !== url);
 
     return (
         <div className={styles["casefooter"]}>

@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import { BsArrowUpRight } from "react-icons/bs";
 import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
-import { extractFirstParagraph, formatDate } from "@/lib/utils"
+import { formatDate } from "@/lib/utils"
 
 interface Blog {
     thumbnail: string;
@@ -77,8 +77,8 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
 
                         <div className={styles.content}>
                             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                {blog.author && <h6>By {blog.author}</h6>}
-                                <h6>{formatDate(blog.date) || "2022 / 2024"}</h6>
+                                <h6>By {blog.author}</h6>
+                                <h6>{formatDate(blog.date)}</h6>
                             </div>
                             <Link href={`/blog/${blog.slug}`}>
                                 <div className={styles.contentTitle}>
@@ -86,7 +86,7 @@ const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) =
                                     <BsArrowUpRight color="#101828" size={24} />
                                 </div>
                             </Link>
-                            <p>{blog?.description}</p>
+                            <p>{blog.description}</p>
                         </div>
                     </article>
                 ))}

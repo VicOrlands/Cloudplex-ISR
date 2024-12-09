@@ -1,6 +1,6 @@
 "use client"
 
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import styles from "./styles.module.css"
 import { formatDate } from "@/lib/utils";
 
@@ -10,7 +10,12 @@ import FeatherIcon from "feather-icons-react";
 import { CopyBlock, codepen } from "react-code-blocks";
 
 export interface BlogProps {
-    key: string | undefined; slug?: string | undefined; date?: string | undefined; title?: string | undefined; desc?: string | undefined; author?: string | undefined; content?: string | undefined; published?: boolean | undefined; thumbnail?: string | StaticImageData | undefined;
+    slug: string;
+    date: string;
+    title: string;
+    author: string;
+    content: string;
+    thumbnail: string;
 }
 
 export default function BlogTemplate(props: BlogProps) {
@@ -37,9 +42,9 @@ export default function BlogTemplate(props: BlogProps) {
             <div className={styles["main-content"]}>
                 <h1>{title}</h1>
                 <br />
-                <div style={{ display: "flex", alignItems: 'center', justifyContent: 'space-between' }}>
-                    <p style={{ margin: 0 }}>Author: <b>{author}</b></p>
-                    <p style={{ margin: 0 }}>{formatDate(date)}</p>
+                <div className={styles["date-tag-container"]}>
+                    <h6 style={{ margin: 0 }}>By <b>{author}</b></h6>
+                    <p style={{ margin: 0 }}>on {formatDate(date)}</p>
                 </div>
                 <br />
                 <br />
@@ -66,16 +71,17 @@ export default function BlogTemplate(props: BlogProps) {
                                     language={match[1]}
                                     showLineNumbers={false}
                                     theme={codepen}
-                                    customStyle={{ fontSize: "1.6rem", padding: "20px 8px" }}
+                                    customStyle={{ fontSize: "1.4rem", padding: "20px 8px" }}
                                     wrapLongLines={true} />
                             ) : (
                                 <code
                                     {...props}
                                     style={{
+                                        fontSize: "1.4rem",
                                         background: "#e3e4e6",
                                         padding: "4px 8px",
                                         borderRadius: "4px",
-                                        lineHeight: "32px"
+                                        lineHeight: "32px",
                                     }}
                                 >
                                     {children}

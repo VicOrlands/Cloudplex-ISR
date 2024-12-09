@@ -1,6 +1,3 @@
-import { marked } from "marked";
-import * as cheerio from "cheerio";
-
 // get date in locale string format
 export function formatDate(inputDate) {
     const date = new Date(inputDate);
@@ -8,10 +5,11 @@ export function formatDate(inputDate) {
     return date.toLocaleDateString("en-US", options);
 }
 
-// get first paragraph of contents
-export function extractFirstParagraph(markdown) {
-    const html = marked.parse(markdown);
-    const doc = cheerio.load(html);
-    const firstParagraph = doc("p").first().text();
-    return firstParagraph?.slice(0, 300) || "";
+export function hasDatePassed(eventDate) {
+    const today = new Date();
+    const eventDateObj = new Date(eventDate);
+
+    const todayMidnight = new Date(today.setHours(0, 0, 0, 0));
+
+    return eventDateObj < todayMidnight;
 }

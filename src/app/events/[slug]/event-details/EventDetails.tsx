@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import styles from "./styles.module.css";
 import { MdArrowForward, MdArrowBack } from "react-icons/md";
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
@@ -10,20 +10,20 @@ import bgImg from "@/assets/events/events_description_background_pattern.webp";
 
 import Modal from "./modal/ImgModal";
 import Footer from "../../footer/page";
-import { EventsProps } from "../../arrays/eventsArray";
-import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
-
-// types
-type PageProps = {
-  event: EventsProps;
-};
+import { EventProps } from "../../page";
+import { formatDate } from "@/lib/utils";
+// import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 
 type Modal = {
   id: number;
   open: Boolean;
 };
 
-const EventsDetails: React.FC<PageProps> = ({ event }) => {
+const EventsDetails: React.FC<EventProps> = (props) => {
+  const { about, date, title, images, videos, location, description } = props
+
+  const videoLink = "https://cloudplexo.com/SMFEST-Founders-Mixer.mp4"
+
   const [isClient, setIsClient] = useState(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [currentPage, setCurrentPage] = useState<number>(0);
@@ -64,17 +64,13 @@ const EventsDetails: React.FC<PageProps> = ({ event }) => {
     });
   };
 
-  const coverImage: StaticImageData | undefined = event.eventImages.find(
-    (_, idx) => idx === 0
-  );
-
-  const imagesPerPage = isMobile ? 1 : event.videoLink ? 6 : 9;
-  const paginatedImages = event.eventImages.slice(
+  const imagesPerPage = isMobile ? 1 : videos ? 6 : 9;
+  const paginatedImages = images.slice(
     currentPage * imagesPerPage,
     currentPage * imagesPerPage + imagesPerPage
   );
 
-  const totalPages = Math.ceil(event.eventImages.length / imagesPerPage);
+  const totalPages = Math.ceil(images.length / imagesPerPage);
 
   const handleNextPage = () => {
     if (currentPage < totalPages - 1) setCurrentPage(currentPage + 1);
@@ -99,44 +95,37 @@ const EventsDetails: React.FC<PageProps> = ({ event }) => {
           <div className={styles["left-side"]}>
             <p
               dangerouslySetInnerHTML={{
-                __html: event.eventDescription || event.text,
+                __html: description,
               }}
             ></p>
           </div>
         </LazyBackgroundImage>
         <div className={styles["right-side"]}>
-          <Image
-            src={coverImage?.src || ""}
-            alt="Array"
-            height={coverImage?.height}
-            width={coverImage?.width}
-          />
+          {images.length > 0 && (
+            <Image
+              src={images[0]}
+              alt="Array"
+              height={300}
+              width={300}
+            />
+          )}
           <div>
-            <h1>{event.title}</h1>
-            <h4>{event.date}</h4>
-            <p>{event.eventLocation}</p>
+            <h1>{title}</h1>
+            <h4>{formatDate(date)}</h4>
+            <p>{location}</p>
           </div>
         </div>
       </section>
 
       <section className={styles["about-section"]}>
-        {event.about && (
+        {about && (
           <>
             <h2>About</h2>
             <p
               dangerouslySetInnerHTML={{
-                __html: event.about,
+                __html: about,
               }}
             ></p>
-            <br />
-            <br />
-          </>
-        )}
-
-        {event.guestSpeakers && (
-          <>
-            <h2>Special Guests</h2>
-            <p>{event.guestSpeakers}</p>
             <br />
             <br />
           </>
@@ -149,19 +138,19 @@ const EventsDetails: React.FC<PageProps> = ({ event }) => {
           </Link>
         </div>
 
-        {event.videoLink && (
+        {/* {videoLink && (
           <div className={styles["video-player"]}>
             <VideoPlayer
-              src={event.videoLink}
-              poster={event.videoThumbnail?.src || coverImage?.src}
+              src={videoLink}
+              poster={videoThumbnail?.src || coverImage?.src}
             />
           </div>
-        )}
+        )} */}
 
         <div className={styles["img-collage"]}>
           {paginatedImages.map((item, index) => (
-            <div key={index} onClick={() => handleOpenModal(index)} className={event.videoLink ? styles.sixImages : styles.nineImages}>
-              <Image src={item} alt="" />
+            <div key={item} onClick={() => handleOpenModal(index)} className={videoLink ? styles.sixImages : styles.nineImages}>
+              <Image src={item} alt={title} width={300} height={300} />
             </div>
           ))}
         </div>
@@ -191,11 +180,11 @@ const EventsDetails: React.FC<PageProps> = ({ event }) => {
 
       {state.open && (
         <Modal
-          title={event.title}
+          title={title}
           currentImg={state.id}
           selectImg={handleOpenModal}
           close={closeModal}
-          imgArray={event.eventImages}
+          imgArray={images}
         />
       )}
     </main>

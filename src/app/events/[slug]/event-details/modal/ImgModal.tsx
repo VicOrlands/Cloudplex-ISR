@@ -1,18 +1,18 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
-import { GrFormClose } from "react-icons/gr";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import styles from "./modal.module.css";
-import Image, { StaticImageData } from "next/image";
 import clsx from "clsx";
+import Image from "next/image";
+import React, { useState, useRef, useEffect } from "react";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import { GrFormClose } from "react-icons/gr";
+import styles from "./modal.module.css";
 
 type EventsProps = {
   title: string;
   currentImg: number;
   close: () => void;
   selectImg: (id: number) => void;
-  imgArray: StaticImageData[];
+  imgArray: string[];
 };
 
 export default function Modal({
@@ -25,7 +25,7 @@ export default function Modal({
   const [scrollPosition, setScrollPosition] = useState(0);
   const footerRef = useRef<HTMLDivElement>(null);
 
-  const fetchCurrentImg: StaticImageData | undefined = imgArray.find(
+  const fetchCurrentImg = imgArray.find(
     (_, idx) => idx === currentImg
   );
 
@@ -61,16 +61,15 @@ export default function Modal({
       <section className={styles["modal-content"]}>
         <div className={styles["close-div"]} onClick={close}>
           <GrFormClose size={24} color="#475467" />
-          <h4>Close</h4>
         </div>
         <h2>{title}</h2>
 
         <section className={styles["img"]}>
           <Image
-            src={fetchCurrentImg?.src || ""}
+            src={fetchCurrentImg || ""}
             alt="placeholder"
-            width={fetchCurrentImg?.width}
-            height={fetchCurrentImg?.height}
+            width={300}
+            height={300}
           />
         </section>
 
@@ -91,8 +90,8 @@ export default function Modal({
             }
           >
             {imgArray.map((item, idx) => (
-              <div key={idx} onClick={() => selectImg(idx)}>
-                <Image src={item} alt="placeholder" />
+              <div key={item + idx} onClick={() => selectImg(idx)}>
+                <Image src={item} alt="placeholder" width={300} height={300} />
               </div>
             ))}
           </section>
