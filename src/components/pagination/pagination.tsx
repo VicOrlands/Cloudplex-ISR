@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+
 import styles from "./styles.module.css";
 import { BsArrowUpRight } from "react-icons/bs";
 import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
@@ -26,7 +28,17 @@ interface PaginationProps {
 }
 
 const Pagination: React.FC<PaginationProps> = ({ data, pageLimit, dataLimit }) => {
-    const [currentPage, setCurrentPage] = useState<number>(1);
+    const router = useRouter();
+    const searchParams = useSearchParams()
+
+    const page = searchParams.get('page')
+    const currentPageFromUrl = parseInt(page as string, 10) || 1;
+    const [currentPage, setCurrentPage] = useState<number>(currentPageFromUrl);
+
+    useEffect(() => {
+        router.push(`/blog?page=${currentPage}`);
+    }, [currentPage, router]);
+
     const totalPages = Math.ceil(data.length / dataLimit);
     const [pages] = useState<number>(Math.round(data.length / dataLimit));
 

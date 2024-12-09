@@ -1,6 +1,7 @@
 "use client"
 
 import useSWR from "swr"
+import { Suspense } from "react";
 import styles from "./styles.module.css";
 import BgImg from "@/assets/blog/blog-hero.webp"
 import CTAForm from "@/components/callToAction/cta";
@@ -59,7 +60,9 @@ const Blogpage: React.FC = () => {
                 </div>
             </LazyBackgroundImage>
 
-            <Pagination data={blogPosts} pageLimit={4} dataLimit={12} />
+            <Suspense fallback={<div>Loading...</div>}>
+                <Pagination data={blogPosts} pageLimit={4} dataLimit={12} />
+            </Suspense>
         </>
     );
 
