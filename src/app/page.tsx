@@ -14,10 +14,10 @@ const Service = dynamic(() => import("@/app/landing/Service"), {
   loading: () => <div>Loading...</div>,
   ssr: false
 });
-// const Events = dynamic(() => import("@/app/landing/event/Event"), {
-//   loading: () => <div>Loading...</div>,
-//   ssr: false
-// });
+const Events = dynamic(() => import("@/app/landing/event/Event"), {
+  loading: () => <div>Loading...</div>,
+  ssr: false
+});
 const BlogGrid = dynamic(() => import("@/components/blogGrid/Grid"), {
   loading: () => <div>Loading...</div>,
   ssr: false
@@ -57,7 +57,7 @@ export default function Home() {
       <Service />
       <Badges />
       <Testimonials />
-      {/* <Events /> */}
+      <Events />
       <Clients />
       <BlogGrid />
     </div>

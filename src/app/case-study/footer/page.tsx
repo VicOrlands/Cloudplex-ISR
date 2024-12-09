@@ -1,3 +1,5 @@
+"use client"
+
 import { Key } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -18,7 +20,7 @@ export default async function Footer() {
     const url = `${pathname}`
 
     const caseStudies = await fetchCaseStudies();
-    
+
     const filteredCaseStudies = caseStudies?.filter(({ slug }: { slug: string }) => `/case-study/${slug}/` !== url);
 
     return (

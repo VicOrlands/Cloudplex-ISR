@@ -15,8 +15,8 @@ import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
 
 import Footer from "./footer/page";
-import { fetchContent, fetchEvents } from "@/lib/actions";
 import { hasDatePassed } from "@/lib/utils";
+import { fetchContent } from "@/lib/actions";
 import CTAForm from "@/components/callToAction/cta";
 import { WebinarArray } from "./arrays/webinarArray";
 import VideoPlayer from "@/components/videoPlayer/VideoPlayer";

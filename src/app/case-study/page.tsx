@@ -10,7 +10,7 @@ import BgImg from "@/assets/casestudies/hero.webp"
 import { LazyBackgroundImage } from "@/components/backgroundImage/bg";
 
 import Slide from "./slider/Slide";
-import { caseTags } from "./caseArray";
+import { caseTags } from "./array";
 import { fetchCaseStudies, fetchContent } from "@/lib/actions";
 
 export interface CaseStudyProps {
